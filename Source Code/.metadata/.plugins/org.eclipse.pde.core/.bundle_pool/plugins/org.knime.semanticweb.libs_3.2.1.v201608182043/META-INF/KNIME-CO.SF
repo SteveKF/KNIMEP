@@ -1,0 +1,27 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: hVokB0Xd2fdvL9EdjYAIo52jQU+a7
+ IuGQBWKVvFY4XU=
+SHA-256-Digest-Manifest: r2NR9GJJAn4EfLJI4emXMKVLlxUxmW3Qq2gwuIi1Bzk=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: jena-arq-3.1.0.jar
+SHA-256-Digest: qvfbpa2fL16h1nU3xJU0ravMjRv54xAutikfKKuWjkA=
+
+Name: jena-core-3.1.0.jar
+SHA-256-Digest: fI3VMZBUcpGKheLh9WI6B8/fnoo1LLemqqw1sCejXxs=
+
+Name: jena-iri-3.1.0.jar
+SHA-256-Digest: VAKwkgcAAwBqEyZ8sENOpgrhm9sk9woOoLDaaorY2yo=
+
+Name: jena-base-3.1.0.jar
+SHA-256-Digest: k4u1725LLCwCrYJQjIONyG7Sef9s9RHWmYkha7k4T0U=
+
+Name: jena-cmds-3.1.0.jar
+SHA-256-Digest: GUnCyQH3W00eFqm4eB87IqPGBxqMSisDteGu6Dyq234=
+
+Name: jena-shaded-guava-3.1.0.jar
+SHA-256-Digest: wuXO/aSvf1Av2U+UhjKwmVc88pocNgWL/8bGnrba/5g=
+
+Name: jena-tdb-3.1.0.jar
+SHA-256-Digest: 2DP8kNMJdGsF0+cGKQ7rE46GoajMyPHRqPdxvrWtrIE=
+

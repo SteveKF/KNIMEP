@@ -1,0 +1,12 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: ZscsWVDpR0s9AmMJSSGM/BXgn2kej
+ ANpZ7IjPdyDlh0=
+SHA-256-Digest-Manifest: /brOOpWRiF6P9spc+VyhDrSKm4C5iwnpsJj+8vR6zLo=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: lib/commons-codec-1.4.jar
+SHA-256-Digest: 6omDDazdQppO5T/9lpRgy/pxADjkrqdD0dpMJ5E+Sc4=
+
+Name: knime-server-utility.jar
+SHA-256-Digest: Y4pIzWb2dJGq5CZOUyvwq+L9/zjMA/wHjBn5iaNHwb4=
+

@@ -1,0 +1,18 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: xhNzey5weJqHDyVVAhiPskQU6J5If
+ of9xxzbO8WValA=
+SHA-256-Digest-Manifest: cqdlBZhTfmxx8wPUbSi8cPj5IAp7NOZb/mAEi36IER8=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: 4E8D/oRwrpJGkLCyuNfQ/CEvbvYohSG/SKML+FB20zY=
+
+Name: knime-keystore.jks
+SHA-256-Digest: XCPXs9KgHZ4xmwTcTY4i8p2OVLUO0un4mnibXWhI2Bs=
+
+Name: lib/openejb-client-4.7.1.jar
+SHA-256-Digest: Osr8Jh2thYfJ46FbwHOcfA+hT/yVRIaDKmxwRVJvuYc=
+
+Name: knime-openejb-client.jar
+SHA-256-Digest: pn/D66TlFwhbdY2+20D9XAKv+NLHb9QqF020948AA8E=
+

@@ -1,0 +1,109 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: StYlwQhl/ZBIdN0hGDJPc1XCnnLXL
+ QfZddiPvX3GN1k=
+SHA-256-Digest-Manifest: Ina6M87lVV0eTFiZJ8Xl8asS0B+8sC4BYczoPc2IPtw=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: voWsczLa+GPO27PLJMiyiDHeQk8A4BTbMwnwUyNnnII=
+
+Name: README.TXT
+SHA-256-Digest: Fm3DS6wmQk/ESJD5VK54lTCe+t/Z3i2YglqWbXyZz5g=
+
+Name: py/simpleresponse_pb2.py
+SHA-256-Digest: HxAdOktjlI8117mpyq6l5afECNvElP+DPGFPdeF+pL4=
+
+Name: src/org/knime/python/typeextension/builtin/image/ImageDeserializ
+ er.py
+SHA-256-Digest: fCzdw4sy7qTzfwp2x227SmX1AmtO9Bie3CYyrwVMo14=
+
+Name: py/hiveOutput_pb2.py
+SHA-256-Digest: PisTkgC9Vs2JAM3KlkBVotIb/dD69Mj9xaodOj3sWHU=
+
+Name: py/sql_pb2.py
+SHA-256-Digest: jvf6pPsJ4mhH1010F1k/ZSHgcGVWPbGWkbK1DurC7qY=
+
+Name: py/command_pb2.py
+SHA-256-Digest: xpyRFEH9/oddLocDxVqEwGCetcmP5rDwfcI6913UVYE=
+
+Name: py/sqlOutput_pb2.py
+SHA-256-Digest: h2gsClJQYHsPkt48vmifN0H/9iSK0loZN9b5WXLFXME=
+
+Name: py/PythonKernel.py
+SHA-256-Digest: LQcubCMvTU+jh6R5C/oqZ+GY1ZnjN3luIBSiKl/o9kA=
+
+Name: py/autocompletesuggestions_pb2.py
+SHA-256-Digest: gm+SMZtWJnhFilGfAU8Zem4ZndwMJqjGw2q6DiisyCQ=
+
+Name: py/variablelist_pb2.py
+SHA-256-Digest: cSpPFOa32Km39yB26+N28p0g8ULMbzibk8wk2kmUBK0=
+
+Name: py/executeresponse_pb2.py
+SHA-256-Digest: 0R8NDeV+iLSLRyg1F2xnY9AdiBfGIRImL+b9H55+s/4=
+
+Name: knime-python.jar
+SHA-256-Digest: 8x5h2AlKdxboFpzl+tkP6bSxy78y5VT2y8ygNY0ti1I=
+
+Name: py/variables_pb2.py
+SHA-256-Digest: M+b8lS+1OyoWrRAwKjJWYxJYaKarq0t3jez9PHjrhNs=
+
+Name: py/jaydebeapi.licence.LESSER
+SHA-256-Digest: wUzvoi46ZOSQtB0dAsfgkd0AXHY9Cstywuwnejj9T7o=
+
+Name: src/org/knime/python/typeextension/builtin/image/ImageSerializer
+ .py
+SHA-256-Digest: TrDnbFsL0Dzt3/0OsWeTEPpK7BmgDP7bJheYSswnMCE=
+
+Name: res/clear.gif
+SHA-256-Digest: EAA8fP3rPz+oLWEZmKtxrwPNuH4w3igXf8dHERigdgg=
+
+Name: py/PythonKernelTester.py
+SHA-256-Digest: 1JHWTGPePk+UrFY+ph2EQWHP51kg3fNu09Kc2xguMsQ=
+
+Name: py/pickledobject_pb2.py
+SHA-256-Digest: muVkzl1RxoQo94aWFnrcyTmfCKS3NPm+4VjfUeJquX4=
+
+Name: py/table_pb2.py
+SHA-256-Digest: T/eZVAVvfCzseGaSK+5KMQXsSxI2p4pkJV5CJuaCpGE=
+
+Name: schema/modules.exsd
+SHA-256-Digest: 0WN2fqLo1eiMBqSQCeXorR1QqWrAM0D/Uo8cxRDib04=
+
+Name: res/stop.gif
+SHA-256-Digest: s4c9sHTi/HqLCWPtX9mcOew0g0ePW5hp36t3mGxv0uo=
+
+Name: schema/typeextension.pythontoknime.exsd
+SHA-256-Digest: vseBc1t5Pemfp9tj1N5jDID+tlXUr09CtSVCLbZ+Nlg=
+
+Name: src/org/knime/python/typeextension/builtin/xml/XMLSerializer.py
+SHA-256-Digest: aBkhHiS5WXx4P+vh7w9VKe2SngWGfrf10GVnsxP7tPY=
+
+Name: schema/sourcecodetemplates.exsd
+SHA-256-Digest: HDPjAsx+VjqPbcPEDhAKMo+fDBAYblBl9gGOixtuUo0=
+
+Name: src/org/knime/python/typeextension/builtin/xml/XMLDeserializer.p
+ y
+SHA-256-Digest: 2eJiyFlJ5xgyoTxXepYNhPtkaC/PoLL68lGWZfZklHg=
+
+Name: py/DBUtil.py
+SHA-256-Digest: Cp8tTmRfJT6motGvkXy2dhJ0QbDJfPDUcgaTsUVwO4U=
+
+Name: LICENSE.txt
+SHA-256-Digest: AINBnlxD6j1hoUJCdbqJDDXIUInSr72BED0xfnoxdrY=
+
+Name: py/image_pb2.py
+SHA-256-Digest: XBxi7XbAtEtheJExnHTYwah1yzg/310b4a+IaF90cnM=
+
+Name: py/jaydebeapi.py
+SHA-256-Digest: HH2IFs2vYhALQYWnW4iM+eMPTTpCJtH3xItNweK3LAs=
+
+Name: schema/typeextension.knimetopython.exsd
+SHA-256-Digest: PWaOZpSws6qeO5+IL7FcxJLi8HgibvOzzw3axB/K61o=
+
+Name: py/sqlInput_pb2.py
+SHA-256-Digest: k4/zpPFqZ7bv7i0O74LeKDKLuOgNEsFscYnZ1y9FzP8=
+
+Name: src/org/knime/python/typeextension/builtin/svg/SVGDeserializer.p
+ y
+SHA-256-Digest: fl8RLfbs6l/gFDH+nPbxC9BnpeFgdTsU9l0oijSha6A=
+

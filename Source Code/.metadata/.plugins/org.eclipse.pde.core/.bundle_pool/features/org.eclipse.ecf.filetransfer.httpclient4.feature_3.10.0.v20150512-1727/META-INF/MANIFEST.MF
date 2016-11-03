@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0 (IBM Corporation)
+
+Name: about.html
+SHA-256-Digest: ZHKRAFcsXDUCTNWHfxQn688RTBne0SvS3rlSJmvmSMs=
+SHA1-Digest: aQPT3v0kycJNeZF4b7lBtpB80yk=
+
+Name: epl-v10.html
+SHA-256-Digest: mpbQ2vmKpvtKpTDTmcdCxmEhsL2uSh9/+iLSE14d9/0=
+SHA1-Digest: jYDaDJLBJpthCwPMgGFVYASJjIU=
+
+Name: asl-v20.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+SHA1-Digest: K4uBUimqimHkg/tLoFiLi2xJGJA=
+
+Name: feature.xml
+SHA-256-Digest: 753sQEjpL7YJQXa29J8wDWBXHFnfn+8v1hIY+7ey/EQ=
+SHA1-Digest: nwe73NbQ2d0v+mj68P5kL3v3b3s=
+
+Name: feature.properties
+SHA-256-Digest: DqlF/1oCu70aDPFXlCRuBybIJaGSj2nuBsifVakcYS8=
+SHA1-Digest: WdSXP3YVTs3kTMduP39usRHEJLQ=
+
+Name: license.html
+SHA-256-Digest: X315zLynvdLZ4DaYSopgxruQUUEadA3FOPNviC+YO24=
+SHA1-Digest: Z5WKoRSIDCgQNswUpOU/oSPE2a0=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: G2hFTVPngfh5NUf96Pyy87A7XIE083udjEBFy4pUc/M=
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+

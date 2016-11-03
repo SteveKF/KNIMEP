@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Transformation" link_to="../org.knime.ext.textprocessing/tocs/labs_textprocessing_transformation.xml#labs_textprocessing_transformation">
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/6b656fc7.BagOfWordsNodeFactory.html" label="Bag of Words Creator"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/6a943fcf.DocumentDataExtractorNodeFactory.html" label="Document Data Extractor"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/85ec9b.DocumentVectorNodeFactory.html" label="Document vector"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/104dcb05.MetaInfoExtractionNodeFactory.html" label="Meta Info Extractor"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/50ca3761.MetaInfoInsertionNodeFactory.html" label="Meta Info Inserter"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/2de60ba1.SentenceStatisticsNodeFactory.html" label="Sentence Extractor"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/1a9edcbb.TermToStringNodeFactory.html" label="String to Term"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/37ab5aa7.StringsToDocumentNodeFactory.html" label="Strings To Document"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/7621616b.TagToStringNodeFactory.html" label="Tags to String"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/8ef6ebb.TermToStringNodeFactory.html" label="Term to String"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/6072367f.TermToStructureNodeFactory.html" label="Term to Structure"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/58fc41c5.TermVectorNodeFactory.html" label="Term vector"/>
+</toc>

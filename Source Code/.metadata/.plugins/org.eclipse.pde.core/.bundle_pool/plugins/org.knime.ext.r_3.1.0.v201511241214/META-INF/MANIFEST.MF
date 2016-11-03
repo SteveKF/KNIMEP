@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Eclipse-RegisterBuddy: org.knime.base
+Bundle-SymbolicName: org.knime.ext.r;singleton:=true
+Require-Bundle: org.eclipse.ui;bundle-version="[3.6.1,4.0.0)",org.ecli
+ pse.core.runtime;bundle-version="[3.6.0,4.0.0)",org.knime.workbench.r
+ epository;bundle-version="[3.0.0,4.0.0)",org.knime.base;bundle-versio
+ n="[3.0.0,4.0.0)",org.knime.ext.r.type;bundle-version="[3.0.0,4.0.0)"
+ ,org.knime.ext.r.bin;bundle-version="[3.0.0,4.0.0)",org.knime.r;bundl
+ e-version="[3.0.0,4.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Ant-Version: Apache Ant 1.9.4
+Export-Package: org.knime.ext.r,org.knime.ext.r.node,org.knime.ext.r.n
+ ode.local,org.knime.ext.r.preferences,org.rosuda.REngine,org.rosuda.R
+ Engine.Rserve,org.rosuda.REngine.Rserve.protocol,org.rosuda.REngine.R
+ serve.test
+Bundle-Name: KNIME R-Project - obsolete node definitions
+Bundle-Version: 3.1.0.v201511241214
+Bundle-ClassPath: knime-r.jar,lib/Rserve-0.5-0.jar
+Bundle-Activator: org.knime.ext.r.RCorePlugin
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: icons/missing.gif
+SHA-256-Digest: g36bn1gOUappfLQ5xeK5WXwpikUfQoWy9TRlsXixaLQ=
+
+Name: lib/RserveLicense.txt
+SHA-256-Digest: XfBwBxmJicYi9dQd6NcD577z0OedYuJDMu5zmkUq9io=
+
+Name: plugin.xml
+SHA-256-Digest: zGHx71cA3IgpKjna587nzh8Db3HijaiMpSGNFzaK2Sk=
+
+Name: lib/Rserve-0.5-0.jar
+SHA-256-Digest: I9YnOxjdt66ForCuO3Ac3QS5S1vUwk4+VH6LJZXYTdQ=
+
+Name: README.TXT
+SHA-256-Digest: vmAtf+MUMnMCE6IFBQRs+Wm5NZQh/qiyHXkj9R3Ehls=
+
+Name: knime-r.jar
+SHA-256-Digest: zwnXZXbnIQqY6CTJYsyX94YWulQFSN7iHlIt9atAcwo=
+
+Name: icons/R_splash_48.png
+SHA-256-Digest: A9sUUIsGHdjd77CJ/hUFGug61+xwpmXK96j3NzZ/A5s=
+
+Name: icons/default.png
+SHA-256-Digest: TP5EEOQcIFtu+X95Qgd1k72t/jaW7M/s9PFLsXcnigM=
+
+Name: icons/r.png
+SHA-256-Digest: r3fql6gle352SXFSy4czmnKRIFHFc9X2r9y3VsbwtEQ=
+
+Name: LICENSE.TXT
+SHA-256-Digest: 5tagCVBeNF/pSeExAzT8sHR/KNrihWdZ3hAqtmtyLLQ=
+
+Name: icons/R_splash_32.png
+SHA-256-Digest: nV8FAe9fYTxfd35JTSrNcV6UqaJ3CnKs9qVuVfuoUdI=
+
+Name: icons/R_splash_24.png
+SHA-256-Digest: j9VRUvxJ6GDTCSzSGPmAfxDCx6eHywjwT/DDN/DrR2E=
+

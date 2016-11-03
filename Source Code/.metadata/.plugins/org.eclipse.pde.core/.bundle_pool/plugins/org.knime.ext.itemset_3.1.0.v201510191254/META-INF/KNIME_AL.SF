@@ -1,0 +1,159 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: VioY2/xzc3lb4Ewi3dldrKJq/qvm9
+ ePXV7QSjZTfjPM=
+SHA-256-Digest-Manifest: 1fqcwq0NBSuY6//6FLSKgh5jNxwUhslFrvjOOMiK+ZQ=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: icons/missing.gif
+SHA-256-Digest: cJEnkpuFCnhkrt/2IRSK8vPDXeZPhgFMPdmqRFwqbXk=
+
+Name: resources/images/setFinderBig48.png
+SHA-256-Digest: 61mNF0/cmAbvu8uP+Dd1C0zvjO4ftZVCu+rMVZjyd7s=
+
+Name: plugin.xml
+SHA-256-Digest: gr9hEpQcbC2LCg0FFS4WFKeJZIiPNzakOicn8U55jJc=
+
+Name: resources/LICENSE_FPM.txt
+SHA-256-Digest: dN/LhFyZmena0DIwIcwAYoKhPSWxQoLBamhyMXBglWs=
+
+Name: resources/executables/mac/x86_64/fpgrowth
+SHA-256-Digest: 89KiNCIqbODMQPHm16q385IYx+GN4LZzUmLqIniyeQc=
+
+Name: resources/executables/mac/x86_64/relim
+SHA-256-Digest: xXy6Ggq7fzogeJTKkaxPIChprFDt4DPpK6BdKot5LPM=
+
+Name: resources/executables/win/x86/fpgrowth.exe
+SHA-256-Digest: 91bren7AXXnnVD1hDIfdSg3WcPBF/3qrej9uNeaiA/E=
+
+Name: resources/executables/win/x86/apriori.exe
+SHA-256-Digest: mNj9cicu4P1tZp6TriXQhXJ+QsUxwGpJ+C+joHMhbUQ=
+
+Name: resources/executables/win/x86/relim.exe
+SHA-256-Digest: BzNQ+IYqs+JsGIkA0TWxJayOzyWH0Jz/PzaeUUX1j0U=
+
+Name: resources/executables/mac/x86_64/apriori
+SHA-256-Digest: iBY1XkPOGzH3U6jocVSYd3eA8g+V1HmtjvzJAD6C7Jk=
+
+Name: resources/executables/mac/x86_64/jim
+SHA-256-Digest: 3uIgnmYWVsQ6zKkpg58InW8scmU/CE4eeLUEWn1Mizo=
+
+Name: resources/publication/efficientApriori.pdf
+SHA-256-Digest: QZ+G7Uhy2HHVOp9+6Hoe+ztIK5X0b9es1had3pqqja4=
+
+Name: html/nodes/70a2e23a.ItemSetMinerNodeFactory.html
+SHA-256-Digest: wJYvg/Qszgo/HddO4MwXHIc14k3BUcObJF+GFW4RMnU=
+
+Name: resources/images/rule.svg
+SHA-256-Digest: xG46+Vl49hhyfGmETXxNXrDm8uo5Aj2eW9lgBtARhws=
+
+Name: LICENSE.TXT
+SHA-256-Digest: VLNPwg26VH6LhOvMe3yRl6ijVpqc9Usqj9TY7Q1GaVk=
+
+Name: resources/publication/fpgrowth.pdf
+SHA-256-Digest: Vaey1EY/j/BH6MEj8y3fAgRJJHku9LNVaqm5YdcEnLA=
+
+Name: resources/images/setFinderMedium.pdn
+SHA-256-Digest: bLv+cNvc5vpmtrVKTkxU2iFb2mxm3J2yn9STsiYPkwU=
+
+Name: resources/executables/linux/x86_64/sam
+SHA-256-Digest: G/DPf4UHdZQtOwNmxxZlp050mKJEsuYBO9fQnUxxqyc=
+
+Name: html/nodes/67844b2c.AssociationRuleLearnerNodeFactory.html
+SHA-256-Digest: j2kzqUGjiBbwxBk0Bp7M1ttigQeOKX3jKu9vJw/uZOo=
+
+Name: META-INF/p2.inf
+SHA-256-Digest: fYrlvTw+vGnD0iPJl00sc0dgT1xOKjEqI8P8+ARatNc=
+
+Name: knime-extItemSet.jar
+SHA-256-Digest: 9nROO3++B5BiDTrS/2/Aa9BRlTEtDoGx7zi2ah5fk0A=
+
+Name: icons/misc_cat.png
+SHA-256-Digest: Q7r3nZLLJWzlsnCO6UMcjIO0HsgqK30u9mJoDwlKDp0=
+
+Name: resources/images/ruleFinderSmall.pdn
+SHA-256-Digest: FZfoS53jFYdhppQPZM/ueXfC2NsAHmcjYAvQXI8bOnw=
+
+Name: resources/images/set_medium.png
+SHA-256-Digest: qTXmro1N6dWnzzCgRjcpVsvRSY8hjQvWpn+x18KMZkI=
+
+Name: resources/executables/linux/x86/fpgrowth
+SHA-256-Digest: /w3BwIpq8iiR6oXvFLGGueXUh8H/1vvpOjVdc9PTKcE=
+
+Name: resources/images/setMatcher16.png
+SHA-256-Digest: sxHrX1+XarUV88iAyEwH2GP6yW84K0RzX4rExw+vuuE=
+
+Name: resources/executables/linux/x86_64/jim
+SHA-256-Digest: vZbTl+P5BVZYXKgKYJb2zvLBECUicBentkjq0koUihk=
+
+Name: resources/images/setFinder16.png
+SHA-256-Digest: GVLr0znpBVsO40RzvFiDCaLiqzB90rm1Yz6FrWZQW/g=
+
+Name: resources/publication/relim.pdf
+SHA-256-Digest: oBn7YelX0/+evP6pqj/2ztWpEpc1OIQGIsrwu8R/PVw=
+
+Name: resources/images/setFinder32.png
+SHA-256-Digest: wDhNOb/lOzbIURO81802XBIpgZ+btn8eDwqtsqa2GVc=
+
+Name: resources/executables/linux/x86/jim
+SHA-256-Digest: 6tbkI/gGWu5RUV6H3xq3sSC0sJ05VDbMOJlx0Qjuk+8=
+
+Name: resources/executables/win/x86_64/apriori.exe
+SHA-256-Digest: O0htwifaPV5uz51FgZ4JmGFuQj4dd+83JDdq3tokvcc=
+
+Name: resources/executables/mac/x86_64/sam
+SHA-256-Digest: FytPnsjDnBDs9QS9d+x/jvmGclcyT78zWkFBdzqA7o4=
+
+Name: resources/publication/apriori.pdf
+SHA-256-Digest: 18DLvVNA7AEyrpAl5NshgzPHeAzU8t1W8mzm6wbQ+Zo=
+
+Name: resources/images/setFinderSmall.pdn
+SHA-256-Digest: gWM1T8rZSImMnV+HkGbC1WHosbOuP8FwWlqMbOudFu0=
+
+Name: resources/images/set.svg
+SHA-256-Digest: 50C3Nj8W3CCXyPYZqBnYBirHBIjHq7gqlhWWw5PHkRg=
+
+Name: resources/images/loupe.png
+SHA-256-Digest: uf1Pizqhf1ynH1hdHHppZ/eXrefmU/r6o9XKfVUC5zU=
+
+Name: resources/executables/linux/x86_64/fpgrowth
+SHA-256-Digest: xoAbBxG3T7h/Hu3KaCOtdTNzKpuiTQLXS4gxEmRhk7M=
+
+Name: resources/images/ruleFinder16.png
+SHA-256-Digest: f00Y0s/PsBZEHvuKer6IxO+3GlD3LWh6aybwbuiNiU8=
+
+Name: resources/executables/win/x86/sam.exe
+SHA-256-Digest: OH+TjJ3fcJH4ysH5hvVPWMhTJfOYOi7WgTIit78K1CE=
+
+Name: resources/images/setFinderBig.pdn
+SHA-256-Digest: xdm0ZyhyhFLA9CIRWf1Lt5ZKFq/VIPNJ5AooC0XvE6k=
+
+Name: resources/executables/win/x86/jim.exe
+SHA-256-Digest: wnjlJ9At9rTt246jdN2IWhcam4AWRawXkPUnTv+NP1E=
+
+Name: resources/executables/linux/x86/sam
+SHA-256-Digest: wmNM7Xk7ZXUC9TapfQ59DohERPC8DuLAqM+nc920jWM=
+
+Name: resources/executables/linux/x86_64/apriori
+SHA-256-Digest: 0MzpCVk7wfF+PA/04AlfthnTKNzwWvjcbUgPrBYcUNk=
+
+Name: resources/executables/linux/x86_64/relim
+SHA-256-Digest: N9vjMFoM5hw3633dkagekATuSArRNCgdaF+4nVL5W1A=
+
+Name: resources/executables/linux/x86/apriori
+SHA-256-Digest: iOq/kR8yzxXfHUNX/QqLH472TRrK1zC859VbZfPa1y4=
+
+Name: resources/images/rule_small.png
+SHA-256-Digest: +sZppoQVFYv8SHnmGc1J0GVM+A7z53wpNOY4s/e28QM=
+
+Name: resources/executables/linux/x86/relim
+SHA-256-Digest: U26UJxjveDrGBK0LEmI8KTOuhZmW1nh7RHDGt2l/iwo=
+
+Name: resources/README.txt
+SHA-256-Digest: 2G+qwSjeiO88nbjekeIs8MVDBmxwbxKEawksZUp9DWA=
+
+Name: resources/images/lupe_small.gif
+SHA-256-Digest: RMLIIEPbsZY5btIliN2mTbZYejhpjvocC+XmZmXuIbQ=
+
+Name: tocs/analytics_mining_subgroup$nodes.xml
+SHA-256-Digest: AKlI5X7louHuswJKYnNPOlbdMfLEWhcx0aqHfbcXXPE=
+

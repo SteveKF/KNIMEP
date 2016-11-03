@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.6
+Bundle-SymbolicName: com.knime.enterprise.reportexecutor
+Export-Package: com.knime.enterprise.reportexecutor
+Bundle-Name: Report Execution Plugin for workflows
+Bundle-Version: 4.3.0.v201604210938
+Bundle-ClassPath: knime-enterprise-reportexecutor.jar
+Require-Bundle: com.knime.reporting.nodes;bundle-version="[3.0.0,4.0.0
+ )",org.eclipse.birt.report.engine;bundle-version="[4.4.2,5.0.0)",com.
+ knime.oda.driver;bundle-version="[3.0.0,4.0.0)",org.eclipse.birt.repo
+ rt.engine.emitter.html;bundle-version="[4.4.2,5.0.0)",org.eclipse.bir
+ t.report.engine.emitter.pdf;bundle-version="[4.4.2,5.0.0)",org.eclips
+ e.birt.report.engine.emitter.ppt;bundle-version="[4.4.2,5.0.0)",org.e
+ clipse.birt.report.engine.emitter.prototype.excel;bundle-version="[4.
+ 4.2,5.0.0)",com.lowagie.text;bundle-version="[2.1.7,2.2.0)",org.eclip
+ se.birt.report.engine.emitter.config;bundle-version="[4.4.2,5.0.0)",o
+ rg.eclipse.birt.report.engine.emitter.config.excel;bundle-version="[4
+ .4.2,5.0.0)",org.eclipse.birt.report.engine.emitter.config.html;bundl
+ e-version="[4.4.2,5.0.0)",org.eclipse.birt.report.engine.emitter.conf
+ ig.pdf;bundle-version="[4.4.2,5.0.0)",org.eclipse.birt.report.engine.
+ emitter.config.ppt;bundle-version="[4.4.2,5.0.0)",com.knime.enterpris
+ e.utility;bundle-version="[4.0.0,5.0.0)",org.eclipse.birt.report.engi
+ ne.script.javascript;bundle-version="[4.4.2,5.0.0)",org.eclipse.birt.
+ report.engine.emitter.wpml;bundle-version="[4.4.2,5.0.0)",org.knime.c
+ ore;bundle-version="[3.0.0,4.0.0)",org.eclipse.birt.report.engine.emi
+ tter.postscript;bundle-version="[4.4.2,5.0.0)",org.eclipse.birt.repor
+ t.engine.emitter.config.postscript;bundle-version="[4.4.2,5.0.0)",org
+ .apache.commons.codec;bundle-version="[1.6.0,2.0.0)",org.eclipse.birt
+ .report.engine.emitter.config.docx;bundle-version="[4.5.0,5.0.0)",org
+ .eclipse.birt.report.engine.emitter.config.pptx;bundle-version="[4.5.
+ 0,5.0.0)",org.eclipse.birt.report.engine.emitter.docx;bundle-version=
+ "[4.5.0,5.0.0)",org.eclipse.birt.report.engine.emitter.pptx;bundle-ve
+ rsion="[4.5.0,5.0.0)",uk.co.spudsoft.birt.emitters.excel;bundle-versi
+ on="[4.5.0,5.0.0)",org.eclipse.birt.report.engine.ooxml;bundle-versio
+ n="[4.5.0,5.0.0)",org.apache.poi;bundle-version="[3.9.0,4.0.0)",javax
+ .xml.stream;bundle-version="[1.0.1,2.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: KNIME.com, Zurich, Switzerland
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: knime-enterprise-reportexecutor.jar
+SHA-256-Digest: hp3n8BrHrYdm9kJBPLQ0b5P9QJvSHbkndJBnByCKkS0=
+

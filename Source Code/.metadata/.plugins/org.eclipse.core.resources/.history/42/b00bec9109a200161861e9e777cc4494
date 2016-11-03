@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+      <extension
+         point="org.knime.workbench.repository.categories">
+      <category
+            description="Preference nodes"
+            icon="icons/preferences.png"
+            level-id="preferences"
+            name="Preferences"
+            path="/"/>
+   </extension>
+   
+   <extension
+         point="org.knime.workbench.repository.nodes">
+      <node
+            category-path="/preferences"
+            factory-class="org.knime.preference.sql.PreferenceSQLNodeFactory"
+            id="org.knime.preference.sql.PreferenceSQLNodeFactory"/>
+   </extension>
+   
+</plugin>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;org.knime&apos; to &apos;org.knime.graph&apos;&#x0A;- Original project: &apos;RepresentativeSkylineGraph&apos;&#x0A;- Original element: &apos;RepresentativeSkylineGraph/src/org.knime&apos;&#x0A;- Renamed element: &apos;RepresentativeSkylineGraph/src/org.knime.graph&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;org.knime&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;org.knime" name="org.knime.graph" qualified="false" references="true" stamp="1470689487309" textual="false" version="1.0"/>
+</session>

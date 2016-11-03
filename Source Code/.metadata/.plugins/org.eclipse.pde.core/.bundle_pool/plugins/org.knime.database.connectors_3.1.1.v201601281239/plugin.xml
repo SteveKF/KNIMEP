@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.knime.core.JDBCDriver">
+      <jdbcDriver
+            jarFile="lib/mysql-connector-java-5.1.22-bin.jar">
+      </jdbcDriver>
+      <jdbcDriver
+            jarFile="lib/postgresql-9.4-1201.jdbc41.jar">
+      </jdbcDriver>
+      <jdbcDriver
+            jarFile="lib/sqlite-jdbc-3.7.2.jar">
+      </jdbcDriver>
+   </extension>
+     <extension
+         point="org.knime.workbench.repository.nodes">
+      <node
+            factory-class="org.knime.database.connectors.sqlite.SQLiteConnectorNodeFactory"
+            category-path="/database/database-connector"
+            id="org.knime.database.connectors.sqlite.SQLiteConnectorNodeFactory"/>
+      <node
+            factory-class="org.knime.database.connectors.mysql.MySQLConnectorNodeFactory"
+            category-path="/database/database-connector"
+            id="org.knime.database.connectors.mysql.MySQLConnectorNodeFactory"/>
+      <node
+            factory-class="org.knime.database.connectors.postgresql.PostgreSQLConnectorNodeFactory"
+            category-path="/database/database-connector"
+            id="org.knime.database.connectors.postgresql.PostgreSQLConnectorNodeFactory"/>
+    </extension>
+     <extension
+           point="org.knime.workbench.repository.registeredFileExtensions">
+        <FileExtensionMapping
+              NodeFactory="org.knime.database.connectors.sqlite.SQLiteConnectorNodeFactory">
+           <FileExtension
+                 extension=".sqlite">
+           </FileExtension>
+        </FileExtensionMapping>
+     </extension>
+</plugin>

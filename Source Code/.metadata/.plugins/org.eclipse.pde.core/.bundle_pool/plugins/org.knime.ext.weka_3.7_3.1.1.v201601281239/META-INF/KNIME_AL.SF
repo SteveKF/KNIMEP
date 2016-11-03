@@ -1,0 +1,795 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: 9RnZTtJIT1gEF4x/lDJMQ2PuyWoUn
+ kmigigbsKYSd4o=
+SHA-256-Digest-Manifest: 7y/MZAWd0cKjGCvFVtnNZr6/rIbX80jIltSlKZHBr88=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: q7jrRStFAKWspn4D9OrGIvsr925GuWc8pRCM30MPs9I=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_trees_lmt_lmt$nod
+ es.xml
+SHA-256-Digest: uBezjBx7Pzxhe4S+Wl25yps1OVx67MCP4Qw2m4+18Dk=
+
+Name: html/nodes/7f97bd38.OPTICS#V112015.html
+SHA-256-Digest: oMgGr1o9F2J6x3uc1E6LVLYqe5+8Z4WprvLDcsN0l5I=
+
+Name: html/nodes/6dbf5abd.DBSCAN#V112015.html
+SHA-256-Digest: o+XZowflrrubHl1gNpBs65X8hkWcTrG3hnmhHgCnhGw=
+
+Name: lib/packages/simpleEducationalLearningSchemes.jar
+SHA-256-Digest: /dk7e3aZACjUldvQgcw9mxy9TyfPR9qJyEcDtwxYdNo=
+
+Name: tocs/analytics_mining_weka_weka3.7_predictors.xml
+SHA-256-Digest: yKPRzf3j8MlhmPOrDVk4lPNWYv5B+yM3DlU+vfF2A50=
+
+Name: lib/packages/fastCorrBasedFS.jar
+SHA-256-Digest: WZwJiYKOILbLIrU/qdhVVADVvQ7uuy4WO541ig4+8WU=
+
+Name: lib/packages/bestFirstTree.jar
+SHA-256-Digest: xgpBpIiUUTJBNOLqqIknIrp0M+SShUONVpLVm+yAYVQ=
+
+Name: html/nodes/22641d86.WekaClassifierModelPortObjectWriterNodeFacto
+ ry.html
+SHA-256-Digest: 43pqiEXHpG3XUTxPPkj/nOFBcBcyS5bwSuAR+zGI2SQ=
+
+Name: lib/packages/lazy-associative-classifier.jar
+SHA-256-Digest: Ww4UI/vmxVGepgbC0c7LCWYW0SrJqXWVYVnTCooGDfM=
+
+Name: html/nodes/76d1a1f.SGD#V112015.html
+SHA-256-Digest: BE4m6U1wlQ0nMSXP8EPg2wIV13HSxxgEeKh9pUASqoE=
+
+Name: html/nodes/7a0b16f1.RBFNetwork#V112015.html
+SHA-256-Digest: Qvk45brwlwQPjwcSxTAV8/fJvwC1U8M3deg3biF0SPY=
+
+Name: html/nodes/6e9c80d2.NaiveBayesUpdateable#V112015.html
+SHA-256-Digest: g0LhZpWyxgg2fqkvcP/yUpYva5/X28euIptT79uHOwM=
+
+Name: html/nodes/5f7d5681.DecisionTable#V112015.html
+SHA-256-Digest: o7p7nOS6hlQPFp5BWnGyUbqIQwcJ01b01C9g1n2kx6g=
+
+Name: html/nodes/6b24ff3e.InputMappedClassifier#V112015.html
+SHA-256-Digest: AiTPGJUV5a+l8BRyrujaeXcbiK4rUpvXXLgZGZmJ7rY=
+
+Name: html/nodes/7a100c43.FilteredAssociator#V112015.html
+SHA-256-Digest: JoOgEzXfnukAZgulgyifnXOjZ3OTNqZp6NUMYdcFfcw=
+
+Name: lib/packages/oneClassClassifier.jar
+SHA-256-Digest: Jd5qf/WdA7dMvm2hmf9MnCZmucdo/sla6beSO4biGyM=
+
+Name: html/nodes/4522957a.WekaClustererModelPortObjectWriterNodeFactor
+ y.html
+SHA-256-Digest: L4azU6+8E3NCDI3YOrjESx/h03H8kI+l62k7ETNeQSo=
+
+Name: html/nodes/57a7232a.DMNBtext#V112015.html
+SHA-256-Digest: gMlOpS9VEuQsSeps4HxIk9kcnaDc54TaFtPDr93OBxY=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_misc$nodes.xml
+SHA-256-Digest: c4wQ5JdblkyQcU0M6j2bHwe+UUlSZAPJeDlYmWXPka0=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_rules$nodes.xml
+SHA-256-Digest: Kj/TUY+3ZI0+akb2ElJcKk7TJYAua6r61oQOEA+iXN4=
+
+Name: html/nodes/15eefeef.SimpleCart#V112015.html
+SHA-256-Digest: 5x9Ql9hK1WvT+uCa3ulCa0zvzGI9yRbBzYel0koA4vY=
+
+Name: html/nodes/78c8c522.LMT#V112015.html
+SHA-256-Digest: Z52L07IFV8g/Es3UQGyZkWmtFgKhYLhn7st4hPigB/w=
+
+Name: lib/packages/winnow.jar
+SHA-256-Digest: 8VK2GmFAybr+LrtnGkFyat7AbaBJ/joY0FFJRmiZmw0=
+
+Name: tocs/analytics_mining_weka_weka3.7_io$nodes.xml
+SHA-256-Digest: WOGsU6cRyIjEjZpWPK0EgFW//6RO+/4H6mHgDVgCMj4=
+
+Name: icons/weka.png
+SHA-256-Digest: OJIui2YxHRshe4swyhNFXbXfUVJr6hq9J6TLXgHW2uU=
+
+Name: html/nodes/4146ef86.A1DE#V112015.html
+SHA-256-Digest: /QAak+I44KzJ4uz5vC1UvBWJccZvuX+tU+qSqbmLKoA=
+
+Name: tocs/analytics_mining_weka_weka3.7_io.xml
+SHA-256-Digest: +dU+SmQGBboc350VR7i1omr6wc4qluOe9TrFB55eHK4=
+
+Name: html/nodes/18d399f2.OSDL#V112015.html
+SHA-256-Digest: iP7tnv4Np1Y9gtoh9XjN90BjBa+j8rwoWBZmSIc3E4U=
+
+Name: lib/packages/grading.jar
+SHA-256-Digest: ZqXIDcKe3E43yE/8q20TvwJY9gPB9jvimCA+8W2dQCI=
+
+Name: lib/packages/fuzzyLaticeReasoning.jar
+SHA-256-Digest: z/v5r4TvMO1HE8nwOrlPfWuiF3NR1+Z7IioDjJA6qrQ=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_trees_lmt_lmt.xml
+SHA-256-Digest: Vsi0lmXLsTqJSPmlu1kbFgquX5o9QgTPlLLCwkP4vQs=
+
+Name: html/nodes/171a2295.ComplementNaiveBayes#V112015.html
+SHA-256-Digest: x3q/ivu9EuxTzkegOo2c5S1kukQYjGDlRV+uTVP5Dc4=
+
+Name: html/nodes/5c006a48.RBFClassifier#V112015.html
+SHA-256-Digest: d5nxO/uh2FN8VfOYmQST6s1wZ7vHzKemlDfd7Sj60Qs=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_bayes_AveragedNDe
+ pendenceEstimators_AveragedNDependenceEstimators.xml
+SHA-256-Digest: Ci1peWHMu3QFEF3T8Gpdz+R4sbFoCIWb63td5ia748Q=
+
+Name: html/nodes/4c308253.LWL#V112015.html
+SHA-256-Digest: 9fN0zvzrOOjPNH/Pim4cZB5KgWABrRrYkuXQySaxTNw=
+
+Name: lib/packages/SPegasos.jar
+SHA-256-Digest: deglhSvyojTsLp5kp13F13IzXa2GPsgA916ldyVSNF0=
+
+Name: lib/packages/ordinalStochasticDominance.jar
+SHA-256-Digest: vtvAuwyyl/G92JNCrZiwpx4KI9tR0TryZ97e3L8gDiU=
+
+Name: tocs/analytics_mining_weka_weka3.7_associations.xml
+SHA-256-Digest: b9gLcJ0WOlD9ZrGtYrJxk/LhuuINi1gf8ZZdryVh8aA=
+
+Name: html/nodes/1501f45a.StackingC#V112015.html
+SHA-256-Digest: aWHx0Gz2x7OfWHuhekpPV+6pueQ8Tk1Hmqb4/3sr0sk=
+
+Name: html/nodes/5b671bfb.BayesianLogisticRegression#V112015.html
+SHA-256-Digest: hY0Z4e5c6cr/xice8eZDeJL8nYto8ihP0b0O8mjHVbQ=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_functions$nodes.x
+ ml
+SHA-256-Digest: QmC+pE+kKDHBrYAsTsk1NQnz7Q9FNiqWOSLkQ+ZfIQU=
+
+Name: lib/packages/ridor.jar
+SHA-256-Digest: xaoObMQqR72CcVZbzMeqpZGO6g/sJVVPsC1xbeYmOQc=
+
+Name: html/nodes/13412a23.Ridor#V112015.html
+SHA-256-Digest: AqPbInoNd34w4VPh+be2RM5npr4AgcKstsu4FeITqdw=
+
+Name: html/nodes/771d4bc5.LibLINEAR#V112015.html
+SHA-256-Digest: g+haI6cIZ1/2d6gAorcWQecbHz2rcjqxP+2WkObt/RI=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_rules_car_car$nod
+ es.xml
+SHA-256-Digest: A6aJ2QPaOSsWtcNUYmI527C0iHl/xQ4bE2Ze2Cf9+TQ=
+
+Name: html/nodes/19a1081a.HNB#V112015.html
+SHA-256-Digest: M2HhyhQlo/I/GrFOUpBiilBXxMGqRFrVu+W5S9AH1uE=
+
+Name: html/nodes/5ba3e3b9.ClassifierWriterNodeFactory.html
+SHA-256-Digest: o11pV2f9zg5wMlze6ee4Ym63+Y6SwotJyD1RUtE4BKQ=
+
+Name: tocs/analytics_mining_weka_weka3.7.xml
+SHA-256-Digest: wsTNJ7IRcGkUwYKB+eGKoTaOa4EGdMRh+NKdLQiZhyQ=
+
+Name: html/nodes/539dc33b.A2DE#V112015.html
+SHA-256-Digest: H2UBK9ClnvqVqtLNpDZqyaiKhUe0rFPNXNBaWa800+o=
+
+Name: html/nodes/77d001.BFTree#V112015.html
+SHA-256-Digest: 1vDNPQ0wp57fE3robstn7f5vgSmjognrk3ohKuqaQUw=
+
+Name: html/nodes/7eacd348.MultiBoostAB#V112015.html
+SHA-256-Digest: lnQy/1c2x+Y2sW0VcP9mBkr4HJazKjB7tWDlNF+IUIA=
+
+Name: html/nodes/66393288.WekaPredictorNodeFactory.html
+SHA-256-Digest: ByoSK1bZVwtHxriRLTxqQXgT2pm48GfqxdrTIjEV/y0=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_meta$nodes.xml
+SHA-256-Digest: UksM+Pl5Teh4B3fq8+zw08u7xuEqAASpsv/iseVWFV4=
+
+Name: html/nodes/3b7690e7.ThresholdSelector#V112015.html
+SHA-256-Digest: i17I/3oLcjj+Di5A9qkGV8PuTfN4dTEGwxcBXPwhu4Q=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_bayes$nodes.xml
+SHA-256-Digest: q8OfmU3vlmlfzeW1coDqDr/q18rgDGquDgES5AlPIXY=
+
+Name: lib/packages/thresholdSelector.jar
+SHA-256-Digest: D8RU/rD+e3rMQvin22514fqIwzVHIuOAMRGMvmcwuds=
+
+Name: html/nodes/3cc20dc6.Decorate#V112015.html
+SHA-256-Digest: +9tO9kpwmIDHWnfX8JUy2ODGgE9s32wJZcGl2Q5mD9U=
+
+Name: html/nodes/141d54bd.FarthestFirst#V112015.html
+SHA-256-Digest: YPD9b0m6hleOLiCb6sm8yDspFBqU30yBgDUURKO54U0=
+
+Name: lib/packages/lazyBayesianRules.jar
+SHA-256-Digest: ebjMNkBlauSpcLqZdsay9eVxMLWVsQpwi2kPvDOl4rA=
+
+Name: html/nodes/22f6dcc8.DataNearBalancedND#V112015.html
+SHA-256-Digest: o65GOUmps3rnatsPLtTuwZpKn5mb7nRCuVJ7Dl/2FJw=
+
+Name: html/nodes/2584545f.LogitBoost#V112015.html
+SHA-256-Digest: lISCen+4zkq/p1aVtL+sUXP2QtoWWFl3CE935ldXZiE=
+
+Name: README.TXT
+SHA-256-Digest: tquuQKIvAGC6SR6aubRdMPO4o88efZoV/gi0ZxYkcog=
+
+Name: lib/packages/NNge.jar
+SHA-256-Digest: 996NvCG+O9yt31mOREt0FmaLhz0LqDpPsWnw4dbvg30=
+
+Name: html/nodes/7b12423b.FilteredClassifier#V112015.html
+SHA-256-Digest: moeGpagTNUjxgwku/erPY/ptK//T28dAH9khtqRhBvY=
+
+Name: html/nodes/6829463a.HierarchicalClusterer#V112015.html
+SHA-256-Digest: d7ZJcJ0fh1vtyasX8AJug9+WJqEu0lCeTnpxP6RYK8g=
+
+Name: html/nodes/16d5a3d6.WekaClassifierModelPortObjectReaderNodeFacto
+ ry.html
+SHA-256-Digest: rc/o0aAQb1iRip/E4FlvMaBaXd9kaUHaEAervbAXSrQ=
+
+Name: lib/packages/attributeSelectionSearchMethods.jar
+SHA-256-Digest: VnBtvsTbI0mcDfSEEZJX8FtL1zGt/B5AMz4UZsDeOWs=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_rules_car_car.xml
+SHA-256-Digest: wAgRTbODr9x+iIMZxzrhT+Pj+clUESDnGH4pG33k51k=
+
+Name: html/nodes/113c51a6.SMO#V112015.html
+SHA-256-Digest: w6CYjIA1OdEJdppe/Bgdb/KuukCWBI/d3xewOL1Rmjs=
+
+Name: lib/packages/paceRegression.jar
+SHA-256-Digest: fYPLsuVPvjfv9erPIHw8xelhtXJmdibt2AfjRVDrPBk=
+
+Name: html/nodes/7a0621f.LinearRegression#V112015.html
+SHA-256-Digest: fXJjM1ZDT/CE4TgKlOqPWEGjTKfEPFAdo03VmHvgpSI=
+
+Name: html/nodes/6cd53963.VFI#V112015.html
+SHA-256-Digest: aaGfPOMC7v8s/2EtWqCiAzPHK8FAxrRepGrjBHWVK+w=
+
+Name: icons/weka_splash_24.png
+SHA-256-Digest: ji/v6zTotAf15X//VckWIJ3CcwZWfvCLjsu1k4pO9ys=
+
+Name: html/nodes/2c3522c7.Logistic#V112015.html
+SHA-256-Digest: 2CeB523XC1ScdBhdmwemVR5MfNFBJfzOi1yWhWvC4kk=
+
+Name: lib/packages/classAssociationRules.jar
+SHA-256-Digest: YIqWXMaLvaojIJzY+l154iZNmUMg6lX95xigRrZZxyM=
+
+Name: html/nodes/68b1df5f.RandomForest#V112015.html
+SHA-256-Digest: t4/ZbkroqRYjc1eQ5g2Phudy9i5N+a+WDCRV2Cc3fmk=
+
+Name: lib/packages/optics_dbScan.jar
+SHA-256-Digest: G9hUzaQec+PbpzNvSU16Zyf4rGXXO3o9Hwug48/EWe4=
+
+Name: icons/weka.ico
+SHA-256-Digest: 9cTbl+f8dM9B75z7Ijdp5QXHjRU7PcX2A03QWaCj8ao=
+
+Name: lib/packages/CLOPE.jar
+SHA-256-Digest: m874gMXrbJXJCmKdZvxNnc2SJRbNnNXRX4IAIlJbAJY=
+
+Name: html/nodes/629452cc.JRip#V112015.html
+SHA-256-Digest: RXKVVh7iUY690v8E+qtQKo/Q84tw+u9ngvHo9oF4gqQ=
+
+Name: lib/packages/ensemblesOfNestedDichotomies.jar
+SHA-256-Digest: S/R8QpBetQHkfgmDqIY8bpECKQo1YHqdJqq1pDetkj4=
+
+Name: html/nodes/2078fa58.SelfOrganizingMap#V112015.html
+SHA-256-Digest: x3hBLZPibEB0hoI3UVfTOG8e0WtntsNLelcHFUWPrJ0=
+
+Name: html/nodes/47e368c4.IB1#V112015.html
+SHA-256-Digest: 8ylh7R0QeZoODTrkXkFtLLnR66z50lgCdujdQ2nFrkU=
+
+Name: html/nodes/5a15a518.GeneralizedSequentialPatterns#V112015.html
+SHA-256-Digest: SieLLmmhCGQZPUYoTEQrDeyJJ4hREKzZX1HW97DDNgk=
+
+Name: lib/packages/predictiveApriori.jar
+SHA-256-Digest: PRVftGGVHGGSvtQZduy4XCowST0XTYviX6aDfEwcEs4=
+
+Name: html/nodes/4df6f868.RotationForest#V112015.html
+SHA-256-Digest: rqx9vSgBLms+PR1v/bXQWNOPMFD7Q1goYWfQrVMwrXo=
+
+Name: html/nodes/53251188.FilteredClusterer#V112015.html
+SHA-256-Digest: Qn4/Nl+xlrNVXWYfOjRf133Wg+j0nrcnJo1rWF9kQ4M=
+
+Name: html/nodes/6aa2c415.LogisticBase#V112015.html
+SHA-256-Digest: Ka4VIb/i7bJxpr1cfWKsANDD0o34tET2pAguPlGnM8g=
+
+Name: lib/packages/hyperPipes.jar
+SHA-256-Digest: IVCR8/0xHLQ/pvTa9wbMsg6zhk9d1plPnbqBxJY7KUY=
+
+Name: lib/packages/DMNBtext.jar
+SHA-256-Digest: OZimd/O8bi4kdiyrxIg6Jf7bOFaTGfhQxIhDx/5Tr9M=
+
+Name: lib/packages/hiddenNaiveBayes.jar
+SHA-256-Digest: pK6Bye8392wrJpRcM5kmUF/94rc1I8qzUH7boSxapwg=
+
+Name: lib/packages/dagging.jar
+SHA-256-Digest: B1E+lnA3dENIIVf6mn2ISUonJJbtKgJfZH9MElmgy5I=
+
+Name: html/nodes/1bf6bc7e.LibSVM#V112015.html
+SHA-256-Digest: TC4buIt+1vB4D6sZ0FKyF/4UxMTcsmCDUSF6nfnIBhc=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_bayes_AveragedNDe
+ pendenceEstimators_AveragedNDependenceEstimators$nodes.xml
+SHA-256-Digest: r7f23mdkgAbQraH2BFa/3rQdLNDS2GsC6SPd2oT9JDU=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_misc.xml
+SHA-256-Digest: 0lMdNILpJtPvjb42oWJU8dDTRk8pWt9SKeMbHxjhuVQ=
+
+Name: lib/packages/rotationForest.jar
+SHA-256-Digest: Ca0rax2SKImQ3DrD59U+eIBsWeoGK4+913vaAf1e+iE=
+
+Name: icons/wekapredictor.png
+SHA-256-Digest: c0rfxhmfoLSZIYWNuvUstuPKcav0j5LE4V4e5eInv9I=
+
+Name: html/nodes/39941bca.WekaClustererModelPortObjectReaderNodeFactor
+ y.html
+SHA-256-Digest: ESdICdeqtUqJGaxTCxZs8dQaMgU76NLPiWn6lDO9TmY=
+
+Name: html/nodes/b0545af.Grading#V112015.html
+SHA-256-Digest: zjWVvfKRZJ+F8V9TXPP312ZuWQDr0VDcWM3mfa3fpyg=
+
+Name: html/nodes/fb336d.MultiClassClassifier#V112015.html
+SHA-256-Digest: f6X/Nh5rM+/l7hm3VzMVdAoZXdk5TYWIk3EZyTdBoiE=
+
+Name: lib/packages/dependencies/libsvm.jar
+SHA-256-Digest: bDD9V3GBLwBlYXP9zgVKA6N8BzfPbKxW7/euO3MRL1U=
+
+Name: html/nodes/425e7a64.M5Rules#V112015.html
+SHA-256-Digest: 8+ZYyiUyUdlCIUZ1xR7hIN7tiAZ3rnZAnBqLH8lI128=
+
+Name: html/nodes/102c905f.HyperPipes#V112015.html
+SHA-256-Digest: SbGI3GaVzrtKlvjQ/GdNVmUiQVjT+xFNvqPFS6z6wxo=
+
+Name: html/nodes/209b7102.IBk#V112015.html
+SHA-256-Digest: JV6vdqIOUfQSxkkDlJqMde1b4fgCH3l2IeKG03ti5kY=
+
+Name: tocs/analytics_mining_weka_weka3.7_associations$nodes.xml
+SHA-256-Digest: mfoOhSKMv+reBfQ0z13cldlu55oa+2+n5MK3D3vWNc4=
+
+Name: html/nodes/35002850.FLR#V112015.html
+SHA-256-Digest: 01eYWI5kpaq7nhkJH6682gpRv9rQrnP/qrA2PVhguZI=
+
+Name: html/nodes/47a790cb.BayesNetGenerator#V112015.html
+SHA-256-Digest: 36gRkRqX712+is4lMCNpGsMLiJTFfkZf3viykeQZEKg=
+
+Name: html/nodes/6d9b8def.ConjunctiveRule#V112015.html
+SHA-256-Digest: SSBzlpld+jMqcDAlUPJTCW+82InVlGoc8Wv4rpS6b4I=
+
+Name: html/nodes/1de1a560.Bagging#V112015.html
+SHA-256-Digest: B/YIIDYRJK2DfAMY8B1+t20c8i+zahkCEMq7EgpBGU4=
+
+Name: html/nodes/592557f8.ClassBalancedND#V112015.html
+SHA-256-Digest: EM8vLuhvoLOuvXKaPh5/WmG/OY/XpiWNzdAfh5rE+hU=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_lazy$nodes.xml
+SHA-256-Digest: EFp2CNjZveLcHc2/Lf1+yfhX8kj9LAAPGXWsVFNlWfE=
+
+Name: html/nodes/2e81c67e.A2DEUpdateable#V112015.html
+SHA-256-Digest: viBqn42qdw3iXDK+q3LNEfpn0cqpE/cyt4gO0neCFyM=
+
+Name: lib/packages/conjunctiveRule.jar
+SHA-256-Digest: Przj2zlXDcfFgp0+DYAaq/HXMf8rGjaKbXiHr8OFCFk=
+
+Name: html/nodes/14173f43.RegressionByDiscretization#V112015.html
+SHA-256-Digest: NUpjzEFmYLT2p9HaEw/ZDZWPytQaoiOwROUV76W+4fM=
+
+Name: html/nodes/78e3cfcd.FPGrowth#V112015.html
+SHA-256-Digest: BV4IPwNYYE0nzf47DdfiCANDPmwDGycK+taLAW/cVtE=
+
+Name: lib/packages/multiBoostAB.jar
+SHA-256-Digest: 7IXq3Gzu/hb0+TZCSY7inbNIGD0QUjEi7+SNEngP+QI=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_bayes.xml
+SHA-256-Digest: TND0Ks1wfBVTsXWERTZFT56zqtuNRpTg1j9SyA0jw9U=
+
+Name: html/nodes/1a734a00.Cobweb#V112015.html
+SHA-256-Digest: 6P0gED+ftQCCjBG0xn13ff471OnWz17qU/9WWQGOKm0=
+
+Name: html/nodes/21e8d0fd.A1DEUpdateable#V112015.html
+SHA-256-Digest: EXJesET6d77LfirPMwg1ahdq+WZFBVAIWqPwuZWugAA=
+
+Name: html/nodes/307698e9.SimpleKMeans#V112015.html
+SHA-256-Digest: /LbnQaq/eEo8U+zN+suZWMDZGSieBOD/DvXG9cz8g1Y=
+
+Name: html/nodes/4ac5a539.J48#V112015.html
+SHA-256-Digest: 9mTMj4NiEx/geiyGFqAE7ghRe+PpKKGRcjqCcOT3klM=
+
+Name: html/nodes/4c2a60d.GaussianProcesses#V112015.html
+SHA-256-Digest: 4TIEFlR5mdY7hqaqtuDENwXkdE0eM0lSSmvrgiwdjhw=
+
+Name: lib/packages/realAdaBoost.jar
+SHA-256-Digest: TveSjvacjpXdfxBpIlmFLDqCIFHY0HKHJ5BZrKYZylg=
+
+Name: html/nodes/22a788d4.sIB#V112015.html
+SHA-256-Digest: NIR59hZ1Q5M84FjqIijewYKJRs/rFUaSo0d4drGMxII=
+
+Name: lib/packages/fuzzyUnorderedRuleInduction.jar
+SHA-256-Digest: l9HqSJ1/6+algEZTgE6TdudBoz194WbcQQijaX0bsc8=
+
+Name: html/nodes/6a2ad0de.Dagging#V112015.html
+SHA-256-Digest: lX+KCSmktEjsHnWLN15+iqXtfm0DOjHoByRSj0uRY98=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_bayes_net_net$nod
+ es.xml
+SHA-256-Digest: sEB5z8M9C7Ev+0sFa8hl1mSIzgmZblnZ+hkSUQXZgM0=
+
+Name: lib/packages/ordinalLearningMethod.jar
+SHA-256-Digest: x9dbP8U8ZffLixBLbSIX3WfuHgIuDCyD9Wurlrx8wms=
+
+Name: html/nodes/7d21b7cd.RBFRegressor#V112015.html
+SHA-256-Digest: vQojcjjxYGiZjb6JE+7nLftWqsjjG2GmK7BiydinbDA=
+
+Name: tocs/analytics_mining_weka_weka3.7_predictors$nodes.xml
+SHA-256-Digest: CHhAN+BqRQeawvHoKqFXfAbAsU2e4cPh/IswCDVJsxU=
+
+Name: lib/packages/CHIRP.jar
+SHA-256-Digest: hSk3h6YXJtELMK+kFNWq6PCal2Tg1xdsYa0SXPblEP0=
+
+Name: html/nodes/8a50108.FURIA#V112015.html
+SHA-256-Digest: w7lyQLbPcN1Gv4Dx6G3Rm4o2H4HfI/p7kIy9yoFy9mM=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_bayes_net_net.xml
+SHA-256-Digest: WcDH43xvmFsFhdgHbziAeIljT/kN/TzDMdmC8/dLm7c=
+
+Name: html/nodes/5b11b38e.SPegasos#V112015.html
+SHA-256-Digest: OrYrygwAg901Dxs+9qrlJFPQDox9v/RNilagxi1T+1w=
+
+Name: html/nodes/246e5006.CHIRP#V112015.html
+SHA-256-Digest: lhmUVrvPCyrJwtCgDO5rTRzzVp5USMPe0Sjju2W6WbI=
+
+Name: html/nodes/4c63ac45.LAC#V112015.html
+SHA-256-Digest: N9HMLUsE+Qh09N9ITD4wtt1XkggJgg6iF/IOY6EMl60=
+
+Name: lib/packages/isotonicRegression.jar
+SHA-256-Digest: S/mVtM4jg+Eg1HEELRLVtBz4cJcj8kanfXy17smSHyk=
+
+Name: html/nodes/5374a082.ND#V112015.html
+SHA-256-Digest: a7WFNFImeC34t5FA+ox2n0MC7rGPmD+qpG7kDhu09mw=
+
+Name: LICENSE.TXT
+SHA-256-Digest: k1PxXn+3jtMmXVmr8fozAniiwiHr7enxGVZRE6dv9ZM=
+
+Name: lib/packages/votingFeatureIntervals.jar
+SHA-256-Digest: ZiAY2sq1QHSZ6cQ7tuya2GxIMOrRCfEejISWtI8Jmv0=
+
+Name: html/nodes/46e3268d.PaceRegression#V112015.html
+SHA-256-Digest: qscemVFjb3LcGhCSw5M8Y2VXIaryA0UsDXu007012cQ=
+
+Name: html/nodes/43e161a3.OLM#V112015.html
+SHA-256-Digest: 1wYbFkhEqlZ6yFVwMINTGprpZ7lKHkfDa4hsuEGnjVg=
+
+Name: html/nodes/66771b26.ClassificationViaRegression#V112015.html
+SHA-256-Digest: tRg0Pvs3j8JN2sEguUcqWrQlXPskYlbxjrPeHea3YuY=
+
+Name: html/nodes/42ea9290.RealAdaBoost#V112015.html
+SHA-256-Digest: M/H5J90xmdU56YHvF2yVkfeGd1haF1W2y6tirFgc1iE=
+
+Name: html/nodes/5fb56e28.RacedIncrementalLogitBoost#V112015.html
+SHA-256-Digest: dpBVnsRBuoZ9U764gCeZgFIHpWWVOUeCR4jxNbBZsFA=
+
+Name: html/nodes/21fba529.ZeroR#V112015.html
+SHA-256-Digest: PxqWyd9KqWJpPSMomDR8J4QKuOanAOFc4hboGPmkb7o=
+
+Name: html/nodes/847c0b.SimpleLogistic#V112015.html
+SHA-256-Digest: 0x4gVZGWnmalk25sD4UgZ8XL7HdREAzSTK6xN/GLOEE=
+
+Name: html/nodes/13d237fd.HotSpot#V112015.html
+SHA-256-Digest: RxmjgCVidQxNQfOjAWrMZ+t/PFlTMeebjLx9znVh7KA=
+
+Name: lib/packages/naiveBayesTree.jar
+SHA-256-Digest: SUfZNxIffW3ag562jDPF2jGM69LqMDnu8g0VZeD67Zw=
+
+Name: html/nodes/14f58b91.WeightedClassifier#V112015.html
+SHA-256-Digest: y70BdK/f5fUgWOBbwT4IFMU+x6XeIzVk/IPgo/Gv8Eg=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_functions.xml
+SHA-256-Digest: cINeORbg0pCras8KDOGQyUCM8FIeRzL4GS+QhiwRDq8=
+
+Name: icons/j45_small.ico
+SHA-256-Digest: OteP/QhcbM5eDMxjJFTEsNIVyY4Es5JOdQBFfPfuy3w=
+
+Name: lib/packages/hotSpot.jar
+SHA-256-Digest: K5mbBZCsTkHtoPEq/hnIvion5Bz/vmMq9sA6zYw7+l8=
+
+Name: tocs/analytics_mining_weka_weka3.7_clusterers.xml
+SHA-256-Digest: fd9vtxyq5EGsARjaXt/EQjfL0Ejs2Fyc2TeHxjzR8fo=
+
+Name: lib/packages/cascadeKMeans.jar
+SHA-256-Digest: OpjYkK7gMiPugC5n8O8U6IsRp51/s2Ck8uRfAAj6UJM=
+
+Name: lib/packages/classifierBasedAttributeSelection.jar
+SHA-256-Digest: EPeVgSdAE1kQ83NsiIYmIkgotDc5rWdB5unyyVXf6Go=
+
+Name: lib/packages/generalizedSequentialPatterns.jar
+SHA-256-Digest: T/m96ACOl8BWsqXcApQgpQUgW09oJX+x6owLzgjNs0g=
+
+Name: lib/packages/stackingC.jar
+SHA-256-Digest: 25NTZw6NjZRrRM5lQ1jpKC9gOcnaG9NrShmZcSXCtnk=
+
+Name: lib/packages/kernelLogisticRegression.jar
+SHA-256-Digest: 6Pkw1by6pytrmZIxvApeRIhCYQvUHSls5AakPpH14+I=
+
+Name: html/nodes/5181dfd0.MultiClassClassifierUpdateable#V112015.html
+SHA-256-Digest: fiQM+bxaLafYr/N9d6k3pDET9oO5+YVsKXyBRDNNnQ0=
+
+Name: html/nodes/3c7081bb.MultiScheme#V112015.html
+SHA-256-Digest: wUinLLEUwnAVLoWCMo2pWxIL5NtzWNdi3wIelA/Pjhk=
+
+Name: html/nodes/652c35c7.CostSensitiveClassifier#V112015.html
+SHA-256-Digest: 1LQsd4pWP6PAXP49nseYonIZuTlgN5sXm3eVyB4Z2+I=
+
+Name: lib/packages/raceSearch.jar
+SHA-256-Digest: mxxRPnJrw010coT7hTgJEfEICxLgetos/Xti5g7EI8o=
+
+Name: html/nodes/4ab4c25a.AdditiveRegression#V112015.html
+SHA-256-Digest: WyXd6RxoxUuIeTfyubJdMxoIqJBJTGIqfmkin7aLEdk=
+
+Name: html/nodes/f574353.Winnow#V112015.html
+SHA-256-Digest: P1Dd0q1RylUwxNTRcCQdIgGMa2habe0bPYRMZQwzKaQ=
+
+Name: html/nodes/232ed68f.NBTree#V112015.html
+SHA-256-Digest: Yevg1l/BlM26GEbS0nuVLnLbB8TmyIiPQKhebsFsZvk=
+
+Name: html/nodes/7e6aafef.PredictiveApriori#V112015.html
+SHA-256-Digest: t2u2vZBFLVzoJgCBQlkHx+r0a+QdmrSkOZEh/MQao1s=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_meta_nestedDichot
+ omies_nestedDichotomies.xml
+SHA-256-Digest: UsWiZQmuh5nZ3GiMb8GD48/sSvxvT64XcTVw6eUskRw=
+
+Name: lib/packages/decorate.jar
+SHA-256-Digest: iaVmJoVX+u+RwRamI6f2l1uaNn8cgPi6y6SKUpsj8jU=
+
+Name: html/nodes/5f1aabd7.OneR#V112015.html
+SHA-256-Digest: jrRgcVJaVCeZFAWhKUVHC+5kK9Z4xnIlOsOtgmF6ED0=
+
+Name: lib/packages/RBFNetwork.jar
+SHA-256-Digest: H8j8xKbCZcYJfkpEgRFoM9vhvKsqit6O9lYx1oDlZG4=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_trees.xml
+SHA-256-Digest: bKXAojqWlNmbgmh/NgJxANiaqsC18TM8GI+shJ5qSrM=
+
+Name: html/nodes/6c74f06b.SerializedClassifier#V112015.html
+SHA-256-Digest: 6FxcPC/BShGOukRNR5IchNUk6NqOztvXSVe2eS3S6ks=
+
+Name: html/nodes/703155ab.AttributeSelectedClassifier#V112015.html
+SHA-256-Digest: 6VmYdQqGCw0Fy6NuW6SDLs4+5uPBim1Y+mFQowmrP6g=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_rules.xml
+SHA-256-Digest: ECLWR3nkYlsXgeGdzEVVet+VJq9r7QAr8lRqibmlUmQ=
+
+Name: lib/packages/LibSVM.jar
+SHA-256-Digest: 2hnhjBkFYPKf/iIZHFaRX4yycGOZrKBOKl8juxHCPoE=
+
+Name: icons/weka_splash_48.png
+SHA-256-Digest: ncoNxHGyMRwppcPjyJIYI+FABzy7JjRLI9VlNzqMO6s=
+
+Name: html/nodes/12a03073.ClassificationViaClustering#V112015.html
+SHA-256-Digest: Cdwp6PIis3NWEytwXDotD8qO8OlURfXNCVrGo05lew4=
+
+Name: lib/packages/AnDE.jar
+SHA-256-Digest: JXK76wRM9lpJGyBTrjWb4FCJkWdq1UIiiLd04FYIywA=
+
+Name: html/nodes/1bb65700.EnsembleSelection#V112015.html
+SHA-256-Digest: sjVnEYvPRhzf9reI1nIvqQM4P+p8xdP+ayg5Xvgphxk=
+
+Name: html/nodes/3589fbe7.VotedPerceptron#V112015.html
+SHA-256-Digest: wKsG2AC1kgzUwlHjuj8P8qgZW8Rlh+q2sexO/GycegA=
+
+Name: lib/packages/classificationViaClustering.jar
+SHA-256-Digest: Jl1vNMV0NQwdSU0o4qP/Mz0nqOCz94TB0NQPJ5uM38A=
+
+Name: lib/packages/DTNB.jar
+SHA-256-Digest: D47tsSP5MvRnYLS/NK3JieW+lOWri9SKqrQ5nTkuGmY=
+
+Name: lib/packages/LVQ.jar
+SHA-256-Digest: gyi/UsC5OGc8z+BQ37dAY8J392sDzxBYftu7NMfK0NM=
+
+Name: html/nodes/747272f1.LVQ#V112015.html
+SHA-256-Digest: aHdaRMKDOOjZJskR/TIItK9zMyA7qv1/D3SYAAweve0=
+
+Name: html/nodes/3fa4b316.EM#V112015.html
+SHA-256-Digest: IKfUTVJSOHEDJJdo4X/dkkYdJ/AIaJo8dJZGH0TQf9Q=
+
+Name: html/nodes/51341c68.XMeans#V112015.html
+SHA-256-Digest: T4j8WznpsqYJrvJuSEKD6V3DXGLTayuLrsXhvGID8vk=
+
+Name: lib/packages/sequentialInformationalBottleneckClusterer.jar
+SHA-256-Digest: p2e94m1Y9KjQDkkMD3rhyXJzCSRFOdpjprxbMlkITP8=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_trees$nodes.xml
+SHA-256-Digest: 4xC8kJ8c7zL7m12OfbdLhat2lIUNT1ypHYTaqfPK24Q=
+
+Name: html/nodes/293eb06e.Prism#V112015.html
+SHA-256-Digest: RsSsvHF7JDYRn8zM3rBWAsgDxbgnknZzMWoZe2lnSHo=
+
+Name: html/nodes/5e499935.OrdinalClassClassifier#V112015.html
+SHA-256-Digest: /Ttm8AMctDUcW37zo/VLIlAAVaTTvAZ1NQfXnpNQSY4=
+
+Name: html/nodes/140f98f6.ClusterAssignerNodeFactory.html
+SHA-256-Digest: Tq1ORz23qVHVNeINmf+NVENmGkF+ApFNJH/HVveO510=
+
+Name: html/nodes/35f51e8e.Apriori#V112015.html
+SHA-256-Digest: fXkIRVj6suhZOFbt7DK/crflxsyYNMT6mrLC+vVBkmE=
+
+Name: html/nodes/3bc22eb7.KernelLogisticRegression#V112015.html
+SHA-256-Digest: 8qsE4oKLrXwfIpnG0lV1Pt/mSXt/RF0zj0we7bfPnjo=
+
+Name: html/nodes/75119af7.KStar#V112015.html
+SHA-256-Digest: DrfhAGv9DpEd6eIzuAd1Q++w4gc73cnX56XZj5hcllc=
+
+Name: html/nodes/2cdf9287.Stacking#V112015.html
+SHA-256-Digest: aXVi+KtF8Dask2UABfNjei8jPL+JCVKF3w269YNQtzY=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_meta.xml
+SHA-256-Digest: lkL96lNTRZ8FgZ4z3pSMXEWDAyJdllBuCVTuqe1WNpE=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_lazy.xml
+SHA-256-Digest: uopXXPfJXf00NyuyrQZ9g9Fwfn3re30RJdTZ0jnSqkA=
+
+Name: html/nodes/2532777.RandomCommittee#V112015.html
+SHA-256-Digest: KpoImZzCueYlV5JUXOb4FbpvDYf0JxtgmxVy9D37j0M=
+
+Name: icons/weka_splash_32.png
+SHA-256-Digest: dzJOS6hYssWUzoDDqh269Uey7/FL8WLlmTpxL2VvAzc=
+
+Name: html/nodes/140509b6.RandomSubSpace#V112015.html
+SHA-256-Digest: Yknz8FfHwyjy6lmxrEnvMZ6Ifk50pX7O1ehTRWv/PNk=
+
+Name: html/nodes/1719968f.NaiveBayes#V112015.html
+SHA-256-Digest: kBVGTLjTPjaU9gkSstUDnw683XJOZcFzrb06mM9GlK4=
+
+Name: tocs/analytics_mining_weka_weka3.7_clusterers$nodes.xml
+SHA-256-Digest: 8wKnhsG9ntgdXUtZfTZiLn3PWIPxm1DeCVX+VZP3Qy0=
+
+Name: html/nodes/50fb1a85.HoeffdingTree#V112015.html
+SHA-256-Digest: W4MvGH4PxF3xp8WeJnwNe/rTkPIafvAXskMvdqfUwoM=
+
+Name: html/nodes/1cf3c73f.NaiveBayesMultinomialUpdateable#V112015.html
+SHA-256-Digest: fQdcsMJR6j6nWHglWHSa9rmvIsFyk9TzndxWMhKSWS0=
+
+Name: lib/packages/dependencies/liblinear-1.92.jar
+SHA-256-Digest: VdRbVxXYnMz4QDPxZJ5Yz0m+dzRiPYSlVtkvQFrBF3s=
+
+Name: html/nodes/19bb8a05.NNge#V112015.html
+SHA-256-Digest: WBHWSABp9lu6V8iV8rv0Q7oRJ8WC3U28UN1pRt+74BM=
+
+Name: html/nodes/9d7085f.DTNB#V112015.html
+SHA-256-Digest: Ye99KNvve4g4XAVpfkO49eDlbuRVk3lRg8/W8vvviGU=
+
+Name: html/nodes/775cff8.SMOreg#V112015.html
+SHA-256-Digest: AIg9CDD62z131LaaeDoZSRelVPmgF42VQ9686ga3WDc=
+
+Name: html/nodes/5db0d260.OneClassClassifier#V112015.html
+SHA-256-Digest: TqvAbyFrMoxvfofxk7J6Vvr+Ge6ZEuksqBgsZgWA4HM=
+
+Name: html/nodes/12b6b5c3.CLOPE#V112015.html
+SHA-256-Digest: gRzxkAu6H4urdV8g1Y0Q/n89iTYbn4i5vswBXBudOrI=
+
+Name: lib/packages/functionalTrees.jar
+SHA-256-Digest: kmi+HOvxvxXIl4Rt5UX4Y4Pa5pyGPvyREmF7fzFlW/s=
+
+Name: html/nodes/5a730391.JCBA#V112015.html
+SHA-256-Digest: WOv/zMWfrWOb/wlvcfkknZ70E56d/lVA0hwtXDG5y4A=
+
+Name: html/nodes/2b54e8aa.IsolationForest#V112015.html
+SHA-256-Digest: huyGfCJiv3aC1eKvXF5tKlkdXx6Zk52cGyJ85YiyjlE=
+
+Name: html/nodes/121b634a.EditableBayesNet#V112015.html
+SHA-256-Digest: Ks8PYZTAcMOdL9CLXaqF4tWymmm9pkoemlmgaaWI0PQ=
+
+Name: html/nodes/639ae6ea.MakeDensityBasedClusterer#V112015.html
+SHA-256-Digest: y+ieo7sIwJMumjipiqeisFNTqt4/3PGw0oFYYc/BYlg=
+
+Name: html/nodes/721e21b1.CascadeSimpleKMeans#V112015.html
+SHA-256-Digest: AI5+W9VDS3jyyzaQCpSxV1hY1xAEKdPlWvS0sL4iA8Y=
+
+Name: lib/packages/LibLINEAR.jar
+SHA-256-Digest: p106ICrybaoN1/TRUf9fb6RdyzM1uImxHsJpxWv4i28=
+
+Name: html/nodes/17796ee1.NaiveBayesSimple#V112015.html
+SHA-256-Digest: TPVHwRXAfZEXTJrJcfejZwrm/lJs14QuiS8GpKwT+1o=
+
+Name: html/nodes/71337716.AdaBoostM1#V112015.html
+SHA-256-Digest: 4fEOBnEBDlcSCrYTOYmlOo6bjHYjx4kHfXOadhathoQ=
+
+Name: lib/packages/SelfOrganizingMap.jar
+SHA-256-Digest: 3VjIt+jC5Qdz8j+bhMgCa9g/ywNqUQnMkVClLqCKlAQ=
+
+Name: html/nodes/19e3515a.REPTree#V112015.html
+SHA-256-Digest: rW+AyVJB+AAm9Qb7rHv0P6O/9MKtb0x57/7bcDFhccQ=
+
+Name: html/nodes/747c23d2.SGDText#V112015.html
+SHA-256-Digest: TrBUhbmCDthuZTcYCqLiUlKdtMrk3zJJVzUxhqTF/h8=
+
+Name: html/nodes/4c96c2e0.RandomTree#V112015.html
+SHA-256-Digest: +IG/L/+iClTsQkmd/4Xp77KPVHGhAHJAqsPlIVH+Ev8=
+
+Name: lib/packages/SparseGenerativeModel.jar
+SHA-256-Digest: ld5TifvrSWROZF8rQNWNweJZ9SogXR+Y3AUVKX8c8Rg=
+
+Name: lib/packages/simpleCART.jar
+SHA-256-Digest: JaDo4gugWrheFpCew7jkNesE0OohcEbNsAFwhLHuD8I=
+
+Name: lib/packages/complementNaiveBayes.jar
+SHA-256-Digest: AivvULsspILu1Lzwkl84j3Ab9XXvGomzi3l7G6rNfuw=
+
+Name: html/nodes/301cf961.SparseGenerativeModel#V112015.html
+SHA-256-Digest: 4z/kSTJdRaS3jxvROnQyXvsH3PNVQPAzoXvhujcXWdk=
+
+Name: html/nodes/547b147e.Tertius#V112015.html
+SHA-256-Digest: Bbxajl1EzIrYM2UCPs6tXnMYQ/3y7pLdv3u+JFpvqOo=
+
+Name: html/nodes/1000e6e9.Vote#V112015.html
+SHA-256-Digest: bY9/4jfPHcdQekA19Cdm5Z/2KnTUuKe5IpE8hcHRrhg=
+
+Name: lib/packages/XMeans.jar
+SHA-256-Digest: aeHEWwRkgXxR/BwkLIg8VKW4bN9HSELLe918isluY1M=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers.xml
+SHA-256-Digest: 0bQEfNZIYPQnljVybvoK6XSSvSHm6HKLDtJmczAj6qo=
+
+Name: html/nodes/2783c34f.BIFReader#V112015.html
+SHA-256-Digest: wAKAMGo90Cgnq4cLHchryUIlFjTtZiLhCSX/M8bkqnM=
+
+Name: html/nodes/132cea7f.BayesNet#V112015.html
+SHA-256-Digest: vxHmolQcRT6Gd3lmkj1nRecC1OGlslpL8g+ryqWyhio=
+
+Name: html/nodes/36f75782.IsotonicRegression#V112015.html
+SHA-256-Digest: MeA2qZUzDWtCOib5hSu6eKGOZk5LHzy02ea0e2DrdOM=
+
+Name: html/nodes/29fa6209.NaiveBayesMultinomialText#V112015.html
+SHA-256-Digest: LIuYk08EltNK7SmcGv+pLgtwEfQSvOXScuxq56lSW/U=
+
+Name: html/nodes/7c86f9b0.PART#V112015.html
+SHA-256-Digest: DjfrbAj/eIfsnAB1yHOkmeKPvq0/EwTyeJgsqVYNUyQ=
+
+Name: knime-weka-37.jar
+SHA-256-Digest: 8Sjv1mT19gAelUDkFyyUeAoMWRXChvPE6aFie1TKrG8=
+
+Name: html/nodes/47ff0ef1.SimpleLinearRegression#V112015.html
+SHA-256-Digest: uV6qFFOn2we19Gdd3arng+yteG4LO62zvZ49uPqGMOY=
+
+Name: lib/packages/ordinalClassClassifier.jar
+SHA-256-Digest: SYxRIeXaZYe5zEMfaNfdp/SQcU15MxQrSTEFTATuL84=
+
+Name: html/nodes/7078f03d.CVParameterSelection#V112015.html
+SHA-256-Digest: nOn0JGm7lposWdaC6hZ8bUICm31ZECIo+bpDG/HmemU=
+
+Name: html/nodes/2363d028.LBR#V112015.html
+SHA-256-Digest: 44l/4Ku7s042c8Kbbh+aCamPXGJowjXS/N2DlEdMuKA=
+
+Name: html/nodes/1bd8694d.M5P#V112015.html
+SHA-256-Digest: r5fL45/ZuTGnEwcEc0nZjt015eifQ+eLAUPf5/Nh1+g=
+
+Name: html/nodes/a5a5958.END#V112015.html
+SHA-256-Digest: UYKE8nkYI3cjWJj+v2VYC1piTEoj1K+cCpn3sKlb3dw=
+
+Name: tocs/analytics_mining_weka_weka3.7_classifiers_meta_nestedDichot
+ omies_nestedDichotomies$nodes.xml
+SHA-256-Digest: Onryha4gplQZkFCPP03RASLDTeIjPezQVW88DT9LHbM=
+
+Name: html/nodes/742670a6.DecisionStump#V112015.html
+SHA-256-Digest: nanhF3vqs3X3RrGAj20gNzlP27VtljU6+vuY6Lp4mNs=
+
+Name: html/nodes/6825fc33.FT#V112015.html
+SHA-256-Digest: UoqcWdJZTYr6XPZS9tNcl4vrsU/3MsA9BfM894yMT8Q=
+
+Name: html/nodes/21fe0feb.J48graft#V112015.html
+SHA-256-Digest: 02djoSb3bdiSWoI4RCTWru/pxN74Gj7gOZv0tiIkAaM=
+
+Name: lib/packages/ensembleLibrary.jar
+SHA-256-Digest: GLukL1EGU/LEo/d7Bgc6r7+mQXBwbSuKQCIqi1hAn8Y=
+
+Name: lib/weka.jar
+SHA-256-Digest: CpWv1GYGspYDY03Ig8+tGOZZeMYOEGzmIfN0hH/cjUg=
+
+Name: html/nodes/55f4ace1.MultilayerPerceptron#V112015.html
+SHA-256-Digest: 6fQUMICjm906Tjz8kxf2sE8ErBVUpl1iRO6UD2TvGwQ=
+
+Name: html/nodes/30d4913c.NaiveBayesMultinomial#V112015.html
+SHA-256-Digest: dQ4v5EW5e/US2lSzfTjpYWv57M9bX1+RkpcnkdGr2dc=
+
+Name: lib/packages/bayesianLogisticRegression.jar
+SHA-256-Digest: X4LuETvIAZuQFHU5pdoEx8aB4/O+labfW+qu5HH3K1k=
+
+Name: html/nodes/61b002bd.Id3#V112015.html
+SHA-256-Digest: MG7kKllerU6dUGoINfKLEhndkqCxOCn7/BzpcEtKc1E=
+
+Name: lib/packages/J48graft.jar
+SHA-256-Digest: 0hl7F4hAc0t41VihMPkbqdC2luGV7XIM8zUBcU5C83s=
+
+Name: lib/packages/isolationForest.jar
+SHA-256-Digest: B/DPEZTqVsCtt7zPWXUavgv+oWXGpi7/29eKNXTjPjc=
+
+Name: lib/packages/racedIncrementalLogitBoost.jar
+SHA-256-Digest: ST2CC6AscEFjgUQ/RKHEu8H9QPl9mdKH/pNORS67S/M=
+
+Name: lib/packages/tertius.jar
+SHA-256-Digest: FzLYAV0PJL+o/UKFw6ta1QRhh/16Bmw3qT0fpPKGNc0=
+

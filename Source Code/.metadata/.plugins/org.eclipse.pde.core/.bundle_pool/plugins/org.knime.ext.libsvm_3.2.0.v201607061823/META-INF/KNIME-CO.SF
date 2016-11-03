@@ -1,0 +1,36 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: JHi6SwaRFvnjI5vWHt99zkg+wvUuX
+ puefFXXyXkt5S4=
+SHA-256-Digest-Manifest: Ffr5y+J4Bn4GPnVhhpmur8Nxt6ueYCzG1Ht0qJK8ko0=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: icons/missing.gif
+SHA-256-Digest: cJEnkpuFCnhkrt/2IRSK8vPDXeZPhgFMPdmqRFwqbXk=
+
+Name: lib/libsvm.jar
+SHA-256-Digest: QZsrQKzuU7sgP0mj8M7agDhVCldPMbhemI1VHPgGyw8=
+
+Name: plugin.xml
+SHA-256-Digest: nXbi4GWklwjyJY1+i5vtuZKmU84PWjgGLjW4eIIVDiY=
+
+Name: tocs/analytics_mining_svm_libsvm.xml
+SHA-256-Digest: XZl9pvGZhicqENo/TSWv19ky3V98fUzCLwId3aw6R9U=
+
+Name: LICENSE.txt
+SHA-256-Digest: AINBnlxD6j1hoUJCdbqJDDXIUInSr72BED0xfnoxdrY=
+
+Name: LIBSVM_LICENSE.txt
+SHA-256-Digest: ztHC0v8fYMb/dsosm3ICRrtv8HQ+wRFl/tOkwZ9z+28=
+
+Name: html/nodes/226a18c5.LIBSVMLearnerNodeFactory.html
+SHA-256-Digest: KvU/SU/WMqsYz3W27MPTXApfUSG1vFhoR9baV0+7w8Q=
+
+Name: knime-libsvmlearner.jar
+SHA-256-Digest: NC+vRwSUjqbrx1lVEo/zQBmJS/3YnNRcoJPG/8BKGvY=
+
+Name: tocs/analytics_mining_svm_libsvm$nodes.xml
+SHA-256-Digest: oWJpszGpsDiKqm5NXIlLJrp3PZSSahe5Zm+VUP3Uaw4=
+
+Name: html/nodes/16c79ce5.LIBSVMPredictorNodeFactory.html
+SHA-256-Digest: RXRYDvE4s6UtqEgdNfmBfhdJ62k6QkeZKmDBqYWMSuw=
+

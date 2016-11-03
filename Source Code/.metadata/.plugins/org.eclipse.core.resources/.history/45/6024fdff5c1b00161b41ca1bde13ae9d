@@ -1,0 +1,148 @@
+import java.util.List;
+import java.util.ArrayList;
+
+public class BNL {
+
+	private final int wSize;
+	private final int numDims;
+
+	private int countIn;
+	private int countOut;
+
+	private ArrayList<DataPoint> window;
+	private ArrayList<DataPoint> points;
+	private ArrayList<DataPoint> tmpFile;
+	private ArrayList<DataPoint> input;
+	private ArrayList<DataPoint> output;
+
+	/**
+	 * Block Nested Loop Algorithm
+	 * 
+	 * @param wSize
+	 *            maximum size of the window
+	 * @param numDims
+	 *            the number of dimensions of the points which will be added
+	 */
+	public BNL(int wSize, int numDims) {
+		assert (wSize > 0 && numDims > 0);
+		this.wSize = wSize;
+		this.numDims = numDims;
+		points = new ArrayList<>();
+	}
+
+	public void addPoint(float[] point) {
+		assert (point.length == numDims);
+		points.add(new DataPoint(point,0));
+	}
+
+	public void computeSky() {
+		initialize();
+		scanDatabase();
+		//flushMemory();
+		
+		for(DataPoint p: output){
+			System.out.println(p);
+		}
+	}
+
+	private void initialize() {
+		input = points;
+		tmpFile = new ArrayList<>();
+		window = new ArrayList<>();
+		output = new ArrayList<>();
+		countIn = 0;
+		countOut = 0;
+	}
+
+	private void scanDatabase() {
+		while (input.size() != 0) {
+			
+			for (DataPoint p : window) {
+				if(p.getTimestamp() == countIn){
+					output.add(p);
+					window.remove(p);
+				}
+			}
+			
+			DataPoint p = input.get(0);
+			p.setTimestamp(countOut);
+			countIn++;
+			
+			
+			for (DataPoint q : window) {
+				System.out.println("Hallo!");
+				if(q!=p){
+					if(dominates(q.getCoordinates(),p.getCoordinates())){
+						input.remove(p);
+						break;
+					}else if(dominates(p.getCoordinates(),q.getCoordinates())){
+						window.remove(q);
+					}
+				}
+				if(window.size() >= wSize){
+					tmpFile.add(p);
+					input.remove(p);
+					countOut++;
+				}
+			}
+			
+			if(input.size() == 0){
+				input = tmpFile;
+				tmpFile = new ArrayList<>();
+				countIn = 0;
+				countOut = 0;
+			}
+		}
+	}
+
+	private void flushMemory() {
+		for (DataPoint p : window) {
+			output.add(p);
+			window.remove(p);
+		}
+	}
+
+	private boolean dominates(float[] a, float[] b) {
+		int domDims = 0;
+		for (int i = 0; i < numDims; i++) {
+			if (a[i] < b[i]) {
+				domDims += 2;
+			} else if (a[i] == b[i]) {
+				domDims++;
+			}
+		}
+		if (domDims > numDims) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	private class DataPoint {
+		
+		private float[] coords;
+		private int timestamp;
+		
+		private DataPoint(float[] coords, int timestamp){
+			assert (coords.length == numDims);
+			this.coords = coords;
+			this.timestamp = timestamp;
+		}
+		
+		public float[] getCoordinates(){
+			return coords;
+		}
+		
+		public void setCoordinates(float[] coords){
+			this.coords = coords;
+		}
+		
+		public int getTimestamp(){
+			return timestamp;
+		}
+		
+		public void setTimestamp(int timestamp){
+			this.timestamp = timestamp;
+		}
+	}
+}

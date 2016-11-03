@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="File" link_to="../org.knime.network.base/tocs/applications_network_io_file.xml#applications_network_io_file">
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/58817471.BeefFileReaderNodeFactory.html" label="BeeF Reader"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/529a232c.NetworkReaderNodeFactory.html" label="Network Reader"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/febe3cc.NetworkWriterNodeFactory.html" label="Network Writer"/>
+</toc>

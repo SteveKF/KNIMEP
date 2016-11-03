@@ -1,0 +1,317 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.6
+Bundle-SymbolicName: org.apache.cxf;singleton:=true
+Export-Package: com.sun.xml.bind,com.sun.xml.bind.api,com.sun.xml.bind
+ .v2,com.sun.xml.bind.v2.bytecode,com.sun.xml.bind.v2.model.annotation
+ ,com.sun.xml.bind.v2.model.core,com.sun.xml.bind.v2.model.impl,com.su
+ n.xml.bind.v2.model.nav,com.sun.xml.bind.v2.model.runtime,com.sun.xml
+ .bind.v2.runtime,com.sun.xml.bind.v2.runtime.output,com.sun.xml.bind.
+ v2.runtime.property,com.sun.xml.bind.v2.runtime.reflect,com.sun.xml.b
+ ind.v2.runtime.reflect.opt,com.sun.xml.bind.v2.runtime.unmarshaller,c
+ om.sun.xml.bind.v2.schemagen,com.sun.xml.bind.v2.schemagen.episode,co
+ m.sun.xml.bind.v2.schemagen.xmlschema,com.sun.xml.bind.v2.util,javax.
+ wsdl,org.apache.cxf,org.apache.cxf.aegis,org.apache.cxf.aegis.databin
+ ding,org.apache.cxf.aegis.type,org.apache.cxf.aegis.type.basic,org.ap
+ ache.cxf.aegis.type.collection,org.apache.cxf.aegis.type.encoded,org.
+ apache.cxf.aegis.type.java5,org.apache.cxf.aegis.type.mtom,org.apache
+ .cxf.aegis.type.xml,org.apache.cxf.aegis.util,org.apache.cxf.aegis.ut
+ il.date,org.apache.cxf.aegis.util.jdom,org.apache.cxf.aegis.util.stax
+ ,org.apache.cxf.aegis.xml,org.apache.cxf.aegis.xml.jdom,org.apache.cx
+ f.aegis.xml.stax,org.apache.cxf.annotations,org.apache.cxf.attachment
+ ,org.apache.cxf.binding,org.apache.cxf.binding.coloc,org.apache.cxf.b
+ inding.coloc.blueprint,org.apache.cxf.binding.coloc.feature,org.apach
+ e.cxf.binding.coloc.spring,org.apache.cxf.binding.corba,org.apache.cx
+ f.binding.corba.interceptors,org.apache.cxf.binding.corba.runtime,org
+ .apache.cxf.binding.corba.types,org.apache.cxf.binding.corba.utils,or
+ g.apache.cxf.binding.corba.wsdl,org.apache.cxf.binding.object,org.apa
+ che.cxf.binding.object.blueprint,org.apache.cxf.binding.object.spring
+ ,org.apache.cxf.binding.soap,org.apache.cxf.binding.soap.blueprint,or
+ g.apache.cxf.binding.soap.interceptor,org.apache.cxf.binding.soap.jms
+ .interceptor,org.apache.cxf.binding.soap.model,org.apache.cxf.binding
+ .soap.saaj,org.apache.cxf.binding.soap.spring,org.apache.cxf.binding.
+ soap.tcp,org.apache.cxf.binding.soap.tcp.frames,org.apache.cxf.bindin
+ g.soap.wsdl.extensions,org.apache.cxf.binding.soap.wsdl11,org.apache.
+ cxf.binding.xml,org.apache.cxf.binding.xml.interceptor,org.apache.cxf
+ .binding.xml.wsdl11,org.apache.cxf.bindings.xformat,org.apache.cxf.bu
+ s,org.apache.cxf.bus.blueprint,org.apache.cxf.bus.extension,org.apach
+ e.cxf.bus.managers,org.apache.cxf.bus.osgi,org.apache.cxf.bus.resourc
+ e,org.apache.cxf.bus.spring,org.apache.cxf.buslifecycle,org.apache.cx
+ f.catalog,org.apache.cxf.clustering,org.apache.cxf.clustering.bluepri
+ nt,org.apache.cxf.clustering.spring,org.apache.cxf.common,org.apache.
+ cxf.common.annotation,org.apache.cxf.common.classloader,org.apache.cx
+ f.common.commands,org.apache.cxf.common.i18n,org.apache.cxf.common.in
+ jection,org.apache.cxf.common.jaxb,org.apache.cxf.common.logging,org.
+ apache.cxf.common.security,org.apache.cxf.common.util,org.apache.cxf.
+ common.xmlschema,org.apache.cxf.configuration,org.apache.cxf.configur
+ ation.blueprint,org.apache.cxf.configuration.jsse,org.apache.cxf.conf
+ iguration.security,org.apache.cxf.configuration.spring,org.apache.cxf
+ .continuations,org.apache.cxf.databinding,org.apache.cxf.databinding.
+ source,org.apache.cxf.databinding.source.mime,org.apache.cxf.databind
+ ing.stax,org.apache.cxf.endpoint,org.apache.cxf.endpoint.dynamic,org.
+ apache.cxf.extension,org.apache.cxf.feature,org.apache.cxf.feature.tr
+ ansform,org.apache.cxf.feature.validation,org.apache.cxf.frontend,org
+ .apache.cxf.frontend.blueprint,org.apache.cxf.frontend.spring,org.apa
+ che.cxf.headers,org.apache.cxf.helpers,org.apache.cxf.interceptor,org
+ .apache.cxf.interceptor.security,org.apache.cxf.interceptor.transform
+ ,org.apache.cxf.internal,org.apache.cxf.io,org.apache.cxf.javascript,
+ org.apache.cxf.javascript.service,org.apache.cxf.javascript.types,org
+ .apache.cxf.jaxb,org.apache.cxf.jaxb.attachment,org.apache.cxf.jaxb.i
+ o,org.apache.cxf.jaxrs,org.apache.cxf.jaxrs.blueprint,org.apache.cxf.
+ jaxrs.client,org.apache.cxf.jaxrs.client.spec,org.apache.cxf.jaxrs.ex
+ t,org.apache.cxf.jaxrs.ext.form,org.apache.cxf.jaxrs.ext.multipart,or
+ g.apache.cxf.jaxrs.ext.search,org.apache.cxf.jaxrs.ext.search.client,
+ org.apache.cxf.jaxrs.ext.search.collections,org.apache.cxf.jaxrs.ext.
+ search.fiql,org.apache.cxf.jaxrs.ext.search.jpa,org.apache.cxf.jaxrs.
+ ext.search.ldap,org.apache.cxf.jaxrs.ext.search.lucene,org.apache.cxf
+ .jaxrs.ext.search.sql,org.apache.cxf.jaxrs.ext.search.visitor,org.apa
+ che.cxf.jaxrs.ext.xml,org.apache.cxf.jaxrs.impl,org.apache.cxf.jaxrs.
+ impl.tl,org.apache.cxf.jaxrs.interceptor,org.apache.cxf.jaxrs.lifecyc
+ le,org.apache.cxf.jaxrs.model,org.apache.cxf.jaxrs.model.wadl,org.apa
+ che.cxf.jaxrs.provider,org.apache.cxf.jaxrs.provider.aegis,org.apache
+ .cxf.jaxrs.provider.atom,org.apache.cxf.jaxrs.provider.dom4j,org.apac
+ he.cxf.jaxrs.provider.json,org.apache.cxf.jaxrs.provider.json.utils,o
+ rg.apache.cxf.jaxrs.provider.jsonp,org.apache.cxf.jaxrs.provider.xmlb
+ eans,org.apache.cxf.jaxrs.security,org.apache.cxf.jaxrs.servlet,org.a
+ pache.cxf.jaxrs.spring,org.apache.cxf.jaxrs.utils,org.apache.cxf.jaxr
+ s.utils.multipart,org.apache.cxf.jaxrs.utils.schemas,org.apache.cxf.j
+ axws,org.apache.cxf.jaxws.binding,org.apache.cxf.jaxws.binding.http,o
+ rg.apache.cxf.jaxws.binding.soap,org.apache.cxf.jaxws.blueprint,org.a
+ pache.cxf.jaxws.context,org.apache.cxf.jaxws.endpoint.dynamic,org.apa
+ che.cxf.jaxws.handler,org.apache.cxf.jaxws.handler.logical,org.apache
+ .cxf.jaxws.handler.soap,org.apache.cxf.jaxws.interceptors,org.apache.
+ cxf.jaxws.javaee,org.apache.cxf.jaxws.spi,org.apache.cxf.jaxws.spring
+ ,org.apache.cxf.jaxws.support,org.apache.cxf.jaxws22,org.apache.cxf.j
+ axws22.spi,org.apache.cxf.jaxws22.spring,org.apache.cxf.jibx,org.apac
+ he.cxf.jibx.tools,org.apache.cxf.js.rhino,org.apache.cxf.logging,org.
+ apache.cxf.management,org.apache.cxf.management.annotation,org.apache
+ .cxf.management.counters,org.apache.cxf.management.interceptor,org.ap
+ ache.cxf.management.jmx,org.apache.cxf.management.jmx.export.runtime,
+ org.apache.cxf.management.jmx.type,org.apache.cxf.management.persiste
+ nce,org.apache.cxf.management.utils,org.apache.cxf.message,org.apache
+ .cxf.phase,org.apache.cxf.policy,org.apache.cxf.resource,org.apache.c
+ xf.rs.security.common,org.apache.cxf.rs.security.cors,org.apache.cxf.
+ rs.security.oauth.client,org.apache.cxf.rs.security.oauth.data,org.ap
+ ache.cxf.rs.security.oauth.filters,org.apache.cxf.rs.security.oauth.p
+ rovider,org.apache.cxf.rs.security.oauth.services,org.apache.cxf.rs.s
+ ecurity.oauth.utils,org.apache.cxf.rs.security.oauth2.client,org.apac
+ he.cxf.rs.security.oauth2.common,org.apache.cxf.rs.security.oauth2.fi
+ lters,org.apache.cxf.rs.security.oauth2.grants,org.apache.cxf.rs.secu
+ rity.oauth2.grants.clientcred,org.apache.cxf.rs.security.oauth2.grant
+ s.code,org.apache.cxf.rs.security.oauth2.grants.owner,org.apache.cxf.
+ rs.security.oauth2.grants.refresh,org.apache.cxf.rs.security.oauth2.p
+ rovider,org.apache.cxf.rs.security.oauth2.services,org.apache.cxf.rs.
+ security.oauth2.tokens.bearer,org.apache.cxf.rs.security.oauth2.token
+ s.mac,org.apache.cxf.rs.security.oauth2.tokens.refresh,org.apache.cxf
+ .rs.security.oauth2.utils,org.apache.cxf.rs.security.saml,org.apache.
+ cxf.rs.security.saml.assertion,org.apache.cxf.rs.security.saml.author
+ ization,org.apache.cxf.rs.security.xml,org.apache.cxf.rt.security.xac
+ ml,org.apache.cxf.sdo,org.apache.cxf.sdo.tools,org.apache.cxf.securit
+ y,org.apache.cxf.security.claims.authorization,org.apache.cxf.securit
+ y.transport,org.apache.cxf.service,org.apache.cxf.service.factory,org
+ .apache.cxf.service.invoker,org.apache.cxf.service.model,org.apache.c
+ xf.simple,org.apache.cxf.staxutils,org.apache.cxf.staxutils.transform
+ ,org.apache.cxf.test,org.apache.cxf.tools.common,org.apache.cxf.tools
+ .common.dom,org.apache.cxf.tools.common.model,org.apache.cxf.tools.co
+ mmon.toolspec,org.apache.cxf.tools.common.toolspec.parser,org.apache.
+ cxf.tools.corba,org.apache.cxf.tools.corba.common,org.apache.cxf.tool
+ s.corba.common.idltypes,org.apache.cxf.tools.corba.idlpreprocessor,or
+ g.apache.cxf.tools.corba.processors.idl,org.apache.cxf.tools.corba.pr
+ ocessors.wsdl,org.apache.cxf.tools.corba.utils,org.apache.cxf.tools.j
+ ava2js,org.apache.cxf.tools.java2js.processor,org.apache.cxf.tools.ja
+ va2ws,org.apache.cxf.tools.java2ws.util,org.apache.cxf.tools.java2wsd
+ l.generator,org.apache.cxf.tools.java2wsdl.generator.wsdl11,org.apach
+ e.cxf.tools.java2wsdl.generator.wsdl11.annotator,org.apache.cxf.tools
+ .java2wsdl.generator.wsdl11.model,org.apache.cxf.tools.java2wsdl.proc
+ essor,org.apache.cxf.tools.java2wsdl.processor.internal,org.apache.cx
+ f.tools.java2wsdl.processor.internal.jaxws,org.apache.cxf.tools.java2
+ wsdl.processor.internal.jaxws.generator,org.apache.cxf.tools.java2wsd
+ l.processor.internal.simple,org.apache.cxf.tools.java2wsdl.processor.
+ internal.simple.generator,org.apache.cxf.tools.misc,org.apache.cxf.to
+ ols.misc.processor,org.apache.cxf.tools.misc.processor.address,org.ap
+ ache.cxf.tools.plugin,org.apache.cxf.tools.util,org.apache.cxf.tools.
+ validator,org.apache.cxf.tools.validator.internal,org.apache.cxf.tool
+ s.validator.internal.model,org.apache.cxf.tools.wadlto,org.apache.cxf
+ .tools.wadlto.jaxb,org.apache.cxf.tools.wadlto.jaxrs,org.apache.cxf.t
+ ools.wsdlto,org.apache.cxf.tools.wsdlto.core,org.apache.cxf.tools.wsd
+ lto.databinding.jaxb,org.apache.cxf.tools.wsdlto.databinding.source,o
+ rg.apache.cxf.tools.wsdlto.frontend.jaxws,org.apache.cxf.tools.wsdlto
+ .frontend.jaxws.customization,org.apache.cxf.tools.wsdlto.frontend.ja
+ xws.generators,org.apache.cxf.tools.wsdlto.frontend.jaxws.processor,o
+ rg.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal,org.apac
+ he.cxf.tools.wsdlto.frontend.jaxws.processor.internal.annotator,org.a
+ pache.cxf.tools.wsdlto.frontend.jaxws.processor.internal.mapper,org.a
+ pache.cxf.tools.wsdlto.frontend.jaxws.validator,org.apache.cxf.tools.
+ wsdlto.frontend.jaxws.wsdl11,org.apache.cxf.tools.wsdlto.javascript,o
+ rg.apache.cxf.transport,org.apache.cxf.transport.common.gzip,org.apac
+ he.cxf.transport.http,org.apache.cxf.transport.http.asyncclient,org.a
+ pache.cxf.transport.http.auth,org.apache.cxf.transport.http.blueprint
+ ,org.apache.cxf.transport.http.osgi,org.apache.cxf.transport.http.pol
+ icy,org.apache.cxf.transport.http.policy.impl,org.apache.cxf.transpor
+ t.http.spring,org.apache.cxf.transport.http_jaxws_spi,org.apache.cxf.
+ transport.http_jetty,org.apache.cxf.transport.http_jetty.blueprint,or
+ g.apache.cxf.transport.http_jetty.continuations,org.apache.cxf.transp
+ ort.http_jetty.osgi,org.apache.cxf.transport.http_jetty.spring,org.ap
+ ache.cxf.transport.https,org.apache.cxf.transport.https_jetty,org.apa
+ che.cxf.transport.jms,org.apache.cxf.transport.jms.continuations,org.
+ apache.cxf.transport.jms.spec,org.apache.cxf.transport.jms.spring,org
+ .apache.cxf.transport.jms.uri,org.apache.cxf.transport.jms.wsdl,org.a
+ pache.cxf.transport.jms.wsdl11,org.apache.cxf.transport.local,org.apa
+ che.cxf.transport.servlet,org.apache.cxf.transport.servlet.servicelis
+ t,org.apache.cxf.transport.udp,org.apache.cxf.transports.http,org.apa
+ che.cxf.transports.http.configuration,org.apache.cxf.transports.http.
+ internal,org.apache.cxf.transports.http_jetty.configuration,org.apach
+ e.cxf.version,org.apache.cxf.workqueue,org.apache.cxf.ws.addressing,o
+ rg.apache.cxf.ws.addressing.blueprint,org.apache.cxf.ws.addressing.im
+ pl,org.apache.cxf.ws.addressing.policy,org.apache.cxf.ws.addressing.s
+ oap,org.apache.cxf.ws.addressing.spring,org.apache.cxf.ws.addressing.
+ v200403,org.apache.cxf.ws.addressing.v200408,org.apache.cxf.ws.addres
+ sing.wsdl,org.apache.cxf.ws.mex,org.apache.cxf.ws.mex.model._2004_09,
+ org.apache.cxf.ws.policy,org.apache.cxf.ws.policy.attachment,org.apac
+ he.cxf.ws.policy.attachment.external,org.apache.cxf.ws.policy.attachm
+ ent.reference,org.apache.cxf.ws.policy.attachment.wsdl11,org.apache.c
+ xf.ws.policy.blueprint,org.apache.cxf.ws.policy.builder.jaxb,org.apac
+ he.cxf.ws.policy.builder.primitive,org.apache.cxf.ws.policy.mtom,org.
+ apache.cxf.ws.policy.selector,org.apache.cxf.ws.policy.spring,org.apa
+ che.cxf.ws.policy.v200409,org.apache.cxf.ws.policy.v200607,org.apache
+ .cxf.ws.rm,org.apache.cxf.ws.rm.blueprint,org.apache.cxf.ws.rm.featur
+ e,org.apache.cxf.ws.rm.manager,org.apache.cxf.ws.rm.persistence,org.a
+ pache.cxf.ws.rm.persistence.jdbc,org.apache.cxf.ws.rm.policy,org.apac
+ he.cxf.ws.rm.soap,org.apache.cxf.ws.rm.spring,org.apache.cxf.ws.rm.v2
+ 00502,org.apache.cxf.ws.rm.v200502wsa15,org.apache.cxf.ws.rm.v200702,
+ org.apache.cxf.ws.rmp.v200502,org.apache.cxf.ws.rmp.v200702,org.apach
+ e.cxf.ws.security,org.apache.cxf.ws.security.cache,org.apache.cxf.ws.
+ security.kerberos,org.apache.cxf.ws.security.policy,org.apache.cxf.ws
+ .security.policy.builders,org.apache.cxf.ws.security.policy.custom,or
+ g.apache.cxf.ws.security.policy.interceptors,org.apache.cxf.ws.securi
+ ty.policy.model,org.apache.cxf.ws.security.sts.provider,org.apache.cx
+ f.ws.security.sts.provider.model,org.apache.cxf.ws.security.sts.provi
+ der.model.secext,org.apache.cxf.ws.security.sts.provider.model.utilit
+ y,org.apache.cxf.ws.security.sts.provider.model.wstrust14,org.apache.
+ cxf.ws.security.sts.provider.model.xmldsig,org.apache.cxf.ws.security
+ .sts.provider.operation,org.apache.cxf.ws.security.tokenstore,org.apa
+ che.cxf.ws.security.trust,org.apache.cxf.ws.security.trust.claims,org
+ .apache.cxf.ws.security.trust.delegation,org.apache.cxf.ws.security.w
+ ss4j,org.apache.cxf.ws.security.wss4j.policyhandlers,org.apache.cxf.w
+ s.security.wss4j.policyvalidators,org.apache.cxf.wsdl,org.apache.cxf.
+ wsdl.http,org.apache.cxf.wsdl11,org.apache.cxf.wstx_msv_validation,or
+ g.apache.cxf.xmlbeans,org.apache.cxf.xmlbeans.tools,org.apache.http,o
+ rg.apache.http.auth,org.apache.http.auth.params,org.apache.http.clien
+ t,org.apache.http.client.methods,org.apache.http.client.params,org.ap
+ ache.http.entity,org.apache.http.impl.auth,org.apache.http.impl.clien
+ t,org.apache.http.params,org.apache.http.protocol,org.apache.ws.commo
+ ns.schema,org.apache.ws.commons.schema.constants,org.apache.ws.common
+ s.schema.extensions,org.apache.ws.commons.schema.internal,org.apache.
+ ws.commons.schema.resolver,org.apache.ws.commons.schema.utils
+Bundle-Name: Apache CXF: An Open-Source Services Framework
+Bundle-Version: 2.7.12.v201606270854
+Bundle-ClassPath: commons-logging-1.1.1.jar,wsdl4j-1.6.3.jar,jaxb-impl
+ -2.2.6.jar,jaxb-xjc-2.2.6.jar,httpasyncclient-4.0-beta3.jar,httpclien
+ t-4.2.5.jar,httpcore-4.2.4.jar,httpcore-nio-4.2.4.jar,javax.ws.rs-api
+ -2.0-m10.jar,commons-codec-1.9.jar,cxf-2.7.12.jar,neethi-3.0.3.jar,st
+ ax2-api-3.1.4.jar,woodstox-core-asl-4.4.0.jar,xmlschema-core-2.1.0.ja
+ r
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: licenses/wsdl4j.txt
+SHA-256-Digest: e0ciWlt3y3gl78ak1+CsV4ZMeQVCz5L1CA7CvzEMAOU=
+
+Name: woodstox-core-asl-4.4.0.jar
+SHA-256-Digest: 7HFyRh0rizLPqm81oib/HPMhlisqy5lhdlXO8mjm2o8=
+
+Name: licenses/wsdl.txt
+SHA-256-Digest: 1w4kmQQPwV7vqlG/SgiQwZS/jO34IrPJlX6BTXpAqeQ=
+
+Name: wsdl4j-1.6.3.jar
+SHA-256-Digest: dA9Ejms7wRDgL0oeVvtXZy5zLS7K8prhWDUFGuivRyU=
+
+Name: licenses/sl4j.txt
+SHA-256-Digest: 9y5Fxs13oQ9BdtVF1Y2YMSGqHlCaChExpKM6URestEE=
+
+Name: licenses/wsa.txt
+SHA-256-Digest: ryCng83azO/4r6LLHjtzM6vc1hcTuGeGi/cO9iZMXMI=
+
+Name: httpasyncclient-4.0-beta3.jar
+SHA-256-Digest: zCiehtqSvsVMRG22RfK3VB+Me3Ao5PYhmg0w7gbvd14=
+
+Name: httpclient-4.2.5.jar
+SHA-256-Digest: x/sFt5OlhmM9LYAaiJ4IRvPyHH+Nw9q3dkITg/Seu4w=
+
+Name: licenses/jdom.txt
+SHA-256-Digest: 3KfwVR3i6pbaNEYj2FRSN+lFCIfkvheMscXvF5x2kvA=
+
+Name: licenses/ws-policy.txt
+SHA-256-Digest: zAMqLWWGXsBXbjw1T2fqNErqZyEWr9P+fufQOol18DY=
+
+Name: httpcore-nio-4.2.4.jar
+SHA-256-Digest: TaIqzDbG368MXUOAtkl7cdkAkOSRWICklWJzQ9PKIXI=
+
+Name: commons-logging-1.1.1.jar
+SHA-256-Digest: zm+RPK0fDbOq1wGG1lxbx//Mmpnj/o4LE3MSgZ98Ni8=
+
+Name: xmlschema-core-2.1.0.jar
+SHA-256-Digest: lscu25xxFT3GLuoj+KKBnF09UG62HhQugdp6CHcxjTE=
+
+Name: LICENSE
+SHA-256-Digest: I9IQUUfbgXPoQLW65WLcbuWv73Nvv5QagoLxkC93Pd4=
+
+Name: cxf-2.7.12.jar
+SHA-256-Digest: x0ggwaRWV6NB/yw2yVssfl3Hvxa+p9lWFTopfEohaew=
+
+Name: licenses/cdd1-1.0.txt
+SHA-256-Digest: hZTQ4vFh7nsXLoZ+LWnwV60dV7CksfCADes3q9q9rQw=
+
+Name: licenses/w3c.html
+SHA-256-Digest: vDmPMfpWXsKFYtwD/QahZg7vBKfqttCkkRK06LS9FaE=
+
+Name: neethi-3.0.3.jar
+SHA-256-Digest: 9FFEJgx7ruggvZMVwMEadyrkQSzQ/TCcwUnX3VScoD8=
+
+Name: httpcore-4.2.4.jar
+SHA-256-Digest: vaK54EZPeg4SLV6b/3s4TzvDqRrxitUeAp3qqlmeXbM=
+
+Name: licenses/epl-v10.html
+SHA-256-Digest: mpbQ2vmKpvtKpTDTmcdCxmEhsL2uSh9/+iLSE14d9/0=
+
+Name: stax2-api-3.1.4.jar
+SHA-256-Digest: htfAt3WnybRUzGumHUCo6zuZzBKfgy65uXejdVtLM44=
+
+Name: META-INF/services/javax.xml.bind.JAXBContext
+SHA-256-Digest: D2ks6/6rAToncsV7Z2rsIediIsCqgip+PccTXmPoMHM=
+
+Name: jaxb-xjc-2.2.6.jar
+SHA-256-Digest: PWdJnGZ+tbnhJLrwVkV2KjZcXf7MouHHeVR0L0esKM4=
+
+Name: licenses/bsd.txt
+SHA-256-Digest: 22DLdaNLHj8XunbvE3EMy1n+cQRRPVImHT/LQohsIgI=
+
+Name: licenses/asm.txt
+SHA-256-Digest: 4UGt0BqJ7mtY7Gh6QbsDAjK9Og/X/lz2Mtg1/5DrMG8=
+
+Name: javax.ws.rs-api-2.0-m10.jar
+SHA-256-Digest: 0566/or5AY8u4Fy9lr8lmOgBNRt8PsJ9tztcQrzAGiE=
+
+Name: licenses/jaxen.txt
+SHA-256-Digest: McQBp5WOYT6imt+Q0i1HM2irEodo5beUuocdCtBPr8g=
+
+Name: README
+SHA-256-Digest: +jQcivhgN3u68L1xM6G+D0y9uHuExmSNkZlTvgaly/g=
+
+Name: commons-codec-1.9.jar
+SHA-256-Digest: rRnSYBw6vwuUa1w6QRPiJqjB4zBeOVuQATt43ZSnI84=
+
+Name: jaxb-impl-2.2.6.jar
+SHA-256-Digest: oryfokeCN/OBfwu4nOYSbFC8dI2sGEUBLPtDMBnSUpY=
+
+Name: licenses/oasis.txt
+SHA-256-Digest: JKROU+6B0etlf5TKpNxxL4wdcT+k7wm2JYsKVXgefTs=
+
+Name: licenses/ruby-mit.txt
+SHA-256-Digest: tNLvtehWkELzapg3JpZCWwaHXlL81C8jiXGgeJoo3tM=
+
+Name: licenses/MPL-1.1.txt
+SHA-256-Digest: U2kqLtbGosbsmzLdC4IN+ukeCh/N9iXKntC9+HBfzE8=
+

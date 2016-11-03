@@ -1,0 +1,42 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: wsBI5ORoZUIOizpc8BFlQkAuov809
+ jMLG1lACf6kHLM=
+SHA-256-Digest-Manifest: jEIYCIK2SRf0v5ux9J9HeN2m21Y7uYU5I6KxJNG1mM4=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: schema/AnalyzerType.exsd
+SHA-256-Digest: IQl64cOTGgqER5YP0aJyGsqgJzFzIhGVUU3O5MeYl84=
+
+Name: plugin.xml
+SHA-256-Digest: PsThnl6aT5YtpHL+wZGB2SKcwWDE+FelRgJDDtJ6hUU=
+
+Name: icons/cellType.png
+SHA-256-Digest: cnnSQkfSd0TT3hAKi33jW3La68GptXKT719ZA3LQkBQ=
+
+Name: resources/postgres/create_network_db_ddl.sql
+SHA-256-Digest: JR1WhKKwAROprDX3+K7SVqJOSYNs34qGvaDdU6V4CcQ=
+
+Name: lib/ReadMe.txt
+SHA-256-Digest: viSUYD8x4q7sELGDRpEe59UmN3kKLNDoB9WQMAs0Kk8=
+
+Name: lib/h2/h2-1.3.162.jar
+SHA-256-Digest: 7FXzRs6mVOTUnf/PzFsJ79xCriS/gaxUYWmYzWt+72U=
+
+Name: lib/postgres/LICENSE.txt
+SHA-256-Digest: kDckOapgO/q7pGUtZ28vPZHRoCHKWkSauC8tfTta3QA=
+
+Name: lib/postgres/postgresql-9.1-901.jdbc4.jar
+SHA-256-Digest: yNpCHhiy89HSA1J5fOabVcPXxps/bFG8yBK05oXW8EY=
+
+Name: lib/h2/LICENSE.txt
+SHA-256-Digest: xHNKwFLBBEv9DKDCcFGhtATkd5MZEXc+0R/+sul1nlQ=
+
+Name: schema/FeatureType.exsd
+SHA-256-Digest: 2rWQIuYitEDCwLoZavThDUwms7fS9DvJi0RY0ifdWYA=
+
+Name: knimeNetworkCore.jar
+SHA-256-Digest: lbjZyhPUpQnZbuvdwazAwOkCP83XhyHWhPaHtk8zq+I=
+
+Name: schema/GraphFileFormat.exsd
+SHA-256-Digest: xqrTljfqgD97fTKMxpAxDBx726h98BGJ3zmcCjeFM/o=
+

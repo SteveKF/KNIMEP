@@ -1,0 +1,6 @@
+source.preferencesql.jar = src/
+bin.includes = plugin.xml,\
+               META-INF/,\
+               preferencesql.jar,\
+               icons/,\
+               bin/org/knime/preference/sql/psql.png

@@ -1,0 +1,319 @@
+package org.knime.bnl;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.knime.bnl.BNLStructure.SaveOption;
+import org.knime.core.data.DataCell;
+import org.knime.core.data.DataColumnSpec;
+import org.knime.core.data.DataColumnSpecCreator;
+import org.knime.core.data.DataRow;
+import org.knime.core.data.DataTableSpec;
+import org.knime.core.data.DataType;
+import org.knime.core.node.BufferedDataContainer;
+import org.knime.core.node.BufferedDataTable;
+import org.knime.core.node.CanceledExecutionException;
+import org.knime.core.node.ExecutionContext;
+import org.knime.core.node.ExecutionMonitor;
+import org.knime.core.node.InvalidSettingsException;
+import org.knime.core.node.ModelContent;
+import org.knime.core.node.ModelContentRO;
+import org.knime.core.node.ModelContentWO;
+import org.knime.core.node.NodeModel;
+import org.knime.core.node.NodeSettingsRO;
+import org.knime.core.node.NodeSettingsWO;
+import org.knime.core.data.DoubleValue;
+import org.knime.core.data.RowKey;
+import org.knime.core.data.def.DefaultRow;
+import org.knime.core.data.def.StringCell;
+import org.knime.core.node.defaultnodesettings.SettingsModelFilterString;
+import org.knime.core.node.defaultnodesettings.SettingsModelInteger;
+
+/**
+ * This is the model implementation of BlockNestedLoop. Uses a Block Nested Loop
+ * to get the skyline points of a specific database table
+ *
+ * @author Stefan Wohlfart
+ */
+public class BlockNestedLoopNodeModel extends NodeModel {
+
+	/** Constant for the inport index. */
+	public static final int IN_PORT = 0;
+
+	// ************ fields for the settings ***************
+
+	/** Config Keys */
+
+	static final String CFGKEY_MAX_DIMENSIONS = "maxColumns";
+	static final String CFGKEY_MIN_DIMENSIONS = "minColumns";
+	static final String CFGKEY_WINDOW_SIZE = "windowSize";
+
+	private static final String FILE_NAME = "numericBinnerInternals.xml";
+	private static final String INTERNAL_MODEL = "internalModel";
+
+	// *********** Internal Model Keys:*************
+
+	private final SettingsModelInteger windowSize = new SettingsModelInteger(CFGKEY_WINDOW_SIZE, 2);
+	private final SettingsModelFilterString max_dimensions = new SettingsModelFilterString(CFGKEY_MAX_DIMENSIONS);
+	private final SettingsModelFilterString min_dimensions = new SettingsModelFilterString(CFGKEY_MIN_DIMENSIONS);
+
+	private int[] colIndexes;
+	private BNLStructure[] all_structure;
+	private BNLStructure[] sky_structure;
+
+	/**
+	 * Constructor for the node model.
+	 */
+	protected BlockNestedLoopNodeModel() {
+		super(1, 3);
+	}
+
+	@Override
+	protected BufferedDataTable[] execute(final BufferedDataTable[] inData, final ExecutionContext exec)
+			throws Exception {
+
+		List<String> minList = min_dimensions.getIncludeList();
+		List<String> maxList = max_dimensions.getIncludeList();
+
+		BufferedDataTable data = inData[IN_PORT];
+
+		List<String> includedColumns = new LinkedList<String>(maxList);
+		includedColumns.addAll(minList);
+
+		colIndexes = new int[includedColumns.size()];
+
+		BNL.Domination[] dominationRules = new BNL.Domination[includedColumns.size()];
+
+		for (int i = 0; i < includedColumns.size(); i++) {
+			colIndexes[i] = data.getDataTableSpec().findColumnIndex(includedColumns.get(i));
+			if (maxList.contains(includedColumns.get(i))) {
+				dominationRules[i] = BNL.Domination.GREATER;
+			} else {
+				dominationRules[i] = BNL.Domination.LESS;
+			}
+		}
+
+		BNL bnl = new BNL(data, windowSize.getIntValue(), colIndexes, dominationRules);
+		bnl.computeSky();
+		
+		
+		// output skyline with all dimensions
+		int numColumn = data.getDataTableSpec().getNumColumns();
+		DataColumnSpec[] newColumns = new DataColumnSpec[numColumn];
+
+		for (int i = 0; i < numColumn; i++) {
+			newColumns[i] = data.getDataTableSpec().getColumnSpec(i);
+		}
+
+		DataTableSpec newSpec = new DataTableSpec(newColumns);
+
+		BufferedDataContainer container = exec.createDataContainer(newSpec);
+
+		List<DataRow> skyline = bnl.getSkyline();
+		sky_structure = new BNLStructure[skyline.size()];
+		
+		for (int i=0; i < skyline.size(); i++) {
+			container.addRowToTable(skyline.get(i));
+			
+			sky_structure[i] = new BNLStructure(skyline.get(i),SaveOption.SKYLINE);
+		}
+		
+		
+		List<DataRow> dominatedPoints = bnl.getDominatedPoints();
+		all_structure = new BNLStructure[dominatedPoints.size()];
+		
+		for(int i=0; i < dominatedPoints.size(); i++){
+			all_structure[i] = new BNLStructure(dominatedPoints.get(i),SaveOption.ALL);
+		}
+		
+
+		// finally close the container and get the result table.
+		container.close();
+
+		BufferedDataTable result = container.getTable();
+		// output skyline with only selected dimensions
+
+		BufferedDataTable resultSettings = createSettingsOutputTable(numColumn, minList, maxList, exec);
+		
+		return new BufferedDataTable[] { result, inData[IN_PORT], resultSettings };
+	}
+
+	private BufferedDataTable createSettingsOutputTable(int numColumn, List<String> minList, List<String> maxList,
+			ExecutionContext exec) {
+		int nrRows = minList.size() + maxList.size();
+		int nrColumns = 2;
+		BufferedDataContainer settings = exec.createDataContainer(createOutputSpec());
+		for (int j = 0; j < nrRows; j++) {
+			DataCell[] cells = new DataCell[nrColumns];
+			for (int i = 0; i < nrColumns; i++) {
+				if (i == 0 && minList.size() > j) {
+					cells[i] = new StringCell(minList.get(j));
+				} else if (i == 1 && maxList.size() > j) {
+					cells[i] = new StringCell(maxList.get(j));
+				} else {
+					cells[i] = DataType.getMissingCell();
+				}
+			}
+			DataRow row = new DefaultRow(new RowKey("RowKey " + j), cells);
+			settings.addRowToTable(row);
+		}
+
+		settings.close();
+		BufferedDataTable result = settings.getTable();
+
+		return result;
+	}
+
+	private DataTableSpec createOutputSpec() {
+		// we want to add a column with the number of the bin
+
+		DataColumnSpec[] allColSpecs = new DataColumnSpec[2];
+
+		allColSpecs[0] = new DataColumnSpecCreator("Min", StringCell.TYPE).createSpec();
+		allColSpecs[1] = new DataColumnSpecCreator("Max", StringCell.TYPE).createSpec();
+
+		DataTableSpec outputSpec = new DataTableSpec(allColSpecs);
+
+		return outputSpec;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected void reset() {
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected DataTableSpec[] configure(final DataTableSpec[] inSpecs) throws InvalidSettingsException {
+
+		List<String> minList = min_dimensions.getIncludeList();
+		List<String> maxList = max_dimensions.getIncludeList();
+
+		DataTableSpec specs = (DataTableSpec) inSpecs[IN_PORT];
+
+		if (maxList.isEmpty() && minList.isEmpty()) {
+			throw new InvalidSettingsException("Please choose at least " + "one dimension");
+		}
+
+		for (String dimension : minList) {
+			if (maxList.contains(dimension)) {
+				throw new InvalidSettingsException("A dimension can only " + "be minimzed OR maximized!");
+			}
+		}
+
+		for (int i = 0; i < specs.getNumColumns(); i++) {
+			DataColumnSpec columnSpec = specs.getColumnSpec(i);
+			if (maxList.contains(columnSpec.getName()) || minList.contains(columnSpec.getName())) {
+				if (!columnSpec.getType().isCompatible(DoubleValue.class)) {
+					throw new InvalidSettingsException("Only columns with numeric values allowed!");
+				}
+			}
+		}
+
+		// so far the input is checked and the algorithm can work with the
+		// incoming data
+
+		// now produce the output table spec,
+		// i.e. specify the output of this node
+
+		return new DataTableSpec[] { inSpecs[IN_PORT], inSpecs[IN_PORT], createOutputSpec() };
+	}
+
+
+	public int[] getDimensions() {
+		return colIndexes;
+	}
+
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected void saveSettingsTo(final NodeSettingsWO settings) {
+
+		max_dimensions.saveSettingsTo(settings);
+		min_dimensions.saveSettingsTo(settings);
+		windowSize.saveSettingsTo(settings);
+
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected void loadValidatedSettingsFrom(final NodeSettingsRO settings) throws InvalidSettingsException {
+
+		max_dimensions.loadSettingsFrom(settings);
+		min_dimensions.loadSettingsFrom(settings);
+		windowSize.loadSettingsFrom(settings);
+
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected void validateSettings(final NodeSettingsRO settings) throws InvalidSettingsException {
+
+		max_dimensions.validateSettings(settings);
+		min_dimensions.validateSettings(settings);
+		windowSize.validateSettings(settings);
+
+	}
+
+    /** {@inheritDoc} */
+    @Override
+    protected void loadInternals(final File internDir,
+            final ExecutionMonitor exec) throws IOException,
+            CanceledExecutionException {
+        m_bins = new NumericBin[m_numberOfBins.getIntValue()];
+        File file = new File(internDir, FILE_NAME);
+        FileInputStream fis = new FileInputStream(file);
+        ModelContentRO modelContent = ModelContent.loadFromXML(fis);
+        try {
+            for (int i = 0; i < m_numberOfBins.getIntValue(); i++) {
+                NumericBin bin = new NumericBin();
+                ModelContentRO subModelContent = modelContent
+                        .getModelContent(NUMERIC_BIN + i);
+                bin.loadFrom(subModelContent);
+                m_bins[i] = bin;
+            }
+        } catch (InvalidSettingsException e) {
+            throw new IOException(e.getMessage());
+        }
+    }
+    
+    /** {@inheritDoc} */
+    @Override
+    protected void saveInternals(final File internDir,
+            final ExecutionMonitor exec) throws IOException,
+            CanceledExecutionException {
+    	
+        // create the main model content
+        ModelContent modelContent = new ModelContent(INTERNAL_MODEL);
+    	
+        if (m_bins != null) {
+            for (int i = 0; i < m_bins.length; i++) {
+                // for each bin create a sub model content
+                ModelContentWO subContent = modelContent
+                        .addModelContent(NUMERIC_BIN + i);
+                // save the bin to the sub model content
+                m_bins[i].saveTo(subContent);
+            }
+            // now all bins are stored to the model content
+            // but the model content must be written to XML
+            // internDir is the directory for this node
+            File file = new File(internDir, FILE_NAME);
+            FileOutputStream fos = new FileOutputStream(file);
+            modelContent.saveToXML(fos);
+        }
+    }
+}

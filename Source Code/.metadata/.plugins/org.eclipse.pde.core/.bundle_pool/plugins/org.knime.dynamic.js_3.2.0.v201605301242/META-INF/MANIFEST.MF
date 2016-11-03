@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.6
+Bundle-SymbolicName: org.knime.dynamic.js;singleton:=true
+Export-Package: org.knime.dynamic.js,org.knime.dynamic.js.v212,org.kni
+ me.dynamic.js.v30
+Bundle-Name: KNIME Dynamically Created JavaScript Nodes
+Bundle-Version: 3.2.0.v201605301242
+Bundle-ClassPath: knime-dynamic-js-node-generation.jar,lib/schemas.jar
+Require-Bundle: org.knime.core;bundle-version="[3.0.0,4.0.0)",org.knim
+ e.dynamic.node.generation;bundle-version="[3.0.0,4.0.0)",org.knime.js
+ .core;bundle-version="[3.0.0,4.0.0)",org.knime.workbench.repository;b
+ undle-version="[3.0.0,4.0.0)",com.fasterxml.jackson.core.jackson-core
+ ;bundle-version="[2.4.3,3.0.0)",com.fasterxml.jackson.core.jackson-an
+ notations;bundle-version="[2.4.3,3.0.0)",com.fasterxml.jackson.core.j
+ ackson-databind;bundle-version="[2.4.3,3.0.0)",org.apache.commons.cod
+ ec;bundle-version="[1.6.0,2.0.0)",org.knime.ext.svg;bundle-version="[
+ 3.0.0,4.0.0)",org.apache.commons.lang;bundle-version="[2.6.0,3.0.0)"
+Bundle-ManifestVersion: 2
+Eclipse-BuddyPolicy: dependent
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: cUjowxrtRLzrb2zpfCNWqs8UIRII4/zJ+g3OgvsFXHA=
+
+Name: knime-dynamic-js-node-generation.jar
+SHA-256-Digest: u5EgudX/WbGw1x4cNOEZ5p8xETOWQmTtLYOajYrEknw=
+
+Name: dynamicJSNode_v2.12.xsd
+SHA-256-Digest: r+KPC276tiTTkz8pc5e+ECHbUYKz2ODmM8Z4wTU+kzI=
+
+Name: lib/schemas.jar
+SHA-256-Digest: Jq9n51qrTEQZJ9rAXq5Rl+b6T7/jWrl8IMEXv26VmxI=
+
+Name: dynamicJSNode_v3.0.xsd
+SHA-256-Digest: xCFVi11rWVU2d1A7xgl3nZbafLuIiQ28/Cr/fbNNbU4=
+
+Name: src-js/dynamicJSNode.js
+SHA-256-Digest: gQaCm0cE9EEJpOFPOyHcUscRhK0r0ksAfpozrSzUf/c=
+

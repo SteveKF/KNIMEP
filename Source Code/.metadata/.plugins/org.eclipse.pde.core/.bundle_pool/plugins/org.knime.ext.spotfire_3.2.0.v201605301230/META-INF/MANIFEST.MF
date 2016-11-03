@@ -1,0 +1,64 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.knime.ext.spotfire;singleton:=true
+Require-Bundle: org.knime.base;bundle-version="[3.0.0,4.0.0)",org.knim
+ e.workbench.repository;bundle-version="[3.0.0,4.0.0)",org.eclipse.ui;
+ bundle-version="[3.6.0,4.0.0)",org.eclipse.help;resolution:=optional,
+ org.eclipse.help.ui;resolution:=optional
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Ant-Version: Apache Ant 1.9.6
+Export-Package: com4j,com4j.util,org.knime.ext.spotfire,org.knime.ext.
+ spotfire.nodes.io.writer,org.knime.ext.spotfire.nodes.tibco,org.knime
+ .ext.spotfire.preferences,org.knime.ext.spotfire.tibco,org.knime.ext.
+ spotfire.tibco.io,org.knime.ext.spotfire.tibco.io.writer,org.knime.ex
+ t.spotfire.tibco.proxy,org.knime.ext.spotfire.tibco.proxy.events
+Bundle-Name: KNIME Tibco Spotfire Client
+Bundle-Version: 3.2.0.v201605301230
+Bundle-ClassPath: knime-spotfire.jar,lib/com4j_20080107.jar
+Bundle-Activator: org.knime.ext.spotfire.TibcoSpotfirePlugin
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: CTVgQKXo3mVhlVT0aR46nLFIZJGzXJkgSelzTm7QB54=
+
+Name: tocs/labs_spotfire$nodes.xml
+SHA-256-Digest: K4+z4HC5o/5Jo1QDOjcoXofjgirT1dmDyMWvG/fN0Qg=
+
+Name: resources/spotfire.png
+SHA-256-Digest: HRb4/u+eF7tfvSn/F7gIexhAQmbMAfB9vhJefNs2Hs4=
+
+Name: com4j.dll
+SHA-256-Digest: 3Qk+XCoBK+6Fe+fdPa2tTKMQ9mmfjikBJxU6nfISILs=
+
+Name: html/nodes/796c13d8.TibcoSpotfireNodeFactory.html
+SHA-256-Digest: GjgYZldoJdZ3tQ8UlwGtXdGWVqi6cW/I+X1tI6Q+SQo=
+
+Name: resources/labs.png
+SHA-256-Digest: 8d0ndqMQbHQ5lHQz0x5zaKF8+Y/QqTgvA19rLIpOI18=
+
+Name: lib/com4j_20080107.jar
+SHA-256-Digest: goVEmOhoKXxV1LaqegKYotaSB1HMCinAJ45FThhgLko=
+
+Name: installation/Windows/SpotfireBridgeInstaller.msi
+SHA-256-Digest: 079tY00WUU0TV72L872oToB/sqCJMvA+WGknIT8bQ/o=
+
+Name: installation/Spotfire Server/KNIME Spotfire Extension.spk
+SHA-256-Digest: iJVN2Ox3wmRUMUCnkQeVkKMOjuKW+QigvQWDfeop5nI=
+
+Name: installation/Windows/setup.exe
+SHA-256-Digest: SKJpr28KuLUh1JHhF57a3dgHczYNRHaDPghprv2ptLk=
+
+Name: installation/README.txt
+SHA-256-Digest: za1JVmoqnp3cuxx4bCTexa1dLdm9cWCC/9V0+NWLYkA=
+
+Name: tocs/labs_spotfire.xml
+SHA-256-Digest: ww4pU3erF7lVscGkmi3pHE4DWnQxurAEAqFAljc48LE=
+
+Name: html/nodes/71db5521.TibcoFileWriterNodeFactory.html
+SHA-256-Digest: I71IdL2Z11jxB9sfdd9yORjBynJCLnwdaQDbPmjFZYk=
+
+Name: knime-spotfire.jar
+SHA-256-Digest: k3YYTPttivMyPTO/bppFUXIOYdUhQzzeEvhhtJXJp6A=
+

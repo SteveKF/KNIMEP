@@ -1,0 +1,42 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: bjJzKuyTPGbm2Psmzyt9rTfq8hB8r
+ tGHeJaNhT4NLuw=
+SHA-256-Digest-Manifest: kcR8P4vPDCxQWGffIlBIgYOIL1UaAMXwYTO2aw3bUSU=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: labs.png
+SHA-256-Digest: RkgOa2cyJoYk8bX5G9FpRjPtn4/fuYvD1FJoxFIXhpE=
+
+Name: lib/jaxb-xjc-2.1.12.jar
+SHA-256-Digest: DWQqHRuLctxV0MNpnSaa3/QxG1LxEbvr/ha1lLUmw14=
+
+Name: plugin.xml
+SHA-256-Digest: GE99JpIY8HRpwujf9EpMZtdFGkI3b4FQgJabvuBNNOE=
+
+Name: lib/xml-resolver-1.2.jar
+SHA-256-Digest: umzIqxdPW23mtiUsXR8bxtzLFCLNF5l724KdXzuboNM=
+
+Name: README.txt
+SHA-256-Digest: NfcKTwDgZAu/TC5h/CrUx52xdiVISQbWsWj/Tjpr3BI=
+
+Name: knime-webservice-client.jar
+SHA-256-Digest: 6UmslnWJkkE+Mhxw+Xdn+3GufVFKRTfZlllSTId+/R8=
+
+Name: lib/XmlSchema-1.4.5.jar
+SHA-256-Digest: uBOXDjm3icggjzJ7xzNkwvd0US7JlLuhbsQlUgsRkqA=
+
+Name: lib/jaxb-impl-2.1.12.jar
+SHA-256-Digest: /J/ZvscuvlTNvPaDK/IoZ8ej6iYal1gv6LYLsvUVZvM=
+
+Name: lib/neethi-2.0.4.jar
+SHA-256-Digest: jXCVmERsCQ2mM1xRyzj7eZ//qbDuAmm4yVItyGfMXA0=
+
+Name: lib/cxf-2.2.5.jar
+SHA-256-Digest: yiJW1edjct8Shu3TDaeXz4zetZHQ6pRABati25sFMKw=
+
+Name: lib/wsdl4j-1.6.2.jar
+SHA-256-Digest: EVK9KC0gvaLzAIweHDkTAy/W/ulVKXZwOQmatxtxJjM=
+
+Name: lib/commons-logging-1.1.1.jar
+SHA-256-Digest: 2fNxBjK76AsVwb3w3Z5nAogDwFkwawOPqOJ+qZBVLZI=
+

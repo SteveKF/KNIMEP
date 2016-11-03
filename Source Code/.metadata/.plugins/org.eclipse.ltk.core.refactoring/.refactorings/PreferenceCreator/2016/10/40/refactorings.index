@@ -1,0 +1,11 @@
+1475941355231	Rename package 'org.knime.preference.creator'
+1475941399841	Rename package 'org.knime.preferences.prefCreator'
+1475941476000	Rename package 'org.knime.preferences.prefCreator.model'
+1475941578018	Rename package 'event'
+1475941615797	Rename package 'gui'
+1475941654321	Rename package 'layered'
+1475941683866	Rename package 'save'
+1475941721507	Rename package 'util'
+1475941955647	Rename package 'org.knime.preferences.prefCreator.node'
+1475943331719	Copy package
+1475943360355	Copy packages

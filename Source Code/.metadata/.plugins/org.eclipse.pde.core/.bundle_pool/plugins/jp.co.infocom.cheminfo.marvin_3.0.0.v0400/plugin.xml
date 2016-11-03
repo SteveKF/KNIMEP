@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+   <extension point="org.knime.workbench.repository.categories">
+      <category after="chemistry" description="ChemAxon / Infocom" icon="icons/jchembase.png" level-id="chemaxon_infocom" name="ChemAxon / Infocom" path="/"/>
+      <category description="Nodes using Marvin" icon="icons/marvinsketch.png" level-id="marvin" name="Marvin" path="/chemaxon_infocom/"/>
+   </extension>
+   <extension point="org.knime.workbench.repository.nodes">
+      <node category-path="/chemaxon_infocom/marvin/" factory-class="jp.co.infocom.cheminfo.marvin.marvinsketch.MarvinSketchNodeFactory" id="jp.co.infocom.cheminfo.marvin.marvinsketch.node"/>
+      <node after="jp.co.infocom.cheminfo.marvin.marvinsketch.node" category-path="/chemaxon_infocom/marvin/" factory-class="jp.co.infocom.cheminfo.marvin.marvinview.MarvinViewNodeFactory" id="jp.co.infocom.cheminfo.marvin.marvinview.node"/>
+      <node after="jp.co.infocom.cheminfo.marvin.marvinview.node" category-path="/chemaxon_infocom/marvin/" factory-class="jp.co.infocom.cheminfo.marvin.marvinspace.MarvinSpaceNodeFactory" id="jp.co.infocom.cheminfo.marvin.marvinspace.node"/>
+      <node after="jp.co.infocom.cheminfo.marvin.marvinspace.node" category-path="/chemaxon_infocom/marvin/" factory-class="jp.co.infocom.cheminfo.marvin.molconverter.MolConverterNodeFactory" id="jp.co.infocom.cheminfo.marvin.molconverter.node"/>
+   </extension>
+   <extension point="org.eclipse.core.runtime.preferences">
+      <initializer class="jp.co.infocom.cheminfo.marvin.preference.MarvinPreferenceInitializer"/>
+   </extension>
+   <extension point="org.eclipse.ui.preferencePages">
+      <page category="org.knime.workbench.ui.preferences" class="jp.co.infocom.cheminfo.marvin.preference.MarvinPreferencePage" id="jp.co.infocom.cheminfo.marvin.preference.marvinpreferencepage" name="Marvin"/>
+      <page category="jp.co.infocom.cheminfo.marvin.preference.marvinpreferencepage" class="jp.co.infocom.cheminfo.marvin.renderer.preference.MarvinRendererOptionPage" id="jp.co.infocom.cheminfo.marvin.renderer.preference.marvinrendereroptionpage" name="Marvin Renderer Option"/>
+      <page category="jp.co.infocom.cheminfo.marvin.preference.marvinpreferencepage" class="jp.co.infocom.cheminfo.marvin.renderer.preference.MarvinRendererPreferencePage" id="jp.co.infocom.cheminfo.marvin.renderer.preference.marvinrendererpreferencepage" name="Marvin Renderer Preference"/>
+   </extension>
+   <extension point="org.knime.product.splashExtension">
+      <splashExtension icon="icons/jchem_ext_splash.png" id="jchem" tooltip="JChemExtensions">
+      </splashExtension>
+   </extension>
+   <extension point="org.knime.core.DataValueRenderer">
+      <dataValue valueClass="org.knime.chem.types.cdx.CDXMLValue">
+         <renderer rendererFactoryClass="jp.co.infocom.cheminfo.marvin.renderer.MarvinRenderer$Factory" suggestAsDefault="true">
+         </renderer>
+      </dataValue>
+      <dataValue valueClass="org.knime.chem.types.CMLValue">
+         <renderer rendererFactoryClass="jp.co.infocom.cheminfo.marvin.renderer.MarvinRenderer$Factory" suggestAsDefault="true">
+         </renderer>
+      </dataValue>
+      <dataValue valueClass="org.knime.chem.types.InchiValue">
+         <renderer rendererFactoryClass="jp.co.infocom.cheminfo.marvin.renderer.MarvinRenderer$Factory" suggestAsDefault="true">
+         </renderer>
+      </dataValue>
+      <dataValue valueClass="org.knime.chem.types.Mol2Value">
+         <renderer rendererFactoryClass="jp.co.infocom.cheminfo.marvin.renderer.MarvinRenderer$Factory" suggestAsDefault="true">
+         </renderer>
+      </dataValue>
+      <dataValue valueClass="org.knime.chem.types.MolValue">
+         <renderer rendererFactoryClass="jp.co.infocom.cheminfo.marvin.renderer.MarvinRenderer$Factory" suggestAsDefault="true">
+         </renderer>
+      </dataValue>
+      <dataValue valueClass="org.knime.chem.types.RxnValue">
+         <renderer rendererFactoryClass="jp.co.infocom.cheminfo.marvin.renderer.MarvinRenderer$Factory" suggestAsDefault="true">
+         </renderer>
+      </dataValue>
+      <dataValue valueClass="org.knime.chem.types.SdfValue">
+         <renderer rendererFactoryClass="jp.co.infocom.cheminfo.marvin.renderer.MarvinRenderer$Factory" suggestAsDefault="true">
+         </renderer>
+      </dataValue>
+      <dataValue valueClass="org.knime.chem.types.SmartsValue">
+         <renderer rendererFactoryClass="jp.co.infocom.cheminfo.marvin.renderer.MarvinRenderer$Factory" suggestAsDefault="true">
+         </renderer>
+      </dataValue>
+      <dataValue valueClass="org.knime.chem.types.SmilesValue">
+         <renderer rendererFactoryClass="jp.co.infocom.cheminfo.marvin.renderer.MarvinRenderer$Factory" suggestAsDefault="true">
+         </renderer>
+      </dataValue>
+      <dataValue valueClass="org.knime.core.data.AdapterValue">
+         <renderer rendererFactoryClass="jp.co.infocom.cheminfo.marvin.renderer.MarvinRenderer$Factory" suggestAsDefault="true">
+         </renderer>
+      </dataValue>
+   </extension>
+
+   <extension point="org.knime.core.DataType">
+      <DataType cellClass="jp.co.infocom.cheminfo.marvin.type.MrvCell" factoryClass="jp.co.infocom.cheminfo.marvin.type.MrvCellFactory">
+         <serializer cellClass="jp.co.infocom.cheminfo.marvin.type.MrvCell" serializerClass="jp.co.infocom.cheminfo.marvin.type.MrvCell$MrvSerializer">
+         </serializer>
+         <serializer cellClass="jp.co.infocom.cheminfo.marvin.type.MrvBlobCell" serializerClass="jp.co.infocom.cheminfo.marvin.type.MrvBlobCell$MrvBlobSerializer">
+         </serializer>
+      </DataType>
+   </extension>
+
+   <extension point="org.eclipse.help.toc">
+      <toc extradir="html" file="tocs/chemaxon_infocom__marvin.xml"/>
+      <toc extradir="html" file="tocs/chemaxon_infocom__marvin$nodes.xml"/>
+      <toc extradir="html" file="tocs/chemaxon_infocom.xml"/>
+   </extension>
+
+   <!-- This is an example for providing an own category 
+      <extension
+         point="org.knime.workbench.repository.categories">
+      <category
+            description="Category containing my nodes"
+            icon="icons/default.png"
+            level-id="myNodes"
+            name="My nodes"
+            path="/"/>
+   </extension>
+   -->
+
+</plugin>

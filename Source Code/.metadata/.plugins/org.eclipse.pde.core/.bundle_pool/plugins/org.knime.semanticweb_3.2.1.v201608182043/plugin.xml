@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.4"?><plugin>
+   <extension-point id="RDFTypeConverter" name="RDFTypeConverter" schema="schema/RDFTypeConverter.exsd"/>
+   <extension point="org.knime.workbench.repository.nodes">
+      <node category-path="/labs/semanticweb/connector" deprecated="false" factory-class="org.knime.semanticweb.nodes.connector.sparqlendpoint.SPARQLEndpointFactory">
+      </node>
+      <node category-path="/labs/semanticweb/connector" deprecated="false" factory-class="org.knime.semanticweb.nodes.connector.virtuoso.VirtuosoEndpointFactory">
+      </node>
+      <node after="org.knime.semanticweb.nodes.delete.DeleteRowsNodeFactory" category-path="/labs/semanticweb/readwrite" deprecated="false" factory-class="org.knime.semanticweb.nodes.listgraphs.ListGraphsNodeFactory">
+      </node>
+      <node category-path="/labs/semanticweb/io" deprecated="false" factory-class="org.knime.semanticweb.nodes.reader.FileReaderNodeFactory">
+      </node>
+      <node after="org.knime.semanticweb.nodes.update.UpdateRowsNodeFactory" category-path="/labs/semanticweb/readwrite" deprecated="false" factory-class="org.knime.semanticweb.nodes.delete.DeleteRowsNodeFactory">
+      </node>
+      <node after="org.knime.semanticweb.nodes.reader.FileReaderNodeFactory" category-path="/labs/semanticweb/io" deprecated="false" factory-class="org.knime.semanticweb.nodes.triplefilewriter.WriteTripleToFileNodeFactory">
+      </node>
+      <node after="org.knime.semanticweb.nodes.insert.InsertRowsNodeFactory" category-path="/labs/semanticweb/readwrite" deprecated="false" factory-class="org.knime.semanticweb.nodes.update.UpdateRowsNodeFactory">
+      </node>
+      <node after="org.knime.semanticweb.nodes.insertfile.InsertFileNodeFactory" category-path="/labs/semanticweb/io" deprecated="false" factory-class="org.knime.semanticweb.nodes.writefile.WriteToFileNodeFactory">
+      </node>
+      <node after="org.knime.semanticweb.nodes.executor.SPARQLExecutorNodeFactory" category-path="/labs/semanticweb/readwrite" deprecated="false" factory-class="org.knime.semanticweb.nodes.insert.InsertRowsNodeFactory">
+      </node>
+      <node after="org.knime.semanticweb.nodes.triplefilewriter.WriteTripleToFileNodeFactory" category-path="/labs/semanticweb/io" deprecated="false" factory-class="org.knime.semanticweb.nodes.insertfile.InsertFileNodeFactory">
+      </node>
+      <node category-path="/labs/semanticweb/connector" factory-class="org.knime.semanticweb.nodes.connector.memory.InMemoryEndpointNodeFactory">
+      </node>
+      <node category-path="/labs/semanticweb/readwrite" deprecated="false" factory-class="org.knime.semanticweb.nodes.query.SPARQLQueryNodeFactory">
+      </node>
+      <node after="org.knime.semanticweb.nodes.query.SPARQLQueryNodeFactory" category-path="labs/semanticweb/readwrite" deprecated="false" factory-class="org.knime.semanticweb.nodes.executor.SPARQLExecutorNodeFactory">
+      </node>
+   </extension>
+   <extension point="org.knime.workbench.repository.categories">
+      <category description="Nodes to access Semantic Web" icon="icons/semanticweb.png" level-id="semanticweb" locked="true" name="Semantic Web/Linked Data" path="/labs">
+      </category>
+      <category description="Nodes to read and write semantic web files" icon="icons/category_reader.png" level-id="io" locked="true" name="IO" path="/labs/semanticweb">
+      </category>
+      <category description="Nodes to connect to semantic web endpoints" icon="icons/missing.gif" level-id="connector" locked="true" name="Connector" path="/labs/semanticweb">
+      </category>
+      <category description="Nodes to read from and write to semantic web endpoints" icon="icons/missing.gif" level-id="readwrite" locked="true" name="Read/Write" path="/labs/semanticweb">
+      </category>
+   </extension>
+   <extension point="org.knime.core.PortType">
+      <portType color="#86ba0c" hidden="false" name="org.knime.semanticweb.port" objectClass="org.knime.semanticweb.port.SemanticWebPortObject" objectSerializer="org.knime.semanticweb.port.SemanticWebPortObject$Serializer" specClass="org.knime.semanticweb.port.SemanticWebPortObjectSpec" specSerializer="org.knime.semanticweb.port.SemanticWebPortObjectSpec$Serializer">
+      </portType>
+   </extension>
+   <extension point="org.knime.workbench.repository.registeredFileExtensions">
+      <FileExtensionMapping NodeFactory="org.knime.semanticweb.nodes.reader.FileReaderNodeFactory">
+         <FileExtension extension=".ttl">
+         </FileExtension>
+         <FileExtension extension=".nt">
+         </FileExtension>
+         <FileExtension extension=".trig">
+         </FileExtension>
+         <FileExtension extension=".trix">
+         </FileExtension>
+         <FileExtension extension=".rdf">
+         </FileExtension>
+         <FileExtension extension=".rj">
+         </FileExtension>
+      </FileExtensionMapping>
+   </extension>
+
+<extension point="org.eclipse.help.toc">
+<toc extradir="html" file="tocs/labs_semanticweb_connector.xml"/>
+<toc extradir="html" file="tocs/labs_semanticweb_connector$nodes.xml"/>
+<toc extradir="html" file="tocs/labs_semanticweb_io.xml"/>
+<toc extradir="html" file="tocs/labs_semanticweb_io$nodes.xml"/>
+<toc extradir="html" file="tocs/labs_semanticweb_readwrite.xml"/>
+<toc extradir="html" file="tocs/labs_semanticweb_readwrite$nodes.xml"/>
+<toc extradir="html" file="tocs/labs_semanticweb.xml"/>
+</extension>
+</plugin>

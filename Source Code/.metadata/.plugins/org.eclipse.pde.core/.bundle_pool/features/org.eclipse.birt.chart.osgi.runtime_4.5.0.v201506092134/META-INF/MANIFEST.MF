@@ -1,0 +1,40 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: build
+Build-Jdk: 1.7.0_51
+Created-By: Apache Maven 3.0.5
+
+Name: epl-v10.html
+SHA-256-Digest: T9ZK7tNA1ipkqNpLNx7+D20NdF9NLb76y6hsZG02vHI=
+SHA1-Digest: pTOyybcpEe+Y8lkSVUtarMleXqE=
+
+Name: META-INF/maven/org.eclipse.birt.features/org.eclipse.birt.chart.
+ osgi.runtime/pom.xml
+SHA-256-Digest: AFTB9tWlMyOjAgvN0vxLuE1IBlwMIlqlMn0i/T7vfp0=
+SHA1-Digest: 6WD/3f65RLGcj6mq1omv0tEuGWs=
+
+Name: feature.xml
+SHA-256-Digest: 9hum23ruoiz9fjuWas6UnSBYXLkWxTw4koRRwXixes8=
+SHA1-Digest: vuNFY2IcQDo1lDoSBxxs/do6rqQ=
+
+Name: eclipse_update_120.jpg
+SHA-256-Digest: Hz0atd2kr+i4cvgLVlm8vrN9olKs5NgxwdDxTuA9N2k=
+SHA1-Digest: xstAqMgs/a5AsQXQZSdDQ79veOA=
+
+Name: feature.properties
+SHA-256-Digest: HtSyDlxRZVE/YyvSZjTUlGsNHQmmZ1kIPOWeSHaBgcM=
+SHA1-Digest: p+SBNhoXSQpSfOg0OdIy6YpcvU4=
+
+Name: META-INF/maven/org.eclipse.birt.features/org.eclipse.birt.chart.
+ osgi.runtime/pom.properties
+SHA-256-Digest: FAKyPoOJxidc9+dyaPIbrmX4DTc3jwend2afNKGKbsw=
+SHA1-Digest: arRtoLq4oMHdgdaz/T7Habysz1c=
+
+Name: license.html
+SHA-256-Digest: X315zLynvdLZ4DaYSopgxruQUUEadA3FOPNviC+YO24=
+SHA1-Digest: Z5WKoRSIDCgQNswUpOU/oSPE2a0=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: G2hFTVPngfh5NUf96Pyy87A7XIE083udjEBFy4pUc/M=
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+

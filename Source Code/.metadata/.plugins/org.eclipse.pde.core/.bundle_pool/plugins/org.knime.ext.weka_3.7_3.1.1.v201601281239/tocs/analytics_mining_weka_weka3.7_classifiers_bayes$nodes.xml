@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="bayes" link_to="../org.knime.ext.weka_3.7/tocs/analytics_mining_weka_weka3.7_classifiers_bayes.xml#analytics_mining_weka_weka3.7_classifiers_bayes">
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/132cea7f.BayesNet#V112015.html" label="BayesNet (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/5b671bfb.BayesianLogisticRegression#V112015.html" label="BayesianLogisticRegression (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/171a2295.ComplementNaiveBayes#V112015.html" label="ComplementNaiveBayes (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/57a7232a.DMNBtext#V112015.html" label="DMNBtext (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/19a1081a.HNB#V112015.html" label="HNB (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/1719968f.NaiveBayes#V112015.html" label="NaiveBayes (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/30d4913c.NaiveBayesMultinomial#V112015.html" label="NaiveBayesMultinomial (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/29fa6209.NaiveBayesMultinomialText#V112015.html" label="NaiveBayesMultinomialText (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/1cf3c73f.NaiveBayesMultinomialUpdateable#V112015.html" label="NaiveBayesMultinomialUpdateable (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/17796ee1.NaiveBayesSimple#V112015.html" label="NaiveBayesSimple (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/6e9c80d2.NaiveBayesUpdateable#V112015.html" label="NaiveBayesUpdateable (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/301cf961.SparseGenerativeModel#V112015.html" label="SparseGenerativeModel (3.7)"/>
+</toc>

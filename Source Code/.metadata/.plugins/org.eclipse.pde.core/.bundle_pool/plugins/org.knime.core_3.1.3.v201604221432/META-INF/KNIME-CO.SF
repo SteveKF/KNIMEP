@@ -1,0 +1,51 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: 6JH/SmEjvl3DoZlKPcwHaMcmRuvTy
+ 7vtSnfVPXlJZR8=
+SHA-256-Digest-Manifest: kNVajsFnFeTvxjk3b6Np1Jd492gFEF008VmUqlLko/c=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: acJ/h+J5NM6MiPM8O9G+FEJY0p6shacDfidcdPA9DaA=
+
+Name: schema/DataValueRenderer.exsd
+SHA-256-Digest: knYj2Xl2Xu9SLfUppCsCcA8RE8TYYqua9bsenS5ZySE=
+
+Name: lib/saxon-he-9.2.0.5.jar
+SHA-256-Digest: 4+qCmAwz3tiX1I6zXOsq7Qm8gtZT9XQvVD/jpDuYv8Q=
+
+Name: schema/EarlyStartup.exsd
+SHA-256-Digest: 9/ZBrPzmYIyqicFmjAB3YwX+yFlF90wKlg7ZLwjO6T0=
+
+Name: lib/jcalendar-1.4.jar
+SHA-256-Digest: HEurge7gKJcNmmPmNvluKQTlpt1+eqFwWuSgn0bfkWA=
+
+Name: schema/org.knime.core.NodeExecutionJobManagerFactory.exsd
+SHA-256-Digest: FivmXff4NvOUN5DE8CRzwzq1KFb0sKIkDs9zCSgPcMM=
+
+Name: knime-core.jar
+SHA-256-Digest: 7QT6r/vwoJmTOuHZwmWOOmZz2DBQr9Lv1LIAFCfBZjg=
+
+Name: schema/DatabaseUtility.exsd
+SHA-256-Digest: 9qONnYD8266emDrK4iN+pRap7ILqrSmt8icd14qPqk4=
+
+Name: schema/PortType.exsd
+SHA-256-Digest: 1T1g5UH55BwRIc+8tNSZ3mhanLLS+M1hJ6gUNTlpgIw=
+
+Name: schema/JDBCDriver.exsd
+SHA-256-Digest: 7v6viTzbovKk16U3ob4M4dNABRBMzs7fXdNX1kMRnH0=
+
+Name: schema/DataType.exsd
+SHA-256-Digest: 6liu7i+k8rfo3uFiiYgl0oc5Q82E+CdsZqu+dMA15Yo=
+
+Name: schema/WizardNodeView.exsd
+SHA-256-Digest: 8k/XzK7hUyX5qXlprfEVIGvCQk69p9eJIGspTLNR8eo=
+
+Name: LICENSE.txt
+SHA-256-Digest: AINBnlxD6j1hoUJCdbqJDDXIUInSr72BED0xfnoxdrY=
+
+Name: lib/schemas.jar
+SHA-256-Digest: zNBytAPTZITOQ6ulLPMSti+OydzcjRKsaOJTEhqQU2Y=
+
+Name: schema/NodeFactoryClassMapper.exsd
+SHA-256-Digest: JxJkT4q5bzWmNu9kmGe8f42mSegKcV8om3MVvkuej+g=
+

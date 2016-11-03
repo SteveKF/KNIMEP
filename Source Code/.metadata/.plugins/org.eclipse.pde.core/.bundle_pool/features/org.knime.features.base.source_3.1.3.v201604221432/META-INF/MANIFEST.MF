@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: p2.inf
+SHA-256-Digest: Pa1zTl6VrSPnIbuZ6kPVK0DAoK2u5OHV2dgeTObRIy0=
+
+Name: feature.xml
+SHA-256-Digest: 0mY6+K+6e0lWQmsPdlkbN9e3A62yxYyAZYgvbohVVBY=
+
+Name: icons/knime64.gif
+SHA-256-Digest: yL0f0kYBnM92JWh8jvTY+ETIl66TiDOLEn94CLXvfRo=
+

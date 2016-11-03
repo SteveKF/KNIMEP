@@ -1,0 +1,48 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: o8Ew06qkwxp+gsmDw/WEiZ3XF2+TW
+ Ypynnw3ZwivBq8=
+SHA-256-Digest-Manifest: V+1vr4hI2LigHBcrvNBihV8m0rDkzikiEI4eqhDAlZw=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: BmEYpVRVVrefk0rK7r6vYuiiOnI0psLZ2mSheAsz/NE=
+
+Name: tocs/labs_spotfire$nodes.xml
+SHA-256-Digest: G8EiqWtWowcBcq1YHiekNr+ckola0bd0teMKGXVR0fo=
+
+Name: resources/spotfire.png
+SHA-256-Digest: JgFuuZB8JOI/yeKUfskFGb/D2aaVDYb0Jv0OJ27g4TA=
+
+Name: com4j.dll
+SHA-256-Digest: p1yboEPI01gnUqN3q3tL0vFBJf4VzvwnxHKhDvgbti0=
+
+Name: html/nodes/796c13d8.TibcoSpotfireNodeFactory.html
+SHA-256-Digest: TbnnMn5yTNc2bo06d0XzS40YGXgjJpMgkxesaVQvZbQ=
+
+Name: resources/labs.png
+SHA-256-Digest: 00m+Ficq6gqjdDrs70xJOcXrFjm/cQHmjmFjPtX2fbs=
+
+Name: lib/com4j_20080107.jar
+SHA-256-Digest: OtTKGEBYbeS5XTLAPcA9OKCcOXCPAdycq5qhlyHU2Uo=
+
+Name: installation/Windows/SpotfireBridgeInstaller.msi
+SHA-256-Digest: vGu8pucNVTxm+XziI7ZhJuwECxYfoyxld8djdEMYip4=
+
+Name: installation/Spotfire Server/KNIME Spotfire Extension.spk
+SHA-256-Digest: UwQ3z6wUs+ppFevJ9UuE9j/1k8XYqIWtOoE5qb28hcU=
+
+Name: installation/Windows/setup.exe
+SHA-256-Digest: guWiPPI25L9b1vvAqAqmHgFy4bhv37aDud0bYwPeJQs=
+
+Name: installation/README.txt
+SHA-256-Digest: mFzLc495mqT/+4jkeX6aI42cZ7WMGfMO+t6sQK2FDh4=
+
+Name: tocs/labs_spotfire.xml
+SHA-256-Digest: rmdhHlvvPbSzYYR+2LX3c6u5OzNwKzeb/I+IoHSNgMw=
+
+Name: html/nodes/71db5521.TibcoFileWriterNodeFactory.html
+SHA-256-Digest: 6YrLm3ToFnxlEyszJATsgEyFUSLbdu7U2hH9tGOpz4k=
+
+Name: knime-spotfire.jar
+SHA-256-Digest: qm6xNVNo/khIUsTvmbbEpo7kuGtaY+yBLDRYD9jCdag=
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.wst.common_core.feature.source" version="3.7.0.v201505132009" label="%featureName" provider-name="%providerName">
+  <includes id="org.eclipse.wst.common_core.feature" version="3.7.0.v201505132009"/>
+  <description>
+      %description
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <plugin id="org.eclipse.wst.common.emfworkbench.integration.source" version="1.2.101.v201107081800" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.wst.common.emf.source" version="1.2.400.v201505132009" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.wst.common.environment.source" version="1.0.400.v200912181831" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.wst.common.frameworks.source" version="1.2.200.v201304241450" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.wst.common.modulecore.source" version="1.2.401.v201408132036" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.wst.common.uriresolver.source" version="1.2.200.v201505132009" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.wst.validation.source" version="1.2.600.v201501211647" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.wst.common.core.source" version="1.2.0.v200908251833" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.jem.util.source" version="2.1.200.v201404021757" download-size="0" install-size="0" unpack="false"/>
+</feature>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="net" link_to="../org.knime.ext.weka_3.7/tocs/analytics_mining_weka_weka3.7_classifiers_bayes_net_net.xml#analytics_mining_weka_weka3.7_classifiers_bayes_net_net">
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/70aaa757.7).html" label="BIFReader (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/494204db.7).html" label="BayesNetGenerator (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/e04771c.7).html" label="EditableBayesNet (3.7)"/>
+</toc>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Spotfire" link_to="../org.knime.ext.spotfire/tocs/labs_spotfire.xml#labs_spotfire">
+<topic href="PLUGINS_ROOT/org.knime.ext.spotfire/html/nodes/796c13d8.TibcoSpotfireNodeFactory.html" label="Open TIBCO Spotfire"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.spotfire/html/nodes/71db5521.TibcoFileWriterNodeFactory.html" label="TIBCO File Writer"/>
+</toc>

@@ -1,0 +1,151 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Bundle-SymbolicName: org.knime.ext.chem.openbabel.bin.linux.x86_64;sin
+ gleton:=true
+Bundle-Name: OpenBabel binaries for Linux64
+Bundle-Version: 2.3.1.v201502142306
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Eclipse-PlatformFilter: (&(osgi.os=linux)(osgi.arch=x86_64))
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Fragment-Host: org.knime.ext.chem.openbabel;bundle-version="2.6.0"
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: linux/x86_64/mmff94s.ff
+SHA-256-Digest: UXURP7POfu5u+GZV6xRE9k2O+oRpU+QIICRKD4Elf+I=
+
+Name: linux/x86_64/mmffdfsb.par
+SHA-256-Digest: e+fFz/xIiHUQ9kzmCoaCjMKRma4tHGPR6kipC0tkV9Y=
+
+Name: linux/x86_64/mmfftor.par
+SHA-256-Digest: ehd4Me+Fdmy/k1Nwbnb3LVcre47H0lWgKWU7Vv6E73A=
+
+Name: linux/x86_64/space-groups.txt
+SHA-256-Digest: B5dsFa1RNmIPlN0LM7YM1AGKMHUMuDtVgqVxoVERl6E=
+
+Name: linux/x86_64/mmffpbci.par
+SHA-256-Digest: K15zALB2aHwMto7qpd2o2b9SX8TkXjAzwqOG4+2LPtw=
+
+Name: linux/x86_64/SMARTS_InteLigand.txt
+SHA-256-Digest: IephjMRVmg3vQpSlxGfzfYHP9rhH0Pswf9rBJHT69r4=
+
+Name: linux/x86_64/plugindefines.txt
+SHA-256-Digest: 3EUTWWzUgQWzsSocVoImJevDRpfnD/RbRsThZpnXy9w=
+
+Name: linux/x86_64/element.txt
+SHA-256-Digest: n9h2IagrOLYEU1LxuQ73lr2eZ/VqFfQhfRiiRZovfPU=
+
+Name: linux/x86_64/logp.txt
+SHA-256-Digest: NA3IOyPYE4VOZglvmBnle7rDya8wRPkkbdB6rPZuZL8=
+
+Name: linux/x86_64/UFF.prm
+SHA-256-Digest: XqEicrCFa7fcY7YzCWO0RTrGbN/NB5kATGSEBqgPrEU=
+
+Name: linux/x86_64/types.txt
+SHA-256-Digest: NkmZDqB1kLVYDZsDdCXRAr2Wr2pgv/zJa4Pqgi64u0s=
+
+Name: linux/x86_64/babel_povray3.inc
+SHA-256-Digest: oJ9PqtZdJFHaFnhv0sWlZzKwh2OoLfbdr6I6UCoz5Vk=
+
+Name: linux/x86_64/aromatic.txt
+SHA-256-Digest: +oeI+vxManbGCvJ+iTAOLUtgxo2O06d9KhywKNHzdOo=
+
+Name: linux/x86_64/patterns.txt
+SHA-256-Digest: G3gHESpV6j39Zze2SATMMOmVlbBS8mSW2G4ygIY4wSs=
+
+Name: linux/x86_64/isotope.txt
+SHA-256-Digest: hJqfF7VR2tB2zmxD3MEjKNK1OuQz+1hxbXNOXxFtT8w=
+
+Name: linux/x86_64/gaff.prm
+SHA-256-Digest: jhP0Klvv2gbuwlGLy/y59k2ySIKCrSHYtlzIgrNsjwI=
+
+Name: linux/x86_64/mmffang.par
+SHA-256-Digest: +S09pnSFVHuRGwDy297CAGJmq+YUFlHcc1knYYkD4AA=
+
+Name: linux/x86_64/babel
+SHA-256-Digest: UM2Oh2gezbC2ApoEsTyWyPC/GAgqo4W/mhAyClT7S1c=
+
+Name: linux/x86_64/mmffoop.par
+SHA-256-Digest: BOEhToIsKWMWewtIDE3vtOpF2085kIvhLsGDCU+6zzM=
+
+Name: linux/x86_64/svgformat.script
+SHA-256-Digest: IOpVKYqAm3fUdUXkHB48yaVImdMUQNceQsi0Z2M4s3k=
+
+Name: linux/x86_64/fragments.txt
+SHA-256-Digest: tbtOrgU5PyNqAhqGHdCVCoHu9ldaKhV83DoCMZ7ZVPg=
+
+Name: linux/x86_64/mmffs_oop.par
+SHA-256-Digest: YL+CjLXqZK/harwRNDqV4B7Usis2TPhAjW0/m97qN9M=
+
+Name: linux/x86_64/gaff.dat
+SHA-256-Digest: CsLu2Gc3M6LgtepXxwd55B8Z/9tImDBzf7WeIsO5uO0=
+
+Name: META-INF/p2.inf
+SHA-256-Digest: Q0FZnqW0nFTdrsHITSVYXys9z+vQ4NOq0kSVuyU3AYQ=
+
+Name: linux/x86_64/atomtyp.txt
+SHA-256-Digest: mOuD+2gB0JHK9eteH2FlgYNwRznidleSXs5WAnJsdGg=
+
+Name: linux/x86_64/mmffvdw.par
+SHA-256-Digest: SVM/ItJqSx4wneF+r3ccL95wizd/KbnauIZ8XnFNllc=
+
+Name: linux/x86_64/MACCS.txt
+SHA-256-Digest: IRpRXeTK/NsmuKpHgaFTS7bt4oru/3nVHvzpzKMBRGM=
+
+Name: linux/x86_64/psa.txt
+SHA-256-Digest: LOJs6al2VVfGYWNg0DSStK+N4NQ27DgycESXLKlE2Kg=
+
+Name: linux/x86_64/torlib.txt
+SHA-256-Digest: +dB0WX8jXEUkVQIWyCiY/6CdvWotD/zCkEWKlPIgDSE=
+
+Name: linux/x86_64/bondtyp.txt
+SHA-256-Digest: 4NnG4VFsdJnmRU8KF74EpFQ5Rb5JXJLf9LRyPYwCSjk=
+
+Name: linux/x86_64/mmffstbn.par
+SHA-256-Digest: ICEKjULwOjHYAUdmQXpUfeKOuodnZ74XThraSgZZe74=
+
+Name: linux/x86_64/qeq.txt
+SHA-256-Digest: DeWZ4WNY8DtyoL2PqJAnX+QH6fEpLPhXoOJV19746rs=
+
+Name: linux/x86_64/superatom.txt
+SHA-256-Digest: PdVpykhB5BfAj1co2hROU0ZYkxmW47ric7indgvPLgI=
+
+Name: linux/x86_64/mmffchg.par
+SHA-256-Digest: WYHjWtsyBEtZmBVxoa01MRtrfVLqInJuPJTBhGzYycw=
+
+Name: linux/x86_64/mr.txt
+SHA-256-Digest: ccrFHgaKNhNGXJA6+koG/XFFXluUtn/IzVXgCzVR16s=
+
+Name: linux/x86_64/mmffbndk.par
+SHA-256-Digest: ihKBX7dPm1Gs8MNWcNWZTXe4+GouIljJvTGy/XbcSXI=
+
+Name: linux/x86_64/mmffdef.par
+SHA-256-Digest: bIT0gedzm8OjLkLx/RZrbzOzN8qN7k0/YfiJxq/9Xpk=
+
+Name: linux/x86_64/ghemical.prm
+SHA-256-Digest: vTU8mla3TNqsbJbsuMPFER8mcUHJAJPiSE8FWIZt8Zc=
+
+Name: linux/x86_64/ringtyp.txt
+SHA-256-Digest: Oo66spZ5wkOieRcgJn9gBCivwL5t7BUYdeoA3GF4N+g=
+
+Name: linux/x86_64/mmffbond.par
+SHA-256-Digest: 1cNUSfnw6Pg3CFvLFR0hiikTX/R1LNl48HuUWyizHqA=
+
+Name: linux/x86_64/phmodel.txt
+SHA-256-Digest: NOaXkC4Gbguvqk7W2rFrjUQLo1BoIXrMm8OQSi/U9WE=
+
+Name: linux/x86_64/mmff94.ff
+SHA-256-Digest: nRUUaw/uLKWd7wUkw5wFlag3SsFz+gov1MSz5SSoPI4=
+
+Name: linux/x86_64/resdata.txt
+SHA-256-Digest: weYEsXM6f6lndjThgaleXDsp+mrSsAi8Z3JK323eP/U=
+
+Name: linux/x86_64/mmffs_tor.par
+SHA-256-Digest: kLJ52sEPVxxlOs7BKUZbO/z8WjPqWxuSA79hm/KfUrc=
+
+Name: linux/x86_64/isotope-small.txt
+SHA-256-Digest: eSPhBTNy0OTp9a8DfLScUNq/ORiREK+qDUEAh8LqhfY=
+
+Name: linux/x86_64/mmffprop.par
+SHA-256-Digest: hYrwm/ir59li8VnubDWfuNRVNBQ+l4yQ300MdqCW5QE=
+

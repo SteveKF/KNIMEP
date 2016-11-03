@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+        point="org.eclipse.buckminster.ant.buildScripts">
+     <buildScript
+            id="knime.signing"
+            resource="/org/knime/build/antscript/signing.ant"/>
+   </extension>
+   <extension
+         point="org.eclipse.buckminster.ant.buildScripts">
+      <buildScript
+            id="knime.util"
+            resource="/org/knime/build/antscript/util.ant">
+      </buildScript>
+   </extension>
+   <extension
+         point="org.eclipse.buckminster.ant.buildScripts">
+      <buildScript
+            id="knime.product"
+            resource="/org/knime/build/antscript/product.ant">
+      </buildScript>
+   </extension>
+   <extension
+         point="org.eclipse.buckminster.ant.buildScripts">
+      <buildScript
+            id="knime.javadoc"
+            resource="/org/knime/build/antscript/javadoc.ant">
+      </buildScript>
+   </extension>
+   <extension
+         point="org.eclipse.buckminster.core.actors">
+      <actor
+            ID="knime.docBuilder"
+            class="org.knime.build.actors.DocBuilderActor"
+            name="KNIME Doc Builder">
+      </actor>
+      <actor
+            ID="knime.splashDate"
+            class="org.knime.build.actors.SplashDateActor"
+            name="KNIME Splash-date Changer">
+      </actor>
+      <actor
+            ID="knime.site.p2"
+            class="org.knime.build.actors.P2SiteModifier"
+            name="KNIME p2 Modifier">
+      </actor>
+      <actor
+            ID="knime.buildDate"
+            class="org.knime.build.actors.BuildDateActor"
+            name="KNIMEConstants date changer">
+      </actor>
+   </extension>
+   <extension
+         point="org.eclipse.ant.core.antTasks">
+      <antTask
+            class="org.knime.build.anttasks.ParallelSignJar"
+            library="lib/ant_tasks.jar"
+            name="knime.parallelSign">
+      </antTask>
+   </extension>
+</plugin>

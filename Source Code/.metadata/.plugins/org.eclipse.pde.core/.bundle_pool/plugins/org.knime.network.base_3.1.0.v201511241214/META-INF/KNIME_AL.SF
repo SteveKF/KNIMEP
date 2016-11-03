@@ -1,0 +1,291 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: odhUll+PtEQF7z1LPexTAesSkwY99
+ UqiMsjVpfIOiIs=
+SHA-256-Digest-Manifest: rHpK9l11EYhXrxs7u0foPny1elQ6jiiuExigDhRfiIE=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: icons/missing.gif
+SHA-256-Digest: cJEnkpuFCnhkrt/2IRSK8vPDXeZPhgFMPdmqRFwqbXk=
+
+Name: plugin.xml
+SHA-256-Digest: Ct2kUPU/p6NFPpJBAYemf1DMJAmj0wyqGf4iNm0Q6g8=
+
+Name: tocs/applications_network_io$nodes.xml
+SHA-256-Digest: 7qBcylMhzYmvmteVXI18ehHgo/TSQjF3zqjKwWVNc8Q=
+
+Name: html/nodes/4a057126.ShortestPathNodeFactory.html
+SHA-256-Digest: DgVZYT3mgwajRRVOmEYHALAvlA5PC5eCFViSCqnniTQ=
+
+Name: icons/filter.png
+SHA-256-Digest: MsFoCR7aeGLlq9f22r8htTD0IhUGDgVXhFhz4JaCyNg=
+
+Name: lib/JGraphT/jgrapht_0.8.3.jar
+SHA-256-Digest: F18Y+p+FhXafbBvs6ir+qcc6lZmOTpBLRzom73Di81c=
+
+Name: lib/AbegoTreelayout/LICENSE.TXT
+SHA-256-Digest: CzBrqlFiFM0UfL+PMwJjbXHJA/mKMy05XDEDD9kQ2JA=
+
+Name: html/nodes/49d81f37.MultiFeatureInserterNodeFactory.html
+SHA-256-Digest: MPGCGLn8jhmH5I4rmi6ughBuZ42ZbO+IE3bvRo/ykIs=
+
+Name: html/nodes/e3fe966.NeighborFilterNodeFactory.html
+SHA-256-Digest: cpfyhWx5faojOENOl41oL9KBgoPq5iKElmfXSvqkCiM=
+
+Name: schema/JungGraphLayout.exsd
+SHA-256-Digest: vvXmBzwleVQRB/bLCUJyqFyZQS2zS8kAPxukPhGYWcs=
+
+Name: tocs/applications_network_io_file$nodes.xml
+SHA-256-Digest: SgypdoOexx3QghrHlE81w/N0wGxeQMMuRaf25S8PdpM=
+
+Name: icons/visualization.png
+SHA-256-Digest: 6Dje/AY/tDqTSFn2s1ETxjO2vgvbz/94LQnvORrgNLk=
+
+Name: html/nodes/4a5245f4.Network2DataCellNodeFactory.html
+SHA-256-Digest: VnJWjYsb/VwwoQyvbZyz1Zz6bSmnOVY451ZuRn4iDJQ=
+
+Name: tocs/applications_network_convert$nodes.xml
+SHA-256-Digest: e8nAbQ3sh5ef/G3ghhw0qofzNsCZn5D0KqTQWYOXjMI=
+
+Name: html/nodes/539e9641.NodeTableWriterNodeFactory.html
+SHA-256-Digest: avLoGzbheKBw2ek/sy6ND9fOglA2DM3zSgNAbGoDnSM=
+
+Name: html/nodes/5aed2df7.Matrix2NetworkNodeFactory.html
+SHA-256-Digest: u2CqvId87vS+WwxFXl4cw8TIXxS+t1NhfXQblsEPw2w=
+
+Name: lib/jung/jung-algorithms-2.0.1.jar
+SHA-256-Digest: /0MCjj4tBqp4vqve8ZZNTQcGgofwkYrheKxirpwtbMk=
+
+Name: icons/file.png
+SHA-256-Digest: 4UBQ/pWiyPsLCdtx3+oGsxaw/uybuhQK9G3gKlrG1bg=
+
+Name: html/nodes/53a34e8c.LaplacianMatrixNodeFactory.html
+SHA-256-Digest: hheTl8YRjaY4s5sKFsF+9Z2+vsK2zjlDxhd0hJewNpM=
+
+Name: lib/jung/collections-generic-4.01.jar
+SHA-256-Digest: DYjpT+QHj7x7n4Pln0OfAtscqq+vblZeNbX6RDpoCrQ=
+
+Name: lib/jung/jung-visualization-2.0.1.jar
+SHA-256-Digest: g11r+3rbXLsbcyscPb4AFlJsK3eN3XiAEPd1DMvgdPM=
+
+Name: schema/NodeSelector.exsd
+SHA-256-Digest: r/PaoCpBuE6k95Dx5Bo3nbk7JQi03LXGtV0g2SeA3wE=
+
+Name: icons/matrix.png
+SHA-256-Digest: jf8bIpsnc6c9nBjPMO9AS2MwrRaXzX/w21VscU2H6dY=
+
+Name: tocs/applications_network_viz.xml
+SHA-256-Digest: 7loZ/yCqQRfgMZ4Ldvrk9wGgSCT4fqLfo4YoQa/+Yw8=
+
+Name: tocs/applications_network_mining.xml
+SHA-256-Digest: YTSN3Iov4MWTOp2xwT3wrWQk9Ul9cM0dMRciLFCGrI8=
+
+Name: html/nodes/febe3cc.NetworkWriterNodeFactory.html
+SHA-256-Digest: f0yEcdRHNuoYssCqbsaE8Em2XdSX5Wox2fbQYEE+Rzc=
+
+Name: tocs/applications_network_convert_table.xml
+SHA-256-Digest: LE5HOiHoEPxnlP42FR7pgf7tkuEyE+etX+46acuxNiQ=
+
+Name: html/nodes/4ade8ff0.EdgeAdjacencyMatrixNodeFactory.html
+SHA-256-Digest: +sANb3m/iwFZ+r7PcWElYuccw8gqDIfx++RN5eGejOM=
+
+Name: tocs/applications_network_filter.xml
+SHA-256-Digest: VU1ZAuht4UqYLEZZ95LPCHwzxuwkZId9xSW+f++qosE=
+
+Name: icons/convert.png
+SHA-256-Digest: NruKvSvrgh+einrMgOel6BHa3JzGbpBdmLps52Z7ge4=
+
+Name: tocs/applications_network_convert_matrix$nodes.xml
+SHA-256-Digest: YlDaN4Rvf7hSpJdHufXY3BTeiSSGKL66fqvyIwuD1AI=
+
+Name: tocs/applications_network_io_file.xml
+SHA-256-Digest: XmgvA/n1kPrgz9s+iMheIVdu/cPr1zsOwpWnDYqSeTw=
+
+Name: html/nodes/11165a3b.VizInputConnectorNodeFactory.html
+SHA-256-Digest: LJ40HRlH7bDM0ip2EmA709SqpHc4MM7IbdaOVL1jum0=
+
+Name: html/nodes/3a1e2c0d.VizPropertyExtractorNodeFactory.html
+SHA-256-Digest: lEEvuYtfSEfLVv1nS9GpngsXrZE9hHS618yoFfbxTk8=
+
+Name: html/nodes/648a8c8a.NetworkGeneratorNodeFactory.html
+SHA-256-Digest: uxJL96GXSmgAy2Mgd4UH3KAD7ojQ5n8aM5c1YwZj7Xw=
+
+Name: icons/io.png
+SHA-256-Digest: NSPUnCc0aXqXstDHEZFMRjamxhbvfVgXKb2ho6XgpWY=
+
+Name: html/nodes/3c9c761c.NetworkFeatureExtractorNodeFactory.html
+SHA-256-Digest: bm3gfBQU9TVH6RWc3xM64niY2LiYBaUne6XKSFjtFlM=
+
+Name: icons/partition.png
+SHA-256-Digest: l33IXJuL/L13xWMO/iu0GHz07pdJEuPYvH2hnUR7Z08=
+
+Name: lib/JFontChooser/README.txt
+SHA-256-Digest: ZoGzccAdQdfMLLhbGOqLk0psxtvAeDOZ+z5BmvhARmc=
+
+Name: html/nodes/3205e2f0.FeatureTableNodeFactory.html
+SHA-256-Digest: AA4w7yNNarymoTW4iIzrWke+md38CDoCexJRQkgOVKM=
+
+Name: icons/network.png
+SHA-256-Digest: ofk3P7tipfe59tDKO5zu+3er8VekK3S6NnmENUpx5Ag=
+
+Name: tocs/applications_network_filter$nodes.xml
+SHA-256-Digest: kJXrUy8uNPO+0mzvr3GpnoawxuCz0bnzCH+zCh9MLvI=
+
+Name: html/nodes/37f5391a.NodeNameFilterNodeFactory.html
+SHA-256-Digest: Ucveohnmorb0TK+4wzDYurpIFyn9TNTj0Tcg4oKhBe8=
+
+Name: html/nodes/413de489.EdgeTableWriterNodeFactory.html
+SHA-256-Digest: 9o9DK11sggb0FgJWl+Rjk0faqGZCoFrqN96NjeOMd0c=
+
+Name: lib/jung/LICENSE.txt
+SHA-256-Digest: 4pLBR5CBph7/+QXXMXYap6fjP3eWFQFmWHRRHFYeoh8=
+
+Name: html/nodes/3cd51bc6.FeatureListFilterNodeFactory.html
+SHA-256-Digest: wAcxSP3om8bU2IviXqx6XUJVfDoyWIAS5tKG+zNvmSA=
+
+Name: schema/EdgeCreator.exsd
+SHA-256-Digest: cySmXCFYQbw6coXqstkf/bDJO2/Dqhe7UJFohzTcbSg=
+
+Name: lib/JFontChooser/jfontchooser-1.0.5.jar
+SHA-256-Digest: fRiio485dFwZGyS2YLMmXv9k7RiD7CV7hnHmm049IBw=
+
+Name: icons/dist_matrix.png
+SHA-256-Digest: v4u6FNAZfnk2A/pVQYYopvy03hNlkd7nkN4aZcxf/tw=
+
+Name: tocs/applications_network_convert.xml
+SHA-256-Digest: kePn/ZVuzhk9I3DRoQrMEbeReH2fyqOggtXY23mDfrM=
+
+Name: lib/AbegoTreelayout/org.abego.treelayout.core-1.0.1.jar
+SHA-256-Digest: EVPYoWEnIHtJzVvWITWHd4acPA/Ufe+PBJxMNZ19usw=
+
+Name: lib/JGraphT/LICENSE.txt
+SHA-256-Digest: MgyRfijVccBwjnCSavSNZYiqnYEVnT5WrFRiHVafaCw=
+
+Name: html/nodes/549af954.DataCell2NetworkNodeFactory.html
+SHA-256-Digest: 3rwrO5NdmQm2Kvuv3RLFQTc0CnUculyMkAemQtScDzI=
+
+Name: html/nodes/f7fc0b2.SubGraphExtractorNodeFactory.html
+SHA-256-Digest: WlzgTF9WLgz4vLydP10JzMG+1rcgLkdMFi1/x9LTCK0=
+
+Name: icons/clustering.png
+SHA-256-Digest: +ngCZXRqtPrroDFBIk46vmV4SLi8CzP2j2Ig+8BmGx0=
+
+Name: lib/jung/jung-graph-impl-2.0.1.jar
+SHA-256-Digest: aki9xHaqD7y3gzR0c+OOYY6us6OGDIPqb+U5vjb82zw=
+
+Name: tocs/applications_network.xml
+SHA-256-Digest: jV/OYxFx5XuYmfr9Nuji5IT6L6RCoysbROe4h6qeVcY=
+
+Name: schema/DomainCreator.exsd
+SHA-256-Digest: pFbh+Z8TWo75w8Wwkn3cYA1YlLWTfF8vpvo5F4VouCc=
+
+Name: tocs/applications_network_mining$nodes.xml
+SHA-256-Digest: dymNya5v0JZD+E8HW0in74iDJikkU2M9JBscuPBYCk0=
+
+Name: lib/AbegoTreelayout/org.abego.treelayout.core-1.0.1_source.zip
+SHA-256-Digest: blBBlP5k3v/7ZvyXVZ/qPpVpuLmmiV4pGtmRN5YHgV0=
+
+Name: html/nodes/58817471.BeefFileReaderNodeFactory.html
+SHA-256-Digest: HUcMD4yLJ+JFQ4TgMsQ2tT9Yc36AOkk5y1KOjtRhars=
+
+Name: lib/AbegoTreelayout/org.abego.treelayout.demo-1.0.1.jar
+SHA-256-Digest: 3H5TD8VnezFInUfwEuDYR9KJmiS2flzwqsGuuQKqL10=
+
+Name: html/nodes/4f67832.PartitionGraphNodeFactory.html
+SHA-256-Digest: uK6egSNJIW8enuUU+YdXJZxikiCfG9TQgZIa83zu0qY=
+
+Name: lib/AbegoTreelayout/org.abego.treelayout.demo-1.0.1_source.zip
+SHA-256-Digest: vixnYXwxOT68Ls3bbAI92m2U99o3czGFPuf3w9yg/Sk=
+
+Name: html/nodes/612b7bf6.AssignPartitionNodeFactory.html
+SHA-256-Digest: 6ThvO/z+ZwtU6lE6U9PqkSPJlbiAN9odvPeoDJVnWEg=
+
+Name: lib/JFontChooser/LICENSE.txt
+SHA-256-Digest: WHXBsHwJDgL6dZRB0UaN1jtH5B/e/n3chmZYzZ46kG0=
+
+Name: html/nodes/97e478f.VizOutputConnectorNodeFactory.html
+SHA-256-Digest: 9Y1AECWA8mwOyX5FcVIib9FAwHz+/bu8/pGtT41TTIg=
+
+Name: html/nodes/34716a2c.NetworkAnalyzerNodeFactory.html
+SHA-256-Digest: DUW1DaN4ZX3oFvFOl/i/My2MGc6xR1JbF1ZXiFXs++A=
+
+Name: tocs/applications_network_convert_matrix.xml
+SHA-256-Digest: J2wRWzNMEnWA+JhprgbhMktDlVUfqWVBSrSWWoSRC4Q=
+
+Name: icons/analyze.png
+SHA-256-Digest: 5R8FOESnhel4AGK+KdRAKwLi3L1hbxD1z+jUZdulOvY=
+
+Name: html/nodes/73a42b30.NodeAdjacencyMatrixNodeFactory.html
+SHA-256-Digest: 4/9x9HlGOcVF2wRxYUbiqZ/Yg9jXIEdCjcyMoXmJNAw=
+
+Name: html/nodes/147d34bc.IncidenceMatrixNodeFactory.html
+SHA-256-Digest: 312l0leqdAD5rNnsGOKma0rHG62frMPzEOzNDgQmalI=
+
+Name: tocs/applications_network_io.xml
+SHA-256-Digest: MX4aCUvwEtGLxyu8nHWgPu8Ic6vL6X8UAjmudM3hKBQ=
+
+Name: icons/table.png
+SHA-256-Digest: AclBXzuX14oVxYB1yOAlyjlXu2HMfmwv7itp3CD9/HY=
+
+Name: tocs/applications_network_convert_table$nodes.xml
+SHA-256-Digest: gsLlHxV7qb0Cx+E/lXJeM9Nz9GEWqyUIwdHHizt83Hw=
+
+Name: html/nodes/67276d52.NeighborExtractorNodeFactory.html
+SHA-256-Digest: B+V72Q7tnQFWHwUhHjnlyTJDuAkeNIAb8l40CqtNV28=
+
+Name: html/nodes/3da50c44.NodeDegreeFilterNodeFactory.html
+SHA-256-Digest: CTf+DTpjvHLU0p13AyIDLdue8WxEnVDtEBc6ANEQHIw=
+
+Name: knimeNetworkBase.jar
+SHA-256-Digest: 81kaif6avQIk/ewE/KUL8CboT76pzYKr+4DXBYqbNXI=
+
+Name: html/nodes/7bf3cc6.FeatureInserterNodeFactory.html
+SHA-256-Digest: khL5aA0+N334uvepVdBd3VKEBX7DILE9ezG4oSs8l4g=
+
+Name: tocs/applications_network$nodes.xml
+SHA-256-Digest: ub96yiIfTwsdNPYD9HbxW2jhpuTS3NSKWoBcXY9kb6M=
+
+Name: lib/jung/jung-api-2.0.1.jar
+SHA-256-Digest: Vz4x1p00O5sEq3Lp+0F4/jSr3H93sB3i78fzXiLZcMI=
+
+Name: html/nodes/5d3a0b1a.FeatureValueFilterNodeFactory.html
+SHA-256-Digest: ToKjcvfu9eKdMhM0zhuqsQrgngUChdxGGiFRTNmpDZs=
+
+Name: html/nodes/71cdce56.ObjectInserterNodeFactory.html
+SHA-256-Digest: DKcgPxGH8kAYxu4d3vgev99HMunrEi+JopUG4nrVdPQ=
+
+Name: html/nodes/67ed1da9.EdgeWeightFilterNodeFactory.html
+SHA-256-Digest: lAWtvUmviIXgPXUEd72RE9YFPJP8ibd+95TWnO0x3jU=
+
+Name: html/nodes/5a1dfb40.HierarchyExtractorNodeFactory.html
+SHA-256-Digest: rwWVBQ8BMxSbOLpeQY5Tns7GWDsPG1Aul12+g/D7uZA=
+
+Name: html/nodes/7a78ccea.FeatureFilterNodeFactory.html
+SHA-256-Digest: MHGhhnPE5m+Q8o/6AYbNsqd3Q39luochGqVZHyLmHqM=
+
+Name: lib/AbegoTreelayout/abegoTreeLayout.pdf
+SHA-256-Digest: OhckrD+/OWdCQUUN2CWjUve/6LBW1QDYQFYBG/OOTdc=
+
+Name: html/nodes/4dfa35d7.EdgeDegreeFilterNodeFactory.html
+SHA-256-Digest: IorbqxZc70Z9t5q80uINWc1CHN9wjOWzDoY2nkMJjbA=
+
+Name: html/nodes/726bfab2.NetworkCreatorNodeFactory.html
+SHA-256-Digest: IFjh95exiDky7PyFYMRT5QpB/MeJPIHjXqXv15xLb/Y=
+
+Name: html/nodes/33c5e779.ObjectIdFilterNodeFactory.html
+SHA-256-Digest: MvG9TjbVQ17e1gZw0EGlsFxKrAUxA4rNpPf3aBAT+Bs=
+
+Name: html/nodes/529a232c.NetworkReaderNodeFactory.html
+SHA-256-Digest: 6sf+z3hTKO3o10Y30Uvf4Gb3kk1NgYv8vRWhPi1yN5c=
+
+Name: html/nodes/f0c9910.PartitionTableNodeFactory.html
+SHA-256-Digest: nEnugtOVBye4pbYGgIvACWc0lQock1XR+xi/U1IyHDk=
+
+Name: tocs/applications_network_viz$nodes.xml
+SHA-256-Digest: 16OBgvlB9OgEXWILdNBYTjSBG9ClP6RHFI+3eu3+B08=
+
+Name: html/nodes/27a3292e.PartitionFilterNodeFactory.html
+SHA-256-Digest: oDa+A1gYEfhAZZoFiakpCwNLHhGahOaMalZLG/V5TYw=
+
+Name: html/nodes/4bcb2e15.NetworkViewerNodeFactory.html
+SHA-256-Digest: WCMCZo/SKi075VyxXFi4eQnGAJerfgAT9tngvjeLsOI=
+

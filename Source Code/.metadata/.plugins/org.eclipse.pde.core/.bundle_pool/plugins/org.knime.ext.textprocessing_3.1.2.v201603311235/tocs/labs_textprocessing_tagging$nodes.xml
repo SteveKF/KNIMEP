@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Enrichment" link_to="../org.knime.ext.textprocessing/tocs/labs_textprocessing_tagging.xml#labs_textprocessing_tagging">
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/61ab2725.AbnerTaggerNodeFactory.html" label="Abner tagger"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/1a57c45d.DictionaryTaggerNodeFactory.html" label="Dictionary tagger"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/4eb633bd.OpennlpNerTaggerNodeFactory.html" label="OpenNLP NE tagger"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/3d3ea9f9.OscarTaggerNodeFactory.html" label="Oscar tagger"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/100f8531.PosTaggerNodeFactory.html" label="POS tagger"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/25dc2d63.StanfordTaggerNodeFactory.html" label="Stanford tagger"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/2e9f0a65.WildcardTaggerNodeFactory.html" label="Wildcard tagger"/>
+</toc>

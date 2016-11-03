@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.knime.workbench.explorer.contentprovider">
+      <KNIMEExplorerContentProvider
+            ContentProviderFactory="com.knime.explorer.teamspace.TeamSpaceContentProviderFactory">
+      </KNIMEExplorerContentProvider>
+   </extension>
+   <extension
+         point="org.knime.product.splashExtension">
+      <splashExtension
+            icon="icons/teamspace_splash_48.png"
+            icon24="icons/teamspace_splash_24.png"
+            icon32="icons/teamspace_splash_32.png"
+            id="KNIME_TEAMSPACE"
+            tooltip="KNIME TeamSpace">
+      </splashExtension>
+   </extension>
+</plugin>

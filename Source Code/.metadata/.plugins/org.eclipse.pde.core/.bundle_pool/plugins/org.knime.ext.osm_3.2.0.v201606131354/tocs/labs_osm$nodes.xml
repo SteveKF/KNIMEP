@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Open Street Map" link_to="../org.knime.ext.osm/tocs/labs_osm.xml#labs_osm">
+<topic href="PLUGINS_ROOT/org.knime.ext.osm/html/nodes/199c4b35.GeoRowFilterNodeFactory.html" label="Geo-Coordinate Row Filter"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.osm/html/nodes/5a555723.OsmMapViewNodeFactory.html" label="OSM Map View"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.osm/html/nodes/33f7dee3.OsmMap2ImgNodeFactory.html" label="OSM Map to Image"/>
+</toc>

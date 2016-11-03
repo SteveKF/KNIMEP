@@ -1,0 +1,21 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: zVl/V0CccwZ8lvnuWfIAYqRF6s+kg
+ 2lvRxe78mDt8mw=
+SHA-256-Digest-Manifest: Vot/cfe2UrnE8Zaosq5c8WWgrWNQWc3W4ExkON3AN3k=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: lVXploLeP1ho6eGlFelr3CG7ZbvcSttjvLqoaQiag34=
+
+Name: knime-explorer-sharedspace.jar
+SHA-256-Digest: pQibcm0n6fit1qGbeKi/XXSTM6idBpuHXNGsh/OqFyw=
+
+Name: icons/new_knime16.png
+SHA-256-Digest: J+b4FF6sFLE3bHazx1oF/LV5ECn2sssLn6QOwT285Jg=
+
+Name: icons/new_knime55.png
+SHA-256-Digest: bUDPwzo6hm4Wi8b3NmnlzzLYs7TmNkx9nMWHsqFTED0=
+
+Name: icons/sharedspace_content.png
+SHA-256-Digest: xpjl7QacXSEmbtpsH6ZqvoIQcGlov5rYDykUaEdONZc=
+

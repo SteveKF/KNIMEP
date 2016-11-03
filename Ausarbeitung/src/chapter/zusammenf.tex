@@ -1,0 +1,16 @@
+%% zusammenf.tex
+\chapter{Zusammenfassung und Ausblick}
+\label{ch:Zusammenfassung}
+%% ==============================
+In dieser Arbeit wurden sowohl Standard Skylines als auch repräsentative Skylines vorgestellt. Zur Berechnung von Skylines müssen Informationen vorliegen, ob die betrachteten Dimensionen minimiert oder maximiert werden sollen. Dieses Konzept wurde um weitere Präferenzen erweitert. Hierfür wurden die Basispräferenzen LOWEST, HIGHEST, AROUND, BETWEEN, BOOLEAN und LAYERED von Preference-SQL benutzt. 
+Diese Präferenzen kann der User selbst in einem in dieser Arbeit vorgestellten KNIME Node (PreferenceCreator) eingeben und diese mit Pareto oder Priorisierungspräferenzen verknüpfen. Pareto verknüpfte Basispräferenzen besitzen die gleiche Wichtigkeit, wohingegen Präferenzen mit einer Priorisierungsverknüpfung unterschiedliche Wichtigkeit besitzen. Die Basispräferenzen sorgen dafür, dass alle Datensätze für jede Präferenz einen Score bekommen. Der Score hängt davon ab wie gut der Datensatz die Präferenzen berücksichtigt. 
+Mithilfe der BOOLEAN und LAYERED Präferenz können auch Dimensionen mit nicht-numerischen Werten für (repräsentative) Skylines berücksichtigt werden, was vorher nicht möglich war.  
+Anstatt nun die Originaldaten für die Skylinealgorithmen als Input zu benutzen, werden die Scores verwendet. Dadurch können Präferenzen berücksichtigt werden und mithilfe der einheitlichen RowIDs trotzdem die entsprechenden Originaldaten ausgegeben werden. 
+
+Neben dem PreferenceCreator Node, der die Erstellung von Präferenzen ermöglicht und den (repräsentativen) Skyline Nodes, die anhand dieser Präferenzen die besten Datensätze ausgeben, wurden Nodes für die Visualisierung und der Ausgabe von Queries erstellt. Alle diese Nodes sind so simpel wie möglich gehalten, damit sie der Idee hinter KNIME, der Einfachheit, gerecht bleiben. Die Generierung von Präferenzen und Skylines ist für jeden User ohne großes Vorwissen möglich. Durch die graphische Oberfläche ist es einfach Parameter für Nodes einzugeben und Nodes durch einfaches Drag \& Drop und Klicken zu erstellen und auszuführen.  
+
+Die zusätzliche Implementierung von weiteren Skylinealgorithmen könnte diese Arbeit sinnvoll erweitern und dem User mehr Möglichkeiten bieten Skylines zu berechnen. Da viele Algorithmen verschiedene Ziele haben, ist es sinnvoll mehrere Algorithmen zu Auswahl zu haben, um dadurch den effizientesten/besten für seinen Fall auszuwählen. Zum Beispiel ist es nicht sinnvoll, falls Userthresholds vorliegen und somit signifikante Werte bekannt sind, Algorithmen auszuwählen, die nur auf der Diversität von Datensätzen beruhen. 
+
+Zusammenfassend kann gesagt werden, dass die zusätzlichen Präferenzen eine sinnvolle Ergänzung für die Berechnung von (repräsentativen) Skylines sind und die Berücksichtigung von nicht-numerischen Werten den größten Vorteil darstellen. Die graphische und einfache Handhabung aller KNIME Nodes hilft, dass Nutzer ohne Vorwissen, ohne Probleme eine (repräsentative) Skyline erstellen können. 
+%% ==============================
+%%% End: 

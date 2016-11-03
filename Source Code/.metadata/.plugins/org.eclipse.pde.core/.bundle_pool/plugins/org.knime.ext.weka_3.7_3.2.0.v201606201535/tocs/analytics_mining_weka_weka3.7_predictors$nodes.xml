@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Predictors" link_to="../org.knime.ext.weka_3.7/tocs/analytics_mining_weka_weka3.7_predictors.xml#analytics_mining_weka_weka3.7_predictors">
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/140f98f6.ClusterAssignerNodeFactory.html" label="Weka Cluster Assigner (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/66393288.WekaPredictorNodeFactory.html" label="Weka Predictor (3.7)"/>
+</toc>

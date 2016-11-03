@@ -1,0 +1,387 @@
+Manifest-Version: 1.0
+Eclipse-RegisterBuddy: org.knime.base
+Bundle-SymbolicName: org.knime.r;singleton:=true
+Require-Bundle: org.eclipse.ui;bundle-version="[3.6.1,4.0.0)",org.ecli
+ pse.core.runtime;bundle-version="[3.6.0,4.0.0)",org.knime.workbench.r
+ epository;bundle-version="[3.0.0,4.0.0)",org.knime.base;bundle-versio
+ n="[3.2.0,4.0.0)",com.sun.jna;bundle-version="3.5.2",org.knime.ext.r.
+ type;bundle-version="[3.0.0,4.0.0)",org.knime.ext.r.bin;bundle-versio
+ n="[3.0.0,4.0.0)",com.fifesoft.autocomplete;bundle-version="[2.5.7,3.
+ 0.0)",com.fifesoft.languagesupport;bundle-version="[2.5.7,3.0.0)",com
+ .fifesoft.rstaui;bundle-version="[2.5.7,3.0.0)",com.fifesoft.rsyntaxt
+ extarea;bundle-version="[2.5.7,3.0.0)",com.fifesoft.spellchecker;bund
+ le-version="[2.5.7,3.0.0)",org.apache.commons.lang3;bundle-version="[
+ 3.2.1,4.0.0)",org.eclipse.help;resolution:=optional,org.eclipse.help.
+ ui;resolution:=optional
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Ant-Version: Apache Ant 1.9.6
+Export-Package: org.knime.r.ionodes
+Bundle-Name: KNIME R-Project nodes
+Bundle-Version: 3.2.0.v201607011540
+Bundle-ClassPath: org-knime-r.jar,lib/rengine-1.8.4.jar,lib/rserve-eng
+ ine-1.8.4.jar
+Bundle-Activator: org.knime.r.Activator
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: html/nodes/47db17c4.RPortObjectWriterNodeFactory.html
+SHA-256-Digest: lw0TtIHOi4ve+vjXX3n5tP6rhzPF5BAXOslS/lOL3hk=
+
+Name: html/nodes/7341147.RSnippetNodeFactory.html
+SHA-256-Digest: 5cP2iicKNK+h1kyl8WxHCixbpA2ciciYMJUNgXXKl7U=
+
+Name: plugin.xml
+SHA-256-Digest: WSbG9Wv1MAU24DGOYsqz9uzq7YlFAxrQQ6xtKZW2Jrg=
+
+Name: metanode_templates/Grouped ScatterPlot/Merge Variables (#5)/sett
+ ings.xml
+SHA-256-Digest: n5gJhcAODZCR80YbeLayvvm1GFNJT/K85PzhuWHcR8E=
+
+Name: metanode_templates/Stacked BarChart/Cache (#7)/port_1/data.zip
+SHA-256-Digest: fjbS4aoUHbs0LVCf7yfm+BalqaROr9btXM5YTdbX0A4=
+
+Name: html/nodes/17b6bcb4.RToViewNodeFactory.html
+SHA-256-Digest: KAqFXQcz3BBJ4NOnWjZA+XZ/qKVWaCqn1Jrh6iIC5hY=
+
+Name: metanode_templates/Stacked BarChart/Column Filter (#10)/settings
+ .xml
+SHA-256-Digest: rte4U6J3/+bxG23pLD2QrtlYSsKy82G0Q6T8cf0T1I0=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Selection QuickFor
+ m (#2)/port_1/spec/spec.zip
+SHA-256-Digest: pptOCAbGgVomYWvCaEun4RWebVhxMubtYD7mcZDiKI8=
+
+Name: metanode_templates/Stacked BarChart/Column Filter (#10)/port_1/d
+ ata.xml
+SHA-256-Digest: fEhGv/6pPLZoRQyS0LTh+Sf3ZwKcNjKPVqJ8ApHf6/0=
+
+Name: html/nodes/542e1a2c.AddTableToRNodeFactory.html
+SHA-256-Digest: m0njjZ0WNQkowuG4VDNejHJpUs6GMWDdwoc52dHva70=
+
+Name: html/nodes/6d5336d9.RReaderTableNodeFactory.html
+SHA-256-Digest: HPLaJ8J7Qlqh2647HEo4LGRarYLQZXuTyQaz9gbad7s=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Selection QuickFor
+ m (#2)/port_1/object/portobject.zip
+SHA-256-Digest: i7QqeXpNkjAOUPSqI2AMWuMFyiXJBL+n5sewhUiy8sQ=
+
+Name: metanode_templates/Stacked BarChart/Column Selection QuickForm (
+ #2)/port_1/spec/spec.zip
+SHA-256-Digest: mvG1odX4L6QxP5+ExWuvwocltRQpbEX13Ol92KXEQQM=
+
+Name: metanode_templates/Stacked BarChart/R View _Table_ (#4)/port_1/o
+ bject/portobject.zip
+SHA-256-Digest: /brTNoGU0w7zaU+3uDBVac8T0O7mcWaUgHWguELHo3k=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Selection QuickFor
+ m (#8)/port_1/object/portobject.zip
+SHA-256-Digest: i7QqeXpNkjAOUPSqI2AMWuMFyiXJBL+n5sewhUiy8sQ=
+
+Name: html/nodes/71c35555.RToPMMLNodeFactory.html
+SHA-256-Digest: 8RQcbQ13N6yI53wiCxVypBl4ea2YjFe/rvhMNqDRpUo=
+
+Name: LICENSE.TXT
+SHA-256-Digest: 5tagCVBeNF/pSeExAzT8sHR/KNrihWdZ3hAqtmtyLLQ=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Filter (#10)/setti
+ ngs.xml
+SHA-256-Digest: vRTs2EufqXO+OgcUURn3G6/lQkM7sp5zPTAtnoOAcLA=
+
+Name: metanode_templates/Stacked BarChart/Cache (#7)/port_1/data.xml
+SHA-256-Digest: 1KPPVZMexaRi/ylBVc/JEmXe2pxKOIyNogNV9ZPJQlw=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Selection QuickFor
+ m (#3)/port_1/spec/spec.zip
+SHA-256-Digest: pptOCAbGgVomYWvCaEun4RWebVhxMubtYD7mcZDiKI8=
+
+Name: metanode_templates/Stacked BarChart/Column Selection QuickForm (
+ #3)/port_1/spec/spec.zip
+SHA-256-Digest: mvG1odX4L6QxP5+ExWuvwocltRQpbEX13Ol92KXEQQM=
+
+Name: tocs/scripting_r_r-metanodes.xml
+SHA-256-Digest: vTi6QiTBEz44qQqIE8UOVI4+TEPZUsgF4wlSYBTuBe8=
+
+Name: metanode_templates/Stacked BarChart/Merge Variables (#5)/port_1/
+ spec/spec.zip
+SHA-256-Digest: nIurXtxPQ2kQ9GgSPw1wr6MFq4OiqSyMimkuISgzqlU=
+
+Name: rsnippets/org.knime.r.RSnippetNodeFactory/Cummulative Statistics
+ _efdf9a3f-a1f4-436c-a25a-dcbd4d072b37.xml
+SHA-256-Digest: ineK38xwngC7dHe9EPxKPcpjAeZP2TZD9XgwNRLOMNQ=
+
+Name: lib/README
+SHA-256-Digest: xYhYCi9xAq7HBfNEWX1YQQwd6R408q9m7LXJZNHRRII=
+
+Name: metanode_templates/Grouped ScatterPlot/workflow.knime
+SHA-256-Digest: HuuunS/fOLNcKTZRoXte57lDV6+IDtbDpzDdex1QrEI=
+
+Name: metanode_templates/Grouped ScatterPlot/String Input (#6)/setting
+ s.xml
+SHA-256-Digest: XBur9wqExEfJwrfhYshC+6SRMKtcZ38htWjDqnkdGwY=
+
+Name: tocs/scripting_r.xml
+SHA-256-Digest: KOAQFLodk+5cJhwLDdZQZ489XaCkFxRmdjPBFzvyk9U=
+
+Name: tocs/scripting_r_io$nodes.xml
+SHA-256-Digest: mVehawuLSdssx1K1VgB0S2oBpVH378mGtbOUdGbn4Mk=
+
+Name: html/nodes/5d596fb9.RViewNodeFactory.html
+SHA-256-Digest: Ol4cku0LwoVRtHUq8+WRNA8SfOzwkPGi+lEdv7dr6x8=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Filter (#11)/port_
+ 1/data.xml
+SHA-256-Digest: 2NZZ/pGgSFmRcRM0xW2LvJ/B+eOM3qFADjsf0hbjTK4=
+
+Name: html/nodes/Meta_Stacked_BarChart.html
+SHA-256-Digest: ncDBRwAuETJQfed50SB8QB6yxE0uqrnsIORyVn2ucxo=
+
+Name: icons/r-io-icon.svg
+SHA-256-Digest: PcwiYPmnAOvKFvoPvIhuutIqa47FDCzXDzy6fEJdpPw=
+
+Name: metanode_templates/Stacked BarChart/R View _Table_ (#4)/settings
+ .xml
+SHA-256-Digest: xjMBxH08ZzCbkxcewClBS2OUK77Jx047t0mGAhWf5Lw=
+
+Name: rsnippets/readme.txt
+SHA-256-Digest: xcGneKGHgJPIlcUjL4ws4sTXLYopp6L5CkofgBiRcPM=
+
+Name: icons/r-io-icon.ai
+SHA-256-Digest: WSl8SpEDykZAWC9FgeVL8boJkIJOyoy36RYdxOazGso=
+
+Name: lib/rengine-1.8.4.jar
+SHA-256-Digest: h5YyiU80nv7Np3NWU1qgPxfqAKWHiLbDB7eJhmkVGZg=
+
+Name: lib/rserve-engine-1.8.4.jar
+SHA-256-Digest: nJRhDJQlUhLInF/LCTPgw5oVp+GFVR4W3EJ0vHzSQd0=
+
+Name: html/nodes/fa8da91.RToTableNodeFactory.html
+SHA-256-Digest: e6Aesl0yHnvakGq2ZNUYPpt5bpmQ9Qxrqbj2wNOXymI=
+
+Name: metanode_templates/Stacked BarChart/R View _Table_ (#4)/internal
+ /Rplot.png
+SHA-256-Digest: IlRursYXhJrdj/unzAFRAloLi1+Q67URrLDN9TFvtLQ=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Filter (#10)/port_
+ 1/spec.xml
+SHA-256-Digest: cQ0tmn4rl9tXoXmu5OVmlbvacUeJU21swc31+gyh8X4=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Selection QuickFor
+ m (#2)/settings.xml
+SHA-256-Digest: S9YxXzouX9ykRIxc6DNbb/cnRctYdk8I3sHjONsNZ+g=
+
+Name: metanode_templates/Stacked BarChart/Column Selection QuickForm (
+ #2)/port_1/object/portobject.zip
+SHA-256-Digest: VbhnoUvK0hYNif1Fo1ANYNnnrEE0TOOnLWQpdmEUk1c=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Selection QuickFor
+ m (#3)/port_1/object/portobject.zip
+SHA-256-Digest: i7QqeXpNkjAOUPSqI2AMWuMFyiXJBL+n5sewhUiy8sQ=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Selection QuickFor
+ m (#8)/port_1/spec/spec.zip
+SHA-256-Digest: pptOCAbGgVomYWvCaEun4RWebVhxMubtYD7mcZDiKI8=
+
+Name: schema/templaterepository.exsd
+SHA-256-Digest: ErLBROwJikmXa/1NSi8oT2iuNyQCZpRWCMWrDWGKLm0=
+
+Name: rsnippets/org.knime.r.RReaderTableNodeFactory/Read CSV_9bcca507-
+ a244-44fc-8420-82fc32927b2d.xml
+SHA-256-Digest: nD170h/fygj9oAP+LdsJvdrdTIvw9ax/5Q2ZAPzqMB0=
+
+Name: metanode_templates/Stacked BarChart/workflow.knime
+SHA-256-Digest: uSuR92PGTPsolIjPIZnSpUbyLINirPZHDSfnaxnIODg=
+
+Name: metanode_templates/Grouped ScatterPlot/String Input (#6)/port_1/
+ spec/spec.zip
+SHA-256-Digest: pptOCAbGgVomYWvCaEun4RWebVhxMubtYD7mcZDiKI8=
+
+Name: metanode_templates/Stacked BarChart/Column Selection QuickForm (
+ #3)/port_1/object/portobject.zip
+SHA-256-Digest: VbhnoUvK0hYNif1Fo1ANYNnnrEE0TOOnLWQpdmEUk1c=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Filter (#10)/port_
+ 1/data.xml
+SHA-256-Digest: G2yBpCvPBObZGSXMNJF3Uv2472Z5QotU04VlVD4lWaI=
+
+Name: html/nodes/Meta_Grouped_ScatterPlot.html
+SHA-256-Digest: BKDxYvWhLTPszU4wiwm7y53DhvxUVNXAYIGXR4DjyvI=
+
+Name: metanode_templates/Stacked BarChart/R View _Table_ (#4)/internal
+ /execOutput
+SHA-256-Digest: fBLn6bsBnC7vzBgT3Rdulq+2fVfZ9PLyMkfn1lV860c=
+
+Name: metanode_templates/Grouped ScatterPlot/R View _Table_ (#4)/inter
+ nal/execErrout
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: icons/r-icon.ai
+SHA-256-Digest: 3nCwNMCxkT2sm8QLtAaejQxT0ewO3Cbr848GmGHt7g8=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Selection QuickFor
+ m (#3)/settings.xml
+SHA-256-Digest: 3xd9N4MDQW+bLzzafc9pQVhVfHi/o3aDCXsCBj8I1h4=
+
+Name: tocs/scripting_r_io.xml
+SHA-256-Digest: uoTv06kC/UtaIDDuZEvbv7D9xZVrf00rAa6gadVPJ14=
+
+Name: metanode_templates/Grouped ScatterPlot/Merge Variables (#5)/port
+ _1/spec/spec.zip
+SHA-256-Digest: pptOCAbGgVomYWvCaEun4RWebVhxMubtYD7mcZDiKI8=
+
+Name: html/nodes/3c4c9e14.RPortObjectReaderNodeFactory.html
+SHA-256-Digest: DbTFDLp9XAwM/6mNnsRi7YOftS352nMiGwszTTBAODI=
+
+Name: README.TXT
+SHA-256-Digest: 4VD+63G2SmHv4sSBXFwqU3D4C1c0/KttL1XSNF1tgYo=
+
+Name: html/nodes/3d3a9513.RToRNodeFactory.html
+SHA-256-Digest: jtDILXXOT7RdSWJi0vX/B/ePh3dHmRovhGUBPGW4HbM=
+
+Name: icons/meta.png
+SHA-256-Digest: ouYGdq4b2rCCikBUyiEZAkpJuuPHKTXFa7pinauzakQ=
+
+Name: metanode_templates/Grouped ScatterPlot/R View _Table_ (#4)/inter
+ nal/Rplot.png
+SHA-256-Digest: R5FHpl3v2gpAiyAq6wG9SCWnI6U+HDgmlR5GOhhyxa0=
+
+Name: html/nodes/46d78188.RPredictorNodeFactory.html
+SHA-256-Digest: a5tKw2y4ZeYQtFxNvPibhzVCWKB/011Hb+Kv1WT8LGI=
+
+Name: metanode_templates/Stacked BarChart/Merge Variables (#5)/port_1/
+ object/portobject.zip
+SHA-256-Digest: tCpO1QxAyupEzSUFaD2mItkseI17ZlhEoqvTnxjvFFw=
+
+Name: rsnippets/org.knime.r.RSnippetNodeFactory/Regex Column Filter_7c
+ e97cba-1ff0-400b-919c-ef1df48e0ece.xml
+SHA-256-Digest: 2ga5j/R3kB71RAw1SXl2lMRJi5FuJy/6GzZPsmMy3Z8=
+
+Name: metanode_templates/Grouped ScatterPlot/Merge Variables (#9)/sett
+ ings.xml
+SHA-256-Digest: 7Y/kcvfliRsdWckUYCqxJedBXNkN/xRfYI5eRZWaGFs=
+
+Name: html/nodes/663a8c32.RReaderWorkspaceNodeFactory.html
+SHA-256-Digest: 2sqDmPcG6/kSWQU3tcmltSrhLe0f/ujaQJJO4Di9ro8=
+
+Name: tocs/scripting_r$nodes.xml
+SHA-256-Digest: LLdONO8R4rLqBWm9nHu/HGvJJ7p09U7nSbZhfwy77Do=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Filter (#11)/setti
+ ngs.xml
+SHA-256-Digest: 3LVEZj/d+DDn8mULUqvK2xYtTDKiOPfmyDVU7N1fmUA=
+
+Name: lib/LICENSE-REngine
+SHA-256-Digest: YeDMoF2Mw/l0l0zPhmF7HqbCx3kzfe/Yil83iM5EAsA=
+
+Name: rsnippets/org.knime.r.RReaderTableNodeFactory/Library_ foreign_d
+ dfdea2d-a438-4b2f-813f-be154de17aa2.xml
+SHA-256-Digest: AnfgnxZKJYvnnHbeEBCWxqLcaGgRdac4Tgw4kSf94/Y=
+
+Name: metanode_templates/Grouped ScatterPlot/Merge Variables (#9)/port
+ _1/spec/spec.zip
+SHA-256-Digest: pptOCAbGgVomYWvCaEun4RWebVhxMubtYD7mcZDiKI8=
+
+Name: metanode_templates/Stacked BarChart/Column Filter (#10)/port_1/s
+ pec.xml
+SHA-256-Digest: cQ0tmn4rl9tXoXmu5OVmlbvacUeJU21swc31+gyh8X4=
+
+Name: metanode_templates/Stacked BarChart/Column Selection QuickForm (
+ #3)/settings.xml
+SHA-256-Digest: KFs3o+cIJLnZxPNsoCPWFKDhtv3bLbb3MECCGRL3To0=
+
+Name: metanode_templates/Grouped ScatterPlot/Merge Variables (#9)/port
+ _1/object/portobject.zip
+SHA-256-Digest: i7QqeXpNkjAOUPSqI2AMWuMFyiXJBL+n5sewhUiy8sQ=
+
+Name: metanode_templates/Stacked BarChart/Column Selection QuickForm (
+ #2)/settings.xml
+SHA-256-Digest: U0Opk5LmricOvW9SIqFcU1O3R0qVaTbfyIvTB+ivkIg=
+
+Name: org-knime-r.jar
+SHA-256-Digest: MnZgDmEq6uAoHqeWwpQ//vxz6JODk9LFUHYKUfTKEhI=
+
+Name: metanode_templates/Stacked BarChart/Cache (#7)/settings.xml
+SHA-256-Digest: EI2Tce3v27bEPJ6xlO+HWt6y5EgQTfTguI9RI6GGBtc=
+
+Name: metanode_templates/Stacked BarChart/Merge Variables (#5)/setting
+ s.xml
+SHA-256-Digest: D0BK6dL0klFS7XVEQqqMen8vPRsqOMlj1kIU4PXS4ZA=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Selection QuickFor
+ m (#8)/settings.xml
+SHA-256-Digest: V7OKCsNmVJR2Iz9ScMEcmFW0JPjUUel3q2dpNsoNkRE=
+
+Name: html/nodes/5e6efb7.TableToRNodeFactory.html
+SHA-256-Digest: 88Re87i+rPeQgrahMuktHXqdwT0nzusC0zmx0xSO1BM=
+
+Name: metanode_templates/Grouped ScatterPlot/R View _Table_ (#4)/port_
+ 1/object/portobject.zip
+SHA-256-Digest: +ixbUfC39nFVk++OOytbQPwdE8FpLkjAldCMII4eX0o=
+
+Name: metanode_templates/Stacked BarChart/String Input (#6)/port_1/obj
+ ect/portobject.zip
+SHA-256-Digest: cGYxmBUW54GQVCb9y1dgBv2KEe8Cws+KBhjYkG4zzUc=
+
+Name: metanode_templates/Stacked BarChart/Cache (#7)/port_1/spec.xml
+SHA-256-Digest: vaLEfhSPQmkUiej3OxchTQgLxBowkACQ9EF4547u2d8=
+
+Name: metanode_templates/Grouped ScatterPlot/String Input (#6)/port_1/
+ object/portobject.zip
+SHA-256-Digest: i7QqeXpNkjAOUPSqI2AMWuMFyiXJBL+n5sewhUiy8sQ=
+
+Name: icons/r-icon.svg
+SHA-256-Digest: c6k7B+Yaythv4HJcE/ci27ldd743trOBz9/RiPzddLo=
+
+Name: metanode_templates/Stacked BarChart/String Input (#6)/settings.x
+ ml
+SHA-256-Digest: 6ifWp/u6w3L8fyF0SvqMP1vkPn3DJXdiCKaTCPV2ipE=
+
+Name: html/nodes/5ab8e40d.RLearnerNodeFactory.html
+SHA-256-Digest: LVxI5ASGlw1Qfd8HbZmI9fr9CWJLiGEdmmlvwdp4S6s=
+
+Name: icons/r.png
+SHA-256-Digest: 3QdeSJbMNGeOvEuTH2xTs/sUJtXYXfVf2wiobdlLcD0=
+
+Name: metanode_templates/Stacked BarChart/String Input (#6)/port_1/spe
+ c/spec.zip
+SHA-256-Digest: 9lbe/mv3vqNNFP8OqGf5YZWBfs/O67IYG0bXB4VXRfU=
+
+Name: metanode_templates/Grouped ScatterPlot/Merge Variables (#5)/port
+ _1/object/portobject.zip
+SHA-256-Digest: i7QqeXpNkjAOUPSqI2AMWuMFyiXJBL+n5sewhUiy8sQ=
+
+Name: icons/r-io.png
+SHA-256-Digest: 8tWQXPKnGU5xYgburTHoZ1TRJOmeBNn9/GO2FtTGEtk=
+
+Name: metanode_templates/Grouped ScatterPlot/R View _Table_ (#4)/inter
+ nal/execOutput
+SHA-256-Digest: gDuEcC9HQ/NHWySbtGBN44GNQxSNVBAyfNL6i2PxABQ=
+
+Name: metanode_templates/Grouped ScatterPlot/R View _Table_ (#4)/port_
+ 1/spec/spec.zip
+SHA-256-Digest: tiq91NIJDs8iqjwHiXrxjztT9xhg3iAEiPBORAgeq24=
+
+Name: tocs/scripting_r_r-metanodes$nodes.xml
+SHA-256-Digest: nvbAvBAK62N8uJQS4oX+M4rpOt7a0JB7htiA/wgi7XQ=
+
+Name: metanode_templates/Stacked BarChart/R View _Table_ (#4)/port_1/s
+ pec/spec.zip
+SHA-256-Digest: tiq91NIJDs8iqjwHiXrxjztT9xhg3iAEiPBORAgeq24=
+
+Name: metanode_templates/Stacked BarChart/R View _Table_ (#4)/internal
+ /execErrout
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: rsnippets/org.knime.r.RViewNodeFactory/Colored Scatter Plot_64af
+ 685c-b86f-4ec5-8cd2-e6b5d1cd8794.xml
+SHA-256-Digest: odEJr1XcHRETwLdPkuYnaewz1KfAqvx1rC08/hv0yuU=
+
+Name: metanode_templates/Grouped ScatterPlot/Column Filter (#11)/port_
+ 1/spec.xml
+SHA-256-Digest: 1lzMOHTCDiu0Gqgiwh5DCggNwqCICYSNkhIEhoEFWWo=
+
+Name: metanode_templates/Grouped ScatterPlot/R View _Table_ (#4)/setti
+ ngs.xml
+SHA-256-Digest: Wsiz+bck3u/SRe00XmJso1NYa460xQ6AjB0JrEiHCbw=
+

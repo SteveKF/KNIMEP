@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.0"?><plugin>
+   <extension-point id="wekaclassifier" name="WekaClassifier" schema="schema/wekaclassifier.exsd"/>
+   <extension-point id="wekaclusterer" name="WekaClusterer" schema="schema/wekaclusterer.exsd"/>
+    
+    
+   <extension point="org.knime.workbench.repository.nodes">
+      <node category-path="/analytics/mining/weka/weka3.7/predictors" deprecated="true" factory-class="org.knime.ext.weka37.predictor.WekaPredictorNodeFactory">
+      </node>
+      <node category-path="/analytics/mining/weka/weka3.7/predictors" factory-class="org.knime.ext.weka37.clusterassign.ClusterAssignerNodeFactory">
+      </node>
+      <node category-path="/analytics/mining/weka/weka3.7/io" factory-class="org.knime.ext.weka37.classifierwriter.ClassifierWriterNodeFactory">
+      </node>
+      <node category-path="/analytics/mining/weka/weka3.7/io" factory-class="org.knime.ext.weka37.io.WekaClassifierModelPortObjectWriterNodeFactory">
+      </node>
+      <node after="org.knime.ext.weka37.io.WekaClassifierModelPortObjectWriterNodeFactory" category-path="/analytics/mining/weka/weka3.7/io" factory-class="org.knime.ext.weka37.io.WekaClassifierModelPortObjectReaderNodeFactory">
+      </node>
+      <node after="org.knime.ext.weka37.io.WekaClassifierModelPortObjectReaderNodeFactory" category-path="/analytics/mining/weka/weka3.7/io" factory-class="org.knime.ext.weka37.io.WekaClustererModelPortObjectWriterNodeFactory">
+      </node>
+      <node after="org.knime.ext.weka37.io.WekaClustererModelPortObjectWriterNodeFactory" category-path="/analytics/mining/weka/weka3.7/io" factory-class="org.knime.ext.weka37.io.WekaClustererModelPortObjectReaderNodeFactory">
+      </node>
+      <node category-path="/analytics/mining/weka/weka3.7/predictors" factory-class="org.knime.ext.weka37.predictor3.WekaPredictorNodeFactory">
+      </node>
+      <node category-path="/analytics/mining/weka/weka3.7/predictors" deprecated="true" factory-class="org.knime.ext.weka37.predictor2.WekaPredictorNodeFactory">
+      </node>
+      <node deprecated="true" factory-class="org.knime.ext.weka37.predictor.WekaPredictorNodeFactory">
+      </node>
+   </extension>
+   <extension point="org.knime.product.splashExtension">
+      <splashExtension icon="icons/weka_splash_48.png" icon24="icons/weka_splash_24.png" icon32="icons/weka_splash_32.png" id="Weka3.7" tooltip="The Weka Project">
+      </splashExtension>
+   </extension>
+   <extension point="org.knime.workbench.repository.nodesets">
+      <nodeset default-category-icon="icons/weka.png" factory-class="org.knime.ext.weka37.knimenodes.WekaNodeSetFactory">
+      </nodeset>
+   </extension>
+   <extension point="org.knime.workbench.repository.categories">
+      <category icon="icons/weka.png" level-id="weka" name="Weka" path="/analytics/mining">
+      </category>
+      <category icon="icons/weka.png" level-id="weka3.7" name="Weka (3.7)" path="/analytics/mining/weka">
+      </category>
+      <category icon="icons/weka.png" level-id="classifiers" name="Classification Algorithms" path="/analytics/mining/weka/weka3.7">
+      </category>
+      <category after="classifiers" icon="icons/weka.png" level-id="clusterers" name="Cluster Algorithms" path="/analytics/mining/weka/weka3.7">
+      </category>
+      <category icon="icons/wekapredictor.png" level-id="predictors" name="Predictors" path="/analytics/mining/weka/weka3.7">
+      </category>
+      <category icon="icons/weka.png" level-id="bayes" name="bayes" path="/analytics/mining/weka/weka3.7/classifiers">
+      </category>
+      <category after="bayes" icon="icons/weka.png" level-id="functions" name="functions" path="/analytics/mining/weka/weka3.7/classifiers">
+      </category>
+      <category after="functions" icon="icons/weka.png" level-id="lazy" name="lazy" path="/analytics/mining/weka/weka3.7/classifiers">
+      </category>
+      <category after="lazy" icon="icons/weka.png" level-id="meta" name="meta" path="/analytics/mining/weka/weka3.7/classifiers">
+      </category>
+<!--      <category
+            icon="icons/weka.png"
+            level-id="nestedDichtonomies"
+            name="nestedDichtonomies"
+            path="/analytics/mining/weka/weka3.7/classifiers/meta">
+      </category>-->
+      <category after="meta" icon="icons/weka.png" level-id="misc" name="misc" path="/analytics/mining/weka/weka3.7/classifiers">
+      </category>
+      <category after="misc" icon="icons/weka.png" level-id="trees" name="trees" path="/analytics/mining/weka/weka3.7/classifiers">
+      </category>
+      <category after="trees" icon="icons/weka.png" level-id="rules" name="rules" path="/analytics/mining/weka/weka3.7/classifiers">
+      </category>
+      <category after="predictors" icon="icons/weka.png" level-id="io" name="IO" path="/analytics/mining/weka/weka3.7">
+      </category>
+      <category after="clusterers" icon="icons/weka.png" level-id="associations" name="Association Rules" path="/analytics/mining/weka/weka3.7">
+      </category>
+   </extension>
+   <extension point="org.knime.core.PortType">
+      <portType hidden="false" name="Weka 3.7 Classifier" objectClass="org.knime.ext.weka37.ports.WekaClassifierModelPortObject" objectSerializer="org.knime.ext.weka37.ports.WekaClassifierModelPortObject$Serializer" specClass="org.knime.ext.weka37.ports.WekaClassifierModelPortObjectSpec" specSerializer="org.knime.ext.weka37.ports.WekaClassifierModelPortObjectSpec$Serializer">
+      </portType>
+      <portType hidden="false" name="Weka 3.7 Cluster" objectClass="org.knime.ext.weka37.ports.WekaClustererModelPortObject" objectSerializer="org.knime.ext.weka37.ports.WekaClustererModelPortObject$Serializer" specClass="org.knime.ext.weka37.ports.WekaClustererModelPortObjectSpec" specSerializer="org.knime.ext.weka37.ports.WekaClustererModelPortObjectSpec$Serializer">
+      </portType>
+   </extension>
+<extension point="org.eclipse.help.toc">
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_bayes_AveragedNDependenceEstimators_AveragedNDependenceEstimators.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_bayes_AveragedNDependenceEstimators_AveragedNDependenceEstimators$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_bayes_net_net.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_bayes_net_net$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_bayes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_bayes$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_functions.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_functions$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_lazy.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_lazy$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_meta_nestedDichotomies_nestedDichotomies.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_meta_nestedDichotomies_nestedDichotomies$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_meta.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_meta$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_misc.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_misc$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_trees_lmt_lmt.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_trees_lmt_lmt$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_trees.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_trees$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_rules_car_car.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_rules_car_car$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_rules.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers_rules$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_classifiers.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_clusterers.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_clusterers$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_associations.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_associations$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_predictors.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_predictors$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_io.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7_io$nodes.xml"/>
+<toc extradir="html" file="tocs/analytics_mining_weka_weka3.7.xml"/>
+</extension>
+</plugin>

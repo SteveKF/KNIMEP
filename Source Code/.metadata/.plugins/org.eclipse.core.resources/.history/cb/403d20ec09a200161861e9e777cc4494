@@ -1,0 +1,74 @@
+private List<DataPoint> EPrefix() {
+		// Input: Skyline und k int
+		List<DataPoint> result = EGreedy();
+
+		return Sparsify(result);
+
+	}
+
+	private List<DataPoint> Sparsify(List<DataPoint> repSkyline) {
+		List<DataPoint> result = new LinkedList<>();
+
+		int p = 0;
+		double max = Double.MIN_VALUE;
+
+		for (int i = 0; i < k - 1; i++) {
+			double tmpMax = Double.MAX_VALUE;
+
+			for (int n = 0; n <= i; n++) {
+				double value = objFunction.get(repSkyline.get(i + 1)).get(repSkyline.get(n));
+				int compareVal = Double.compare(value, tmpMax);
+				if (compareVal < 0) {
+					tmpMax = value;
+				}
+			}
+
+			int compareVal = Double.compare(tmpMax * i, max);
+			if (compareVal > 0) {
+				max = tmpMax * i;
+				p = i;
+			}
+
+			max /= i;
+		}
+
+		List<LinkedList<DataPoint>> s = new LinkedList<LinkedList<DataPoint>>();
+		for (int i = 0; i < p; i++) {
+			for (int m = 0; m < skyline.size(); m++) {
+				double value = objFunction.get(result.get(i)).get(skyline.get(m));
+				int compareVal = Double.compare(value, max);
+				if (compareVal <= 0) {
+					s.get(i).add(skyline.get(m));
+				}
+			}
+		}
+
+		bubbleSort(s);
+
+		for (int i = 0; i < p / 2; i++) {
+			for (int j = 0; j < s.get(i).size(); j++) {
+				if (j >= p / 2) {
+					break;
+				}
+				result.add(s.get(i).get(j));
+			}
+		}
+
+		while (result.size() < k) {
+			// result.add
+		}
+
+		return result;
+	}
+
+	private void bubbleSort(List<LinkedList<DataPoint>> l) {
+		for (int n = l.size(); n > 1; n = n - 1) {
+			for (int i = 0; i < n - 1; i = i + 1) {
+				if (l.get(i).size() > l.get(i + 1).size()) {
+					LinkedList<DataPoint> tmp = l.get(i);
+					l.set(i, l.get(i + 1));
+					l.set(i + 1, tmp);
+				}
+			}
+		}
+	}

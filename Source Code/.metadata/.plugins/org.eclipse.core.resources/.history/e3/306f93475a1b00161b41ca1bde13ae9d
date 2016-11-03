@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+
+public class Test {
+	
+	public static void main(String[] args){
+		
+		/*BNL bnl = new BNL(2,2);
+		bnl.addPoint(new float[] { 1, 9 });
+		bnl.addPoint(new float[] { 2, 10 });
+		bnl.addPoint(new float[] { 4, 8 });
+		bnl.addPoint(new float[] { 6, 7 });
+		bnl.addPoint(new float[] { 9, 10 });
+		bnl.addPoint(new float[] { 7, 5 });
+		bnl.addPoint(new float[] { 5, 6 });
+		bnl.addPoint(new float[] { 4, 3 });
+		bnl.addPoint(new float[] { 3, 2 });
+		bnl.addPoint(new float[] { 10, 4 });
+		bnl.addPoint(new float[] { 9, 1 });
+		bnl.addPoint(new float[] { 6, 2 });
+		bnl.addPoint(new float[] { 8, 3 });
+		
+		bnl.computeSky();*/
+		
+		ArrayList<Integer> al = new ArrayList<>();
+		al.add(1);
+		al.add(3);
+		al.add(10);
+		
+		System.out.println(al.get(0));
+		Integer a = al.get(0);
+		al.remove(a);
+		
+		System.out.println(al.get(0));
+	}
+
+}

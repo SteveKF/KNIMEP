@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Mining" link_to="../org.knime.ext.textprocessing/tocs/labs_textprocessing_mining.xml#labs_textprocessing_mining">
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/5869c94b.KeywordExtractorNodeFactory.html" label="Chi-square keyword extractor"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/3eb0cf71.KeygraphNodeFactory.html" label="Keygraph keyword extractor"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/e03a373.ParallelTopicExtractorNodeFactory.html" label="Topic Extractor (Parallel LDA)"/>
+</toc>

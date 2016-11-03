@@ -1,0 +1,48 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: xK/hU/4JI0fjb7zpMWqdRpEPkllPz
+ efgtdc/zDhMEts=
+SHA-256-Digest-Manifest: E/vrqaBPKlT3cTZFRp1Plj3obyIMPcuJ7Tm06EMl73Q=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: README.TXT
+SHA-256-Digest: MX9EdGaYHOZBnuO0XjnxjYh6w77YxBEBDiyjbA1bHpw=
+
+Name: icons/histo.ico
+SHA-256-Digest: PRJ+aKncOMgKMJxfNVO207bW9tg2O+mL2tIbJsoWtDs=
+
+Name: icons/piechart.ico
+SHA-256-Digest: MZBEkUmyG3irKCP2PJfdMxgNx08kx7Rpm8UpWGeIzLU=
+
+Name: lib/ReadMe.txt
+SHA-256-Digest: g8LPNLLD4hBqgpNQon3VceQthCt8vJNL2d3+7+NJ9mA=
+
+Name: knime-jfchart.jar
+SHA-256-Digest: hI96NnT2mrOutozVgLn7Mj8c/xeAxq60heUBF/wguoI=
+
+Name: lib/jcommon-1.0.5.jar
+SHA-256-Digest: nl3KDRM++9FO3IY6p5wnm7/+I/dP9ibphj32LG1bNno=
+
+Name: LICENSE.txt
+SHA-256-Digest: AINBnlxD6j1hoUJCdbqJDDXIUInSr72BED0xfnoxdrY=
+
+Name: icons/xychart.ico
+SHA-256-Digest: iZaJtiYZgGxemjupDu2oPcnxtE6w42thcGShQ0U4398=
+
+Name: icons/category.gif
+SHA-256-Digest: EZD9yUjZjXeB5k5AEZJOWD3MjcdYFCZ587/iCMMYtnE=
+
+Name: lib/jfreechart-1.0.1.zip
+SHA-256-Digest: wqtZgy6FiA71EJM4Dm/ZEQ+DKYvprd6DECYVM9W4GZo=
+
+Name: lib/JFreeChartLicense.txt
+SHA-256-Digest: /HKp60DpgL46eqe0vQSSkQWgw1hfz9DH0NG0TshG/kQ=
+
+Name: lib/jfreechart-1.0.1.jar
+SHA-256-Digest: fXbBEV0gnkqAXHfMOwOMAGw5hV76xz7p7DzunfeZxj4=
+
+Name: icons/barchart.gif
+SHA-256-Digest: j+gl8ZzG17pwy68la+rS7emI/iYceMSFyAMi0Zp1YAU=
+
+Name: lib/jcommon-1.0.5.zip
+SHA-256-Digest: ctaNTN9Gbq/cwA3WMm9p4AnVSlHCcnrpN4mEk9h6VeM=
+

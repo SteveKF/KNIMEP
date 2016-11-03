@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="LIBSVM" link_to="../org.knime.ext.libsvm/tocs/analytics_mining_svm_libsvm.xml#analytics_mining_svm_libsvm">
+<topic href="PLUGINS_ROOT/org.knime.ext.libsvm/html/nodes/226a18c5.LIBSVMLearnerNodeFactory.html" label="LIBSVMLearner"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.libsvm/html/nodes/16c79ce5.LIBSVMPredictorNodeFactory.html" label="LIBSVMPredictor"/>
+</toc>

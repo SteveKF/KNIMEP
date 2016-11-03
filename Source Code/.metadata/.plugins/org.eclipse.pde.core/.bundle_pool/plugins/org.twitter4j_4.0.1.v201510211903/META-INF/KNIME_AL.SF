@@ -1,0 +1,27 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: ZH6o9dSpuhuUOBKIkhBaS6u1Vzywq
+ hQ2Qlu9YJUZJ0Q=
+SHA-256-Digest-Manifest: va6Yob+XGA9JKsZy2xTSJ1LPG/qaPA4QWcLN062+l2Q=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: twitter4j-core-4.0.1.jar
+SHA-256-Digest: jrE/KvH1eRRSe9ymD80IW6ilQmHwpCvsNOomWZNGcr4=
+
+Name: twitter4j-stream-4.0.1.jar
+SHA-256-Digest: giy1eLDKPDPc4tXQQjXCw4ebmCJmUiTYIDUYbBp/1Jk=
+
+Name: twitter4j-async-4.0.1.jar
+SHA-256-Digest: +ZfyBpFSgGEf4xSX/XIiOaJdVx2wDZXbiSZRbAQPCpQ=
+
+Name: twitter4j-examples-4.0.1.jar
+SHA-256-Digest: t/sfjVGerO17v6OobKmnwUu4TgMm2Ohf8/ajBMOQg5U=
+
+Name: LICENSE.txt
+SHA-256-Digest: 12a8S99z1IB4JwTr23n5nUlGiikpeHXBX5wgZaajZtw=
+
+Name: readme.txt
+SHA-256-Digest: UsWkAPBPYyYzAu7E2L0wyp3evQXEFlUoDoY8sLNLCZ0=
+
+Name: twitter4j-media-support-4.0.1.jar
+SHA-256-Digest: WZ3aF+o1WeYsqi9TMq+uYfeBtSIk3kSZvgonUjQBd8k=
+

@@ -1,0 +1,51 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.6
+Bundle-SymbolicName: com.knime.productivity.base;singleton:=true
+Export-Package: com.knime.productivity.base.callworkflow
+Bundle-Name: Shared components of different commercial extensions
+Bundle-Version: 1.0.1.v201610031134
+Bundle-ClassPath: .
+Require-Bundle: org.knime.base;bundle-version="[3.1.0,4.0.0)",org.apac
+ he.commons.lang3;bundle-version="[3.2.1,4.0.0)",org.knime.json;bundle
+ -version="[3.0.0,4.0.0)",org.knime.workbench.ui;bundle-version="[3.0.
+ 0,4.0.0)",com.google.guava;bundle-version="[19.0.0,20.0.0)",com.knime
+ .licenses;bundle-version="[5.4.2,6.0.0)",com.knime.enterprise.utility
+ ;bundle-version="[4.0.0,5.0.0)",com.fifesoft.autocomplete;bundle-vers
+ ion="[2.5.7,3.0.0)",com.fifesoft.languagesupport;bundle-version="[2.5
+ .7,3.0.0)",com.fifesoft.rstaui;bundle-version="[2.5.7,3.0.0)",com.fif
+ esoft.rsyntaxtextarea;bundle-version="[2.5.7,3.0.0)",com.fifesoft.spe
+ llchecker;bundle-version="[2.5.7,3.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: KNIME.com, Zurich, Switzerland
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: com/knime/productivity/base/callworkflow/IWorkflowBackend.class
+SHA-256-Digest: KwzzzZRC/OHrCfCsn2WLbIHnkGacAcuHXKeVV4CigCo=
+
+Name: com/knime/productivity/base/callworkflow/CallWorkflowNodeModel.c
+ lass
+SHA-256-Digest: 7MIQeqPm3bJLGz7lvVX7jvQaL1WcJrc4QW3cDbqvud8=
+
+Name: com/knime/productivity/base/callworkflow/JSONInputPanel$1.class
+SHA-256-Digest: rrzaPvCXH3CZ+obL2sZ0fe+1IXHLY6RQEEPD8ei3kNg=
+
+Name: com/knime/productivity/base/callworkflow/CallWorkflowConfigurati
+ on.class
+SHA-256-Digest: vxre7JqcaEojI2tZZ8IMrJiCViI/tVYoXuOBhsNB+9k=
+
+Name: com/knime/productivity/base/callworkflow/JSONInputPanel.class
+SHA-256-Digest: DZvZk5E3O4ZRWbKe989TTwPul1nmB3+hEyleFAoWJkA=
+
+Name: com/knime/productivity/base/callworkflow/IWorkflowBackend$Workfl
+ owState.class
+SHA-256-Digest: pEwyic0VzjOJ728Q0Y1N9Ml+IO9HeM9WIdOPTGYXS78=
+
+Name: com/knime/productivity/base/callworkflow/CallWorkflowNodeModel$1
+ .class
+SHA-256-Digest: MDd1otFQhPacGYrBrrdyjz6/KRrIL5YmFyu8xUiPwkA=
+
+Name: com/knime/productivity/base/callworkflow/IWorkflowBackend$Report
+ GenerationException.class
+SHA-256-Digest: 6st9VNRt/nQtEdiz2ZmmVuWR8kga1yMsJvxV1c8QIjg=
+

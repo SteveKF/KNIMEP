@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.knime.stats;singleton:=true
+Require-Bundle: org.knime.base;bundle-version="[3.0.0,4.0.0)",org.ecli
+ pse.core.resources;bundle-version="[3.6.0,4.0.0)",org.knime.ext.svg;b
+ undle-version="[3.0.0,4.0.0)",org.apache.commons.math3;bundle-version
+ ="3.2.0"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Ant-Version: Apache Ant 1.9.4
+Export-Package: org.knime.base.data.statistics
+Bundle-Name: KNIME Statistic Nodes
+Bundle-Version: 3.1.1.v201512102018
+Bundle-ClassPath: knime-stats.jar
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: n9/5CtBo6Q10k8aL4fdVQf4Zo8x96GywV5zXEzVapy8=
+
+Name: README.TXT
+SHA-256-Digest: 2IL5930q1JOM+s4UZJTn3xMS0NPUHDHQlt5S7K73RZo=
+
+Name: LICENSE.txt
+SHA-256-Digest: 8TSiQagVcm5WfssAApmJKIINRC9Qyw1o2chFUkUKsAQ=
+
+Name: icons/test_category.png
+SHA-256-Digest: tzQ7GOs1CF9DvbV2xuaiTS7eOE7uBEW+uUe/jp6fwvg=
+
+Name: knime-stats.jar
+SHA-256-Digest: 3jZyN06VJkfSosM6HiWaxqSft8NmqmZRtBKsg2p3Pao=
+

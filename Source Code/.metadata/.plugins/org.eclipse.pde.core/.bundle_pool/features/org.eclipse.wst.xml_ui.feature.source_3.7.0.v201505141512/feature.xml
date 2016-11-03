@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.wst.xml_ui.feature.source" version="3.7.0.v201505141512" plugin="org.eclipse.wst.xml.ui" label="%featureName" provider-name="%providerName">
+  <includes id="org.eclipse.wst.xml_ui.feature" version="3.7.0.v201505141512"/>
+  <description>
+      %description
+   </description>
+  <copyright>
+      %copyright
+   </copyright>
+  <license url="%licenseURL">
+      %license
+   </license>
+  <plugin id="org.eclipse.wst.dtd.ui.source" version="1.0.801.v201308100602" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.wst.sse.ui.source" version="1.3.400.v201505141512" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.wst.xml.ui.source" version="1.1.501.v201501212057" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.eclipse.wst.xsd.ui.source" version="1.2.500.v201208081537" download-size="0" install-size="0" unpack="false"/>
+  <includes id="org.eclipse.wst.common_ui.feature.source" version="3.7.0.v201505132009"/>
+  <includes id="org.eclipse.wst.xml_core.feature.source" version="3.7.0.v201502261749"/>
+</feature>

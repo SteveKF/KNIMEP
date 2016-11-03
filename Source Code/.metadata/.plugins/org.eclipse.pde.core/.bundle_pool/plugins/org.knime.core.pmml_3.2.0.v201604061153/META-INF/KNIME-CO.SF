@@ -1,0 +1,12 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: xY1E2Wu9fhzxO+qCXSxVg0lUNgF6q
+ vkO9WZWVXTLvFM=
+SHA-256-Digest-Manifest: MiWSllk0Jz30BjTzNk0P0BMw5ln5Tgq86dKuwgtfHvk=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: lib/schemas.jar
+SHA-256-Digest: ++fulzrC8kpCwFx+tTcmvrLG6PhbpbWeLDYq9tXLnc4=
+
+Name: knime-pmml.jar
+SHA-256-Digest: sTMJ37rWXkmxV40epFTgM8mSHZAbLJm8OEJYk/2lLKk=
+

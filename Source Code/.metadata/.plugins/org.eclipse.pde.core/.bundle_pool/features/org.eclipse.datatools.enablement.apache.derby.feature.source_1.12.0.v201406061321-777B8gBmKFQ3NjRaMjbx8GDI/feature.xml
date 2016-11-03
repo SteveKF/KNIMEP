@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.datatools.enablement.apache.derby.feature.source" version="1.12.0.v201406061321-777B8gBmKFQ3NjRaMjbx8GDI" label="%featureName" provider-name="%providerName" image="eclipse_update_120.jpg"    >
+	<description >
+		%description
+	</description>
+	<copyright >
+		%featureCopyright
+	</copyright>
+	<license url="%licenseURL">
+		%license
+	</license>
+	<url>
+		<update url="http://download.eclipse.org/datatools/updates/1.12" label="%updateSiteName"/>
+		<discovery url="http://download.eclipse.org/datatools/updates/1.12" label="%updateSiteName"/>
+	</url>
+	<plugin id="org.eclipse.datatools.connectivity.apache.derby.dbdefinition.source" version="1.0.2.v201107221459"     unpack="false"/>
+	<plugin id="org.eclipse.datatools.connectivity.apache.derby.ui.source" version="1.0.3.v201107221459"     unpack="false"/>
+	<plugin id="org.eclipse.datatools.connectivity.apache.derby.source" version="1.0.103.v201212070447"     unpack="false"/>
+	<plugin id="org.eclipse.datatools.modelbase.derby.source" version="1.0.0.v201107221519"     unpack="false"/>
+	<plugin id="org.eclipse.datatools.sqltools.db.derby.source" version="1.0.0.v201107221520"     unpack="false"/>
+</feature>

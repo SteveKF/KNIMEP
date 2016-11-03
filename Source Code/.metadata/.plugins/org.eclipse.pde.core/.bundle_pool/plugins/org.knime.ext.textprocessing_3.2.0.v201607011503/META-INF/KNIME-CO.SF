@@ -1,0 +1,740 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: RXSQ8VxRgV4jrY5P093AAxrWkQHFA
+ QMxtagBnj2y5N8=
+SHA-256-Digest-Manifest: zT57DED2LNULNHnoxidAyozqV+Vbpz2LiD6xR4x/GEA=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: 3aHdNYMoILDoW7xfrOS0rVK5/m2DTQGGBWHfOcXMJZ4=
+
+Name: resources/hyphenationpatterns/cs.txt
+SHA-256-Digest: MQ79xeqnREhMoOI03RzjZMXrBgm1hk1JiEyNeaxUWZA=
+
+Name: lib/stanford-postagger-3.4.jar
+SHA-256-Digest: 18dnTHQo/bjFhBoL2Qwwrlz1yudt57HN/bl67XOp8pU=
+
+Name: tocs/labs_textprocessing_io$nodes.xml
+SHA-256-Digest: IZBKOijLyzPHIiqVX8sI+HjlG+sbso7NP2efW5VKw1s=
+
+Name: metanode_templates/Simple Preprocessing/Punctuation Erasure (#5)
+ /node.xml
+SHA-256-Digest: gZb0dfjphGKHvNwC52U7nZCNrbug/uAjEsiNUK96NOQ=
+
+Name: resources/tagset/tagset.xml
+SHA-256-Digest: ItNwQzRTzFi5iautnkgJLwq7qUCCv2gnXDEG+jpjnzE=
+
+Name: metanode_templates/Vector Creation/Document vector (#10)/setting
+ s.xml
+SHA-256-Digest: /q4Sn3ZF1PnKccAOpYOSPc+0PRkTfOeZ/mwc++55WnQ=
+
+Name: resources/opennlpmodels/namefind/en-ner-date.bin
+SHA-256-Digest: t/4P11qzg8wSkaI5FogP61ogUuuyJHVmITezoYt8SwQ=
+
+Name: resources/stopwordlists/Spanish-Stopwords.txt
+SHA-256-Digest: cTU1xHWAA/vuvQ1rMLa4UDwcViUAqg75xw2/eilchsg=
+
+Name: html/nodes/a7e79d8.DictionaryReplacer2InPortsNodeFactory2.html
+SHA-256-Digest: SeXtNLVQPSN6EDaW3YGwNF/szLbyVPcuwJbhsdR5P8E=
+
+Name: resources/icons/marker.png
+SHA-256-Digest: SSQF6HKJbnfkC3iA6B+YD9EybZZFwRQT3ZCQ6wIQi1k=
+
+Name: lib/opennlp-tools-1.6.0.jar
+SHA-256-Digest: 97qroDqt7jEkt7V3wH+50RDeuLg0gg5llgb5KCz6w9I=
+
+Name: resources/stanfordmodels/german-hgc.tagger
+SHA-256-Digest: ckip1GDeMZa03IX9eIpyTTNni3r4PADdXVytrrLZx4w=
+
+Name: metanode_templates/Simple Preprocessing/Porter Stemmer (#4)/sett
+ ings.xml
+SHA-256-Digest: 9R3s5+anUOIopEB/hHGPA1bHMb0DatiVDyKEskCrt6M=
+
+Name: html/nodes/6a943fcf.DocumentDataExtractorNodeFactory.html
+SHA-256-Digest: +dlU+Kbfrilea2kBSNTTXkCxx82lR8g+KVL3yh8bqPA=
+
+Name: lib/oscar4-all-4.1.2-with-dependencies.jar
+SHA-256-Digest: fUHSo1U4LjXntLu6Jk4cMnA0bKnm/w1Oz37Ap9XcUAU=
+
+Name: tocs/labs_textprocessing_io.xml
+SHA-256-Digest: Mm014UgSQepk5XtNBhriNxW5DQBJtXzkUHtjFULtgLU=
+
+Name: metanode_templates/Extended NER Preprocessing/workflow.knime
+SHA-256-Digest: Mn5MD4JaSFaSgUmER4SP9BNLP+lPcnn7TLLNwsjYrac=
+
+Name: html/nodes/58fc41c5.TermVectorNodeFactory.html
+SHA-256-Digest: 0IoXOxEhU4+VzHq0vslALcLHvlkpT1fU5gVv+cqBgWQ=
+
+Name: resources/stanfordmodels/english-left3words-distsim.tagger
+SHA-256-Digest: DjBsMVE3idSGkNgnjSfRa0MSNBZgBO7xeHJpkGvNEnY=
+
+Name: lib/poi-ooxml-schemas-3.9-20121203.jar
+SHA-256-Digest: eoaa25nRm8jzRhUdO7Z21jp6P0ytOdUPCiDU5ZCsIrI=
+
+Name: schema/org.knime.ext.textprocessing.TagSet.exsd
+SHA-256-Digest: 2rnLiH72sRtoarUlBzBv3DD45RkWaNVpYtWWro3G4Rc=
+
+Name: metanode_templates/Extended NER Preprocessing/OpenNLP NE tagger 
+ (#8)/node.xml
+SHA-256-Digest: vGhyyF68jS8R4pFlw2lxK0SwufjeSIjlI1Kc+CpE8vg=
+
+Name: html/nodes/3d3ea9f9.OscarTaggerNodeFactory.html
+SHA-256-Digest: ck0I3zsjAiHSNZLiCGM49F1Ru/itoM9iLI4BEOflzk4=
+
+Name: html/nodes/100f8531.PosTaggerNodeFactory.html
+SHA-256-Digest: 2Qx1fVc2KVsBOxxkBbr1nkZ/odONc9L3vkh9DUgKl1Q=
+
+Name: src/org/knime/ext/textprocessing/icons/io.png
+SHA-256-Digest: nYJmYuPPQFJg1f47TmrQ8ex7Sk96eGozjWZHj3kA/2E=
+
+Name: metanode_templates/Vector Creation/Keygraph keyword extractor (#
+ 8)/settings.xml
+SHA-256-Digest: bndOyIrDaHhi5LJH/vXvQsHJ7RKsy2w/SunvBpFSk2A=
+
+Name: html/nodes/1bfb5ce5.SentenceExtractionNodeFactory.html
+SHA-256-Digest: qvQw8JdIJ6L1UqBjVBX3O39xvJkLW3VX0mwYHi9cz1U=
+
+Name: html/nodes/3d8e57a0.CaseConverterNodeFactory2.html
+SHA-256-Digest: wHXBBNoPBjHjj69cy0bF4j3/I6Gmdax1Pzms1k+krEE=
+
+Name: src/org/knime/ext/textprocessing/icons/TextProcTerm2String.png
+SHA-256-Digest: XT1COscZNXjtVvApUNMsO77DO8Z/cN758P8qOsF4jvk=
+
+Name: html/nodes/49811bdb.RegExReplacerNodeFactory2.html
+SHA-256-Digest: z4Ej5xZA4qCm42uUSgwQfbupQSrifRpiMVARusoUi2E=
+
+Name: html/nodes/7621616b.TagToStringNodeFactory.html
+SHA-256-Digest: 0OivCWvhmVzG3WbqIVjPiebQuTK+dRvGXP7NVwcay1Y=
+
+Name: metanode_templates/Simple Preprocessing/BoW creator (#2)/node.xm
+ l
+SHA-256-Digest: 7HG0BEYZC7fVCX9NZ/HVN6EO8rrSnIgT3sBLITx4Aac=
+
+Name: resources/stopwordlists/Italian-Stopwords.txt
+SHA-256-Digest: nB9qio4zFSGP88Ob1A8cnAACUPQyg9aBfcL/Px1wB5I=
+
+Name: resources/opennlpmodels/namefind/en-ner-time.bin
+SHA-256-Digest: xFR+mRrqGXM6uD8AFqEtzAYLcW/K1yoJpEadxA9rKdo=
+
+Name: resources/icons/TextProcFrequencies.png
+SHA-256-Digest: HF9eh9WuqfbFw2B7qZC2sdC5Nn81WuMjeZbVfuYzYTw=
+
+Name: metanode_templates/Simple Preprocessing/Porter Stemmer (#4)/node
+ .xml
+SHA-256-Digest: T1iFi5ramgKNQ4VoS6P3Wseam/PnP2vo5NSzNVP5NGk=
+
+Name: resources/stopwordlists/French-Stopwords.txt
+SHA-256-Digest: b/bwZRYmJJM26g2NIJV++cvw+oO8Aff+e9Ptoq7ozbQ=
+
+Name: metanode_templates/Frequencies/workflow.knime
+SHA-256-Digest: 62sIyZ5I3UJxwDRE6jqkRXJOATlssykne3T17JPg+RU=
+
+Name: lib/Snowball.jar
+SHA-256-Digest: aqd9BSdUCTqxUnJpvdk4KMVUz6Lbf7aEHjlTLU0x3X0=
+
+Name: resources/opennlpmodels/namefind/en-ner-money.bin
+SHA-256-Digest: tUbMQuMvih5eMdkRjL/JOnBSHOrnd/7fJhvzx6EyA7k=
+
+Name: resources/icons/hiliteicon.png
+SHA-256-Digest: gHXQIvrxPBpnF6AwYvJ0XSFlboCb0DXN5AdSSRSBcS4=
+
+Name: resources/stanfordmodels/french.tagger.props
+SHA-256-Digest: aFqQHq4S1J1+jJPsKfHCTglRRuhuYAZS5fkGjZ94OBg=
+
+Name: metanode_templates/Extended NER Preprocessing/Abner tagger (#7)/
+ settings.xml
+SHA-256-Digest: 4DI83ZUki4OLkUysg6Hhalzy1bKDZ40zxdBb3zdO0gk=
+
+Name: html/nodes/6f89d8a.DmlDocumentParserNodeFactory.html
+SHA-256-Digest: MjnE4qwc4Z1S5eCPGC8E8cHxOGxNav3/m7EaJIKocAw=
+
+Name: tocs/labs_textprocessing_preprocessing.xml
+SHA-256-Digest: LmX3NcmgrI1sXJhQZOfKcH7mk6agO2dVHKtfS4+vE2c=
+
+Name: lib/poi-ooxml-3.9-20121203.jar
+SHA-256-Digest: oxhleyAaN0vuoyS7InUx50kVtJdPOAjN3b1qdQl/u30=
+
+Name: metanode_templates/Frequencies/TF (#3)/settings.xml
+SHA-256-Digest: U1P5rlSB+JXzG8UcD+Rs1SUNeavfE+GrMhQSSnUiZi0=
+
+Name: resources/stanfordmodels/english-bidirectional-distsim.tagger.pr
+ ops
+SHA-256-Digest: eHs2hfGX0cftmYcX1n5BbYmAwCiVTXgqyhjd53Fis2g=
+
+Name: metanode_templates/Simple Preprocessing/Stop word Filter (#6)/se
+ ttings.xml
+SHA-256-Digest: PlsPn/8BTfSDtBLEmuP2fSxvvLEoqeG2dPKbn+XeDMw=
+
+Name: html/nodes/50ca3761.MetaInfoInsertionNodeFactory.html
+SHA-256-Digest: vgDPHkPADzP52FDGBi2PK1W6LLZigyk5Q8nA2/8Yk0U=
+
+Name: resources/stanfordmodels/english-caseless-left3words-distsim.tag
+ ger.props
+SHA-256-Digest: UXiFOYrnZHedfXcvghvZEhy6TEJ4hxRgqBw0bM9WJ8g=
+
+Name: resources/documentformat/dml.dtd
+SHA-256-Digest: gx1Aj0lUgr0gw48GGTcx6e3wiVWwJSR0kdwk6UaL+y8=
+
+Name: html/nodes/334382aa.DictionaryFilterNodeFactory.html
+SHA-256-Digest: Nm/2W/+ZzZ0WJmnOjth373OqXSQw+I3O2Dx188lZ7+w=
+
+Name: html/nodes/76565764.PunctuationErasureNodeFactory2.html
+SHA-256-Digest: zUJ/tSm1xN03jSF3ah69WVfjtfgbFk5qrJRp2kJBkE0=
+
+Name: resources/icons/color.png
+SHA-256-Digest: eju/ms9oFjPllPGXZVWt5S3a2l2c5VzG3mclsXSs7PY=
+
+Name: html/nodes/1b781af8.IdfNodeFactory.html
+SHA-256-Digest: hOfmjMzVg9ToCTyjXI+kzOTLzVehFsDw+sEGMX2wdAU=
+
+Name: resources/hyphenationpatterns/nl.txt
+SHA-256-Digest: /IsCbzZ/NLdWGegt5hAQ8czjHZ7tA4gU01Sx98MFtYI=
+
+Name: src/org/knime/ext/textprocessing/icons/TextProcDocumentView.png
+SHA-256-Digest: om6c0u0D79jhR3SQEtX/7ALMwPJLh/R58UeWNMjsh3c=
+
+Name: lib/mallet/mallet_2_0_7_src_doc.zip
+SHA-256-Digest: H4CDsC5egvrGuLKgKj4tjraopJhPItu+X4u3TLEWFlc=
+
+Name: html/nodes/9e04d55.DictionaryTaggerNodeFactory.html
+SHA-256-Digest: BunVUvQw3oJzyGudkXAUKpFhbE6hhfDulC0B5JWeJ44=
+
+Name: README.TXT
+SHA-256-Digest: eRCg9M91Hzxs73paAZxzM4QoFsnFSy5nkNY0lmVDqNM=
+
+Name: lib/poi-scratchpad-3.9-20121203.jar
+SHA-256-Digest: 6Ik1FNiAOOBvGOkCY5Qw2UoI45lAnKXlK1Q/Lum9700=
+
+Name: src/org/knime/ext/textprocessing/icons/TextProcVectors.png
+SHA-256-Digest: o0cHTv/+kJ/3IyLMrUnXfh08M/hM5Bn61rZAj34kkSU=
+
+Name: resources/stopwordlists/Portuguese-Stopwords.txt
+SHA-256-Digest: kaZUM7O0qCEMv/A30i+h1yFwyA6UJBsKIBmQcptQGR4=
+
+Name: schema/org.knime.ext.textprocessing.DocumentGrabber.exsd
+SHA-256-Digest: E0A0ufPvGLtOrqlaSrFdxomG3IYDVpFQsUR4GWpPc88=
+
+Name: lib/dom4j-1.6.1.jar
+SHA-256-Digest: f5AHkt2L+IAfmY3rV3CuqPs4Kgc/TqFHBR4ZBljEZe8=
+
+Name: metanode_templates/Simple Preprocessing/POS tagger (#1)/settings
+ .xml
+SHA-256-Digest: ONxk352sejxZ37yMpMLpXK8cUCoalxd9KujkH9HZBbA=
+
+Name: src/org/knime/ext/textprocessing/icons/TextProcDoc2String.png
+SHA-256-Digest: 9KDx27EW2fMtjHuyraDTvY6OMxT4mJ5P4QGsvW0fH/M=
+
+Name: html/nodes/c01a5bc.DictionaryReplacerNodeFactory2.html
+SHA-256-Digest: IDvmmKU2eY4/qUukzjsCjYxtFTwwwHRFn/oa7tECzvQ=
+
+Name: lib/jsoup-1.9.2.jar
+SHA-256-Digest: lRf5v7Se9cNdUM0S46HWWJ/lMO4bNHm1ZwwSWEgm8nk=
+
+Name: resources/opennlpmodels/namefind/en-ner-organization.bin
+SHA-256-Digest: QrYbiggpTtXbtMjFZ0kMUVtnHDKhSd6HCoiMqvpCigw=
+
+Name: html/nodes/2e9f0a65.WildcardTaggerNodeFactory.html
+SHA-256-Digest: UbJq9QOWEcDzvf51qFEZtNBbE58fiO+yvTHBu1Mk/pI=
+
+Name: html/nodes/25dc2d63.StanfordTaggerNodeFactory.html
+SHA-256-Digest: DcyaFzSJFzcLQZRlNBhCNU4iMhU8A7Kn8KfUQJfik0M=
+
+Name: html/nodes/e03a373.ParallelTopicExtractorNodeFactory.html
+SHA-256-Digest: 2m+oTzQBpED8ZwAG0rAeflwwCm77fpiCm+Gl5iVbFrY=
+
+Name: html/nodes/104dcb05.MetaInfoExtractionNodeFactory.html
+SHA-256-Digest: uYbVu/tgMBtGP4FtNMjL2kDOHFj1OUmoOKpGtzY+hEs=
+
+Name: metanode_templates/Extended NER Preprocessing/Stop word Filter (
+ #6)/node.xml
+SHA-256-Digest: 2yKa2S5dGTQ5wS0x5pZo5iLRRDoL7j6lXeFh9S7NviE=
+
+Name: metanode_templates/Simple Preprocessing/Stop word Filter (#6)/no
+ de.xml
+SHA-256-Digest: U5tzy/eraJcFywgjAE0LuY4ZS9o/oUGW0YuubYoLcaQ=
+
+Name: html/nodes/23b4c98a.IcfNodeFactory.html
+SHA-256-Digest: /20yJMZODNvH427bxFYeQBeQzNV7K5LRqlQueQ4HCHM=
+
+Name: html/nodes/6f3168c4.HyphenatorNodeFactory2.html
+SHA-256-Digest: X3hY2cqopzgpgkttBIHiX2koX2NjmcwG7Ev3g2h1Ah8=
+
+Name: resources/hyphenationpatterns/de.txt
+SHA-256-Digest: 5WgNcyDVBgin34aBVESOdGwbZdH2euSJk//zCcczXPE=
+
+Name: lib/mallet/mallet-deps.jar
+SHA-256-Digest: XHQOIuGMj1ZzQiriK9fti7XubZnTC0P02SeDt9WF7l0=
+
+Name: metanode_templates/Vector Creation/Keygraph keyword extractor (#
+ 8)/node.xml
+SHA-256-Digest: JsDXZCK/OYQUSKdbprxlmhJN/scs6Do1XygHZQHbYI4=
+
+Name: tocs/labs_textprocessing_meta$nodes.xml
+SHA-256-Digest: ThMlH01+jgjYIwEeiToibX60jBsKQrJVIPSSG6ung1o=
+
+Name: html/nodes/3d824b84.NumberFilterNodeFactory2.html
+SHA-256-Digest: +Z2uL8RTyU7dh0IMiRoyZQtKGHCrzCmRebE9nBknq+U=
+
+Name: html/nodes/7518ce6a.TagFilterNodeFactory2.html
+SHA-256-Digest: j22TPlf/WCBiNNk23ufCao/dq5jOvX8VryEpUWSrGME=
+
+Name: html/nodes/203fd872.StringMatcherNodeFactory.html
+SHA-256-Digest: tZQEFnALYNpFPMLDsUvNm1QKLUAi13zaZWuCG4jMM2s=
+
+Name: resources/stopwordlists/Hungarian-Stopwords.txt
+SHA-256-Digest: AIXCffYEPmzV0iKos2iN9De7OrU6UMiTZqI6SmXAoz4=
+
+Name: html/nodes/6072367f.TermToStructureNodeFactory.html
+SHA-256-Digest: 38AHOXM7AGISxOIk9EJLeQv89wkEh3HYoQE5HMzaiVg=
+
+Name: metanode_templates/Simple Preprocessing/N Chars Filter (#3)/sett
+ ings.xml
+SHA-256-Digest: 6BxiTfqpbjtoerB4M4OPWsoVP/z4BJGPYsxLGFZ1zc4=
+
+Name: lib/xmlbeans-2.3.0.jar
+SHA-256-Digest: bbJdWg+LFQWIiiobWQ/jjmYFWFYvcrBx8856SixW2s8=
+
+Name: html/nodes/570cd3fa.PorterStemmerNodeFactory2.html
+SHA-256-Digest: GIHMD10EPSxFCJaI/64BnVsRpOEPjW43ZKO0ecawj0k=
+
+Name: resources/stanfordmodels/english-caseless-left3words-distsim.tag
+ ger
+SHA-256-Digest: QeTKuW0KQzK35OVXq16cVXe9U7vzUPYfrhcEkUtRe/c=
+
+Name: resources/stopwordlists/Polish-Stopwords.txt
+SHA-256-Digest: 9C9zf2fmCQ5OPTTZMPAYqcr3olx+kKd6gfuR/XTE9E4=
+
+Name: src/org/knime/ext/textprocessing/icons/TextProcSource.png
+SHA-256-Digest: d6iuzi4YRPawq1BJ5GF2c7vPPtFGeuMayYqgkhrD4kU=
+
+Name: lib/mallet/mallet.jar
+SHA-256-Digest: lDtKq1LUq7yRbMAKyO/XpiKee/kwj7RdXLoysSvKqpw=
+
+Name: metanode_templates/Simple Preprocessing/N Chars Filter (#3)/node
+ .xml
+SHA-256-Digest: kHVrG4iuZ2ZV3FZja0sp/BxOYzwjVaMh7TMiqmycdrY=
+
+Name: tocs/labs_textprocessing_transformation$nodes.xml
+SHA-256-Digest: Kw/ljKQp8Y9Kbjjw+rY2c8Y/0v88sdU8jlh3EEkoLfY=
+
+Name: resources/stanfordmodels/german-fast.tagger.props
+SHA-256-Digest: 381A2vCU9HbZxhI8SZrLtt1OjwKj5NV7MV3aIpIwVmM=
+
+Name: html/nodes/19a4de20.PubMedDocumentParserNodeFactory.html
+SHA-256-Digest: psqq+sFNWiAOHure/f6rB8M1JmNMshkzD+HAczxiRj0=
+
+Name: html/nodes/28286011.DocumentViewer2NodeFactory.html
+SHA-256-Digest: mBKwR75r8hwRNUrg/mGR3rJ1KSw/vKWC2eu5CDFP5NE=
+
+Name: metanode_templates/Extended NER Preprocessing/OpenNLP NE tagger 
+ (#9)/settings.xml
+SHA-256-Digest: sFwFozlkpoE2JGOL26xgPDlBCR08MCwyNU0ZRvsRWYg=
+
+Name: src/org/knime/ext/textprocessing/icons/TextProcString2Term.png
+SHA-256-Digest: 0enXngYaOpkAioQBMooAEScH49YJbSDMynzwvP/J71o=
+
+Name: metanode_templates/Vector Creation/.savedWithData
+SHA-256-Digest: SrfhlaAHSwLLEtmuYyb+qcrsUGU4ydGIay27T/gw5bA=
+
+Name: html/nodes/8ef6ebb.TermToStringNodeFactory.html
+SHA-256-Digest: lss2FYtiN3OzzoY1sWmEBS/xwjwLr+GX88nYjKs8Xt8=
+
+Name: html/nodes/10b25d00.TagCloudNodeFactory.html
+SHA-256-Digest: GipDhZIdiKtLLNqyy+EZtXz3IbwedFMzzeKcbiO8k2k=
+
+Name: lib/opennlp-license.txt
+SHA-256-Digest: D0zDUz1p2n5CF+ltPCxm75gt3x/I0n7gGoeoxS83fZs=
+
+Name: html/nodes/65fe5406.DocumentGrabberNodeFactory.html
+SHA-256-Digest: EToIkonne1hc/M2BHqe9HyduGGvtKAUW+ADaxaSXpyI=
+
+Name: html/nodes/709da3d8.PDFDocumentParserNodeFactory.html
+SHA-256-Digest: kI2K6lNOpnbjo9tu532YvjU2VonXxM2mLjZ5cikZETo=
+
+Name: lib/poi-3.9-20121203.jar
+SHA-256-Digest: QpIfYt4tNaageWcRwmTkMIRhHU406+wc+uY7AX0s7No=
+
+Name: html/nodes/37ab5aa7.StringsToDocumentNodeFactory.html
+SHA-256-Digest: FZatVDKbzsRmIX3htOmxpUUp7tbpM7ffBHz8u0pu7Fw=
+
+Name: html/nodes/1fe784e2.RegExFilterNodeFactory2.html
+SHA-256-Digest: Kld79Bk+mxdGD7EAaiixSkB/r90GC8XnXZxFO46l/DM=
+
+Name: metanode_templates/Extended NER Preprocessing/Abner tagger (#7)/
+ node.xml
+SHA-256-Digest: D/nQcQJOcHo+oXg2PkJy6orbWloWM7zOaIawiB0pyBs=
+
+Name: html/nodes/6b656fc7.BagOfWordsNodeFactory.html
+SHA-256-Digest: uYy+2puMQbPvSwRq1eDLO8z5NEqwic1lc3lwdMJeSOM=
+
+Name: resources/hyphenationpatterns/da.txt
+SHA-256-Digest: w+qZ78Svkhm9kfa+1ly7s7bqspdp0wuWQUqw5PiJNQU=
+
+Name: resources/opennlpmodels/namefind/en-ner-percentage.bin
+SHA-256-Digest: 4N1WdIyViHG2W9GRQDJzglAMkSPe/m3TCWbJhUPEhEM=
+
+Name: tocs/labs_textprocessing_misc$nodes.xml
+SHA-256-Digest: fxbCzHxDSOsBMEI7/gePHkuIXBmqFaK8rT5T2Sa7S4U=
+
+Name: metanode_templates/Extended NER Preprocessing/OpenNLP NE tagger 
+ (#8)/settings.xml
+SHA-256-Digest: Wc9bZk1tRskOqriASEtWybUlcusAtr8Kba9Z2GLcgyw=
+
+Name: html/nodes/43499a34.KuhlenStemmerNodeFactory2.html
+SHA-256-Digest: /cqdGl1dF5degM+eLAYMwHBhd399eiRvLWOSGDC4jXc=
+
+Name: html/nodes/5869c94b.KeywordExtractorNodeFactory.html
+SHA-256-Digest: 3LdaupxR4ecGQgxwxGbzoc+tCQPAqLh2/aFsgp8M0XQ=
+
+Name: html/nodes/3b8ab000.MarkupTagFilterNodeFactory.html
+SHA-256-Digest: pZzFEqA6JhBd67GPYda1LPnIr5PxdoGvhymTAXbDR3U=
+
+Name: html/nodes/85ec9b.DocumentVectorNodeFactory.html
+SHA-256-Digest: zp71XhNgoWlESyhjdpp0K9+NXd9urzSlu8V+nwoEeP8=
+
+Name: metanode_templates/Extended NER Preprocessing/OpenNLP NE tagger 
+ (#10)/settings.xml
+SHA-256-Digest: zPKVBOK/TUKfPR9mpllNs+yrFvaaK49Vs31Fp5k51Pk=
+
+Name: resources/hyphenationpatterns/sv.txt
+SHA-256-Digest: S18eNf8Rry/Jkd4qvYFbRbNbtJnQ2lZb/C0DtPESKuU=
+
+Name: html/nodes/4eb633bd.OpennlpNerTaggerNodeFactory.html
+SHA-256-Digest: aCpRG3TTukW8DBU/wFLJyvXEZL7jsRtCjXtpoQFUhQ0=
+
+Name: resources/stopwordlists/Russian-Stopwords.txt
+SHA-256-Digest: EoAdzGXTpAjTA9YCJ6wgPguiYvi2Or412WjH2/zKgkk=
+
+Name: metanode_templates/Simple Preprocessing/POS tagger (#1)/node.xml
+SHA-256-Digest: twdh0I4MRmV5YYG+XioZ6OY5zlyxJG2vmBvuyWW6fnc=
+
+Name: lib/abner.jar
+SHA-256-Digest: boKISBl68V0tGWHsWhR6hgiMRwBwjmHcdih74sKj090=
+
+Name: tocs/labs_textprocessing_tagging.xml
+SHA-256-Digest: /etzXt/VHIXFIqYAQfDwubXtmp//eO1i+b2OQuaiY9I=
+
+Name: resources/stanfordmodels/english-left3words-distsim.tagger.props
+SHA-256-Digest: BY3iZ9SIBxumG34goyJXa9Eq6slOU5gM6kSl7GAhgZE=
+
+Name: lib/stax-api-1.0.1.jar
+SHA-256-Digest: p6OcpRgZ4UVjPJrajCEALdVCNH6upkXUMoqYYNUm1B8=
+
+Name: resources/hyphenationpatterns/it.txt
+SHA-256-Digest: xK2wrtYoUMQTaOFuBzhKEyIgikLjeLx9etrNbEhQLNY=
+
+Name: html/nodes/1e1d7d60.FlatFileDocumentParserNodeFactory.html
+SHA-256-Digest: EosFax8SncW9iFgScBAAgi7FrPlFnel+j8J/n/etJ1s=
+
+Name: LICENSE.TXT
+SHA-256-Digest: h8zokm9MyGzlqTwF4j4/jmg940fGsJJJWYCJS/yVIVE=
+
+Name: html/nodes/25cde9bc.CooccurrenceCounterNodeFactory.html
+SHA-256-Digest: XP8EMhevYjn/DLGsTyDgv+7BPnJXPLOyP3Qe4wQvbdI=
+
+Name: html/nodes/Meta_Simple_Preprocessing.html
+SHA-256-Digest: 6pfKko8yKumivTqn7KlYXJNYnofnUN1qlwJQhp2UOh8=
+
+Name: tocs/labs_textprocessing.xml
+SHA-256-Digest: Gy0N7q6jkp0tiZEZkZr1nEZ7WE4SKmAB0+UJo9/Vzi4=
+
+Name: resources/icons/TextProcDefault.png
+SHA-256-Digest: rbK2zkoE0inPFhVOKc1QFspQlfBidWiLBa162VGzb+Y=
+
+Name: resources/icons/next.png
+SHA-256-Digest: +XXiW9jxxUilUtrxqBOAReS7K16LGlCV2nda2f6qFHE=
+
+Name: html/nodes/Meta_Frequencies.html
+SHA-256-Digest: BUJuuAMnp2ojneUZOyr6tmjAlrGYBTPZaJs/batzvew=
+
+Name: html/nodes/5b9932a0.SdmlDocumentParserNodeFactory.html
+SHA-256-Digest: vRIrjEvgEyKgXcl+bTOGva8vGc50uo6nw8Y3YgNzzlo=
+
+Name: resources/missing.gif
+SHA-256-Digest: nO/XuKwT8PKS8YhK0QatL60p0UJcplrhveQmMu88tbc=
+
+Name: html/nodes/3a57c072.DfNodeFactory.html
+SHA-256-Digest: r4nC7SOGXED0VpFGj44TFt5Q6Te+TkVaPNUdlyXFxp8=
+
+Name: tocs/labs_textprocessing_preprocessing$nodes.xml
+SHA-256-Digest: QauDaS+roTgUPOvLaXR1s+9PCkurCB38aNJh1jjVE1g=
+
+Name: metanode_templates/Vector Creation/Document vector (#10)/node.xm
+ l
+SHA-256-Digest: pgGqv8TYJWVKoiBYVnz4SqrD/qZMV4QIZeOzic6wMv4=
+
+Name: metanode_templates/Frequencies/.savedWithData
+SHA-256-Digest: eLru5n7/IoJx9U//13Fx4OsxdoEnwxxh+9aLz2W2+dQ=
+
+Name: metanode_templates/Extended NER Preprocessing/Punctuation Erasur
+ e (#5)/settings.xml
+SHA-256-Digest: +kgd4lCmft6pM1l3YIJlhh/oyVaqXMNRXSj/8Q54/lY=
+
+Name: metanode_templates/Simple Preprocessing/Punctuation Erasure (#5)
+ /settings.xml
+SHA-256-Digest: 5+VlW1cjCrviUQWJAsJGSmZnNUqrbtbB/sUWpsRaGUU=
+
+Name: resources/icons/previous.png
+SHA-256-Digest: Z658/4SNYdTHrNkTOOhRTORHrXP+i+gUobywLtoFZ30=
+
+Name: tocs/labs_textprocessing_frequencies$nodes.xml
+SHA-256-Digest: tRL2Mj+H+VUH/TMPsgr7cxi/VeHrVyXyW5TI7KmuSAI=
+
+Name: lib/jsoup-license.txt
+SHA-256-Digest: +nsLc/J0goT50S5anXEJxpICGRhSXniePii0Is1mRFM=
+
+Name: tocs/labs_textprocessing_misc.xml
+SHA-256-Digest: ScXurkOWMfV70xnc0KQegDNLkeKeHImOdVUSIL8dtuM=
+
+Name: metanode_templates/Extended NER Preprocessing/Porter Stemmer (#4
+ )/settings.xml
+SHA-256-Digest: SEFABBVV6k6aGGg/74UUUkazS/XqHaZcAr8qy1TXAZE=
+
+Name: metanode_templates/Simple Preprocessing/BoW creator (#2)/setting
+ s.xml
+SHA-256-Digest: TDRXPyf572R4Q4b43aVQDDj/d1n2JA4DOWZXnpM3R2w=
+
+Name: resources/stanfordmodels/german-dewac.tagger
+SHA-256-Digest: msy/nL6a6q72QJZZYgfeoXr/OVFbDDBkxcWNc0fl8pI=
+
+Name: src/org/knime/ext/textprocessing/icons/TextProcEnrichment.png
+SHA-256-Digest: 2e4s8i2MNkQ0tkpfhy2nE+w9LbKC2hdL2cNvlaqjWTY=
+
+Name: metanode_templates/Extended NER Preprocessing/Porter Stemmer (#4
+ )/node.xml
+SHA-256-Digest: UinabppBqx1mmaE/h0b5VV6ynTH9sAJBeb5tonN2RTw=
+
+Name: html/nodes/3ba60672.TfNodeFactory.html
+SHA-256-Digest: 2YAtorzUvfPtYJKNjSi3t2g+o8a0+wjtBknorEYWaYk=
+
+Name: tocs/labs_textprocessing_transformation.xml
+SHA-256-Digest: h9Fpy6X/oOBICbaqPaL72NkuMXmPgZzCImwZkyTYRr0=
+
+Name: html/nodes/6bac6145.StringToTermNodeFactory.html
+SHA-256-Digest: meE5NZB2QlqwkAV3YHabOxS9EUGxBaGAVFXITiAJ4/U=
+
+Name: resources/documentformat/sdml.dtd
+SHA-256-Digest: 4OSmt0J/DKoFIY51Q/2qYA+5ci+ZdM6E3Aoj2dz1bp0=
+
+Name: resources/stanfordmodels/german-dewac.tagger.props
+SHA-256-Digest: pMfWntDGMJPn2IIDw4PDwxoKiDVnRijZ5dEvcbv8+bg=
+
+Name: resources/stopwordlists/Roumanian-Stopwords.txt
+SHA-256-Digest: 64ei8Z6uSMkCy4QViKjEHnMKyNS/4GA+JbmeXa9q/Zw=
+
+Name: resources/hyphenationpatterns/pt.txt
+SHA-256-Digest: O9CErbIYynJcJ3Tza57JvVSfCO+cSxSyppKUER+dLmA=
+
+Name: tocs/labs_textprocessing_mining.xml
+SHA-256-Digest: QcxN0ztmS27Wn9emQTHxszt+59v/DnnvuyrOny2itGw=
+
+Name: metanode_templates/Simple Preprocessing/.savedWithData
+SHA-256-Digest: mJLdVoeMh5fasKyprZdw//tbKALQT4PR3Z2jhrMcpRM=
+
+Name: html/nodes/61ab2725.AbnerTaggerNodeFactory.html
+SHA-256-Digest: 8uMFS5o69UHmF5J54B3y296IyT+RT2+UnFQfNXRcYTM=
+
+Name: html/nodes/65ae656a.CategoryToClassNodeFactory.html
+SHA-256-Digest: imDTFPMTrQdqYyRrgeA3d2ndNkUFxDyOdC11TyiKMcU=
+
+Name: resources/icons/TextProcVectors.png
+SHA-256-Digest: poAl1oPMXxUri9E56vFagZhfTTFzf+viF4iuc8Nudfo=
+
+Name: metanode_templates/Extended NER Preprocessing/Punctuation Erasur
+ e (#5)/node.xml
+SHA-256-Digest: +4LAATrfIEioAbsUBnwqdnNELDtQq3FHwIzh18YZtWk=
+
+Name: html/nodes/Meta_Extended_NER_Preprocessing.html
+SHA-256-Digest: hoQSUSP1+pDfAxcjS9y10VnyAalOApRqhi2pnZKu5ps=
+
+Name: lib/snowball-license.txt
+SHA-256-Digest: g0eG8kLT0eVbe99CxIuYAtgOZBHG1lfxHE99JylFBNs=
+
+Name: metanode_templates/Frequencies/TF (#3)/node.xml
+SHA-256-Digest: JrBUCfFyKMUJs1GpKgvhlFr5urQ+ka1/NMq0OWdu340=
+
+Name: tocs/labs_textprocessing_frequencies.xml
+SHA-256-Digest: ikcBn1apX1n7lT0NvQ3AZRLFCPcKRrlF+ruvik4DHW4=
+
+Name: resources/opennlpmodels/pos/en-pos-maxent.bin
+SHA-256-Digest: NVjD105StitDG3vqMhTonb6CC/VSX/Uez9bS+Kk9JS8=
+
+Name: html/nodes/74eae262.SnowballStemmerNodeFactory2.html
+SHA-256-Digest: Ns11i3d0IeD+mgpyZvK2fnJ6/RCGy98tMW1fDkKbE/Y=
+
+Name: metanode_templates/Extended NER Preprocessing/N Chars Filter (#3
+ )/node.xml
+SHA-256-Digest: Z8fHkrbs0npgVKW8hjpPGoLJjtHhx00wdp3kIQx+fBY=
+
+Name: lib/mallet/LICENSE
+SHA-256-Digest: GDJn7h8R/KpU+Y+M9HZXpbcuevq5h3AIR5zdPwjEcZo=
+
+Name: html/nodes/Meta_Vector_Creation.html
+SHA-256-Digest: A8MPOSw/j44oKp7HCinYbPgjj9GFc8xwx95bzbVe9MI=
+
+Name: tocs/labs_textprocessing_mining$nodes.xml
+SHA-256-Digest: qrLnTFkQ9Otn3rIsUY57azzWKmxQPsm5BCO75BVZPe0=
+
+Name: resources/stanfordmodels/english-bidirectional-distsim.tagger
+SHA-256-Digest: 8MVSXQDeW6QsWJM/473HvgI/rLTq4WALuyFfazl3RmA=
+
+Name: metanode_templates/Frequencies/IDF (#1)/settings.xml
+SHA-256-Digest: k3CSQ1ggmi9mcT9XuSC/R/G9rAm235U9QkUVEyBbqY8=
+
+Name: metanode_templates/Frequencies/TF (#2)/settings.xml
+SHA-256-Digest: HJrihAErnqu54bH5USQ4IlgeD67J4nnpxSvEZVZeWvY=
+
+Name: html/nodes/2db72f04.StopWordFilterNodeFactory2.html
+SHA-256-Digest: z1xUCsecUyRKh83GGRXeGDbWNMfhhM2rSiwH4PrzUr0=
+
+Name: metanode_templates/Vector Creation/Term vector (#9)/settings.xml
+SHA-256-Digest: wF2Q8c0rTjGqGsk1DpL69ZUeLEVm0ryZd2skefoEQEM=
+
+Name: resources/metanode.png
+SHA-256-Digest: uISYvHA88ud6JUHEz3wTAHvB0ZYwjlQTmPzdtBfEslA=
+
+Name: metanode_templates/Extended NER Preprocessing/N Chars Filter (#3
+ )/settings.xml
+SHA-256-Digest: MxgxBWUDw2CCU4XvlKwABg0rZEUlrIDsgUvqQc+EA2w=
+
+Name: resources/hyphenationpatterns/en.txt
+SHA-256-Digest: bpP5UtDHch8IpYDhLI8SE3fVz4gxdWJvPs+SW603K7c=
+
+Name: knime-textprocessing.jar
+SHA-256-Digest: tLAw3X/rApHGTW+BnzARH8NyO32BFDkpZ0BMyM/Ql8c=
+
+Name: src/org/knime/ext/textprocessing/icons/TextProcDefault.png
+SHA-256-Digest: 0JxArlItgYaDwSs2dip3mH/z/JjWaeHfg0f2ZGaS6GA=
+
+Name: resources/stopwordlists/Bulgarian-Stopwords.txt
+SHA-256-Digest: QMjvpbdZ2BIxy1nieyu+n+cwMJ2fBLo2o+zZgJQkC4o=
+
+Name: lib/pdfbox-app-2.0.0.jar
+SHA-256-Digest: +K3BPZF5PpN4TVwtwkU4NIo2KyuSKHaMWYJjjA0Dzww=
+
+Name: html/nodes/572e3de4.NCharsFilterNodeFactory2.html
+SHA-256-Digest: 3REGCnru/IeHmOrSPE4fwivXVAqKX5pkbtZSozpU+RE=
+
+Name: resources/stopwordlists/German-Stopwords.txt
+SHA-256-Digest: 3oIprklUiDw2xtqCHyGjhX6tcmhggwsjjK715nstlKE=
+
+Name: metanode_templates/Frequencies/IDF (#1)/node.xml
+SHA-256-Digest: 6J4/qGMceEu1BviqSCwOZ+uRlbMKj5EzOVhibXxL5cw=
+
+Name: resources/opennlpmodels/namefind/en-ner-location.bin
+SHA-256-Digest: Cyf82+QdYoIILxrpAkD/IctEQ9TI2bA9blkTzq+IPWU=
+
+Name: metanode_templates/Extended NER Preprocessing/POS tagger (#1)/no
+ de.xml
+SHA-256-Digest: DKCj1s+kdVVq6yAC4kGnseB0vLd/7VV33NL6KS0mm5I=
+
+Name: metanode_templates/Simple Preprocessing/workflow.knime
+SHA-256-Digest: qpAItLb8xTAudVX5nhF1Xnk2Lg8jdLulxSoBy9oozQw=
+
+Name: resources/hyphenationpatterns/fr.txt
+SHA-256-Digest: nXMhHqxjqtcsEmljrZXN6Dqopm2CXFh6yw6Yfbekbjk=
+
+Name: html/nodes/508403.ModifiableTermFilterNodeFactory.html
+SHA-256-Digest: kYzhftWW40eoK+6GvHI23t+76XeBfzNwVV7xpRYFOqg=
+
+Name: metanode_templates/Extended NER Preprocessing/BoW creator (#2)/n
+ ode.xml
+SHA-256-Digest: taB87Wi6uJlzTmeZmlBu78yKv97uyqJmqayxeafxYGQ=
+
+Name: resources/hyphenationpatterns/fi.txt
+SHA-256-Digest: YRHyOnNpF5bg2giTlZxr9ZCGbfZkP6xnaLlAGBfqK4Q=
+
+Name: metanode_templates/Extended NER Preprocessing/BoW creator (#2)/s
+ ettings.xml
+SHA-256-Digest: Md+jKCsqOrTS/1MB1ETpNCmMYN3BzNJ0KDcAUoPIc0k=
+
+Name: metanode_templates/Extended NER Preprocessing/OpenNLP NE tagger 
+ (#10)/node.xml
+SHA-256-Digest: J+DLKrdOhnpJsxUram1KPjD4XDMCP5/mBeG/exfAyI8=
+
+Name: html/nodes/10db8d20.WordDocumentParserNodeFactory.html
+SHA-256-Digest: K6UySnPcELD7unXS3uQrjJdnFrCpN5WuudAKd0MYDO4=
+
+Name: html/nodes/2e171b74.TagStripperNodeFactory.html
+SHA-256-Digest: zJpOlQZQS2+LhUoppNrrG5XNURsBLwW4i2Gh/wEy1mE=
+
+Name: html/nodes/9988baa.NGramNodeFactory.html
+SHA-256-Digest: hR09w0yWQ/8XDxA64UsVPH6OZHCiY2bzr5Q95wlTzBk=
+
+Name: resources/stanfordmodels/french.tagger
+SHA-256-Digest: 9I4RW9bxGV6CzZfQeDXpSb9vLeAL5NfAfmChKI++taQ=
+
+Name: resources/tagset/tagset.dtd
+SHA-256-Digest: CbJlPLzr28mUWcm4op3ye7I74/Z+rjG0Tzu7whbQuRw=
+
+Name: resources/opennlpmodels/tokenize/en-token.bin
+SHA-256-Digest: jpMaHSDnaGHGA6PhzQmPNV845okTWmuqhjO6FkfmODg=
+
+Name: metanode_templates/Extended NER Preprocessing/Stop word Filter (
+ #6)/settings.xml
+SHA-256-Digest: s2ua7VlrYitE2lVgdftcWZkxouhMCjRj77s5WH1Dggc=
+
+Name: metanode_templates/Frequencies/TF (#2)/node.xml
+SHA-256-Digest: S7m1m8k0UWAJYCgH19WoylohE8g9duzlsaV7tVuFJEs=
+
+Name: resources/labs.png
+SHA-256-Digest: 00m+Ficq6gqjdDrs70xJOcXrFjm/cQHmjmFjPtX2fbs=
+
+Name: tocs/labs_textprocessing_tagging$nodes.xml
+SHA-256-Digest: Tkyny44rZEChAU7cxaygTDreC/VigopfkxQs10r5U3Q=
+
+Name: metanode_templates/Extended NER Preprocessing/.savedWithData
+SHA-256-Digest: 9ackejlAEWgb9h7FBcT9la1r3HgkOvls7jwDymw845o=
+
+Name: metanode_templates/Vector Creation/Term vector (#9)/node.xml
+SHA-256-Digest: efytPRDrDoDkBX+JHSsb+RwrHSYdjrGx4tXp98e9uz4=
+
+Name: resources/opennlpmodels/namefind/en-ner-person.bin
+SHA-256-Digest: PVv8iR9kkK2huAFCpOZMqsNuXJTe3i0AfXeFxse/KCc=
+
+Name: metanode_templates/Extended NER Preprocessing/OpenNLP NE tagger 
+ (#9)/node.xml
+SHA-256-Digest: smhjyajTpE9iMGTze8Ud1mEYeUgosXZdLj1p6J8jxb8=
+
+Name: metanode_templates/Vector Creation/workflow.knime
+SHA-256-Digest: WfjtQ8zRXKhTFE94wKU5gxHV7OkpJNmPYDl+SLyqP88=
+
+Name: html/nodes/3eb0cf71.KeygraphNodeFactory.html
+SHA-256-Digest: zTS7CnDUcmCyqios1x4yqzEVD5I5gR0wGbSNmh1lth0=
+
+Name: tocs/labs_textprocessing_meta.xml
+SHA-256-Digest: Duzkk+N15ozwuRQTNpCK/fgzkUQy8Wn8rId/n5aR33U=
+
+Name: html/nodes/1013c732.FilterNodeFactory.html
+SHA-256-Digest: UkxzKzH69PSXYIx7IbB2lRI4aSk4hjuI0BIt4RI+0zY=
+
+Name: resources/stanfordmodels/german-hgc.tagger.props
+SHA-256-Digest: E/BUk+7N9MSFb6zhPsUxWEaJ6HF4wQUcBqS3LRprLFM=
+
+Name: src/org/knime/ext/textprocessing/icons/missing.gif
+SHA-256-Digest: i9MHevcEROUc6eGKSe9btKv39YC54GffKX84YwVl2gg=
+
+Name: src/org/knime/ext/textprocessing/icons/TextProcFrequencies.png
+SHA-256-Digest: PuYuCgv3exOkofJHVcRewtXME+0CkD18TmDKm3MiHmc=
+
+Name: resources/icons/search.png
+SHA-256-Digest: PE8I9uU2nRGu866NEA7JdYFjrM34B97DcC4eWb3AmeU=
+
+Name: lib/abner-license.txt
+SHA-256-Digest: sBjcCZi6r8kmGmdp1O2ftLV27gKfT0aDnJbbqepvNag=
+
+Name: resources/stanfordmodels/german-fast.tagger
+SHA-256-Digest: u13WdX7glFU4ROPGb59ZmGAeRlX0w5aACyVHgGsDe/E=
+
+Name: resources/stopwordlists/English-Stopwords.txt
+SHA-256-Digest: 3pdvKn+xlPd2PePecu+zZ35FCKNJ8CxfQrAmseXAPds=
+
+Name: lib/json.jar
+SHA-256-Digest: eQtVdoabIVEWikWxgenVYapeeblnm9IEQds+mPuPx/I=
+
+Name: metanode_templates/Extended NER Preprocessing/POS tagger (#1)/se
+ ttings.xml
+SHA-256-Digest: ttLsTiU1Neu9Rqw8XNN9pEiqIe9JNt0Ml3jkm8gjXF8=
+
+Name: resources/opennlpmodels/sentdetect/en-sent.bin
+SHA-256-Digest: v5nEX601p1PU0YWotVLAgXMHayG8hH2slskTfkow56I=
+

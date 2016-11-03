@@ -1,0 +1,105 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: hHPku5xqmPc+4hIYkoNrNxAVZFUQp
+ H10eb9q7Gu/BGI=
+SHA-256-Digest-Manifest: tktR+ToJWdLq9hq+LKuNXv2dH25qDHKYMnasXaUD2ws=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: licenses/wsdl4j.txt
+SHA-256-Digest: a4bSAzq4uQImOex3l45ZFGyBFqNrpOVaJyD6sQOJl9o=
+
+Name: woodstox-core-asl-4.4.0.jar
+SHA-256-Digest: xUZ2AW3WqzZmvAkuRs52VGKqjww59BvyZK7TOChVy/M=
+
+Name: licenses/wsdl.txt
+SHA-256-Digest: +Ui2bcH4ZDnWxR/0nyNjLTOPAAbYULGFJZ9TzAikCi0=
+
+Name: wsdl4j-1.6.3.jar
+SHA-256-Digest: mo7K9z75iyP26m/8xCb0AsZYYuZAH3R69zDYSIBYrA8=
+
+Name: licenses/sl4j.txt
+SHA-256-Digest: QLXvtezH0Ryfl5I4LxC74hY8E1J4CN8UwfkIIuReJrE=
+
+Name: licenses/wsa.txt
+SHA-256-Digest: 9stE91LKWx/SBx6CYOdoma5zOp75tv/wFEiJ2ru62bA=
+
+Name: httpasyncclient-4.0-beta3.jar
+SHA-256-Digest: iy5voAXAl0dYQ1xKLtHH/g6XcigJDCG+fQZXyrlO7Us=
+
+Name: httpclient-4.2.5.jar
+SHA-256-Digest: vcEuYi30H3ftTroH070oT85/jVTPLrsPAnxbs1AnGXc=
+
+Name: licenses/jdom.txt
+SHA-256-Digest: tvjR2Cn66kXim4egucst5SlrGaD+l2kghnJrKZTwA8Q=
+
+Name: licenses/ws-policy.txt
+SHA-256-Digest: WUnNmUTZWarpsmHBi1rGcdCl+qCaSxsKX+o2VBJj0Ao=
+
+Name: httpcore-nio-4.2.4.jar
+SHA-256-Digest: FS7LTtXYG5YxLhszQzWsrKe67oZ5asOiOxItsI97QB0=
+
+Name: commons-logging-1.1.1.jar
+SHA-256-Digest: w1WPQUeIRIBXXKY2V4wDcpfTXuqsF71aDGmMtNZpPlY=
+
+Name: xmlschema-core-2.1.0.jar
+SHA-256-Digest: URKAS8unPG+CLdulKpov4AEZelBMI558YIpKb3ZXf4E=
+
+Name: LICENSE
+SHA-256-Digest: tKtRPk6QzVBy30IMhWgJ4wVSkeRPb9dKHiPLjVj7gQ8=
+
+Name: cxf-2.7.12.jar
+SHA-256-Digest: 32WQ9+6YLt8KIVMtYkD4/V5DhAzlnilDQ1lpyvoKRmM=
+
+Name: licenses/cdd1-1.0.txt
+SHA-256-Digest: yaTcby5103WKMduO83lfUHelBqlZV6MdR/7itV3a+fY=
+
+Name: licenses/w3c.html
+SHA-256-Digest: h9XwXMO6Yhmln3cxd/bw4Sdxzv08fSfPkHBUPlJYAn8=
+
+Name: neethi-3.0.3.jar
+SHA-256-Digest: sED/Yg0+uSJiI0i7xNnweuELrnh2unEAuyUU+An3eCc=
+
+Name: httpcore-4.2.4.jar
+SHA-256-Digest: ces6SBY2I17wLvFjDN2XiQ+q3+gwCh6/M/y+lVoVaxk=
+
+Name: licenses/epl-v10.html
+SHA-256-Digest: uHODp3OVWi7bZtVRsVL+6jxBDUA24SZuxoT4DjMmuZQ=
+
+Name: stax2-api-3.1.4.jar
+SHA-256-Digest: lRzlQIRi0MIZM2IxoOdvXT2PfRTHGDmXgXpyaAibfqo=
+
+Name: META-INF/services/javax.xml.bind.JAXBContext
+SHA-256-Digest: EkUujN6FyUmG98ZeuGyKZBTj/KgFFbCY9BqW87WNIiI=
+
+Name: jaxb-xjc-2.2.6.jar
+SHA-256-Digest: jFY7iRbxNKSEI8O9J3UepkqKcaLitWMNp+uChH1d3qM=
+
+Name: licenses/bsd.txt
+SHA-256-Digest: WBW3Fxy94+13KQ+r5WLZI7cfKlw8OxGEL3snVO06kNU=
+
+Name: licenses/asm.txt
+SHA-256-Digest: q2cr7eet224iINrLHfvoQwW4ea8hJtcWhEQDHXa+8eU=
+
+Name: javax.ws.rs-api-2.0-m10.jar
+SHA-256-Digest: 5kfYVVQTfHARJ7AElJsvQdjk1QfpuKre6hD97ZTRJac=
+
+Name: licenses/jaxen.txt
+SHA-256-Digest: ibiFiAz6vwOue49M4LEJ8gkdn21JCG25/y8rlZ0x6/g=
+
+Name: README
+SHA-256-Digest: 9dBLsC+QS7f0VvCX4BCs6fMgDwxjxgWpN4ZZMvhraHQ=
+
+Name: commons-codec-1.9.jar
+SHA-256-Digest: iYuiZdfZhd4QhAAgL8B7ooXmBFIjlBjMXcvTaBJ+Bko=
+
+Name: jaxb-impl-2.2.6.jar
+SHA-256-Digest: qH4XT9tmPg6Y5OEsLqxFUJ1GVpImPgUe4DVDHfoSqXc=
+
+Name: licenses/oasis.txt
+SHA-256-Digest: YApYM5a89cQpzSRF+nPCIt8Fj79F/aZBt9ZFV1TVnfE=
+
+Name: licenses/ruby-mit.txt
+SHA-256-Digest: JjtyVlnNGBKQjLcyWJtjUtVss1BWDmM+ew72YKo7SGA=
+
+Name: licenses/MPL-1.1.txt
+SHA-256-Digest: 8OrZFs3LLNqF/vGZkMHFf5i/LD80O+QlHJ9pvBr0BCk=
+

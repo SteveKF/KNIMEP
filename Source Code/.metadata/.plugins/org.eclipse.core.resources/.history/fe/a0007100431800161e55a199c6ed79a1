@@ -1,0 +1,27 @@
+package com.newbrightidea.util;
+
+public class Test {
+
+	public static void main(String[] args){
+		RTree<Integer> tree = new RTree<Integer>(3,2,2);
+		tree.insert(new float[]{1,9},0);
+		tree.insert(new float[]{2,10},0);
+		tree.insert(new float[]{4,8},0);
+		tree.insert(new float[]{6,7},0);
+		tree.insert(new float[]{9,10},0);
+		tree.insert(new float[]{7,5},0);
+		tree.insert(new float[]{5,6},0);
+		tree.insert(new float[]{4,3},0);
+		tree.insert(new float[]{3,2},0);
+		tree.insert(new float[]{10,4},0);
+		tree.insert(new float[]{9,1},0);
+		tree.insert(new float[]{6,2},0);
+		tree.insert(new float[]{8,3},0);
+		System.out.println(tree.size());
+		System.out.println(tree.getMaxEntries());
+		System.out.println(tree.getMinEntries());
+		System.out.println(tree.getNumDims());
+		String s = tree.visualize();
+		System.out.println(s);
+	}
+}

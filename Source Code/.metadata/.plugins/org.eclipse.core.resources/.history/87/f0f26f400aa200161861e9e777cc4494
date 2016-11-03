@@ -1,0 +1,6 @@
+source.skylinevisualizer.jar = src/
+bin.includes = plugin.xml,\
+               META-INF/,\
+               skylinevisualizer.jar
+additional.bundles = org.knime.ext.jfreechart,\
+                     org.knime.ext.jfreechart.source

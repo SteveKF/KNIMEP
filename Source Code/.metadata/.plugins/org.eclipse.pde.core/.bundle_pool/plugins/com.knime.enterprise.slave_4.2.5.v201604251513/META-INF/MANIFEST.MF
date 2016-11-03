@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.knime.enterprise.slave;singleton:=true
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.10.0,4.0.0
+ )",org.knime.core.util;bundle-version="[4.5.0,6.0.0)",org.eclipse.ui;
+ bundle-version="[3.106.0,4.0.0)",org.knime.core;bundle-version="[3.1.
+ 0,4.0.0)",org.knime.workbench.repository;bundle-version="[3.0.0,4.0.0
+ )",com.knime.enterprise.utility;bundle-version="[4.0.0,5.0.0)",com.kn
+ ime.explorer.sharedspace;bundle-version="[3.4.0,4.0.0)",com.knime.exp
+ lorer.teamspace;bundle-version="[3.4.0,4.0.0)",org.knime.workbench.ex
+ plorer.view;bundle-version="[6.4.0,8.0.0)",org.knime.js.core;bundle-v
+ ersion="[3.0.0,4.0.0)",org.apache.commons.lang;bundle-version="[2.6.0
+ ,3.0.0)",com.knime.reporting.nodes;bundle-version="[3.1.1,4.0.0)",com
+ .fasterxml.jackson.core.jackson-core;bundle-version="[2.4.3,3.0.0)",c
+ om.fasterxml.jackson.core.jackson-databind;bundle-version="[2.4.3,3.0
+ .0)",com.knime.enterprise.reportexecutor;bundle-version="[4.2.5,5.0.0
+ )",org.eclipse.birt.report.engine;bundle-version="[4.4.2,5.0.0)",com.
+ knime.reporting.nodes;bundle-version="[3.0.0,4.0.0)",com.knime.oda.dr
+ iver;bundle-version="[3.0.0,4.0.0)",org.apache.commons.codec;bundle-v
+ ersion="[1.6.0,2.0.0)",com.healthmarketscience.rmiio;bundle-version="
+ [2.1.0,3.0.0)",com.fasterxml.jackson.datatype.jackson-datatype-jsr353
+ ;bundle-version="2.5.2"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME.com, Zurich, Switzerland
+Ant-Version: Apache Ant 1.9.4
+Export-Package: com.knime.enterprise.slave.api
+Bundle-Name: KNIME RMI Server Plugin
+Bundle-Version: 4.2.5.v201604251513
+Bundle-ClassPath: knime-enterprise-slave.jar
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: IB573AD5Ro6GsoCRVCtGQeujP/jW4BJOLGliUCla/Ak=
+
+Name: lib/commons-codec-1.4.jar
+SHA-256-Digest: aqQjTHTzoQNXUaJYIlRYZ8jDcnElpkK24ElmXRhjYxs=
+
+Name: knime-enterprise-slave.jar
+SHA-256-Digest: 4ZykLzqUuWoka5UM1kmBQP0MSRa7jx0DGLrAYyGfWvk=
+

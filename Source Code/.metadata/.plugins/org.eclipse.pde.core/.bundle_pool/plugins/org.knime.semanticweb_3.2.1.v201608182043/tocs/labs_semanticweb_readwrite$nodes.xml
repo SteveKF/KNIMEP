@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Read/Write" link_to="../org.knime.semanticweb/tocs/labs_semanticweb_readwrite.xml#labs_semanticweb_readwrite">
+<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/2ef33da.SPARQLQueryNodeFactory.html" label="SPARQL Query"/>
+<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/62c33008.SPARQLExecutorNodeFactory.html" label="SPARQL Executor"/>
+<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/4ec8e4f8.InsertRowsNodeFactory.html" label="SPARQL Insert"/>
+<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/2ec916f8.UpdateRowsNodeFactory.html" label="SPARQL Update"/>
+<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/708a3ec8.DeleteRowsNodeFactory.html" label="SPARQL Delete"/>
+<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/14a8ed4f.ListGraphsNodeFactory.html" label="SPARQL List Graph Names"/>
+</toc>

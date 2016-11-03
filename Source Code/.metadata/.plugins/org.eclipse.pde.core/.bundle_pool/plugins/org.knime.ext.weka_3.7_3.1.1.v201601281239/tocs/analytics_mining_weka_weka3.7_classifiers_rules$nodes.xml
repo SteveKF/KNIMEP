@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="rules" link_to="../org.knime.ext.weka_3.7/tocs/analytics_mining_weka_weka3.7_classifiers_rules.xml#analytics_mining_weka_weka3.7_classifiers_rules">
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/6d9b8def.ConjunctiveRule#V112015.html" label="ConjunctiveRule (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/9d7085f.DTNB#V112015.html" label="DTNB (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/5f7d5681.DecisionTable#V112015.html" label="DecisionTable (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/8a50108.FURIA#V112015.html" label="FURIA (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/629452cc.JRip#V112015.html" label="JRip (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/4c63ac45.LAC#V112015.html" label="LAC (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/425e7a64.M5Rules#V112015.html" label="M5Rules (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/19bb8a05.NNge#V112015.html" label="NNge (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/43e161a3.OLM#V112015.html" label="OLM (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/5f1aabd7.OneR#V112015.html" label="OneR (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/7c86f9b0.PART#V112015.html" label="PART (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/293eb06e.Prism#V112015.html" label="Prism (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/13412a23.Ridor#V112015.html" label="Ridor (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/21fba529.ZeroR#V112015.html" label="ZeroR (3.7)"/>
+</toc>

@@ -1,0 +1,1688 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.knime.base;singleton:=true
+Require-Bundle: org.knime.core;bundle-version="[3.2.1,4.0.0)";visibili
+ ty:="reexport",org.apache.commons.math;bundle-version="[2.1.0,2.2.0)"
+ ,org.apache.commons.httpclient;bundle-version="[3.1.0,3.2.0)",org.apa
+ che.commons.lang;bundle-version="[2.6.0,2.7.0)",org.apache.commons.ma
+ th3;bundle-version="[3.2.0,4.0.0)",javax.mail.glassfish;bundle-versio
+ n="[1.4.1,2.0.0)",org.knime.workbench.repository;bundle-version="[3.2
+ .0,4.0.0)",com.fifesoft.rsyntaxtextarea;bundle-version="2.5.8",org.ec
+ lipse.help;resolution:=optional,org.eclipse.help.ui;resolution:=optio
+ nal
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BuddyPolicy: dependent
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Ant-Version: Apache Ant 1.9.6
+Export-Package: Jama,Jama.examples,Jama.test,Jama.util,org.knime.base.
+ collection.list.split,org.knime.base.data.aggregation,org.knime.base.
+ data.aggregation.booleancell,org.knime.base.data.aggregation.collecti
+ on,org.knime.base.data.aggregation.date,org.knime.base.data.aggregati
+ on.deprecated,org.knime.base.data.aggregation.dialogutil,org.knime.ba
+ se.data.aggregation.dialogutil.column,org.knime.base.data.aggregation
+ .dialogutil.pattern,org.knime.base.data.aggregation.dialogutil.type,o
+ rg.knime.base.data.aggregation.general,org.knime.base.data.aggregatio
+ n.numerical,org.knime.base.data.append.column,org.knime.base.data.app
+ end.row,org.knime.base.data.bitvector,org.knime.base.data.filter.colu
+ mn,org.knime.base.data.filter.row,org.knime.base.data.join,org.knime.
+ base.data.neural,org.knime.base.data.neural.methods,org.knime.base.da
+ ta.nominal,org.knime.base.data.normalize,org.knime.base.data.replace,
+ org.knime.base.data.sort,org.knime.base.data.statistics,org.knime.bas
+ e.data.statistics.calculation,org.knime.base.data.util,org.knime.base
+ .node.flowvariable.appendvariabletotable,org.knime.base.node.flowvari
+ able.extractvariables,org.knime.base.node.flowvariable.injectvariable
+ s,org.knime.base.node.flowvariable.tablerowtovariable,org.knime.base.
+ node.flowvariable.variableloophead,org.knime.base.node.flowvariable.v
+ ariabletotablerow,org.knime.base.node.image,org.knime.base.node.image
+ .imagecolwriter,org.knime.base.node.image.readpng,org.knime.base.node
+ .image.writeimage,org.knime.base.node.io,org.knime.base.node.io.arffr
+ eader,org.knime.base.node.io.arffwriter,org.knime.base.node.io.csvrea
+ der,org.knime.base.node.io.csvwriter,org.knime.base.node.io.database,
+ org.knime.base.node.io.database.connection.util,org.knime.base.node.i
+ o.def,org.knime.base.node.io.extractsysprop,org.knime.base.node.io.fi
+ lereader,org.knime.base.node.io.linereader,org.knime.base.node.io.lis
+ tfiles,org.knime.base.node.io.pmml.read,org.knime.base.node.io.pmml.w
+ rite,org.knime.base.node.io.portobject,org.knime.base.node.io.predict
+ or,org.knime.base.node.io.table.read,org.knime.base.node.io.table.wri
+ te,org.knime.base.node.io.tablecreator,org.knime.base.node.io.tablecr
+ eator.table,org.knime.base.node.meta.feature.backwardelim,org.knime.b
+ ase.node.meta.looper,org.knime.base.node.meta.looper.chunk,org.knime.
+ base.node.meta.looper.columnlist,org.knime.base.node.meta.looper.cond
+ ition,org.knime.base.node.meta.xvalidation,org.knime.base.node.mine.b
+ ayes.naivebayes.datamodel2,org.knime.base.node.mine.bayes.naivebayes.
+ predictor3,org.knime.base.node.mine.bfn,org.knime.base.node.mine.bfn.
+ fuzzy,org.knime.base.node.mine.bfn.fuzzy.membership,org.knime.base.no
+ de.mine.bfn.fuzzy.norm,org.knime.base.node.mine.bfn.fuzzy.shrink,org.
+ knime.base.node.mine.bfn.radial,org.knime.base.node.mine.cluster,org.
+ knime.base.node.mine.cluster.assign,org.knime.base.node.mine.cluster.
+ fuzzycmeans,org.knime.base.node.mine.cluster.hierarchical,org.knime.b
+ ase.node.mine.cluster.hierarchical.distfunctions,org.knime.base.node.
+ mine.cluster.kmeans,org.knime.base.node.mine.decisiontree2,org.knime.
+ base.node.mine.decisiontree2.image,org.knime.base.node.mine.decisiont
+ ree2.model,org.knime.base.node.mine.decisiontree2.predictor,org.knime
+ .base.node.mine.decisiontree2.predictor2,org.knime.base.node.mine.dec
+ isiontree2.view,org.knime.base.node.mine.decisiontree2.view.graph,org
+ .knime.base.node.mine.knn,org.knime.base.node.mine.mds,org.knime.base
+ .node.mine.mds.distances,org.knime.base.node.mine.mds.mdsprojection,o
+ rg.knime.base.node.mine.neural.mlp,org.knime.base.node.mine.neural.ml
+ p2,org.knime.base.node.mine.neural.rprop,org.knime.base.node.mine.pca
+ ,org.knime.base.node.mine.regression,org.knime.base.node.mine.regress
+ ion.linear,org.knime.base.node.mine.regression.linear.learn,org.knime
+ .base.node.mine.regression.linear.predict,org.knime.base.node.mine.re
+ gression.linear.view,org.knime.base.node.mine.regression.logistic.lea
+ rner,org.knime.base.node.mine.regression.logistic.learner3,org.knime.
+ base.node.mine.regression.logistic.predict,org.knime.base.node.mine.r
+ egression.pmmlgreg,org.knime.base.node.mine.regression.polynomial,org
+ .knime.base.node.mine.regression.polynomial.learner,org.knime.base.no
+ de.mine.regression.polynomial.predictor,org.knime.base.node.mine.regr
+ ession.predict,org.knime.base.node.mine.regression.predict2,org.knime
+ .base.node.mine.scorer.accuracy,org.knime.base.node.mine.scorer.entro
+ p,org.knime.base.node.mine.scorer.numeric,org.knime.base.node.mine.sm
+ ote,org.knime.base.node.mine.sota,org.knime.base.node.mine.sota.dista
+ nces,org.knime.base.node.mine.sota.logic,org.knime.base.node.mine.sot
+ a.predictor,org.knime.base.node.mine.sota.view,org.knime.base.node.mi
+ ne.sota.view.interaction,org.knime.base.node.mine.subgroupminer,org.k
+ nime.base.node.mine.subgroupminer.apriori,org.knime.base.node.mine.su
+ bgroupminer.freqitemset,org.knime.base.node.mine.svm,org.knime.base.n
+ ode.mine.svm.kernel,org.knime.base.node.mine.svm.learner,org.knime.ba
+ se.node.mine.svm.predictor,org.knime.base.node.mine.svm.predictor2,or
+ g.knime.base.node.mine.svm.util,org.knime.base.node.mine.util,org.kni
+ me.base.node.parallel,org.knime.base.node.parallel.appender,org.knime
+ .base.node.parallel.builder,org.knime.base.node.preproc.addemptyrows,
+ org.knime.base.node.preproc.append.row,org.knime.base.node.preproc.au
+ tobinner,org.knime.base.node.preproc.autobinner.apply,org.knime.base.
+ node.preproc.autobinner.pmml,org.knime.base.node.preproc.binner,org.k
+ nime.base.node.preproc.binnerdictionary,org.knime.base.node.preproc.c
+ aseconvert,org.knime.base.node.preproc.cellreplace,org.knime.base.nod
+ e.preproc.cellsplit,org.knime.base.node.preproc.cellsplitbypos,org.kn
+ ime.base.node.preproc.colcombine,org.knime.base.node.preproc.colcompa
+ re,org.knime.base.node.preproc.colconvert,org.knime.base.node.preproc
+ .colconvert.categorytonumber,org.knime.base.node.preproc.colconvert.n
+ umbertostring,org.knime.base.node.preproc.colconvert.stringtonumber,o
+ rg.knime.base.node.preproc.columnTrans,org.knime.base.node.preproc.co
+ lumnheaderextract,org.knime.base.node.preproc.columnheaderinsert,org.
+ knime.base.node.preproc.columnmerge,org.knime.base.node.preproc.colum
+ nrenameregex,org.knime.base.node.preproc.columntogrid,org.knime.base.
+ node.preproc.correlation.compute,org.knime.base.node.preproc.correlat
+ ion.filter,org.knime.base.node.preproc.correlation.pmcc,org.knime.bas
+ e.node.preproc.createtablestructure,org.knime.base.node.preproc.discr
+ etization.caim2,org.knime.base.node.preproc.discretization.caim2.mode
+ lapply,org.knime.base.node.preproc.discretization.caim2.modelcreator,
+ org.knime.base.node.preproc.domain,org.knime.base.node.preproc.double
+ 2int,org.knime.base.node.preproc.equalsizesampling,org.knime.base.nod
+ e.preproc.filter.column,org.knime.base.node.preproc.filter.columnref,
+ org.knime.base.node.preproc.filter.hilite,org.knime.base.node.preproc
+ .filter.hilite.collector,org.knime.base.node.preproc.filter.nominal,o
+ rg.knime.base.node.preproc.filter.row,org.knime.base.node.preproc.fil
+ ter.row.rowfilter,org.knime.base.node.preproc.filter.rowref,org.knime
+ .base.node.preproc.groupby,org.knime.base.node.preproc.joiner,org.kni
+ me.base.node.preproc.matcher,org.knime.base.node.preproc.missingval,o
+ rg.knime.base.node.preproc.normalize,org.knime.base.node.preproc.norm
+ alize3,org.knime.base.node.preproc.partition,org.knime.base.node.prep
+ roc.pivot,org.knime.base.node.preproc.pmml,org.knime.base.node.prepro
+ c.pmml.binner,org.knime.base.node.preproc.pmml.columnTrans,org.knime.
+ base.node.preproc.pmml.columnfilter,org.knime.base.node.preproc.pmml.
+ normalize,org.knime.base.node.preproc.pmml.numbertostring,org.knime.b
+ ase.node.preproc.pmml.stringtonumber,org.knime.base.node.preproc.rege
+ xsplit,org.knime.base.node.preproc.rename,org.knime.base.node.preproc
+ .rowkey2,org.knime.base.node.preproc.rowsplit,org.knime.base.node.pre
+ proc.sample,org.knime.base.node.preproc.setoperator,org.knime.base.no
+ de.preproc.setoperator.icons,org.knime.base.node.preproc.shuffle,org.
+ knime.base.node.preproc.sorter,org.knime.base.node.preproc.stringrepl
+ acer,org.knime.base.node.preproc.stringreplacer.dict,org.knime.base.n
+ ode.preproc.transpose,org.knime.base.node.preproc.ungroup,org.knime.b
+ ase.node.preproc.valcount,org.knime.base.node.rules,org.knime.base.no
+ de.switches.emptytableswitch,org.knime.base.node.switches.endcase,org
+ .knime.base.node.switches.endif,org.knime.base.node.switches.endmodel
+ case,org.knime.base.node.switches.manualif,org.knime.base.node.switch
+ es.startcase,org.knime.base.node.util,org.knime.base.node.util.cache,
+ org.knime.base.node.util.createtempdir,org.knime.base.node.util.extto
+ ol,org.knime.base.node.util.sampledata,org.knime.base.node.viz.aggreg
+ ation,org.knime.base.node.viz.aggregation.util,org.knime.base.node.vi
+ z.condbox,org.knime.base.node.viz.crosstable,org.knime.base.node.viz.
+ enrichment,org.knime.base.node.viz.histogram,org.knime.base.node.viz.
+ histogram.datamodel,org.knime.base.node.viz.histogram.impl,org.knime.
+ base.node.viz.histogram.impl.fixed,org.knime.base.node.viz.histogram.
+ impl.interactive,org.knime.base.node.viz.histogram.node,org.knime.bas
+ e.node.viz.histogram.util,org.knime.base.node.viz.liftchart,org.knime
+ .base.node.viz.pie,org.knime.base.node.viz.pie.datamodel,org.knime.ba
+ se.node.viz.pie.datamodel.fixed,org.knime.base.node.viz.pie.datamodel
+ .interactive,org.knime.base.node.viz.pie.impl,org.knime.base.node.viz
+ .pie.impl.fixed,org.knime.base.node.viz.pie.impl.interactive,org.knim
+ e.base.node.viz.pie.node,org.knime.base.node.viz.pie.node.fixed,org.k
+ nime.base.node.viz.pie.node.interactive,org.knime.base.node.viz.pie.u
+ til,org.knime.base.node.viz.plotter,org.knime.base.node.viz.plotter.b
+ asic,org.knime.base.node.viz.plotter.box,org.knime.base.node.viz.plot
+ ter.columns,org.knime.base.node.viz.plotter.dendrogram,org.knime.base
+ .node.viz.plotter.line,org.knime.base.node.viz.plotter.node,org.knime
+ .base.node.viz.plotter.parcoord,org.knime.base.node.viz.plotter.props
+ ,org.knime.base.node.viz.plotter.scatter,org.knime.base.node.viz.plot
+ ter.scattermatrix,org.knime.base.node.viz.property.color,org.knime.ba
+ se.node.viz.property.color.extract,org.knime.base.node.viz.property.s
+ hape,org.knime.base.node.viz.property.size,org.knime.base.node.viz.ro
+ c,org.knime.base.node.viz.statistics,org.knime.base.node.viz.statisti
+ cs2;x-friends:="org.knime.stats",org.knime.base.node.viz.table,org.kn
+ ime.base.node.workflow.save,org.knime.base.util,org.knime.base.util.c
+ oordinate,org.knime.base.util.flowvariable,org.knime.base.util.kdtree
+ ,org.knime.base.util.math,org.knime.base.util.pmml.samples
+Bundle-Name: KNIME Base Nodes
+Bundle-Version: 3.2.2.v201610031220
+Bundle-ClassPath: knime-base.jar,lib/Jama-1.0.2.jar,lib/schemas.jar
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: tocs/analytics_statistics_regression$nodes.xml
+SHA-256-Digest: pmbW6UqSg9/TfbMVxbwFkPtPhmmsO5J6VE2ans04mko=
+
+Name: icons/16x16/category_quickform.png
+SHA-256-Digest: jhhKW6+9UdpZPSTkLw6Rv8h8MeqZeRnbsLCUBITQAo4=
+
+Name: html/nodes/5d520844.DataPortCatchNodeFactory.html
+SHA-256-Digest: YscLDwUwH1wk3uiJ9O8TBDhLIqPYQfAiFSSiCeaxG5Q=
+
+Name: tocs/analytics_mining_featureselection.xml
+SHA-256-Digest: FPcPWMMm4zPu0E1LCaFBwoTaE0fc8eejcVj74TFo6/A=
+
+Name: html/nodes/65c07ff6.ScatterMatrixNodeFactory.html
+SHA-256-Digest: 4LZYBRpIlYVJvqJ1lcr8a/k9H0/hEUNHSCb1RJjp4XE=
+
+Name: html/nodes/2b42ab2c.AppendedRowsNodeFactory.html
+SHA-256-Digest: BFs85vaEug2GsNdinjPTPD2kwaPgfzHYpSCnGtiEawY=
+
+Name: metanode_templates/Iterate list of files/.savedWithData
+SHA-256-Digest: C9tdfKNTeZCQm4HuHv10w/MobcE9zt9KOEFdCGKVxdA=
+
+Name: html/nodes/3f8005bf.NaiveBayesPredictorNodeFactory2.html
+SHA-256-Digest: 2znSRD7GxC6ub5N5GQ0m4X/pOuUOJmJm/30tYOd9a8s=
+
+Name: tocs/io_io-other$nodes.xml
+SHA-256-Digest: jxtBcJ311YwoeJkipr/za2S9wK24CQlqkroXQGBK/ys=
+
+Name: metanode_templates/Iterate list of files/TableRow To Variable Lo
+ op Start (#2)/settings.xml
+SHA-256-Digest: F7i2ybAwtR68dnpNq+E1ajVXVNTznfMdQ5EBvEvla0A=
+
+Name: html/nodes/2c4daf3b.CaseStartVariableNodeFactory.html
+SHA-256-Digest: CWyF+ywRwQXnrFL993lmL/eE3Z3b72CKd20z5PaiGqQ=
+
+Name: tocs/analytics_mining_featureselection_meta$nodes.xml
+SHA-256-Digest: Eq3g5hE3Y2erUMZhnIZTodbKSQJN7n44o61XsBvHXvw=
+
+Name: html/nodes/15a921d5.StartcaseNodeFactory.html
+SHA-256-Digest: X5aBmgyJo3bc08ZXOxHEmymnCr8lvW7CYuvc9pujE14=
+
+Name: html/nodes/3fd20f3e.ColumnToGrid2NodeFactory.html
+SHA-256-Digest: ofQnhBFbIrzxn+vGMcEru2zwUzpIgCcUts5UX73+24g=
+
+Name: html/nodes/5a9363b1.ColumnComparatorNodeFactory.html
+SHA-256-Digest: Me0tbTTO4q/ZvRU+TRH7yJchLubRsYLZVaSdBJuxRqU=
+
+Name: metanode_templates/Cross Validation/Decision Tree Learner (#14)/
+ settings.xml
+SHA-256-Digest: PFNRifAAd6yRkw/uOOU7n/qKqQ68M3XzitvZwq+rIbU=
+
+Name: META-INF/p2.inf
+SHA-256-Digest: SCNujOMrWfBft6M/IXA27/4A4/I5W717fRBe5WO37hE=
+
+Name: html/nodes/fb11689.EndifNodeFactory.html
+SHA-256-Digest: mGCKeFuOBTXYu9h0dXUHeHbYZtwT1FeHMYpgG26trJA=
+
+Name: html/nodes/7ac03d48.EditNominalDomainDicNodeFactory.html
+SHA-256-Digest: hd9f/Wus1vN1n/zZcOUcL1Y+cqrwZkbYI+wje5W+ahQ=
+
+Name: tocs/view.xml
+SHA-256-Digest: QO5HMx8eDI/7QNFmUVcVh384ixyqSkIi4QpCb0Ni9Pw=
+
+Name: html/nodes/61936bd4.ColumnFilterRefNodeFactory.html
+SHA-256-Digest: cwgcBkWnU6ASUUsCb7ezC+1JUW2x0YQ0IXiY474F3fk=
+
+Name: html/nodes/b2f8419.DatabaseLoopingNodeFactory.html
+SHA-256-Digest: /80IMxE0x/ugk7XhFFFQGFtDTp/EKG6ZndAtsXwaHjs=
+
+Name: tocs/analytics_mining_mds.xml
+SHA-256-Digest: IhyBndwr5mKTQ5HKnV/hBNQlU6yB7WFhZeoPbaw/+yI=
+
+Name: html/nodes/1447c7d5.CellSplitterNodeFactory.html
+SHA-256-Digest: yKG5Zetpwg1VF2a/1oK/n3+aGkQci2NIydUHDJLtRRA=
+
+Name: tocs/manipulation_row_row-transform.xml
+SHA-256-Digest: vQ7TcckE8dimrDe3f45372S4pN4DkEf20/rpa+x8x1w=
+
+Name: html/nodes/14a6d48c.ExpandByteVectorNodeFactory.html
+SHA-256-Digest: AD8gZcyo0J3S5WUi8E0Hy8z4cpDMGbFHNduS95bptbo=
+
+Name: html/nodes/7b6ba9bf.CreateTempDirectoryNodeFactory.html
+SHA-256-Digest: dMNGQ81jfo/+wo5JgSo+UzFRwhzuh6xHcHljSOh9roI=
+
+Name: metanode_templates/Feature Elimination/Backward Feature Eliminat
+ ion Filter (#2)/settings.xml
+SHA-256-Digest: gDw4COX229kBzMyfs6BcgLEcH7kJpEoF68hZsVmz/PI=
+
+Name: icons/16x16/weka.png
+SHA-256-Digest: n0zBN3bnr8LCaMhpjJDmGOk+3YTXWVse6WV6vh7LT0Y=
+
+Name: html/nodes/14ad8eae.KnnNodeFactory.html
+SHA-256-Digest: qoySK90XsrU9dbL97H1wodUX9WNwy5cSMix7DTW4ssE=
+
+Name: html/nodes/6ae53516.HierarchicalClusterNodeFactory.html
+SHA-256-Digest: t51f82a9pmCjthV6tevKTPQDNfpDPG+UT7++E9/MYtE=
+
+Name: html/nodes/3099a205.ValueCounterNodeFactory.html
+SHA-256-Digest: tOHbdhvDWGPHM3Lru5ZQFbZQ5q6OTO7Hsq4PAWlH3ic=
+
+Name: html/nodes/78ddfc10.LoopEnd2NodeFactory.html
+SHA-256-Digest: PUxHuVVCpshuzbgt8e6ziOfWVsifMUfZ9kaaq87tFOM=
+
+Name: html/nodes/16dc9b9a.HiliteFilterNodeFactory.html
+SHA-256-Digest: bpWNE1G4y6YZzZ1RbfYJf4hPjkPoXzdqA36GOgTVwfg=
+
+Name: html/nodes/4a1e49c0.LiftChartNodeFactory.html
+SHA-256-Digest: 5Y3RqnhSX4U99bbkTpKMX6AoWo0Vl0lFeah+Kuj7KMY=
+
+Name: html/nodes/33195543.EmptyTableSwitchNodeFactory.html
+SHA-256-Digest: NZjSjtDPlv8bZ4x1iCmu0A4QEzLxY0qRLe47uBHFq9Q=
+
+Name: html/nodes/2c81dea0.NormalizerPMMLNodeFactory2.html
+SHA-256-Digest: XWLwr8u9vt4WEbnC5/RlWnTI/8f9wuGQ02IlS80Q2+8=
+
+Name: html/nodes/15c3520e.VariablePortTryNodeFactory.html
+SHA-256-Digest: jsY4Outx+e/UCJKwHa24kv4/5UzFeKXY717/wNanEGU=
+
+Name: tocs/flowcontrol__loopsupport$nodes.xml
+SHA-256-Digest: ljhg0Y73n6qnNKAW4wdSqFKPA2B/9AfQVa2AAtafK7E=
+
+Name: icons/meta_nodes/looping_file_reader_flow.png
+SHA-256-Digest: iIq1985EyN6jeA9v4486F4TG2Zle20WW5dENDgmpOOI=
+
+Name: html/nodes/29c4928c.RadialBasisFunctionPredictor2NodeFactory.htm
+ l
+SHA-256-Digest: 07E9L/0+kN7kIXDGqjFmdYevGygIg5uH5rcdPIe/GgE=
+
+Name: tocs/database_database-io$nodes.xml
+SHA-256-Digest: Fwr6adCKPmCtLN3mi9MR90NJAAJg9aOn+pUAZzbcNQE=
+
+Name: html/nodes/2702bdec.RecursiveLoopEnd2NodeFactory.html
+SHA-256-Digest: 4kBmJv9gi96rgrvxW4d0qUWZ7lE1RFw+KAs8SOYvgQM=
+
+Name: html/nodes/6f3dfb12.ReferenceColumnResorterNodeFactory.html
+SHA-256-Digest: HUaumBiwcqNdJSkC0Q83hUKSAkePJGEgGvauAMVbOeE=
+
+Name: tocs/io_read.xml
+SHA-256-Digest: InTQ18/F0nozpc7yOIBke7xQ6TlkR+AE3UkOyC7GSXk=
+
+Name: html/nodes/1f519af4.ImageToTableNodeFactory.html
+SHA-256-Digest: zGmtFOSjK/u6Ffhy2TP/37kkPkbOgmro1kh/SK9EF7k=
+
+Name: tocs/manipulation_column_column-split+combine.xml
+SHA-256-Digest: 7MfxdkCM+n7BKhn8qtSPudslcw2dzOvrhNxlyhU73Ac=
+
+Name: html/nodes/648d72e7.LineReaderNodeFactory.html
+SHA-256-Digest: veqNHpOAEVAYGwuXFU3yGffWKsh3NCs/BoF20PlykNA=
+
+Name: tocs/database_database-utility$nodes.xml
+SHA-256-Digest: MDnjBNnPYLuqDZ/190jgR0uafSOIgDE8oLqi3TH4X0A=
+
+Name: html/nodes/395d476d.MLPPredictorNodeFactory.html
+SHA-256-Digest: t850Zw0Qu2hnMgaGiVAfP6N/3z+Qv/236Xo9HG+TI1E=
+
+Name: html/nodes/6da372d8.StringReplacerNodeFactory.html
+SHA-256-Digest: 8wJwO3UZOW2Fa6Dod8i5dsx2ALZehBUi54nHTWJwld0=
+
+Name: html/nodes/f6fbc8c.ColorAppender2NodeFactory.html
+SHA-256-Digest: leLJ4Lz9xm51GSxMHz4qZ91IXWQNng6TrhLzvUNnGyw=
+
+Name: tocs/analytics_mining_clustering.xml
+SHA-256-Digest: EoSTIcn9PqJahkE/gzqg+XI8rLLZ1R5N3BgjFz2oTK4=
+
+Name: tocs/manipulation_row_row-other.xml
+SHA-256-Digest: ii0N9qSNY0Irw9sID0IFAZF6Vk220rnHCPreXsGPRBA=
+
+Name: html/nodes/1b770f3e.NormalizerApplyNodeFactory.html
+SHA-256-Digest: CtBde13+A1+aMo81DYop1UMwVVQNCg4+FuuoFb0d5zA=
+
+Name: html/nodes/333c28aa.MissingValueColumnFilterNodeFactory.html
+SHA-256-Digest: 0KSan5QhqY82+20oxNaz28CAe1zPxpsZc/xeQqsmv0w=
+
+Name: html/nodes/71ef14be.ImageColumnWriterNodeFactory.html
+SHA-256-Digest: /+RdwewnOChPrV2aYCyWCR/Os5sftMesLGxSMHicexs=
+
+Name: icons/missing.gif
+SHA-256-Digest: g36bn1gOUappfLQ5xeK5WXwpikUfQoWy9TRlsXixaLQ=
+
+Name: metanode_templates/Looper/Loop End (#2)/node.xml
+SHA-256-Digest: 0ND4IL7YiiJBHYoM4S3jHStt/lArlwXrByGXqcOpFAs=
+
+Name: README.TXT
+SHA-256-Digest: S7EuLNi4ZzG4vG2mwu7ehucSuNcyoUj51+7Q62muNdI=
+
+Name: tocs/flowcontrol_switches$nodes.xml
+SHA-256-Digest: JiwJPBwfG8gKqBZbl0rLrvJtsiMYFz60ElkRyCjLekM=
+
+Name: metanode_templates/Variables Loop (Data)/Row To Variable Loop St
+ art (#3)/node.xml
+SHA-256-Digest: qSweAwsIgdB9n/LxcQMTpqV5DVfDXKSAww1Q3Pm/Vqc=
+
+Name: icons/meta_nodes/cross_validation_flow.png
+SHA-256-Digest: iE2E8GjS0q04Z+AE7PODLTJDFjkzDz1Xc4P26y6DEdY=
+
+Name: html/nodes/773f4fdc.SizeAppenderNodeFactory.html
+SHA-256-Digest: f39bNxFuJvd7m4pKZjLyyk2zxWkfmsBklrb5YlgdCDM=
+
+Name: tocs/analytics_mining_modeleval_crossvalidation.xml
+SHA-256-Digest: TrBr/NcVxzXOVPTGH84rRFRAdEB81be9vUNC0OZq3ho=
+
+Name: tocs/database_database-io.xml
+SHA-256-Digest: I7wNK8F6Uy6Su3LMDWJgYrA8+zVJjP5KFLP1jtkqJ08=
+
+Name: tocs/manipulation_column_column-filter.xml
+SHA-256-Digest: eOSXG/vbMq+mHfK8digfo3Ys4EXDFZJVv+OcTLrmFsk=
+
+Name: icons/16x16/switches.png
+SHA-256-Digest: eqiMva2uAx90B19hBU/v/B/DfsE7WvpwSApRqVdVYYo=
+
+Name: html/nodes/7df4de2d.Many2OneCol2NodeFactory.html
+SHA-256-Digest: s2pHJ+G0wjSCQiajbhnTjhXsmXRHVI3BCWPCPBMLIqk=
+
+Name: html/nodes/6e6eed8d.TimerinfoNodeFactory.html
+SHA-256-Digest: 8s/mL0+7bkKI3wU+Y+Q0qzal8oMN9Rqr/gpa4NNQ/6o=
+
+Name: html/nodes/6b6c60a0.PartitionNodeFactory.html
+SHA-256-Digest: l5LmzxxFIbHEVEA12QfPmokA65zVR/iceEaMOodJWsM=
+
+Name: html/nodes/115fd4bd.ExtractTableSpecNodeFactory.html
+SHA-256-Digest: +SN+mP3qeAyINA1P2xFpaKIIjjL0pUD8rt0HFI6s694=
+
+Name: html/nodes/e00b3ee.CellReplacerNodeFactory.html
+SHA-256-Digest: zp3zBaL+xu8X98IDQf2fVaC22FYaA9FPt2g+EYwwVEg=
+
+Name: html/nodes/41a054c7.InjectVariablesDBNodeFactory.html
+SHA-256-Digest: 6Gm0lxnVZPR8Lc/nugncxG7gYtKxF0ooCnmojLu/np4=
+
+Name: html/nodes/d33b149.ReadTableNodeFactory.html
+SHA-256-Digest: mEoI1CPm2DtkJOdVAX+t/8FqRyKpAoJmzoKvrgU7P/w=
+
+Name: icons/16x16/flow_control.svg
+SHA-256-Digest: t5YxIl4flKRddiLF9ZEitQBROrg+4uT5kq7PJOb4FhY=
+
+Name: html/nodes/7c7f1a83.GroupLoopStartNodeFactory.html
+SHA-256-Digest: 1zeFoUQ8KKlcEKgIUHfLpFH5x13tD2AmLzpjJAzlRXw=
+
+Name: html/nodes/368bd55d.SQLInjectNodeFactory.html
+SHA-256-Digest: iS9H7pVT3pSllWi1Xqu9VBjVWlQiOE7j1/Pby9GZhJM=
+
+Name: html/nodes/533ec728.ReadContextPropertyNodeFactory.html
+SHA-256-Digest: wUkmg/VVh5N6q/40NujUvXkDRt2etTVzbBMiBFPutdk=
+
+Name: html/nodes/6c8d9b85.TableCreator2NodeFactory.html
+SHA-256-Digest: 6RxPvzYPxKRlpiJm7RD0WKsOAsEx3TDlM3+uZSHrL6M=
+
+Name: metanode_templates/Variables Loop (Data)/Loop End (#2)/settings.
+ xml
+SHA-256-Digest: qk/FdV2r5+qpwMf2bj3Gxrp3wSNqndYvEBoQDtr5O5I=
+
+Name: html/nodes/214c15da.ShapeManagerNodeFactory.html
+SHA-256-Digest: 4MYl3iozux0BxwDREHJCxrfQ9GAVEz4QmepHFjiVZLo=
+
+Name: tocs/analytics_mining_dtree$nodes.xml
+SHA-256-Digest: s8agneXHBHAFfXQKXPYAtyv03jRVSlcDwI/n9PbWkas=
+
+Name: tocs/manipulation_column.xml
+SHA-256-Digest: z478uv8B2fzegrKknRI+pWU7deoF9oDYgL/055xkVbo=
+
+Name: html/nodes/1064bf43.CrosstabNodeFactory.html
+SHA-256-Digest: vsRldZiCqOokBLiNjafYI1NgZ8+Dpl3ZwaudYoXkxX4=
+
+Name: html/nodes/176be8de.LoopStartIntervalNodeFactory.html
+SHA-256-Digest: 5PxjcW2NUEEqsJXjPbBjyOYY5erPezWZ97uWhDumXNU=
+
+Name: html/nodes/1c5959dc.FixedPieNodeFactory.html
+SHA-256-Digest: EvvYJsSPJOaPCqd9JO6HF88nlnUN5pE/VT4+FnXoxVw=
+
+Name: html/nodes/1692dcf2.ColumnMergerNodeFactory.html
+SHA-256-Digest: 2jUeAN7cPUMHJKHqb1TCGoqj1ePiNWOcWCZkQvOGdLw=
+
+Name: html/nodes/353a6a0b.DBReaderConnectionNodeFactory.html
+SHA-256-Digest: meZH8Znkzc+hZxO/ntJf0z98vkWXH2gVUlOyw9jNyFw=
+
+Name: html/nodes/3f50ce4d.SotaLearnerNodeFactory.html
+SHA-256-Digest: 8Ue7dCKQ5sIaDZCLHObW8TuBqb6vXmib2jj5nQvm9sQ=
+
+Name: html/nodes/4f092a68.ColumnAggregatorNodeFactory.html
+SHA-256-Digest: VLCgMyt+alFZdMTJ3Q2dqE9C2F8isCUVc43JulcjSRM=
+
+Name: tocs/flowcontrol_meta$nodes.xml
+SHA-256-Digest: K674P9YZ9XuFWgPIvAI8JVMXNWoumSHFKsPlqm7VbjA=
+
+Name: tocs/manipulation_column_binning.xml
+SHA-256-Digest: IeLWzJdAf4fauKgMjfkmbirKaI8aF1KDL6B34Lk1aFY=
+
+Name: icons/16x16/column.png
+SHA-256-Digest: fWIEKN2ibEWqg3MjDUB17mr6GpM3frsj5yyk2tRFxoI=
+
+Name: schema/MissingCellHandler.exsd
+SHA-256-Digest: mfxq4PGg3KsapRUVthIdTwS7lPpF9CL/His16qI5CiA=
+
+Name: tocs/manipulation_table$nodes.xml
+SHA-256-Digest: /I1orZN5M8LaXaudKzPvEFAfHJfDIMlBSBoToFzeI5I=
+
+Name: html/nodes/f949e75.ColumnHeaderExtractorNodeFactory.html
+SHA-256-Digest: 0V9stDOOK6BJPg3XlAzBGhDM1iOjqiSY5Z0Gd67ZGyk=
+
+Name: icons/16x16/category_feature_elimination.png
+SHA-256-Digest: TDwyoNCg/FbbiqtEVTSZCAIXFcBJjmk/Qbj14XqtxdM=
+
+Name: tocs/manipulation_column_column-filter$nodes.xml
+SHA-256-Digest: ZjcG3YkPSqlF2sC5GUNwQcu3+rlrmfkVH4OSxQ0yhxo=
+
+Name: html/nodes/2d6ce124.DecTreePredictorNodeFactory.html
+SHA-256-Digest: AQ5ycNG0WtkgjRTuaV44anihoi7HShgN4wGcf554VQs=
+
+Name: icons/meta_nodes/loop_x_times_flow.png
+SHA-256-Digest: y3r70LkXAI+1HVLL84YV/pB6MhjTI4f4GKMAjIhBY3g=
+
+Name: metanode_templates/Variables Loop (Data)/workflow.knime
+SHA-256-Digest: CRLwG5fqaHmEozqqJecYlqPVRx/Hle549govb/2HYKg=
+
+Name: html/nodes/1e415229.NumberToStringNodeFactory.html
+SHA-256-Digest: 3ESbvqI3pc7yUSKx/H20wC28dzNAd3xx2+abp3yF7yA=
+
+Name: html/nodes/7a53ad21.AppendedRowsWithOptionalInNodeFactory.html
+SHA-256-Digest: FL2gPEr7KWmSI1oG+SnCbMgqkqs/gBUtDCcGae8ATzM=
+
+Name: html/nodes/73acbbae.SubsetMatcherNodeFactory.html
+SHA-256-Digest: jiYw/KBLfrf7CJFc9IFYOIbfdoJckozPfBOH17ClBao=
+
+Name: html/nodes/41cfe3d6.AccuracyScorerNodeFactory.html
+SHA-256-Digest: RVZKNSEAHJ0icAcqFLVWRKwBhM2cpoW4OKuvb7jN5Ds=
+
+Name: icons/16x16/switches.svg
+SHA-256-Digest: a9GTKxWfmlC71KYbRV/5q2y0VxOv0f0k1IFET0gshjU=
+
+Name: html/nodes/2a702bb4.PCANodeFactory.html
+SHA-256-Digest: xvxTT16sKQIOqrRubLkcJnCD4nYc4Iks269T9+j+bjg=
+
+Name: tocs/database.xml
+SHA-256-Digest: qxf84I4SF7XjmfYGo4s2TnmYN/osPGLwIhMU1vHo5AI=
+
+Name: tocs/analytics_mining_nn_pnn.xml
+SHA-256-Digest: biW5Kv5jOXjQRtDQBRNoWKE7K9QqjnSc4UF2AfcaqRs=
+
+Name: tocs/flowcontrol_variables.xml
+SHA-256-Digest: f8bOVD0tgJI6fVVF6UEYgxC8YIjS55xX//bCMoTZnJ8=
+
+Name: html/nodes/5b34f490.NormalizerPMMLApplyNodeFactory.html
+SHA-256-Digest: GHgl/Aew33KjLg6S4Pd/+OH/s3YNiv7qJO2Rn2R1o8g=
+
+Name: html/nodes/5faceca8.EditNumericDomainNodeFactory.html
+SHA-256-Digest: lHatvLbMop6rIO6smbR0F+OnsR28bhoRr+t479n92dY=
+
+Name: icons/16x16/category_xml.png
+SHA-256-Digest: sWV8GkQaiRnQ1h8c5Lhlzm4wzebSJq+ld0EduTt84q0=
+
+Name: metanode_templates/Cross Validation/Decision Tree Predictor (#15
+ )/settings.xml
+SHA-256-Digest: 0U/6h7OVOCxkYCqropN85Hk6HMF3hYPXG68hV6rp0F0=
+
+Name: tocs/analytics_mining_modeleval_meta.xml
+SHA-256-Digest: HeATTGTzP1tJzsarxTl82vqCq4CRVqzgLTGCP7CYjNQ=
+
+Name: metanode_templates/Feature Elimination/Partitioning (#7)/setting
+ s.xml
+SHA-256-Digest: fX4l6fylKGP+UvIan3GoMHkW0F/gEqtd1JPVuQzLJE4=
+
+Name: icons/16x16/category_scripting.png
+SHA-256-Digest: rY2unv1YMagBc6R6Rcwvie7VMkDiMY/9x1iQWXkT7kg=
+
+Name: metanode_templates/Feature Elimination/Backward Feature Eliminat
+ ion Start _1_1_ (#1)/settings.xml
+SHA-256-Digest: ANhoMXeBz1anqxUj+QOCriEkeNyLpAutApVE+CbpOZw=
+
+Name: metanode_templates/Variables Loop (Database)/Inject Variables _D
+ atabase_ (#4)/node.xml
+SHA-256-Digest: 3cLyDJNanRR6q5b56WKOv69Islasl12QiZ6MzwVmdDM=
+
+Name: html/nodes/41e3ab36.TargetShufflingNodeFactory.html
+SHA-256-Digest: hICETEC17Wifi0FB5KAG34+YwyVpfIcbDyHT66/LrI8=
+
+Name: tocs/toolintegration.xml
+SHA-256-Digest: 6GytW6WUhdR2zQtDOQQ7h4wBnej/IJ145yeGP0sbXfc=
+
+Name: metanode_templates/Variables Loop (Database)/Loop End (#2)/setti
+ ngs.xml
+SHA-256-Digest: qk/FdV2r5+qpwMf2bj3Gxrp3wSNqndYvEBoQDtr5O5I=
+
+Name: html/nodes/24820110.SleepNodeFactory.html
+SHA-256-Digest: PvhMrc3XrIAl1PAzSuld+fxAGNYwB9FhWWVVRSbCfkk=
+
+Name: html/nodes/321b05ad.DBUpdateNodeFactory.html
+SHA-256-Digest: 5M/pexV3E92ayMPcXMomlBm+DSxE8Oxl71d3tQoyzC4=
+
+Name: html/nodes/512d630e.PMMLReaderNodeFactory2.html
+SHA-256-Digest: 7jhuGe0fD9WewtdCamPxW/li/Sc74iYaCZQJcuAkLJE=
+
+Name: tocs/manipulation_column_column-transform.xml
+SHA-256-Digest: s7W9E3wpTncjYZr9RYdmMK+dDgOhxyAGE8CrPQwHUUY=
+
+Name: html/nodes/2c13bf75.ExtractVariablesNodeFactory.html
+SHA-256-Digest: yFUIgP6yaPWEsMkVhFUGun81++tbYXt5c+I1cZOvd2k=
+
+Name: html/nodes/32f317dd.AutoBinnerLearnNodeFactory.html
+SHA-256-Digest: ekf/HPTjry7tuVuv1YaeA+bynfA/TUU0ljoHxFult1A=
+
+Name: metanode_templates/Variables Loop (Database)/Row To Variable Loo
+ p Start (#3)/settings.xml
+SHA-256-Digest: JCAd+HitH2YzWkWjSGrl6CkBfuQuZ61Iw8KiYtn3dI8=
+
+Name: tocs/flowcontrol_trycatch$nodes.xml
+SHA-256-Digest: sR7EqUdcfpltGMEi25gFuDvmi6U0e1QVuKDX7GbUQxI=
+
+Name: html/nodes/4366464a.PredictorWriterNodeFactory.html
+SHA-256-Digest: 4rh6XQyooJjRn6Zg9ut9Raw+f0pB0ZUqBJshkfD96x0=
+
+Name: icons/16x16/report.png
+SHA-256-Digest: 9TXXfMKn3pcaBHardvBEdfOTwxi/7Lorz0mRj63Zpes=
+
+Name: html/nodes/2a44692d.VariableToTable2NodeFactory.html
+SHA-256-Digest: Lb4w/qlUgh/TUE0ZsXgkjvtsO0EXQx50wL1VjXmPNhI=
+
+Name: html/nodes/62e9b2e4.ReadSysPropertyNodeFactory.html
+SHA-256-Digest: SpWdPvS56FaewwK818nZJg3rz4wrZpoi0tkux+WW0Nw=
+
+Name: html/nodes/20b9d543.SendMailNodeFactory.html
+SHA-256-Digest: JhiFLz/CwvkmMwbjRjOCgX0/0sbBr+9eAFo6FJIoNHo=
+
+Name: tocs/flowcontrol_automation.xml
+SHA-256-Digest: Oqq0lTrur0403oUboTYo1wNDMksJQg5s1ZNlDgP28Kw=
+
+Name: html/nodes/16c9aa4c.CreateByteVectorNodeFactory.html
+SHA-256-Digest: 8+HMlWYrb5Of/iFZE5WuEQXH6Y/JmUCIfvQTxI1Tj+Y=
+
+Name: tocs/io$nodes.xml
+SHA-256-Digest: 8+aHF8T8+bOnaIButFwuovxnIEV5/pK6CUPidYNBoek=
+
+Name: html/nodes/236a2b1b.LinReg2LearnerNodeFactory2.html
+SHA-256-Digest: o8O4lzMdvLxQGBEgsv91lZ3xxbwPGs3VaIW3ztEL/jM=
+
+Name: html/nodes/11b25806.LoopStartCountNodeFactory.html
+SHA-256-Digest: eI+/Eiq33hXbPNJtYk0MsjWiVwn05T1p7cSfNKiMg14=
+
+Name: icons/16x16/category_reader.png
+SHA-256-Digest: kurEAZk3gygk7PSqxoXMQSBdXOC/jjoi4hID4diTbdo=
+
+Name: metanode_templates/Variables Loop (Database)/Row To Variable Loo
+ p Start (#3)/node.xml
+SHA-256-Digest: qSweAwsIgdB9n/LxcQMTpqV5DVfDXKSAww1Q3Pm/Vqc=
+
+Name: html/nodes/7de34f08.DBRowFilterNodeFactory.html
+SHA-256-Digest: Z9yif0HSA1Lx4AVB8M5uTLlzaHjbuPc2G96/z0O7QWw=
+
+Name: html/nodes/7f75f972.XML2PMMLNodeFactory.html
+SHA-256-Digest: 07eEZ26tHJbiZv5neGGDavEjcumo4P2nvhnOh/fxpRU=
+
+Name: html/nodes/738b5d5a.Joiner2NodeFactory.html
+SHA-256-Digest: WCMFS4mZvDh6LvlUsuyGFZTlZ8x3qaKK+dCSjX0JWAQ=
+
+Name: metanode_templates/Feature Elimination/Naive Bayes Predictor (#9
+ )/settings.xml
+SHA-256-Digest: lQMMQQNHZ67FM+UtBDRNxi6lFKAd7CnBOliFVFhZ25k=
+
+Name: tocs/applications.xml
+SHA-256-Digest: 2yymqD8gx9Pfh81qxKLtihNiHyzWfpyxF3o1kK7XB44=
+
+Name: tocs/database_database-manipulation$nodes.xml
+SHA-256-Digest: dCu65DuL7dAHaA+GQSMasTb0QQ7qsDWECP9mTOi6SWs=
+
+Name: html/nodes/5f1eba36.ExpandBitVectorNodeFactory.html
+SHA-256-Digest: 7qMHNyxew3u6bL8xWKSNdiYcSPqKgBdInJY+AVOKGFQ=
+
+Name: html/nodes/76c9add0.DBColumnRenameNodeFactory.html
+SHA-256-Digest: K0VEWM9+ii3WxwoaEco8FI7iTeaRuXtYSAX6f9gUwZ0=
+
+Name: html/nodes/9c42021.GenericPortCatchNodeFactory.html
+SHA-256-Digest: 0UrGMdVRyRT3F5nxNmlDwG189WuVv8PoY8pvE8GnyTo=
+
+Name: tocs/flowcontrol__loopsupport.xml
+SHA-256-Digest: 27VeNJdRyO+1MWSm/+iMrhMTE3Va9tebJ0spCeZvWZM=
+
+Name: LICENSE.txt
+SHA-256-Digest: 8TSiQagVcm5WfssAApmJKIINRC9Qyw1o2chFUkUKsAQ=
+
+Name: html/nodes/48c95fa8.LinePlotterNodeFactory.html
+SHA-256-Digest: E6LWpsLVirHDYdTWhdHtxj2DPOiqsXlqw+BZK4tk4FY=
+
+Name: icons/16x16/row.png
+SHA-256-Digest: EgCRLnQtQkEAnnRSJUGjPrndjSUc3gg1OFdZKC39geU=
+
+Name: tocs/analytics_mining.xml
+SHA-256-Digest: 8ns6XcFYW8UHhB7fYpfo+znjhRDdow2cCkhKIXDzw3Y=
+
+Name: icons/16x16/category_loop_support.svg
+SHA-256-Digest: 0HqW1IBEK0nIWj5COBbg+4ijLnEDBP9A8XW+UdGPVXU=
+
+Name: html/nodes/1f635fdf.LoopStartGenericNodeFactory.html
+SHA-256-Digest: NWwD1J6vwS/UvIp9/VLBONcYB4RpgbQ6dKeYA1J1VWY=
+
+Name: icons/16x16/category_loop_support.png
+SHA-256-Digest: ffWpKXY89uMk70ZldvWht2l4bFIXgy1DW3+Qkxmn4i8=
+
+Name: metanode_templates/Iterate list of files/workflow.knime
+SHA-256-Digest: 0s9hBfeB21GgCASeve1VCvEPkTSE3Jkat/KcUaiOnmI=
+
+Name: tocs/struct-data.xml
+SHA-256-Digest: wqP9/1+B8eNnz6O07agdloBv7LWU7M+eH+2ERLA9ho0=
+
+Name: tocs/labs_labspmml.xml
+SHA-256-Digest: reawxzlJ2kO6fnhPp+cPehX9iudzjjo4xZjdflYhsxk=
+
+Name: icons/16x16/category_cross_validation.png
+SHA-256-Digest: xl3oIksJDxTWC/K3GnAcrPlYHQjidVaIWmia/wz//dg=
+
+Name: icons/16x16/category_properties.png
+SHA-256-Digest: rthzB8+/caNd963JB/CvID7O9ipUhLlfBAzXRfxK3ZY=
+
+Name: tocs/analytics_mining_miscClass$nodes.xml
+SHA-256-Digest: iii5hMPr1ZfAb25RJf4wuJVb/6P5KNyG4n39aGO9SJQ=
+
+Name: html/nodes/678ae8c4.ConstantValueColumnNodeFactory.html
+SHA-256-Digest: e5GQl/DDGJlid+QR1yGQ4WMLD1FvS6yoK+ayvX2HhrY=
+
+Name: html/nodes/326f69e4.DBPivotNodeFactory.html
+SHA-256-Digest: S8uuW+yUDHwojrw2tZiV0gL8Clij68m9gEODr1Gfhr8=
+
+Name: lib/Jama-1.0.2.jar
+SHA-256-Digest: A/fQwVgGD4KOeWuJhJeBWfZREgXek3/OGVgHqdjNH7g=
+
+Name: html/nodes/455e4c0d.DBNumericBinnerNodeFactory.html
+SHA-256-Digest: jD/xsa0sedjM7hsD0XsQsN01y+zN5Ymrji4Q+ZK4JKM=
+
+Name: icons/16x16/category_knime_labs.png
+SHA-256-Digest: 44q1ZXYvclAnKbSjBSC500J6/pe+jLtIoxV5quAyrcA=
+
+Name: html/nodes/5e95437b.One2ManyCol2NodeFactory.html
+SHA-256-Digest: oVE06NIoQJE0Pzp+i/iutuW/vGZkBV1NeZNtqjqATUU=
+
+Name: tocs/analytics_mining_featureselection$nodes.xml
+SHA-256-Digest: S96sqsYzHWytvIa0F/woJsuaYJa4iUHEYw85b59F800=
+
+Name: tocs/analytics_statistics_regression.xml
+SHA-256-Digest: BUSbbOoNawDPZw0iFGnkP5dy6HxmP2g1g5/ZNHXBAoQ=
+
+Name: tocs/manipulation_row_row-transform$nodes.xml
+SHA-256-Digest: PIqMDwQ8ppzN4mBI0lxUpI21+/9SIosD6KYB9w2FbTo=
+
+Name: html/nodes/35650727.FuzzyClusterNodeFactory2.html
+SHA-256-Digest: Q7HaL1BOLeK+qLruP3ros2Juf1lKuXi6mJbofHT1W/I=
+
+Name: html/nodes/2902a4b2.CorrelationComputeNodeFactory.html
+SHA-256-Digest: nKVdf0pslqUEYsDFPjHedonn0POuN06RGJHHL9EcVWs=
+
+Name: html/nodes/5b15af4b.NominalValueRowFilterNodeFactory.html
+SHA-256-Digest: 1mdcJm2k3G2JYwrKF8z9dJ+A/Obic6ORvvWbwDdaaP8=
+
+Name: html/nodes/4caf2748.SetOperatorNodeFactory.html
+SHA-256-Digest: mOuckXDUF5fENBtOEqLH1Z4ShxzvnTrUi8GhbA7HuwY=
+
+Name: html/nodes/5712e959.ARFFReaderNodeFactory.html
+SHA-256-Digest: OVjh4wDxz5UIxZ1SD6v6vmSfAttMobleeCtratZtLZ0=
+
+Name: html/nodes/29830fcb.DBApplyBinnerNodeFactory.html
+SHA-256-Digest: gw5PfBfxUth+h1LDUlkNNVUyGiZhLe1WBM9CJvJmxfI=
+
+Name: icons/16x16/category_automatization.png
+SHA-256-Digest: iW4gz+pwR+xonUA8d97DXwSsUKyTm/5/Kl/+ZZ37OH0=
+
+Name: html/nodes/1ed5412b.CollectionCreate2NodeFactory.html
+SHA-256-Digest: Jhxba1Zye/eSe7/HyAuW2uGryqRAwjbrQNRAgo7vf4Q=
+
+Name: html/nodes/290d8842.PCAReverseNodeFactory.html
+SHA-256-Digest: T3L5Qb5mVT4gD81qCwNG7LrN5oRmCbU9lnmLkD6M7i4=
+
+Name: html/nodes/5966587f.PolyRegLearnerNodeFactory2.html
+SHA-256-Digest: qqSqusC9Kb/Vn9Z807xtRaypRFYlKr7eROFxLkdOly0=
+
+Name: tocs/manipulation_row_row-filter.xml
+SHA-256-Digest: MmR5hRm5wSqPNqbVwTXwrqiBIk4OHsjFzS63tz8pL5o=
+
+Name: html/nodes/15d252e8.RankNodeFactory.html
+SHA-256-Digest: zWA8W9P/EtyPnarg+Mgy0Fie/lfG2qphlF2Eo7GRdcM=
+
+Name: icons/16x16/category_misc.svg
+SHA-256-Digest: Bt9Zg4wFdUN8Iio4wvQjpDzma+vESHhrZZWAH94Nvtg=
+
+Name: html/nodes/3ac65ea6.LoopEndJoin2NodeFactory.html
+SHA-256-Digest: RGZ7AT7/Zm1YJKYjGcZQa8W6DaV5v6HEKXwe/VraSt8=
+
+Name: html/nodes/19110c2.ShuffleNodeFactory.html
+SHA-256-Digest: 8EX+hSuTqmVUQFTMLELPgyMaiZXpIQa9zqaCyVLBSzc=
+
+Name: knime-base.jar
+SHA-256-Digest: i7auwbKTlhFRMKYVs7dZd0lN9axoy6oL/SiU0MXj9fw=
+
+Name: tocs/database_database-connector$nodes.xml
+SHA-256-Digest: 9uxU1INgjFuu2kPXZFHj4HnSGuAKCNUNeDhkvD2uFQc=
+
+Name: icons/16x16/read.png
+SHA-256-Digest: nlnB3yDj+8K+0zfgZ/K78jdFQ3i/TvMucSWPESFHO4g=
+
+Name: html/nodes/33fa90ab.CacheNodeFactory.html
+SHA-256-Digest: 7mIxiOeX5HJ2gIFg7ohiTCaIRuzsOJq8uq3BAqhIUDY=
+
+Name: html/nodes/1b00bf52.Pivot2NodeFactory.html
+SHA-256-Digest: sP4+au/rxyy8cZRxsW9QVh5ySsXJnj7ibyUGbBZNot8=
+
+Name: html/nodes/3597cc94.DomainNodeFactory.html
+SHA-256-Digest: tYwkIJGmvGjPu67dwKNNGFxwCaGr0TxpqlVFpawDI58=
+
+Name: tocs/io_io-other.xml
+SHA-256-Digest: r9p2tlEFRCFUDyPZtl2fczgEeevJY+HWsWtnQVTnT4E=
+
+Name: html/nodes/66a4235c.NumberToStringNodeFactory2.html
+SHA-256-Digest: nocUilAXaKA7nDlGSICWEOxRUAkYf5A5dO1UNA6b7aE=
+
+Name: html/nodes/53bf664.FixedColumnHistogramNodeFactory.html
+SHA-256-Digest: AXxdi59wKwtAKWzlB0bTF9DNEv5w7XcCrK0raDGsPY4=
+
+Name: html/nodes/71c04078.ScatterPlotterNodeFactory.html
+SHA-256-Digest: zHy9hO/qzzrI5qTf/NWbQvlvGxjZwIOwnexIO3m+zus=
+
+Name: html/nodes/397d7488.SorterNodeFactory.html
+SHA-256-Digest: svX0Y/xptRM+9YdSs4bkol6ps2PKGCBvR5mn5stpEJw=
+
+Name: html/nodes/8dadf1c.Normalizer3NodeFactory.html
+SHA-256-Digest: KIHf0TAUiaTzsEwTZFjuxnmp8MKc+2xelLoUAmNWz/E=
+
+Name: tocs/analytics_mining_modeleval.xml
+SHA-256-Digest: X6cnia40obJaNLArlqDZFhqugRELrrGyLtAT/yg6Y3s=
+
+Name: html/nodes/679557b6.TableRowToImageNodeFactory.html
+SHA-256-Digest: GifGL4XVblBEyRPLILYcal2C/ZM5/JcC8uFSsik8uyw=
+
+Name: html/nodes/6eac6ace.JDBCConnectorNodeFactory.html
+SHA-256-Digest: tbYxqfMb0eGZmmQq5i7NSp/rkZsNkSd1q9BvR+BB0bI=
+
+Name: html/nodes/7cfa5dab.ColumnAppenderNodeFactory.html
+SHA-256-Digest: NX6k+F7XmihI7AQ+S+sIx0BQ2UgxGIPBdR1sEJ5OFc8=
+
+Name: lib/schemas.jar
+SHA-256-Digest: QnEuyCGFcJpdgwX/R/qJlvuAWOjTA2M6vlFNGZFIuMw=
+
+Name: html/nodes/5d5874c3.CSVReaderNodeFactory.html
+SHA-256-Digest: 4De1cfDsQ9aOOgsCTLHn9GtZOWjstacw38r+D9Tj17Y=
+
+Name: html/nodes/42557054.BWElimLoopStart2NodeFactory.html
+SHA-256-Digest: Wl0bqMbLFUSAO7KiM7mimcCfiDUJHEZZEQxTDvfJAe8=
+
+Name: html/nodes/13d8637c.BinnerNodeFactory2.html
+SHA-256-Digest: c8++LY7RXV4lXUUCVNTQzw7DEoloPEz/cV8qn5L1TEo=
+
+Name: html/nodes/Meta_Cross_Validation.html
+SHA-256-Digest: 30kEqRL+zW3fEhoXysE0li+paOsDAxn3qkjBF50E1L0=
+
+Name: html/nodes/3abc3897.ColorExtractNodeFactory.html
+SHA-256-Digest: /qIewpYn3zpyY0Gcb94XTXiPtsUlu0XQQyFU2ogakqU=
+
+Name: tocs/analytics_statistics.xml
+SHA-256-Digest: qVQd8kLOkl+pXM7HVBnwP68WqWmPCFuNXEXAMK8O3Mk=
+
+Name: metanode_templates/Looper/Loop End (#2)/settings.xml
+SHA-256-Digest: qk/FdV2r5+qpwMf2bj3Gxrp3wSNqndYvEBoQDtr5O5I=
+
+Name: html/nodes/33c61978.DBConnectionNodeFactory.html
+SHA-256-Digest: mihl3nyHPY2RnpZAtne2vtnAVcmJMdxRFjNCyzZMDj4=
+
+Name: html/nodes/7d20f25f.DBJoinerNodeFactory.html
+SHA-256-Digest: BZ57XPotxRxZGZJX5RbylwS+eQVacnUpUph3zHgdIu4=
+
+Name: icons/16x16/category_view-util.png
+SHA-256-Digest: qbcSduteBxa6cS1wRIQbBhicTSFUXzLkzjVfvgj0IUU=
+
+Name: tocs/flowcontrol_trycatch.xml
+SHA-256-Digest: QyLKu1CxHxWYrl2gCPueCHwHSrMfYrHgdHUKMVDW7SI=
+
+Name: metanode_templates/Variables Loop (Database)/.savedWithData
+SHA-256-Digest: WBsyvbCG2k0xWmiJVjeZaNvmo0yx8+jtTAHF18xG8Ng=
+
+Name: html/nodes/4ef4bffa.PredictorReaderNodeFactory.html
+SHA-256-Digest: e6my7Tp4W2tdEYKEKV/ivvgC0Ri6okIFvDvO30ZcSzc=
+
+Name: html/nodes/25e3bb55.AppendVariableToTable2NodeFactory.html
+SHA-256-Digest: c+TZmoqTaqkpGmOGYJ5m5f8t+RCPVwPljOD0dZfYHKE=
+
+Name: html/nodes/275a7aa5.LoopStartChunkNodeFactory.html
+SHA-256-Digest: umrtx0StOEaMHUB/bN7qANfsxwNmfm6AD1XJQF9EqWU=
+
+Name: html/nodes/5b026616.TableNodeFactory.html
+SHA-256-Digest: qp4Ugnv+ft0QOlBf57NHOHoaZhb035vtlYd9N0EQKOo=
+
+Name: html/nodes/7df2cde7.FileReaderNodeFactory.html
+SHA-256-Digest: NyWtPDE/w4+GNXS9tVsXfTz99ye194zH9d1LhBguxtk=
+
+Name: html/nodes/50dc7b65.CaseStartModelNodeFactory.html
+SHA-256-Digest: 6OZkRMaoEYHQNop6iWGWaHt1b4EFHVGsBgyZg0zhs/U=
+
+Name: icons/16x16/write.png
+SHA-256-Digest: DXzqC7utQJL61fkEH3ncz6M4j3NeJCS7B9qbsZrE2HA=
+
+Name: html/nodes/37573103.VariableLoopEndNodeFactory.html
+SHA-256-Digest: yl6vfqvzA4UnmqKrgcY817gw0xeuoTmihW1bmgfY3Pk=
+
+Name: tocs/view_view-util$nodes.xml
+SHA-256-Digest: JUF36iZLtAu+NtdR4vkuig9Z/+WD58g+qAuwJoIwcTM=
+
+Name: html/nodes/1ceb262a.RoundDoubleNodeFactory.html
+SHA-256-Digest: 6tr3esuGWTeQIIne9Ix0ff4qJGOdcuZ0JrZy6s9zdHI=
+
+Name: tocs/analytics_mining_svm$nodes.xml
+SHA-256-Digest: OMqqZ+/QfcJQg0DIpR4ZVfPCin+or8APZi05b6D6u8M=
+
+Name: icons/16x16/category_misc.png
+SHA-256-Digest: pRmPE5eVDnV6RJbDKKJ1tsRu5WtV0UoIuleA7R/M9Uc=
+
+Name: html/nodes/471d5a5f.NaiveBayesLearnerNodeFactory3.html
+SHA-256-Digest: wKq5pzdQzYLY0XOizcBTdcZgkgNVgTQSKoJqg605NzA=
+
+Name: icons/meta_nodes/variables_looper_flow.png
+SHA-256-Digest: NOvsMJ0o98AmRfkHQ+sNCE7DqOvY6dysxIYywFEmXKs=
+
+Name: html/nodes/7a56743d.DBWriterNodeFactory.html
+SHA-256-Digest: yJqPtnIjgltCzmNLE5cK6Ma1rGjUzcmO0zEudfrbT+M=
+
+Name: html/nodes/3f5cf563.EndmodelcaseNodeFactory.html
+SHA-256-Digest: wYHFe2paKFDrXbKD3GptLQ+pLpUy8AK3q/uhvyOhUAg=
+
+Name: html/nodes/5ed67e43.FuzzyBasisFunctionLearnerNodeFactory.html
+SHA-256-Digest: QOrcKzZspiBdxrlSKLaJSj134c++I9n7g1c7eNbfvQE=
+
+Name: icons/16x16/read.svg
+SHA-256-Digest: AM+J/RQbaMaROFCU4TsoXpDk6m0Mo3NlXkbzJPvOHKM=
+
+Name: icons/16x16/category_reader.svg
+SHA-256-Digest: zOo4mxxgBNPv276tYXqkog2DJbI5mm+nY4HtOALp8vk=
+
+Name: html/nodes/88df8ea.RowFilterRefNodeFactory.html
+SHA-256-Digest: g2L1gJA2/M9f7RSjP3ADHqqYtRy87AnrsE5n64hUgTQ=
+
+Name: tocs/manipulation_column$nodes.xml
+SHA-256-Digest: pfvTFNXHgKOvAYsIGR8dic9ZCPi6u7NPNHDr4En6laY=
+
+Name: icons/16x16/category_chemistry.png
+SHA-256-Digest: 8xMQpXGgWMWUfz858onoB3Q9tOuoDLrbwKlgJM3lwIw=
+
+Name: tocs/manipulation_row_row-filter$nodes.xml
+SHA-256-Digest: +jyHrc/5S8sKtrSr/iWpXUQDoV3RxZe5NY6xkCLd+tw=
+
+Name: html/nodes/581567fc.EqualSizeSamplingNodeFactory.html
+SHA-256-Digest: JbKW1C/qgUPni1cJBlJsijzXgiljT7RQLPh8Skv2lL4=
+
+Name: metanode_templates/Looper/Counting Loop Start (#1)/node.xml
+SHA-256-Digest: 3PlqfZy1k9F1YsA9Pg7Hi1Gzw7tpqy2zbdyeW2IT4d8=
+
+Name: metanode_templates/Variables Loop (Data)/Inject Variables _Data_
+  (#4)/settings.xml
+SHA-256-Digest: 9DYmPRGYMuFectamzRtvGRKf56XXrWPbfSVmCby2l2Q=
+
+Name: tocs/analytics_mining_nn_mlp$nodes.xml
+SHA-256-Digest: 5G1MjUPNt5wQG/i5rs+LItBaL9i6tEL9ZEa4t254bKE=
+
+Name: tocs/manipulation_pmml.xml
+SHA-256-Digest: O3aa7Ihg8Jonciq6s0VVYDNI2fE5H3S6NSf2kFqnb5I=
+
+Name: tocs/report.xml
+SHA-256-Digest: CmFTTaq+HJsjYhAC76/zs/r6y14jGMuj1IzzvHM64xQ=
+
+Name: metanode_templates/Iterate list of files/Loop End (#3)/settings.
+ xml
+SHA-256-Digest: hvi23nzP3hKXo4ApU1d58oZUzYvQLlYtGvYc+M8WRVo=
+
+Name: html/nodes/79b106b.NumberToCategoryApplyNodeFactory.html
+SHA-256-Digest: jBhEn8Tx/i8CHRc5JTRGrRZAUUeYKle3U8BAQ8qPQJM=
+
+Name: html/nodes/Meta_Variables_Loop_(Database).html
+SHA-256-Digest: OmP0RMHT7WsWlNVGkk08oIEhLl473WK/nqrtt+ZNB6c=
+
+Name: tocs/analytics_mining_miscClass.xml
+SHA-256-Digest: GZdqv0A4OXWOo/hwYFQFRNWur8uYYZJFhcuvrwT+hSY=
+
+Name: html/nodes/4d8d1bcd.PCAComputeNodeFactory.html
+SHA-256-Digest: FXhJoP/3p0Zvy1MkMjwH+5N31SBlL/WsNczjkwlIWKs=
+
+Name: tocs/view_property$nodes.xml
+SHA-256-Digest: UfAfkYT9YZYBqvJzC7V58NkB7A2W/KTbC4z1aFOADTA=
+
+Name: html/nodes/68b0ead8.GroupByNodeFactory.html
+SHA-256-Digest: 0hipU8B+eqJCw6gXRvYh8eZM4AdeqUR1jNEC5RrsP/4=
+
+Name: html/nodes/5a052068.DBColumnFilterNodeFactory.html
+SHA-256-Digest: pIYTxKxPukdsExlgKQFvcaCT23FFu7hCqdVcERd/Ais=
+
+Name: html/nodes/63826e5.ListFilesNodeFactory.html
+SHA-256-Digest: fM1wJgnux+vzuI7mYMrwPk6TobCkQdDwxd1tOGT5VKE=
+
+Name: html/nodes/5f1dbe78.BWElimFilterNodeFactory.html
+SHA-256-Digest: x/sMuyV+Hl99YZQFK9XqcCM/7zDI1IhPKn+WhSBtkPs=
+
+Name: html/nodes/73a2055d.RecursiveLoopStartNodeFactory.html
+SHA-256-Digest: R2MKhZhOVh+HbTAIfH7bupMJx9mjGItcGtVxLSU1ZqU=
+
+Name: tocs/analytics_mining_bayes.xml
+SHA-256-Digest: RWGE4NGOVDT40Mqc3Xt5r553MbEcD4H2WoxkR6i0a0g=
+
+Name: icons/16x16/write.svg
+SHA-256-Digest: 0Mm42DuIDQTojxjKpRTS/rTL3pOKIALmzEwm9/bL8x4=
+
+Name: html/nodes/722127f2.RowKeyNodeFactory2.html
+SHA-256-Digest: n10f7EzRbZ+6vY1by0X6IyQqRWi4mk/uQq/2v0ozgkc=
+
+Name: html/nodes/7a04ffaf.DBAutoBinnerNodeFactory.html
+SHA-256-Digest: y95D4GTlTNjzgSP/omfD6vf+FA3Lg/iWJ4LJb0fcsQ8=
+
+Name: html/nodes/2e9bbc4b.DBTableSelectorNodeFactory.html
+SHA-256-Digest: l8oE+pHnOmPWRkfNsLseJvaTvFGn3AyxM9+DATX7ebc=
+
+Name: html/nodes/5f908f18.ActiveBranchInverterNodeFactory.html
+SHA-256-Digest: kR2lRM5x5dvRvSKHgadQTNbVvQHeZA8vDJseA3p6NvM=
+
+Name: tocs/view_view-util.xml
+SHA-256-Digest: IrBIxycw92FRO2q6s1DRx5Fr10Jhye7+ETrX+0P3Ux0=
+
+Name: html/nodes/760ece44.DataPortTryNodeFactory.html
+SHA-256-Digest: mZaf8uqx7vMXcDelmPy/OvtMaKpk7nQR9vbIDv/Ym50=
+
+Name: icons/16x16/category_statistics.png
+SHA-256-Digest: 86xiAp9eaTjlNwhBoO7ac7f3zkho8zpFjC8fSVvwecI=
+
+Name: metanode_templates/Cross Validation/X_Partitioner (#2)/settings.
+ xml
+SHA-256-Digest: JwKbaGgZwD3FXC4C9RWYS1yYzgrePi89JDPxqZkdnvo=
+
+Name: html/nodes/26b6d439.FixedWidthFRNodeFactory.html
+SHA-256-Digest: y8PnDoYIekj6GKUUvbxegiM/u25OdsFfJ+Mm966080A=
+
+Name: html/nodes/17b16688.ColumnResorterNodeFactory.html
+SHA-256-Digest: gYsnF1EYJ3E3gnB7HC14Mj2KDleF6uExNuQmRtpp5lQ=
+
+Name: html/nodes/28ad5be7.GlobalTimerinfoNodeFactory.html
+SHA-256-Digest: YtWl6l1hguF2LUun+jW1soJ0JbBk0OisHP8PMwv6Vyw=
+
+Name: html/nodes/c919500.DBQueryNodeFactory2.html
+SHA-256-Digest: 8Z58AoFxYJV5DltjC0mj5N8QBDBvfIOac9S/DI0/5Xo=
+
+Name: icons/meta_nodes/feature_elimination_flow.png
+SHA-256-Digest: v7YYDd6OXQtZMDChpZS7ojexkA+2YgKdlmIOXx0JyD8=
+
+Name: icons/meta_nodes/metanode_template.png
+SHA-256-Digest: VIHi0W4DguCEfL/lfVM5K6o/WKn38RTDDTprujveNDk=
+
+Name: html/nodes/4f6c9f45.AggregateOutputNodeFactory.html
+SHA-256-Digest: 3Ms7C3CtM9Oc4pd34z6NNr/QD36FtO0w2uL49ifjde8=
+
+Name: tocs/flowcontrol_variables$nodes.xml
+SHA-256-Digest: i8ZUVRbV/wYTT7wQVFbs36Toow20RSpQmt4d9p3DpO0=
+
+Name: plugin.xml
+SHA-256-Digest: yTAJzwcipeafFXD9VmOlhTaXJ4w58mAbJWn71c9rfzI=
+
+Name: html/nodes/210e1c8a.HistogramNodeFactory.html
+SHA-256-Digest: ak2iEviG0u5z1aCoPJdzjHXurCuWkf2VVr84DxyUo5E=
+
+Name: html/nodes/3cdc9006.ROCNodeFactory.html
+SHA-256-Digest: gdzdXlcdbci/UYHcwZWVxRzp8VQfYTyvqcvp0jPomIE=
+
+Name: html/nodes/4e1e1f21.SQLExtractNodeFactory.html
+SHA-256-Digest: 9Omkfmb7h3p4tvOfqZ/SmWoHgORmAUrGCei363VvlFM=
+
+Name: metanode_templates/Looper/.savedWithData
+SHA-256-Digest: C9tdfKNTeZCQm4HuHv10w/MobcE9zt9KOEFdCGKVxdA=
+
+Name: tocs/manipulation_column_column-convert+replace.xml
+SHA-256-Digest: 6zA9DfTAMZPDw8cTe65s7xP0sy5bQROc6k6fzTG7zEo=
+
+Name: tocs/io.xml
+SHA-256-Digest: 2gSjoE+zpsE9/lfRs8vQCApnMeCO/5FBu7/nL4DGAKw=
+
+Name: tocs/flowcontrol_quickforms.xml
+SHA-256-Digest: rFtmvEBGgwrpjFDL8y9Jxh3Doxsf6lUKzQ4KXG836QY=
+
+Name: html/nodes/76bea7dd.EndcaseNodeFactory.html
+SHA-256-Digest: LFuynNw6q3RGy1jbHnUhImH5N7e+ln1n2mqyWTjpzts=
+
+Name: schema/pmmlports.exsd
+SHA-256-Digest: I3hrFrUF2Q1XOYY4zSUzu/8mCGBoqptw/JuBu3dFLuM=
+
+Name: tocs/view$nodes.xml
+SHA-256-Digest: M9VTeO+vl/i5aT4RpkDKXOzoxmLbLsMaQJMtJIhtX1k=
+
+Name: metanode_templates/Variables Loop (Data)/Inject Variables _Data_
+  (#4)/node.xml
+SHA-256-Digest: j3+2Vk2Cy9Z9ypnCd4Kyawe0peIt6ykEyMbPKCe6PWc=
+
+Name: tocs/analytics_statistics$nodes.xml
+SHA-256-Digest: sg5uyxQ83QtEhn9JrlehtH2nabghwbXLxX6PUveszvE=
+
+Name: icons/meta_nodes/variables_looper_db_flow.png
+SHA-256-Digest: 066eHPJEqu6VC3/5dnOxyuJJ2ldIB5xIxMgEUkdssCg=
+
+Name: tocs/manipulation_table.xml
+SHA-256-Digest: jjgySW/FmMAwhEn90T74LcME7WVsiLDEfIIeUmeo9Eg=
+
+Name: html/nodes/7a2e4243.DecisionTreeLearnerNodeFactory3.html
+SHA-256-Digest: iIImh4trv0sW8YJujHNxjxuD7LG5Vq5X0sZBzH72Zbo=
+
+Name: html/nodes/226bd6fd.NormalizerDeNodeFactory.html
+SHA-256-Digest: 87vVQm27jH4qGDwui9WpT308AV7mbihcdxswyfZe6wo=
+
+Name: tocs/manipulation.xml
+SHA-256-Digest: 4epfpQ+P5SshsSjv8X3o5lzwm3XK7cV/sM68CSxpIDw=
+
+Name: tocs/analytics_mining_svm.xml
+SHA-256-Digest: /dGrqdSJKnZ6yhSDGhb27C9/LhL7TORlX1Pu5Ca2Ejs=
+
+Name: html/nodes/5a458915.WriteTableNodeFactory.html
+SHA-256-Digest: 0d1fYqrXciG2H2MEZM6TCAi3y+xdJyeeNsigYJ/a3p0=
+
+Name: html/nodes/6914dca4.StringToNumberNodeFactory2.html
+SHA-256-Digest: 5Ft+yuzhBHjeaLGDmeJB92y9oo+2TVPp96cwfDw/OMo=
+
+Name: html/nodes/11fa74f0.LagColumnNodeFactory.html
+SHA-256-Digest: jzMbsb8biihnIXi5AFBgym/fI53TqCXVrPYjTDI4Jc0=
+
+Name: html/nodes/2dc7f18c.ParameterizedDBQueryNodeFactory.html
+SHA-256-Digest: CHa/3V21PvPziJn5DLNQRD+a55rUNPNHYU7TRkvYpsM=
+
+Name: html/nodes/16defd4c.ColorManager2NodeFactory.html
+SHA-256-Digest: HiRUrpIQijLci/p8MvaWTevcedzRt5slbGNgVoaQpxk=
+
+Name: tocs/analytics_mining_featureselection_meta.xml
+SHA-256-Digest: 0ihCApHeQGhHODFhjQDG9OiK4VBaOxIZY7ThHdCGGXI=
+
+Name: tocs/analytics_mining_pca.xml
+SHA-256-Digest: 207Kc0Ge7IH05WzPZl8jL4V7w5rhB0akp7kEBGSA2+k=
+
+Name: tocs/flowcontrol_automation$nodes.xml
+SHA-256-Digest: eA893jE7zZEo08jCfHefk5wb/cLzcnxBTP83ztDZql4=
+
+Name: tocs/analytics_mining_modeleval_meta$nodes.xml
+SHA-256-Digest: R2QrhbOW7gQef4cIRD8SHnrSIYsKEi3hOJ7UMRNSTog=
+
+Name: html/nodes/39d9780b.DataColumnSpecFilterNodeFactory.html
+SHA-256-Digest: 8ghOS3h3csFGRxu0RQk+KTItjm1NKup95rEP6e36npU=
+
+Name: html/nodes/55ed5a4e.ColumnRenameRegexNodeFactory.html
+SHA-256-Digest: ETH63tDu7FaUJB5A2znPryLdKMTR8kc1gw0vp7Ny0A4=
+
+Name: tocs/view_property.xml
+SHA-256-Digest: biHvx+DAYMRmxxx5aBu2PQOU1rt9A6XopO4dvhSrXPM=
+
+Name: icons/16x16/category_structured_data.png
+SHA-256-Digest: JPtegqg2Hk3dQiT/fdHgDQGy/SbIEvDYnAbk9L20np8=
+
+Name: html/nodes/15456059.DBSQLExecutorNodeFactory.html
+SHA-256-Digest: QuLWgV7OG7gW9Ndh5wQp+NEpP6+F3uYS0Mymblze3MY=
+
+Name: html/nodes/69de711a.LowVarFilter2NodeFactory.html
+SHA-256-Digest: +iw6iPW4ocsHbOnlVfFcguC4jruJoCqfd+7mVSRRVWA=
+
+Name: html/nodes/38753885.SamplingNodeFactory.html
+SHA-256-Digest: BPmx0pZ/rb79SynP1BifGqAhi5PdUzZk3Gvdnz/MMdA=
+
+Name: html/nodes/1a577bb7.TableColumnToVariableNodeFactory.html
+SHA-256-Digest: mqq1XOITjljqYenRcxl/kWotzp07dF9ycpGinm5/1BA=
+
+Name: tocs/analytics_mining_bayes$nodes.xml
+SHA-256-Digest: 0PLBsZxNhYVPa1NtMA1h3/7Jh+AMSsfKe1Oxl91n850=
+
+Name: tocs/analytics_mining_modeleval$nodes.xml
+SHA-256-Digest: /Mnu9pPH+EKVf0eEtOO0th2NtW398Odo0bsPCDZuXCY=
+
+Name: html/nodes/491a5229.StringToNumberNodeFactory.html
+SHA-256-Digest: PEntardUKvbWW1+mDTaVItUQoqBOzweaeHHcTZN7IqY=
+
+Name: html/nodes/43c236f2.RowSplitRefNodeFactory.html
+SHA-256-Digest: UvlWkfIo+axJMDGwkjDDNMG2ks7i2jSfme9Jr0mxgJ0=
+
+Name: html/nodes/37f1a188.AddEmptyRowsNodeFactory.html
+SHA-256-Digest: uGxWUNeoD+dgjGTear2RpTfc8h92vsStRwGSevZu0go=
+
+Name: tocs/social-media.xml
+SHA-256-Digest: S2OR/loQjaPPtoDf2cv6R9BA+u4+WDulIj+U5TZJFOc=
+
+Name: html/nodes/1d73c490.DBPortCatchNodeFactory.html
+SHA-256-Digest: 0T7XZPBSyiZ57tEJi1HpAYYC/1lKrDevqJQWPtCSWOk=
+
+Name: metanode_templates/Variables Loop (Database)/workflow.knime
+SHA-256-Digest: d8LgUJAnFgGsiR77VpTV9PcGPY9ccA4gJk8oZxiyA6I=
+
+Name: html/nodes/356a475c.MDSProjectionNodeFactory.html
+SHA-256-Digest: Oucu6RHbz19yCRdF8BGtkP97beuC3FK04t+mnTDOOyY=
+
+Name: tocs/manipulation_row.xml
+SHA-256-Digest: db5YXSgMXsNT7FMsoUqPztEc1c3eIxIoiJ8XkppFCVc=
+
+Name: tocs/chemistry.xml
+SHA-256-Digest: 7MQNd1C0QbDKoqrAH2y5JRYP0/8MBrGcJ1ZGQ0HMLMw=
+
+Name: html/nodes/6777d15f.ClusterNodeFactory2.html
+SHA-256-Digest: oMErtaZztpmzs9IcSo1AQCW/430SWgowv/rMw9YzizY=
+
+Name: html/nodes/6bc6dc3c.DataValidatorNodeFactory.html
+SHA-256-Digest: Ttwu5DuxmS+sKAhukfqTxqTxf+ioLgHIF1DTw12bM5o=
+
+Name: html/nodes/6ec7fa8d.DBReaderNodeFactory.html
+SHA-256-Digest: VHaGkb1SIppdd6Fhwkj5xBdH7c3ZdNIAZr5MBcCVY2o=
+
+Name: icons/16x16/category_community_nodes.png
+SHA-256-Digest: 9ipLsJm2ODcCzTjn8+trU3cVmPZr+V4bIMy/arZLINs=
+
+Name: html/nodes/79fb1ec1.CellSplitterByPosNodeFactory.html
+SHA-256-Digest: FDMQJ4eyqsKLl4/C4PRfKf1SjIOUTl9eyxOBKAnnu4c=
+
+Name: metanode_templates/Feature Elimination/.savedWithData
+SHA-256-Digest: il8huP5UXYN43qBPyAyNB0omWL02ucdGrw/pKGCJWOs=
+
+Name: icons/16x16/category_cross_validation.svg
+SHA-256-Digest: qp09jqUjBz33RpsRihR/EL3RIxz0WbLPrQgYkpOjQ4w=
+
+Name: icons/16x16/category_database.png
+SHA-256-Digest: j1YmRkvs42DwxUDKdd0MQa7Af/rJ2Gyv7OtHx/4k8hw=
+
+Name: html/nodes/18f77d0.DBSamplingNodeFactory.html
+SHA-256-Digest: jruviwtc/VNXw45lp2MMW552tpRejr2iouieqpAQbFE=
+
+Name: html/nodes/Meta_Variables_Loop_(Data).html
+SHA-256-Digest: 8+01Vw4ClKJNtuhlLsflebMwQmYpKHNbCnGngAdrWys=
+
+Name: icons/16x16/matrix.png
+SHA-256-Digest: bzUqh69yF45v+pFFinYvY4ESH1FkXUU/XY9joGHPh2M=
+
+Name: html/nodes/77d31010.MDSNodeFactory.html
+SHA-256-Digest: MGFtxe1eIpE5PF18LMuxfrprPM0Sl2fa8T26o6pfV8M=
+
+Name: html/nodes/64b93538.InteractivePieNodeFactory.html
+SHA-256-Digest: SuXhMEWzWag8KNlO4WDMZN/5JhPSbIVnBKnz8Swba1A=
+
+Name: html/nodes/1b1d31bd.MergeVariablesNodeFactory.html
+SHA-256-Digest: YDV+cyDhHzXPaYXhImv6dk3ygC6LhylKzUheajCwlSM=
+
+Name: html/nodes/19dd7798.UngroupNodeFactory.html
+SHA-256-Digest: hNwA1ObBJ8V73e/KvLy1jaGG+W9XBjKxZvdmpnxu104=
+
+Name: tocs/manipulation_column_column-convert+replace$nodes.xml
+SHA-256-Digest: PVUVU6PH6Xr/eLLk4sXRIruzNY88LFajL2MPkJP965M=
+
+Name: tocs/analytics_mining_clustering$nodes.xml
+SHA-256-Digest: XcIZkXuU+9Nn6zN3S9AM21EpCDVKUA4Y5ZYHL9lvbIE=
+
+Name: tocs/scripting_java-snippet.xml
+SHA-256-Digest: Abk0e7nNVXkvgo+VWYGL4hUMlbs7Uqdyz3r9+7wr0Vk=
+
+Name: tocs/analytics_mining_nn.xml
+SHA-256-Digest: XY5Y+DLv96mD7MkdVcUfhVPEcjJQd9DU34Hu/4m8rKg=
+
+Name: html/nodes/157f39f5.ClusterAssignerNodeFactory.html
+SHA-256-Digest: l1dw9bFWqOfwxLKdf2Iti9mJFxHX3aC4n5llYy6MtWY=
+
+Name: html/nodes/4a0715b3.BWElimLoopStart1NodeFactory.html
+SHA-256-Digest: 8Iv1CMYx7nscDeqwbmK0EUERLHz7XMd5XDHJ0LHTjUU=
+
+Name: html/nodes/1c063db2.LoopEndNodeFactory.html
+SHA-256-Digest: S9bvs3GQFa9rSbl0Rqbz3ku4zFPK9EtOX1Q17zOGtXc=
+
+Name: icons/16x16/trycatch.svg
+SHA-256-Digest: NN/+6o6w8mL/3mv7IbWw0iYszH1t9PWsZYS7/2LMWUo=
+
+Name: html/nodes/Meta_Loop_x-times.html
+SHA-256-Digest: 98J37z8f5cqY6Poo5Gs6P3ZDHyDZ/AYnla6CdPMU/J4=
+
+Name: icons/16x16/category_socialmedia.png
+SHA-256-Digest: LrBeAkokyBhkFrFbNVJFr61MJh+aonn9Lkh0Mc8GQUk=
+
+Name: tocs/database_database-manipulation.xml
+SHA-256-Digest: 3V2tYgOR+LnyL1L0Vt8lTs3IH2BnUOkISSieFiJelD0=
+
+Name: html/nodes/2dbddce3.SearchReplaceDictNodeFactory.html
+SHA-256-Digest: 8bfmEuRv/lFXm/J3e+NVlN8M9t3thzhonILkOQViOyw=
+
+Name: icons/16x16/category_visualize.png
+SHA-256-Digest: s5UzfeNC5lDr0lJ3Qby6jMdsYR24BdEP2t8m11MV6s0=
+
+Name: js-lib/node/preprocess/select/value/web-template.js
+SHA-256-Digest: fr3KOZUHVgmccgzHUVjhFm3InvBfZAC0m0ypSzYeYoA=
+
+Name: html/nodes/311757dc.SmoteNodeFactory.html
+SHA-256-Digest: 5LKfOaH4Q7pQnJqAKPuWEpdUvJtz3i3xX2ZWgUU8IYY=
+
+Name: tocs/analytics_mining_pca$nodes.xml
+SHA-256-Digest: pV4vbc+aLZyKE4o1E1pdL9Aypgs5coznDHZ4C976zZs=
+
+Name: html/nodes/38fcc995.DBSorterNodeFactory.html
+SHA-256-Digest: 8FOlE18pcEi9MYatFYTk/cObxYCJWuy7uVOtzldZpaM=
+
+Name: metanode_templates/Iterate list of files/File Reader (#4)/settin
+ gs.xml
+SHA-256-Digest: U854VQkKytdWi3NDIGs2ATJDeGtIkfjRPCjJD4EJgTA=
+
+Name: html/nodes/38bc455f.LoopStartVariableNodeFactory.html
+SHA-256-Digest: 8kVoxE5NWgPNIRFvT0Z+P7pczBgvq/+WcTW7uzQAbN4=
+
+Name: html/nodes/b21a1fb.AutoHiLiteNodeFactory.html
+SHA-256-Digest: /lamPOoTtiJhP/kDHcsW3UAC8euMF2JQ1aC3PD6RX6Q=
+
+Name: html/nodes/2a5f7db8.SubgroupMinerFactory2.html
+SHA-256-Digest: JGS/QS3Pl8PmfL7YK9ErU1Fx6y4CUolfWrPwXGlR7eo=
+
+Name: html/nodes/646eae9d.BoxPlotNodeFactory.html
+SHA-256-Digest: ZmXxKMqHz8c6y6vmiqnkd5iKmoGG1+N6ZVDSfUpYkNg=
+
+Name: html/nodes/146c72f2.DBDropTableNodeFactory.html
+SHA-256-Digest: VHuN/PEAhDd64g7KlpdVMvyr3NdIjz/IE2BdEK7bHe0=
+
+Name: html/nodes/35bf9668.BootstrapNodeFactory.html
+SHA-256-Digest: /ILF7rhzHx6tso+tNutq781Bkool8OhGtOypWPiP754=
+
+Name: html/nodes/7f248df4.FuzzyBasisFunctionPredictor2NodeFactory.html
+SHA-256-Digest: xj7ZK9g1JUw8+1D2Y/VDYOJ7etRzxm3ci3x8JxJuY+8=
+
+Name: tocs/analytics_mining_nn_mlp.xml
+SHA-256-Digest: lYSYpKFdsMXykCZ1upi08hWq7r8+McxFQ7xMs9wNO+8=
+
+Name: tocs/analytics_mining_rules_basisfunction$nodes.xml
+SHA-256-Digest: 62J5XXNskhnI428hUutiqwj9v4aianXFBGsM+uQQSkc=
+
+Name: tocs/analytics_mining_weka.xml
+SHA-256-Digest: teYaAmfZuIMTdiTPzbQdzXIc96QKvGcUGJMSmU1D3LI=
+
+Name: html/nodes/62345145.CAIMDiscretization2NodeFactory.html
+SHA-256-Digest: 86rkVC5HKAuMdvDaIYhJNyHURTennoYg3ifosOA3R14=
+
+Name: tocs/analytics_mining_mds$nodes.xml
+SHA-256-Digest: 2Ox03rGHuAv9xibVPT8N/NaJeo+/ComyHg5CDQ8ggWc=
+
+Name: icons/16x16/trycatch.png
+SHA-256-Digest: ET/IqpVcswc2ype/yFjlBaJZ5SH/cMOy1LIUAxUTUiU=
+
+Name: metanode_templates/Cross Validation/workflow.knime
+SHA-256-Digest: +74//blv4PqtY3cDVOr4NABKNW4+jORt67u8rpR30Ig=
+
+Name: metanode_templates/Looper/workflow.knime
+SHA-256-Digest: q59pK53zZDgcVxVCAEJt2sut4cK38xfIkyJvwUhluRY=
+
+Name: tocs/analytics.xml
+SHA-256-Digest: ExafvC3ThOo/1x8SOWBB3LoGUVj7aUq7I5EWE82PaUE=
+
+Name: html/nodes/677d7709.RPropNodeFactory2.html
+SHA-256-Digest: cQV1N7oa2fcJOZ0EY7HRPWfhzhbSXAgPKCHzjFHbLB0=
+
+Name: html/nodes/76836254.SVMPredictorNodeFactory.html
+SHA-256-Digest: AD4MU2EEeGekcPQ2EhXBJbnpmIYsQePsDKttkSFGmVM=
+
+Name: html/nodes/8bf9bc4.EnrichmentPlotterFactory.html
+SHA-256-Digest: td9Z0gP4vQnLBH8ocMRYF3hdkTvlVjoTunclbBcLDag=
+
+Name: html/nodes/40d6ea06.EditNominalDomainNodeFactory.html
+SHA-256-Digest: 8nLUjymxEXvULVl46LYGrJWnirU/MerfXLpY8Yv56CU=
+
+Name: icons/16x16/category_mining.svg
+SHA-256-Digest: 5SoD6Kf3Q1slFKJccAdJYZU0RDEtXUHK2CuEP8mItfY=
+
+Name: html/nodes/17d62e35.ColumnListLoopStartNodeFactory.html
+SHA-256-Digest: iSRHIeja5/pNNdwPDi+u0IcVFqcnqhllzIJ4ZZC//Dw=
+
+Name: html/nodes/27b1bb93.ParallelCoordinateNodeFactory.html
+SHA-256-Digest: hgyreAT/DLC9xY87yDT0+yXur9tvwdmuXZImhASzLmM=
+
+Name: html/nodes/50caab53.DataColumnSpecFilterPMMLNodeFactory.html
+SHA-256-Digest: zDy7ndPeXkcRTzjJJURjBH0Oky98ySfnQfQQbSwrfzM=
+
+Name: tocs/manipulation_column_column-transform$nodes.xml
+SHA-256-Digest: LW4rpz82EjjAQOdxmb/05U062B01SxJWZQPcRve7Zzw=
+
+Name: html/nodes/33b206c.LoopEndConditionNodeFactory.html
+SHA-256-Digest: m0jLFikvr3qMxQrn2PqgXA7M6EXQfJ0uDfGIYX9OIFs=
+
+Name: tocs/database_database-connector.xml
+SHA-256-Digest: 3LcuUaxiWvF1TCzba0h7Ql8fve9CIGJra3gvec2F1oM=
+
+Name: metanode_templates/Variables Loop (Data)/Loop End (#2)/node.xml
+SHA-256-Digest: 0ND4IL7YiiJBHYoM4S3jHStt/lArlwXrByGXqcOpFAs=
+
+Name: html/nodes/5e9605ad.TableToVariableNodeFactory.html
+SHA-256-Digest: xiqJqtv93WLgeSC1MvpPIZUcKkSiqc2MRKwdVzGSeI4=
+
+Name: html/nodes/345b5309.DataValidatorSpecNodeFactory.html
+SHA-256-Digest: h5hkv+8om6iGal4lrSbWJvbNTCqny5A5ttTwgVsjXX0=
+
+Name: icons/16x16/regression.png
+SHA-256-Digest: kPPnGip8GZkhgKwp6JoOVMNiRpktN7u4w5223j8No6Y=
+
+Name: icons/16x16/variables.png
+SHA-256-Digest: HVMFAJ8BtNtAWlU7La2Yb1WrJ1fW19+8VPrts/AI5qI=
+
+Name: icons/16x16/category_applications.png
+SHA-256-Digest: jM7yG9rF9ZOROCBFhE+XoeJmug8fJAHs5QJG1BALpSg=
+
+Name: tocs/scripting.xml
+SHA-256-Digest: 6MSItSu1ExIZUpw6Y82fe23enTidubGnhjDYZWKqtAY=
+
+Name: html/nodes/22ff31a5.RecursiveLoopStart2NodeFactory.html
+SHA-256-Digest: WV7v/4FL40EIQ/fXJTI28yA2QhxR+2w/lMdlcujcIwQ=
+
+Name: html/nodes/7a7d7502.BreakpointNodeFactory.html
+SHA-256-Digest: xzqkeb9hvD0xdWiolxFtopGd7kdUhmc3kEsGoNcFAmQ=
+
+Name: html/nodes/42f886aa.WriteImageNodeFactory.html
+SHA-256-Digest: XC4S0a0ibHS5+WTFfr1G1PaUqQpgqU+P++0KN8DsGnA=
+
+Name: html/nodes/37935c54.SplitNodeFactory2.html
+SHA-256-Digest: j0GPdtZTMXAmXkdW3Kj//Mc9uDy1edztZRdyd65LhT8=
+
+Name: html/nodes/1cf38bee.ColCombine2NodeFactory.html
+SHA-256-Digest: z4A9EA7VV/AiYX/8YtjCguFml4RMdb0eUiJP6qVuTJs=
+
+Name: html/nodes/1c06207.RegressionPredictorNodeFactory.html
+SHA-256-Digest: FZeoYCCQLLnSau1wMeUzxUXakmK9YStoD9/cbfdn3Bo=
+
+Name: tocs/io_write.xml
+SHA-256-Digest: h88U7uKzZrvr7TkAZpiDX99jJK/E2wtE0L/5vm/iUTk=
+
+Name: icons/16x16/category_mining.png
+SHA-256-Digest: FOB44JR5TJItikO/kcqj3RVbzjUo2LLmpSzGL+7Re7Q=
+
+Name: html/nodes/6542ea11.NormalizerPMMLDeNodeFactory.html
+SHA-256-Digest: vy1efRi/E+WuhWARSzhS/8XYhsFnatayxs0VIPdrKjw=
+
+Name: tocs/analytics_mining_modeleval_crossvalidation$nodes.xml
+SHA-256-Digest: WFXxrpgA80/IQODqc3LYTW4yDLQWjBju5aBAgCyto7Y=
+
+Name: metanode_templates/Feature Elimination/Backward Feature Eliminat
+ ion End (#3)/settings.xml
+SHA-256-Digest: PwJyU6crk2uEMR5D7A0CBx/murzkgNqCUlY2IKQQPuQ=
+
+Name: html/nodes/5f5f2be7.BWElimLoopEndNodeFactory.html
+SHA-256-Digest: GUEWIPUawUhZAXoBA1xc/mDshIhXqwltncoUQzJUhGI=
+
+Name: metanode_templates/Looper/Counting Loop Start (#1)/settings.xml
+SHA-256-Digest: jdciRYthhylssOGS9/9RoHT9H3Y8KQZiUCpgiZ48iXo=
+
+Name: html/nodes/234dc272.DBDeleteRowsNodeFactory.html
+SHA-256-Digest: uldQNXyXCNyTEl2M/sXJ/9uPbVoFNZqjUqqaml1rDIU=
+
+Name: html/nodes/Meta_Iterate_List_of_Files.html
+SHA-256-Digest: 1IuT/Q8KHXcu41GJKckzQI/BqxghlNZgOtFO1DNRHnc=
+
+Name: html/nodes/4cf99a13.NewEntropyNodeFactory.html
+SHA-256-Digest: pJLI239q8Rb5bmy4fYtL//kM9dNdCSauHYTO7ktTMhM=
+
+Name: metanode_templates/Variables Loop (Database)/Inject Variables _D
+ atabase_ (#4)/settings.xml
+SHA-256-Digest: VQARSX3KU5IYLI+6ZG/rBpK/KvTQGV/6mEbRklvjoek=
+
+Name: tocs/manipulation_column_column-split+combine$nodes.xml
+SHA-256-Digest: lgfBzk7zR4qX1TzBgMpyDCenFXeRuMr61hADQtfZALM=
+
+Name: html/nodes/624e80ab.RadialBasisFunctionLearnerNodeFactory.html
+SHA-256-Digest: ftDzsHl9yp1MwQFSBLn7qkQvCiJwFI4rHpL1hRFmS/0=
+
+Name: html/nodes/7a69bc88.Unpivot2NodeFactory.html
+SHA-256-Digest: imeNZWEZ7ieJr90ekd8oRLQpOwhy4fTtRojG/kfwThw=
+
+Name: tocs/analytics_mining_rules_basisfunction.xml
+SHA-256-Digest: hbkftlvFJwlvWYxC9B29Ps+ICrjzO0hKkSUYHF4gJcs=
+
+Name: tocs/analytics_mining_subgroup.xml
+SHA-256-Digest: sbYDsWH/oaDM60FNok/EjPoFpLk/eue/I+HbDbeZOO4=
+
+Name: tocs/labs.xml
+SHA-256-Digest: UytbB922RANZEvbS7WNSTLsIOtFuxV1Fga37kkoVSg8=
+
+Name: metanode_templates/Feature Elimination/Naive Bayes Learner (#8)/
+ settings.xml
+SHA-256-Digest: hgAW8UGCs90B0mL+XEi6WQqWl70JsyH2518W8gRF3js=
+
+Name: html/nodes/61b48e61.MissingValueHandlerNodeFactory.html
+SHA-256-Digest: gKp/EQApN/a3p3K9v+DvqKmtqOUod3mMM1QilVTJWfk=
+
+Name: icons/16x16/manipulation.png
+SHA-256-Digest: t047xKSECnMLljFg7wBtOqU/Wop5+I/rCW9LPJvPlTk=
+
+Name: icons/16x16/category_reader.gif
+SHA-256-Digest: rDwwcmFIVkgNAzCA6Rsq62V08u03zLu2a3AbAOW4QuM=
+
+Name: html/nodes/50daf2fa.BinByDictionaryNodeFactory.html
+SHA-256-Digest: hHefDZmovd5TsUn9R3+S44L5eC6VRbpJ9/IZCY4OfDw=
+
+Name: icons/16x16/category_uncategorized.png
+SHA-256-Digest: VTMZiuQjTmCVYI+yjN8Fkqnt2vvAB5j3bi7MGjC7Ttg=
+
+Name: tocs/analytics_mining_rules.xml
+SHA-256-Digest: EsLFxf22KtNl1UAIx2od+/9mcyW4M9L8XIwxCNrp3EM=
+
+Name: tocs/flowcontrol_switches.xml
+SHA-256-Digest: s00Q1FxYakhWOhNwQxVpKDCa7E4ZKevAJtX2LX3fGgo=
+
+Name: html/nodes/4702cda4.InteractiveHiLiteCollectorNodeFactory.html
+SHA-256-Digest: JxVVjdxkbL2bpFlVYU120+n4cjP4MbLEKt4cgqbl8wo=
+
+Name: schema/org.knime.base.AggregationOperator.exsd
+SHA-256-Digest: mukGnaIRG2pfLyO21LFIA8s+kGRO2EruQrkNw1EK888=
+
+Name: html/nodes/65f46723.One2ManyCol2PMMLNodeFactory2.html
+SHA-256-Digest: oKvHYyfTwy5bFZdCi7pZ7NKFppX+kvEWiXp+v2zf39U=
+
+Name: metanode_templates/Feature Elimination/workflow.knime
+SHA-256-Digest: ReALZeAkeIGdawqp/rbiBU+fHEwCgDMKgI0tezBhj/0=
+
+Name: html/nodes/18bce4dc.MissingValueApplyNodeFactory.html
+SHA-256-Digest: zMQFSBpeHj2RRdgK5PtEu+5QRIKnWQORif1ma/fB5xI=
+
+Name: html/nodes/53f4cbb.InjectVariablesNodeFactory.html
+SHA-256-Digest: +YLotW/qXMEHYqSeT9u5AiWrxotJwbCr5POHk8ujb+0=
+
+Name: tocs/io_read$nodes.xml
+SHA-256-Digest: 4I5ZV4eTJO6jLXOXKWitcp2GRVcEEn7mvudlR4o0s1U=
+
+Name: html/nodes/6b5a3ed8.RenameNodeFactory.html
+SHA-256-Digest: +O0r9467ZWEajAbPj9ij4j/c8rz/XA1+OlK7beGLCPg=
+
+Name: icons/16x16/flow_control.png
+SHA-256-Digest: 0gCYK46cvVSz1HooCNzZYgEw2xoZrJpW23lwolJy0AE=
+
+Name: html/nodes/43d55f8.CreateTableStructureNodeFactory.html
+SHA-256-Digest: gH/qTjOogWmX7RGL/FhcR0ucSVcnl/tVjCheXfBOf1A=
+
+Name: tocs/analytics_mining_subgroup$nodes.xml
+SHA-256-Digest: IvD0pufy3wJxc7Vh0tXTGq/MhoOAgNonYBXibzHuScI=
+
+Name: html/nodes/122c154d.CrossJoinerNodeFactory.html
+SHA-256-Digest: ekBAwNwfrKeQA7u4yUqyRLZT8JCpqYSMj7Kcju6iFYg=
+
+Name: tocs/manipulation_pmml$nodes.xml
+SHA-256-Digest: ALmd5xSyjg0Te4p9ImZ7ibOFz5SPTFb/7vnYk2/iwCI=
+
+Name: html/nodes/1e4a50bf.SaveWorkflowNodeFactory.html
+SHA-256-Digest: j5NQnrp68ip4PZtuWWkFn8y1qevFJHYnwon7G1dMAWg=
+
+Name: html/nodes/27075346.SotaPredictorNodeFactory.html
+SHA-256-Digest: jX+HlAYGYD6Di/pNdQVzRA4NFK5+qgpZx51jZiHUPtY=
+
+Name: metanode_templates/Variables Loop (Data)/.savedWithData
+SHA-256-Digest: WBsyvbCG2k0xWmiJVjeZaNvmo0yx8+jtTAHF18xG8Ng=
+
+Name: html/nodes/13722720.TransposeTableNodeFactory.html
+SHA-256-Digest: oYWJQFsLH7Y7Aq2V2Q1jW3Or3TS3qLM6ItgUSTnEyrA=
+
+Name: tocs/flowcontrol_meta.xml
+SHA-256-Digest: 9Lx7VbGZZrBfuGezNm7h3HZmz9sxHqII7gJ+RCyUo1o=
+
+Name: html/nodes/66d01fbb.RowFilter2PortNodeFactory.html
+SHA-256-Digest: 0B/Qvdmm1WnDBLFdqAcGnBGe0aKFD5CVnDZ3WgyAeO8=
+
+Name: html/nodes/5bd02e73.DecTreeToImageNodeFactory.html
+SHA-256-Digest: CZyydPlCEf5FFdGocnoKjXCAKPlqTIzHVjvN6gumVQU=
+
+Name: html/nodes/5e4e5b24.SVMLearnerNodeFactory2.html
+SHA-256-Digest: 8mWEJqCq1erG/J8Bm3QiCLNpmzUEEYSoUXkRpZPVkic=
+
+Name: html/nodes/6a6114f7.ExtractVariablesDBNodeFactory.html
+SHA-256-Digest: cmPy0GG2nBLNgwM6TqaqF7EB/EZ9NQbN7FT8LBAzGFQ=
+
+Name: html/nodes/6b5b0b05.DBConnectionWriterNodeFactory.html
+SHA-256-Digest: b4eN446P9/l9zl2rlLgZ9MZ0EHAXc21N5WSq+0e2MnQ=
+
+Name: html/nodes/7ed7a06b.CategoryToNumberApplyNodeFactory.html
+SHA-256-Digest: CmXxlL9dJYn28dAKXrabNvPPqNwzATUVA1YP0J31v9Y=
+
+Name: tocs/io_write$nodes.xml
+SHA-256-Digest: KZRNx0ZE0AeXrX6qEddHz2zTHdOvgX+S2QUlfBZtFtg=
+
+Name: tocs/database_database-utility.xml
+SHA-256-Digest: dYakHNKVPudsnGoprlYwwfYCDsmijjaA+9it9dgIL3Y=
+
+Name: html/nodes/75d7bc18.RegexSplitNodeFactory.html
+SHA-256-Digest: 0JeneGfe03s6AxMfNmmLfXCGgzHg0520oTnNHaPXfIs=
+
+Name: tocs/analytics_mining_nn_pnn$nodes.xml
+SHA-256-Digest: TnJxd5YejmQt+vIGD+0ANieHyHW4oAKnVd8S5RDSsjw=
+
+Name: html/nodes/6fc18868.BinnerNodeFactory.html
+SHA-256-Digest: afZ00BeHkieiOd+Kxhf4ZXd+gGWyjLCyotu8GvrGGd4=
+
+Name: html/nodes/669f559d.CollectionSplitNodeFactory.html
+SHA-256-Digest: r6yANuhT1qOtiy0wZudQialZGP/RP/BiWRtMSjTxljg=
+
+Name: html/nodes/3a86d759.ARFFWriterNodeFactory.html
+SHA-256-Digest: Sc12QMhyh5MKYwew97T/GbhZWecGHXNFGPMusc24uLY=
+
+Name: tocs/manipulation_row_row-other$nodes.xml
+SHA-256-Digest: n1/JTPEduQn/Ceed5SzsESFc8naYVeRauQx1inxfCV0=
+
+Name: html/nodes/52874bce.CaseConvertNodeFactory.html
+SHA-256-Digest: UPfYfCjY/Z/2zlU1maOm7GffPoiMn9uH0PkgaGPHu98=
+
+Name: html/nodes/5c889924.NumericRowSplitterNodeFactory.html
+SHA-256-Digest: 3OqKEWQadlC3YN/mpu0yK6py5tMq7P7EUtRuEzchWQI=
+
+Name: html/nodes/cc0f0ca.PCAApplyNodeFactory.html
+SHA-256-Digest: xOuoHQx+cn4b/gJkifE+TbxEKseq04fuy+lFXVbJqNw=
+
+Name: html/nodes/efa02a8.ColumnHeaderInsertNodeFactory.html
+SHA-256-Digest: JaUCabGb9Wrwc3XBuOvyfFLfJasL4Odf8iXRtG3vIFY=
+
+Name: icons/16x16/meta.png
+SHA-256-Digest: ouYGdq4b2rCCikBUyiEZAkpJuuPHKTXFa7pinauzakQ=
+
+Name: icons/16x16/sleep.png
+SHA-256-Digest: j3UW0rvXW6yk5Pe0PEe+7CNantHh8G0O4d8tTtp/lTE=
+
+Name: html/nodes/6a03dd63.CSVWriterNodeFactory.html
+SHA-256-Digest: Iv/hx6ckLcvsfq+5Py3CtQtGYKyDqPTs/fDO4YfRKKE=
+
+Name: html/nodes/8685436.RecursiveLoopEndNodeFactory.html
+SHA-256-Digest: FP+CW6I4RecgUtBUlUUFzbzPLEbnnhWtPkVfDqj6MI0=
+
+Name: html/nodes/3e450e7b.Many2OneCol2PMMLNodeFactory2.html
+SHA-256-Digest: zmQzO54ivWagQpZ5dLlz9Zl0ihTVHdizWg1Mzn50H58=
+
+Name: html/nodes/a2b0bea.DBGroupByNodeFactory2.html
+SHA-256-Digest: WloMe0V2vgKB0nPxvcYTJCHg87IYo1xpfeOmPcoYvyI=
+
+Name: metanode_templates/Cross Validation/.savedWithData
+SHA-256-Digest: Qx7Kkn1kiEp1A/FVxKk8XG/crEmSPcB/Cof4RcrodiE=
+
+Name: html/nodes/54f86b4d.ConditionalBoxPlotNodeFactory.html
+SHA-256-Digest: nOGP95qcyd7M58vbvv9arMXDXD8zQN4mzS+NBDtOj68=
+
+Name: html/nodes/466a2c76.CreateBitVectorNodeFactory.html
+SHA-256-Digest: 9D4HXl+ByhA8bpjfxKf2pqTUpOp8PYAhmaT3sAHSq3U=
+
+Name: html/nodes/Meta_Feature_Elimination.html
+SHA-256-Digest: 20NpXaBJMgl4IfjfFJFW74XIfzyEbiJM60k5g1Epq+M=
+
+Name: html/nodes/448eebe2.RowFilterNodeFactory.html
+SHA-256-Digest: QUCFL750AAJqntXIRWFH8K3ThIpCozYcs6R0OCK8SAY=
+
+Name: html/nodes/6a77226c.CaseEndVariableNodeFactory.html
+SHA-256-Digest: +gXkxQ0p28zlisjDGKthdHz+mXklWWx659RB+jnwjv8=
+
+Name: html/nodes/71e22b70.ColumnSplitRefNodeFactory.html
+SHA-256-Digest: tsNDg/Ys4gzid3C4IXXDlNY4wlOlyQ08SdO9QiATrYc=
+
+Name: html/nodes/239b93e3.SampleDataNodeFactory.html
+SHA-256-Digest: EgBntI0kwMxrDFdud1ggaalRZRX1XSFWfBexUfbMCRM=
+
+Name: html/nodes/4077ced6.ShapeAppenderNodeFactory.html
+SHA-256-Digest: A869YtX/1WPgPmlOIrQIS6TZPCpXianLEYTbaYoeX4I=
+
+Name: metanode_templates/Variables Loop (Database)/Loop End (#2)/node.
+ xml
+SHA-256-Digest: 0ND4IL7YiiJBHYoM4S3jHStt/lArlwXrByGXqcOpFAs=
+
+Name: html/nodes/5aeba384.XValidatePartitionerFactory.html
+SHA-256-Digest: df+KT2vIenprV40LZ7X433iL7Mi8mjlP50VV4/XAjik=
+
+Name: tocs/manipulation_column_binning$nodes.xml
+SHA-256-Digest: tVs0Zr0HM0iBe4EYyU1w7NDta+fHBr4nm3fuxHj64pM=
+
+Name: html/nodes/c30503e.SizeManager2NodeFactory.html
+SHA-256-Digest: /Xb1uk0oY+LO7uP1cr4fkfuAY+OJ7y/VHLEtnBL3Szo=
+
+Name: html/nodes/3358c759.ExtractTableDimensionNodeFactory.html
+SHA-256-Digest: 3kvAAmMrwElIOOJ8CbTGwLaFIX2RtQbZvC3X1KcfLRc=
+
+Name: html/nodes/106551b7.PMMLWriterNodeFactory.html
+SHA-256-Digest: kvFjkT9eQ5I0BcDTkF/JOs9/C1oOSZRAteCFP7wtXps=
+
+Name: metanode_templates/Cross Validation/X_Aggregator (#1)/settings.x
+ ml
+SHA-256-Digest: vdwq7+B31W5Dm/0MzGmqqrHN31R4Ye3UnctOovhJWUw=
+
+Name: html/nodes/56aa1472.VariablePortCatchNodeFactory.html
+SHA-256-Digest: Palw34ijjtOlQdU4RGRo7FtwcryxkaJupCaRVxLo+so=
+
+Name: icons/16x16/category_javasnippet.png
+SHA-256-Digest: SwcbrkzrNNibo/xRfeffRInBYnNUVV3mQcXV8Bmvobw=
+
+Name: html/nodes/11b27bdd.ManualIfNodeFactory.html
+SHA-256-Digest: kfRw/dIxk0PZ5bVSqx+SuG2ykC73JqPVkb/+kEnGlME=
+
+Name: metanode_templates/Variables Loop (Data)/Row To Variable Loop St
+ art (#3)/settings.xml
+SHA-256-Digest: JCAd+HitH2YzWkWjSGrl6CkBfuQuZ61Iw8KiYtn3dI8=
+
+Name: html/nodes/3c4b9008.NumericScorerNodeFactory.html
+SHA-256-Digest: lZF2NPvnwu7UQTIJojOKFHerV+huRgtC6F+6pVPXBPk=
+
+Name: html/nodes/67ada6b3.DoubleToIntNodeFactory.html
+SHA-256-Digest: PKCx/Yl5Qu/XzcsXDp2qDWgIgq9k3o+bPmo6SuYto74=
+
+Name: icons/16x16/variables.svg
+SHA-256-Digest: L9/4CqceCTmsAMNCprviZfPYBxL3zbsdwn7rwvfvc9E=
+
+Name: html/nodes/1dabebc6.CorrelationFilterNodeFactory.html
+SHA-256-Digest: TzW272mmkk74tovBd5Vx9lVZIUDRj5xpS1GASDnfAaw=
+
+Name: html/nodes/1de78659.ColumnAutoTypeCasterNodeFactory.html
+SHA-256-Digest: +ll9x31b3MgCi+D64yh+LTBZJZUVqRTtq9Agt3K30BI=
+
+Name: html/nodes/60d70021.Discretization2ApplyNodeFactory.html
+SHA-256-Digest: Su9P0sSNR/3ue+EGIwY5qvtaZSqohdxlldv+U9Zb65w=
+
+Name: icons/16x16/sleep.svg
+SHA-256-Digest: WFrUFoC+eWE+bsHAGWG6HJEtqzavScYkuze1QelPdbk=
+
+Name: tocs/analytics_mining_mining-pmml.xml
+SHA-256-Digest: bgb7ZWIZhS1j0Wv32gTaJJ7UsralBsvru8PiwcCV8qM=
+
+Name: html/nodes/41ef8c79.CategoryToNumberNodeFactory2.html
+SHA-256-Digest: 3ODaUY2X1tJVIFBvyFoqJGExodatrZRTNX4YCbU1rzU=
+
+Name: html/nodes/400cf8d3.LogRegLearnerNodeFactory3.html
+SHA-256-Digest: FLDqBC3slo7ERK9jw758pCvuSBMTia/kUELz7DW+z28=
+
+Name: tocs/flowcontrol.xml
+SHA-256-Digest: fUajW37lJZLyYqUvlDxm32uzmU9Zr9TaDW6pxb47bZk=
+
+Name: html/nodes/531ed9ea.AutoBinnerApplyNodeFactory.html
+SHA-256-Digest: ZVF85yLK1htwehcntwdgxXlarNwtBr8bMNVmWDEeVLQ=
+
+Name: tocs/analytics_mining_dtree.xml
+SHA-256-Digest: 2NvvhDQmQSGxnIn8X7GHdzkqAz7lfl6676nyhPAhmMk=
+

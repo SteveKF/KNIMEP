@@ -1,0 +1,549 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.knime.js.core;singleton:=true
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.7.0,4.0.0)
+ ",org.eclipse.ui;bundle-version="[3.7.0,4.0.0)",org.knime.core;bundle
+ -version="[3.0.0,4.0.0)",org.apache.commons.codec;bundle-version="[1.
+ 3.0,2.0.0)",org.apache.commons.lang3;bundle-version="[3.2.1,4.0.0)",o
+ rg.knime.ext.svg;bundle-version="[3.0.0,4.0.0)",com.fasterxml.jackson
+ .core.jackson-annotations;bundle-version="[2.4.3,3.0.0)",com.fasterxm
+ l.jackson.core.jackson-core;bundle-version="[2.4.3,3.0.0)",com.faster
+ xml.jackson.core.jackson-databind;bundle-version="[2.4.3,3.0.0)",org.
+ openqa.selenium;bundle-version="[2.43.0,3.0.0)",org.knime.ext.phantom
+ js;bundle-version="[3.0.0,4.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME.com, Zurich, Switzerland
+Ant-Version: Apache Ant 1.9.4
+Export-Package: org.knime.js.core,org.knime.js.core.datasets,org.knime
+ .js.core.layout.bs,org.knime.js.core.layout.grid,org.knime.js.core.no
+ de
+Bundle-Name: KNIME JavaScript Core API
+Bundle-Version: 3.1.3.v201604221432
+Bundle-ClassPath: js-core.jar
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: js-lib/jQueryNumberFormat/min/jquery.number.min.js
+SHA-256-Digest: wqVkZnappIYq65+9KNaJZsI81uyUaapiVk5Nx2LlFEA=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-bg_flat_75_ffffff_40
+ x100.png
+SHA-256-Digest: Oat8zZ9Ogledp4qSQSZd8ojY62XbvXz0iu0tASmIffU=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.progressbar.min.css
+SHA-256-Digest: vDABVj3J4oDQga1EYj8DkxLD0U/LSQ4ScYPffZ7UoZw=
+
+Name: plugin.xml
+SHA-256-Digest: fegong5nkALmx3NC0Qxh4iRwTFh9kundMBhPdTNaQUw=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.button.min.css
+SHA-256-Digest: CMPIX4kIEAr1hU7q7b+A/nKJqAdeg7KftvVmt5LQg/E=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-fold.js
+SHA-256-Digest: 4++lzAQRMPNzJIVsQgwVSDq5Z378HhC1mk6os+hAEAE=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-pulsate.min.js
+SHA-256-Digest: OQFf32otKBvNWgXsT81ZwZ+g73j5cLT57txGXi8tVRs=
+
+Name: js-lib/nvd3/nv.d3.v1_8_1.css
+SHA-256-Digest: XA0GmOY3pvEecCzB66gQopKN4IsE+EU/uVE04anwucg=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.core.min.css
+SHA-256-Digest: GnjIQDQE2Py/MCMzZpXeXJ3cFNiybjVxRBraXpQO2UM=
+
+Name: js-lib/jQuery/jquery-1.11.3.js
+SHA-256-Digest: IGWuzKD7mwVnNY01LtXxq3L84Tm/RJtNCYBfXZw3Je0=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-bg_glass_75_dadada_1
+ x400.png
+SHA-256-Digest: wQj1y/LdnsB6JlMGld3ZXhZkWXzmwFauRMFizC4ozsQ=
+
+Name: js-lib/JSFreeChart/opentip.css
+SHA-256-Digest: A9F1M3AaGYmBk6fM9c6tCWtJxRoxRXZQurZUjeQuz6A=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.menu.min.css
+SHA-256-Digest: ZBxZg1uy0sucV8kkY2pCYvRlKDQr8CUIh+hdNeQ4r5I=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.draggable.js
+SHA-256-Digest: WZDQu8UUgCIAJbwJjjxqxhD88tlpgjqPZ1XBNGcuJ+Q=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-explode.js
+SHA-256-Digest: a1PPlm8OG+fJteLC6Dv7VT3QH9pVqn9huPjrZ6N+obY=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-fade.min.js
+SHA-256-Digest: 3UJx6GAfQCaB2SltbwU3tWg4e3MvSDqsa9vZ3mL1jbM=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.dialog.js
+SHA-256-Digest: Ikxd9+Jftc95SpX7UrywcKeSL7oTQFQ8bxhAoBQWJUw=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-bg_highlight-soft_75
+ _cccccc_1x100.png
+SHA-256-Digest: VCcGVt8HnE2lGCYpoID8YztvhLh5hesBbSWlYOLDjUo=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.autocomplete.min.css
+SHA-256-Digest: 7gTqPohg6stU/HWyYkTc6bjjqxB6vbn/vdOU2m4MtQg=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.progressbar.min.css
+SHA-256-Digest: vDABVj3J4oDQga1EYj8DkxLD0U/LSQ4ScYPffZ7UoZw=
+
+Name: schema/webResources.exsd
+SHA-256-Digest: kHQTx81W1/EWmobnvs0FFexXFHO8dt7fIT1Fg65jYb8=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.theme.min.css
+SHA-256-Digest: dAN/UvByBj1R2xTmwVcIRWDVNyNlr64CVdCOmmj4lJY=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.mouse.min.js
+SHA-256-Digest: lZvdd5VfumDk2d2yOecQm1uI37R8wjZdVpfrIc1fPcY=
+
+Name: js-lib/nvd3/nv.d3.v1_8_1.js
+SHA-256-Digest: G6kT+T2jmNYf0Jv+fRnaRq5eqLyOVlUzT7bIrqEbb4o=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-highlight.min.js
+SHA-256-Digest: iUFSow8v1/w0P40NVl2Xvi+vFxo/Cp/FRzPPah1hqPY=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.draggable.min.js
+SHA-256-Digest: /K0hdn8QE0kTKXqRMJHIoRRFbKaTvYmghEAr4Wh9iV0=
+
+Name: js-lib/d3/d3.v3_2_8.js
+SHA-256-Digest: HMvmuRb4xRqStNBkvjzGbGohynz7oZXMDBB+mLJ0iHU=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.button.min.js
+SHA-256-Digest: hTj+1PyZKa6X4vaLK5quaFiS6yBuL3ae9iDfZWrsnY0=
+
+Name: js-lib/jQuery/jquery-1.11.0.js
+SHA-256-Digest: zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.button.min.css
+SHA-256-Digest: CMPIX4kIEAr1hU7q7b+A/nKJqAdeg7KftvVmt5LQg/E=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.slider.js
+SHA-256-Digest: VYmxBkgjxFI5mSmk//EQApCxzNuSjYPTLESjwya7zsI=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-scale.min.js
+SHA-256-Digest: rR3ye5+MRnItUQFkwT94p2vfdfII2ZAed8JAjmeW10c=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.tooltip.js
+SHA-256-Digest: 5InYGhmuaR47OTDWakGh+0pVe4IfaoCTQJvcYM1jnMk=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-explode.min.js
+SHA-256-Digest: 4JFA+41PMJs1eOrVbQ9spCKOT5bfXePLCjkJ3Js+40g=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.autocomplete.min.css
+SHA-256-Digest: 7gTqPohg6stU/HWyYkTc6bjjqxB6vbn/vdOU2m4MtQg=
+
+Name: js-lib/jQuery/jquery-2.1.4.min.js
+SHA-256-Digest: 8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-bounce.min.js
+SHA-256-Digest: uGQYretOQCPV4ijKIE7isNlOhdqNlTkGyJYHkUo0A40=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.position.js
+SHA-256-Digest: wSAssDxx/YocRhazTmn9LMtvhUdibDLQcKz6QVfr5Y0=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.tabs.min.css
+SHA-256-Digest: QMFzJGBmbV97BorrYEklkEWc7OtauLFPBBzpdVZjDKo=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-shake.js
+SHA-256-Digest: IqhIhKG+Vsx70APyOD3gt3Y/leFE6FZrevZd5Dx0u18=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.dialog.min.js
+SHA-256-Digest: fIBOqUdIplp710C2bxPgrmv/r/STvvCTnUuzOwLs9d4=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.datepicker.min.css
+SHA-256-Digest: RTOEF/renkmP02V/MOW2yrEMEywGfiVdfKzSiKwBfOA=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-icons_222222_256x240
+ .png
+SHA-256-Digest: V62w1l9OkdrP7pddlXRCK+50hsihgtYBM3KMZy8s27w=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.autocomplete.js
+SHA-256-Digest: qPJ6/XC+PnC3Mc85myfzBKKLdAigAbgeXRUSKL3iOOE=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect.min.js
+SHA-256-Digest: Xzyghinb9Ll4WBQxVN4qe0jExnHWhJtWqlkgM6JUbPM=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.tooltip.min.js
+SHA-256-Digest: sADZ5tt8G9S2QN1YK8CWFyuU1ljkaGZbqzljKl7NJ7A=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-bg_glass_65_ffffff_1x4
+ 00.png
+SHA-256-Digest: 8ObNkbg31cVkTQJuX/7M2QeVMxfNXA9omQFzOv2iYLI=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-icons_454545_256x240.p
+ ng
+SHA-256-Digest: B0YOhDw+WaqtuzQjHmmehWopgHU8eke2ZEfaXZ+T+38=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-bg_glass_75_e6e6e6_1x4
+ 00.png
+SHA-256-Digest: 3fXdTg7ysYXouwr3tukOvnSoQ4TLRwBljnbnVMi/5VA=
+
+Name: js-lib/knime/knime_table_1_0_0.js
+SHA-256-Digest: GavX/pS1ODJHSZmw+VwhFVZxHnsOgL3PGM+Yjl4L3Pk=
+
+Name: js-lib/jQueryUI/debug/ui/jquery-ui.js
+SHA-256-Digest: kVTcaYhzm2MuQuhXS1dUzzMNikFKVRcWlwXkv6A9SfM=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-bg_flat_75_ffffff_40x1
+ 00.png
+SHA-256-Digest: Oat8zZ9Ogledp4qSQSZd8ojY62XbvXz0iu0tASmIffU=
+
+Name: js-lib/nvd3/LICENSE.md
+SHA-256-Digest: XGbIviHyz1rFbI7cHakSUnqpDy9A9j5HtYumZbDvJwE=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.datepicker.min.js
+SHA-256-Digest: evMljpXopvORtz6uN/OG0wXVQ886LQci3cFrk3QXrXc=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-bg_glass_95_fef1ec_1x4
+ 00.png
+SHA-256-Digest: 9vHBvt8aDzfP74HRL18BKGnR7nyYR3WlaYJ6F4TTT1w=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.tooltip.min.css
+SHA-256-Digest: UcCF6MDggQiR7R95FWh8wc/D3nHEIXatN7Kw3tBV34I=
+
+Name: schema/javascriptComponents.exsd
+SHA-256-Digest: ByjKO2fTw7yRGDPku/JvsI24Rk28lKAeCqEgafKg4yg=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.core.js
+SHA-256-Digest: YztJT/hMi7wpjGYUxgvtO7UGbnycE72WYIoCDy/Ook8=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.theme.min.css
+SHA-256-Digest: dAN/UvByBj1R2xTmwVcIRWDVNyNlr64CVdCOmmj4lJY=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.tabs.min.js
+SHA-256-Digest: PWa4CKy9pc1pM0CNPbbmQq9Z1E146SpGmmOb8jmaHP0=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.menu.js
+SHA-256-Digest: YWUPibuji6Xma2KLgQO2hvOHgwk3eE5kVexn3swhAU4=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.widget.js
+SHA-256-Digest: MOUi0jj56ErYKJq1tD7jlv+9HpbI6rdxV/vG+jDtqs0=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.sortable.min.js
+SHA-256-Digest: GggpJREp6TTmYDBWLmjE77ZTIQyrzyI5f63Zc3VWWEg=
+
+Name: js-lib/requireJS/LICENSE.txt
+SHA-256-Digest: JFDPaukCeI6R4g8kWPgc9Y33MA16sGulNi7787gQM14=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.tooltip.min.css
+SHA-256-Digest: UcCF6MDggQiR7R95FWh8wc/D3nHEIXatN7Kw3tBV34I=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-bg_glass_95_fef1ec_1
+ x400.png
+SHA-256-Digest: 9vHBvt8aDzfP74HRL18BKGnR7nyYR3WlaYJ6F4TTT1w=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-blind.js
+SHA-256-Digest: hakG8973JSTA/PvD855pPGCR/oZPaMqFuiPNNSpFPig=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-scale.js
+SHA-256-Digest: nyLEwdbkffH4CFxbkupIRSmIugkb9PAGzZJwiq6HAyo=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.progressbar.js
+SHA-256-Digest: +tN2nL3lDb7S0q59ApkeU0fOPsW+tRQJ2DfWVlW9UNM=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-icons_888888_256x240.p
+ ng
+SHA-256-Digest: 6i4pYl3jRjRl6TsAKwZfWDPgW5f3oFKxwUHnVNYuGos=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.slider.min.js
+SHA-256-Digest: HbjoDchepHF3HT2WYbMyPZ3tM0L9slTuSxmnDe6cwA0=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-highlight.js
+SHA-256-Digest: m9AfHp4wpKj5U5CbiaFVyTCV5rEynITB+HTcsIzIUig=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-bg_glass_75_e6e6e6_1
+ x400.png
+SHA-256-Digest: 3fXdTg7ysYXouwr3tukOvnSoQ4TLRwBljnbnVMi/5VA=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-pulsate.js
+SHA-256-Digest: EwP+StoacEOBqphUWXBhqbIig5UQ3ay6bo3WwPpb7qk=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-transfer.js
+SHA-256-Digest: 9wL9060f6P9+gsoBwo/gcM+xgIechMDmp9I90UQ7IJk=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.slider.min.css
+SHA-256-Digest: yci5Sn7XNJEqTKOI/V3bBdIoEkA4cXd1JrSP5wyo7gc=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-drop.js
+SHA-256-Digest: CIUBL6FgmzuleH5nNm/8coVRdAdvs+K+E26ckx3I/W0=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-drop.min.js
+SHA-256-Digest: VNnmB311Q1xXHUhwu7jjzx784Irb60F6Qrc8Vcz85qY=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.menu.min.js
+SHA-256-Digest: o00/YrPaDl+kq4M63K4Z1EggNDH9IKJxyNWWMhcFT/w=
+
+Name: js-lib/d3/d3.v3_5_5.js
+SHA-256-Digest: /V4P3H/0qTzqJzDbWzo6c/5Usab+dwV14U5yCYuHNHg=
+
+Name: js-lib/jQueryUI/min/ui/jquery-ui.min.js
+SHA-256-Digest: gHJhUSTFvCY0/ezAlIXItkXHjqJ8ISw9YbgMJhEr3Lg=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-transfer.min.js
+SHA-256-Digest: vvcaqyxeeNpJ7ckpP353ZyajejCT+1K16qG3L9a/tU8=
+
+Name: js-lib/nvd3/nv.d3.v1_8_1.min.css
+SHA-256-Digest: 3CsJgu02eqxey/fq0iexa7XiKKWMwyxQSz5WITxe0GU=
+
+Name: js-lib/jQuery/jquery-1.11.0.min.js
+SHA-256-Digest: spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=
+
+Name: js-lib/jQueryNumberFormat/debug/jquery.number.js
+SHA-256-Digest: q0Hh8zaCTievHprstYGckHeFuS0EOqpnx1BnOVved4w=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.datepicker.min.css
+SHA-256-Digest: RTOEF/renkmP02V/MOW2yrEMEywGfiVdfKzSiKwBfOA=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.droppable.min.js
+SHA-256-Digest: +O4yTrK6X2ySJ09zWaHSbRqpA+LTXlXkuc5vWF8pxtM=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-bg_glass_55_fbf9ee_1x4
+ 00.png
+SHA-256-Digest: aRWX6KQKiR6pTTWJl27Pwz5hRcSUIkQ7AKwrWgAilkw=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.accordion.min.js
+SHA-256-Digest: g7OVr1LhHsVdnXD8uhxDYUwqynGG3+Mtqr6uy2mlo5A=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.spinner.min.css
+SHA-256-Digest: oldk+zqNneqcGd8wyNjeHIqDSgwtHA0taJZ332X8/Ok=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-blind.min.js
+SHA-256-Digest: R6pEbaqqFK6cXUJU5/tnoab468alTQsjCU1xkQLbrgc=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-bg_highlight-soft_75_c
+ ccccc_1x100.png
+SHA-256-Digest: VCcGVt8HnE2lGCYpoID8YztvhLh5hesBbSWlYOLDjUo=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.tabs.js
+SHA-256-Digest: twXi/exmoaoB0e8+YBc1fBGU62KgcXiaZlz4+mx4D6s=
+
+Name: js-lib/jQuery/jquery-1.11.3.min.js
+SHA-256-Digest: 7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.widget.min.js
+SHA-256-Digest: u4+puRQkY3Iukd9il7/MrdJ0RlHNDlz9JlQM+vE2EGI=
+
+Name: js-lib/knime/knime_twinlist_1_0_0.js
+SHA-256-Digest: LXCEhvuK90TNRS3ijPuJCCVqMLw7ITAaEdckGneVN/8=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.tabs.min.css
+SHA-256-Digest: QMFzJGBmbV97BorrYEklkEWc7OtauLFPBBzpdVZjDKo=
+
+Name: js-core.jar
+SHA-256-Digest: Nhgz17QShYOk4y79nIk/X39icUUBdyt8zQJczk7Dnz8=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-icons_2e83ff_256x240
+ .png
+SHA-256-Digest: IPjGZnr8SKpDPunrbYoFhL29a0pKkJH/Hms62zHmO9k=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-shake.min.js
+SHA-256-Digest: o4wrUKLgnqgFu6UfwDEU/7MAp44+RRmUvflCYGsogE4=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-fold.min.js
+SHA-256-Digest: el+J99j55ke/Y0Yo61v4yar/T/9vY2kQRw0gOELy2ZU=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.resizable.min.js
+SHA-256-Digest: yD/SvvC70tOL+ZVu3wzA4UjqWZS/Z5o8LPHRoLHQ2OY=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.mouse.js
+SHA-256-Digest: ZnTfRexqj4lLgx7VBaaSRGtxF7tkqk2P+tcWaGF6PZE=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.dialog.min.css
+SHA-256-Digest: XzwkiES8YY2JhlVfDPFaDKPzHLJV9dMNXna1Au6fLzE=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.resizable.min.css
+SHA-256-Digest: mdYF9lusCClnwh9jK6GFgs4ydrjHFIZ2AFMoaqt8LTc=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-slide.min.js
+SHA-256-Digest: HFb/xHtHYbA5YFiqc5FkhqMwla8Gu6XnIHKuMySD3H8=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/animated-overlay.gif
+SHA-256-Digest: x7zHb7I8BDCzbsRI63n4vDQSna6V2hDzwU7Q6s3y8bk=
+
+Name: js-lib/nvd3/nv.d3.v1_8_1.min.js
+SHA-256-Digest: Khd1UL1uEEiJF2jMhHx0vuUoCi/r66S4GriFXL8w6D8=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-icons_cd0a0a_256x240.p
+ ng
+SHA-256-Digest: HjLG2/XT/TQvJ6eKqIFVDWQSqiB/SEaHJKahVAK2BBs=
+
+Name: js-lib/jQuery/MIT-LICENSE.txt
+SHA-256-Digest: RCVMmpGkZHuRklhPF7LSe/Q2lroeoWsOiKx71r8HgPE=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.accordion.min.css
+SHA-256-Digest: W9MSKuQvAC5A6p49XKwzDFu7hkMf+b6OF3gdeZIqcHc=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-icons_cd0a0a_256x240
+ .png
+SHA-256-Digest: HjLG2/XT/TQvJ6eKqIFVDWQSqiB/SEaHJKahVAK2BBs=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.datepicker.js
+SHA-256-Digest: 5eQI4kWnQsk7W/dlG9Y6/cxztVEarhoJ8Mt94676HTo=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.selectable.min.js
+SHA-256-Digest: 0uecpemY9KAkRoxG4weh75EpEK4uCfxle0Uj7jM9YbA=
+
+Name: js-lib/requireJS/require.js
+SHA-256-Digest: wGdjsIxA1TCTpDqpCvhWiTe3y7uqRBNjjnmsPZsBl7o=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.accordion.js
+SHA-256-Digest: Q69AeBfFI7miaPAMwvu/CBfy+QD11NIG/R+5VNTvxU0=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery-ui.min.css
+SHA-256-Digest: Scuf+RKCETIbiDDnHV4s4c1Ne5/SlniEaQaepfaIlCY=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.autocomplete.min.js
+SHA-256-Digest: zOolX8EsRB85gtLIFx1JPw99SqbZYw21j5n2EmKgTX0=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-bounce.js
+SHA-256-Digest: xg39G0K282zRKCTm+45iBtyjJYv/Y4tQzEDb9z9XeVo=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.resizable.js
+SHA-256-Digest: op32bPPVoWAwS8mVyKOhVp5Y5UphnuJ2WzoCaY4mRLg=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-bg_glass_65_ffffff_1
+ x400.png
+SHA-256-Digest: 8ObNkbg31cVkTQJuX/7M2QeVMxfNXA9omQFzOv2iYLI=
+
+Name: js-lib/jQueryUI/MIT-LICENSE.txt
+SHA-256-Digest: 7x/dYIsg++p+8mntA70k5jdxfMGTlxeYo5S/L6mDzVM=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery-ui.min.css
+SHA-256-Digest: Scuf+RKCETIbiDDnHV4s4c1Ne5/SlniEaQaepfaIlCY=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-icons_888888_256x240
+ .png
+SHA-256-Digest: 6i4pYl3jRjRl6TsAKwZfWDPgW5f3oFKxwUHnVNYuGos=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.progressbar.min.js
+SHA-256-Digest: AihxPeXDsnlQ1pWhDcNdYdakmHC2ApDiCSXP2FGtv+s=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.effect-clip.min.js
+SHA-256-Digest: 3ggu7mssVd6Euip6OlhrJlNvQgrDUHttMjCAo0wElBE=
+
+Name: js-lib/d3/d3.v3_2_8.min.js
+SHA-256-Digest: Ai+ee1eIsHSXZ3Rg46Wq20G2Ig9OQAlx6tXddrYyxe0=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-clip.js
+SHA-256-Digest: s5cnxsM5EkaC9O2dUsfiQVderl+cROc1N2vtc+Kk4EU=
+
+Name: js-lib/JSFreeChart/opentip-native.js
+SHA-256-Digest: sxhvtjIxXW+eof7IjprO2h/HYKWDpIMzhinUe1gFUbg=
+
+Name: js-lib/d3/d3.v3_5_5.min.js
+SHA-256-Digest: xkEoWEC2R3sOXaM8jnaKT43guoCyTbkiGAFratj9x1Q=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-icons_2e83ff_256x240.p
+ ng
+SHA-256-Digest: IPjGZnr8SKpDPunrbYoFhL29a0pKkJH/Hms62zHmO9k=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.selectable.js
+SHA-256-Digest: ZuBWFYa8u8Yfks9N9BXIGHNqic8dbpdHvpuyOktlVZI=
+
+Name: js-lib/firebug-lite/firebug-lite.js
+SHA-256-Digest: 4QpTFaUL7kFgEfzyIHpPHt+a+oVZMDIQlCuYiSfjPq0=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.slider.min.css
+SHA-256-Digest: yci5Sn7XNJEqTKOI/V3bBdIoEkA4cXd1JrSP5wyo7gc=
+
+Name: js-lib/JSFreeChart/jsfreechart.min.js
+SHA-256-Digest: yTFBGGpzmEcd40rDIZYI/Akk391LQj9pu5ObYz0OkDk=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-bg_glass_75_dadada_1x4
+ 00.png
+SHA-256-Digest: wQj1y/LdnsB6JlMGld3ZXhZkWXzmwFauRMFizC4ozsQ=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.core.min.js
+SHA-256-Digest: +B594WEv3mlGNtOh/cXufGrBPV36rOOe1GAf6YMkLnM=
+
+Name: js-lib/firebug-lite/license.txt
+SHA-256-Digest: 3VnT01gIu/V8YNa29bfALiG4fOSRf+Vb/kPOgWNL+Jc=
+
+Name: js-lib/JSFreeChart/charts.js
+SHA-256-Digest: PYDTPzQSxDvh/HZuvU28GPU1qIgPB5fKLKuv2L/JzN4=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.position.min.js
+SHA-256-Digest: oQ4D9J1VSL2fCljcIQ+RIjPAFTZKUJUtTYMNYJlAg7k=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.dialog.min.css
+SHA-256-Digest: XzwkiES8YY2JhlVfDPFaDKPzHLJV9dMNXna1Au6fLzE=
+
+Name: js-lib/JSFreeChart/LICENSE.txt
+SHA-256-Digest: 4cCtcomD2KVzNeUs8QZPGv/R1FQXPYzr0+2LSnK0hwQ=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-icons_454545_256x240
+ .png
+SHA-256-Digest: B0YOhDw+WaqtuzQjHmmehWopgHU8eke2ZEfaXZ+T+38=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect.js
+SHA-256-Digest: L2IRy4EU5wLCmDwk4XwlrETNuDFq26kvV205apwlLNU=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.button.js
+SHA-256-Digest: YOfZkCxht4GcR9jwqnpvL4v1N18iJTMi3zjcwR7NkXs=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.spinner.min.css
+SHA-256-Digest: oldk+zqNneqcGd8wyNjeHIqDSgwtHA0taJZ332X8/Ok=
+
+Name: js-lib/jQuery/jquery-2.1.4.js
+SHA-256-Digest: siFczlgw4jULnUICcdm9gjQPZkw/YPDqhQ9+nAOScE4=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-slide.js
+SHA-256-Digest: hdIRldsOaCPd2LrPAH/FHza2n0xTkG3iPchGWaYg+nM=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-bg_flat_0_aaaaaa_40x
+ 100.png
+SHA-256-Digest: moSSpYC/hdPpiuiGH71FVn5aH4Pur8+VdNoDmdX2Aqs=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-bg_flat_0_aaaaaa_40x10
+ 0.png
+SHA-256-Digest: moSSpYC/hdPpiuiGH71FVn5aH4Pur8+VdNoDmdX2Aqs=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.menu.min.css
+SHA-256-Digest: ZBxZg1uy0sucV8kkY2pCYvRlKDQr8CUIh+hdNeQ4r5I=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.sortable.js
+SHA-256-Digest: NFEP0dolQJiY/sfhuJfTWqrQ3mxKv5jSSr+Ej9+nL2s=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.spinner.js
+SHA-256-Digest: btp3rD+JfkxiKrJZfE1jJaRRzIjLWqxb4EcgvE4bqJk=
+
+Name: js-lib/JSFreeChart/jsfreechart.js
+SHA-256-Digest: o7bizKkKXTXu7YrL3gry7zZ+yZVaypEfuD/HwYWLtew=
+
+Name: js-lib/jQueryUI/min/ui/jquery.ui.spinner.min.js
+SHA-256-Digest: o84ANxpVgYEDp3lNpcEWrsW1zyRDYJDB3MfYsBfucEI=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.selectable.min.css
+SHA-256-Digest: 9mcRRdvZbTHv0MQjazCjNh419qRynkeUS9iBo82TCZU=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.core.min.css
+SHA-256-Digest: GnjIQDQE2Py/MCMzZpXeXJ3cFNiybjVxRBraXpQO2UM=
+
+Name: js-lib/jQueryUI/debug/themes/base/images/ui-bg_glass_55_fbf9ee_1
+ x400.png
+SHA-256-Digest: aRWX6KQKiR6pTTWJl27Pwz5hRcSUIkQ7AKwrWgAilkw=
+
+Name: js-lib/d3/LICENSE.txt
+SHA-256-Digest: GSDSMm67rTTcvZaBtP5JJvETql59yakvzrRW2FnuFC4=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.droppable.js
+SHA-256-Digest: ZVINFMSyuuwexHMPUk7K7Kj3V1QQqVXBc8YyjKdZ9JI=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.resizable.min.css
+SHA-256-Digest: mdYF9lusCClnwh9jK6GFgs4ydrjHFIZ2AFMoaqt8LTc=
+
+Name: js-lib/jQueryUI/min/themes/base/images/ui-icons_222222_256x240.p
+ ng
+SHA-256-Digest: V62w1l9OkdrP7pddlXRCK+50hsihgtYBM3KMZy8s27w=
+
+Name: js-lib/jQueryUI/debug/ui/jquery.ui.effect-fade.js
+SHA-256-Digest: 94D8Qb/y5Dffi7Xs+FKBWqpu3zKz+GZHV5wc5jF8qKU=
+
+Name: js-lib/jQueryUI/min/themes/base/jquery.ui.accordion.min.css
+SHA-256-Digest: W9MSKuQvAC5A6p49XKwzDFu7hkMf+b6OF3gdeZIqcHc=
+
+Name: js-lib/jQueryUI/debug/themes/base/jquery.ui.selectable.min.css
+SHA-256-Digest: 9mcRRdvZbTHv0MQjazCjNh419qRynkeUS9iBo82TCZU=
+
+Name: js-lib/jQueryUI/min/themes/base/images/animated-overlay.gif
+SHA-256-Digest: x7zHb7I8BDCzbsRI63n4vDQSna6V2hDzwU7Q6s3y8bk=
+

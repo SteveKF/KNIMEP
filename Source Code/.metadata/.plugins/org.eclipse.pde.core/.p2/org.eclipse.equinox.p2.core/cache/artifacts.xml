@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='download cache' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.system' value='true'/>
+    <property name='p2.timestamp' value='1476389692742'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='16'>
+    <artifact classifier='binary' id='com.knime.features.reporting.designer_root' version='3.1.0.v201511131603'>
+      <properties size='1'>
+        <property name='download.size' value='1451643'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='com.knime.features.reporting.designer_root' version='2.12.0.0047514'>
+      <properties size='1'>
+        <property name='download.size' value='1451643'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.features.sdk_root.cocoa.macosx.x86_64' version='2.12.2.0049834'>
+      <properties size='1'>
+        <property name='download.size' value='29112944'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.features.sdk_root.gtk.linux.x86_64' version='2.12.2.0049834'>
+      <properties size='1'>
+        <property name='download.size' value='29111932'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='com.knime.features.reporting.designer_root' version='3.2.0.v201604232015'>
+      <properties size='1'>
+        <property name='download.size' value='1451643'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.binary.jre.linux.gtk.x86_64_root.gtk.linux.x86_64' version='1.8.0.60'>
+      <properties size='1'>
+        <property name='download.size' value='71720882'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.features.sdk_root' version='3.2.1.v201610031220'>
+      <properties size='1'>
+        <property name='download.size' value='32543696'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.product.desktop_root' version='3.2.1.v201610031220'>
+      <properties size='1'>
+        <property name='download.size' value='866554'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.features.sdk_root.gtk.linux.x86' version='2.12.2.0049834'>
+      <properties size='1'>
+        <property name='download.size' value='29111932'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.features.sdk_root' version='3.1.2.v201604221432'>
+      <properties size='1'>
+        <property name='download.size' value='31822552'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.product.desktop.executable.gtk.linux.x86_64' version='3.2.1.v201610031220'>
+      <properties size='1'>
+        <property name='download.size' value='31936'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.features.sdk_root.cocoa.macosx.x86' version='2.12.2.0049834'>
+      <properties size='1'>
+        <property name='download.size' value='29112944'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.features.sdk_root' version='3.2.1.v201609201941'>
+      <properties size='1'>
+        <property name='download.size' value='32537535'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.product.desktop_root' version='3.2.1.v201609201941'>
+      <properties size='1'>
+        <property name='download.size' value='866554'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.product.desktop.executable.gtk.linux.x86_64' version='3.2.1.v201609201941'>
+      <properties size='1'>
+        <property name='download.size' value='31936'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.knime.features.sdk_root' version='2.12.2.0049834'>
+      <properties size='1'>
+        <property name='download.size' value='29111322'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

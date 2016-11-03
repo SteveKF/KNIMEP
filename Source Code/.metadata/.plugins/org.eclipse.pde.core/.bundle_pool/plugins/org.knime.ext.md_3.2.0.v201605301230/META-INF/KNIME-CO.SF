@@ -1,0 +1,27 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: /uq/m8EUhZu1jVqUzHBygARfDJsDY
+ badAD1ylBBmjis=
+SHA-256-Digest-Manifest: hRlaGTDEQ182U0JTx4prLZIjXiIVtBzjkWfuvXG5Lss=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: lib/noon-utils.jar
+SHA-256-Digest: DBci9/8CcvXFGAItExPcX+2idHVJca03tVob+KploEU=
+
+Name: plugin.xml
+SHA-256-Digest: 6juCgOY+BITa9Y3x9YyRz9dis9JvW+Bj6bbH67uvkjc=
+
+Name: README.TXT
+SHA-256-Digest: NUT/z+UwYStYQnntQnNaVBF+hMb81kEfzTd01y4JJac=
+
+Name: knime-ruleviewer.jar
+SHA-256-Digest: Omm0qk2WKaMtEtZP/7zpnRdLJHkZ3TR9obkt2TPdxJ0=
+
+Name: LICENSE.TXT
+SHA-256-Digest: fx1NUhzecw7NpDbqm7tdqnerpfnL98eWUX+Nh81ufFY=
+
+Name: tocs/view$nodes.xml
+SHA-256-Digest: yx+z03LYR9HcGsYknyUpfH6MNUh+yy2gg18Tg23lJ6w=
+
+Name: html/nodes/51f9914a.RuleViewerNodeFactory.html
+SHA-256-Digest: 1TFLyMGFMZ974nonqcypPvfBOFSr5pNW/yWg5g9X/tY=
+

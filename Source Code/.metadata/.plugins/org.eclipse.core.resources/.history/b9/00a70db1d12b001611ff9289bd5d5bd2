@@ -1,0 +1,235 @@
+package org.knime;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+
+import org.knime.core.data.DataCell;
+import org.knime.core.data.DataRow;
+import org.knime.core.data.DoubleValue;
+import org.knime.core.node.BufferedDataTable;
+
+public class RepresentativeSkyline {
+
+	private BufferedDataTable skyData;
+	private List<DataPoint> skyline;
+	
+	private Map<DataPoint, Map<DataPoint, Double>> objFunction;
+	private Map<DataPoint, Map<DataPoint, Double>> skyEditDist;
+	private Map<DataPoint, Double> skySigmSignificance;
+	
+	
+	
+
+	private double[][] threshold;
+	private DataPoint maxSigRecord;
+
+	private int k;
+	private double lambda = 0.5;
+	private int[] colIndexes;
+
+	public RepresentativeSkyline(BufferedDataTable skyData, int k, int[] colIndexes, double[][] threshold) {
+		this.skyData = skyData;
+		this.k = k;
+		this.colIndexes = colIndexes;
+		this.threshold = threshold;
+
+		skyline = new LinkedList<>();
+		skyEditDist = new HashMap<>();
+		skySigmSignificance = new HashMap<>();
+
+		for (DataRow row : skyData) {
+			skyline.add(createDataPoint(row));
+		}
+
+		computeValues();
+		
+		
+		for(int i=0; i < skyline.size(); i++){
+			DataPoint p = skyline.get(i);
+			HashMap<DataPoint, Double> tmp = new HashMap<>();
+			for(int j=0; j < skyline.size(); j++){
+				DataPoint q = skyline.get(j);
+				double value = skyEditDist.get(p).get(q) * lambda + skySigmSignificance.get(q) * lambda;
+				tmp.put(q, value);
+			}
+			objFunction.put(p, tmp);
+		}
+	}
+
+	private List<DataPoint> EGreedy() {
+		List<DataPoint> result = new LinkedList<DataPoint>();
+		
+		result.add(maxSigRecord);
+		
+		for(int i=1; i < k; i++){
+			List<DataPoint> next = objFunction.values();
+			next.addAll(objFunction.);
+		}
+		
+		
+		return result;
+	}
+
+	private List<DataPoint> EPrefix() {
+		// Input: Skyline und k int
+		List<DataPoint> result = EGreedy();
+
+		return Sparsify(result);
+
+	}
+
+	private List<DataPoint> Sparsify(List<DataPoint> repSkyline) {
+		List<DataPoint> result = new LinkedList<>();
+
+		return result;
+	}
+
+	private void computeValues() {
+		
+		double max = 0.0;
+		boolean isComputed = false;
+		
+		for (int i = 0; i < skyline.size(); i++) {
+			DataPoint p = skyline.get(i);
+			HashMap<DataPoint, Double> tmp = new HashMap<>();
+			
+			for (int j = 0; j < skyline.size(); j++) {
+				DataPoint q = skyline.get(j);
+				tmp.put(p, computeSkyEditDist(p, q));
+				
+				if(!isComputed){
+					max = computeSkySigmSig(p, max);
+				}
+			}
+			
+			skyEditDist.put(p, tmp);
+			
+			skySigmSignificance.replace(p, skySigmSignificance.get(p)/max);
+		}
+	}
+	
+	private double computeSkySigmSig(DataPoint r, double max) {
+
+		double logit = computeLogit(r);
+		skySigmSignificance.put(r, logit);
+
+		int compareVal = Double.compare(logit, max);
+		if (compareVal > 0) {
+			max = logit;
+			maxSigRecord = r;
+		}
+
+		return max;
+
+	}
+
+	// computes logit
+	private double computeLogit(DataPoint r) {
+
+		double result = 0.0;
+
+		for (int i = 0; i < colIndexes.length; i++) {
+
+			// no intervall for dimension i
+			if (threshold[i].length == 0) {
+
+				result += 1 / (1 + Math.exp(-r.getCoordinateAt(i) + threshold[i][0]));
+
+			} else {
+
+				result += ((-Math.log(1 + Math.exp(r.getCoordinateAt(i) - threshold[i][1])))
+						+ (Math.log(1 + Math.exp(r.getCoordinateAt(i) - threshold[i][0]))))
+						/ (threshold[i][1] - threshold[i][0]);
+
+			}
+		}
+		return (result / colIndexes.length);
+	}
+
+	private double computeSkyEditDist(DataPoint p, DataPoint q) {
+
+		// sum of all the fraction of the skyline in each dimension
+		double[] sumFracSky = new double[colIndexes.length];
+
+		for (int i = 0; i < colIndexes.length; i++) {
+
+			int diversity = 0;
+			int compareVal = Double.compare(p.getCoordinateAt(i), q.getCoordinateAt(i));
+			if (compareVal > 0) {
+				diversity = computeDiversity(p, q, i);
+			} else if (compareVal < 0) {
+				diversity = computeDiversity(q, p, i);
+			}
+			// else it stays 0
+
+			if (diversity != 0) {
+				sumFracSky[i] = (diversity - 1) / (skyline.size() - 1);
+			} else {
+				sumFracSky[i] = 0.0;
+			}
+		}
+
+		double result = 0.0;
+		for (int i = 0; i < sumFracSky.length; i++) {
+			result += sumFracSky[i];
+		}
+
+		result /= colIndexes.length;
+
+		return result;
+	}
+
+	private int computeDiversity(DataPoint r, DataPoint s, int index) {
+
+		int diversity = 0;
+		for (int i = 0; i < skyline.size(); i++) {
+			DataPoint o = skyline.get(i);
+			if (r.getCoordinateAt(index) >= o.getCoordinateAt(index)
+					&& o.getCoordinateAt(index) >= s.getCoordinateAt(index)) {
+				diversity++;
+			}
+		}
+
+		return diversity;
+	}
+
+
+
+	private DataPoint createDataPoint(DataRow row) {
+		double[] values = new double[colIndexes.length];
+		for (int i = 0; i < colIndexes.length; i++) {
+			DataCell currCell = row.getCell(colIndexes[i]);
+			values[i] = ((DoubleValue) currCell).getDoubleValue();
+		}
+
+		DataPoint p = new DataPoint(values, row);
+
+		return p;
+	}
+
+	public class DataPoint {
+
+		private DataRow row;
+		private double[] coords;
+
+		public DataPoint(double[] coords, DataRow row) {
+			this.row = row;
+			this.coords = coords;
+		}
+
+		public double[] getCoordinates() {
+			return coords;
+		}
+
+		public double getCoordinateAt(int index) {
+			return coords[index];
+		}
+
+		public DataRow getDataRow() {
+			return row;
+		}
+
+	}
+}

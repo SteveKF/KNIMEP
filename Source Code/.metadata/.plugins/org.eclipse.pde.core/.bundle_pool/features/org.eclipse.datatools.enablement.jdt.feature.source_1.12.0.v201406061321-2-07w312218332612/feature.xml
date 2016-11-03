@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.eclipse.datatools.enablement.jdt.feature.source" version="1.12.0.v201406061321-2-07w312218332612" label="%featureName" provider-name="%providerName" image="eclipse_update_120.jpg"    >
+	<description >
+		%description
+	</description>
+	<copyright >
+		%featureCopyright
+	</copyright>
+	<license url="%licenseURL">
+		%license
+	</license>
+	<url>
+		<update url="http://download.eclipse.org/datatools/updates/1.12" label="%updateSiteName"/>
+		<discovery url="http://download.eclipse.org/datatools/updates/1.12" label="%updateSiteName"/>
+	</url>
+	<plugin id="org.eclipse.datatools.enablement.jdt.classpath.source" version="1.0.1.v201107221501"     unpack="false"/>
+</feature>

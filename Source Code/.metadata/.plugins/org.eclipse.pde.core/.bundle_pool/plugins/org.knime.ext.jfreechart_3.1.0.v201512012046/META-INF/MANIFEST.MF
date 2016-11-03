@@ -1,0 +1,107 @@
+Manifest-Version: 1.0
+Eclipse-RegisterBuddy: org.knime.base
+Bundle-SymbolicName: org.knime.ext.jfreechart;singleton:=true
+Require-Bundle: org.knime.workbench.repository;bundle-version="[3.0.0,
+ 4.0.0)",org.eclipse.core.runtime;bundle-version="[3.6.0,4.0.0)",org.k
+ nime.base;bundle-version="[3.0.0,4.0.0)",org.knime.ext.svg;bundle-ver
+ sion="[3.0.0,4.0.0)",org.knime.distmatrix;bundle-version="[3.0.0,4.0.
+ 0)",org.eclipse.help;resolution:=optional,org.eclipse.help.ui;resolut
+ ion:=optional
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Ant-Version: Apache Ant 1.9.4
+Export-Package: com.keypoint,org.jfree,org.jfree.base,org.jfree.base.c
+ onfig,org.jfree.base.log,org.jfree.base.modules,org.jfree.chart,org.j
+ free.chart.annotations,org.jfree.chart.axis,org.jfree.chart.block,org
+ .jfree.chart.demo,org.jfree.chart.editor,org.jfree.chart.encoders,org
+ .jfree.chart.entity,org.jfree.chart.event,org.jfree.chart.imagemap,or
+ g.jfree.chart.labels,org.jfree.chart.needle,org.jfree.chart.panel,org
+ .jfree.chart.plot,org.jfree.chart.plot.dial,org.jfree.chart.renderer,
+ org.jfree.chart.renderer.category,org.jfree.chart.renderer.xy,org.jfr
+ ee.chart.resources,org.jfree.chart.servlet,org.jfree.chart.title,org.
+ jfree.chart.urls,org.jfree.chart.util,org.jfree.data,org.jfree.data.c
+ ategory,org.jfree.data.contour,org.jfree.data.function,org.jfree.data
+ .gantt,org.jfree.data.general,org.jfree.data.io,org.jfree.data.jdbc,o
+ rg.jfree.data.resources,org.jfree.data.statistics,org.jfree.data.time
+ ,org.jfree.data.time.ohlc,org.jfree.data.xml,org.jfree.data.xy,org.jf
+ ree.date,org.jfree.io,org.jfree.layout,org.jfree.resources,org.jfree.
+ text,org.jfree.threads,org.jfree.ui,org.jfree.ui.about,org.jfree.ui.a
+ bout.resources,org.jfree.ui.action,org.jfree.ui.tabbedui,org.jfree.ut
+ il,org.knime.ext.jfc.node.barchart,org.knime.ext.jfc.node.base,org.kn
+ ime.ext.jfc.node.groupbarchart,org.knime.ext.jfc.node.heatmap,org.kni
+ me.ext.jfc.node.heatmap.util,org.knime.ext.jfc.node.histogram,org.kni
+ me.ext.jfc.node.intervalchart,org.knime.ext.jfc.node.linechart,org.kn
+ ime.ext.jfc.node.piechart,org.knime.ext.jfc.node.scatterplot,org.knim
+ e.ext.jfc.node.scatterplot.bubble,org.knime.ext.jfc.node.scatterplot.
+ util
+Bundle-Name: KNIME JFreeChart nodes
+Bundle-Version: 3.1.0.v201512012046
+Bundle-ClassPath: knime-jfchart.jar,lib/jcommon-1.0.20.jar,lib/jfreech
+ art-1.0.16.jar
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: html/nodes/23eaf05d.JfcScatterPlotNodeFactory.html
+SHA-256-Digest: u9gm5MLxUmxVcUZJN1nrkhRUiGHqZBRJtzYAKp0zNm8=
+
+Name: html/nodes/6c53b218.JfcBubbleChartNodeFactory.html
+SHA-256-Digest: iMmSp8YXEixjObDD3NFaTbxWmXgAHvkmJeBu2eKwvFQ=
+
+Name: plugin.xml
+SHA-256-Digest: hNxu2iPZrdt1RmWyFqvBQ13rMlX0+tFJEVT2NQMM9A4=
+
+Name: html/nodes/1108a963.JfcGroupBarChartNodeFactory.html
+SHA-256-Digest: BsdqT8O4SwioIL50/XZSgDaVs/ZztF7BvH0NrA0cIgs=
+
+Name: README.TXT
+SHA-256-Digest: 9B9BJAWOCcfTAzaaY6CmN7kd9ZNzP7wdpnkBB1EekZE=
+
+Name: html/nodes/34a3ea5d.JfcIntervalChartNodeFactory.html
+SHA-256-Digest: DZtoWJXQC5Ofnp2T3J6xy7Rlw4nJOHggcUBz5qelTF4=
+
+Name: lib/ReadMe.txt
+SHA-256-Digest: F1y4g7InKkTnkzjeTO0aKj4I6GG3kejcvtlL+yZH5no=
+
+Name: lib/jcommon-1.0.20.jar
+SHA-256-Digest: SAvEem/RAYDcHob3wxgtr1zWJ2ZQDwwHZd4L5ZpMkSE=
+
+Name: tocs/view_jfreechart.xml
+SHA-256-Digest: Xny/spP6jbz7pn4PdSiytne5EjHuFwAqSDPXcf+J6y4=
+
+Name: html/nodes/75f714cf.JfcHistogramChartNodeFactory.html
+SHA-256-Digest: 0657U5u58svQbL9rDlz+jFG9Tf01Ig6S140n5TfQ49E=
+
+Name: knime-jfchart.jar
+SHA-256-Digest: Dflmx4jxpAPKrhs0ZilJfCEq5IDPuAPgouo3bCXSZAY=
+
+Name: html/nodes/5ab187fd.JfcHeatMapNodeFactory.html
+SHA-256-Digest: iPdR6qcms9UWKjt24MLLcnyxumTEpibHB9U6rIINEbU=
+
+Name: html/nodes/5809a39b.JfcBarChartNodeFactory.html
+SHA-256-Digest: 1li+8EaAjio7PWJ0Nq2BKKRF0r5BLo4bX3/amMLpZHg=
+
+Name: html/nodes/67c7134b.JfcLineChartColoredNodeFactory.html
+SHA-256-Digest: 62wK4aiNP9WR7+IOOFcqwimHCnAkKSZrOtQk1qdrQ1M=
+
+Name: tocs/view_jfreechart$nodes.xml
+SHA-256-Digest: 4nWYECdkkmrlKHKVWBKPrwtCoXpCeishs9wlMYgci7w=
+
+Name: LICENSE.txt
+SHA-256-Digest: 8TSiQagVcm5WfssAApmJKIINRC9Qyw1o2chFUkUKsAQ=
+
+Name: lib/jfreechart-1.0.16.jar
+SHA-256-Digest: VDXYxFgRvmGLPnRTieVwAFbokNy+XyVG2AqPgJ/CeNo=
+
+Name: html/nodes/4ba482f3.JfcPieChartNodeFactory.html
+SHA-256-Digest: pjrO6Xhfk8yuslK3VJeDkrNshrO+Ej0fvsp2mXg/s3E=
+
+Name: icons/category.gif
+SHA-256-Digest: g36bn1gOUappfLQ5xeK5WXwpikUfQoWy9TRlsXixaLQ=
+
+Name: lib/JFreeChartLicense.txt
+SHA-256-Digest: XfBwBxmJicYi9dQd6NcD577z0OedYuJDMu5zmkUq9io=
+
+Name: lib/jfreechart-1.0.16.zip
+SHA-256-Digest: OxR5FsbdB2Rt+PEMEZcJGWSzoIQQbREanUGb7M1HYLI=
+

@@ -1,0 +1,24 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: zcYwzBeQR5GyqFKD4hFV0YZjXJ/IV
+ W7+UCfwoGl+BZ8=
+SHA-256-Digest-Manifest: KL3Xxeo1/JRSPVrmX1z203IIMTtvFGMJC9pdoJwq70M=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: RYkmQO/WA0B+G1c8xkXauRT9KMAU0MlIkfUVqbTXZaU=
+
+Name: knime-dynamic-js-node-generation.jar
+SHA-256-Digest: RmEsq4CVwKgQyIojTmdTGe9ssXDHlUfTN7ptTGsR5JQ=
+
+Name: dynamicJSNode_v2.12.xsd
+SHA-256-Digest: 7a1Jwcvs6YIpc1mf825xWTeWU44m+0Q97B/wQNfRHWk=
+
+Name: lib/schemas.jar
+SHA-256-Digest: kUpOyoTW0lV+Rnwl5kX00VJApYfhk3/mfW0CU1nHHnU=
+
+Name: dynamicJSNode_v3.0.xsd
+SHA-256-Digest: e8dKfoE9RdRl1Y1y8RAmgsrUScXjdS084eMv1XqlzOY=
+
+Name: src-js/dynamicJSNode.js
+SHA-256-Digest: nmzeWhEGEwtXV0AUfHjX89UHVZCM9HK1VUukte5xOHA=
+

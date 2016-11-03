@@ -1,0 +1,8 @@
+jdbc:sqlite://<host>:<port>/<database_name>
+<protocol>://<host>:<port>/<database_name>
+jdbc:psql://gemini.informatik.uni-augsburg.de@org.postgresql.Driver::jdbc:postgresql://localhost:5432/psqldb
+jdbc:mysql://localhost:3306/basketball
+jdbc:sqlite:/home/stevekanonfreak/Masterarbeit/Databases/Example.sqlite
+jdbc:mysql://<host>:<port>/<database_name>
+jdbc:sqlite:/home/stevekanonfreak/Dokumente/Masterarbeit/Databases/playercareers
+jdbc:psql://gemini.informatik.uni-augsburg.de@com.mysql.jdbc.Driver::jdbc:mysql://localhost:3306/basketball

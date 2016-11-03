@@ -1,0 +1,173 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.knime.ext.itemset;singleton:=true
+Require-Bundle: org.knime.base;bundle-version="[3.0.0,4.0.0)",org.ecli
+ pse.core.runtime;bundle-version="[3.6.0,4.0.0)",org.knime.workbench.r
+ epository;bundle-version="[3.0.0,4.0.0)",org.eclipse.ui;bundle-versio
+ n="[3.6.1,4.0.0)",org.eclipse.help;resolution:=optional,org.eclipse.h
+ elp.ui;resolution:=optional
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Ant-Version: Apache Ant 1.9.4
+Export-Package: org.knime.ext.itemset,org.knime.ext.itemset.algorithm,
+ org.knime.ext.itemset.nodes.miner
+Bundle-Name: KNIME Item set miner plugin
+Bundle-Version: 3.1.0.v201510191254
+Bundle-ClassPath: knime-extItemSet.jar
+Bundle-Activator: org.knime.ext.itemset.ItemSetPlugin
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: icons/missing.gif
+SHA-256-Digest: 6zny5Xyr/XQKuNDF+0sm/FynGzNOLPyNZIHDSEK0w2A=
+
+Name: resources/images/setFinderBig48.png
+SHA-256-Digest: /lObwu9ZPD3JR0k0xZYqRcfb1ysT/SQmxYLLkhUhkEI=
+
+Name: plugin.xml
+SHA-256-Digest: KnWzbeO+EgW6rDxoEbOg4BWnyn1xbBIdL4FP2RTfOe4=
+
+Name: resources/LICENSE_FPM.txt
+SHA-256-Digest: jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM=
+
+Name: resources/executables/mac/x86_64/fpgrowth
+SHA-256-Digest: U/2NdqB+KJyyZLb47dLRvElkhX1mwEQBfGyULvnQ2RA=
+
+Name: resources/executables/mac/x86_64/relim
+SHA-256-Digest: 4cgDW4LoJUtIfrYkjq/6FxDGYv3dZFZZ/w8JywPREG8=
+
+Name: resources/executables/win/x86/fpgrowth.exe
+SHA-256-Digest: B2/9W8k/skX1VHBXMZheGF6NsfI3YkE7sP5Yg5jhVNo=
+
+Name: resources/executables/win/x86/apriori.exe
+SHA-256-Digest: HY7RLwyjMYBfGHnkSzmMn3C4akI0E7j8QlaSpBF01wU=
+
+Name: resources/executables/win/x86/relim.exe
+SHA-256-Digest: NyojQ0TWrItv3EOfsjWxmIcI7yjlQocXJacqFGj9Qcg=
+
+Name: resources/executables/mac/x86_64/apriori
+SHA-256-Digest: z1mDiA20An8yjtg6Gf9hrkb5IGYPn6jrrA2ipr7RYnc=
+
+Name: resources/executables/mac/x86_64/jim
+SHA-256-Digest: n9ocCtsFNFH7A/1vRk1uRAWKaiOg/x/lNE3r/mBdSwI=
+
+Name: resources/publication/efficientApriori.pdf
+SHA-256-Digest: kiZ+D4vj/PbX+1o53r1cPEvMPmje8d5gU6xo03qEz3w=
+
+Name: html/nodes/70a2e23a.ItemSetMinerNodeFactory.html
+SHA-256-Digest: yJn0SWx88rjOL0D7oA3cJAFLe9uQpS74Vwpf8qAH/zk=
+
+Name: resources/images/rule.svg
+SHA-256-Digest: i9p8R2C4Jz2tZ6TZbQEvW+8gaWNvRMp7fUbx6JfzcVo=
+
+Name: LICENSE.TXT
+SHA-256-Digest: QIbGQ8GC2vfVM2akpOqLQzmK2S/gxdaC49Z2kY+ielU=
+
+Name: resources/publication/fpgrowth.pdf
+SHA-256-Digest: 2b2wbzVKWjlAFmMdR8Vqnc37LJhdadml1GNpL8PwFsY=
+
+Name: resources/images/setFinderMedium.pdn
+SHA-256-Digest: tCGZMurvjEfShv1tRraV7b6csU/G48m1PW3AzRhjn5c=
+
+Name: resources/executables/linux/x86_64/sam
+SHA-256-Digest: Q+1bbzHHEDrXFKc/1lDeUuj2b0OkiOb5byfv6D+bs4Q=
+
+Name: html/nodes/67844b2c.AssociationRuleLearnerNodeFactory.html
+SHA-256-Digest: 7usY/R42SvRiTlMQW4uFRK/SThuLmkqpY2x470t1lf8=
+
+Name: META-INF/p2.inf
+SHA-256-Digest: 0krfzB8abHcbqUc7I7/KQwlOSA895QvhZeKXthsGqiw=
+
+Name: knime-extItemSet.jar
+SHA-256-Digest: ZLHbl7w8nr3WLevYLF7e2Lg9ZfavtkELYwAv/7A/e34=
+
+Name: icons/misc_cat.png
+SHA-256-Digest: TP5EEOQcIFtu+X95Qgd1k72t/jaW7M/s9PFLsXcnigM=
+
+Name: resources/images/ruleFinderSmall.pdn
+SHA-256-Digest: 2Pcfbc6IusRPAGl/Pyn10+NSDCbluXRGTc0og6yVtF8=
+
+Name: resources/images/set_medium.png
+SHA-256-Digest: M7i1ksbkZoRl517kjrMSvp0cycmDG37bcqviUsEIfQ8=
+
+Name: resources/executables/linux/x86/fpgrowth
+SHA-256-Digest: yQUX09UcajRevQZK1hRibaW/TThaCm8g+jenbif0vB0=
+
+Name: resources/images/setMatcher16.png
+SHA-256-Digest: RNdH6LToJqhcrQfZ2Pw6g8ebiCUp8/FpqQk/TF4agdw=
+
+Name: resources/executables/linux/x86_64/jim
+SHA-256-Digest: y8JdQt8csDOQf/XSnKYHjyKN7I+7t7aB/Zz3TSuRfjA=
+
+Name: resources/images/setFinder16.png
+SHA-256-Digest: JNjKbbk95E4xE9GbUxSu3+5kstqkoR9jysqfK2qG/y8=
+
+Name: resources/publication/relim.pdf
+SHA-256-Digest: el6jg6ptyffwFG25BPN4HZgLlthy3MeNo7cKxs29GHY=
+
+Name: resources/images/setFinder32.png
+SHA-256-Digest: pfn7Ov5SgyvEAXlCs9cukYkfVtNLrwW+51cis/8fWL4=
+
+Name: resources/executables/linux/x86/jim
+SHA-256-Digest: hAIaEzGiSuPv/Age07hjOUXJxF0ZCdB/gS2l0sbW+Vw=
+
+Name: resources/executables/win/x86_64/apriori.exe
+SHA-256-Digest: TBMX61xIkPOlV26c1oW/Na+B+D3CRIya8GvHk+5miWE=
+
+Name: resources/executables/mac/x86_64/sam
+SHA-256-Digest: 3FE9rA1unKeAWpTRfEQPid7Ff+ollKyfUlpZ8R5XQyw=
+
+Name: resources/publication/apriori.pdf
+SHA-256-Digest: tHGcx/O1kk7tOmZaxz+N180XDykTkCXsYLYJrHTjx+I=
+
+Name: resources/images/setFinderSmall.pdn
+SHA-256-Digest: LMvsU2Ra8x+zekFSG8BiwgkLWjM+s9qzFLVDRiBTqG4=
+
+Name: resources/images/set.svg
+SHA-256-Digest: be5iGmKRm1wZGikFv86GxZumo16hZlpVAXVyPxAPCOU=
+
+Name: resources/images/loupe.png
+SHA-256-Digest: UzOSFqZOoTa18cAFgVsWqSOPK+nyhr9INtpvGIXM9C4=
+
+Name: resources/executables/linux/x86_64/fpgrowth
+SHA-256-Digest: oTdUWCHEQ0BQ7vIWEQvO+nxyMUbO1ma2B2Zf3Vn18ho=
+
+Name: resources/images/ruleFinder16.png
+SHA-256-Digest: xCmoymQ2exFrUZ/BmrMKltRqhdSRKcFTz23QC0LkyuI=
+
+Name: resources/executables/win/x86/sam.exe
+SHA-256-Digest: oDqjYGatwWXi2/+pjvGBR48jxR8U43UrANH87h1fVbk=
+
+Name: resources/images/setFinderBig.pdn
+SHA-256-Digest: UIKAXghO6BQd67nCBvKpFLkW/NTJSWXa69jAgzZ3WBw=
+
+Name: resources/executables/win/x86/jim.exe
+SHA-256-Digest: iHnfG+7572Iohk81E1KR34TFUMg8kXcu/t5nSl0ZT94=
+
+Name: resources/executables/linux/x86/sam
+SHA-256-Digest: VpWf8Brjuhxo4YRFiInnIFcZuDakilW1AYNpkMdl/Yw=
+
+Name: resources/executables/linux/x86_64/apriori
+SHA-256-Digest: xZPSbRzOnin4VrHUwCen4CpivfEU3coF2In7Llanhbc=
+
+Name: resources/executables/linux/x86_64/relim
+SHA-256-Digest: L1vOa8KP7Fj2m8/mFiQJTSuoUYYVb5e7FpdR/c5FAgE=
+
+Name: resources/executables/linux/x86/apriori
+SHA-256-Digest: i/BGRiVjsarcz3IEtPFjeMaJ6+WatDis9HIo/uPJ6gk=
+
+Name: resources/images/rule_small.png
+SHA-256-Digest: TZ7QdCsfw4NT10WpQ17KhdMGyt9dNh5aENpNjCAk4nk=
+
+Name: resources/executables/linux/x86/relim
+SHA-256-Digest: giqxKqbNrQm5zLTZz9Ta8gJYEuVFX2BK7F0al5ioU7o=
+
+Name: resources/README.txt
+SHA-256-Digest: CL1hXc7L3ZCVkLvf+6spWh/FSimQpvvlfZw/i13YfTA=
+
+Name: resources/images/lupe_small.gif
+SHA-256-Digest: fs8+BnwnOb82tJ3ZGDJjNkLlRGD3/x9W1TaM62RUx1o=
+
+Name: tocs/analytics_mining_subgroup$nodes.xml
+SHA-256-Digest: tBHUVT6eqL7d6+1lpgAwAOVIJtxVRX2gWJpUV8Pxn+4=
+

@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=/home/stevekanonfreak/Dokumente/Masterarbeit/Source Code/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=/opt/Oracle_Java/jdk1.8.0_101/jre/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=/opt/Oracle_Java/jdk1.8.0_101/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=/home/stevekanonfreak/.p2/pool/plugins/org.junit_4.12.0.v201504281640
+org.eclipse.jdt.core.classpathVariable.M2_REPO=/home/stevekanonfreak/.m2/repository
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
+org.eclipse.jdt.core.compiler.compliance=1.8
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.source=1.8
+org.eclipse.jdt.core.userLibrary.JCommon\ 1.0.23=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/home/stevekanonfreak/Dokumente/Masterarbeit/Source Code/jcommon-1.0.23/jcommon-1.0.23.jar" sourceattachment\="/home/stevekanonfreak/Dokumente/Masterarbeit/Source Code/jcommon-1.0.23/src">\n\t\t<attributes>\n\t\t\t<attribute name\="javadoc_location" value\="file\:/home/stevekanonfreak/Dokumente/Masterarbeit/Source%20Code/jcommon-1.0.23/javadoc/"/>\n\t\t</attributes>\n\t</archive>\n</userlibrary>\n
+org.eclipse.jdt.core.userLibrary.JFreeChart\ 1.0.19=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="false" version\="2">\n\t<archive path\="/home/stevekanonfreak/Dokumente/Masterarbeit/Source Code/jfreechart-1.0.19/lib/jfreechart-1.0.19.jar" sourceattachment\="/home/stevekanonfreak/Dokumente/Masterarbeit/Source Code/jfreechart-1.0.19/source">\n\t\t<attributes>\n\t\t\t<attribute name\="javadoc_location" value\="file\:/home/stevekanonfreak/Dokumente/Masterarbeit/Source%20Code/jfreechart-1.0.19/javadoc/"/>\n\t\t</attributes>\n\t</archive>\n</userlibrary>\n

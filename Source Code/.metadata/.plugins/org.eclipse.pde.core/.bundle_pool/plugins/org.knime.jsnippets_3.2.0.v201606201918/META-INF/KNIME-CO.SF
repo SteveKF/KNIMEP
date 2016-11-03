@@ -1,0 +1,101 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: Ue6iDPEIMGXxGr7ckH8wlB6BsFT4A
+ dHQnR1dTDvBiiA=
+SHA-256-Digest-Manifest: gyznMB0CDXoGbIexBvgBzQ5KMsFltGVmBpzb8+u6jPw=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: tocs/manipulation_pmml$nodes.xml
+SHA-256-Digest: NIjhngVhymwnxuT6KjWMg+BTWmRbLoOWqLbcorX19uw=
+
+Name: plugin.xml
+SHA-256-Digest: WqjGllYHLgW367s5c1+ok8cwVMECjAM/Tuf1QBdwUy8=
+
+Name: README.TXT
+SHA-256-Digest: Fm3DS6wmQk/ESJD5VK54lTCe+t/Z3i2YglqWbXyZz5g=
+
+Name: html/nodes/a6a879f.JavaSnippetNodeFactory.html
+SHA-256-Digest: Pk2OJ/3tMtvlRCikVkWrYlwgeG3Xfx8oNB670s9Fd20=
+
+Name: tocs/scripting_java-snippet$nodes.xml
+SHA-256-Digest: ruzdc+SjnI/QuWLRoQxcQIGbFSNxzMvSRz0mYZLL95o=
+
+Name: tocs/manipulation_row_row-filter$nodes.xml
+SHA-256-Digest: abI4jcvMnaqKYb7N1AZybcGAkZj7MJQUF33lHqkNtqI=
+
+Name: html/nodes/21ae3223.PMMLRuleEditorNodeFactory.html
+SHA-256-Digest: bsnm+kIvDIqaAkwihJDZmTv3JHzLsf3u2Pae93QeF9Y=
+
+Name: html/nodes/7e1795fb.RulesToTableNodeFactory.html
+SHA-256-Digest: e0nbhk0Q1eJiNT8nMUJPOBx71JuRT5Ko51cDGcZpAS8=
+
+Name: tocs/manipulation_column_column-convert+replace$nodes.xml
+SHA-256-Digest: EIARXd8NJCYOOsKvsbJzq/oBqTiT+yuRSzz2Dd3/rkc=
+
+Name: html/nodes/4de9a9ae.RuleEngine2PortsNodeFactory.html
+SHA-256-Digest: dqE4NtOvVDDfByZ0lPb6RmCQL9HGzAuKVXnHmuMTTS0=
+
+Name: html/nodes/4e98876e.RuleEngineVariable2PortsNodeFactory.html
+SHA-256-Digest: 0rUXk3cfqjE0uSzrejFKH0JKwYeRHLAZmv/v84Jg/tk=
+
+Name: html/nodes/b3dba09.RuleEngineSplitterNodeFactory.html
+SHA-256-Digest: i0BLkrJttHODGyAmnKkMJWxbWW/seIXL5pucxY8hx8M=
+
+Name: html/nodes/2d2ba2c2.RuleEngineNodeFactory.html
+SHA-256-Digest: yt43tjj5IgRoR5f6/zVPljJhUYVc7g/lRhYdOTfX/Co=
+
+Name: html/nodes/22be7690.PMMLRuleSetPredictorNodeFactory.html
+SHA-256-Digest: f8Rtu2nDKJjDuqQgO1pKwCKufHzkZPS5qKfMSqmmdcE=
+
+Name: schema/templaterepository.exsd
+SHA-256-Digest: kmg+prRONTOkLj+ayNQU7GtKlBaw5UH08Fb1SzID8aE=
+
+Name: html/nodes/4b932548.StringManipulationNodeFactory.html
+SHA-256-Digest: vyK9B8/stwT9qijFh75qHfVcKa9OKxOg5rsfO2mpGVA=
+
+Name: html/nodes/85969da.RuleEngineFilterNodeFactory.html
+SHA-256-Digest: ZIkPWxItejR8D7RFxg9FquKi7AK8I8iQBFvvq8x2rgk=
+
+Name: knime-jsnippets.jar
+SHA-256-Digest: B/wZnnWQrPjQcm2us+9hnnWLoYlUowQuojSCzrU9f2E=
+
+Name: html/nodes/51df1722.RuleEngineVariableNodeFactory.html
+SHA-256-Digest: zihHS73AVkI4xbgFL8WCFbPxYpTjK/AvgqUa+bRfjKM=
+
+Name: tocs/manipulation_row_row-other$nodes.xml
+SHA-256-Digest: RkhAwDRGYzqg3VUplzSoM6acm+m3RJ3h2raRbbd0V4c=
+
+Name: jsnippets/org.knime.base.node.jsnippet.JavaSnippetNodeFactory/Li
+ ne Total_1e40c7f7-673d-4023-8c7e-df116734837a.xml
+SHA-256-Digest: cfduRLQATRYzHwBXM+BDue+EgJYhDLIBoXN+M0hM4iw=
+
+Name: lib/prompt.jar
+SHA-256-Digest: vFdrSz3zJ3E0V4e+AzrSg9C+TiyXRwVF6jc52QkCGmw=
+
+Name: jsnippets/org.knime.base.node.jsnippet.JavaEditVarNodeFactory/So
+ und Alert_8bc7446b-0a6c-4dce-be58-53c0e53635ad.xml
+SHA-256-Digest: qOeegYr2Q/tfxAd7vPwY36vsFdSTQ/jKUAfLjPv9xs4=
+
+Name: html/nodes/4ad8e096.RuleEngineFilter2PortsNodeFactory.html
+SHA-256-Digest: kzj7j4yjn+Vq4Jcp2Sa1JUuRns+Xxc1cJ2JMbJnMv0E=
+
+Name: tocs/analytics_mining_dtree$nodes.xml
+SHA-256-Digest: GPM4EmcZ8NxbRnScwFzn6FCUH9aA/+Qjz57M+SFRPx0=
+
+Name: LICENSE.txt
+SHA-256-Digest: AINBnlxD6j1hoUJCdbqJDDXIUInSr72BED0xfnoxdrY=
+
+Name: html/nodes/2ebab801.JavaEditVarNodeFactory.html
+SHA-256-Digest: 3n/jaJIBtZCHsG+30jVsDxRAvy057tnHt6ZrnL5WvFg=
+
+Name: html/nodes/7335d09c.FromDecisionTreeNodeFactory.html
+SHA-256-Digest: FhOTExHdmX/9vS0zrCJhq0UsEXli1TUodkuKoN8igzY=
+
+Name: lib/snippet_inc/readme.txt
+SHA-256-Digest: 8gFCrRt6+qzlkh9w0jgQf+NrRZDe5RvVaMvRsiH6sZY=
+
+Name: html/nodes/3fc08c59.RuleEngineSplitter2PortsNodeFactory.html
+SHA-256-Digest: c3fwCOezgDHMxLdsUqPnwBUT7K912bdzEXxFk7vrx9U=
+
+Name: tocs/flowcontrol_variables$nodes.xml
+SHA-256-Digest: UxlkKL2XfbU/l0o1gF7sbFKBo9t0paQyyY6zIraUj/E=
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.2"?><plugin>
+	<extension point="org.knime.workbench.repository.nodes">
+    <node category-path="/labs/spotfire" factory-class="org.knime.ext.spotfire.nodes.tibco.TibcoSpotfireNodeFactory" id="org.knime.ext.spotfire.nodes.tibco.TibcoSpotfireNodeFactory">
+    </node>
+    <node after="org.knime.ext.spotfire.nodes.tibco.TibcoSpotfireNodeFactory" category-path="/labs/spotfire" factory-class="org.knime.ext.spotfire.nodes.io.writer.TibcoFileWriterNodeFactory" id="org.knime.ext.spotfire.nodes.io.writer.TibcoFileWriterNodeFactory">
+    </node>
+	</extension>
+ <extension point="org.eclipse.ui.preferencePages">
+    <page category="org.knime.workbench.ui.preferences" class="org.knime.ext.spotfire.preferences.TibcoSpotfirePreferencePage" id="org.knime.ext.spotfire.preferences.TibcoSpotfirePreferencePage" name="TIBCO Spotfire">
+    </page>
+ </extension>
+ <extension point="org.eclipse.core.runtime.preferences">
+    <initializer class="org.knime.ext.spotfire.preferences.TibcoSpotfirePreferenceInitializer">
+    </initializer>
+ </extension>
+ <extension point="org.knime.workbench.repository.categories">
+    <category description="Spotfire Nodes" icon="resources/spotfire.png" level-id="spotfire" name="Spotfire" path="/labs">
+    </category>
+ </extension>
+<extension point="org.eclipse.help.toc">
+<toc extradir="html" file="tocs/labs_spotfire.xml"/>
+<toc extradir="html" file="tocs/labs_spotfire$nodes.xml"/>
+</extension>
+</plugin>

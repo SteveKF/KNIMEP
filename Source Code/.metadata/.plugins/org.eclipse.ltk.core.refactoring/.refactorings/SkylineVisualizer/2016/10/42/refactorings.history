@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SkylineVisualizer/icon&apos; to &apos;icons&apos;" description="Rename resource &apos;icon&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="icon" name="icons" stamp="1476775606613" updateReferences="true"/>
+</session>

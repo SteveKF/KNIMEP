@@ -1,0 +1,187 @@
+import java.util.List;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class BNL {
+
+	private final int wSize;
+	private final int numDims;
+
+	private int iteration;
+
+	private LinkedList<DataPoint> window;
+	private LinkedList<DataPoint> tmpFile;
+	private LinkedList<DataPoint> points;
+	private LinkedList<DataPoint> output;
+
+	/**
+	 * Block Nested Loop Algorithm
+	 * 
+	 * @param wSize
+	 *            maximum size of the window
+	 * @param numDims
+	 *            the number of dimensions of the points which will be added
+	 */
+	public BNL(int wSize, int numDims) {
+		assert (wSize > 0 && numDims > 0);
+		this.wSize = wSize;
+		this.numDims = numDims;
+		points = new LinkedList<>();
+	}
+
+	public void addPoint(float[] point) {
+		assert (point.length == numDims);
+		points.add(new DataPoint(point, 0));
+	}
+
+	public void computeSky() {
+		assert (points.size() > 0);
+		initialize();
+		while (points.size() != 0 || tmpFile.size() != 0) {
+			if (iteration == 0) {
+				scanDatabase(points);
+			} else {
+				scanDatabase(tmpFile);
+			}
+			// flushMemory();
+		}
+
+		for (DataPoint p : output) {
+			System.out.println(p);
+		}
+	}
+
+	private void initialize() {
+		tmpFile = new LinkedList<>();
+		window = new LinkedList<>();
+		output = new LinkedList<>();
+		iteration = 0;
+
+		points.get(0).setEmpty(true);
+		window.add(points.get(0));
+		points.remove(0);
+	}
+
+	private void scanDatabase(LinkedList<DataPoint> l) {
+
+		while (l.size() != 0) {
+			nestedLoop(l);
+		}
+
+		for (DataPoint p : window) {
+			if (p.getTimestamp() == iteration + 1 || p.getEmpty() == true) {
+				output.add(p);
+				window.remove(p);
+			}
+		}
+
+		iteration++;
+	}
+
+	private void nestedLoop(LinkedList<DataPoint> l) {
+
+		LinkedList<DataPoint> tmpList1 = new LinkedList<>(l);
+		LinkedList<DataPoint> tmpList2 = new LinkedList<>(window);
+
+		for (DataPoint p : l) {
+
+			for (DataPoint q : window) {
+				if (dominates(q.getCoordinates(), p.getCoordinates())) {
+					tmpList1.remove(p);
+					break;
+				} else if (dominates(p.getCoordinates(), q.getCoordinates())) {
+					tmpList2.remove(q);
+				}
+			}
+			if (iteration == 0) {
+				if (tmpList2.size() >= wSize) {
+					tmpFile.add(p);
+					tmpList1.remove(p);
+				} else {
+					if (tmpFile.size() == 0) {
+						p.setEmpty(true);
+					}
+					p.setTimestamp(iteration);
+					tmpList2.add(p);
+					tmpFile.remove(p);
+				}
+			}else{
+			if (tmpList2.size() >= wSize) {
+				tmpFile.add(p);
+				tmpList1.remove(p);
+			} else {
+				if (tmpFile.size() == 0) {
+					p.setEmpty(true);
+				}
+				p.setTimestamp(iteration);
+				tmpList2.add(p);
+				tmpFile.remove(p);
+			}
+		}
+
+		l = tmpList1;
+		window = tmpList2;
+	}
+
+	private void flushMemory() {
+		for (DataPoint p : window) {
+			output.add(p);
+			window.remove(p);
+		}
+	}
+
+	private boolean dominates(float[] a, float[] b) {
+		int domDims = 0;
+		for (int i = 0; i < numDims; i++) {
+			if (a[i] < b[i]) {
+				domDims += 2;
+			} else if (a[i] == b[i]) {
+				domDims++;
+			}
+		}
+		if (domDims > numDims) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	private class DataPoint {
+
+		private float[] coords;
+		private int timestamp;
+		private boolean empty;
+
+		private DataPoint(float[] coords, int timestamp) {
+			assert (coords.length == numDims);
+			this.coords = coords;
+			this.timestamp = timestamp;
+		}
+
+		public float[] getCoordinates() {
+			return coords;
+		}
+
+		public void setCoordinates(float[] coords) {
+			this.coords = coords;
+		}
+
+		public int getTimestamp() {
+			return timestamp;
+		}
+
+		public void setTimestamp(int timestamp) {
+			this.timestamp = timestamp;
+		}
+
+		public boolean getEmpty() {
+			return empty;
+		}
+
+		public void setEmpty(boolean empty) {
+			this.empty = empty;
+		}
+	}
+}

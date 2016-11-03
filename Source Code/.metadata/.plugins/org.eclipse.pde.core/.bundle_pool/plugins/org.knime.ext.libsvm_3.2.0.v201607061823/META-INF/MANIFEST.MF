@@ -1,0 +1,49 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.knime.ext.libsvm;singleton:=true
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.6.0,4.0.0)
+ ",org.knime.workbench.core;bundle-version="[3.0.0,4.0.0)",org.knime.w
+ orkbench.repository;bundle-version="[3.0.0,4.0.0)",org.knime.base;bun
+ dle-version="[3.0.0,4.0.0)",org.eclipse.help;resolution:=optional,org
+ .eclipse.help.ui;resolution:=optional
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Ant-Version: Apache Ant 1.9.6
+Export-Package: libsvm,org.knime.ext.libsvm.learner,org.knime.ext.libs
+ vm.port,org.knime.ext.libsvm.predictor,org.knime.ext.libsvm.util
+Bundle-Name: KNIME LIBSVM Nodes
+Bundle-Version: 3.2.0.v201607061823
+Bundle-ClassPath: knime-libsvmlearner.jar,lib/libsvm.jar
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: icons/missing.gif
+SHA-256-Digest: 6zny5Xyr/XQKuNDF+0sm/FynGzNOLPyNZIHDSEK0w2A=
+
+Name: lib/libsvm.jar
+SHA-256-Digest: r6u0J77AeXtJ0iZd9ESDrBmpcHMLt9Lo0yakKFbJLrQ=
+
+Name: plugin.xml
+SHA-256-Digest: 4tivazAgK9GmqBmcys2OUg9eQSiNlPNp9ehXOBuOXM0=
+
+Name: tocs/analytics_mining_svm_libsvm.xml
+SHA-256-Digest: T4ydd+YdIPa01/TmQ42GpmuvKC+EGNwvki4hPOlUsi4=
+
+Name: LICENSE.txt
+SHA-256-Digest: 8TSiQagVcm5WfssAApmJKIINRC9Qyw1o2chFUkUKsAQ=
+
+Name: LIBSVM_LICENSE.txt
+SHA-256-Digest: g76bbn53LPn8rWR3eDOk6vRFfpGOcIlZ5lB6uPTOkas=
+
+Name: html/nodes/226a18c5.LIBSVMLearnerNodeFactory.html
+SHA-256-Digest: yFGP4CAlTJhttOc0UliOKiQ+qjT3T/p0RlHi2ETmgjs=
+
+Name: knime-libsvmlearner.jar
+SHA-256-Digest: QR+mgvCj5iu1vP8zg+1S0yGV/Okia/hK+GKllAWLqgI=
+
+Name: tocs/analytics_mining_svm_libsvm$nodes.xml
+SHA-256-Digest: kE8fGJbm1cdNp5xslcvWu1wIksvvK3oSrAqxl0LPwm0=
+
+Name: html/nodes/16c79ce5.LIBSVMPredictorNodeFactory.html
+SHA-256-Digest: XN9p0z/sYKbh8tZhPOZ1ei5N4qsLXJvwQIwJD7Bfcy0=
+

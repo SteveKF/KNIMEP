@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.knime.features.explorer.serverspace"
+      label="KNIME ServerSpace"
+      version="4.2.5.v201603311411"
+      provider-name="KNIME.com, Zurich, Switzerland">
+
+   <description>
+      KNIME ServerSpace extension for the KNIME Explorer.
+   </description>
+
+   <copyright>
+      Copyright by 
+KNIME.com, Zurich, Switzerland
+All rights reserved.
+   </copyright>
+
+   <license>
+      All rights reserved.
+Copyright by 
+KNIME.com, Zurich, Switzerland
+You may not use, modify, publish, transmit, transfer or sell,
+reproduce, create derivative works from, distribute, perform,
+display, or in any way exploit any of the content, in whole 
+or in part, except as otherwise expressly permitted in writing
+by the copyright owner.
+In case of any questions, please contact KNIME.com at contact@knime.com
+   </license>
+
+   <requires>
+      <import feature="com.knime.features.enterprise.client" version="4.2.4" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="com.knime.explorer.serverspace"
+         download-size="0"
+         install-size="0"
+         version="4.2.3.v201601291159"
+         unpack="false"/>
+
+   <plugin
+         id="com.knime.server.nodes"
+         download-size="0"
+         install-size="0"
+         version="4.2.5.v201603221246"
+         unpack="false"/>
+
+</feature>

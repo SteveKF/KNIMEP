@@ -1,0 +1,293 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: PuoXRpNLRSAx4FfUGjAfqPwL2JFv+
+ 6gOy0HpU9dNOgc=
+SHA-256-Digest-Manifest: LvqyiMKQTc+yu2d2+AmWAMDaFCIv7v3annJ1l2dKzLc=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: org/knime/python/nodes/db/PythonScriptDBNodeConfig.class
+SHA-256-Digest: ocCpmuYeFzj36Wb+f06IS9BpOQXu10OXNTEouZYma8o=
+
+Name: plugin.xml
+SHA-256-Digest: jzY4kFz/LGC/2PMLtrGPYlvyx3lm3Ps8ljduXZ695Q0=
+
+Name: org/knime/python/nodes/PythonNodeModel.class
+SHA-256-Digest: lU1hA/4CGRvvw6guMaAM1fIAmgA8TTDnxHWoEgPoejc=
+
+Name: README.TXT
+SHA-256-Digest: Fm3DS6wmQk/ESJD5VK54lTCe+t/Z3i2YglqWbXyZz5g=
+
+Name: org/knime/python/nodes/source/PythonSourceNodeFactory.class
+SHA-256-Digest: XHJcHbeCvikQU5HPzmUKQw8HHcEwSoRsGjOMZLxLnt8=
+
+Name: org/knime/python/nodes/objectreader/PythonObjectReaderNodeDialog
+ .class
+SHA-256-Digest: zmmOaUh/wUwUy6s5Pwi38VwU6dXEonQ5dUXm0C/Jclg=
+
+Name: org/knime/python/nodes/view/PythonViewNodeView.class
+SHA-256-Digest: Duda5fc/7IQmajoP2VBSINJtNs7iv/H8gNacP6uxby8=
+
+Name: org/knime/python/nodes/db/PythonScriptDBNodeFactory.class
+SHA-256-Digest: MHgkvRU79TfcPrhROfGZ1FRI+04WSFGJ58W8rFiugIw=
+
+Name: html/nodes/577581d3.PythonViewNodeFactory.html
+SHA-256-Digest: wZcToYrCnuHihCyaJ+4CwG+6zJ+8tDuiRUnSFAlmGOo=
+
+Name: org/knime/python/nodes/variables/PythonVariablesNodeConfig.class
+SHA-256-Digest: JqhoPWhQnaWS0BZPN4Lwbkc+ujsCyYKkMcWQbNpQGdo=
+
+Name: org/knime/python/nodes/learner/PythonLearnerNodeFactory.xml
+SHA-256-Digest: cM898rswEHie7dFShx069HspoAGA5O8eXLAO54GJDKs=
+
+Name: html/nodes/24ccd32d.PythonSourceNodeFactory.html
+SHA-256-Digest: VeulUvV1UpwEFRqPNhyMgHGP519FE58U+f9cuXWEVbw=
+
+Name: org/knime/python/nodes/script2in1out/PythonScript2In1OutNodeMode
+ l.class
+SHA-256-Digest: OC86YiI7AyZTUlqEj7Kitw/yRaKdXVv+G7stothLBWU=
+
+Name: org/knime/python/nodes/objectwriter/PythonObjectWriterNodeFactor
+ y.class
+SHA-256-Digest: kniQW5g1zbw2JjzpxjH4f/28ss3Ki9dFpph18FAUEtY=
+
+Name: org/knime/python/nodes/objectwriter/PythonObjectWriterNodeModel.
+ class
+SHA-256-Digest: teirzQdZsMxl7V9ohdICibQ/X5g72/8rhhcwyEMUvX8=
+
+Name: org/knime/python/nodes/view/PythonViewNodeConfig.class
+SHA-256-Digest: Su8dL2UckpW6zucHAHimlBul6EIBjshO7qUMko+7xZI=
+
+Name: templates/python-predictor/Class Scoring__57526826085406209.xml
+SHA-256-Digest: o31TMrBuOG0Gan9Yqmy++sB3EnhH1yzXDtmBcMx4uJg=
+
+Name: org/knime/python/nodes/objectreader/PythonObjectReaderNodeConfig
+ .class
+SHA-256-Digest: orMOoR6hZcdOSh1StAZxHy6oixc/AaExRI0MXHf8CDU=
+
+Name: org/knime/python/nodes/script/PythonScriptNodeFactory.class
+SHA-256-Digest: 6iR+jhxh6tvpwPsDQTscch7lUk71thnkxIrZnXgF39c=
+
+Name: org/knime/python/nodes/db/PythonScriptDBNodeDialog.class
+SHA-256-Digest: QMFR9d+xQaCUq5PwvIouyUCgvhXqQ/TbVEOt2/WRaOI=
+
+Name: org/knime/python/nodes/script2in1out/PythonScript2In1OutNodeFact
+ ory.class
+SHA-256-Digest: juduFhaqRLwzlZ5mmtoG+iZEypWguxR00qqtVUBahC8=
+
+Name: org/knime/python/nodes/view/PythonViewNodeDialog.class
+SHA-256-Digest: YurUpmENQgnme6VmxX020TB9uQd3aRzuGJfAZHISt3I=
+
+Name: org/knime/python/nodes/view/PythonViewNodeModel.class
+SHA-256-Digest: 96wAkMqaxt5QaYwY+g3XJ72iEV83XYSqrWJCDq9GC04=
+
+Name: org/knime/python/nodes/predictor/PythonPredictorNodeModel.class
+SHA-256-Digest: wfUXVOVMg+QPlcc4BjDI6nOf4el1EsjsQEKnu8Qs7Q8=
+
+Name: org/knime/python/nodes/predictor/pythonpredictor.png
+SHA-256-Digest: SRxjq+6wtydVs29X/8BnFtKmi7N/Mwb3oYIkKXpHpMg=
+
+Name: org/knime/python/nodes/variables/PythonVariablesNodeFactory.xml
+SHA-256-Digest: UkNzpN6gY/1SkessvWHT+Bt6AgDebROomwQHuLQ8ppg=
+
+Name: icons/python.png
+SHA-256-Digest: 0mB2iy9SMxVso4cJGJkaooGbIRK25OWUgVL9oztz7dA=
+
+Name: org/knime/python/nodes/learner/PythonLearnerNodeFactory.class
+SHA-256-Digest: KX6cbtI1vfHZ+C+izhmdp6mIJvIAkQMUDkW4qUOJUIY=
+
+Name: html/nodes/5a3bea99.PythonVariablesNodeFactory.html
+SHA-256-Digest: ppJNfU8/N2SR+1A2S0DU+GELtGqbSKYmZPig92O0wpY=
+
+Name: templates/python-view/Recursive Feature Selection__2993396299370
+ 377070.xml
+SHA-256-Digest: 1E4O2roKrHW1IIRNrn7HbxSVwOZD8BgBSro3hQEIQOk=
+
+Name: org/knime/python/nodes/learner/pythonlearner.png
+SHA-256-Digest: i2Wm1k9TE3Lt35gWvAXUKvfU5DpZJO1UpL60ZEN+3kw=
+
+Name: org/knime/python/nodes/objectreader/PythonObjectReaderNodeModel.
+ class
+SHA-256-Digest: b2P6pPCrAfOL4/aQv0jEZZO01/iI2SVp5TZcEL3hcvE=
+
+Name: html/nodes/4720ea2d.PythonObjectWriterNodeFactory.html
+SHA-256-Digest: MK+ooR0RBhdTWwgiFUm74bDK3A8h9SUDpgmQje8O6Rs=
+
+Name: org/knime/python/nodes/objectwriter/PythonObjectWriterNodeDialog
+ .class
+SHA-256-Digest: 3ofHazCUTwhHecyq7dGj5a8pb1l4+8fjFIftq/2XBzc=
+
+Name: org/knime/python/nodes/script/PythonScriptNodeFactory.xml
+SHA-256-Digest: 1SUM0qb0TBZq+5aW/fjeD9TXsKzEzV1GS4KmrqKq/Lc=
+
+Name: LICENSE.txt
+SHA-256-Digest: AINBnlxD6j1hoUJCdbqJDDXIUInSr72BED0xfnoxdrY=
+
+Name: org/knime/python/nodes/source/PythonSourceNodeFactory.xml
+SHA-256-Digest: rrigsyVfjQT/HWe3moxzCiauoJlh3FyIR6FXdi7gs5I=
+
+Name: org/knime/python/nodes/objectwriter/PythonObjectWriterNodeConfig
+ .class
+SHA-256-Digest: zxbKkV2mqQ8KYCeLEqLwRu62C1vga5AARbTUOwpzbr0=
+
+Name: html/nodes/7fb5d7d3.PythonObjectReaderNodeFactory.html
+SHA-256-Digest: cHfuYLSbQFL5fFS7VQbgxBHLVNcl1jUouY7DEMqUdhI=
+
+Name: html/nodes/5b3e3e1b.PythonLearnerNodeFactory.html
+SHA-256-Digest: u+iJ8G4XNQRwfNSG57elsKsByNGEf5S8vKYPk44gBes=
+
+Name: org/knime/python/nodes/script/PythonScriptNodeConfig.class
+SHA-256-Digest: kV3kEd9MtUHYBkRuRPrWkChoaVtbutu/oyg5e0pTUh0=
+
+Name: org/knime/python/nodes/variables/pythonvariables.png
+SHA-256-Digest: x84wujRUu2ML68i7yqL+MSM4C4/5Ijuxnnp5Sfum2u0=
+
+Name: templates/python-predictor/Regression Scoring__31072090894569778
+ 40.xml
+SHA-256-Digest: kd4VasG/5kz4dxuqDbWNnQsiYwNUZCXuiYuEdxC0Zmc=
+
+Name: org/knime/python/nodes/script/PythonScriptNodeDialog.class
+SHA-256-Digest: cr1jjA8Gv2Z5R7AKstzDncHE/FnOCY1b4k2i65xC8tM=
+
+Name: org/knime/python/nodes/script2in1out/pythonscript2in1out.png
+SHA-256-Digest: 95UuRUkDkAxvwo2uP2C2FgMjvGhU3yyNZF/NICLnaTI=
+
+Name: org/knime/python/nodes/learner/PythonLearnerNodeModel.class
+SHA-256-Digest: XbAdrQkdxQU9+sSREiVaJ4NQrXCI+c2pWQdTthSIwOc=
+
+Name: org/knime/python/nodes/view/PythonViewNodeFactory.class
+SHA-256-Digest: R6C6B5G5v4RPJwep2WrtZOf+6ndT2VwC2w92KtA4fNM=
+
+Name: html/nodes/5800a44f.PythonPredictorNodeFactory.html
+SHA-256-Digest: nKQSPQ82HzloaQ0ciyOUR/q7o3tP5FzXQCXQ+mrmh20=
+
+Name: org/knime/python/nodes/script2in1out/PythonScript2In1OutNodeFact
+ ory.xml
+SHA-256-Digest: 20iOykF3KXv//aQA4AXsD3QuB/+qeXauCKiZdKltThY=
+
+Name: org/knime/python/nodes/db/PythonScriptDBNodeModel.class
+SHA-256-Digest: I5uoouxwRxMvvlewhNh3AZEBchb/lg5vgfkYHDhpk2U=
+
+Name: templates/python-learner/Random Forest__3157120637945058160.xml
+SHA-256-Digest: YTXVcIQ3zdTkxGzExL3LAb6P21DEoq+Me6xo5GCOAJM=
+
+Name: org/knime/python/nodes/objectwriter/PythonObjectWriterNodeFactor
+ y.xml
+SHA-256-Digest: iZ7N4hAoczBxAtgMZatWgYCxGuBZFLXULqhff3zvV2c=
+
+Name: org/knime/python/nodes/script2in1out/PythonScript2In1OutNodeConf
+ ig.class
+SHA-256-Digest: lD97nlyFcWNCC0rhtgiE+a/9oCeBVrd3hUIW+rgZUIM=
+
+Name: org/knime/python/nodes/source/pythonsource.png
+SHA-256-Digest: XyU+a95EUmbMihMIlOz66XW38e0jALWhtLE0ZQyz44o=
+
+Name: org/knime/python/nodes/objectreader/PythonObjectReaderNodeFactor
+ y.class
+SHA-256-Digest: 7SSVumqFLyydKzP+2L/kf2KhmLc+i4L82+GK5Fa0Xqw=
+
+Name: org/knime/python/nodes/predictor/PythonPredictorNodeConfig.class
+SHA-256-Digest: LIpVuvcxXyZdP+Z9UFET7aIE5AZOXN0sg6OO9LgDFYo=
+
+Name: org/knime/python/nodes/script2in1out/PythonScript2In1OutNodeDial
+ og.class
+SHA-256-Digest: nSA0t6OUZ1L/fmgt0HTP90Jmhv1fXeV8MsMOJ7Yd7lA=
+
+Name: templates/python-learner/Decsion Tree__5234364958757724720.xml
+SHA-256-Digest: WjVaeP4DQ5exjSmcvacREfCC+p61ZR/ExxuP0ZeOTWw=
+
+Name: org/knime/python/nodes/predictor/PythonPredictorNodeFactory.xml
+SHA-256-Digest: inhDzAketsGspMmEnF89KUcjrIa7wlFD67agGO2axbg=
+
+Name: templates/python-script/Recursive Feature Elimination with SVC__
+ 9187505239470828848.xml
+SHA-256-Digest: yjU2W8JTJefYbSB6lgO3QlclMDFlnR71PUlybL9wz38=
+
+Name: org/knime/python/nodes/objectwriter/pythonobjectwriter.png
+SHA-256-Digest: k2FHGdMNvTnRnJTvjiHwNPhjlXn+AojdMSvZ5ZsipsU=
+
+Name: org/knime/python/nodes/view/PythonViewNodeFactory.xml
+SHA-256-Digest: L7uyV8Br/5l+gn/zGFpZJvNGhgSNBFjHitp0B1croXE=
+
+Name: org/knime/python/nodes/script/pythonscript.png
+SHA-256-Digest: Ty7mgQHD58bygq2rY9SW2a39nnsrKEs3OLc01Q46DUk=
+
+Name: org/knime/python/nodes/predictor/PythonPredictorNodeDialog.class
+SHA-256-Digest: kPAw9Fdo+m1AazlBCnSwEnA9+xIwmsh5yJCpXYHrVDc=
+
+Name: org/knime/python/nodes/variables/PythonVariablesNodeFactory.clas
+ s
+SHA-256-Digest: XPdqt0mfz9PRKsMEfc20HMKbk12ACpc2nIr30Jcb+ac=
+
+Name: org/knime/python/nodes/variables/PythonVariablesNodeModel.class
+SHA-256-Digest: ZiVQLhAZ8bj8cRYLwx4I1a+BxtMqhtwR6NnOkogvPuA=
+
+Name: templates/python-view/Multi-model ROC curve__550240345443455261.
+ xml
+SHA-256-Digest: nNCIhI62FlfosJ5EbcTDkP9gR+MdvRZ/DaY5hoKSS18=
+
+Name: tocs/scripting_python$nodes.xml
+SHA-256-Digest: cUTkthms6VhrRg27hBW4S3aCHucl5ezvxt/HcxcCsj0=
+
+Name: tocs/scripting_python.xml
+SHA-256-Digest: QqGqbzAtKUlE0VZ17QsZZgDn4GEaUYnTWhawifW+vLQ=
+
+Name: org/knime/python/nodes/learner/PythonLearnerNodeConfig.class
+SHA-256-Digest: ejmSy6AQgw20MxyolPVMPOVru/+PJTBzH3/zJGoExc0=
+
+Name: org/knime/python/nodes/predictor/PythonPredictorNodeFactory.clas
+ s
+SHA-256-Digest: KyNRUhoY5vnnDjCV6bdY6gQ8GxRiunvSmr7l3d2aBUU=
+
+Name: templates/python-source/CSV Reader__5887848083068452304.xml
+SHA-256-Digest: eB4g2ajBPAvmXpxDVWRqtHd7vPyeTjs3WAmehpj+lqs=
+
+Name: org/knime/python/nodes/learner/PythonLearnerNodeDialog.class
+SHA-256-Digest: 7msf5TV5LozxKJ+zlKrniID6AaO+/lYx8xMCwLHFMyk=
+
+Name: html/nodes/72dbc235.PythonScript2In1OutNodeFactory.html
+SHA-256-Digest: TtXYdBDTIhzH91ICnQpwRzehWHpGv3121H35SvE4+V8=
+
+Name: org/knime/python/nodes/db/PythonScriptDBNodeFactory.xml
+SHA-256-Digest: 9DBhHqXFArpNE6fJTL8afpnQYpMPHwsv2N6ymi+eLqo=
+
+Name: org/knime/python/nodes/source/PythonSourceNodeDialog.class
+SHA-256-Digest: yxEMJYMJaSV+iz1nphopxULf6ai/5dSaJeqeUgJg5x8=
+
+Name: templates/python-script-2in1out/SQL-Like join__75593800165902658
+ 33.xml
+SHA-256-Digest: 1HJ/wje/ML5N9baac5wqWVUz9uaZiBWiMpkqoeCkB2Q=
+
+Name: org/knime/python/nodes/script/PythonScriptNodeModel.class
+SHA-256-Digest: kYRiABfmvMcAsv53u+piEtE2bWXEW8j3B/Y8Z3zVArM=
+
+Name: org/knime/python/nodes/objectreader/PythonObjectReaderNodeFactor
+ y.xml
+SHA-256-Digest: 37llIJ7CNn5oE+WDt1PSkxSpEfWwgzkmniLp1Z/Tw7M=
+
+Name: org/knime/python/nodes/variables/PythonVariablesNodeDialog.class
+SHA-256-Digest: mmgV8KxLdwt7OKSZEG5jRKSwDBHxtEQYPHNzuQ5Oh/E=
+
+Name: org/knime/python/nodes/objectreader/pythonobjectreader.png
+SHA-256-Digest: 6euseJjPu2Wq8AwqMs2miXLWNXJxKONTQLZMIBhUDgM=
+
+Name: org/knime/python/nodes/source/PythonSourceNodeModel.class
+SHA-256-Digest: AMQMRRCRDreYIfsszYE2chBr4tdPqS5oTza4V0OIYJk=
+
+Name: html/nodes/28be86b8.PythonScriptDBNodeFactory.html
+SHA-256-Digest: lOPe8+IpkU/GQo1DYC08IMj7J+r2BHsApn2KNFZzek4=
+
+Name: org/knime/python/nodes/source/PythonSourceNodeConfig.class
+SHA-256-Digest: gEgqpG0j0wMlI+6yLCWvugGBNmMtSZm2S8fU02VuOGc=
+
+Name: html/nodes/151f312d.PythonScriptNodeFactory.html
+SHA-256-Digest: PP3VotNg9YamP+uYkOqK3xu5C1O/XwO46XoNqoSnb9o=
+
+Name: org/knime/python/nodes/view/pythonview.png
+SHA-256-Digest: rJUBkEFZcrqt57/0iCfW6y3JsvIGLlsUCWQo+uCmWtQ=
+
+Name: templates/python-learner/Logistic Regression__414359251735363097
+ 3.xml
+SHA-256-Digest: ftDMEtICbY9X88TxFIoK4W3nCQEnohu+qHZGryzsGKM=
+
+Name: org/knime/python/nodes/db/pythonscript.png
+SHA-256-Digest: c2LT/HgO30dlHGvoCOihCY6xzhqBxTawpzHQYJ/C7HM=
+

@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Bundle-SymbolicName: net.sf.saxon;singleton:=true
+Export-Package: net.sf.saxon,net.sf.saxon.dom,net.sf.saxon.event,net.s
+ f.saxon.evpull,net.sf.saxon.expr,net.sf.saxon.expr.flwor,net.sf.saxon
+ .expr.instruct,net.sf.saxon.expr.number,net.sf.saxon.expr.parser,net.
+ sf.saxon.expr.sort,net.sf.saxon.functions,net.sf.saxon.java,net.sf.sa
+ xon.lib,net.sf.saxon.om,net.sf.saxon.pattern,net.sf.saxon.pull,net.sf
+ .saxon.query,net.sf.saxon.regex,net.sf.saxon.s9api,net.sf.saxon.seria
+ lize,net.sf.saxon.serialize.charcode,net.sf.saxon.serialize.codenorm,
+ net.sf.saxon.stax,net.sf.saxon.style,net.sf.saxon.sxpath,net.sf.saxon
+ .trace,net.sf.saxon.trans,net.sf.saxon.tree,net.sf.saxon.tree.iter,ne
+ t.sf.saxon.tree.linked,net.sf.saxon.tree.tiny,net.sf.saxon.tree.util,
+ net.sf.saxon.tree.wrapper,net.sf.saxon.type,net.sf.saxon.value,net.sf
+ .saxon.xpath,net.sf.saxon.z
+Bundle-Name: Saxon HE library
+Bundle-Version: 9.5.18.v201502142306
+Bundle-ClassPath: lib/saxon9he.jar
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: lib/saxon notices/JAMESCLARK.txt
+SHA-256-Digest: WrkBDMvUSEzqjgYlm2TRuywtRMXfOXNJZv/aiKQ19kw=
+
+Name: lib/saxon notices/UNICODE.txt
+SHA-256-Digest: AffIgQjL+uF06y3QCdzgA61fx6GmchqhhWFSUjXsqvM=
+
+Name: lib/saxon notices/CERN.txt
+SHA-256-Digest: n+un5XDYv7s1lscLAeClH06zsIHcoY4iqZwt6odc2Ho=
+
+Name: lib/saxon notices/LICENSE.txt
+SHA-256-Digest: h0Rp/7AIDFB7+AHMb3x8FnnwQwoQIJyfq0iCPCtHvts=
+
+Name: README.txt
+SHA-256-Digest: dsnNC96N61VbDHmdH72aGbC0K9RYWDX6/hYTTPaeUj4=
+
+Name: lib/saxon notices/THAI.txt
+SHA-256-Digest: NgaDbzGWVrGEIj+FxsMIA1RhhewYBdaNLFcFVJAKzZ8=
+
+Name: LICENSE.txt
+SHA-256-Digest: +rPda9qyJvHAhjCx3ZF+Efy07F4eAg4sFvg6ChOGPoU=
+
+Name: lib/saxon9he.jar
+SHA-256-Digest: SKlvCv5r0jkW1cfzfJjGZJQnyhis30yHJmTevciI8ck=
+

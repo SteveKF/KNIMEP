@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Item Sets / Association Rules" link_to="../org.knime.base/tocs/analytics_mining_subgroup.xml#analytics_mining_subgroup">
+<topic href="PLUGINS_ROOT/org.knime.ext.itemset/html/nodes/67844b2c.AssociationRuleLearnerNodeFactory.html" label="Association Rule Learner (Borgelt)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.itemset/html/nodes/70a2e23a.ItemSetMinerNodeFactory.html" label="Item Set Finder (Borgelt)"/>
+</toc>

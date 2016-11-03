@@ -1,0 +1,244 @@
+package org.knime;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+
+import javax.swing.JRadioButton;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+
+import org.knime.core.data.DataRow;
+import org.knime.core.data.DataTableSpec;
+import org.knime.core.node.BufferedDataTable;
+import org.knime.core.node.DataAwareNodeDialogPane;
+import org.knime.core.node.InvalidSettingsException;
+import org.knime.core.node.NodeSettingsRO;
+import org.knime.core.node.NodeSettingsWO;
+import org.knime.core.node.NotConfigurableException;
+import org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane;
+import org.knime.core.node.defaultnodesettings.DialogComponentBoolean;
+import org.knime.core.node.defaultnodesettings.DialogComponentButton;
+import org.knime.core.node.defaultnodesettings.DialogComponentButtonGroup;
+import org.knime.core.node.defaultnodesettings.DialogComponentColumnFilter;
+import org.knime.core.node.defaultnodesettings.DialogComponentDoubleRange;
+import org.knime.core.node.defaultnodesettings.DialogComponentLabel;
+import org.knime.core.node.defaultnodesettings.DialogComponentNumber;
+import org.knime.core.node.defaultnodesettings.DialogComponentNumberEdit;
+import org.knime.core.node.defaultnodesettings.DialogComponentStringSelection;
+import org.knime.core.node.defaultnodesettings.SettingsModelBoolean;
+import org.knime.core.node.defaultnodesettings.SettingsModelDouble;
+import org.knime.core.node.defaultnodesettings.SettingsModelDoubleRange;
+import org.knime.core.node.defaultnodesettings.SettingsModelFilterString;
+import org.knime.core.node.defaultnodesettings.SettingsModelInteger;
+import org.knime.core.node.defaultnodesettings.SettingsModelString;
+import org.knime.core.node.port.PortObject;
+import org.knime.core.node.port.PortObjectSpec;
+import org.knime.core.node.port.flowvariable.FlowVariablePortObject;
+import org.knime.core.node.port.flowvariable.FlowVariablePortObjectSpec;
+
+/**
+ * <code>NodeDialog</code> for the "RepresentativeSkyline" Node. An algorithm
+ * which computes a k-representative skyline based on significance and
+ * diversity. * n
+ * 
+ * @author Stefan Wohlfart
+ */
+public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSettingsPane {
+
+	private LinkedList<String> minList;
+	private LinkedList<String> maxList;
+	public static final String CFGKEY_THRESHHOLD_OPTIONS_MAX = "max_threshholdOptionsModel";
+	public static final String CFGKEY_THRESHHOLD_SINGLE_MAX = "threshholdSingleMax";
+	public static final String CFGKEY_THRESHHOLD_RANGE_MAX = "threshholdRangeMax";
+	public static final String CFGKEY_SELECTION_MAX = "selectionMax";
+
+	public SettingsModelDouble max_singleModel;
+	public SettingsModelDoubleRange max_rangeModel;
+	public SettingsModelString max_threshholdOptionsModel;
+	public SettingsModelString max_selectionModel;
+	
+	private Eventmax_handler max_handler;
+
+	public enum  threshholdOptions{
+	    SINGLE, RANGE, NONE
+	}
+	
+	public String max_prevColumn;
+	public static HashMap<String, String> max_optionMap = new HashMap<>();
+	public static HashMap<String, double[]> max_threshholdMap = new HashMap<>();
+
+	/**
+	 * New pane for configuring RepresentativeSkyline node dialog. This is just
+	 * a suggestion to demonstrate possible default dialog components.
+	 */
+	protected RepresentativeSkylineNodeDialog() {
+		super();
+
+		//initialize fields
+		minList = new LinkedList<>();
+		maxList = new LinkedList<>();
+		max_threshholdOptionsModel = new SettingsModelString(CFGKEY_THRESHHOLD_OPTIONS_MAX, threshholdOptions.NONE.toString());
+		max_singleModel = new SettingsModelDouble(CFGKEY_THRESHHOLD_SINGLE_MAX, 0.0);
+		max_rangeModel = new SettingsModelDoubleRange(CFGKEY_THRESHHOLD_RANGE_MAX, 0.0, 1.0);
+		max_singleModel.setEnabled(false);
+		max_rangeModel.setEnabled(false);
+
+//		addDialogComponent(new DialogComponentNumber(
+//				new SettingsModelInteger(RepresentativeSkylineNodeModel.CFGKEY_K, 2), "k", 1));
+//
+//		createNewTabAt("Maximized Dimensions", 0);
+//		addDialogComponent(new DialogComponentLabel("Choose Dimensions which" + "should be maximized."));
+//
+//		addDialogComponent(new DialogComponentColumnFilter(
+//				new SettingsModelFilterString(RepresentativeSkylineNodeModel.CFGKEY_MAX_DIMENSIONS),
+//				RepresentativeSkylineNodeModel.IN_PORT_SKYLINE, false));
+//
+//		createNewTabAt("Minimized Dimensions", 1);
+//		addDialogComponent(new DialogComponentLabel("Choose Dimensions which" + "should be minimized"));
+//
+//		addDialogComponent(new DialogComponentColumnFilter(
+//				new SettingsModelFilterString(RepresentativeSkylineNodeModel.CFGKEY_MIN_DIMENSIONS),
+//				RepresentativeSkylineNodeModel.IN_PORT_SKYLINE, false));
+	}
+
+	@Override
+	public void loadSettingsFrom(NodeSettingsRO settings, PortObject[] input) throws NotConfigurableException {
+		// access data input which dimension should be minimized or maximized
+		for (DataRow row : (BufferedDataTable) input[RepresentativeSkylineNodeModel.IN_PORT_FLOW]) {
+			for (int i = 0; i < row.getNumCells(); i++) {
+				if (!row.getCell(i).isMissing()) {
+					if (i == 0) {
+						minList.add(row.getCell(i).toString());
+					} else {
+						maxList.add(row.getCell(i).toString());
+					}
+				}
+			}
+		}
+		
+		//initialize fields which needs input information
+		max_selectionModel = new SettingsModelString(CFGKEY_SELECTION_MAX, maxList.getFirst());
+		max_prevColumn = maxList.getFirst();
+		
+		System.out.println("Test");
+
+		// add components
+		createNewTabAt("Threshhold", 2);
+		createNewGroup("Maximized Dimension");
+		addDialogComponent(new DialogComponentStringSelection(max_selectionModel, "Dimensions", maxList));
+		addDialogComponent(new DialogComponentButtonGroup(max_threshholdOptionsModel, false, "Threshhold",threshholdOptions.SINGLE.toString(),threshholdOptions.RANGE.toString(),threshholdOptions.NONE.toString()));
+		addDialogComponent(new DialogComponentNumberEdit(max_singleModel, "Threshhold Single"));
+		addDialogComponent(new DialogComponentDoubleRange(max_rangeModel, 0.0, Double.MAX_VALUE, 0.5, "Threshhold Range"));
+		closeCurrentGroup();
+
+		
+		// set listener
+		max_handler = new Eventmax_handler();
+		max_selectionModel.addChangeListener(max_handler);
+		max_singleModel.addChangeListener(max_handler);
+		max_rangeModel.addChangeListener(max_handler); 
+		max_threshholdOptionsModel.addChangeListener(max_handler);
+
+		super.loadSettingsFrom(settings, input);
+
+	}
+
+	private void saveValues(String key) {
+		
+		max_selectionModel.removeChangeListener(max_handler);
+		max_singleModel.removeChangeListener(max_handler);
+		max_rangeModel.removeChangeListener(max_handler); 
+		max_threshholdOptionsModel.removeChangeListener(max_handler);
+
+		// save which option was chosen
+		if (max_optionMap.replace(key, max_threshholdOptionsModel.getStringValue()) == null) {
+			max_optionMap.put(key, max_threshholdOptionsModel.getStringValue());
+		}
+
+		// save values
+		if (max_threshholdOptionsModel.getStringValue() == "Single") {
+			double[] tmp = new double[] { max_singleModel.getDoubleValue(), 0 };
+			if (max_threshholdMap.replace(key, tmp) == null) {
+				max_threshholdMap.put(key, tmp);
+			}
+		} else if (max_threshholdOptionsModel.getStringValue() == "Range") {
+			double[] tmp = new double[] { max_rangeModel.getMinRange(), max_rangeModel.getMinRange() };
+			if (max_threshholdMap.replace(key, tmp) == null) {
+				max_threshholdMap.put(key, tmp);
+			}
+		} else {
+			double[] tmp = new double[] { 0, 0 };
+			if (max_threshholdMap.replace(key, tmp) == null) {
+				max_threshholdMap.put(key, tmp);
+			}
+		}
+		
+		max_selectionModel.addChangeListener(max_handler);
+		max_singleModel.addChangeListener(max_handler);
+		max_rangeModel.addChangeListener(max_handler); 
+		max_threshholdOptionsModel.addChangeListener(max_handler);
+	}
+
+	private void loadValues(String key) {
+		
+		max_selectionModel.removeChangeListener(max_handler);
+		max_singleModel.removeChangeListener(max_handler);
+		max_rangeModel.removeChangeListener(max_handler); 
+		max_threshholdOptionsModel.removeChangeListener(max_handler);
+		
+		max_threshholdOptionsModel.setStringValue(max_optionMap.get(key));
+		if (max_threshholdOptionsModel.getStringValue() == "Single") {
+			double[] tmp = max_threshholdMap.get(key);
+			max_singleModel.setDoubleValue(tmp[0]);
+		} else if (max_threshholdOptionsModel.getStringValue() == "Range") {
+			double[] tmp = max_threshholdMap.get(key);
+		} else {
+			// do nothing
+		}
+		
+		max_selectionModel.addChangeListener(max_handler);
+		max_singleModel.addChangeListener(max_handler);
+		max_rangeModel.addChangeListener(max_handler); 
+		max_threshholdOptionsModel.addChangeListener(max_handler);
+	}
+
+	private class Eventmax_handler implements ChangeListener {
+
+		@Override
+		public void stateChanged(ChangeEvent e) {
+
+			if (e.getSource() == max_selectionModel) {
+				System.out.println("Save values for " + max_prevColumn);
+				saveValues(max_prevColumn);
+				max_prevColumn = max_selectionModel.getStringValue();
+				System.out.println("Load values for " + max_selectionModel.getStringValue());
+				loadValues(max_prevColumn);
+				
+			}else if(e.getSource() == max_singleModel){
+				 System.out.println("Save values for "+max_selectionModel.getStringValue());
+				 saveValues(max_threshholdOptionsModel.getStringValue());
+				 
+			}else if(e.getSource() == max_rangeModel){
+				 System.out.println("Load values for "+max_selectionModel.getStringValue());
+				 saveValues(max_threshholdOptionsModel.getStringValue());
+				 
+			}else if(e.getSource() == max_threshholdOptionsModel){
+				 if(max_threshholdOptionsModel.getStringValue()== threshholdOptions.SINGLE.toString()){
+				 max_singleModel.setEnabled(true);
+				 max_rangeModel.setEnabled(false);
+				 }else if(max_threshholdOptionsModel.getStringValue()==threshholdOptions.RANGE.toString()){
+				 max_singleModel.setEnabled(false);
+				 max_rangeModel.setEnabled(true);
+				 }else{
+				 max_singleModel.setEnabled(false);
+				 max_rangeModel.setEnabled(false);
+				 }
+				 saveValues(max_threshholdOptionsModel.getStringValue());
+			}
+
+		}
+	}
+}

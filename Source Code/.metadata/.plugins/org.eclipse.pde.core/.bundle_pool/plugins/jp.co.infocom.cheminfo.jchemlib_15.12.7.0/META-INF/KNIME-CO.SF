@@ -1,0 +1,723 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: qnpC62Y90JUFQgcdVU1I1Th9f+Bdx
+ Hv9Tbcajg/M00w=
+SHA-256-Digest-Manifest: +qKKcUGmEZJgYyKMRO2XG1j6fczjY/pnJ7d5QHnjNHk=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: lib/poi-ooxml-3.11-beta2-20140914-56023.jar
+SHA-256-Digest: jUYEELOWCtCqPoWy7tN2EWZ39c9ULt5Oy3pbJcOmaoE=
+
+Name: lib/com.chemaxon-fragmenter.jar
+SHA-256-Digest: poaPnJHkLuug5MjKti8870gSmAECgGbsSa+W2gVIAyc=
+
+Name: lib/com.chemaxon-search-base.jar
+SHA-256-Digest: 0GIorz5Q40lg0GLNYMmnCEvfKNPjIE+5893AQmXvwCM=
+
+Name: lib/freehep-graphicsio-emf-2.2.1.jar
+SHA-256-Digest: vzo7uysmMg0ywrHfxfOpez41SWHsTRUl11uB5WNx/M0=
+
+Name: lib/looks-2.1.4.jar
+SHA-256-Digest: SI+wiYvL4lwMAwpk0UwR5GR99sNlJ7n01g1pO1g9OCU=
+
+Name: lib/freehep-graphicsbase-2.2.1.jar
+SHA-256-Digest: unzct/30pvcFYhEsp85UQoX8n71a2Lgrf4tWt2K0aO0=
+
+Name: lib/com.chemaxon-jchem-main.jar
+SHA-256-Digest: Nr91xcFaNSa0Mqd3MOQx8zQ81ZfkucoQ22Bz/fy3Qp4=
+
+Name: lib/cxnregistry-native-x64-1.0.jar
+SHA-256-Digest: mv7fnP8jLvwz/DI57yZ2kyROO757v9oKXLxnis+wPls=
+
+Name: lib/jextexp-1.0.jar
+SHA-256-Digest: CgaF4rAY/g0ezxPEXgLeqO+Fz6PZpDjtLVyJcfSbBq8=
+
+Name: lib/pdfbox-1.8.9.jar
+SHA-256-Digest: NPhe5fKVvlfTnYKycZivKsc6JYH/TnZ+qhS/nM1w0JM=
+
+Name: lib/derbyLocale_ko_KR-10.10.1.1.jar
+SHA-256-Digest: /CK5wovwt3nd3zcAhKmt5D+165/+Lirw+LsiO2Go5i8=
+
+Name: lib/com.chemaxon-pharmacophore.jar
+SHA-256-Digest: pMVhLyYp9qYkQ80r2wE9FoBy+RBKo5PPvTD8h08lGO8=
+
+Name: lib/automaton-1.11-8.jar
+SHA-256-Digest: D72JLGJAaHlzD/3InMmmcz0OwFjtrTJEe/f4yRK1DEA=
+
+Name: lib/com.chemaxon-jklustor.jar
+SHA-256-Digest: MG9vX8seyCkyTEMQTBBr2ntHtupKdmpgPzsqz/eX04M=
+
+Name: lib/freehep-io-2.2.2.jar
+SHA-256-Digest: iIVuwMk8iLn4pZnQJaK3ovODuW3qnFnqj/CNxqrpLd0=
+
+Name: lib/jai_codec-1.0.jar
+SHA-256-Digest: K7ZbQT8uV8qoWcpA/tRAv3DQmMZtIBZKo4uaUQvISXo=
+
+Name: lib/com.chemaxon-jchem-utils.jar
+SHA-256-Digest: WoKgt5koKTzgJR77fzjTldROGcF5Zf0j9w/4h/6jyzk=
+
+Name: lib/com.chemaxon-icons.jar
+SHA-256-Digest: uMrwi11RaOe7GeFLHXNSky/9j4d8eSyRWYhs0tzQh14=
+
+Name: lib/com.chemaxon-search-extended.jar
+SHA-256-Digest: mORIifsDIcnfU34VmwQsh4AZF6aWM9caPQXBwjgMI0s=
+
+Name: lib/com.chemaxon-enumeration.jar
+SHA-256-Digest: NbVARJi8Sv4FH5WjHL4/eWVu7yEjAZNV5BQXYvo8T0I=
+
+Name: lib/tika-core-1.2.jar
+SHA-256-Digest: ATEVE3LjSCnLLCNNMD653ERAN7f7iIutBD+lFOEXSOg=
+
+Name: lib/com.chemaxon-io-skc.jar
+SHA-256-Digest: 3G0iOfbazKIhV7OEtaGWLzvUKWBsJxYzEC9CgdPayIk=
+
+Name: lib/com.chemaxon-marvin-app.jar
+SHA-256-Digest: aeYxkP31gzGx1OPksmJuMl+CQ05vZCq+eShfoBk//c8=
+
+Name: lib/com.chemaxon-io-inchi.jar
+SHA-256-Digest: ILtscycnqpJuwD4jgBtMidH3foC4VMLUSiCJk5lsWac=
+
+Name: lib/derbyLocale_it-10.10.1.1.jar
+SHA-256-Digest: 34RTh1XqGVIzTGj8NW4/Ne4K91+pP9qn6kan/j94EBE=
+
+Name: lib/com.chemaxon-alchemist-marvintools.jar
+SHA-256-Digest: mAe0pmA3Vtunu8i2MYWiZ6/jvkcxbehMnpVAAHQf/+U=
+
+Name: lib/com.chemaxon-alignment-plugin.jar
+SHA-256-Digest: ZIJBZQFiOQ/Mwix3sHv6hW+VF4Are1BqZxG5Z32fhm0=
+
+Name: lib/com.chemaxon-structurechecker-marvin.jar
+SHA-256-Digest: xEFZGdQJH8XF+NyjYlFnvrTa/2quME8epzORrileuI4=
+
+Name: lib/com.chemaxon-jchem-constants.jar
+SHA-256-Digest: yJM7BPAImmmW88VZT6I4nllIMVWGCRWH4PPJaI1kmGY=
+
+Name: lib/com.chemaxon-search-mcs.jar
+SHA-256-Digest: AyaV7kpa51vCllKfyM3agR4iWUBimqXsOCgclXZ79tg=
+
+Name: lib/gluegen-rt-2.1.4.jar
+SHA-256-Digest: TwOwupK0kcQ5xbaaouLCbZ7Hj50p5yOizNz8Lv/dQBw=
+
+Name: lib/com.chemaxon-search-screen.jar
+SHA-256-Digest: UzfFW2DqT0YYe0NPSc5FNXR/jyEKCsCuqWpaXufsEic=
+
+Name: lib/poi-scratchpad-3.11-beta2-20140914.jar
+SHA-256-Digest: Dchrbn02jWllKY/SGnnRfdOk4hXBYg0gKthCCW2TFX0=
+
+Name: lib/itext-rtf-2.1.7.jar
+SHA-256-Digest: D18W+LsXQIQf0MdSP+oxuEKQWHZr1xys2B9QBvYOFc0=
+
+Name: lib/com.chemaxon-common.jar
+SHA-256-Digest: 3j6MLshZ04cA0I88ch+JWoxFrT3dzYUmPEMH9euQnyE=
+
+Name: META-INF/services/javax.xml.parsers.SAXParserFactory
+SHA-256-Digest: Q/V9sD3BFR4z74uoBsCpITf/mYl3bSkvBscgpKb4584=
+
+Name: lib/inchi-native-macosx-1.3.1.jar
+SHA-256-Digest: I6Wk/dQJ5KzFWl9AuCcXyrbmvyWaKmVXeaqgVh0zHtw=
+
+Name: lib/gluegen-rt-2.1.4-natives-linux-amd64.jar
+SHA-256-Digest: dO8qIzyyiYbj9loNPAjM5Loa6sjAuRUB9wApw/VlrzU=
+
+Name: lib/gluegen-rt-2.1.4-natives-linux-i586.jar
+SHA-256-Digest: G+BRnf9gh22ByGt+3MiO6lXndLaL4tJJdtMQWuDEvPk=
+
+Name: lib/jai_core-1.1.3.jar
+SHA-256-Digest: jBq6Qg4RmrPBSkZ0zZahQq3eENPhjTPJDJEt3y5YUkI=
+
+Name: lib/derby-10.10.1.1.jar
+SHA-256-Digest: w/Ere+CfCNOXI3mkSgDzk1SgDVbPBYLxGJUQcaKhGfk=
+
+Name: lib/derbyLocale_hu-10.10.1.1.jar
+SHA-256-Digest: Cygy4+nXM1616/M5CIFdwGSMFvctx0It8wea9JCJqBk=
+
+Name: lib/com.chemaxon-alchemist-configbuilder.jar
+SHA-256-Digest: koukKe58jTCcfR7E0ZblSEsUdmbN6S+l76FxoOEr36g=
+
+Name: lib/com.chemaxon-jep.jar
+SHA-256-Digest: W5Vazs+DRpLMS0OUhC65f0goMHj+VE6ZFXUGPXBNOfg=
+
+Name: lib/com.chemaxon-overlap-descriptors.jar
+SHA-256-Digest: lQjzFU4lIKTz+W9cWv8+neay/sYLxVPlhfYIMnjC1Ug=
+
+Name: lib/derbytools-10.10.1.1.jar
+SHA-256-Digest: MrfeoLeLlDB6Uh5JqZxU92CQ0W42I0x2afkcELqmEr4=
+
+Name: lib/hsqldb-2.3.2.jar
+SHA-256-Digest: +OzmbLPqf4S0g9kOAz+QYdXUW2egJIDbzTWB1lvhzZw=
+
+Name: lib/com.chemaxon-io-smiles.jar
+SHA-256-Digest: 9TZR2EPb+FQyoDQuoJhiH7YJKxyn5RWRSSeHPnb1upA=
+
+Name: lib/com.chemaxon-marvin-space.jar
+SHA-256-Digest: mhkfg7Uoyk06FEkf+ep4PugCA0VnCYYQIYA7gQuiBsM=
+
+Name: lib/jogl-all-2.1.4-natives-windows-i586.jar
+SHA-256-Digest: 9GuxCn225EgVsr6LTi3Rw/2CTACRteZzeDKzdqbuVjU=
+
+Name: lib/jai-imageio-core-1.3.0.jar
+SHA-256-Digest: vY0unTeiHcgQyQZQaWMFp8Y1raMVf6+64T3ih0pa67c=
+
+Name: lib/jogl-all-2.1.4-natives-solaris-i586.jar
+SHA-256-Digest: SKvgncDebz7dZL/tcL7ELj0paHgGaLIHV/BmhYRrVBc=
+
+Name: lib/com.chemaxon-license.jar
+SHA-256-Digest: SeG+yCaiIZNsU79bQcyyA2rc+MaJ4//z6bpULi86ewc=
+
+Name: lib/com.chemaxon-convoy.jar
+SHA-256-Digest: hkaLbSZRwhwsMd/JVH6XjCTgIYjNoN33PD91HIXG18o=
+
+Name: lib/com.chemaxon-calculations-solubility.jar
+SHA-256-Digest: YvF7k9Em4hQveBhd7xYwf3rFQWU/bWiyEY5rliWVX1k=
+
+Name: lib/wsdl4j-1.6.3.jar
+SHA-256-Digest: RnmZ0gBj2XgpB/O2djqF6gqIZzwRYbHxKDMouaX2xHI=
+
+Name: lib/jogl-all-2.1.4-natives-windows-amd64.jar
+SHA-256-Digest: cbnitbDMj3X/xOGGI9YUKhY5H0xPmE/Nvl0CSBbDKlo=
+
+Name: lib/com.chemaxon-enumeration-plugin.jar
+SHA-256-Digest: 6mbGstcR/LmAViQMjF6agZzD79e0xijxmRG3yRUru/M=
+
+Name: lib/freehep-graphicsio-ps-2.2.1.jar
+SHA-256-Digest: 8qhtyGWDwurCPi+nEHaWzLmZuG1uXfCCvSklukDgXGs=
+
+Name: lib/tesseract-data-3.01_1.jar
+SHA-256-Digest: OCGwfJIHu4PmehWfhe/sSQ6w+87fWvfzfRiAiAAV9tU=
+
+Name: lib/derbyLocale_es-10.10.1.1.jar
+SHA-256-Digest: ZuMBib9dtAmzX5b00feuKCTc65e6rLXtg1JDilMQ5hk=
+
+Name: lib/jcommander-1.32.jar
+SHA-256-Digest: kFdIATM6wSLEiTgNigNwhrOF+iIEJM7gxuRpBp3Yls4=
+
+Name: lib/json-20140107.jar
+SHA-256-Digest: bpboosHwqP2hwkm7z9trnGMsE6imRT/wNqCKpUq8yYo=
+
+Name: lib/xmlbeans-2.5.0.jar
+SHA-256-Digest: pPcANJ8bxwRRrb0UMIBRwWdrgZ6WxILMWfMYP7MgkCM=
+
+Name: lib/castor-xml-1.3.1.jar
+SHA-256-Digest: +7dP1DbEcnt0trCQdQVfcWtWCq9NYo3nTd/1dPi83w0=
+
+Name: lib/postgresql-9.3-1101-jdbc4.jar
+SHA-256-Digest: YFXFQXkMihLz9ICjfzkwRVX2e9M7qPYhCJY2Jg0ZjvQ=
+
+Name: lib/dom4j-1.6.1.jar
+SHA-256-Digest: f5AHkt2L+IAfmY3rV3CuqPs4Kgc/TqFHBR4ZBljEZe8=
+
+Name: lib/com.chemaxon-search-mcs-app.jar
+SHA-256-Digest: rVEGQAbCyuhUUgYLYIHDkypb/7srgzLgAov4dzA550I=
+
+Name: lib/com.chemaxon-markush-tools.jar
+SHA-256-Digest: hWMWvrcEtXDvhv9FGh7DureeBudfgf5bbtf7TruLVRw=
+
+Name: lib/tesseract-linux-x64-3.01_1.jar
+SHA-256-Digest: 1pc9Bs5K4F/HpaK5KSVuue+9yQCZHxtRAlCagUMSW6s=
+
+Name: lib/commons-codec-1.6.jar
+SHA-256-Digest: JojwaKqhpuA5MBxn+5xiAj8qh71cOS+WFA9JWqiIaKA=
+
+Name: lib/csjdbc-1.0.jar
+SHA-256-Digest: jDrSekIUaNRyO9H9dV3KhPm/xl3v0oT9Iu2XsMNl9Kc=
+
+Name: lib/xz-1.5.jar
+SHA-256-Digest: eDUqjs6j9kcmxECrlcuf2FnpC48u713mnnMt7oRiO8M=
+
+Name: lib/com.chemaxon-jchem-sql-utils.jar
+SHA-256-Digest: STh9Bt0HquxtS+O1jNGRKL7Gy4GjeV7Q3rZXCgpFiII=
+
+Name: lib/com.chemaxon-search-rgdecomp.jar
+SHA-256-Digest: ut4Wnqc8h8A09zz7iw/DYuzPQJgl6350+5D5VXveGl8=
+
+Name: lib/com.chemaxon-io.jar
+SHA-256-Digest: NJT/1lntzCmFLz2SdJYOJovaqznUBeiXa9kzSIm3SMM=
+
+Name: META-INF/services/javax.xml.parsers.DocumentBuilderFactory
+SHA-256-Digest: WTXzAGQV6e/LtYzTvgQd4NLQe0IypOrGrdVqWzUGGMc=
+
+Name: lib/gluegen-rt-2.1.4-natives-windows-amd64.jar
+SHA-256-Digest: d86oVa7fxOP6TChY9010Ewx/28QWn2eglcUp9Tr7w/8=
+
+Name: lib/com.chemaxon-core.jar
+SHA-256-Digest: 6GTmZOw6j8awC+2currZyF/kcEuBAeJrHoDw2kRfqQs=
+
+Name: lib/ojdbc6-11.2.0.4.jar
+SHA-256-Digest: kWamfIrOLK7oLmRLBrKBa6OXviaSjbX2jP7ZZnd3Oao=
+
+Name: lib/commons-dbcp-1.4.jar
+SHA-256-Digest: MJRIvQCHiyzeOm+h5/26T/LNKlsbIT0ihYIyXzB6WHQ=
+
+Name: lib/commons-logging-1.1.1.jar
+SHA-256-Digest: 2fNxBjK76AsVwb3w3Z5nAogDwFkwawOPqOJ+qZBVLZI=
+
+Name: lib/jni-inchi-0.7.jar
+SHA-256-Digest: zdNBehnrD4+0HAXMXjdz48S0D/inV58B3x69pGMjbkI=
+
+Name: lib/com.chemaxon-icons-old.jar
+SHA-256-Digest: iw+Aw2S+/94pVfGRt6Us50hN0f36H1Ln/gJEierb/MY=
+
+Name: lib/com.chemaxon-io-gaussian.jar
+SHA-256-Digest: Lr5q3JKerJCnSv2OyqZi0Y3+a+4msHVT1CPlHpdH31c=
+
+Name: lib/com.chemaxon-marvin-services-gui.jar
+SHA-256-Digest: OBnzwtXFq+Vk932Q8QeC6Nj51SGBEdq+GdZIeT/VcUQ=
+
+Name: lib/gluegen-rt-2.1.4-natives-solaris-i586.jar
+SHA-256-Digest: D7MSi+ANQyNOG5ngz6WIu4NFI3YDxMzhH2WKaYAwTVk=
+
+Name: lib/tagsoup-1.2.1.jar
+SHA-256-Digest: 17LKftwX0QaKekFSa1MsFF+80JJaHMXNcRwoBMDBecc=
+
+Name: lib/com.chemaxon-alchemist-structurechecker.jar
+SHA-256-Digest: eJoAgryrgFpsfHoWUueuQsxVyiZq6zrSYGkUQUwfO5Y=
+
+Name: lib/gluegen-rt-main-2.1.4.jar
+SHA-256-Digest: PLcbmT8JWFja0LpmDkv550dD7wJ0OQGXt8H0KhJ8jYM=
+
+Name: lib/batik-core-1.0.jar
+SHA-256-Digest: ki2LepE+DhAPy+AB7wAHb2a3BiVLUkR8ne5HzQKWNS8=
+
+Name: lib/com.chemaxon-naming.jar
+SHA-256-Digest: O2xoANPN25ty/QHn/GJuHLEkHt7Q7lPIU/hfOFbyTnc=
+
+Name: lib/com.chemaxon-io-mrv.jar
+SHA-256-Digest: NLE5QUIxAhMwMn4O6vEwtx5raJV9BIKXJrr1KrJXKfA=
+
+Name: lib/com.chemaxon-office.jar
+SHA-256-Digest: R1p4he4S0vwH0lrfB3VdYX65ujoO06dvidueNooxC6w=
+
+Name: lib/jogl-all-2.1.4-natives-solaris-amd64.jar
+SHA-256-Digest: bbnBe+rHpso8xnFT64jFaGczSyYetQGZTDHLtiTAEuc=
+
+Name: lib/com.chemaxon-jchem-cartridge-oraresident.jar
+SHA-256-Digest: /ZaeXTLuKhqbrBGxsEenl1A6ucJ9tqgcdToPKMsyYGM=
+
+Name: lib/com.chemaxon-alchemist-wizard.jar
+SHA-256-Digest: UcazAYMm+ayF//pUriH7apY62h9/eFqcwR5n+uIIUTY=
+
+Name: lib/com.chemaxon-structurechecker-api.jar
+SHA-256-Digest: xGEqgs1pHrWMVYR4uoLbOPZkSerETgUKbHQGfCKAURE=
+
+Name: lib/jacob-native-x64-1.17.jar
+SHA-256-Digest: 7S21qleI7IsSlGHJMXIgjiOHsV2KIG+x0BDIrBnwWzc=
+
+Name: lib/derbyclient-10.10.1.1.jar
+SHA-256-Digest: LmgxsxwjyYtRvevkGHMfvHagD3iexFj/fac0jHQDth8=
+
+Name: lib/com.chemaxon-markush-gui-old.jar
+SHA-256-Digest: uPQuHYzf+DidGvzZZzWP+Lu21KV9GvMzLVOfcRb/sQc=
+
+Name: lib/com.chemaxon-alchemist-old.jar
+SHA-256-Digest: I0NVvgRn/Gtb5pX2afuzr8w8lvKaiVwur5ReHYkCqbg=
+
+Name: lib/com.chemaxon-io-mdl.jar
+SHA-256-Digest: EDlmPhzHLCLEohmCMAf/MZWt3mwyRfbksyTFwSUrIbE=
+
+Name: lib/jogl-all-2.1.4-natives-linux-armv6.jar
+SHA-256-Digest: Z7mJ59ajsl306dF02yFbE+MjFbiHQ6pvfTxWQGCRjl0=
+
+Name: lib/derbyLocale_zh_CN-10.10.1.1.jar
+SHA-256-Digest: 6578PdWMs845aAMdKA9rv3loXkwmFlJsdjM4A9l5QYI=
+
+Name: lib/jgoodies-common-1.7.0.jar
+SHA-256-Digest: f6rfK1FN0Z6j7GuDAcTi0+N+wA79W9J+xkgsEjhMLj0=
+
+Name: lib/inchi-native-linux-1.3.jar
+SHA-256-Digest: 4iF16fICBYjWpEczHlmw/Xga/K7h4NrL54ZR6oX7jn4=
+
+Name: lib/com.chemaxon-structurechecker.jar
+SHA-256-Digest: cTDA/920yfrzU2iQkNOPKYt/Xn3X/APYvjmwfBRIZsM=
+
+Name: lib/com.chemaxon-automapper.jar
+SHA-256-Digest: zMKG4A7Ixv/3tn769cfltdU+XuyhD6wqxzKmtAgDs3o=
+
+Name: lib/com.chemaxon-alchemist-metabolizer.jar
+SHA-256-Digest: Ml/jgoWhRKHpECINY2NQXjMifeyS/rmKnZQsC/dWfTg=
+
+Name: lib/fontbox-1.8.9.jar
+SHA-256-Digest: j1HEn0gWw7sMQ87FqXBGen5cGK+L/at4BA055nr8dhU=
+
+Name: lib/jh-1.0.jar
+SHA-256-Digest: F/qsJyHdv8xsUMrnzUGo25Gom2aBe/+24JxJ1Cu9k4k=
+
+Name: lib/com.chemaxon-version.jar
+SHA-256-Digest: BiIV/F8WWDdfO0VOZg1TcsuJBQQN0E1wgsWVI9dAX8I=
+
+Name: lib/com.chemaxon-standardizer-reactor.jar
+SHA-256-Digest: Xq7LeMYBjaApjM3SMay4Ab4TjLpwEnhHsiuv9ziTlHw=
+
+Name: lib/com.chemaxon-calculations-stereoanal-api.jar
+SHA-256-Digest: cClDPdmoG/dZUFWTtnwd04XevvMrJUHXK4yIk7GtxG0=
+
+Name: lib/jcampdx-lib-0.9.1.jar
+SHA-256-Digest: FGbZHqSWHuhmuUnoWAurHsrn5EXs9Ne5hGSJPOmnGv8=
+
+Name: lib/com.chemaxon-descriptors.jar
+SHA-256-Digest: XmoJtHCyFdYNQvuoRwk0zzdIu4nb4DfL5Heoy5xSwjk=
+
+Name: lib/gluegen-rt-2.1.4-natives-linux-armv6hf.jar
+SHA-256-Digest: tqCxkNe4/QoJsG1gXPureqaeft5DjVsVS9gHZyk2K5w=
+
+Name: lib/poi-3.11-beta2-20140914.jar
+SHA-256-Digest: B46FNRjoOXGnTzUBoGLr4EgcIJlbwLj8jeJ8K+yjnjo=
+
+Name: lib/com.chemaxon-calculations-nmr.jar
+SHA-256-Digest: vjDN387Gyw9e0C/YtULuukjaoXL6pWO4QwiFxI4VZJ4=
+
+Name: lib/commons-lang3-3.3.2.jar
+SHA-256-Digest: fwni1VcdPjrw1cO9FfOU894GKC+1aFIRQObVs0RoI44=
+
+Name: lib/derbyLocale_pl-10.10.1.1.jar
+SHA-256-Digest: fP14nINcYlBF5qYjM38+2onANsIhIspbRpF1ZWtMlXY=
+
+Name: lib/derbyLocale_ja_JP-10.10.1.1.jar
+SHA-256-Digest: GKfXoAVw/E0KDKqEG+scsS5gYIFGPelngl/flUhHuns=
+
+Name: lib/com.chemaxon-jchem-gui.jar
+SHA-256-Digest: iBFeYhQrOkKo26MGl7EKAgHYdp0p3WTNSTnQFmd0Cq0=
+
+Name: lib/xml-apis-1.0.b2.jar
+SHA-256-Digest: 2VGybiYBOPw6oQHXHfI+xTceH+gGCcVjcOdkoVReynY=
+
+Name: lib/com.chemaxon-overlap-concurrent.jar
+SHA-256-Digest: Lqvt6yzcaAjXk9mONC0KuCAxj8VQ1fdPlbeu/F6XWXE=
+
+Name: lib/com.chemaxon-search-api.jar
+SHA-256-Digest: D+GeHhgv/BEypluLxzE8jSwtMAFOSOtm0varSLRuIaI=
+
+Name: lib/com.chemaxon-io-pdb.jar
+SHA-256-Digest: IIuH8xVdoE/W1Ob8EKHRRwve7MVCCO9Vrz6l4R2wtEk=
+
+Name: lib/com.chemaxon-search-utils.jar
+SHA-256-Digest: mWJavf5EXFmEZwZPWwYPXl7o2V5JD2yyrzoYzWWjvDk=
+
+Name: lib/mimepull-1.7.jar
+SHA-256-Digest: 8gOkKIjv6TOCOz+7qQ42kla+Jr5AAe2kqfetOgxkbXc=
+
+Name: lib/com.chemaxon-overlap-core.jar
+SHA-256-Digest: Bt4bumbpQ99rU3U9ATHYwWyOnloigQxG8xG3w1lx19k=
+
+Name: lib/juniversalchardet-1.0.3.jar
+SHA-256-Digest: LHtT4TPsXqWOuB8WBZhAJ1Io0r13dpeBTF0sRJPKgKE=
+
+Name: lib/com.chemaxon-calculations-stereoisomers.jar
+SHA-256-Digest: 4tCBKchfM7+rg8+p+qFsmA/YDOt9/6932+95aRZ9yyk=
+
+Name: lib/aloe-1.0.jar
+SHA-256-Digest: 4XS4ePTLyYI4s2PhjJnLecaDtselbPfh05sLi5qIVa4=
+
+Name: lib/com.chemaxon-jchem-persist-common.jar
+SHA-256-Digest: KW9o+Ts4pDGKAKHvHxwGju5hxbZ2nHRlkt2p8viwRHY=
+
+Name: lib/sqljdbc4-4.0.jar
+SHA-256-Digest: bJKwfI5ikqCzoGMAfe42aS0Ke+Zk7q+HCq9rnYbwqfs=
+
+Name: lib/com.chemaxon-jchem-cachereg-common.jar
+SHA-256-Digest: 5eAdrftxRrZf0UZdH2BotA7Aqu8zQwOV4zWv7td+PeA=
+
+Name: lib/commons-exec-1.2.jar
+SHA-256-Digest: jv+Qak/9d6TFixlOOHWn6vzJ9q0aKfRGmtyQr0ETsPY=
+
+Name: lib/com.chemaxon-codeassist.jar
+SHA-256-Digest: d41Mo7LypZQPYk03CsDOLQxrxOUl0rlfWKz0bY+vKy8=
+
+Name: lib/antlr-2.7.2.jar
+SHA-256-Digest: W5SXJMWOrPKfTjcYTvRphrVr9sYdVFsBmgqw8xxBaBY=
+
+Name: lib/com.chemaxon-clustering.jar
+SHA-256-Digest: gcKFlWGL3xd1p53lc1Ewuzr7gx0g8V1+b8Y4ac4or5g=
+
+Name: lib/com.chemaxon-io-accord.jar
+SHA-256-Digest: R018WNq4EDzfZjqvmOG8fFGE0kmoEIZNngErNBObLMI=
+
+Name: lib/gluegen-rt-2.1.4-natives-macosx-universal.jar
+SHA-256-Digest: LrmVDSje7G3L1ZuIUP52kTgR26kXgz7s5bfsnn8qTrY=
+
+Name: lib/com.chemaxon-jchem-connection.jar
+SHA-256-Digest: M6MngoxLh5Y2wkjqzdMonU/xFrsxbhmeeeddxKMW2PU=
+
+Name: lib/cxnregistry-native-x86-1.0.jar
+SHA-256-Digest: gKXnTZY/Xu0HSub7VJPgSBd3uvcsF4BeCW5mEkRfsoM=
+
+Name: lib/inchi-native-windows-1.3.jar
+SHA-256-Digest: yVF0Rx2OEZZ5h2+V9KszLd9Ozx2jG/ZHDeV+fYliA98=
+
+Name: lib/osra-linux-x64-1.3.8.2.jar
+SHA-256-Digest: Rag/8q2IhR8aHk+5gJW5Q7MgV4cjCW0T+5Ql60Bwf78=
+
+Name: lib/chart-1.0.jar
+SHA-256-Digest: zeudOvGogLrzacqLEMZY2Lm2J6PPmsjWJ4Ei0AaZsOE=
+
+Name: lib/com.chemaxon-alchemist-standardizer.jar
+SHA-256-Digest: eCRbM8vo/AX9HjbsdcUoUpf1dP79h4UEMIrRlmeGG/E=
+
+Name: lib/com.chemaxon-annotations.jar
+SHA-256-Digest: KHdRL2AnkitDZg0aprSOy62gaSGttjNh8P6wyYKM/Uw=
+
+Name: lib/derbyLocale_ru-10.10.1.1.jar
+SHA-256-Digest: /jLKETSTHQtPOerwxkSt7RZ3J75HqP+Aa7T+LthKm68=
+
+Name: lib/jempbox-1.8.9.jar
+SHA-256-Digest: 6+fM34K0AR0nIG/Up4tFJNMFKdvCRUxxrl0XfZx71eA=
+
+Name: lib/commons-compress-1.9.jar
+SHA-256-Digest: 8qF+TNOut3llYi7XT2E2r3hy1SFn7BZ0JWgCrbDt1Ec=
+
+Name: lib/jacob-native-x86-1.17.jar
+SHA-256-Digest: NcQ20TkyxOfWmhNhax24WhkV9va2Vqf6QADBQC58WNs=
+
+Name: lib/com.chemaxon-calculations-commons.jar
+SHA-256-Digest: z0e/Jaxz53NGuLaHue5ve/9PB/+uFJhlrSe5YQOdwh8=
+
+Name: lib/com.chemaxon-jchem-cartridge-shared.jar
+SHA-256-Digest: DILEkWAerIwXgjKPma4K27KO4hUvLVuina22GN7sfF4=
+
+Name: lib/com.chemaxon-alignment.jar
+SHA-256-Digest: Bavx5UIKQiJW4lWBlwa2l5KT7Up7uQ/tg3/MePeh3ac=
+
+Name: lib/com.chemaxon-chart.jar
+SHA-256-Digest: RJK88pZ397wIXfN0qapT7En2hkqyhcobHg/jnhRQadA=
+
+Name: lib/jogl-all-2.1.4-natives-android-armv6.jar
+SHA-256-Digest: ox4nJoQv/Gh4roCrSGulT3SkvzZhonFcvU8Ehy4IDbc=
+
+Name: lib/com.chemaxon-config-utils.jar
+SHA-256-Digest: m1u4ZttbC+6ZljXhImpmBscAR+cRYeBDPxaX8qdrvQ8=
+
+Name: lib/jgoodies-forms-1.7.2.jar
+SHA-256-Digest: U1hqSEmotJreTPtvPouZ/7zCBVV91GvcrJr2enCAZaU=
+
+Name: lib/commons-lang-2.5.jar
+SHA-256-Digest: ReYMX+PZ86cfseV7XyBB0aIkoalKQCMoptJEIpg5M9Q=
+
+Name: lib/bcprov-jdk15-1.46.jar
+SHA-256-Digest: /Uf6dz+RxF8ZqMwQ5LdX6BhQbNatIgenapwFhlZGMNI=
+
+Name: lib/mysql-connector-java-5.1.29.jar
+SHA-256-Digest: /fbbL6XlmWUlC/6d+orI/by+4yuF+zDtvZnKn6oXIks=
+
+Name: lib/com.chemaxon-search-sss.jar
+SHA-256-Digest: CSbtgzziXPVmm0BzGA1LJ6yScbkK17OPshmJ/1Fsdio=
+
+Name: lib/jchem.jar
+SHA-256-Digest: dGBCuRS7wcRGM7lw0xwEcfmhaMgt9XpAiaE61yg9RmA=
+
+Name: lib/com.chemaxon-core-calculations.jar
+SHA-256-Digest: x76YPmCjUvDFAUbUSugiMJBBomJhmRHv/OxPHYHbHOs=
+
+Name: lib/freehep-graphicsio-pdf-2.2.1.jar
+SHA-256-Digest: 4n6atrGTPlaOkAAolNEYN8xBkGjOyDfyxGjEDle2Rdk=
+
+Name: lib/tesseract-macosx-3.01_2.jar
+SHA-256-Digest: U3tfLPjhWo4hRNSPxVllc/4D48Tp0z7nGskdfw7coVY=
+
+Name: lib/levigo-jbig2-imageio-1.6.1.jar
+SHA-256-Digest: cCvnrbCIGvQ4vQtuOQOle7FSYuPcp3MzLAI2XW5Lz6E=
+
+Name: lib/xmlrpc-client-3.1.3.jar
+SHA-256-Digest: gNPmgZdS01MHQkRthlwTnMDwBUBMq3phcbRMMqjeYMk=
+
+Name: lib/tesseract-linux-x32-3.01_1.jar
+SHA-256-Digest: W1qU2IbIEJT707dJtcSinZASrdMpRww39sCRpstJDmM=
+
+Name: lib/freehep-graphicsio-2.2.1.jar
+SHA-256-Digest: Gi+SnBlyPcJYNNjyq0YhoVUPICSF6DjOlq7b7t558K4=
+
+Name: jchemlib.jar
+SHA-256-Digest: GklpCH3YlVSqqVftREVx1lD1R1NqVteaFXM0Tu21dbY=
+
+Name: lib/com.chemaxon-concurrent.jar
+SHA-256-Digest: KPE/qrpKxxKQz1z2vfX66WkYLUDPJR5XjCwz8lWT3ew=
+
+Name: lib/derbyLocale_zh_TW-10.10.1.1.jar
+SHA-256-Digest: gRqgYlSsrLirXPI7cjyVny5e+JoNYioDsmNivUZZUwU=
+
+Name: lib/com.chemaxon-marvin-gui.jar
+SHA-256-Digest: Lj78xYa/0OL5SAbHcNOXZslyXxyV9K4EG2o6QyyFhaM=
+
+Name: lib/runtime12-1.0.jar
+SHA-256-Digest: +AwWAJzvFqntrw2pV3+w0kZxnRgWFMbAZAbVGGpNMX0=
+
+Name: lib/com.chemaxon-jchem-molecule-persister.jar
+SHA-256-Digest: ElLx+ju0kSttftVzuXsx5ZXeFOwRCbYNT4kERG+9dpU=
+
+Name: lib/com.chemaxon-metabolizer.jar
+SHA-256-Digest: k3yeh6uaVXlti1CiVt2StntXZypw/gvDl7OXL1k8+fg=
+
+Name: lib/jogl-all-2.1.4-natives-linux-armv6hf.jar
+SHA-256-Digest: gKpWEw7VGJ7cc9ghOBYqC0SRBBGPO7CFhIZl4OF9uCo=
+
+Name: lib/com.chemaxon-sizeinfo.jar
+SHA-256-Digest: xC/77PACA6sQlMGYm0Gm53wutsDLKcxZI+ZPVsrUIxo=
+
+Name: lib/com.chemaxon-sizeinfo-agent.jar
+SHA-256-Digest: Y/m7d7YkFq+3JDA1AAYqF03v8KoOSfk9OcTDtv4ck3g=
+
+Name: lib/gluegen-rt-2.1.4-natives-android-armv6.jar
+SHA-256-Digest: DfxW1i0iaGP2c+Sf9MTp9o45kt/91DktluX1SFXhbvo=
+
+Name: lib/xmlrpc-common-3.1.3.jar
+SHA-256-Digest: mPWCSql/erhZvQJDZXotKn/GUXU9yLFFPfI9Snk8HSk=
+
+Name: lib/jsr305-2.0.3.jar
+SHA-256-Digest: tWFPRJqPuQ1rFwT2kJOZ9hEGfL+Hp0oGEnT4+AXPHK0=
+
+Name: lib/db2jcc4-10.5.0.2-FP002.jar
+SHA-256-Digest: JiSdi+YQrtEn8prF1Ze35LOBTSPm3SC45qxV1d9mEpw=
+
+Name: lib/derbyLocale_de_DE-10.10.1.1.jar
+SHA-256-Digest: 7Q9aAS8cxUs7UgluA+EltFFjaVeQSDVpsh5DYW2dJXM=
+
+Name: lib/gluegen-rt-2.1.4-natives-windows-i586.jar
+SHA-256-Digest: poGi0EbOj54VALNW3c3NCkXlnjrBQi5UMF8f1WkK6so=
+
+Name: lib/jogl-all-main-2.1.4.jar
+SHA-256-Digest: YgUYAHkAH6+oWz5245DAqLxi/dPFX8lKLxqel37iGZ8=
+
+Name: lib/derbynet-10.10.1.1.jar
+SHA-256-Digest: aO6xa8uG0xK/TkzQzChvmfHinCShBIvNcAyFizCdxJc=
+
+Name: lib/tesseract-windows-3.01_1.jar
+SHA-256-Digest: OAuKOMLUtrhZDmM0Q/DYOSBQd0iADRj+6owYvdcTp2I=
+
+Name: lib/com.chemaxon-descriptors-jep.jar
+SHA-256-Digest: 7i3EARDwu1s9aCDs545mCd5fOW31+SR9U2hzDD+QVtA=
+
+Name: lib/com.chemaxon-alchemist-commons.jar
+SHA-256-Digest: 9wDjyxn5d7Ug0kgYVR5fs1mo012inws7DYPd9V6tH8s=
+
+Name: lib/com.chemaxon-jchem-cartridge.jar
+SHA-256-Digest: toYUXOKQxaRsB4tDXgjwKes0Rk0tui8bQw8Xt65LI/c=
+
+Name: lib/com.chemaxon-calculations-plugin.jar
+SHA-256-Digest: 4PUTgj3IZfhW1Qd5DCOMjB0FUnXfChtXkJOC8aPIWpU=
+
+Name: lib/jogl-all-2.1.4-natives-linux-i586.jar
+SHA-256-Digest: nS4xdPcDaU/JXbY95nTTgfunbQi2W7c/n2tmZ7T/oiM=
+
+Name: lib/tika-parsers-1.2.jar
+SHA-256-Digest: K25BKJVg+UDlHpHQkAaF9ePhJCOIp3MHVJA+IwjKbfo=
+
+Name: lib/com.chemaxon-marvin-services.jar
+SHA-256-Digest: 8DFvVjhfcD8r99IsHdaqqf747qzm9mU889Ka5yYTS6I=
+
+Name: lib/jogl-all-2.1.4-natives-macosx-universal.jar
+SHA-256-Digest: OrznnTVbF6ZYxggWhp/HVcM/WASin7+pm1oUuILdW18=
+
+Name: lib/jogl-all-2.1.4.jar
+SHA-256-Digest: HySYHSNON/S2ZEwejHdrE16Ddb25h2ecwoMVo0IWH6c=
+
+Name: lib/derbyLocale_fr-10.10.1.1.jar
+SHA-256-Digest: +NHBb3q1ly9zT17xCqowH+nPcILzLVP1iEleGEVYm7o=
+
+Name: lib/com.chemaxon-jchem-cartridge-jcserver.jar
+SHA-256-Digest: xzTPkV1EtFJAd9GExXzyMzYjZVNrsx64CV8uveZSzBI=
+
+Name: lib/itext-2.1.7.jar
+SHA-256-Digest: lXm/zN8QP4qSbXMrSBdLvaPCuXxGYD4Q/OxfzkJTFKA=
+
+Name: lib/jacob-1.17.jar
+SHA-256-Digest: oLoZc9G8C3ENXKzQMZgRQ/I/TTX86XP2IFRIJ8M1Nbc=
+
+Name: lib/guava-16.0.1.jar
+SHA-256-Digest: XKOgOu7d65trvRaJ/1HdG1DjKqpFkOMETR/stBTSx1c=
+
+Name: lib/regexp-1.2.jar
+SHA-256-Digest: 1hofTVxRHaehThhCF+3pa0IBbZERUiFc5YPFjf7XptM=
+
+Name: lib/MarvinBeans.jar
+SHA-256-Digest: sM6iLGRibNX9a7MQGPPTQV5CJtx/hhZAnwnTCAaqN3E=
+
+Name: lib/com.chemaxon-io-all.jar
+SHA-256-Digest: 4OavnWc/9535LtM8QGSyJjx2CW2W1jECv3/GAO8RTjM=
+
+Name: lib/jogl-all-2.1.4-natives-linux-amd64.jar
+SHA-256-Digest: Kt7J4mO7Y1bMUlZKMoIH555LbHC3f80qQeJFFVXQj0Y=
+
+Name: lib/ooxml-schemas-1.1.jar
+SHA-256-Digest: FR+za4Z8JHFwPmbLcYoG85NFpLXvKZouyUJsEd7FXr0=
+
+Name: lib/com.chemaxon-libmcs.jar
+SHA-256-Digest: UkJ15d/34pwnOj3I2O+UcbztKNVG/5PnLfmlIctPeYA=
+
+Name: lib/com.chemaxon-io-cdx.jar
+SHA-256-Digest: EmQ0pMdM1AvbJnDnoid92An6CsGwjWOyykof/C8jNF4=
+
+Name: lib/com.chemaxon-concurrent-utils.jar
+SHA-256-Digest: mVarU4QFUYu4v/O9Kg306pwHDhxaQT0nR9Y6UKQA2jw=
+
+Name: lib/gluegen-rt-2.1.4-natives-solaris-amd64.jar
+SHA-256-Digest: 5ANHnZdDJJibvQKV++sVlLZYBvBdqwI2BEgEiESN404=
+
+Name: lib/macosx-application-bundle-1.0.jar
+SHA-256-Digest: oCBjVM3/rdkhB7PB4WeC2UDReAhli6SZUrhCX4JQl4o=
+
+Name: lib/com.chemaxon-io-tripos.jar
+SHA-256-Digest: IPCIohZjZfSe09ddkFROJ0E3QgukADgkU29WTfzwrdg=
+
+Name: lib/com.chemaxon-search-hitdisplay.jar
+SHA-256-Digest: 3Fm8NH2uSaYZuTZVjUs6Sc9Yb8fZo6884ajtqW+7emk=
+
+Name: lib/com.chemaxon-alchemist-framework.jar
+SHA-256-Digest: mTrtykTYCrpMTh07NKqobv6rWhfyR+I+SB5ayXxcPzs=
+
+Name: lib/gluegen-rt-2.1.4-natives-linux-armv6.jar
+SHA-256-Digest: m3DZyGvxt7LJt8QjcAhdp5MBbmCbalFtzWh6aIgUKe0=
+
+Name: lib/saaj-impl-1.3.19.jar
+SHA-256-Digest: m0EVtfAIyZy6P3i41fzxjpaf9wbHAHUgjrb1jcGoZDs=
+
+Name: lib/com.chemaxon-modelling.jar
+SHA-256-Digest: DlFmSL+nLzFxEiY/tESnpcUcOzSb05teW6mPsetNO1o=
+
+Name: lib/castor-core-1.3.1.jar
+SHA-256-Digest: 72Xhn6Z2Aao392tA0SbxN12jKGJO/IrtGilN+UOisGU=
+
+Name: lib/jaxen-1.1.6.jar
+SHA-256-Digest: n3+qaAVvFvBAs74EJZmEpD5DiNCxg/YrsTT3ooyrVL4=
+
+Name: META-INF/services/javax.xml.transform.TransformerFactory
+SHA-256-Digest: Cjwk+lxZZW1Ti5W5+tqZmmtAWfvUGAhkvxuF8rdlPJc=
+
+Name: lib/freehep-graphics2d-2.2.1.jar
+SHA-256-Digest: Fw7EXUucaqlFVcFGzlC8cyDytj86N5nH16qc+LZoaE0=
+
+Name: lib/com.chemaxon-calculations-stereoanal.jar
+SHA-256-Digest: mkmFbG1rG/9WmmlbyhjCZ0Behowua6id9SIolcsHI3c=
+
+Name: lib/derbyLocale_cs-10.10.1.1.jar
+SHA-256-Digest: I46fOpjqmptB1f2K3ZyPqTeZc2CASZJ5s2TbqB0qkrA=
+
+Name: lib/jgrapht-0.8.3.jar
+SHA-256-Digest: DM+bdwyAveB/vEssfnqvSPrTIhCtTD9ZZD5yrpy7+oM=
+
+Name: lib/com.chemaxon-transformer.jar
+SHA-256-Digest: v9ARoJmdKU7FbEeMKnvoU2GmSCvIaV+Gt2X1btsAww4=
+
+Name: lib/inchi-native-linux64-1.3.jar
+SHA-256-Digest: KkPTRe40/rfCm2BaEj8sD71B/9ETud/yaP6fLHYT4og=
+
+Name: lib/com.chemaxon-marvin-utils.jar
+SHA-256-Digest: JHVIfPd0u1OT+07w2rsksoLkESaiXOewsa9Km3nm4xg=
+
+Name: lib/commons-pool-1.6.jar
+SHA-256-Digest: FhccNpJjIt770JlUwpCVfi3pQh7GwDhgdv9f3u0DRLY=
+
+Name: lib/inchi-native-windows64-1.3.jar
+SHA-256-Digest: lcQTs335a27p7XvI5PGyjAp7UltpWbpyLTHuuNdvVyI=
+
+Name: lib/commons-io-2.4.jar
+SHA-256-Digest: DGzUusFv2WtXsb1LNpdjioHHEoztlP189fltyKkpQTo=
+
+Name: lib/derbyLocale_pt_BR-10.10.1.1.jar
+SHA-256-Digest: qyY9Ne0hFDalSLerxpwH1CfMb+VFCJROoMu1PwkEtSw=
+
+Name: lib/com.chemaxon-calculations.jar
+SHA-256-Digest: N3IMGW8UK5TfAS6xgHQXi1ixWbyof7Av9RcxFDDyUUE=
+
+Name: lib/com.chemaxon-io-peptide.jar
+SHA-256-Digest: ywRIGtIPA9LOYHusDZRNpgnifMjh58WrxrJRb3Kq/l8=
+
+Name: lib/ws-commons-util-1.0.2.jar
+SHA-256-Digest: xDnERdSS4+STtNjyutI9pS25zuUOosxZjB8fu3BHOhY=
+

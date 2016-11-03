@@ -1,0 +1,33 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: sBojWZ3FXixYjXgBxb5m4Avrmnpsc
+ 0oBzAPxIBO9+N0=
+SHA-256-Digest-Manifest: 5RdyRwIB297GS8RSdLYKHwYNAIwVQAQ3K5asBhfjpOw=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: about.properties
+SHA-256-Digest: GWM3/kPYi3RJXDQfanddjTnGjpwXty5xbaHs4thljcw=
+
+Name: about.html
+SHA-256-Digest: pIMHOolwaVvYn5rjqJ6rfjNC1ZGYMXbEPyCJPkSdUSk=
+
+Name: plugin.xml
+SHA-256-Digest: JAk8OefgplwTuhbnx/SJMQheabLC7zzl0yzDdfh6DyU=
+
+Name: ant_tasks/ant_tasks.jar
+SHA-256-Digest: 5Es8sstGdZsfjltEdGfROvJZypwJ9cldLU+njzGfW0o=
+
+Name: schema/buildScripts.exsd
+SHA-256-Digest: l527fJY3HX2Pu5Fjo0JDdL7bZz0pN4wqo4OQBBOLZnE=
+
+Name: bmant.jar
+SHA-256-Digest: Ak1CU/BelJeVK4qT4mK8mb1J7KYTvo3XkpPRaHN07no=
+
+Name: about.ini
+SHA-256-Digest: LZGfDFiRV1zRVbteuaLgNmyEjIiwKgodnV6Z1atzGCM=
+
+Name: plugin.properties
+SHA-256-Digest: TnOl+AvaESge/HhGypinZobDfA2EuQSKtIkIHjGJRRA=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: RFIP5uDIlRpdmZ4x+5aZTnfS9PhXkFwkV4bFOh5pKfI=
+

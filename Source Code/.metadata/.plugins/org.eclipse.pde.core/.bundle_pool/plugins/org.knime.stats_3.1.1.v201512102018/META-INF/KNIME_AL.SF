@@ -1,0 +1,21 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: n84o0xUCDUxUlQPHuKXM/Hn3eClz1
+ aZxJG79EZ7okVc=
+SHA-256-Digest-Manifest: 8g1+oe5aJMV8y7zya3Lwpw6+efT4cO6vbWXhkUlBqsM=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: BYsrY5pxcZ+Yq+Joq+SuUXX6R546RWTzxQpPoFiwGYg=
+
+Name: README.TXT
+SHA-256-Digest: Fm3DS6wmQk/ESJD5VK54lTCe+t/Z3i2YglqWbXyZz5g=
+
+Name: LICENSE.txt
+SHA-256-Digest: AINBnlxD6j1hoUJCdbqJDDXIUInSr72BED0xfnoxdrY=
+
+Name: icons/test_category.png
+SHA-256-Digest: jg1xg4h9lY7I1fibhRqN0C3Y1kLj3q5TKT8DMARyjp8=
+
+Name: knime-stats.jar
+SHA-256-Digest: ka38Ptqd3WE9OUs21b9sAVfryEK3ugGBub1vs2TrnFQ=
+

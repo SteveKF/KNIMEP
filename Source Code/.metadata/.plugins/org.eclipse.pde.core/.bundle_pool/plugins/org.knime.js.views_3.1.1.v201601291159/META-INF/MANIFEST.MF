@@ -1,0 +1,70 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Bundle-SymbolicName: org.knime.js.views;singleton:=true
+Bundle-Name: KNIME JavaScript Base Views
+Bundle-Version: 3.1.1.v201601291159
+Bundle-ClassPath: js-views.jar
+Require-Bundle: org.knime.base;bundle-version="[3.0.0,4.0.0)",org.knim
+ e.js.core;bundle-version="[3.0.0,4.0.0)",org.apache.commons.lang;bund
+ le-version="[2.6.0,3.0.0)",com.google.guava;bundle-version="[16.0.0,1
+ 7.0.0)",org.knime.ext.svg;bundle-version="[3.0.0,4.0.0)",org.apache.c
+ ommons.codec;bundle-version="[1.6.0,1.7.0)",org.openqa.selenium;bundl
+ e-version="[2.43.0,3.0.0)",org.knime.ext.phantomjs;bundle-version="[3
+ .0.0,4.0.0)",com.fasterxml.jackson.core.jackson-annotations;bundle-ve
+ rsion="[2.4.3,3.0.0)",com.fasterxml.jackson.core.jackson-core;bundle-
+ version="[2.4.3,3.0.0)",com.fasterxml.jackson.core.jackson-databind;b
+ undle-version="[2.4.3,3.0.0)",com.fifesoft.autocomplete;bundle-versio
+ n="[2.5.7,3.0.0)",com.fifesoft.languagesupport;bundle-version="[2.5.7
+ ,3.0.0)",com.fifesoft.rstaui;bundle-version="[2.5.7,3.0.0)",com.fifes
+ oft.rsyntaxtextarea;bundle-version="[2.5.7,3.0.0)",com.fifesoft.spell
+ checker;bundle-version="[2.5.7,3.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME.com, Zurich, Switzerland
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: jJbpvZHt+tsIAXFra7BBdL2DscGkctSc6G5PNQeqwTM=
+
+Name: js-src/org/knime/js/base/node/viz/plotter/roc/knime-roc-plot.js
+SHA-256-Digest: w3W9l4pwBDJ51aOCHlPDhtpp7x0a3NNqjNttPzGN09M=
+
+Name: js-src/org/knime/js/base/util/table/view/styles.css
+SHA-256-Digest: qQJ5QiYnKl997boCT+Ki+0oI4owd5OA5HzYEgdkW+ok=
+
+Name: js-src/org/knime/js/base/node/viz/generic/knime-generic-view.js
+SHA-256-Digest: mA3UbNsGLhaKEf8FVJbCvLyp39ZvQu5IcHyZ4BsYEiI=
+
+Name: js-src/org/knime/js/base/node/viz/table/web-template.js
+SHA-256-Digest: BrEkxsWTIafVxgqtxH2DnBQFaCssSzSDw0n1EHLHgPc=
+
+Name: js-src/org/knime/js/base/node/viz/plotter/lift/knime-lift-chart.
+ js
+SHA-256-Digest: bCPf+VlZyJiW+7Sc6PHJ8HnZ+IvGb7rPaV9DxW9HRVQ=
+
+Name: js-src/org/knime/js/base/node/viz/plotter/line/knime-line-plot.j
+ s
+SHA-256-Digest: MxNTbDso3fQY6O8UzdH3Fy6rMHZwnIHKPMElqtysGOo=
+
+Name: js-src/org/knime/js/base/node/viz/plotter/scatter/knime-scatter-
+ plot.js
+SHA-256-Digest: lUbwR1BEc9Bs7EIgbDHwE+nRnXGDvlVstqteTxrPPlE=
+
+Name: js-src/org/knime/js/base/util/dateFormat/date-format.js
+SHA-256-Digest: ho54VVMcYh0Hfe5GugISvbM+I0kgXzvXSp8WqbjqQwE=
+
+Name: js-views.jar
+SHA-256-Digest: f3OmzVrf6mat0tT8blFpMwVZprgitGL/I3vYZbw5aTg=
+
+Name: js-src/org/knime/js/base/node/viz/plotter/scatterSelectionAppend
+ er/knime-scatter-plot.js
+SHA-256-Digest: 4cLWEEFcQz7w7KIJTVg+mLGRv7K8vang/MHNsp1LA4Q=
+
+Name: icons/js.png
+SHA-256-Digest: yor9MzBqXcUEcjb2xxu65mfVJnmnp5rfpsrTh0FVn4s=
+
+Name: js-src/org/knime/js/base/util/table/view/knime_table_view_1_0_0.
+ js
+SHA-256-Digest: XwCyPs1c+DBFgzpBwugtzalaRAlp8hdic3qWYUzq35s=
+

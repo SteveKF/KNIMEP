@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="org.knime.ext.r.preferences.RPreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.knime.product.splashExtension">
+      <splashExtension
+            icon="icons/R_splash_48.png"
+            icon32="icons/R_splash_32.png"
+            id="R"
+            tooltip="R Project">
+      </splashExtension>
+   </extension>
+</plugin>

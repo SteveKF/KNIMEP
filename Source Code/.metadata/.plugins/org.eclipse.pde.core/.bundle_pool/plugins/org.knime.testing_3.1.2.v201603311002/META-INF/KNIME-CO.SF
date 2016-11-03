@@ -1,0 +1,39 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: PW6Cw/1VR1M/eCo4KVQrr2N0SQQHp
+ zo7TjAmgayik9E=
+SHA-256-Digest-Manifest: HM3B/uYCc6Eh/xNCzTqorE+JCnDJr7E1NnD4QyA/6iQ=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: gXTBdNqZITf8anlTI1ftHZWiZhu1WvOIOcWad5QQ5Jw=
+
+Name: schema/org.knime.core.testing.TestrunJanitor.exsd
+SHA-256-Digest: mD0Cx7vZM9+jpR/TaUWjLzBQAvqu1W6SP7jTapAPY3U=
+
+Name: icons/testing.png
+SHA-256-Digest: 1qYQ6SDMBEpBhwpCHiIKiuCIzputfb7Nvgypwi5S4/g=
+
+Name: knime-testing.jar
+SHA-256-Digest: EUthsph3/yafU7XBhVmRy+D76wIsGTb3JXQ5NKao/no=
+
+Name: lib/jacocoagent.jar
+SHA-256-Digest: YabT6MWT5c6RPhCsYCkYCgpQgS91q1DC6jQ4gF5xSww=
+
+Name: doc/Regression Tests.pdf
+SHA-256-Digest: 55qOZcNWQ9XR5AoRTtOZPGGikNrL5jAbIbX3oewBGPc=
+
+Name: schema/org.knime.testing.DifferenceCheckerFactory.exsd
+SHA-256-Digest: glCZMyAXEYmk52UxJJOy/UQklTeIcFyIpWpq4/B0LOE=
+
+Name: LICENSE.txt
+SHA-256-Digest: AINBnlxD6j1hoUJCdbqJDDXIUInSr72BED0xfnoxdrY=
+
+Name: doc/Noding Guidelines.pdf
+SHA-256-Digest: tFp28StWvnQWwgNzZTuq5k+LUB1qw1DamIgk81MY5P8=
+
+Name: lib/jfcunit.jar
+SHA-256-Digest: k41YVOIfMxjBU+bvfdR+7ioZGgt4PKeE4vMYMGeB6Dc=
+
+Name: schema/org.knime.testing.TestcaseCollector.exsd
+SHA-256-Digest: 8KJNE8zMgBwcnkbq1uXieJpiOM3Vp1prK+zbUxsisuo=
+

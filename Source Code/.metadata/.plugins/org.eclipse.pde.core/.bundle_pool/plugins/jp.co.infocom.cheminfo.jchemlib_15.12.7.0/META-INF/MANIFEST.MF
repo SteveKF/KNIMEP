@@ -1,0 +1,1314 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: jp.co.infocom.cheminfo.jchemlib;singleton:=true
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.6.0,4.0.0)
+ ",org.apache.xerces;bundle-version="[2.9.0,3.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: Infocom Corporation
+Ant-Version: Apache Ant 1.9.4
+Export-Package: chemaxon,chemaxon.alchemist,chemaxon.alchemist.commonp
+ ages,chemaxon.alchemist.configbuilder,chemaxon.alchemist.configbuilde
+ r.configuration.marshalling,chemaxon.alchemist.configbuilder.configur
+ ation.marshalling.descriptors,chemaxon.alchemist.configbuilder.config
+ uration.resources,chemaxon.alchemist.configbuilder.standardizer,chema
+ xon.alchemist.configbuilder.standardizer.configelements,chemaxon.alch
+ emist.configbuilder.standardizer.editors,chemaxon.alchemist.configbui
+ lder.standardizer.images,chemaxon.alchemist.images,chemaxon.alchemist
+ .images.about,chemaxon.alchemist.images.toolbar,chemaxon.alchemist.mo
+ leculeeditor,chemaxon.alchemist.reactor,chemaxon.alchemist.reactor.re
+ actioneditor,chemaxon.alchemist.reactor.reactioneditor.ide,chemaxon.a
+ lchemist.reactor.reactioneditor.ide.actions,chemaxon.alchemist.reacto
+ r.reactioneditor.ide.resources,chemaxon.alchemist.utils,chemaxon.alch
+ emist.utils.filefilters,chemaxon.alchemist.utils.menu,chemaxon.alchem
+ ist.utils.moleculetree,chemaxon.alchemist.utils.transition,chemaxon.a
+ utomapper,chemaxon.beans.editors,chemaxon.calculations,chemaxon.calcu
+ lations.adme,chemaxon.calculations.cip,chemaxon.calculations.cip.reco
+ gnizer,chemaxon.calculations.clean,chemaxon.calculations.clean.fixers
+ ,chemaxon.calculations.clean.fixers.angle,chemaxon.calculations.clean
+ .fixers.collision,chemaxon.calculations.clean.fixers.interfaces,chema
+ xon.calculations.clean.fixers.length,chemaxon.calculations.clean.fixe
+ rs.ring,chemaxon.calculations.clean.fixers.transformer,chemaxon.calcu
+ lations.clean.fixers.util,chemaxon.calculations.clean.hydrogenclean,c
+ hemaxon.calculations.clean.sequence,chemaxon.calculations.dipole,chem
+ axon.calculations.ecfp,chemaxon.calculations.hydrogenize,chemaxon.cal
+ culations.nmr,chemaxon.calculations.nmr.clustering,chemaxon.calculati
+ ons.nmr.hose,chemaxon.calculations.nmr.hose.data,chemaxon.calculation
+ s.nmr.hose.data.indexes,chemaxon.calculations.nmr.io,chemaxon.calcula
+ tions.nmr.reader,chemaxon.calculations.pka,chemaxon.calculations.ster
+ eo,chemaxon.calculations.topology,chemaxon.calculations.training,chem
+ axon.calculations.training.logp,chemaxon.calculations.training.ui,che
+ maxon.calculations.ui,chemaxon.calculations.ui.adme,chemaxon.calculat
+ ions.ui.dipole,chemaxon.calculations.ui.nmr,chemaxon.calculations.ui.
+ nmr.report,chemaxon.calculations.ui.nmr.resources,chemaxon.calculatio
+ ns.ui.nmr.result,chemaxon.calculations.ui.nmr.solvents,chemaxon.calcu
+ lations.ui.nmr.spectrum,chemaxon.calculations.ui.nmr.tautomers,chemax
+ on.calculations.ui.nmr.viewer,chemaxon.calculations.ui.pka,chemaxon.c
+ alculations.ui.pka.result,chemaxon.calculations.ui.solubility,chemaxo
+ n.calculations.ui.solubility.result,chemaxon.calculator,chemaxon.chec
+ kers,chemaxon.checkers.logger,chemaxon.checkers.registry,chemaxon.che
+ ckers.registry.configuration.reader,chemaxon.checkers.resource,chemax
+ on.checkers.result,chemaxon.checkers.runner,chemaxon.checkers.runner.
+ configuration,chemaxon.checkers.runner.configuration.reader,chemaxon.
+ checkers.runner.configuration.reader.resource,chemaxon.checkers.runne
+ r.configuration.writer,chemaxon.checkers.util,chemaxon.clustering,che
+ maxon.clustering.backend,chemaxon.clustering.backend.oa,chemaxon.clus
+ tering.boundary,chemaxon.clustering.calculations,chemaxon.clustering.
+ calculations.impl,chemaxon.clustering.chemistry,chemaxon.clustering.d
+ ata,chemaxon.clustering.gui,chemaxon.clustering.gui.action,chemaxon.c
+ lustering.gui.component,chemaxon.clustering.gui.icons,chemaxon.cluste
+ ring.scaffolding.logging,chemaxon.clustering.server,chemaxon.clusteri
+ ng.server.clustorServer,chemaxon.clustering.server.content,chemaxon.c
+ lustering.server.content.icons,chemaxon.clustering.tools.simpleeval,c
+ hemaxon.clustering.tools.simplexml.create,chemaxon.clustering.tools.s
+ implexml.parse,chemaxon.clustering.util,chemaxon.common,chemaxon.comm
+ on.swing.io,chemaxon.common.swing.io.input,chemaxon.common.swing.io.i
+ nput.handler,chemaxon.common.swing.io.input.ui,chemaxon.common.swing.
+ io.output,chemaxon.common.swing.io.output.ui,chemaxon.common.swing.io
+ .output.ui.util,chemaxon.common.swing.io.ui,chemaxon.common.swing.io.
+ ui.accessory,chemaxon.common.swing.io.ui.accessory.component,chemaxon
+ .common.swing.io.ui.accessory.input,chemaxon.common.swing.io.ui.acces
+ sory.output,chemaxon.common.swing.io.ui.filefilter,chemaxon.common.sw
+ ing.io.ui.filesystemview,chemaxon.common.swing.io.ui.fileview,chemaxo
+ n.common.swing.io.util,chemaxon.common.util,chemaxon.common.util.tex,
+ chemaxon.common.util.tex.shorttex,chemaxon.common.util.tex.simpletex,
+ chemaxon.common.util.text,chemaxon.core,chemaxon.core.builders,chemax
+ on.core.builders.graphical,chemaxon.core.calculations,chemaxon.core.c
+ alculations.stereo,chemaxon.core.calculations.valencecheck,chemaxon.c
+ ore.io,chemaxon.core.spi,chemaxon.core.structure,chemaxon.core.switch
+ er,chemaxon.core.util,chemaxon.core.util.differ,chemaxon.descriptors,
+ chemaxon.descriptors.scalars,chemaxon.enumeration,chemaxon.enumeratio
+ n.bracket,chemaxon.enumeration.homology,chemaxon.enumeration.homology
+ .enumeration_only,chemaxon.enumeration.homology.user_def_groups,chema
+ xon.enumeration.supergraph,chemaxon.enumeration.supergraph.util,chema
+ xon.enumeration.tobeextracted,chemaxon.enumeration.util,chemaxon.feat
+ ures,chemaxon.fixers,chemaxon.fixers.resource,chemaxon.formats,chemax
+ on.formats.documents.jchemexcel,chemaxon.formats.documents.jchemoffic
+ e,chemaxon.formats.recognizer,chemaxon.formats.util,chemaxon.fragment
+ er,chemaxon.hitdisplay,chemaxon.hitdisplay.pipeline,chemaxon.hitdispl
+ ay.similarity,chemaxon.icons.license,chemaxon.icons.marvin,chemaxon.i
+ cons.marvin.bonds,chemaxon.icons.marvin.braces,chemaxon.icons.marvin.
+ calculations.nmr,chemaxon.icons.marvin.checker,chemaxon.icons.marvin.
+ chemical,chemaxon.icons.marvin.edit3d,chemaxon.icons.marvin.font,chem
+ axon.icons.marvin.graphics,chemaxon.icons.marvin.lonepairs,chemaxon.i
+ cons.marvin.markush,chemaxon.icons.marvin.pages,chemaxon.icons.marvin
+ .radicals,chemaxon.icons.marvin.reacting_center,chemaxon.icons.marvin
+ .reaction_arrows,chemaxon.icons.marvin.services,chemaxon.icons.marvin
+ .templates,chemaxon.icons.marvin.topology,chemaxon.jchem,chemaxon.jch
+ em.base,chemaxon.jchem.base.persist,chemaxon.jchem.base.persist.cache
+ .impl,chemaxon.jchem.base.persist.impl,chemaxon.jchem.base.persist.im
+ pl.sql,chemaxon.jchem.base.persist.impl.sql.modification,chemaxon.jch
+ em.base.persister,chemaxon.jchem.base.persister.checks,chemaxon.jchem
+ .base.persister.method,chemaxon.jchem.base.search,chemaxon.jchem.base
+ .search.comparator,chemaxon.jchem.base.search.comparator.targetdescri
+ ptor,chemaxon.jchem.base.search.context,chemaxon.jchem.base.search.co
+ ntext.comparator,chemaxon.jchem.base.search.filter,chemaxon.jchem.bas
+ e.search.filter.chemterm,chemaxon.jchem.base.search.filter.match,chem
+ axon.jchem.base.search.filter.operators,chemaxon.jchem.base.search.fi
+ lter.screen,chemaxon.jchem.base.search.filter.shortcircuit,chemaxon.j
+ chem.base.search.filter.similarity,chemaxon.jchem.base.search.structu
+ rerecord,chemaxon.jchem.base.search.util,chemaxon.jchem.base.search.w
+ orker,chemaxon.jchem.base.storage,chemaxon.jchem.base.storage.accepto
+ r,chemaxon.jchem.base.storage.cache,chemaxon.jchem.base.storage.cache
+ .impl,chemaxon.jchem.base.storage.impl,chemaxon.jchem.base.storage.im
+ pl.filtering,chemaxon.jchem.base.storage.impl.sql,chemaxon.jchem.base
+ .storage.impl.sql.search,chemaxon.jchem.base.storage.search,chemaxon.
+ jchem.base.storage.update,chemaxon.jchem.base.storage.util,chemaxon.j
+ chem.cartridge,chemaxon.jchem.cartridge.adapters,chemaxon.jchem.cartr
+ idge.config,chemaxon.jchem.cartridge.config.io,chemaxon.jchem.cartrid
+ ge.config.params,chemaxon.jchem.cartridge.dbsession,chemaxon.jchem.ca
+ rtridge.extfp,chemaxon.jchem.cartridge.importer,chemaxon.jchem.cartri
+ dge.install,chemaxon.jchem.cartridge.install.schema,chemaxon.jchem.ca
+ rtridge.oraresident,chemaxon.jchem.cartridge.oraresident.costestim,ch
+ emaxon.jchem.cartridge.oraresident.dbsession,chemaxon.jchem.cartridge
+ .oraresident.dml,chemaxon.jchem.cartridge.oraresident.jcservcli,chema
+ xon.jchem.cartridge.oraresident.longop,chemaxon.jchem.cartridge.orare
+ sident.nonidxscan,chemaxon.jchem.cartridge.oraresident.resultset,chem
+ axon.jchem.cartridge.oraresident.util,chemaxon.jchem.cartridge.rmi,ch
+ emaxon.jchem.cartridge.rmi.impl,chemaxon.jchem.cartridge.rmi.impl.dis
+ tributed,chemaxon.jchem.cartridge.rmi.impl.errcache,chemaxon.jchem.ca
+ rtridge.rmi.impl.scanresult,chemaxon.jchem.cartridge.rmi.transferobj,
+ chemaxon.jchem.cartridge.server,chemaxon.jchem.cartridge.server.task,
+ chemaxon.jchem.cartridge.servlets,chemaxon.jchem.cartridge.servlets.c
+ hemterms,chemaxon.jchem.cartridge.servlets.chemterms.config,chemaxon.
+ jchem.cartridge.servlets.indexing,chemaxon.jchem.cartridge.servlets.i
+ ndexing.errorhandling,chemaxon.jchem.cartridge.servlets.indexing.inde
+ xers,chemaxon.jchem.cartridge.servlets.indexing.operations,chemaxon.j
+ chem.cartridge.servlets.react,chemaxon.jchem.cartridge.servlets.react
+ .prod_consumer,chemaxon.jchem.cartridge.servlets.react.tant_producer,
+ chemaxon.jchem.cartridge.servlets.search,chemaxon.jchem.cartridge.ser
+ vlets.search.distributed,chemaxon.jchem.cartridge.sharedorajcsrv,chem
+ axon.jchem.cartridge.sharedorajcsrv.costestim,chemaxon.jchem.cartridg
+ e.sharedorajcsrv.dbsession,chemaxon.jchem.cartridge.sharedorajcsrv.er
+ rorhandling,chemaxon.jchem.cartridge.sharedorajcsrv.jctable,chemaxon.
+ jchem.cartridge.sharedorajcsrv.metadata,chemaxon.jchem.cartridge.shar
+ edorajcsrv.profiling,chemaxon.jchem.cartridge.sharedorajcsrv.rmi,chem
+ axon.jchem.cartridge.sharedorajcsrv.rmi.client,chemaxon.jchem.cartrid
+ ge.sharedorajcsrv.rmi.transferobj,chemaxon.jchem.cartridge.sharedoraj
+ csrv.rmi.transferobj.dml,chemaxon.jchem.cartridge.sharedorajcsrv.rmi.
+ transferobj.indexing,chemaxon.jchem.cartridge.sharedorajcsrv.rmi.tran
+ sferobj.search,chemaxon.jchem.cartridge.util,chemaxon.jchem.cartridge
+ .util.connection,chemaxon.jchem.cartridge.util.cpool,chemaxon.jchem.c
+ artridge.util.hitfinder,chemaxon.jchem.cartridge.util.japi,chemaxon.j
+ chem.cartridge.util.probe,chemaxon.jchem.db,chemaxon.jchem.db.cache,c
+ hemaxon.jchem.db.cdmarkush,chemaxon.jchem.db.cdmarkush.serializer,che
+ maxon.jchem.db.cdmarkush.serializer.handler,chemaxon.jchem.db.distrib
+ uted,chemaxon.jchem.db.distributed.rmi,chemaxon.jchem.db.distributed.
+ rmi.sharedorajcsrv.transferobj,chemaxon.jchem.db.distributed.rmi.tran
+ sferobj,chemaxon.jchem.db.filterquery,chemaxon.jchem.db.index,chemaxo
+ n.jchem.db.index.columnwise,chemaxon.jchem.db.index.columnwise.column
+ ,chemaxon.jchem.db.index.columnwise.column.block,chemaxon.jchem.db.in
+ dex.columnwise.column.decorators,chemaxon.jchem.db.index.columnwise.c
+ olumn.fingerprint,chemaxon.jchem.db.jmx,chemaxon.jchem.db.model,chema
+ xon.jchem.db.regen,chemaxon.jchem.db.sql,chemaxon.jchem.db.util,chema
+ xon.jchem.db.util.huffman,chemaxon.jchem.file,chemaxon.jchem.gui,chem
+ axon.jchem.gui.connection,chemaxon.jchem.gui.images,chemaxon.jchem.gu
+ i.standardization,chemaxon.jchem.gui.standardization.controller,chema
+ xon.jchem.gui.standardization.model,chemaxon.jchem.gui.standardizatio
+ n.view,chemaxon.jchem.gui.util,chemaxon.jchem.interop,chemaxon.jchem.
+ interop.reactor,chemaxon.jchem.version,chemaxon.jep,chemaxon.jep.cont
+ ext,chemaxon.jep.function,chemaxon.jep.util,chemaxon.license,chemaxon
+ .markush,chemaxon.markush.graph,chemaxon.markush.properties,chemaxon.
+ marvin,chemaxon.marvin.alignment,chemaxon.marvin.alignment.hit,chemax
+ on.marvin.applet,chemaxon.marvin.applet.javascript,chemaxon.marvin.be
+ ans,chemaxon.marvin.beans.editors,chemaxon.marvin.beans.splash,chemax
+ on.marvin.calculations,chemaxon.marvin.common,chemaxon.marvin.common.
+ images,chemaxon.marvin.common.swing,chemaxon.marvin.common.swing.acti
+ on,chemaxon.marvin.common.swing.components.font,chemaxon.marvin.commo
+ n.swing.components.input,chemaxon.marvin.common.swing.modules,chemaxo
+ n.marvin.common.swing.modules.image.io.export,chemaxon.marvin.io,chem
+ axon.marvin.io.fieldaccess,chemaxon.marvin.io.formats,chemaxon.marvin
+ .io.formats.abbrevgroup,chemaxon.marvin.io.formats.accord,chemaxon.ma
+ rvin.io.formats.base64,chemaxon.marvin.io.formats.cdx,chemaxon.marvin
+ .io.formats.cdxml,chemaxon.marvin.io.formats.cml,chemaxon.marvin.io.f
+ ormats.d2s,chemaxon.marvin.io.formats.dictionaries,chemaxon.marvin.io
+ .formats.fasta,chemaxon.marvin.io.formats.fasta.fastaimport,chemaxon.
+ marvin.io.formats.gaussian,chemaxon.marvin.io.formats.gaussian.calcul
+ ations,chemaxon.marvin.io.formats.inchi,chemaxon.marvin.io.formats.md
+ l,chemaxon.marvin.io.formats.mrv,chemaxon.marvin.io.formats.name,chem
+ axon.marvin.io.formats.name.dictionaries,chemaxon.marvin.io.formats.n
+ ame.nameexport,chemaxon.marvin.io.formats.name.tools,chemaxon.marvin.
+ io.formats.name.util,chemaxon.marvin.io.formats.pdb,chemaxon.marvin.i
+ o.formats.peptide,chemaxon.marvin.io.formats.skc,chemaxon.marvin.io.f
+ ormats.skc.skcexport,chemaxon.marvin.io.formats.skc.skcimport,chemaxo
+ n.marvin.io.formats.skc.utils,chemaxon.marvin.io.formats.skc.utils.te
+ xt,chemaxon.marvin.io.formats.smiles,chemaxon.marvin.io.formats.tripo
+ s,chemaxon.marvin.io.formats.vectgraphics,chemaxon.marvin.io.formats.
+ xyz,chemaxon.marvin.io.image,chemaxon.marvin.io.image.encoder,chemaxo
+ n.marvin.io.image.exporter,chemaxon.marvin.io.image.importer,chemaxon
+ .marvin.io.image.importer.osrtool,chemaxon.marvin.io.image.recordread
+ er,chemaxon.marvin.io.util,chemaxon.marvin.jep,chemaxon.marvin.logger
+ ,chemaxon.marvin.modelling,chemaxon.marvin.modelling.build,chemaxon.m
+ arvin.modelling.build.fafuse,chemaxon.marvin.modelling.cli,chemaxon.m
+ arvin.modelling.debug,chemaxon.marvin.modelling.diag,chemaxon.marvin.
+ modelling.edit,chemaxon.marvin.modelling.geom,chemaxon.marvin.modelli
+ ng.gui,chemaxon.marvin.modelling.interfacing,chemaxon.marvin.modellin
+ g.linalg,chemaxon.marvin.modelling.linalg.internals,chemaxon.marvin.m
+ odelling.md,chemaxon.marvin.modelling.mm,chemaxon.marvin.modelling.mm
+ .mmff94,chemaxon.marvin.modelling.mm.mmff94.extra,chemaxon.marvin.mod
+ elling.newmd,chemaxon.marvin.modelling.newmd.boundary,chemaxon.marvin
+ .modelling.qm,chemaxon.marvin.modelling.struc,chemaxon.marvin.modelli
+ ng.util,chemaxon.marvin.modules,chemaxon.marvin.modules.datatransfer,
+ chemaxon.marvin.modules.datatransfer.table.comwrapper,chemaxon.marvin
+ .modules.datatransfer.table.comwrapper.impl,chemaxon.marvin.modules.d
+ atatransfer.transferables,chemaxon.marvin.modules.mprop,chemaxon.marv
+ in.modules.osx,chemaxon.marvin.modules.print,chemaxon.marvin.modules.
+ reaction,chemaxon.marvin.modules.smarts,chemaxon.marvin.modules.win,c
+ hemaxon.marvin.modules.win.emf,chemaxon.marvin.modules.win.ole,chemax
+ on.marvin.modules.win.registry,chemaxon.marvin.paint,chemaxon.marvin.
+ paint.constants,chemaxon.marvin.paint.internal,chemaxon.marvin.paint.
+ internal.components.labeleditor,chemaxon.marvin.paint.internal.conver
+ ters,chemaxon.marvin.paint.internal.fontsettings,chemaxon.marvin.pain
+ t.internal.graphics,chemaxon.marvin.paint.internal.graphicselement.bo
+ nd,chemaxon.marvin.paint.internal.graphicselement.bond.calculation,ch
+ emaxon.marvin.paint.internal.graphicselement.bond.calculation.aromati
+ cs,chemaxon.marvin.paint.internal.graphicselement.bond.calculation.bo
+ ndoffset,chemaxon.marvin.paint.internal.graphicselement.bond.calculat
+ ion.endpoints,chemaxon.marvin.paint.internal.graphicselement.bond.dec
+ orator,chemaxon.marvin.paint.internal.graphicselement.bond.factory,ch
+ emaxon.marvin.paint.internal.graphicselement.bond.paint,chemaxon.marv
+ in.paint.internal.graphicselement.bond.representation,chemaxon.marvin
+ .paint.internal.graphicselement.bond.shape,chemaxon.marvin.paint.inte
+ rnal.graphicselement.bond.shape.stroke,chemaxon.marvin.paint.internal
+ .texgraphics,chemaxon.marvin.paint.internal.util,chemaxon.marvin.pain
+ t.internal.util.clip,chemaxon.marvin.paint.internal.util.sgroup,chema
+ xon.marvin.plugin,chemaxon.marvin.plugin.concurrent,chemaxon.marvin.p
+ lugin.gui,chemaxon.marvin.services,chemaxon.marvin.services.config,ch
+ emaxon.marvin.services.config.resources,chemaxon.marvin.services.http
+ service,chemaxon.marvin.services.json,chemaxon.marvin.services.locals
+ ervice,chemaxon.marvin.services.soap,chemaxon.marvin.services.ui,chem
+ axon.marvin.services.xmlrpcservice,chemaxon.marvin.sketch,chemaxon.ma
+ rvin.sketch.command,chemaxon.marvin.sketch.command.analisys,chemaxon.
+ marvin.sketch.events,chemaxon.marvin.sketch.hit,chemaxon.marvin.sketc
+ h.hit.collector,chemaxon.marvin.sketch.hit.target,chemaxon.marvin.ske
+ tch.hit.target.chemical,chemaxon.marvin.sketch.modules,chemaxon.marvi
+ n.sketch.modules.labeleditor,chemaxon.marvin.sketch.swing,chemaxon.ma
+ rvin.sketch.swing.actions,chemaxon.marvin.sketch.swing.actions.atom,c
+ hemaxon.marvin.sketch.swing.actions.bond,chemaxon.marvin.sketch.swing
+ .actions.calculation,chemaxon.marvin.sketch.swing.actions.experimenta
+ l,chemaxon.marvin.sketch.swing.actions.graphics,chemaxon.marvin.sketc
+ h.swing.actions.group,chemaxon.marvin.sketch.swing.actions.object,che
+ maxon.marvin.sketch.swing.actions.property,chemaxon.marvin.sketch.swi
+ ng.actions.resources,chemaxon.marvin.sketch.swing.actions.structure,c
+ hemaxon.marvin.sketch.swing.actions.structure.parameters,chemaxon.mar
+ vin.sketch.swing.actions.template,chemaxon.marvin.sketch.swing.checke
+ r.editor,chemaxon.marvin.sketch.swing.modules,chemaxon.marvin.sketch.
+ swing.modules.analisysbox,chemaxon.marvin.sketch.swing.modules.attach
+ datadialog,chemaxon.marvin.sketch.swing.modules.attachdatadialog.conf
+ ig,chemaxon.marvin.sketch.swing.modules.attachmentpointchooser,chemax
+ on.marvin.sketch.swing.modules.checker,chemaxon.marvin.sketch.swing.m
+ odules.checker.editors,chemaxon.marvin.sketch.swing.modules.checker.f
+ actory,chemaxon.marvin.sketch.swing.modules.checker.resources,chemaxo
+ n.marvin.sketch.swing.modules.checker.spi,chemaxon.marvin.sketch.swin
+ g.modules.documentstyle,chemaxon.marvin.sketch.swing.modules.document
+ style.swing,chemaxon.marvin.sketch.swing.modules.periodic,chemaxon.ma
+ rvin.sketch.swing.modules.propertyeditor,chemaxon.marvin.sketch.swing
+ .modules.propertyeditor.atom,chemaxon.marvin.sketch.swing.modules.pro
+ pertyeditor.atom.editors,chemaxon.marvin.sketch.swing.modules.propert
+ yeditor.atom.uif,chemaxon.marvin.sketch.swing.modules.propertyeditor.
+ bond,chemaxon.marvin.sketch.swing.modules.propertyeditor.bond.uif,che
+ maxon.marvin.sketch.swing.modules.propertyeditor.editors,chemaxon.mar
+ vin.sketch.swing.modules.propertyeditor.molecule,chemaxon.marvin.sket
+ ch.swing.modules.propertyeditor.molecule.editors,chemaxon.marvin.sket
+ ch.swing.modules.propertyeditor.molecule.uif,chemaxon.marvin.sketch.s
+ wing.modules.propertyeditor.uif,chemaxon.marvin.sketch.swing.modules.
+ rlogic,chemaxon.marvin.sketch.swing.modules.services,chemaxon.marvin.
+ sketch.swing.modules.services.spi,chemaxon.marvin.sketch.swing.module
+ s.symbolsdialog.impl,chemaxon.marvin.sketch.swing.modules.symbolsdial
+ og.spi,chemaxon.marvin.sketch.swing.modules.textstyle,chemaxon.marvin
+ .sketch.swing.templates,chemaxon.marvin.sketch.templates,chemaxon.mar
+ vin.sketch.tool,chemaxon.marvin.sketch.tool.graphicalobject,chemaxon.
+ marvin.sketch.util.geometry,chemaxon.marvin.sketch.util.join,chemaxon
+ .marvin.sketch.util.tool,chemaxon.marvin.sketch.util.topology,chemaxo
+ n.marvin.sketch.util.validation,chemaxon.marvin.space,chemaxon.marvin
+ .space.demo,chemaxon.marvin.space.drawing,chemaxon.marvin.space.drawi
+ ng.geom,chemaxon.marvin.space.drawing.gl,chemaxon.marvin.space.drawin
+ g.gl.VBO,chemaxon.marvin.space.drawing.gl.def,chemaxon.marvin.space.d
+ rawing.iface,chemaxon.marvin.space.gl.shader,chemaxon.marvin.space.gl
+ .viewport,chemaxon.marvin.space.grid,chemaxon.marvin.space.gui,chemax
+ on.marvin.space.images,chemaxon.marvin.space.monitor,chemaxon.marvin.
+ space.render,chemaxon.marvin.space.util,chemaxon.marvin.spi.addon,che
+ maxon.marvin.spi.jep,chemaxon.marvin.spi.ui,chemaxon.marvin.styles,ch
+ emaxon.marvin.swing,chemaxon.marvin.swing.action,chemaxon.marvin.swin
+ g.modules,chemaxon.marvin.swing.moleculeview,chemaxon.marvin.template
+ s,chemaxon.marvin.textstyles,chemaxon.marvin.uif.action,chemaxon.marv
+ in.uif.action.manager,chemaxon.marvin.uif.action.support,chemaxon.mar
+ vin.uif.aloe,chemaxon.marvin.uif.builder,chemaxon.marvin.uif.builder.
+ impl.action,chemaxon.marvin.uif.builder.impl.config,chemaxon.marvin.u
+ if.builder.parser,chemaxon.marvin.uif.component,chemaxon.marvin.uif.c
+ ontroller,chemaxon.marvin.uif.controller.impl,chemaxon.marvin.uif.con
+ troller.impl.binding,chemaxon.marvin.uif.controller.impl.item,chemaxo
+ n.marvin.uif.controller.support,chemaxon.marvin.uif.dialog,chemaxon.m
+ arvin.uif.dialog.model,chemaxon.marvin.uif.dialog.view,chemaxon.marvi
+ n.uif.model,chemaxon.marvin.uif.module,chemaxon.marvin.uif.module.sup
+ port,chemaxon.marvin.uif.resource,chemaxon.marvin.uif.shortcut,chemax
+ on.marvin.uif.util,chemaxon.marvin.uif.util.bean,chemaxon.marvin.uif.
+ util.listener,chemaxon.marvin.uif.util.swing,chemaxon.marvin.util,che
+ maxon.marvin.util.codeassist,chemaxon.marvin.util.codeassist.images,c
+ hemaxon.marvin.util.codeassist.toolbar,chemaxon.marvin.util.codeassis
+ t.toolbar.actions,chemaxon.marvin.util.codeassist.toolbar.images,chem
+ axon.marvin.util.text,chemaxon.marvin.version,chemaxon.marvin.view,ch
+ emaxon.marvin.view.modules.rasmolscripter,chemaxon.marvin.view.module
+ s.rasmolscripter.command,chemaxon.marvin.view.modules.sketchbridge,ch
+ emaxon.marvin.view.swing,chemaxon.marvin.view.swing.action,chemaxon.m
+ arvin.view.swing.modules,chemaxon.math.discrete,chemaxon.math.vectori
+ al,chemaxon.metabolism,chemaxon.naming,chemaxon.naming.document,chema
+ xon.naming.document.annotate,chemaxon.naming.document.osr,chemaxon.na
+ ming.document.patent,chemaxon.naming.n2s,chemaxon.naming.n2s.lex,chem
+ axon.naming.n2s.lex.data,chemaxon.naming.n2s.lexer,chemaxon.naming.n2
+ s.parse,chemaxon.naming.n2s.recognizer,chemaxon.naming.n2s.util,chema
+ xon.naming.tools,chemaxon.naming.util,chemaxon.natives.macosx,chemaxo
+ n.nfunk.jep,chemaxon.nfunk.jep.function,chemaxon.nfunk.jep.type,chema
+ xon.pharmacophore,chemaxon.reaction,chemaxon.reaction.tester,chemaxon
+ .reaction.util,chemaxon.spi,chemaxon.sss,chemaxon.sss.chemterm,chemax
+ on.sss.formula,chemaxon.sss.matcher,chemaxon.sss.screen,chemaxon.sss.
+ screen.composite,chemaxon.sss.screen.handler,chemaxon.sss.screen.mark
+ ush,chemaxon.sss.screen.options,chemaxon.sss.screen.statcheck,chemaxo
+ n.sss.screen.statcheck.atomic,chemaxon.sss.screen.statcheck.extended,
+ chemaxon.sss.search,chemaxon.sss.search.bracket,chemaxon.sss.search.d
+ atasgroup,chemaxon.sss.search.homology,chemaxon.sss.search.homology.a
+ tomic,chemaxon.sss.search.matcher,chemaxon.sss.search.matcher.regiona
+ lized,chemaxon.sss.search.model,chemaxon.sss.search.molstack,chemaxon
+ .sss.search.options,chemaxon.sss.search.options.annotations,chemaxon.
+ sss.search.options.converter,chemaxon.sss.search.options.discovery,ch
+ emaxon.sss.search.options.implication,chemaxon.sss.search.options.sem
+ antics,chemaxon.sss.search.pipeline,chemaxon.sss.search.ratom,chemaxo
+ n.sss.search.rg,chemaxon.sss.search.searchmap,chemaxon.sss.search.tau
+ tomer,chemaxon.sss.search.timeout,chemaxon.sss.search.util,chemaxon.s
+ ss.util,chemaxon.standardizer,chemaxon.standardizer.actions,chemaxon.
+ standardizer.actions.changes,chemaxon.standardizer.actions.editors,ch
+ emaxon.standardizer.actions.editors.images,chemaxon.standardizer.acti
+ ons.icons,chemaxon.standardizer.advancedactions,chemaxon.standardizer
+ .concurrent,chemaxon.standardizer.configuration,chemaxon.standardizer
+ .configuration.reader,chemaxon.standardizer.configuration.writer,chem
+ axon.standardizer.factory,chemaxon.standardizer.resource,chemaxon.sta
+ ndardizer.runner,chemaxon.standardizer.ui,chemaxon.stat,chemaxon.stru
+ c,chemaxon.struc.builders,chemaxon.struc.builders.graphical,chemaxon.
+ struc.features,chemaxon.struc.gearch,chemaxon.struc.graph.chemicalgra
+ ph,chemaxon.struc.graphics,chemaxon.struc.graphics.analisys,chemaxon.
+ struc.graphics.util,chemaxon.struc.interfaces.chemicalgraph,chemaxon.
+ struc.interfaces.chemicalgraph.builder,chemaxon.struc.prop,chemaxon.s
+ truc.sgroup,chemaxon.struc.sgroup.sequence,chemaxon.struc.stereo,chem
+ axon.struc.util,chemaxon.struc.util.atomutil,chemaxon.struc.util.mole
+ culeutil,chemaxon.structurechecker,chemaxon.structurechecker.factory,
+ chemaxon.structurechecker.factory.resource,chemaxon.util,chemaxon.uti
+ l.abbrevgroup,chemaxon.util.cache,chemaxon.util.concurrent,chemaxon.u
+ til.concurrent.marvin,chemaxon.util.concurrent.processors,chemaxon.ut
+ il.concurrent.processors.pooledwu,chemaxon.util.concurrent.processors
+ .pooledwu.inputadapt,chemaxon.util.concurrent.util,chemaxon.util.conc
+ urrent.worker,chemaxon.util.concurrent.workunitmgmt,chemaxon.util.exp
+ ression,chemaxon.util.expression.function,chemaxon.util.iterator,chem
+ axon.util.logging,chemaxon.util.progress,chemaxon.util.settings,chema
+ xon.util.settings.loader,chemaxon.util.settings.merger,chemaxon.util.
+ settings.source,chemaxon.util.standardizer,chemaxon.util.storage,com.
+ chemaxon.alchemist.components,com.chemaxon.alchemist.configbuilder,co
+ m.chemaxon.alchemist.configbuilder.actions,com.chemaxon.alchemist.con
+ figbuilder.feature,com.chemaxon.alchemist.configbuilder.ui,com.chemax
+ on.alchemist.configbuilder.workflow,com.chemaxon.alchemist.framework.
+ application,com.chemaxon.alchemist.framework.features,com.chemaxon.al
+ chemist.framework.features.actionsupport,com.chemaxon.alchemist.frame
+ work.features.appabout,com.chemaxon.alchemist.framework.features.apph
+ elp,com.chemaxon.alchemist.framework.features.customizer,com.chemaxon
+ .alchemist.framework.features.filesupport,com.chemaxon.alchemist.fram
+ ework.features.persistence,com.chemaxon.alchemist.framework.features.
+ profile,com.chemaxon.alchemist.framework.features.workflow,com.chemax
+ on.alchemist.framework.features.workflow.ui,com.chemaxon.alchemist.fr
+ amework.notifications,com.chemaxon.alchemist.marvin.utils,com.chemaxo
+ n.alchemist.marvin.utils.ui,com.chemaxon.alchemist.metabolizer,com.ch
+ emaxon.alchemist.metabolizer.actions,com.chemaxon.alchemist.metaboliz
+ er.actions.resources,com.chemaxon.alchemist.metabolizer.resources,com
+ .chemaxon.alchemist.resources.images,com.chemaxon.alchemist.standardi
+ zer,com.chemaxon.alchemist.standardizer.actions,com.chemaxon.alchemis
+ t.standardizer.resources,com.chemaxon.alchemist.standardizer.workflow
+ ,com.chemaxon.alchemist.structurechecker,com.chemaxon.alchemist.struc
+ turechecker.actions,com.chemaxon.alchemist.structurechecker.resources
+ ,com.chemaxon.alchemist.structurechecker.workflow,com.chemaxon.alchem
+ ist.utils,com.chemaxon.alchemist.utils.collections,com.chemaxon.alche
+ mist.utils.filtering,com.chemaxon.alchemist.wizard,com.chemaxon.alche
+ mist.wizard.actions,com.chemaxon.alchemist.wizard.stages,com.chemaxon
+ .apidiscovery,com.chemaxon.apidiscovery.annotations,com.chemaxon.apid
+ iscovery.interfaces,com.chemaxon.apidiscovery.util,com.chemaxon.apt,c
+ om.chemaxon.calculations.common,com.chemaxon.calculations.io,com.chem
+ axon.calculations.io.formats,com.chemaxon.calculations.solubility,com
+ .chemaxon.calculations.solubility.descriptors,com.chemaxon.calculatio
+ ns.solubility.fragments,com.chemaxon.calculations.solubility.impl,com
+ .chemaxon.calculations.stereoanal,com.chemaxon.calculations.stereoana
+ l.core,com.chemaxon.calculations.stereoanal.filters,com.chemaxon.calc
+ ulations.stereoanal.filters.atrop,com.chemaxon.calculations.stereoana
+ l.filters.axial,com.chemaxon.calculations.stereoanal.filters.cistrans
+ ,com.chemaxon.calculations.stereoanal.filters.tetrahedral,com.chemaxo
+ n.calculations.stereoanal.plugin,com.chemaxon.calculations.stereoanal
+ .stereocenters,com.chemaxon.calculations.stereoisomers,com.chemaxon.c
+ alculations.util,com.chemaxon.calculations.util.cellfield,com.chemaxo
+ n.calculations.util.cellfield.impl,com.chemaxon.chart.dataset,com.che
+ maxon.chart.gui,com.chemaxon.chart.gui.mousepolicy,com.chemaxon.chart
+ .gui.painters,com.chemaxon.chart.model,com.chemaxon.chart.model.scali
+ ng,com.chemaxon.chart.objects,com.chemaxon.chart.renderer,com.chemaxo
+ n.clustering.common,com.chemaxon.clustering.singlelinkage,com.chemaxo
+ n.clustering.sphex,com.chemaxon.clustering.util,com.chemaxon.clusteri
+ ng.wards,com.chemaxon.common.annotations,com.chemaxon.common.annotati
+ ons.util,com.chemaxon.convoy,com.chemaxon.convoy.iterator,com.chemaxo
+ n.convoy.workflow,com.chemaxon.convoy.workflow.xml,com.chemaxon.descr
+ iptors.alignment,com.chemaxon.descriptors.alignment.drshape,com.chema
+ xon.descriptors.alignment.shape,com.chemaxon.descriptors.common,com.c
+ hemaxon.descriptors.common.binary,com.chemaxon.descriptors.common.rea
+ lvector,com.chemaxon.descriptors.common.unguarded,com.chemaxon.descri
+ ptors.common.unguarded.impl,com.chemaxon.descriptors.db,com.chemaxon.
+ descriptors.fingerprints.cfp,com.chemaxon.descriptors.fingerprints.ec
+ fp,com.chemaxon.descriptors.fingerprints.pf2d,com.chemaxon.descriptor
+ s.metrics,com.chemaxon.descriptors.vectors.binary,com.chemaxon.descri
+ ptors.vectors.floats,com.chemaxon.icons,com.chemaxon.icons.bonds,com.
+ chemaxon.icons.checker,com.chemaxon.icons.chemcurator,com.chemaxon.ic
+ ons.common,com.chemaxon.icons.connection,com.chemaxon.icons.edit3d,co
+ m.chemaxon.icons.favorites,com.chemaxon.icons.fields,com.chemaxon.ico
+ ns.font,com.chemaxon.icons.graphics,com.chemaxon.icons.lists,com.chem
+ axon.icons.lonepairs,com.chemaxon.icons.markush,com.chemaxon.icons.ma
+ rvin,com.chemaxon.icons.nmr,com.chemaxon.icons.operations,com.chemaxo
+ n.icons.products,com.chemaxon.icons.projects,com.chemaxon.icons.query
+ ,com.chemaxon.icons.radicals,com.chemaxon.icons.reactions,com.chemaxo
+ n.icons.sort,com.chemaxon.icons.tables,com.chemaxon.icons.templates,c
+ om.chemaxon.icons.view,com.chemaxon.images.logo,com.chemaxon.images.s
+ plashscreens,com.chemaxon.mapper,com.chemaxon.mapper.marker,com.chema
+ xon.mapper.score,com.chemaxon.mapper.snapshot,com.chemaxon.mapper.uti
+ ls,com.chemaxon.markush.backport,com.chemaxon.markush.components,com.
+ chemaxon.markush.composer,com.chemaxon.markush.enumeration,com.chemax
+ on.markush.model,com.chemaxon.markush.monitoring,com.chemaxon.markush
+ .nonhit,com.chemaxon.markush.overlap,com.chemaxon.markush.overlap.enu
+ meration,com.chemaxon.markush.standardizer,com.chemaxon.markush.util,
+ com.chemaxon.overlap.bruteforce,com.chemaxon.overlap.concurrent,com.c
+ hemaxon.overlap.concurrent.impl,com.chemaxon.overlap.context,com.chem
+ axon.overlap.io,com.chemaxon.overlap.persistence.serialization,com.ch
+ emaxon.overlap.persistence.storage,com.chemaxon.overlap.result,com.ch
+ emaxon.overlap.result.impl,com.chemaxon.overlap.storage,com.chemaxon.
+ overlap.storage.impl,com.chemaxon.overlap.unguarded,com.chemaxon.sear
+ ch,com.chemaxon.search.mcs,com.chemaxon.search.mcs.buildup,com.chemax
+ on.search.mcs.matchers,com.chemaxon.search.mcs.maxclique,com.chemaxon
+ .search.mcs.upperbound,com.chemaxon.search.mcs.util,com.chemaxon.sear
+ ch.model,com.chemaxon.search.model.stereo,com.chemaxon.search.sss,com
+ .chemaxon.search.transformation,com.chemaxon.search.transformation.tr
+ ansformers,com.chemaxon.search.transformation.util,com.chemaxon.searc
+ h.util,com.chemaxon.search.util.rgmol,com.chemaxon.transformer,com.ch
+ emaxon.transformer.util,com.chemaxon.util,com.chemaxon.util.concurren
+ t,com.chemaxon.util.sizeinfo,com.chemaxon.version,com.google.common.b
+ ase;x-friends:="jp.co.infocom.cheminfo.marvin,jp.co.infocom.cheminfo.
+ jchem",com.ibm.db2.jcc;x-friends:="jp.co.infocom.cheminfo.marvin,jp.c
+ o.infocom.cheminfo.jchem",com.jgoodies.forms.layout;x-friends:="jp.co
+ .infocom.cheminfo.marvin,jp.co.infocom.cheminfo.jchem",com.microsoft.
+ sqlserver.jdbc;x-friends:="jp.co.infocom.cheminfo.marvin,jp.co.infoco
+ m.cheminfo.jchem",com.mysql.jdbc;x-friends:="jp.co.infocom.cheminfo.m
+ arvin,jp.co.infocom.cheminfo.jchem",cs.jdbc.driver;x-friends:="jp.co.
+ infocom.cheminfo.marvin,jp.co.infocom.cheminfo.jchem",jchemsite,jchem
+ site.conf,jp.co.infocom.cheminfo.jchemlib;x-friends:="jp.co.infocom.c
+ heminfo.marvin,jp.co.infocom.cheminfo.jchem",oracle.jdbc;x-friends:="
+ jp.co.infocom.cheminfo.marvin,jp.co.infocom.cheminfo.jchem",oracle.sq
+ l;x-friends:="jp.co.infocom.cheminfo.marvin,jp.co.infocom.cheminfo.jc
+ hem",org.apache.derby.jdbc;x-friends:="jp.co.infocom.cheminfo.marvin,
+ jp.co.infocom.cheminfo.jchem",org.apache.poi.openxml4j.exceptions;x-f
+ riends:="jp.co.infocom.cheminfo.marvin,jp.co.infocom.cheminfo.jchem",
+ org.apache.poi.ss;x-friends:="jp.co.infocom.cheminfo.marvin,jp.co.inf
+ ocom.cheminfo.jchem",org.apache.poi.ss.usermodel;x-friends:="jp.co.in
+ focom.cheminfo.marvin,jp.co.infocom.cheminfo.jchem",org.apache.poi.ss
+ .util;x-friends:="jp.co.infocom.cheminfo.marvin,jp.co.infocom.cheminf
+ o.jchem",org.apache.poi.xssf.streaming;x-friends:="jp.co.infocom.chem
+ info.marvin,jp.co.infocom.cheminfo.jchem",org.apache.poi.xssf.usermod
+ el;x-friends:="jp.co.infocom.cheminfo.marvin,jp.co.infocom.cheminfo.j
+ chem",org.dom4j;x-friends:="jp.co.infocom.cheminfo.marvin,jp.co.infoc
+ om.cheminfo.jchem",org.exolab.castor.xml;x-friends:="jp.co.infocom.ch
+ eminfo.marvin,jp.co.infocom.cheminfo.jchem",org.hsqldb;x-friends:="jp
+ .co.infocom.cheminfo.marvin,jp.co.infocom.cheminfo.jchem",org.postgre
+ sql;x-friends:="jp.co.infocom.cheminfo.marvin,jp.co.infocom.cheminfo.
+ jchem"
+Bundle-Name: ChemAxon/Infocom JChem Libraries for JChem and Marvin Ext
+ ensions
+Bundle-Version: 15.12.7.0
+Bundle-ClassPath: jchemlib.jar,lib/aloe-1.0.jar,lib/antlr-2.7.2.jar,li
+ b/automaton-1.11-8.jar,lib/batik-core-1.0.jar,lib/bcprov-jdk15-1.46.j
+ ar,lib/castor-core-1.3.1.jar,lib/castor-xml-1.3.1.jar,lib/chart-1.0.j
+ ar,lib/com.chemaxon-alchemist-commons.jar,lib/com.chemaxon-alchemist-
+ configbuilder.jar,lib/com.chemaxon-alchemist-framework.jar,lib/com.ch
+ emaxon-alchemist-marvintools.jar,lib/com.chemaxon-alchemist-metaboliz
+ er.jar,lib/com.chemaxon-alchemist-old.jar,lib/com.chemaxon-alchemist-
+ standardizer.jar,lib/com.chemaxon-alchemist-structurechecker.jar,lib/
+ com.chemaxon-alchemist-wizard.jar,lib/com.chemaxon-alignment-plugin.j
+ ar,lib/com.chemaxon-alignment.jar,lib/com.chemaxon-annotations.jar,li
+ b/com.chemaxon-automapper.jar,lib/com.chemaxon-calculations-commons.j
+ ar,lib/com.chemaxon-calculations-nmr.jar,lib/com.chemaxon-calculation
+ s-plugin.jar,lib/com.chemaxon-calculations-solubility.jar,lib/com.che
+ maxon-calculations-stereoanal-api.jar,lib/com.chemaxon-calculations-s
+ tereoanal.jar,lib/com.chemaxon-calculations-stereoisomers.jar,lib/com
+ .chemaxon-calculations.jar,lib/com.chemaxon-chart.jar,lib/com.chemaxo
+ n-clustering.jar,lib/com.chemaxon-codeassist.jar,lib/com.chemaxon-com
+ mon.jar,lib/com.chemaxon-concurrent-utils.jar,lib/com.chemaxon-concur
+ rent.jar,lib/com.chemaxon-config-utils.jar,lib/com.chemaxon-convoy.ja
+ r,lib/com.chemaxon-core-calculations.jar,lib/com.chemaxon-core.jar,li
+ b/com.chemaxon-descriptors-jep.jar,lib/com.chemaxon-descriptors.jar,l
+ ib/com.chemaxon-enumeration-plugin.jar,lib/com.chemaxon-enumeration.j
+ ar,lib/com.chemaxon-fragmenter.jar,lib/com.chemaxon-icons-old.jar,lib
+ /com.chemaxon-icons.jar,lib/com.chemaxon-io-accord.jar,lib/com.chemax
+ on-io-all.jar,lib/com.chemaxon-io-cdx.jar,lib/com.chemaxon-io-gaussia
+ n.jar,lib/com.chemaxon-io-inchi.jar,lib/com.chemaxon-io-mdl.jar,lib/c
+ om.chemaxon-io-mrv.jar,lib/com.chemaxon-io-pdb.jar,lib/com.chemaxon-i
+ o-peptide.jar,lib/com.chemaxon-io-skc.jar,lib/com.chemaxon-io-smiles.
+ jar,lib/com.chemaxon-io-tripos.jar,lib/com.chemaxon-io.jar,lib/com.ch
+ emaxon-jchem-cachereg-common.jar,lib/com.chemaxon-jchem-cartridge-jcs
+ erver.jar,lib/com.chemaxon-jchem-cartridge-oraresident.jar,lib/com.ch
+ emaxon-jchem-cartridge-shared.jar,lib/com.chemaxon-jchem-cartridge.ja
+ r,lib/com.chemaxon-jchem-connection.jar,lib/com.chemaxon-jchem-consta
+ nts.jar,lib/com.chemaxon-jchem-gui.jar,lib/com.chemaxon-jchem-main.ja
+ r,lib/com.chemaxon-jchem-molecule-persister.jar,lib/com.chemaxon-jche
+ m-persist-common.jar,lib/com.chemaxon-jchem-sql-utils.jar,lib/com.che
+ maxon-jchem-utils.jar,lib/com.chemaxon-jep.jar,lib/com.chemaxon-jklus
+ tor.jar,lib/com.chemaxon-libmcs.jar,lib/com.chemaxon-license.jar,lib/
+ com.chemaxon-markush-gui-old.jar,lib/com.chemaxon-markush-tools.jar,l
+ ib/com.chemaxon-marvin-app.jar,lib/com.chemaxon-marvin-gui.jar,lib/co
+ m.chemaxon-marvin-services-gui.jar,lib/com.chemaxon-marvin-services.j
+ ar,lib/com.chemaxon-marvin-space.jar,lib/com.chemaxon-marvin-utils.ja
+ r,lib/com.chemaxon-metabolizer.jar,lib/com.chemaxon-modelling.jar,lib
+ /com.chemaxon-naming.jar,lib/com.chemaxon-office.jar,lib/com.chemaxon
+ -overlap-concurrent.jar,lib/com.chemaxon-overlap-core.jar,lib/com.che
+ maxon-overlap-descriptors.jar,lib/com.chemaxon-pharmacophore.jar,lib/
+ com.chemaxon-search-api.jar,lib/com.chemaxon-search-base.jar,lib/com.
+ chemaxon-search-extended.jar,lib/com.chemaxon-search-hitdisplay.jar,l
+ ib/com.chemaxon-search-mcs-app.jar,lib/com.chemaxon-search-mcs.jar,li
+ b/com.chemaxon-search-rgdecomp.jar,lib/com.chemaxon-search-screen.jar
+ ,lib/com.chemaxon-search-sss.jar,lib/com.chemaxon-search-utils.jar,li
+ b/com.chemaxon-sizeinfo-agent.jar,lib/com.chemaxon-sizeinfo.jar,lib/c
+ om.chemaxon-standardizer-reactor.jar,lib/com.chemaxon-structurechecke
+ r-api.jar,lib/com.chemaxon-structurechecker-marvin.jar,lib/com.chemax
+ on-structurechecker.jar,lib/com.chemaxon-transformer.jar,lib/com.chem
+ axon-version.jar,lib/commons-codec-1.6.jar,lib/commons-compress-1.9.j
+ ar,lib/commons-dbcp-1.4.jar,lib/commons-exec-1.2.jar,lib/commons-io-2
+ .4.jar,lib/commons-lang-2.5.jar,lib/commons-lang3-3.3.2.jar,lib/commo
+ ns-logging-1.1.1.jar,lib/commons-pool-1.6.jar,lib/csjdbc-1.0.jar,lib/
+ cxnregistry-native-x64-1.0.jar,lib/cxnregistry-native-x86-1.0.jar,lib
+ /db2jcc4-10.5.0.2-FP002.jar,lib/derby-10.10.1.1.jar,lib/derbyclient-1
+ 0.10.1.1.jar,lib/derbyLocale_cs-10.10.1.1.jar,lib/derbyLocale_de_DE-1
+ 0.10.1.1.jar,lib/derbyLocale_es-10.10.1.1.jar,lib/derbyLocale_fr-10.1
+ 0.1.1.jar,lib/derbyLocale_hu-10.10.1.1.jar,lib/derbyLocale_it-10.10.1
+ .1.jar,lib/derbyLocale_ja_JP-10.10.1.1.jar,lib/derbyLocale_ko_KR-10.1
+ 0.1.1.jar,lib/derbyLocale_pl-10.10.1.1.jar,lib/derbyLocale_pt_BR-10.1
+ 0.1.1.jar,lib/derbyLocale_ru-10.10.1.1.jar,lib/derbyLocale_zh_CN-10.1
+ 0.1.1.jar,lib/derbyLocale_zh_TW-10.10.1.1.jar,lib/derbynet-10.10.1.1.
+ jar,lib/derbytools-10.10.1.1.jar,lib/dom4j-1.6.1.jar,lib/fontbox-1.8.
+ 9.jar,lib/freehep-graphics2d-2.2.1.jar,lib/freehep-graphicsbase-2.2.1
+ .jar,lib/freehep-graphicsio-2.2.1.jar,lib/freehep-graphicsio-emf-2.2.
+ 1.jar,lib/freehep-graphicsio-pdf-2.2.1.jar,lib/freehep-graphicsio-ps-
+ 2.2.1.jar,lib/freehep-io-2.2.2.jar,lib/gluegen-rt-2.1.4-natives-andro
+ id-armv6.jar,lib/gluegen-rt-2.1.4-natives-linux-amd64.jar,lib/gluegen
+ -rt-2.1.4-natives-linux-armv6.jar,lib/gluegen-rt-2.1.4-natives-linux-
+ armv6hf.jar,lib/gluegen-rt-2.1.4-natives-linux-i586.jar,lib/gluegen-r
+ t-2.1.4-natives-macosx-universal.jar,lib/gluegen-rt-2.1.4-natives-sol
+ aris-amd64.jar,lib/gluegen-rt-2.1.4-natives-solaris-i586.jar,lib/glue
+ gen-rt-2.1.4-natives-windows-amd64.jar,lib/gluegen-rt-2.1.4-natives-w
+ indows-i586.jar,lib/gluegen-rt-2.1.4.jar,lib/gluegen-rt-main-2.1.4.ja
+ r,lib/guava-16.0.1.jar,lib/hsqldb-2.3.2.jar,lib/inchi-native-linux-1.
+ 3.jar,lib/inchi-native-linux64-1.3.jar,lib/inchi-native-macosx-1.3.1.
+ jar,lib/inchi-native-windows-1.3.jar,lib/inchi-native-windows64-1.3.j
+ ar,lib/itext-2.1.7.jar,lib/itext-rtf-2.1.7.jar,lib/jacob-1.17.jar,lib
+ /jacob-native-x64-1.17.jar,lib/jacob-native-x86-1.17.jar,lib/jai_code
+ c-1.0.jar,lib/jai_core-1.1.3.jar,lib/jai-imageio-core-1.3.0.jar,lib/j
+ axen-1.1.6.jar,lib/jcampdx-lib-0.9.1.jar,lib/jchem.jar,lib/jcommander
+ -1.32.jar,lib/jempbox-1.8.9.jar,lib/jextexp-1.0.jar,lib/jgoodies-comm
+ on-1.7.0.jar,lib/jgoodies-forms-1.7.2.jar,lib/jgrapht-0.8.3.jar,lib/j
+ h-1.0.jar,lib/jni-inchi-0.7.jar,lib/jogl-all-2.1.4-natives-android-ar
+ mv6.jar,lib/jogl-all-2.1.4-natives-linux-amd64.jar,lib/jogl-all-2.1.4
+ -natives-linux-armv6.jar,lib/jogl-all-2.1.4-natives-linux-armv6hf.jar
+ ,lib/jogl-all-2.1.4-natives-linux-i586.jar,lib/jogl-all-2.1.4-natives
+ -macosx-universal.jar,lib/jogl-all-2.1.4-natives-solaris-amd64.jar,li
+ b/jogl-all-2.1.4-natives-solaris-i586.jar,lib/jogl-all-2.1.4-natives-
+ windows-amd64.jar,lib/jogl-all-2.1.4-natives-windows-i586.jar,lib/jog
+ l-all-2.1.4.jar,lib/jogl-all-main-2.1.4.jar,lib/json-20140107.jar,lib
+ /jsr305-2.0.3.jar,lib/juniversalchardet-1.0.3.jar,lib/levigo-jbig2-im
+ ageio-1.6.1.jar,lib/looks-2.1.4.jar,lib/macosx-application-bundle-1.0
+ .jar,lib/MarvinBeans.jar,lib/mimepull-1.7.jar,lib/mysql-connector-jav
+ a-5.1.29.jar,lib/ojdbc6-11.2.0.4.jar,lib/ooxml-schemas-1.1.jar,lib/os
+ ra-linux-x64-1.3.8.2.jar,lib/pdfbox-1.8.9.jar,lib/poi-3.11-beta2-2014
+ 0914.jar,lib/poi-ooxml-3.11-beta2-20140914-56023.jar,lib/poi-scratchp
+ ad-3.11-beta2-20140914.jar,lib/postgresql-9.3-1101-jdbc4.jar,lib/rege
+ xp-1.2.jar,lib/runtime12-1.0.jar,lib/saaj-impl-1.3.19.jar,lib/sqljdbc
+ 4-4.0.jar,lib/tagsoup-1.2.1.jar,lib/tesseract-data-3.01_1.jar,lib/tes
+ seract-linux-x32-3.01_1.jar,lib/tesseract-linux-x64-3.01_1.jar,lib/te
+ sseract-macosx-3.01_2.jar,lib/tesseract-windows-3.01_1.jar,lib/tika-c
+ ore-1.2.jar,lib/tika-parsers-1.2.jar,lib/ws-commons-util-1.0.2.jar,li
+ b/wsdl4j-1.6.3.jar,lib/xml-apis-1.0.b2.jar,lib/xmlbeans-2.5.0.jar,lib
+ /xmlrpc-client-3.1.3.jar,lib/xmlrpc-common-3.1.3.jar,lib/xz-1.5.jar
+Bundle-Activator: jp.co.infocom.cheminfo.jchemlib.JChemLibNodePlugin
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: lib/poi-ooxml-3.11-beta2-20140914-56023.jar
+SHA-256-Digest: WczEnMiF5sRK1YzO9i6vKuhG1XicspAFu45hHPCN2D8=
+
+Name: lib/com.chemaxon-fragmenter.jar
+SHA-256-Digest: Z+mJ0Y1EKk2lXbvrBY/J5XjpCciEU66QcB3qAvMtvX8=
+
+Name: lib/com.chemaxon-search-base.jar
+SHA-256-Digest: KZRGYmZvycEpViG5xY95kQfVyoJx0B1amDOszi6W/Mk=
+
+Name: lib/freehep-graphicsio-emf-2.2.1.jar
+SHA-256-Digest: ijKcOJ4oFnDpcalEcWUx6KwcTv9Eo1sm84vyNjOP/34=
+
+Name: lib/looks-2.1.4.jar
+SHA-256-Digest: U0ufox20v3ZVdXpsPEenUQC0LMhOu998KfXg22KX+AE=
+
+Name: lib/freehep-graphicsbase-2.2.1.jar
+SHA-256-Digest: BNFVtSasOyZQY8vqCOZWXsRG/OgdmZzdi9lqrKjwGKM=
+
+Name: lib/com.chemaxon-jchem-main.jar
+SHA-256-Digest: bPVCD/UTExXaphvP3aLfJpVgfyzwKaKQkBHa0vwJHiU=
+
+Name: lib/cxnregistry-native-x64-1.0.jar
+SHA-256-Digest: CZ8X+4MO+fc3dYPqP6jJCwrhCopc3l6ltKLN9VFmgGI=
+
+Name: lib/jextexp-1.0.jar
+SHA-256-Digest: q9+cEAoskmDiAYCJsdvjDE7Qm8q0r3XVYO2Eyhww4fk=
+
+Name: lib/pdfbox-1.8.9.jar
+SHA-256-Digest: aMoVKnGnA3EJvDqUlsOlAgOu1IfOOTYvfnS0wMaZbVQ=
+
+Name: lib/derbyLocale_ko_KR-10.10.1.1.jar
+SHA-256-Digest: 4P+Coysp14luhEOEl4csRXBymr9XUqe0YVQxn81E1SM=
+
+Name: lib/com.chemaxon-pharmacophore.jar
+SHA-256-Digest: oK3W6sRH8aVtKMzCiE6WfE7a7DbyWa34HZY+CyTfJVA=
+
+Name: lib/automaton-1.11-8.jar
+SHA-256-Digest: okR19sz+HMek/p404Fzmh7DODG6Mt4Hg7O07GGSCxh4=
+
+Name: lib/com.chemaxon-jklustor.jar
+SHA-256-Digest: X0NqXemtWgjJ3mpmu4UVIdIJp1Lo6ae6XHUAiR7ivc0=
+
+Name: lib/freehep-io-2.2.2.jar
+SHA-256-Digest: TBk0Km5974H1n7HxPzTGslxJyZA0BN6RP24G8fcjORE=
+
+Name: lib/jai_codec-1.0.jar
+SHA-256-Digest: bXgk2XLAtuENqpX0MPkX0iVpVFNeYt750ofnm/eCQgA=
+
+Name: lib/com.chemaxon-jchem-utils.jar
+SHA-256-Digest: zKi+F0vqpP0XBJsMPRGVlZkbqAOn4/I9YPQlSFfSWY4=
+
+Name: lib/com.chemaxon-icons.jar
+SHA-256-Digest: aXjn864EzsMcIkPFfNgeBwMa8fNBzZkprDbruVNkEik=
+
+Name: lib/com.chemaxon-search-extended.jar
+SHA-256-Digest: BzJaJPbk7wvLs98ck0NYjGAvjiwdqF2UhMUWqB8Xds8=
+
+Name: lib/com.chemaxon-enumeration.jar
+SHA-256-Digest: OqBLslU74qOx6YkybRCaEjjwK+5qtF70w5pNdUgW6Ec=
+
+Name: lib/tika-core-1.2.jar
+SHA-256-Digest: 4jUaPAClrya4xJbQ/WWRmKoOiXxhtb9tALyyfpVZqq0=
+
+Name: lib/com.chemaxon-io-skc.jar
+SHA-256-Digest: HE/0X9nxEkCS3jx3QLL0E0/7H2okMK7D4+KcBS2ERK4=
+
+Name: lib/com.chemaxon-marvin-app.jar
+SHA-256-Digest: SQHui5ju7XXuHvE+YpO16Cr9dAxPHHTwolIEceTYpK0=
+
+Name: lib/com.chemaxon-io-inchi.jar
+SHA-256-Digest: gxZG8EgPvOhePKDhXauvsmc4G/bBoL+9JGcbKbIf/VU=
+
+Name: lib/derbyLocale_it-10.10.1.1.jar
+SHA-256-Digest: SAFJcd8nqapBq8QEah59SYpWiPCfxptbtCrktCDAd/4=
+
+Name: lib/com.chemaxon-alchemist-marvintools.jar
+SHA-256-Digest: Cvh9iE8A+ncU0kSeQnMsoB8hK18AWkP8oUWkKCuMvsM=
+
+Name: lib/com.chemaxon-alignment-plugin.jar
+SHA-256-Digest: uAQCPOHCyZWKJrESjoyXA2cyPEnP+w+WGaCwmXHic8M=
+
+Name: lib/com.chemaxon-structurechecker-marvin.jar
+SHA-256-Digest: pSbTlB0EPFCRpDEwog/yct/fwJWrPT/41im0t/mCNMU=
+
+Name: lib/com.chemaxon-jchem-constants.jar
+SHA-256-Digest: bMzVp07ZuqRD5Xxmb4bDbIPjh7+6ARhS2PXC7r2xQE0=
+
+Name: lib/com.chemaxon-search-mcs.jar
+SHA-256-Digest: ZpEuZd96i5pVnLdhsrM683MNKJiMiSj3CWIa8GWTdI0=
+
+Name: lib/gluegen-rt-2.1.4.jar
+SHA-256-Digest: mNc6RElLTpFyTwVWEf+sPGKfgy/ay7+0Tchke99pfAg=
+
+Name: lib/com.chemaxon-search-screen.jar
+SHA-256-Digest: gP/XFKvbKZidwiyWT1BN9WdwF+Tz64LpcF0N0bk++to=
+
+Name: lib/poi-scratchpad-3.11-beta2-20140914.jar
+SHA-256-Digest: 3xVybFc7Shg0D03S5WcAweUXLnJvFJGF8bWlni7MFwQ=
+
+Name: lib/itext-rtf-2.1.7.jar
+SHA-256-Digest: SdO53yDMxlZckbixjGOOywGP1Si262SZHW2Lpzl1wTU=
+
+Name: lib/com.chemaxon-common.jar
+SHA-256-Digest: ooawUH9afflioY/H1TwMeHf1vkc2GL7Ob66JT7jLpYw=
+
+Name: META-INF/services/javax.xml.parsers.SAXParserFactory
+SHA-256-Digest: cdXz13wXAYB5Sl3hX38f7lUa17tIkNHzBbt1JIn3718=
+
+Name: lib/inchi-native-macosx-1.3.1.jar
+SHA-256-Digest: x4G3FSBLm/qOkstxGo5DEhSUHSiF/e+LUUEoHVg6TcE=
+
+Name: lib/gluegen-rt-2.1.4-natives-linux-amd64.jar
+SHA-256-Digest: CfaxbHHeRzNa8G0j9GU2WWzHuHkE/WwQ7mHhE7/6vs8=
+
+Name: lib/gluegen-rt-2.1.4-natives-linux-i586.jar
+SHA-256-Digest: OUJ47II374juAPBL6+pvuNXZC8uhZ3PNhSXOYqRjyNE=
+
+Name: lib/jai_core-1.1.3.jar
+SHA-256-Digest: i2ls8GdTNUX0TC9oM54kqxomaRU+0ggapb6HSfTVkr8=
+
+Name: lib/derby-10.10.1.1.jar
+SHA-256-Digest: YZymnoYiyFsMKNx0P/99bmhO46BFKXLOwE1Jzx1Me88=
+
+Name: lib/derbyLocale_hu-10.10.1.1.jar
+SHA-256-Digest: yENqEF3rUakqI0/TKYjcIB+g2XypHNaC5kCyXunSTS4=
+
+Name: lib/com.chemaxon-alchemist-configbuilder.jar
+SHA-256-Digest: unYtH4tW34Zaed22CiW45A5bCWLSTncPlL9A/TbTEP4=
+
+Name: lib/com.chemaxon-jep.jar
+SHA-256-Digest: fWHtMGt+P3ejFCqvzerivmVsuDhGado6D/Svman6Eug=
+
+Name: lib/com.chemaxon-overlap-descriptors.jar
+SHA-256-Digest: D9fGBMhpVynNWyfsei8ntx6KUP188LFySBld/aNNHPM=
+
+Name: lib/derbytools-10.10.1.1.jar
+SHA-256-Digest: iIKv8qhrMJv6i4ACKrTtFTgUEQmYhjRq/W8+74TUXrc=
+
+Name: lib/hsqldb-2.3.2.jar
+SHA-256-Digest: 50Pyf56Ea/Zv7C4m1XTcEffRoWUwrti/aH/heGp8LsY=
+
+Name: lib/com.chemaxon-io-smiles.jar
+SHA-256-Digest: hwSRKveL4thpv4o1glrNCNvv99elQJrgN8W8pJy8Xyo=
+
+Name: lib/com.chemaxon-marvin-space.jar
+SHA-256-Digest: oj1jwnbQFl53iu+vOMTJfcVVjfwCdDExXOip1GjDXOM=
+
+Name: lib/jogl-all-2.1.4-natives-windows-i586.jar
+SHA-256-Digest: 6lt47v4ply37xqwUykAqYlRkVk3fWj4EPNYzeL2QZig=
+
+Name: lib/jai-imageio-core-1.3.0.jar
+SHA-256-Digest: yRJ71mbroZolIoJdzazGJ+1RP1SZMIEs01LTXmcNNag=
+
+Name: lib/jogl-all-2.1.4-natives-solaris-i586.jar
+SHA-256-Digest: RbneJmoKCokQcZHSruLS3XUc6G3OvhKJFiV8jLs3pSw=
+
+Name: lib/com.chemaxon-license.jar
+SHA-256-Digest: bxON8dpSC8eLsB+EEYCjez757kPAwbYdvn/bjNyPAaM=
+
+Name: lib/com.chemaxon-convoy.jar
+SHA-256-Digest: kr2Kjr4YuJbZv/iWtkyw/1i/dY5YjhfX7wqqitI+mpI=
+
+Name: lib/com.chemaxon-calculations-solubility.jar
+SHA-256-Digest: oN81mXL3FIP5ZaMvYBImc2TCHSpPXDh32+UXjm6p6rQ=
+
+Name: lib/wsdl4j-1.6.3.jar
+SHA-256-Digest: dA9Ejms7wRDgL0oeVvtXZy5zLS7K8prhWDUFGuivRyU=
+
+Name: lib/jogl-all-2.1.4-natives-windows-amd64.jar
+SHA-256-Digest: zO8jgKuS8Q9p6dSNZ92uxghmACw6XWZAAIU6o6UBnrk=
+
+Name: lib/com.chemaxon-enumeration-plugin.jar
+SHA-256-Digest: vJM+T+36QUe4vowoRUhgCYyWCiWfPBa5w3kpeorqO/8=
+
+Name: lib/freehep-graphicsio-ps-2.2.1.jar
+SHA-256-Digest: iuOpRcOFd/kJeQWEVzKWk/FQNHPvmew7jXCdzkxa+dA=
+
+Name: lib/tesseract-data-3.01_1.jar
+SHA-256-Digest: 45LuCpu8DUxYqnAF9FypFqGKAvAZ7be6p0KUgVCPCso=
+
+Name: lib/derbyLocale_es-10.10.1.1.jar
+SHA-256-Digest: AdnfVZVUplFULHF4Z6M4t6BT3b21H89g4lPTiiM5rDI=
+
+Name: lib/jcommander-1.32.jar
+SHA-256-Digest: /VYIcQ/5jMW+qMcLYMiwN0rdb/rkmg8kObX9roCdPDo=
+
+Name: lib/json-20140107.jar
+SHA-256-Digest: jlqgo2i+5gNHtaSthh2faMd5P2De7qie/USetw1a5iI=
+
+Name: lib/xmlbeans-2.5.0.jar
+SHA-256-Digest: XZ6rRTTaOdLYcPbIf3mBR93Q8ydOC9mJHwe+kAj75Yg=
+
+Name: lib/castor-xml-1.3.1.jar
+SHA-256-Digest: EGJXaj7hVyG5X+07nqax+6aTGuiiT/GXg8iSH2yDzeQ=
+
+Name: lib/postgresql-9.3-1101-jdbc4.jar
+SHA-256-Digest: zpIHy6QJhXQytLPz/KffpYFyEfdC35cqGSD1JQZXdcw=
+
+Name: lib/dom4j-1.6.1.jar
+SHA-256-Digest: WTVS/+o8WCPGYCR4tQAqfFJf2QSjxE8avkBlwi7frHM=
+
+Name: lib/com.chemaxon-search-mcs-app.jar
+SHA-256-Digest: dv60Cw726fTzbpXj0AaxTSbZNMwlmR+97OIiDJ9aUTU=
+
+Name: lib/com.chemaxon-markush-tools.jar
+SHA-256-Digest: +pgi1KMs8qtaL43lQohgN9nntDoO2aWn83SCwgwxXF4=
+
+Name: lib/tesseract-linux-x64-3.01_1.jar
+SHA-256-Digest: dpOXjuG7SLRCUUzP8mve3ZuNvqRNPwpZOUCZ9rQyluk=
+
+Name: lib/commons-codec-1.6.jar
+SHA-256-Digest: VLNOlBuOFBS9PkDXNu/TSBdy3CbbMpb2qkXOyfYgPYY=
+
+Name: lib/csjdbc-1.0.jar
+SHA-256-Digest: 6dkFnuBv2exmHl6OEvjEFrIZmbsz2VHAOwmCJ9clVXs=
+
+Name: lib/xz-1.5.jar
+SHA-256-Digest: hvMPqHdfo6Ys2znR7XimAZFkwQWIZASNQsvuJE4m6EA=
+
+Name: lib/com.chemaxon-jchem-sql-utils.jar
+SHA-256-Digest: A6CJph91YEQkFlBxPWinoYZrDRCRV+YbJnpoL3YO+/0=
+
+Name: lib/com.chemaxon-search-rgdecomp.jar
+SHA-256-Digest: zTi2qQsBd3m7XDuGAd1CUjitp+Kf3gA7TZ6XrSK7Qkg=
+
+Name: lib/com.chemaxon-io.jar
+SHA-256-Digest: s8V1cHOKPk7nGpH6jmkYfOoiFVVnWHCIBUqgDWqLn/c=
+
+Name: META-INF/services/javax.xml.parsers.DocumentBuilderFactory
+SHA-256-Digest: fW01A++dyX3d5yDxX9HoR4rjNvoKOUYxEn28uP+lvj8=
+
+Name: lib/gluegen-rt-2.1.4-natives-windows-amd64.jar
+SHA-256-Digest: F1ZPl14pY2N2hoNvwF8/aF+X9YU6Iv1UG2huHgKfdxA=
+
+Name: lib/com.chemaxon-core.jar
+SHA-256-Digest: frcRGB5M9s4TS8gczofpKn3njbDVcEo5BT7kaMZTaDE=
+
+Name: lib/ojdbc6-11.2.0.4.jar
+SHA-256-Digest: VBoIJfqonCgBflmkGFnIF7QBttbKeqBbsfuzE/PjnAg=
+
+Name: lib/commons-dbcp-1.4.jar
+SHA-256-Digest: puLYNVHQ5bWaqUI1nzAQ0155Nl5lUq09uqZ3bkhR5PY=
+
+Name: lib/commons-logging-1.1.1.jar
+SHA-256-Digest: zm+RPK0fDbOq1wGG1lxbx//Mmpnj/o4LE3MSgZ98Ni8=
+
+Name: lib/jni-inchi-0.7.jar
+SHA-256-Digest: YPZEVfGMKg2vxKtZWzHaZD4NQTA9B6yLRagg3rtCp3M=
+
+Name: lib/com.chemaxon-icons-old.jar
+SHA-256-Digest: pE85adRWIIVeyzRdRy3UBvLQPcYfKWjWe6Bgz5ZtOxo=
+
+Name: lib/com.chemaxon-io-gaussian.jar
+SHA-256-Digest: n+zIjkiTzOLl9pq9hRkoIsLz3YyDIBu958mML22rYy8=
+
+Name: lib/com.chemaxon-marvin-services-gui.jar
+SHA-256-Digest: DzQtw4E1+qdy89xtwQDc0EwgcEH6Z1AGl/fxqmJFhzk=
+
+Name: lib/gluegen-rt-2.1.4-natives-solaris-i586.jar
+SHA-256-Digest: DMUTBQmkp44eFtiHCoAyvg59/ecETSlTfbBRejPqY20=
+
+Name: lib/tagsoup-1.2.1.jar
+SHA-256-Digest: rJf3tLHY6TN+36DjQET40O/nIj9q2POoXVTMEBjqLgQ=
+
+Name: lib/com.chemaxon-alchemist-structurechecker.jar
+SHA-256-Digest: d+YGvUe1ImN5MMzMHDvWOB/6qqHz5b7wN9bHvjvA80s=
+
+Name: lib/gluegen-rt-main-2.1.4.jar
+SHA-256-Digest: zBFPTAspsv5NBqXHkxg4gURSoEzJeJ4nshqwXTVBwQc=
+
+Name: lib/batik-core-1.0.jar
+SHA-256-Digest: ySR1WIymIg5+TeRxmivbaNTVrO/LgVcLXg9PxsWBOKo=
+
+Name: lib/com.chemaxon-naming.jar
+SHA-256-Digest: 0hIatiaEAFoL68Ua6XROU0/tsW9xyB4rhwpMU82JBAk=
+
+Name: lib/com.chemaxon-io-mrv.jar
+SHA-256-Digest: 3FMVml043sV+FbmbCL8kuZlSpkaGUkysWoK/RWyR7vY=
+
+Name: lib/com.chemaxon-office.jar
+SHA-256-Digest: z8gsPTU4CGNiWAgF2frvXuRLBGLV3GakoNErVij7+74=
+
+Name: lib/jogl-all-2.1.4-natives-solaris-amd64.jar
+SHA-256-Digest: M4ugUmt9L0BEB4lwePHpw7nrCbb3Q8j3jsB6Q4mbFl0=
+
+Name: lib/com.chemaxon-jchem-cartridge-oraresident.jar
+SHA-256-Digest: azLENnn9Kw/HcwcdGaLntj2ld4epT+oLy50FGq+1Xvk=
+
+Name: lib/com.chemaxon-alchemist-wizard.jar
+SHA-256-Digest: mrqvrXJ+8fHR8RHHsVPb5RaZbwTtmAPJRAsD1pc7f/Y=
+
+Name: lib/com.chemaxon-structurechecker-api.jar
+SHA-256-Digest: num9GbwI0+hv3zvV8JVg0BtXpMCOpItGPxq5ZdS9dew=
+
+Name: lib/jacob-native-x64-1.17.jar
+SHA-256-Digest: VadJHYEuD9Cyn1ILQlX0ETJfhcJQVubv5ofrwz5qf9o=
+
+Name: lib/derbyclient-10.10.1.1.jar
+SHA-256-Digest: dw3wJv3TCZaSs1MHBQbFpsWx6Xt4TdXReg2cfBAP9JM=
+
+Name: lib/com.chemaxon-markush-gui-old.jar
+SHA-256-Digest: Ov9TAGV1Fa0iSLGtjjN1Sax7dhnB8BRDl+9HGGGBfo4=
+
+Name: lib/com.chemaxon-alchemist-old.jar
+SHA-256-Digest: 06cMnytA/BTV0OUd8LFiMajxkU8aaZXFGE9677c/hi8=
+
+Name: lib/com.chemaxon-io-mdl.jar
+SHA-256-Digest: OWe7LPuBLwb9kSn92ZQyRPM8TkWOovIyemeT5RUuRu8=
+
+Name: lib/jogl-all-2.1.4-natives-linux-armv6.jar
+SHA-256-Digest: k6KAXwRZwpy7D7qHN5V051wwrtpBb7aHIbKjyO7Olu8=
+
+Name: lib/derbyLocale_zh_CN-10.10.1.1.jar
+SHA-256-Digest: R4GBh0Q6cin34WceVJSh/yd/ZTleGRNmIDxFDcNyEGQ=
+
+Name: lib/jgoodies-common-1.7.0.jar
+SHA-256-Digest: oXSAxijhfb5fwfXYZvpdsDiotSNZByxgdt6+sH7vi8k=
+
+Name: lib/inchi-native-linux-1.3.jar
+SHA-256-Digest: 9tbAans7+ZGWepeF6QA1hx1lt53fkrosG+NeHqiZarw=
+
+Name: lib/com.chemaxon-structurechecker.jar
+SHA-256-Digest: KnYPNfmyXnLgj+hyb1mHEa+C2d7uwjdQlgSgkV4s32A=
+
+Name: lib/com.chemaxon-automapper.jar
+SHA-256-Digest: 1N4BbPLqeFvF/UwWs5KYtlBrjcGtUd1U3JGyxRKNy1o=
+
+Name: lib/com.chemaxon-alchemist-metabolizer.jar
+SHA-256-Digest: hSfsc2btqrFgqzRhNnSnwSa/+90o8tjOcP9+trCMM8M=
+
+Name: lib/fontbox-1.8.9.jar
+SHA-256-Digest: Xxj/bfb4dXniRg2m+cinC12TGDy9ykk0W2TGxYcE56I=
+
+Name: lib/jh-1.0.jar
+SHA-256-Digest: ht0NIU2T8+W2x4tm5oc91aB64m5FeWi5I6J4p1WUxpg=
+
+Name: lib/com.chemaxon-version.jar
+SHA-256-Digest: EQTW9fVuHt9I+bueekR06R8lv9tEpv+G71IK9vhnmu8=
+
+Name: lib/com.chemaxon-standardizer-reactor.jar
+SHA-256-Digest: IjhQmtbdnjZkpvg55pY6ESstL2/gWUtT8XjbDYGwjvA=
+
+Name: lib/com.chemaxon-calculations-stereoanal-api.jar
+SHA-256-Digest: 1tV2WI9/UJwLq1aTfR/j4epPysinuYMlxnzfExLn2yg=
+
+Name: lib/jcampdx-lib-0.9.1.jar
+SHA-256-Digest: GvRUUksg0Gvtf730EkvPJ69zKS80XHZ/ddN8adiCRTk=
+
+Name: lib/com.chemaxon-descriptors.jar
+SHA-256-Digest: oGYS+X2umQzU8vZBAFPZQQckit3vhtHyGAPvi96LYAo=
+
+Name: lib/gluegen-rt-2.1.4-natives-linux-armv6hf.jar
+SHA-256-Digest: awn7sAedQ8fhO/li8Bj2TVung4iIBOwQ34gl/86RWAA=
+
+Name: lib/poi-3.11-beta2-20140914.jar
+SHA-256-Digest: nZNip/IA81xl/vnTHam7qA0UCxUOugV6jcb7ls0Me4Q=
+
+Name: lib/com.chemaxon-calculations-nmr.jar
+SHA-256-Digest: XPLPfVuWzBTy5UTCiaDAT7Bx5ie6mgfXPZ4hHj/LHn0=
+
+Name: lib/commons-lang3-3.3.2.jar
+SHA-256-Digest: a4HRB1Ta3xhNOGARSG5lCcLMDD0zVlztT7RAK5QT1H0=
+
+Name: lib/derbyLocale_pl-10.10.1.1.jar
+SHA-256-Digest: bfzT//SfWERc9Ns5WCSvpZsZHCdeSqvsFH5F1Ey3L7Q=
+
+Name: lib/derbyLocale_ja_JP-10.10.1.1.jar
+SHA-256-Digest: zBBQ4Dg0BfuFC48uNtv/6Qx9L5sd0tyiC6S7EmchQBs=
+
+Name: lib/com.chemaxon-jchem-gui.jar
+SHA-256-Digest: 5wPbFEf5epu2aY86j5/qHU4omSOl9j1T0jc7e5V8Z1s=
+
+Name: lib/xml-apis-1.0.b2.jar
+SHA-256-Digest: gjLzSCw0bYQ+Xj+zYQVXccGswQW22KGJ65AYxVlIz58=
+
+Name: lib/com.chemaxon-overlap-concurrent.jar
+SHA-256-Digest: ifs26BdFFAaqIWYeNffRcbyjerQP60hKuBY9OQ7gfgs=
+
+Name: lib/com.chemaxon-search-api.jar
+SHA-256-Digest: RXHSuBxHfC2mhQBvxNHypj2ad+H5iaFPq6TpgDTUSUc=
+
+Name: lib/com.chemaxon-io-pdb.jar
+SHA-256-Digest: HWyaCKWo4iorT6Q1NXpAFOAB1l6qLWdJQPXcye7H39U=
+
+Name: lib/com.chemaxon-search-utils.jar
+SHA-256-Digest: /GlkONr/kCO5A6R/bKu+P65SrK9Y7ZnJuuBwqH5GrsY=
+
+Name: lib/mimepull-1.7.jar
+SHA-256-Digest: dNgDIzMi00be21+pj3+w33PZfzgzseKxXArthCIqMj8=
+
+Name: lib/com.chemaxon-overlap-core.jar
+SHA-256-Digest: LxMt1ypW/KGATNOpZZTqnA0I1QUlPMgM3KkVMdSpAk0=
+
+Name: lib/juniversalchardet-1.0.3.jar
+SHA-256-Digest: dXv+kGGTuLZR553CbNZ9a1XQdwos37A4FZFQT3edSnY=
+
+Name: lib/com.chemaxon-calculations-stereoisomers.jar
+SHA-256-Digest: XP62sKT6e8FA+0Zq+Unn04baPxyaJlIPVhSOJEEUnPk=
+
+Name: lib/aloe-1.0.jar
+SHA-256-Digest: Q685OJFJ3cJA9e5eBLt3s4PiKQXyxbTWo1IPpRzaLiU=
+
+Name: lib/com.chemaxon-jchem-persist-common.jar
+SHA-256-Digest: bsrIvnDzXoMVPAOh2ayDE1oB/cp41/MUCBbaz7vFxVs=
+
+Name: lib/sqljdbc4-4.0.jar
+SHA-256-Digest: a0I6To8R3FNX0c+jjuKkK66HqDEm/jNjtEZOUSDTP4w=
+
+Name: lib/com.chemaxon-jchem-cachereg-common.jar
+SHA-256-Digest: auMeThCxmRHqMW8fPwEG0FjvwnsDfNuWDIfPqhCVyfU=
+
+Name: lib/commons-exec-1.2.jar
+SHA-256-Digest: 8ybCQ4tDOIWU+Mj1NjCw+csEM2TxOiOjZOnMEx4LC7g=
+
+Name: lib/com.chemaxon-codeassist.jar
+SHA-256-Digest: loNkHFWh7QlyklFW5XKSbPnf0o4DEZMmmL10oWi/Bx4=
+
+Name: lib/antlr-2.7.2.jar
+SHA-256-Digest: KlMgaWPfp44zdGtvg2f32ZcPo2hlqCXXv7zheE3A9NQ=
+
+Name: lib/com.chemaxon-clustering.jar
+SHA-256-Digest: 3ysdohLKQ9lFOp1+xfYuY6kyHWuDabEz4hzTCXMUDOk=
+
+Name: lib/com.chemaxon-io-accord.jar
+SHA-256-Digest: 4t+1rcceqNkYXyYnNjnYhmg0VD0Q6lvQIWRO5S11AVc=
+
+Name: lib/gluegen-rt-2.1.4-natives-macosx-universal.jar
+SHA-256-Digest: zBxDqB5277FXjwgCatkywBgaP/IFS+VmNAYDIqeq1ig=
+
+Name: lib/com.chemaxon-jchem-connection.jar
+SHA-256-Digest: 42YUqcyGkLD9LK6UE4/wcQChc5Njg0bwHddss56sBLI=
+
+Name: lib/cxnregistry-native-x86-1.0.jar
+SHA-256-Digest: nS4CZK1a83j76mUx1EGFKSRb8T4s9gvVbqjlMRHGpv8=
+
+Name: lib/inchi-native-windows-1.3.jar
+SHA-256-Digest: e4p0/T1SvPLArBVlL8ZHMM4LpxXr86jQ1W+qkBq2dpk=
+
+Name: lib/osra-linux-x64-1.3.8.2.jar
+SHA-256-Digest: Uh3xO6q5tIFNzR1Nh9zjpJ2kDOCa+/udQKKcjqTIIi0=
+
+Name: lib/chart-1.0.jar
+SHA-256-Digest: Y3Srx9cvXxocfbqjvEW4uNId5Q9lNx9VfAcjt8gx1RY=
+
+Name: lib/com.chemaxon-alchemist-standardizer.jar
+SHA-256-Digest: PgyRT/cxOVBwHsLo1477Xj2aGH3KLj88zrc2xKth0HA=
+
+Name: lib/com.chemaxon-annotations.jar
+SHA-256-Digest: 0G5AKANwAaAd57S+aBlnOO7EloHhS0OPeNalSs+XJ1E=
+
+Name: lib/derbyLocale_ru-10.10.1.1.jar
+SHA-256-Digest: OvY10R+Xfeakoa67v67mferJbzyLyZu25Kf+3JAj5hU=
+
+Name: lib/jempbox-1.8.9.jar
+SHA-256-Digest: s3MQm09ioKhXiqyeKrWnJtKByUS/sB8bPvTG3rHT070=
+
+Name: lib/commons-compress-1.9.jar
+SHA-256-Digest: uOChcAAjNZorTZ8EuSh9e5qiAPT+rBB5gSM37vLcuOI=
+
+Name: lib/jacob-native-x86-1.17.jar
+SHA-256-Digest: cy892M/KWb+chzVcvGNT3KPRkhEEk9O2/hzBjgCSqBk=
+
+Name: lib/com.chemaxon-calculations-commons.jar
+SHA-256-Digest: eH1EMMhi3X4qsw9gNn/mKP0UiYljAYBHC9ma2tLGGmI=
+
+Name: lib/com.chemaxon-jchem-cartridge-shared.jar
+SHA-256-Digest: zrE/VwYwd1Da4NSJT/xEPqm63z/He4qaCly0WLROY7k=
+
+Name: lib/com.chemaxon-alignment.jar
+SHA-256-Digest: NW49btktdU3+Fl2y0QgBnhrW1AT1Rwt1zktDhAkIonI=
+
+Name: lib/com.chemaxon-chart.jar
+SHA-256-Digest: wzRBcvBfhAVWVclp15BFqiSCAwZdYIxD8WysGY+S+TE=
+
+Name: lib/jogl-all-2.1.4-natives-android-armv6.jar
+SHA-256-Digest: x9YOSPMh+FcviOhvoj0V5DnEA9tDL4L+9SdYq1BKKrQ=
+
+Name: lib/com.chemaxon-config-utils.jar
+SHA-256-Digest: jlxGaxS8rBMcUs0Te+LEdSS4QF+NTwBkiGZHFGQ8q7s=
+
+Name: lib/jgoodies-forms-1.7.2.jar
+SHA-256-Digest: i0XeIxYkYi8YicGBZ/KmfDrXk9qhacrDjIF6kaX0XOQ=
+
+Name: lib/commons-lang-2.5.jar
+SHA-256-Digest: pk4Mc5iP741bc/wp0QWjpuLcXZuQqU/KBlzSQ53FZZA=
+
+Name: lib/bcprov-jdk15-1.46.jar
+SHA-256-Digest: u5qbs6RJeoivHPyldOKLenY7X0+dubVH8r5Lm3Y8pgA=
+
+Name: lib/mysql-connector-java-5.1.29.jar
+SHA-256-Digest: qnMgETDHZaM4ZNTTqqsZ3AfvUMzJ31kknSGkHwNgPUM=
+
+Name: lib/com.chemaxon-search-sss.jar
+SHA-256-Digest: curw9nHeH5SfN2MnF/qCbMIGaD/StfzNBFqYfSzPr8E=
+
+Name: lib/jchem.jar
+SHA-256-Digest: 1wWDbP6PDWbuLAsHep1JpEXamjPGyPBYz0Ebp6X90vc=
+
+Name: lib/com.chemaxon-core-calculations.jar
+SHA-256-Digest: elR8stN/FWGJ6Q42o3GvsPok0IjhyJY2BhwgJJJoaqs=
+
+Name: lib/freehep-graphicsio-pdf-2.2.1.jar
+SHA-256-Digest: atKMvCp7Ps8KmCF4GWqSmwt78SvNCj7TOEHzkZm6Tc8=
+
+Name: lib/tesseract-macosx-3.01_2.jar
+SHA-256-Digest: PCj7dJA9qpJscvnFKZS3nDj9t/0j1TK/Ke9yPKs6fpc=
+
+Name: lib/levigo-jbig2-imageio-1.6.1.jar
+SHA-256-Digest: IPgiRfAuZYv40X/O5QM0SH6qJFcHne0FxPF7KVi/Cx8=
+
+Name: lib/xmlrpc-client-3.1.3.jar
+SHA-256-Digest: DsNR5UddW0OBMv/XmFJprUP00idnzWWQJDe0h7J8V/s=
+
+Name: lib/tesseract-linux-x32-3.01_1.jar
+SHA-256-Digest: rp8fw7IV2xZYoXfMUbEMoCb2Davf0LOVu7mCb/VcgFc=
+
+Name: lib/freehep-graphicsio-2.2.1.jar
+SHA-256-Digest: hPSOMaWX66+WGpe1Pn5fcJXn6I9qSd7nKLdQ4RgE2iU=
+
+Name: jchemlib.jar
+SHA-256-Digest: p7Bv3T6Vy8QdQu1iS3VQWrTEABAR68mPSg111O4+8S4=
+
+Name: lib/com.chemaxon-concurrent.jar
+SHA-256-Digest: 8MGjDo8CkgK4SCg0m2uu9+JaVIqZGve77axR5qsyxYs=
+
+Name: lib/derbyLocale_zh_TW-10.10.1.1.jar
+SHA-256-Digest: MX0Y1bGdK0oNPOg+GL1CAKP3qFSSR/3BMIkkzCsqh6U=
+
+Name: lib/com.chemaxon-marvin-gui.jar
+SHA-256-Digest: PgwGbqrMYF/nC2svS59GbbOMwj7BpvutgnST/S68zt8=
+
+Name: lib/runtime12-1.0.jar
+SHA-256-Digest: vWekJ+qIRaZoWxT3v8M3jGI6hXpLXwiSnquo7835oVM=
+
+Name: lib/com.chemaxon-jchem-molecule-persister.jar
+SHA-256-Digest: cfw/rWSNKw9H/p7i4NhSnFhsHX335yCGEID0wW1glW0=
+
+Name: lib/com.chemaxon-metabolizer.jar
+SHA-256-Digest: P+MHN92uxZEKCpXURItq8k+z014+OKQZoQUSgyk3I+k=
+
+Name: lib/jogl-all-2.1.4-natives-linux-armv6hf.jar
+SHA-256-Digest: XHfJVL8vmi5SHdkxQsZdNWG3c66AvskW11xjYBmpmy4=
+
+Name: lib/com.chemaxon-sizeinfo.jar
+SHA-256-Digest: 7amH1NlhVJZEFu5iZoqaZUINA5958a1CPN2zoeOQ2qs=
+
+Name: lib/com.chemaxon-sizeinfo-agent.jar
+SHA-256-Digest: vFgDa4bEWDL11tMV3NhPzIIXzxCSkxhny6VlRw3uAMg=
+
+Name: lib/gluegen-rt-2.1.4-natives-android-armv6.jar
+SHA-256-Digest: ec8TBC8Z4l0dSQEn8enOaPA4wPz3He4qqWP+xWuHBA0=
+
+Name: lib/xmlrpc-common-3.1.3.jar
+SHA-256-Digest: w3LSCnV9jdafT/H3582hj+qMyrxMUkFoztzIX+IJaX8=
+
+Name: lib/jsr305-2.0.3.jar
+SHA-256-Digest: vsCyTcsj+WcBcnJIJlhIArgK5svaugO96975MnuWL2o=
+
+Name: lib/db2jcc4-10.5.0.2-FP002.jar
+SHA-256-Digest: 32kIbP7MW/3eIGzqVAspU4OmjSDltnHlgff7LaAlwCA=
+
+Name: lib/derbyLocale_de_DE-10.10.1.1.jar
+SHA-256-Digest: Aw+40kbrwEgmVW/XEIqPFlDdKFcQujr2Cy93s107lnE=
+
+Name: lib/gluegen-rt-2.1.4-natives-windows-i586.jar
+SHA-256-Digest: l4z335O0UimEVaV84vtohUoKFNtnHlI/gNRRuOVvUT8=
+
+Name: lib/jogl-all-main-2.1.4.jar
+SHA-256-Digest: zBFPTAspsv5NBqXHkxg4gURSoEzJeJ4nshqwXTVBwQc=
+
+Name: lib/derbynet-10.10.1.1.jar
+SHA-256-Digest: TYP/Uw7zP4i+IKyOp5iiBGrz2+urqDGdOCo4n02U2Dg=
+
+Name: lib/tesseract-windows-3.01_1.jar
+SHA-256-Digest: n4XN+Ou33iCXp+XmtDZUS6a2LVNmiWrpgCnSbWuB0Z4=
+
+Name: lib/com.chemaxon-descriptors-jep.jar
+SHA-256-Digest: E+j4n5o795iRCOXrPU/z6SuQnqiq0KcNAyHvgttyUA0=
+
+Name: lib/com.chemaxon-alchemist-commons.jar
+SHA-256-Digest: viyJlmt4Vg5hipwcjyqEEnJ6NtTurF0GmFe4NZnp2kQ=
+
+Name: lib/com.chemaxon-jchem-cartridge.jar
+SHA-256-Digest: WSXA9uK9147q/FeCMr0v9uo+krhKa9Tp7QyHw6zIkNM=
+
+Name: lib/com.chemaxon-calculations-plugin.jar
+SHA-256-Digest: JuYFPuCC9MnnnzvlvJg+Y6x4XzcUpT58CiNIZloFabM=
+
+Name: lib/jogl-all-2.1.4-natives-linux-i586.jar
+SHA-256-Digest: f81Q0xmdChmjMqwbKXvde5pIV+cldHkSkZE6ejY5JRg=
+
+Name: lib/tika-parsers-1.2.jar
+SHA-256-Digest: tIfjW6ilyF8Nqlp2uwNnK02ODODK7T+gkSSj2iK2/NU=
+
+Name: lib/com.chemaxon-marvin-services.jar
+SHA-256-Digest: pDiUB0kphOKDXvXWu7Gg5SeGs2FaDE33cKSvRgOToC4=
+
+Name: lib/jogl-all-2.1.4-natives-macosx-universal.jar
+SHA-256-Digest: iB15QrLq+FFRGqIPge4xRvl2CCyKlpE1eSu9MtGjpbg=
+
+Name: lib/jogl-all-2.1.4.jar
+SHA-256-Digest: J6KF/SjsdipZC0GHZAZ7rHsAOqCy44SydUNXWeEdlwE=
+
+Name: lib/derbyLocale_fr-10.10.1.1.jar
+SHA-256-Digest: zCZrEQ6mtrprrKJj4oIGyTBMdzCPadU3U5gfJGdmoDc=
+
+Name: lib/com.chemaxon-jchem-cartridge-jcserver.jar
+SHA-256-Digest: DpJq009z40XKW0Z4cr4AOZ8w5MpnqrLsoIXxoOW/LRo=
+
+Name: lib/itext-2.1.7.jar
+SHA-256-Digest: fYLGsJejHN9abUmjJ79YL97HME2mkwj59qv1Sqn9kFU=
+
+Name: lib/jacob-1.17.jar
+SHA-256-Digest: gl0rYr1lmAAlMjFP3mU+h4pTxZE+3IlEZfEHoRE2A2E=
+
+Name: lib/guava-16.0.1.jar
+SHA-256-Digest: qJaFfQeEXTjH3Fu8BFe22bD2Ls/9oBDl6ewS1WH2dtM=
+
+Name: lib/regexp-1.2.jar
+SHA-256-Digest: nHryeMSrtwIcPMnlRK5lA9V7nkR0xClmceFzyasanlg=
+
+Name: lib/MarvinBeans.jar
+SHA-256-Digest: RDVcqtNLb4LEPXp5ywr51QEJKsm+Bg0xw0Khwuc6xNg=
+
+Name: lib/com.chemaxon-io-all.jar
+SHA-256-Digest: Q34ksgieaXLXmgS47Gx6gbTtLe5/HeKxrex1MufLuFs=
+
+Name: lib/jogl-all-2.1.4-natives-linux-amd64.jar
+SHA-256-Digest: WhAtId4dGkth0ctgTjoC6l9e6YkNTaBXDmHsM2aFMoU=
+
+Name: lib/ooxml-schemas-1.1.jar
+SHA-256-Digest: 0Ke0gxeS4hHJMAWLNP4XZK5IqtENrbbJ/Pia1OZVX/Q=
+
+Name: lib/com.chemaxon-libmcs.jar
+SHA-256-Digest: 4ABpvjVyIpmkfhfw7MtQV5FXURNS3jFsNgilRXI0+eE=
+
+Name: lib/com.chemaxon-io-cdx.jar
+SHA-256-Digest: O5zsPFF8G81at8eX3e2kPQ2CoqeufUIn/6rix2yC35A=
+
+Name: lib/com.chemaxon-concurrent-utils.jar
+SHA-256-Digest: s/cNb+cUWWgF9mj8vzlTfAjqz00xqOs4KklDFfNNorE=
+
+Name: lib/gluegen-rt-2.1.4-natives-solaris-amd64.jar
+SHA-256-Digest: mS/zSo+WaG0akTYxjtrmrl4UmTNbzK8OXpjSZgcFoPc=
+
+Name: lib/macosx-application-bundle-1.0.jar
+SHA-256-Digest: S+N26soaetfNU2LBU6LBfRv5Lp0htISBbwI5n1ojIZw=
+
+Name: lib/com.chemaxon-io-tripos.jar
+SHA-256-Digest: sSWTBQw7zJfViHsmY9jvUH+15GOZkdsDzVJR6KaJaig=
+
+Name: lib/com.chemaxon-search-hitdisplay.jar
+SHA-256-Digest: tuGz6Vrv5gBwHSiaXHO7xr2bNt/5lMJcGvnO7LheZnY=
+
+Name: lib/com.chemaxon-alchemist-framework.jar
+SHA-256-Digest: 5wcdQL+HY4N4f/S/CAhsEs+oBzlU/1Cv09DLXMC4dcs=
+
+Name: lib/gluegen-rt-2.1.4-natives-linux-armv6.jar
+SHA-256-Digest: IpkFx14ESG7ZazOUJ8Gpfb2wwWDk/qnhlKWSj8vsaAQ=
+
+Name: lib/saaj-impl-1.3.19.jar
+SHA-256-Digest: X3NriZFf3Gi5LrQ9qFVJK4DRk61NxvCNCrurhpnQsXo=
+
+Name: lib/com.chemaxon-modelling.jar
+SHA-256-Digest: Rtosjcx3ThIlLR8bVuYTqurim9mhW6CKZXYAC5Go5Us=
+
+Name: lib/castor-core-1.3.1.jar
+SHA-256-Digest: TGEnF6rxEv98YWtG7JXPhQrfX7NeCTFc47dXi7yEGoA=
+
+Name: lib/jaxen-1.1.6.jar
+SHA-256-Digest: WsnHS7s5ZLNKiGumsbbAsNw+vuvB3EpElCp2Y0SQs+s=
+
+Name: META-INF/services/javax.xml.transform.TransformerFactory
+SHA-256-Digest: HJyG1R1V1hvOR45VMWZQ8FKAYm+AiFrZh5mmsaUEJ/Y=
+
+Name: lib/freehep-graphics2d-2.2.1.jar
+SHA-256-Digest: gPZagQvQgWVnG/fS2QE/8CSgYEPeAUrD1hL4HHrXJyM=
+
+Name: lib/com.chemaxon-calculations-stereoanal.jar
+SHA-256-Digest: 36RFz0zB7fINHg00NL/+OugDpJqRFarVG4MzUFqh9mY=
+
+Name: lib/derbyLocale_cs-10.10.1.1.jar
+SHA-256-Digest: ehXxAGG7nfPLQxwEqPOGEROGRUKsrdxxAK79A3+JJ+A=
+
+Name: lib/jgrapht-0.8.3.jar
+SHA-256-Digest: RSay5A3nxsIvXOMBGso0g2mBidC7SZg+qVHk9x47ksk=
+
+Name: lib/com.chemaxon-transformer.jar
+SHA-256-Digest: HaBdriKB1jn4MLJCSqQQRgnkDo6IIVU0Zg/wRAHh6s0=
+
+Name: lib/inchi-native-linux64-1.3.jar
+SHA-256-Digest: qXJ0AAH97g4uou5dFFQJL7R1izyXe+Dt6uO7T+kHEnE=
+
+Name: lib/com.chemaxon-marvin-utils.jar
+SHA-256-Digest: r3rFaihQFI3FEs8YjF8X3QbkLACqigAk6/cPKYhPyvs=
+
+Name: lib/commons-pool-1.6.jar
+SHA-256-Digest: RsQrSjjcay21Op7lySxj2xA2ZdVmlOLPziyV1RpoYMw=
+
+Name: lib/inchi-native-windows64-1.3.jar
+SHA-256-Digest: GDyLkYPu3w6VYvy5r7IUDf0AafFzHB12vv02+6b6hBQ=
+
+Name: lib/commons-io-2.4.jar
+SHA-256-Digest: zGpB3D6qzJ5ECmvQ0okLINNrTuQI/i1nEi8yi7bgFYE=
+
+Name: lib/derbyLocale_pt_BR-10.10.1.1.jar
+SHA-256-Digest: /7o/lUD99FDX7nlV5wVoZzsZhEMCHNUxOSf9P6vwU8w=
+
+Name: lib/com.chemaxon-calculations.jar
+SHA-256-Digest: Yr6FzR2rNorHqbNMWlvFwySiJcrjKZpFtEpcPBbhZ+E=
+
+Name: lib/com.chemaxon-io-peptide.jar
+SHA-256-Digest: 50T+L/vWCs1/RCiG6CUB8iIqcdBNxNAkz1PR3QqZQuo=
+
+Name: lib/ws-commons-util-1.0.2.jar
+SHA-256-Digest: l8GD01tZbGoBDf6pZ8oeZ/Z2loBlNdzvW+F/+yaSz9Y=
+

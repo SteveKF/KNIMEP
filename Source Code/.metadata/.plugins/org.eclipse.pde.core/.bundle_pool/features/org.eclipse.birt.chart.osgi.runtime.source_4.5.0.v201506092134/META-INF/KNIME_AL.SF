@@ -1,0 +1,35 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: d+cw7LzE/cqnfOBi0ZN/YbmnhXOXs
+ tuxLyrD392hDQs=
+SHA-256-Digest-Manifest: fig5C2lcMllY2AwgRzpqHp7n2G0YCq14nOh+veXXjq0=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: build.properties
+SHA-256-Digest: t+JLq7wXFZFCTKDEmjQMnKt+kTYdDx/GP4wl4nWuEio=
+
+Name: epl-v10.html
+SHA-256-Digest: MoHygFdGWPkv538UkwaGSsPc5pIacIecagiI6IJQYWY=
+
+Name: META-INF/maven/org.eclipse.birt.features/org.eclipse.birt.chart.
+ osgi.runtime/pom.xml
+SHA-256-Digest: QP4+jkfkTZa7942+smc1pSIyhDxDMWsN373VqVa543E=
+
+Name: feature.xml
+SHA-256-Digest: JYjshE5Hi4udc2Qb1oGkOXIXPdssYgMG5PDQYE86rfY=
+
+Name: eclipse_update_120.jpg
+SHA-256-Digest: 4ODTjkMQWSHeFxfEvI2GdvLpcmE+ili/sr/VTTBvLA4=
+
+Name: feature.properties
+SHA-256-Digest: j+9up0xr7l431K1ELug7CwxchSj2dJWJTYE8LsP0ais=
+
+Name: META-INF/maven/org.eclipse.birt.features/org.eclipse.birt.chart.
+ osgi.runtime/pom.properties
+SHA-256-Digest: zYgnG4KIo7OfRtOkvrRezssTmIAYEIcUIrqHEQolZT8=
+
+Name: license.html
+SHA-256-Digest: kXiGs8Td69oqDmv3FeIE1GQtU1Rl0nbs2YjEC+CFy4o=
+
+Name: META-INF/eclipse.inf
+SHA-256-Digest: o5LHb0V9JFwJu7i4J51evtEjUV0LTcjqMBT9kRhANGI=
+

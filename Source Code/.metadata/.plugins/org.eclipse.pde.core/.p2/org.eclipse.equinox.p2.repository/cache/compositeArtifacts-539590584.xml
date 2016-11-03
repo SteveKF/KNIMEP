@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeArtifactRepository version='1.0.0'?>
+<repository name='KNIME Analytics Platform 3.2 Update Site'
+    type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' 
+    version='1.0.0'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1417789353012'/>
+  </properties>
+  <children size='4'>
+	<child location='org/3.2/'/>
+	<child location='labs/3.2/'/>
+	<child location='ext/3.2/'/>
+	<child location='server/4.3/'/>
+  </children>
+</repository>
+

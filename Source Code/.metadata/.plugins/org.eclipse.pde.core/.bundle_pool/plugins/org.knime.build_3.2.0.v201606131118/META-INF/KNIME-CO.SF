@@ -1,0 +1,18 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: P4PGiv8hmncgpXAH6ffhgOzBhdx7t
+ gxNG7Uldq00w+Q=
+SHA-256-Digest-Manifest: 7P+jIKvktHW/NPfjxiYcaf551uf5ZQdDX4RpxLgkQ0w=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: DocBuilder.launch
+SHA-256-Digest: pPWthPgA16TSW0Qy0+bJ37utqVSIccZiECAeKufS2+0=
+
+Name: plugin.xml
+SHA-256-Digest: eRfHOD/SgSnaupv78g8kCar6oZiYP5gKgSqgO5dsVwk=
+
+Name: lib/ant_tasks.jar
+SHA-256-Digest: S6R/g48fM/biWhoogs8llc/GvWDcEobGvc/pgdpfBgc=
+
+Name: knime-build.jar
+SHA-256-Digest: N3kYIqO9NFQnWS4qVtWVlcxs4Ht6pK76IVRDeb0pwaY=
+

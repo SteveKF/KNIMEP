@@ -1,0 +1,298 @@
+
+{
+    "version":"3.1.3.v201604221432",
+    "created":"2016-04-26 14:27",
+    "nodestats":{
+        "nodes":[
+            {
+                "id":"org.knime.base.node.io.database.DBConnectionNodeFactory#Database Connection Table Reader",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":5,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.sample.NumericBinnerNodeFactory#NumericBinner",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.example.NumericBinnerNodeFactory#NumericBinner",
+                "nrexecs":14,
+                "exectime":4012,
+                "nrcreated":5,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.io.database.DBReaderNodeFactory#Database Reader",
+                "nrexecs":123,
+                "exectime":121598,
+                "nrcreated":9,
+                "successor":"org.knime.ext.jfc.node.barchart.JfcBarChartNodeFactory#Bar Chart (JFreeChart)"
+            },
+            {
+                "id":"org.knime.base.node.io.database.connection.JDBCConnectorNodeFactory#Database Connector",
+                "nrexecs":45,
+                "exectime":28322,
+                "nrcreated":7,
+                "successor":"org.knime.base.node.io.database.connection.DBTableSelectorNodeFactory#Database Table Selector"
+            },
+            {
+                "id":"org.knime.database.connectors.sqlite.SQLiteConnectorNodeFactory#SQLite Connector",
+                "nrexecs":33,
+                "exectime":75010,
+                "nrcreated":5,
+                "successor":"org.knime.base.node.io.database.DBReaderNodeFactory#Database Reader"
+            },
+            {
+                "id":"org.knime.base.node.io.database.connection.DBTableSelectorNodeFactory#Database Table Selector",
+                "nrexecs":34,
+                "exectime":6908,
+                "nrcreated":7,
+                "successor":"org.knime.preferences.prefCreator.PreferenceCreatorNodeFactory#PreferenceCreator"
+            },
+            {
+                "id":"org.knime.base.node.io.database.DBWriterNodeFactory#Database Writer",
+                "nrexecs":2,
+                "exectime":1140,
+                "nrcreated":2,
+                "successor":"org.knime.base.node.io.database.connection.DBTableSelectorNodeFactory#Database Table Selector"
+            },
+            {
+                "id":"org.knime.base.node.io.database.DBReaderConnectionNodeFactory#Database Table Connector",
+                "nrexecs":2,
+                "exectime":4867,
+                "nrcreated":2,
+                "successor":"org.knime.base.node.io.database.DBSorterNodeFactory#Database Sorter"
+            },
+            {
+                "id":"org.knime.base.node.io.database.DBConnectionWriterNodeFactory#Database Connection Table Writer",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":2,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.util.createtempdir.CreateTempDirectoryNodeFactory#Create Temp Dir",
+                "nrexecs":1,
+                "exectime":62,
+                "nrcreated":0,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.util.sampledata.SampleDataNodeFactory#Data Generator",
+                "nrexecs":2,
+                "exectime":384,
+                "nrcreated":0,
+                "successor":"org.knime.base.node.io.database.DBWriterNodeFactory#Database Writer"
+            },
+            {
+                "id":"org.knime.base.node.io.database.groupby.DBGroupByNodeFactory2#Database GroupBy",
+                "nrexecs":1,
+                "exectime":22,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.muliplier.MultiplierNodeFactory#Multiplier",
+                "nrexecs":3,
+                "exectime":607,
+                "nrcreated":11,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.bnl.BlockNestedLoopNodeFactory#BlockNestedLoop",
+                "nrexecs":158,
+                "exectime":711954,
+                "nrcreated":23,
+                "successor":"org.knime.skyvisualizer.SkylineVisualizerNodeFactory#SkylineVisualizer"
+            },
+            {
+                "id":"org.knime.RepresentativeSkylineNodeFactory#RepresentativeSkyline",
+                "nrexecs":60,
+                "exectime":9363,
+                "nrcreated":13,
+                "successor":"org.knime.ext.jfc.node.scatterplot.JfcScatterPlotNodeFactory#Scatter Plot (JFreeChart)"
+            },
+            {
+                "id":"org.knime.ext.jfc.node.scatterplot.JfcScatterPlotNodeFactory#Scatter Plot (JFreeChart)",
+                "nrexecs":1,
+                "exectime":1003,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.RepresentativeSkylineGraphNodeFactory#RepresentativeSkylineGraph",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":2,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.skyvisualizer.SkylineVisualizerNodeFactory#SkylineVisualizer",
+                "nrexecs":101,
+                "exectime":9657,
+                "nrcreated":19,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.preference.PreferenceSQLNodeFactory#PreferenceSQL",
+                "nrexecs":7,
+                "exectime":1021,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.io.database.DBSorterNodeFactory#Database Sorter"
+            },
+            {
+                "id":"org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.io.database.DBSorterNodeFactory#Database Sorter",
+                "nrexecs":2,
+                "exectime":41,
+                "nrcreated":1,
+                "successor":"org.knime.base.node.io.database.DBReaderNodeFactory#Database Reader"
+            },
+            {
+                "id":"org.knime.base.node.io.database.DBQueryNodeFactory2#Database Query",
+                "nrexecs":1,
+                "exectime":5082,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.preference.creator.PreferenceCreatorNodeFactory#PreferenceCreator",
+                "nrexecs":131,
+                "exectime":249032,
+                "nrcreated":15,
+                "successor":"org.knime.bnl.BlockNestedLoopNodeFactory#BlockNestedLoop"
+            },
+            {
+                "id":"org.knime.base.node.io.database.SQLExtractNodeFactory#SQL Extract",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":3,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.preference.extract.PreferenceSQLExtractNodeFactory#PreferenceSQLExtract",
+                "nrexecs":20,
+                "exectime":1322,
+                "nrcreated":11,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.preference.sql.PreferenceSQLNodeFactory#PreferenceSQL",
+                "nrexecs":70,
+                "exectime":193004,
+                "nrcreated":7,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.repskyline.RepresentativeSkylineNodeFactory#RepresentativeSkyline",
+                "nrexecs":32,
+                "exectime":4951,
+                "nrcreated":30,
+                "successor":"org.knime.skyvisualizer.SkylineVisualizerNodeFactory#SkylineVisualizer"
+            },
+            {
+                "id":"org.knime.preferences.maximizer.DominationMaximizerNodeFactory#DominationMaximizer",
+                "nrexecs":24,
+                "exectime":214444,
+                "nrcreated":5,
+                "successor":"org.knime.skyvisualizer.SkylineVisualizerNodeFactory#SkylineVisualizer"
+            },
+            {
+                "id":"org.knime.base.node.viz.crosstable.CrosstabNodeFactory#Crosstab",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.preferences.distance.DistanceBasedResolverNodeFactory#DistanceBasedResolver",
+                "nrexecs":18,
+                "exectime":1127,
+                "nrcreated":4,
+                "successor":"org.knime.skyvisualizer.SkylineVisualizerNodeFactory#SkylineVisualizer"
+            },
+            {
+                "id":"org.knime.preferences.prefCreator.PreferenceCreatorNodeFactory#PreferenceCreator",
+                "nrexecs":80,
+                "exectime":150256,
+                "nrcreated":16,
+                "successor":"org.knime.preference.extract.PreferenceSQLExtractNodeFactory#PreferenceSQLExtract"
+            },
+            {
+                "id":"org.knime.arima.node.learner.ARIMALearnerNodeFactory#ARIMA Learner",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.jsnippet.JavaSnippetNodeFactory#Java Snippet",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.base.node.mine.bayes.naivebayes.learner2.NaiveBayesLearnerNodeFactory3#Naive Bayes Learner",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.al.nodes.loop.end.ActiveLearnLoopEndNodeFactory#Active Learn Loop End",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.google.api.analytics.nodes.connector.GoogleAnalyticsConnectorFactory#Google Analytics Connector",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.preferences.bnl.BlockNestedLoopNodeFactory#BlockNestedLoop",
+                "nrexecs":47,
+                "exectime":195166,
+                "nrcreated":7,
+                "successor":"org.knime.skyvisualizer.SkylineVisualizerNodeFactory#SkylineVisualizer"
+            },
+            {
+                "id":"org.knime.base.node.renderer2image.Renderer2ImageNodeFactory#Renderer to Image",
+                "nrexecs":0,
+                "exectime":0,
+                "nrcreated":1,
+                "successor":"n/a"
+            },
+            {
+                "id":"org.knime.ext.jfc.node.barchart.JfcBarChartNodeFactory#Bar Chart (JFreeChart)",
+                "nrexecs":2,
+                "exectime":1313,
+                "nrcreated":1,
+                "successor":"n/a"
+            }
+        ],
+        "metaNodes":{
+        },
+        "wrappedNodes":{
+        }
+    },
+    "uptime":516893,
+    "launches":771,
+    "timeSinceLastStart":348117,
+    "crashes":251,
+    "properlyShutDown":true
+}

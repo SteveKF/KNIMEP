@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Cluster Algorithms" link_to="../org.knime.ext.weka_3.7/tocs/analytics_mining_weka_weka3.7_clusterers.xml#analytics_mining_weka_weka3.7_clusterers">
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/12b6b5c3.CLOPE#V112015.html" label="CLOPE (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/721e21b1.CascadeSimpleKMeans#V112015.html" label="CascadeSimpleKMeans (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/1a734a00.Cobweb#V112015.html" label="Cobweb (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/6dbf5abd.DBSCAN#V112015.html" label="DBSCAN (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/3fa4b316.EM#V112015.html" label="EM (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/141d54bd.FarthestFirst#V112015.html" label="FarthestFirst (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/53251188.FilteredClusterer#V112015.html" label="FilteredClusterer (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/6829463a.HierarchicalClusterer#V112015.html" label="HierarchicalClusterer (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/747272f1.LVQ#V112015.html" label="LVQ (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/639ae6ea.MakeDensityBasedClusterer#V112015.html" label="MakeDensityBasedClusterer (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/7f97bd38.OPTICS#V112015.html" label="OPTICS (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/2078fa58.SelfOrganizingMap#V112015.html" label="SelfOrganizingMap (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/307698e9.SimpleKMeans#V112015.html" label="SimpleKMeans (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/51341c68.XMeans#V112015.html" label="XMeans (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/22a788d4.sIB#V112015.html" label="sIB (3.7)"/>
+</toc>

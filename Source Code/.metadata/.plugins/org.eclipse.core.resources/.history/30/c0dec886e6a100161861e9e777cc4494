@@ -1,0 +1,4 @@
+source.preferencesqlextract.jar = src/
+bin.includes = plugin.xml,\
+               META-INF/,\
+               preferencesqlextract.jar

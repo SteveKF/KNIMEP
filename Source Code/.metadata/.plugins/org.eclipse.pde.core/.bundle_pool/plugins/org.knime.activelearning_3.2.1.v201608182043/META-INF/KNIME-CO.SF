@@ -1,0 +1,69 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: vhNrX3TCgilVFXWRw5OLU8yuxLja3
+ sLNnYi68d6myXQ=
+SHA-256-Digest-Manifest: 60FuVyEYChywuhdGHsdFtBq/gVBKtGZFOwjzxzV2al8=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: icons/missing.gif
+SHA-256-Digest: cJEnkpuFCnhkrt/2IRSK8vPDXeZPhgFMPdmqRFwqbXk=
+
+Name: icons/nodes/knfstlearner.svg
+SHA-256-Digest: vjQQRdmU57E3HNvgvlpaTWM82jtvSmaUE8mWatSnDFQ=
+
+Name: plugin.xml
+SHA-256-Digest: K2JuAf7MN0al3CJrZJlHcBxY1DRq3FY6wqsIH5vsl/Y=
+
+Name: icons/nodes/variancescorer.svg
+SHA-256-Digest: VJLI8LBgS9Vh1enTrk/3+6FMlI2hlR0JKTq2/kzicLs=
+
+Name: icons/nodes/loop-end-dbg.svg
+SHA-256-Digest: StZXf6TZ1mSqj9tCuWyOo1lBIdOQ/yg3ezTR+9B0uc0=
+
+Name: icons/AL-Loop-end.png
+SHA-256-Digest: +3hAOHiU4E/3TQTJV9rAw6zGgw/U62T0ZwctB9LB3Qo=
+
+Name: icons/AL-Loop.png
+SHA-256-Digest: Sl5pY6yi7yIb0z70cyAvx6U5p2/Hhta43WBgNGk4lsw=
+
+Name: icons/AL.png
+SHA-256-Digest: eWSGCy8rc9VOHzQ055C2wY3gDHlxxyUaVfGZNm8c1R8=
+
+Name: icons/nodes/loop-start.svg
+SHA-256-Digest: WmxN3l4aGC6sDQLrmQpO/hvnGEm5GLKfj+j+PpBO3vY=
+
+Name: icons/nodes/knfst.svg
+SHA-256-Digest: xv0oEXRn5Y3fy3b/bpuXIzotWNBxLRAbQeezQtez/5I=
+
+Name: icons/nodes/loop-end.svg
+SHA-256-Digest: NEWS7Qi85edRaXAd/hS+8p/Zqx0twnzytGKieCKOYTo=
+
+Name: icons/nodes/marginscorer.svg
+SHA-256-Digest: rmFofCLu7YH8j8y7U+5JtWzS6GzffyJiqk0uIM8bGTA=
+
+Name: icons/nodes/nodepotential.svg
+SHA-256-Digest: F7p1NrY7dSkmZMTrHzqVaI3neTTWE/xXL1pl0P5CIAM=
+
+Name: icons/nodes/UncertaintyDistributionScorer.svg
+SHA-256-Digest: 5XBI50Gm+b/ISFQWJrfM2NbAFrNHY+PtDF4zrdvne9s=
+
+Name: icons/nodes/lns.svg
+SHA-256-Digest: Pa9AljgdLTcSXZcQ072I/EkgAWqdsHsCBXoUU91WaBc=
+
+Name: knime-activelearning.jar
+SHA-256-Digest: 9apkbAu7y6fgjwP98dp3jJ/jmcqb2cIMD/nCR0q4zDA=
+
+Name: icons/nodes/entropyscorer.svg
+SHA-256-Digest: tWWSUkKi+MkzYbiArYTaQsBWKC9rn+0WpjBkkvyHGdI=
+
+Name: icons/nodes/select.xcf
+SHA-256-Digest: vkEFZZwjlxTAXsz7J/n2DUauzWz+1g8C6Fm6OxuZ9jQ=
+
+Name: icons/nodes/leastconfident.svg
+SHA-256-Digest: tLF0eAaWFT8F+vb2DyVf2wyxeMxk1aCmi4uI8fb5NP8=
+
+Name: icons/nodes/PBAC.svg
+SHA-256-Digest: KAKLqjNwyIMehxX/j8EA43ogLASEWdONexxImbIGXC8=
+
+Name: icons/nodes/graphdensity.svg
+SHA-256-Digest: N1r164WJc73MhUhFB80jkfC5RdVkPdRa8XYzpCFrsU8=
+

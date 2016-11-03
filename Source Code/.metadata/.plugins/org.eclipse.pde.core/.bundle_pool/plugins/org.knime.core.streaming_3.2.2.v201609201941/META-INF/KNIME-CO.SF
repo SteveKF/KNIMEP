@@ -1,0 +1,15 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: wEfrBW38Jh8WrBlRqdp1mlz0y+n31
+ elJqzbpRFm9pqE=
+SHA-256-Digest-Manifest: 4UgjykD/Twh/SHxiOhyWwlGfy9k8g/xJZA5r/+31jOA=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: 7efYsJgszHXFfttiIy2/6rHNOXp6vWStSEPYJpq4e6w=
+
+Name: LICENSE.txt
+SHA-256-Digest: AINBnlxD6j1hoUJCdbqJDDXIUInSr72BED0xfnoxdrY=
+
+Name: knime-corestreaming.jar
+SHA-256-Digest: Jd/Er/5RsEXe4hnhpStiabksQ6J2hhQGCT5egV5Z9Kk=
+

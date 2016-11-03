@@ -1,0 +1,27 @@
+package org.knime.bnl;
+
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.LayoutManager;
+
+import javax.swing.JPanel;
+
+
+public class TestPanel extends JPanel{
+
+	public TestPanel(LayoutManager layout){
+		super(layout);
+		repaint();
+		setSize(getPreferredSize());
+	}
+	
+	@Override
+	public void paint(Graphics g) {
+		// TODO Auto-generated method stub
+		super.paint(g);
+		g.fillOval(3, 3, 10, 10);
+	}
+	
+	
+}

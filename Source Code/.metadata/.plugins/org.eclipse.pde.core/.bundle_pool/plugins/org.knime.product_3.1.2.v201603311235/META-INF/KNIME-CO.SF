@@ -1,0 +1,135 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: Q58TLRb99C5u1U/0BPluKwNrj5LTC
+ mQl9RB1Tp1lIXc=
+SHA-256-Digest-Manifest: 1ox09YENSJXGARDhUzBy7FIslm2+dikaZMKXm2Vf/7E=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: icons/knime_windows_128.ico
+SHA-256-Digest: 1fXs525+OWNF2kxxadk2OTOEl8lGkmGCNhOzt39otSQ=
+
+Name: intro/css/img/workflow.png
+SHA-256-Digest: EDH2zaLApqxn6rEsxrDpnsUMh6tijM6SRBIdJG60mnU=
+
+Name: plugin.xml
+SHA-256-Digest: p+Mi6xl38WVRlURGpRCZ5m6MeXTHUOzL4he5zY9gLJM=
+
+Name: knime-product.jar
+SHA-256-Digest: Ke0W9+aLozBb+PnK2Fv1Ss+tG68fKlzaNuAzaRvl1Vg=
+
+Name: intro/css/img/arrow.svg
+SHA-256-Digest: UiYOEWGJYNAFLvJN0kPlQ1ht5csSVo/8MGQHGfoP8Kw=
+
+Name: icons/png/knime_16.png
+SHA-256-Digest: JM0o1XWskLmafYZz8uufoPEOhUZcy4w+2JbeQwqx/vM=
+
+Name: icons/uninstall.ico
+SHA-256-Digest: iu9HcnrrwckuoAgJk1UcI966VR0XWyjkj1bI8f3IpjI=
+
+Name: intro/intro.xhtml
+SHA-256-Digest: 4X4t2+9VMpAatnWL/OZjh8lpXW5VEWQr0LZM2JBLA3s=
+
+Name: lib/tagsoup-1.2.1.jar
+SHA-256-Digest: 17LKftwX0QaKekFSa1MsFF+80JJaHMXNcRwoBMDBecc=
+
+Name: intro/css/img/arrow.png
+SHA-256-Digest: 6ri8SbRxOv/qQkK4scGi0bqolOo/7SD04vYQuBKcgtE=
+
+Name: splash.bmp
+SHA-256-Digest: TmhMQ3ssmzOeqWjUIh9lOVarqK7mOQB2KzyEtTkzi/k=
+
+Name: update-sites.txt
+SHA-256-Digest: jU/A/KgIq2YmEuTa4WwCbWVHPbqOQ1T55/GmUZKKffI=
+
+Name: LICENSE.html
+SHA-256-Digest: GhWhB/gD+La+orwXHD0Eia7vEtmEVmvqSpT2UlcGQ1s=
+
+Name: icons/png/knime_128.png
+SHA-256-Digest: YE0wckG6IwVm0mnlz54W3kZHQxRtKjD62XyoGT2l3nk=
+
+Name: intro/css/knime-fontello-ie7.css
+SHA-256-Digest: AFMX0rLUSkaYclv/i+D+K7w8JFatZk0FmPCQ+sPnWTY=
+
+Name: about.ini
+SHA-256-Digest: KBs+gS7QDBzOcDfXZ1t7+ETewLs7ecStt/fXpsIId5A=
+
+Name: intro/css/knime-fontello-ie7-codes.css
+SHA-256-Digest: zFS7xfiqsRoMVrf01itg8wRGM2PUASfnPlFbu7hhSOs=
+
+Name: plugin.properties
+SHA-256-Digest: nxrUfWX8L0/N+MztD3irhYlE23ROKCvpvFlJKUb3sh0=
+
+Name: intro/css/knime-fontello-codes.css
+SHA-256-Digest: rrzrWXyw3ztW4TvqAAetmitGMtKzqLp0A8vuz5sJN0I=
+
+Name: intro/font/knime-fontello.svg
+SHA-256-Digest: jDbxi0cOyk3dLm+OqiFsJLsFWcSxShB9EhY2IVANu2E=
+
+Name: icons/knime_windows_256.ico
+SHA-256-Digest: 1iomTxsoy3NK0c0k89AI6kQgwFXEkzOQIAzAGuHhwwI=
+
+Name: icons/png/knime_256.png
+SHA-256-Digest: /lZxM7ooexkxspfUFaj2zh1Sa/XQSr1Zb3UJJwL+sTs=
+
+Name: icons/png/knime_32.png
+SHA-256-Digest: iMjocCktuShYbxPrn9vXjE4vl9eBtbMc0yX9RLfMzaE=
+
+Name: intro/css/knime.css
+SHA-256-Digest: qSr3xwbFRAJG5cnJSXcMJMM5Ctin5p/F11zmsSaUxuQ=
+
+Name: plugin_customization.ini
+SHA-256-Digest: 3cRpJReyixZRXxfE+GLaMt0sAWQ7Lbq6gX3AmCwMn30=
+
+Name: META-INF/p2.inf
+SHA-256-Digest: YqYtoXbqRaqx7boSWczXU+OVycVIg+xL+AHWPqSN6p4=
+
+Name: intro/css/knime-fontello-embedded.css
+SHA-256-Digest: eGWTUoW56rx5uwR7wuKN0FWM5YRh3LPmFaiO9bE5KGA=
+
+Name: css/knime.css
+SHA-256-Digest: IxbjYCl1u1mZV46fXZeC1esweKvO1IL73f7aYvmHFHA=
+
+Name: icons/knime_mac.icns
+SHA-256-Digest: whGhRAaswWu5ojEnBWaHLzsVmxYS84FJ/9q02X07cfY=
+
+Name: icons/png/knime_48.png
+SHA-256-Digest: Neq/jALVHQcbuPzeaHPIeT/bGjQTmfg5b/oj9NY8eD0=
+
+Name: css/e4_basestyle.css
+SHA-256-Digest: xU2Pau2PzPwEhKxc8bWhhFcsAx/FAxQtHZk2kLdzfMA=
+
+Name: gs.css
+SHA-256-Digest: ivYKjJwg7Xq2PgxDHcl2VYAYYVkWae6a+thvzpNemPs=
+
+Name: icons/png/knime_64.png
+SHA-256-Digest: YsAbOC1xLbRqmJXFHm7F5BXYso6ez8FWVPj55K1fYPA=
+
+Name: intro/css/animation.css
+SHA-256-Digest: t0OoTKYivS/2BqyYRLW6GRI9/HbS5kVZLy8/D9Gzs9g=
+
+Name: intro/css/img/KNIME_logo.png
+SHA-256-Digest: uJ3KI8V2InvuBep4pdOAE7X9i8GlexMVlxiWa4tMAPM=
+
+Name: icons/png/knime_about.png
+SHA-256-Digest: sx4brtHa4n1IM342rEpN27L6n6Pazq7cstLXBjJy5Hw=
+
+Name: LICENSE.txt
+SHA-256-Digest: AINBnlxD6j1hoUJCdbqJDDXIUInSr72BED0xfnoxdrY=
+
+Name: intro/css/img/close-button.svg
+SHA-256-Digest: lfd0Hdbjf0GWXHHqwFglYk6cODutGqd1cZHjSLOA2Lk=
+
+Name: intro/css/knime-fontello.css
+SHA-256-Digest: IyrblZ8v8ZB/R0ywHkZkBWvwY+iALGSF6zvi19UL+cY=
+
+Name: icons/knime_linux_128.xpm
+SHA-256-Digest: tyoAUeFLbcxv+uDa94loIJ2gAKd+s2u754h36Y7v5sE=
+
+Name: icons/install.ico
+SHA-256-Digest: OMNlI3IiBm2w4XePy7SambGi/8bhZhvYrT64TmJz/hQ=
+
+Name: intro/css/img/close-button.png
+SHA-256-Digest: 9Uud4QElC2Pg/CaaAmKIXmA4abYYiFyJac6FAkpvV1A=
+
+Name: schema/splashExtension.exsd
+SHA-256-Digest: QUglABJNeh6m97RwKAmLmixb4B5lqFv5XV3qFWh8rQU=
+

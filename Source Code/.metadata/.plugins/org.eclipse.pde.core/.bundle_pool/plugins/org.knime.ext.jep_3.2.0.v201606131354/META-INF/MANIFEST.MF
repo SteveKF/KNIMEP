@@ -1,0 +1,62 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.knime.ext.jep;singleton:=true
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.6.0,4.0.0)
+ ",org.knime.workbench.core;bundle-version="[3.0.0,4.0.0)",org.knime.w
+ orkbench.repository;bundle-version="[3.0.0,4.0.0)",org.knime.base;bun
+ dle-version="[3.0.0,4.0.0)",org.knime.jsnippets;bundle-version="[3.0.
+ 0,4.0.0)",com.fifesoft.autocomplete;bundle-version="[2.5.7,3.0.0)",co
+ m.fifesoft.rstaui;bundle-version="[2.5.7,3.0.0)",com.fifesoft.rsyntax
+ textarea;bundle-version="[2.5.7,3.0.0)",com.fifesoft.spellchecker;bun
+ dle-version="[2.5.7,3.0.0)",org.eclipse.help;resolution:=optional,org
+ .eclipse.help.ui;resolution:=optional
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Ant-Version: Apache Ant 1.9.6
+Export-Package: org.knime.ext.jep,org.knime.ext.jep.customfunctions,or
+ g.lsmp.djep.djep,org.lsmp.djep.djep.diffRules,org.lsmp.djep.groupJep,
+ org.lsmp.djep.groupJep.function,org.lsmp.djep.groupJep.groups,org.lsm
+ p.djep.groupJep.interfaces,org.lsmp.djep.groupJep.values,org.lsmp.dje
+ p.jama,org.lsmp.djep.matrixJep,org.lsmp.djep.matrixJep.function,org.l
+ smp.djep.matrixJep.nodeTypes,org.lsmp.djep.mrpe,org.lsmp.djep.rewrite
+ ,org.lsmp.djep.rpe,org.lsmp.djep.sjep,org.lsmp.djep.vectorJep,org.lsm
+ p.djep.vectorJep.function,org.lsmp.djep.vectorJep.values,org.lsmp.dje
+ p.xjep,org.lsmp.djep.xjep.function,org.nfunk.jep,org.nfunk.jep.evalua
+ tion,org.nfunk.jep.function,org.nfunk.jep.type
+Bundle-Name: KNIME Math Expression Node
+Bundle-Version: 3.2.0.v201606131354
+Bundle-ClassPath: knime-jep.jar,lib/ext-1.1.1.jar,lib/jep-2.4.1.jar
+Bundle-Activator: org.knime.ext.jep.JEPNodePlugin
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: OYRTzed3brAbBO1LAGGYdTyOZfNZRAgnbYl72J5dhHk=
+
+Name: README.TXT
+SHA-256-Digest: +U05hPiPVG1Op8JRH2u94bixexnV4ax0lGz+sHovwVA=
+
+Name: lib/ext-1.1.1.jar
+SHA-256-Digest: 0SjU343L1INVIjlSHpJ6t8VPMFcHS2AfpE3WTh04G6g=
+
+Name: lib/jep-2.4.1.jar
+SHA-256-Digest: /xc0EnwiETgxkVoGFRVlXkKj/0IdQAwg0lunfSEZhBE=
+
+Name: tocs/manipulation_column_column-convert+replace$nodes.xml
+SHA-256-Digest: GEoF8GLGEmDKJZrzMtoNh57CMSZaw4a2VmfUsV9spts=
+
+Name: LICENSE.TXT
+SHA-256-Digest: 5tagCVBeNF/pSeExAzT8sHR/KNrihWdZ3hAqtmtyLLQ=
+
+Name: lib/README.TXT
+SHA-256-Digest: 5PWeabxgDoEXkCLA8Nn1Kp3ZZqOVZXE8Ooeciu1V7wo=
+
+Name: lib/LICENSE-gpl.txt
+SHA-256-Digest: xoyAO41Q/VFUuKVLJsUNXM4VSi1glu/UFKY0mtHZa/g=
+
+Name: knime-jep.jar
+SHA-256-Digest: e0BcQM/V3WyIo3eBUtQtVml798IKZmOfRT9nwJjnRtE=
+
+Name: html/nodes/6116e793.JEPNodeFactory.html
+SHA-256-Digest: p1q7SkNLym8+1Z+Z6+DoHv35aZVsg3625lij8nVp9Lw=
+

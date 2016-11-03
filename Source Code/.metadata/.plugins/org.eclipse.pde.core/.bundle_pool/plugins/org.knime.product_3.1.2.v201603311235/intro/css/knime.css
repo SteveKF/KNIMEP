@@ -1,0 +1,269 @@
+* {
+	font-family: 'Roboto',sans-serif !important;
+}
+
+body {
+	 font-size: 0.75em;
+	 color: #3E3A39;
+	 margin: 0px;
+	 padding: 0px;
+	 width: 100%;
+	 overflow-y: auto;
+	 background: #FFF none repeat scroll 0% 0%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.5em;
+	color: #575757;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+#intro p {
+	font-size: 1em;
+	text-align: justify;
+	line-height: 1.6em;
+	margin: 8px;
+}
+
+#welcome-knime {
+	background-color: #EEEEEE;
+	padding: 0.5em;
+}
+
+.sub-heading {
+	margin-top: 0;
+	text-align: center;
+	background-color: #EEEEEE;
+	padding: 0.3em;
+}
+
+a {
+    color: #ff9f00;
+    text-decoration: none;
+}
+
+a:HOVER {
+    text-decoration: underline;;
+}
+
+
+body > h2 {
+    margin: 30px auto 20px;
+    max-width: 1000px;
+}
+
+#intro {
+	margin: 0 auto 10px auto;
+	padding-top: 13px;
+	width:100%;
+}
+
+#update {
+	width: 100%;
+	font-weight: bold;
+	padding: 0.6em;
+	margin: 1em auto 1em auto;
+	background-color: #f0f0f2;
+	border-radius: 5px;
+}
+
+#checking-updates {
+	font-style: italic;
+}
+
+div#links-and-mru {
+	max-width: 1000px;
+	margin: 10px auto 20px auto;
+	
+}
+
+
+div#links {
+    float: left;
+    width: 45%;
+	overflow: hidden;
+	margin: 0 1.5%;
+	border: solid 2px #ffd600;
+	border-radius: 5px;
+}
+
+
+
+a .link-label {
+	padding-left: 5px;
+	vertical-align: middle;
+}
+
+a .text {
+	padding-left: 75px;
+}
+
+div#mru {
+    width: 50%;
+     overflow-y: auto;
+    border: solid 2px #ffd600;
+    float: left;
+	border-radius: 5px;
+}
+
+div#mruScrollBox {
+    height: 160px;
+    width: auto;
+    overflow: auto;
+}
+
+ul#mruList {
+	padding-left: 22px;
+}
+
+ul#mruList li {
+    margin-bottom: 5px;
+}
+
+ul#mruList li a {
+    text-decoration: none;
+}
+
+
+div#news h2 {
+    border-bottom: 1px solid #ccc;
+}
+
+
+div#tips h2 {
+	border-bottom: 1px solid #ccc;
+}
+
+span.field-content {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+div.floating-link {
+    width: 100%;
+    margin-bottom: 9px;
+}
+
+.floating-link  a {
+    font-weight: bold;
+    font-size: 1em !important;
+    color: #3E3A39;
+    display:block;
+    vertical-align: middle;
+    padding-top: 9px;
+    text-decoration: none;
+}
+
+.floating-link > a:link {
+	color: #3E3A39;
+}
+
+.floating-link > a:visited {
+	color: #3E3A39;
+}
+
+.floating-link > a:hover {
+    color: #ff9000;
+}
+
+
+
+#news {
+	color: #444;
+	max-width: 1000px;
+    margin: 20px auto;
+	padding: 5px 5px;
+	background: #f0f0f0;
+	border-radius: 5px;
+}
+
+#news > h2 {
+	margin-top: 5px;
+}
+
+#tips {
+	color: #444;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 5px 5px;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+#tips > h2 {
+    margin-top: 5px;
+}
+
+
+#properties {
+	clear: both;
+	color: #666;
+	margin-top: 1em;
+	border-top: 1px solid #ccc;
+}
+
+/* Checkbox style */
+
+
+#properties > input[type=checkbox] {
+	border-radius: 3px;
+}
+
+/* end */
+.hide-button {
+    float: right;
+    display: none;
+}
+
+.hide-button:hover {
+	cursor: pointer;
+}
+
+
+#intro .hide-button {
+    margin-top: -10px;
+}
+#intro:hover .hide-button {
+	display: block;
+}
+
+#update .hide-button {
+    margin-top: -9px;
+    margin-right: -6px;
+}
+#update:hover .hide-button {
+	display: block;
+}
+
+#links-and-mru .hide-button {
+ 	margin-right: -6px;
+}
+#links-and-mru:hover .hide-button {
+ 	margin-right: -6px;
+	display: block;
+}
+
+/* Fontello Icons Styles*/
+
+
+
+.icon-wrench, .icon-book-open, .icon-chart-line, .icon-download, .icon-angle-circled-right {
+	    margin-right: 0.7em !important;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 180px) {
+  #links, #mru {
+    float: none !important;
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,127 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Bundle-SymbolicName: com.google.api
+Export-Package: com.fasterxml.jackson.core,com.fasterxml.jackson.core.
+ base,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.io,
+ com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.sym,com.fa
+ sterxml.jackson.core.type,com.fasterxml.jackson.core.util,com.google.
+ api.client.auth.oauth,com.google.api.client.auth.oauth2,com.google.ap
+ i.client.auth.openidconnect,com.google.api.client.extensions.java6.au
+ th.oauth2,com.google.api.client.extensions.jdo,com.google.api.client.
+ extensions.jetty.auth.oauth2,com.google.api.client.googleapis,com.goo
+ gle.api.client.googleapis.apache,com.google.api.client.googleapis.aut
+ h.clientlogin,com.google.api.client.googleapis.auth.oauth2,com.google
+ .api.client.googleapis.batch,com.google.api.client.googleapis.batch.j
+ son,com.google.api.client.googleapis.compute,com.google.api.client.go
+ ogleapis.extensions.java6.auth.oauth2,com.google.api.client.googleapi
+ s.javanet,com.google.api.client.googleapis.json,com.google.api.client
+ .googleapis.media,com.google.api.client.googleapis.notifications,com.
+ google.api.client.googleapis.notifications.json,com.google.api.client
+ .googleapis.services,com.google.api.client.googleapis.services.json,c
+ om.google.api.client.googleapis.testing.notifications,com.google.api.
+ client.googleapis.testing.services,com.google.api.client.googleapis.t
+ esting.services.json,com.google.api.client.http,com.google.api.client
+ .http.apache,com.google.api.client.http.javanet,com.google.api.client
+ .http.json,com.google.api.client.json,com.google.api.client.json.gson
+ ,com.google.api.client.json.jackson2,com.google.api.client.json.rpc2,
+ com.google.api.client.json.webtoken,com.google.api.client.repackaged.
+ com.google.common.annotations,com.google.api.client.repackaged.com.go
+ ogle.common.base,com.google.api.client.repackaged.org.apache.commons.
+ codec,com.google.api.client.repackaged.org.apache.commons.codec.binar
+ y,com.google.api.client.testing.http,com.google.api.client.testing.ht
+ tp.apache,com.google.api.client.testing.http.javanet,com.google.api.c
+ lient.testing.json,com.google.api.client.testing.util,com.google.api.
+ client.util,com.google.api.client.util.escape,com.google.api.client.u
+ til.store,com.google.gson,com.google.gson.annotations,com.google.gson
+ .internal,com.google.gson.internal.bind,com.google.gson.reflect,com.g
+ oogle.gson.stream,javax.annotation,javax.annotation.concurrent,javax.
+ annotation.meta,javax.jdo,javax.jdo.annotations,javax.jdo.datastore,j
+ avax.jdo.identity,javax.jdo.listener,javax.jdo.metadata,javax.jdo.spi
+ ,org.apache.commons.logging,org.apache.commons.logging.impl,org.apach
+ e.http,org.apache.http.annotation,org.apache.http.auth,org.apache.htt
+ p.auth.params,org.apache.http.client,org.apache.http.client.entity,or
+ g.apache.http.client.methods,org.apache.http.client.params,org.apache
+ .http.client.protocol,org.apache.http.client.utils,org.apache.http.co
+ nn,org.apache.http.conn.params,org.apache.http.conn.routing,org.apach
+ e.http.conn.scheme,org.apache.http.conn.ssl,org.apache.http.conn.util
+ ,org.apache.http.cookie,org.apache.http.cookie.params,org.apache.http
+ .entity,org.apache.http.impl,org.apache.http.impl.auth,org.apache.htt
+ p.impl.client,org.apache.http.impl.conn,org.apache.http.impl.conn.tsc
+ cm,org.apache.http.impl.cookie,org.apache.http.impl.entity,org.apache
+ .http.impl.io,org.apache.http.io,org.apache.http.message,org.apache.h
+ ttp.params,org.apache.http.protocol,org.apache.http.util,org.mortbay.
+ component,org.mortbay.io,org.mortbay.io.bio,org.mortbay.io.nio,org.mo
+ rtbay.jetty,org.mortbay.jetty.bio,org.mortbay.jetty.deployer,org.mort
+ bay.jetty.handler,org.mortbay.jetty.nio,org.mortbay.jetty.security,or
+ g.mortbay.jetty.servlet,org.mortbay.jetty.webapp,org.mortbay.log,org.
+ mortbay.resource,org.mortbay.servlet,org.mortbay.servlet.jetty,org.mo
+ rtbay.thread,org.mortbay.util,org.mortbay.util.ajax,org.mortbay.xml
+Bundle-Name: com.google.api
+Bundle-Version: 1.17.0.v201502142306
+Bundle-ClassPath: commons-logging-1.1.1.jar,google-api-client-1.17.0-r
+ c.jar,google-api-client-java6-1.17.0-rc.jar,google-api-services-analy
+ tics-v3-rev83-1.17.0-rc.jar,google-http-client-1.17.0-rc.jar,google-h
+ ttp-client-gson-1.17.0-rc.jar,google-http-client-jackson2-1.17.0-rc.j
+ ar,google-http-client-jdo-1.17.0-rc.jar,google-oauth-client-1.17.0-rc
+ .jar,google-oauth-client-java6-1.17.0-rc.jar,google-oauth-client-jett
+ y-1.17.0-rc.jar,gson-2.1.jar,httpclient-4.0.1.jar,httpcore-4.0.1.jar,
+ jackson-core-2.1.3.jar,jdo2-api-2.3-eb.jar,jetty-6.1.26.jar,jetty-uti
+ l-6.1.26.jar,jsr305-1.3.9.jar
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: google-oauth-client-java6-1.17.0-rc.jar
+SHA-256-Digest: M87FHay5GQWtyKPvX4eBvo8UiHBJtkRVm1I9EbhOySE=
+
+Name: google-http-client-1.17.0-rc.jar
+SHA-256-Digest: vmMBJ41kEvWF4CL0VeJAgZRX+NTixfpdIvsE2/al0T0=
+
+Name: gson-2.1.jar
+SHA-256-Digest: NclBmCVelfbxFQHrSz1DpSdr/dFCq3yQRyLmm/9R9p4=
+
+Name: google-http-client-gson-1.17.0-rc.jar
+SHA-256-Digest: AlLn5UgBZMCtReWWEcuuL/kV7EK3ASLRVZMwBUzzAyk=
+
+Name: google-http-client-jdo-1.17.0-rc.jar
+SHA-256-Digest: 1/c/WyZC4WE/5XjgkxekUccdBgrgPKSd1EGiIzlphpg=
+
+Name: google-oauth-client-1.17.0-rc.jar
+SHA-256-Digest: zVC4QOA4vQioWqTI6xyyl1Ceg2DE6HRq2B2ndruT8D4=
+
+Name: google-api-client-1.17.0-rc.jar
+SHA-256-Digest: mqjAw9cwiOJYN8wE2uFZFJQVbQWYshhOA95Ib4RHv9c=
+
+Name: google-oauth-client-jetty-1.17.0-rc.jar
+SHA-256-Digest: kVoFzyto6L43BbAeqSdNBn31gf134DVQPQicUk21Dqg=
+
+Name: httpcore-4.0.1.jar
+SHA-256-Digest: O2v5Kv+oXUFpqRVHzjxwk+2ZO0GtLfgEafx2itAea2s=
+
+Name: jetty-6.1.26.jar
+SHA-256-Digest: IQkdOpwTSfZA/cQhUEpgTAQO2JCH7MEq++MjUzJu1OU=
+
+Name: google-api-client-java6-1.17.0-rc.jar
+SHA-256-Digest: DWWrQsf2TmaGsoCudgRXTOAPBly+kV5fUL6hH71INyo=
+
+Name: commons-logging-1.1.1.jar
+SHA-256-Digest: zm+RPK0fDbOq1wGG1lxbx//Mmpnj/o4LE3MSgZ98Ni8=
+
+Name: jdo2-api-2.3-eb.jar
+SHA-256-Digest: kRCarB/zmlClq0eZ5gfnOG73YCoKt4DhhZYkBtvmcog=
+
+Name: jetty-util-6.1.26.jar
+SHA-256-Digest: m5dM4rmfSCVLdhJjN9xFshIm84Oq7WFvWXgK2vFnwEc=
+
+Name: jsr305-1.3.9.jar
+SHA-256-Digest: kFchoO6pCoFTSrt+5u9OouXmRfod7wpc2IQC3xtGye0=
+
+Name: httpclient-4.0.1.jar
+SHA-256-Digest: dSWW69x8muXZplXeO7BtB4c0Z5qd4jMh2/KE7kRWPAM=
+
+Name: google-http-client-jackson2-1.17.0-rc.jar
+SHA-256-Digest: I2kiU9HwgLfihoPXuobI3fIVt4qxlC2jXCMLrd9T0/o=
+
+Name: jackson-core-2.1.3.jar
+SHA-256-Digest: dUGEAiNFgAwtBm7O6vL3qIp8Kq6uI+scdu9ZiFSqkVc=
+

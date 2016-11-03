@@ -1,0 +1,36 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: IdvNbWD+hyqPByLOhOKd3y0MRvJ0m
+ 1my3dISKmRZxOg=
+SHA-256-Digest-Manifest: sUvyXBRu8o5PN+D/J+vDnBG3hQNUbaJ0D9a3P+Y6cLU=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: cHFgNLwdOC7bXoH6MG4fBDKKU4zxJ9XDdf+k1i3RCos=
+
+Name: README.TXT
+SHA-256-Digest: E1un0fozrWag8vaN6BtUkVa0KbcV8aGvS5Ov+Nn6zls=
+
+Name: lib/ext-1.1.1.jar
+SHA-256-Digest: FfRINoSjwrgDOlSAjGkvhcqqNPIjgMrg5Lge7jr0XMA=
+
+Name: tocs/manipulation_column_column-convert+replace$nodes.xml
+SHA-256-Digest: 2XCJhAooZ7TXk5DxUM9GMflJCnBM7HCcuPuycz/rQuE=
+
+Name: lib/jep-2.4.1.jar
+SHA-256-Digest: aSrcoNhvY51kQc3Ssmmu8KVHKHtRcWBOPJu2B/Fj4Qw=
+
+Name: LICENSE.TXT
+SHA-256-Digest: k1PxXn+3jtMmXVmr8fozAniiwiHr7enxGVZRE6dv9ZM=
+
+Name: lib/README.TXT
+SHA-256-Digest: qjUhw4h1zHc3gmUAU3ep7MmYQZTMSk+gBtw+fh2d52k=
+
+Name: knime-jep.jar
+SHA-256-Digest: 2SuV1zzh3QbKfeWsRA8WHizN6k1d75jtJz3ofLJDTwY=
+
+Name: html/nodes/6116e793.JEPNodeFactory.html
+SHA-256-Digest: 2qk3N6F1x0CurJovYi4OuTTmyeIFwgSNr4JgqaAgeZA=
+
+Name: lib/LICENSE-gpl.txt
+SHA-256-Digest: FN2E0ypvaKgStJRJhdcvocdt+nGdKDPzczp5s2aL26g=
+

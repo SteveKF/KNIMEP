@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Schema file written by PDE -->
+<schema targetNamespace="org.knime.network.core" xmlns="http://www.w3.org/2001/XMLSchema">
+<annotation>
+      <appInfo>
+         <meta.schema plugin="org.knime.network.core" id="FeatureType" name="FeatureType"/>
+      </appInfo>
+      <documentation>
+         This extension point allows to extend the feature types such as String, Double, Boolean etc., which are used to store additional information for the graph, nodes, edges, and end objects.
+      </documentation>
+   </annotation>
+
+   <element name="extension">
+      <annotation>
+         <appInfo>
+            <meta.element />
+         </appInfo>
+      </annotation>
+      <complexType>
+         <sequence minOccurs="1" maxOccurs="unbounded">
+            <element ref="FeatureType"/>
+         </sequence>
+         <attribute name="point" type="string" use="required">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="id" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+            </annotation>
+         </attribute>
+         <attribute name="name" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appInfo>
+                  <meta.attribute translatable="true"/>
+               </appInfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <element name="FeatureType">
+      <annotation>
+         <documentation>
+            This extension point allows the registration of additional feature types, which can be attached to the graph, nodes, edges and end objects.
+         </documentation>
+      </annotation>
+      <complexType>
+         <attribute name="FeatureType" type="string">
+            <annotation>
+               <documentation>
+                  
+               </documentation>
+               <appInfo>
+                  <meta.attribute kind="java" basedOn=":org.knime.network.core.api.FeatureType"/>
+               </appInfo>
+            </annotation>
+         </attribute>
+      </complexType>
+   </element>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="since"/>
+      </appInfo>
+      <documentation>
+         KNIME 2.6
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="examples"/>
+      </appInfo>
+      <documentation>
+         /*
+ * ------------------------------------------------------------------------
+ *  Copyright by KNIME GmbH, Konstanz, Germany
+ *  Website: http://www.knime.org; Email: contact@knime.org
+ *
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License, Version 3, as
+ *  published by the Free Software Foundation.
+ *
+ *  This program is distributed in the hope that it will be useful, but
+ *  WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, see &lt;http://www.gnu.org/licenses>.
+ *
+ *  Additional permission under GNU GPL version 3 section 7:
+ *
+ *  KNIME interoperates with ECLIPSE solely via ECLIPSE's plug-in APIs.
+ *  Hence, KNIME and ECLIPSE are both independent programs and are not
+ *  derived from each other. Should, however, the interpretation of the
+ *  GNU GPL Version 3 ("License") under any applicable laws result in
+ *  KNIME and ECLIPSE being a combined program, KNIME GMBH herewith grants
+ *  you the additional permission to use and propagate KNIME together with
+ *  ECLIPSE with only the license terms in place for ECLIPSE applying to
+ *  ECLIPSE and the GNU GPL Version 3 applying for KNIME, provided the
+ *  license terms of ECLIPSE themselves allow for the respective use and
+ *  propagation of ECLIPSE together with KNIME.
+ *
+ *  Additional permission relating to nodes for KNIME that extend the Node
+ *  Extension (and in particular that are based on subclasses of NodeModel,
+ *  NodeDialog, and NodeView) and that only interoperate with KNIME through
+ *  standard APIs ("Nodes"):
+ *  Nodes are deemed to be separate and independent programs and to not be
+ *  covered works.  Notwithstanding anything to the contrary in the
+ *  License, the License does not apply to Nodes, you are not required to
+ *  license Nodes under the License, and you are granted a license to
+ *  prepare and propagate Nodes, in each case even if such Nodes are
+ *  propagated with or for interoperation with KNIME.  The owner of a Node
+ *  may freely choose the license terms applicable to such Node, including
+ *  when such Node is propagated with or for interoperation with KNIME.
+ * -------------------------------------------------------------------
+ */
+
+package org.knime.network.featuretype;
+
+import org.knime.core.data.DataCell;
+import org.knime.core.data.DataType;
+import org.knime.core.data.image.png.PNGImageContent;
+import org.knime.core.data.image.png.PNGImageValue;
+
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.awt.image.RenderedImage;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+import org.knime.network.core.core.exception.InvalidFeatureException;
+import org.knime.network.core.core.feature.AbstractBasicFeatureType;
+
+
+/**
+ *
+ * @author Tobias Koetter, University of Konstanz
+ */
+public class FeatureTypePNGImage extends AbstractBasicFeatureType&lt;Image&gt; {
+
+    private static volatile FeatureTypePNGImage instance;
+
+    /**
+     * Returns the only instance of this class.
+     * @return the only instance
+     */
+    public static FeatureTypePNGImage getInstance() {
+        if (instance == null) {
+            synchronized (FeatureTypePNGImage.class) {
+                if (instance == null) {
+                    instance = new FeatureTypePNGImage();
+                }
+            }
+        }
+        return instance;
+    }
+
+
+
+    /**DO NOT USE THIS CONSTRUCTOR. use the {@link #getInstance()} method
+     * instead to get the singleton of this {@link AbstractBasicFeatureType}
+     * implementation.
+     * @see #getInstance()
+     */
+    public FeatureTypePNGImage() {
+        super(&quot;image(png)&quot;, Image.class);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean isNumeric() {
+        return false;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Image convertCell(final DataCell cell)
+        throws InvalidFeatureException {
+        if (cell == null || cell.isMissing()) {
+            return null;
+        }
+        if (cell instanceof PNGImageValue) {
+            final PNGImageValue imgCell = (PNGImageValue) cell;
+            final PNGImageContent imageContent = imgCell.getImageContent();
+            return imageContent.getImage();
+        }
+        return convertStringValue(cell.toString());
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Image convertValue(final Object value)
+        throws InvalidFeatureException {
+        if (value == null) {
+            return null;
+        }
+        if (value instanceof Image) {
+            return (Image)value;
+        }
+        return convertStringValue(value.toString());
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Image convertStringValue(final String valueString)
+            throws InvalidFeatureException {
+        if (valueString == null || valueString.isEmpty()) {
+            return null;
+        }
+        try {
+            final byte[] rawData = convertString2ByteArray(valueString);
+            final ByteArrayInputStream bis = new ByteArrayInputStream(rawData);
+            final BufferedImage image = ImageIO.read(bis);
+            bis.close();
+            return image;
+        } catch (final IOException e) {
+            throw new InvalidFeatureException(&quot;Can not load image from string &quot;
+                    + e.getMessage(), e);
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String convert2String(final Object value)
+    throws InvalidFeatureException {
+        if (value == null) {
+            return null;
+        }
+        final Image image = convertValue(value);
+        try {
+            final ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            ImageIO.write((RenderedImage)image, &quot;png&quot;, bos);
+            final String stringVal =
+                convertByteArray2String(bos.toByteArray());
+            bos.close();
+            return stringVal;
+        } catch (final IOException e) {
+            throw new InvalidFeatureException(&quot;Can not convert image to cell &quot;
+                    + e.getMessage(), e);
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Image getDefaultValue() {
+        return null;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public DataType getCellType() {
+        return PNGImageContent.TYPE;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    protected DataCell convert2CellInternal(final Image value)
+        throws InvalidFeatureException {
+        if (value == null) {
+            return DataType.getMissingCell();
+        }
+        try {
+            final ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            ImageIO.write((RenderedImage)value, &quot;png&quot;, bos);
+            final PNGImageContent content =
+                new PNGImageContent(bos.toByteArray());
+            return content.toImageCell();
+        } catch (final IOException e) {
+            throw new InvalidFeatureException(&quot;Can not convert image to cell &quot;
+                    + e.getMessage(), e);
+        }
+    }
+}
+
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="apiinfo"/>
+      </appInfo>
+      <documentation>
+         The feature types have to implement the FeatureType interface and need to provide a public default constructor.
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="implementation"/>
+      </appInfo>
+      <documentation>
+         See the implementations in the package org.knime.network.core.core.feature for implementations of this extension point.
+      </documentation>
+   </annotation>
+
+   <annotation>
+      <appInfo>
+         <meta.section type="copyright"/>
+      </appInfo>
+      <documentation>
+         Copyright by KNIME GmbH, Konstanz, Germany
+Website: http://www.knime.org; Email: contact@knime.org
+      </documentation>
+   </annotation>
+
+</schema>

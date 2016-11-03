@@ -1,0 +1,33 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Bundle-SymbolicName: org.knime.dynamic.node.generation;singleton:=true
+Bundle-Name: KNIME Dynamic Node Generation
+Bundle-Version: 3.1.2.v201603040957
+Bundle-ClassPath: knime-dynamic-node-generation.jar,lib/schemas.jar
+Require-Bundle: org.knime.core;bundle-version="[3.0.0,4.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: vQctkadra4b/In5IMqNbgxiaNbueKGUalMMRG49BelA=
+
+Name: schema/DynamicNode.exsd
+SHA-256-Digest: Fme+8IQilbMRO0uFnHkNY1vpnGwTL/qLpzFVa2jqRRk=
+
+Name: schema/DynamicNodeFunctions.exsd
+SHA-256-Digest: RM6b114Zz9EKr3CZCAhTg6Sxxfw/eaIVkhORiVIkjwg=
+
+Name: lib/schemas.jar
+SHA-256-Digest: iJyaUPVsM7PbArLkmf0ggz6Sv6xwRPLZ3ysQcB9B4M8=
+
+Name: knime-dynamic-node-generation.jar
+SHA-256-Digest: FqXvAnUkfSO+putFoqsL31+1nyf47a55qjQoax+WpTc=
+
+Name: dynamicNode_v2.12.xsd
+SHA-256-Digest: kagQ0GirtKpQoaRH1R8DCjPoVDrudWpuloWB2llh1lU=
+
+Name: dynamicNode_v3.0.xsd
+SHA-256-Digest: 0b0p6alwGm9Ry2cr0Z3oyBMcLD4/WGjnW/eeGDwoav4=
+

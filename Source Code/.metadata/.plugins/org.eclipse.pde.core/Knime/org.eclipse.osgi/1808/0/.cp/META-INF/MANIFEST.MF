@@ -1,0 +1,470 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.knime.workbench.core;singleton:=true
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.3.0,4.0.0)
+ ",org.eclipse.jface;bundle-version="[3.6.1,4.0.0)",org.knime.core;bun
+ dle-version="[3.0.0,4.0.0)";visibility:=reexport,org.eclipse.ui;bundl
+ e-version="[3.6.1,4.0.0)";visibility:=reexport,org.eclipse.ui.console
+ ;bundle-version="[3.5.0,4.0.0)",org.eclipse.ui.ide;bundle-version="[3
+ .6.1,4.0.0)",org.eclipse.core.filesystem;bundle-version="[1.3.1,2.0.0
+ )",org.eclipse.gef;bundle-version="[3.6.1,4.0.0)";visibility:=reexpor
+ t
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Ant-Version: Apache Ant 1.9.4
+Export-Package: org.knime.workbench.core,org.knime.workbench.core.node
+ provider,org.knime.workbench.core.preferences,org.knime.workbench.cor
+ e.util
+Bundle-Name: KNIME Workbench Core
+Bundle-Version: 3.1.0.v201511301303
+Bundle-Activator: org.knime.workbench.core.KNIMECorePlugin
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: icons/server_space/server_logo_55.png
+SHA-256-Digest: /pqZX3AJnOw5usUGgXKR1/kWXxXhlGwYJYeeb+NMlSM=
+
+Name: plugin.xml
+SHA-256-Digest: /r7pskB0H7lBCR7Q81AQ+uNpXAR0f6Mk5mc5zQoDOd8=
+
+Name: icons/server_space/running_job_confgd_msg.png
+SHA-256-Digest: vZXgxUQFbABqi0pu5QRgkBUsuWtdgoVa2A54BV5P2RY=
+
+Name: org/knime/workbench/core/KNIMECorePlugin$1.class
+SHA-256-Digest: ae2Bb6CHLgrD8IT6/ZBSbqF+dvkGd5qY4SFsjUbJ+JQ=
+
+Name: org/knime/workbench/core/util/KNIMEImageProvider$MissingImagePro
+ vider.class
+SHA-256-Digest: hjIaWB3gvtmmy+EK9JyPhYOy5SeHgzXNs2f/KPgb+8E=
+
+Name: org/knime/workbench/core/util/ThreadsafeImageRegistry$OriginalIm
+ ageDescriptor.class
+SHA-256-Digest: 2kfNGuQQJiPHkmdUm96ayd73h0/7+eFtfSDduANe+GI=
+
+Name: icons/system_flow.png
+SHA-256-Digest: QFx+p+pJ/oUQvdn1HHWOEUNX6F9PsoZViluX6/0486w=
+
+Name: icons/help.png
+SHA-256-Digest: Mys7ypwbbYxrFnkyXs8YhQivv5X5t3fhQwDIRV21q2M=
+
+Name: icons/actions/reset.gif
+SHA-256-Digest: igtshZLJO3SFYI/YdNirDPxaKafVENkglC1YtOplSPw=
+
+Name: icons/lockedstate.gif
+SHA-256-Digest: mrQ4Rz2/OUL9aKPg4ieU6O9nO4aDLoQMooLDOibGJ5Q=
+
+Name: org/knime/workbench/core/util/ExportToFilePage.class
+SHA-256-Digest: F5+RK8wRi5uMvLsvLiq9Bk8oIW6Jfws5WIYTiG35fK0=
+
+Name: icons/KNIME_32.png
+SHA-256-Digest: MezTvkr+mD+aa8QIKIdeIvyFzRSetpZPEHwkZ+m35qw=
+
+Name: icons/server_space/running_job_execting.png
+SHA-256-Digest: TyZRNlM6Z7jcwsqY8dUs3RrCAWV31Xg8lwSugsRWv28=
+
+Name: org/knime/workbench/core/util/KNIMEImageProvider.class
+SHA-256-Digest: oAwRNWOjjltoima7C6z1j+K0EBk3+7t0da1wDfp/b8U=
+
+Name: icons/knime_16x16.png
+SHA-256-Digest: PIa6Q/ZTP9eFm0H5Y1xF8BssPRt/YkuqRTTDINZJM/E=
+
+Name: icons/server_space/running_job_execed_msg.png
+SHA-256-Digest: wlK1sQ9Tcw+7yofxVn3AubBIHkdi26wdWVf0UTFp3TA=
+
+Name: icons/search.gif
+SHA-256-Digest: gJbAwykwNgBmHufMHyPv/TbCngiCYkS11X+XFsKe0k4=
+
+Name: icons/knime_import55.png
+SHA-256-Digest: aP52998G/T1JJ/aeUi8goehQu58c2TbwMDhmE4kRnl8=
+
+Name: icons/server_space/running_job_confgd_msg_out.png
+SHA-256-Digest: X2Qv+FdLmDxn5qbtL9CoEDf5rdNNaoU3+KlZNLnuvQE=
+
+Name: org/knime/workbench/core/preferences/HeadlessPreferencesInitiali
+ zer.class
+SHA-256-Digest: CrgGJc6TsN9SQ6VV6rd3u44rJirg1wca1AZHsZJVTPs=
+
+Name: icons/clear.png
+SHA-256-Digest: ISvCdoJInpKPBFoxqz5t2M6+fVJy4nWTXuUJklxXhm8=
+
+Name: org/knime/workbench/core/util/ThreadsafeImageRegistry.class
+SHA-256-Digest: aM73ztcj0WdzD86rI9K53BmuZQXaR8EHp7Al+0lc5Sg=
+
+Name: icons/sync.png
+SHA-256-Digest: 7Xr5x1IJmx4u1M8uKPQslYdgm20mCf7j38BBBN5HWNU=
+
+Name: icons/project_executed.png
+SHA-256-Digest: MmFPLdCbjIsLSNFEOR2zcpx8qXe5e5w7MDAJpJl3CRc=
+
+Name: icons/warning.png
+SHA-256-Digest: CWX0Czw3HEKqVKDLDGJqp2DoVYFVJpRzcA2liiVnZTI=
+
+Name: icons/server_space/meta_info_edit55.png
+SHA-256-Digest: qj422LbvlhkcUKqFqE8+j3r2VRIcLyotOrWf13NMTEs=
+
+Name: icons/server_space/nodemsg.png
+SHA-256-Digest: fJKjJNAyN4FGwOYDzEMgzxEyib+rKOJOFKTNC5+26qc=
+
+Name: icons/subnode_detailed.png
+SHA-256-Digest: Vn0kaGVLdxt+HaA0iK81iY6g97R0foVLjNJqara4Ht4=
+
+Name: icons/subnode_icon.png
+SHA-256-Digest: q/aEHzB355428sJxRg+EGfsa7uQGiM6eNkTUSqkU5DU=
+
+Name: icons/new_knime55.png
+SHA-256-Digest: VwWzJXui/JjxLJZ0m43x0QemLINN2VR4uA7kpCDDffg=
+
+Name: icons/KNIME_24.png
+SHA-256-Digest: jVKFkXQ8V54M/Lda5eEks2KKjOCVMXrnXtlvABwwe1I=
+
+Name: LICENSE.txt
+SHA-256-Digest: 8TSiQagVcm5WfssAApmJKIINRC9Qyw1o2chFUkUKsAQ=
+
+Name: icons/info.png
+SHA-256-Digest: INQTwEjIxmOJqcdupyKnWwielL+ASj4hZLHWl/ZyXKw=
+
+Name: icons/collapseall.png
+SHA-256-Digest: IHQxk6089s1NZu8kw5rFBeDxGQuU8yEblr94czlMV9E=
+
+Name: icons/knime_export55.png
+SHA-256-Digest: Wf4LHmv0JmHgbv6BCEhVOyPnPyQRiQdXHSNmaHjI5I0=
+
+Name: icons/error.png
+SHA-256-Digest: 4riFF7YTsbl0pb4dFnACHld9J60ajMwKSDyUPGVr6NY=
+
+Name: icons/folder.png
+SHA-256-Digest: mpQz+8uRzlpRQ0ZMP/uAkqYFfSpJYhZqDEWAN6nqBEo=
+
+Name: icons/server_space/upload_wf.png
+SHA-256-Digest: yx18Pbb42FfBpiC2kd38Me90IQSYX3FSmyh3lBdSu9w=
+
+Name: org/knime/workbench/core/util/LinkMessageDialog$1.class
+SHA-256-Digest: HY8wyKexzRPkE3uAiz7v3SrPlIBnTRF4/3dHD0Yz3Cg=
+
+Name: icons/server_space/running_job.png
+SHA-256-Digest: VsYdac9nEOAQbhrSx7a3QVkG+9omVcB9Sm8B9nS1ThI=
+
+Name: icons/server_space/running_job_execting_out.png
+SHA-256-Digest: lrhlNfDByv02vyj+D8j1ta0ZXIMFIx+16LJQ1PO2P3Y=
+
+Name: icons/actions/execute.gif
+SHA-256-Digest: CSHsc3+JVy2bZmffNsTw6VcYmFj5ZjP9oPzWZbEvG1g=
+
+Name: icons/system_folder.png
+SHA-256-Digest: 7flApJd0w2DE+6+yUPgvMKThQFRtvAVq5EnaUukpA0c=
+
+Name: icons/anno_edit.png
+SHA-256-Digest: q0gmU/HXfqy4koPHNcS0qHU8H9nYpCNfwcg8v8vrp5M=
+
+Name: icons/team_space/explorer_teamspace.png
+SHA-256-Digest: /vdgnySV6Okn1vFOi8IeNC5iZwfHL6ykcAvhEjrbzls=
+
+Name: icons/server_space/running_job_out.png
+SHA-256-Digest: VJ+U+kGyKvlaD6LniI2yvl+lLBgVpYyACUZaC3ql6iw=
+
+Name: icons/server_space/running_job_confgd.png
+SHA-256-Digest: EK+MLZcpBlTLF5h/cNljZOCIW/9kn0d6jKpI1pOc/4g=
+
+Name: icons/fav/folder_fav.png
+SHA-256-Digest: V0rHdALHgbJno/QOtl9cqbMWEf5J1g1Ovh6OHzdxlPw=
+
+Name: org/knime/workbench/core/util/ThreadsafeImageRegistry$2.class
+SHA-256-Digest: uA+va/EAAiIOjVpSwvNhCj3VWPOs5HxhWAA5Sct4d4w=
+
+Name: icons/project_basic.png
+SHA-256-Digest: imtgeZUMuQU3WFMlOn+Q8/Ytygb//OGv7yqaRuACIis=
+
+Name: icons/wf_set.png
+SHA-256-Digest: 4Ct3MtZ4XyRLVTcIfUSxSesBZioEtkbtOvmbYyadrBo=
+
+Name: org/knime/workbench/core/WorkflowManagerTransfer.class
+SHA-256-Digest: mmIuKihXFkKb4H9ypPaO/E1YIyF7m+zus8zDMst1rs4=
+
+Name: icons/server_space/download.svg
+SHA-256-Digest: F2vpWGbu6CdxnbVUOLegwTfeRtFO5FOrHyjwoJkcqgs=
+
+Name: icons/server_space/schedinfo.png
+SHA-256-Digest: DvdjvfqdEgX2tf/RS+INR7QssbJFGlOxpqvO6WhZmlA=
+
+Name: icons/project_closed2.png
+SHA-256-Digest: YuanQUC8s5dBZ7VC3fkpkNHR0O9oDvChg0loAED1ulY=
+
+Name: icons/server_space/replace_head.svg
+SHA-256-Digest: mniimYhueHvDACUZM8TWtehO0NwZiuJ+YKmbMdV2jrE=
+
+Name: org/knime/workbench/core/util/KNIMENonscalingIconProvider.class
+SHA-256-Digest: HL49isLLhtUI2kbzLIhDoPhj2QJkq1UcnGlrE9obss0=
+
+Name: icons/server_space/running_job_execting_msg.png
+SHA-256-Digest: tja8RuNck2Ce51qO78z+H3jFwPrcRowRJMNY30q3DAM=
+
+Name: org/knime/workbench/core/util/ThreadsafeImageRegistry$1.class
+SHA-256-Digest: lTGamLLfJcECESD18iDB0vojjIf1uJOOznL4JH1ySng=
+
+Name: org/knime/workbench/core/ConsoleViewAppender$1.class
+SHA-256-Digest: qosv0GoTjd4YZxxoSP7RycLSfuWahx4Pr/Hr6IFSj/0=
+
+Name: org/knime/workbench/core/ConsoleViewAppender.class
+SHA-256-Digest: 5tKEt68trW/NYUEXTOX2YPmHT+/VeRaeulg9v4FjfmE=
+
+Name: org/knime/workbench/core/util/ImageRepository$SharedImages.class
+SHA-256-Digest: LHVNAv6kxKRmxUq5vG/12Sc9DUnFmw5rVx+SdhEGnpo=
+
+Name: icons/delete.png
+SHA-256-Digest: zyqwVLTzWmPpm3MZPcbTdnzJdJay0yiJidmaTGSpZoA=
+
+Name: org/knime/workbench/core/util/KNIMENonscalingImageProvider.class
+SHA-256-Digest: p+ssAi7vipDbHQKCH5tuRaozayYS/sfUJjCvGjeBP0k=
+
+Name: icons/fav/folder_freq.png
+SHA-256-Digest: jz/mA2vpJ4vyYyjpxg/Ssm3w8zT0g5HtR1MQcA69Kyc=
+
+Name: org/knime/workbench/core/util/KNIMEIconImageProvider.class
+SHA-256-Digest: P9JEFpgWlvQjJ14DF1ufLOBJ3UVf0Z44dpDY5Yg5y+I=
+
+Name: icons/server_space/explorer_server.png
+SHA-256-Digest: EhcETyT5XfajDUCo0+ssHKXpMMIkisPiL097+3gpzW8=
+
+Name: org/knime/workbench/core/util/ImportFromFilePage.class
+SHA-256-Digest: ej89frJHtNm+lvD86oD7r5+fm70d5ANbHKevhjxLsy8=
+
+Name: icons/node_icon.png
+SHA-256-Digest: oPphuvaJp7k62w4qqxyaMizPEQ46vn3WmqjSH81eqH4=
+
+Name: icons/server_space/running_job_idle_msg.png
+SHA-256-Digest: S6P6cP/DyCw8eeoW/ZmU+7GPrsQRFRkcFpLx5AYE1Rk=
+
+Name: icons/KNIME_16.png
+SHA-256-Digest: PIa6Q/ZTP9eFm0H5Y1xF8BssPRt/YkuqRTTDINZJM/E=
+
+Name: org/knime/workbench/core/preferences/HeadlessPreferencesConstant
+ s.class
+SHA-256-Digest: S/HK0jN4D8hNI1YP1spG1QT+ds3mmC7B42Gd1wUeKzs=
+
+Name: icons/system_folder.pdn
+SHA-256-Digest: w1Oai6CshUsb5EumQ3GVAFbdmbiN/bWg+2F8lmKXrTM=
+
+Name: icons/fuzzy_search.png
+SHA-256-Digest: dvAQ8F/j3fwqZtSsQ5TU8tZE3tROJyrtHU4ndgBNcNU=
+
+Name: icons/filter.png
+SHA-256-Digest: ZD2wUt8vH0eh/jnF44a28vJzEsVd0++ovtKsGs9BqXY=
+
+Name: icons/refresh.gif
+SHA-256-Digest: lK3PYkVLOp2+k/8XtInMStq6VyXAavJ71Y8wpnMdJiA=
+
+Name: icons/fav/folder_last.png
+SHA-256-Digest: ugxUD33vsWRMhr9NpwgjETuqCkHr3z9wCkmzOCvIAKY=
+
+Name: icons/meta_nodes/metanode_template_repository.png
+SHA-256-Digest: tqlBoW7DhwKyR5oJpPH2SFVMGGce9j1YiGS27OTihHs=
+
+Name: icons/server_space/snapshot.png
+SHA-256-Digest: H07doxXrpYOGZkyJvPPTpwUReReFeKsyOLGhvb6M73Q=
+
+Name: org/knime/workbench/core/util/LinkMessageDialog.class
+SHA-256-Digest: 8S+pypl/X6/HO71S0tXrCZAgAfTOJWIT/OmogDs+Ce4=
+
+Name: org/knime/workbench/core/util/ThreadsafeImageRegistry$Entry.clas
+ s
+SHA-256-Digest: TnonCDcUny1McB+DRUnpQoL1psKrwahqwP/Ohu7Oc98=
+
+Name: icons/server_space/flow_scheduled.png
+SHA-256-Digest: rl+bR/H2GlH7rDl8CeysJZSAH/jZCmeNOKlzYBwLrMQ=
+
+Name: org/knime/workbench/core/WorkbenchErrorLogger.class
+SHA-256-Digest: h6WhONKeEvRIwWFD1ZFH6HFUW3c6dPjtpTWD7UZV8X8=
+
+Name: icons/knime.png
+SHA-256-Digest: PIa6Q/ZTP9eFm0H5Y1xF8BssPRt/YkuqRTTDINZJM/E=
+
+Name: icons/server_space/running_job_execed_out.png
+SHA-256-Digest: zSiB5nLCJe7sE1scjnyKecFI5vgY4ypU0t5CcGmNDk8=
+
+Name: org/knime/workbench/core/KNIMEErrorDialog.class
+SHA-256-Digest: LOcdVX2xuZQL1IcrYS4wW6oclb/EPF/ssx/yIwEWJ3U=
+
+Name: icons/file.png
+SHA-256-Digest: np1IjB+URrCE10HN5Z4y+Pe+upLUsFJQiVQckqYlk5g=
+
+Name: org/knime/workbench/core/util/AbstractImExPage.class
+SHA-256-Digest: KzeM5+e9aEHbisBUTcZd9I2thAGvrmgZY5sWI9y25Bc=
+
+Name: icons/knime_unknown_red.png
+SHA-256-Digest: Q0kjgl7fR8f1YsAAIjHO/YVQVYc7nUPzsjd0drg+ATA=
+
+Name: icons/actions/openView.gif
+SHA-256-Digest: gJbAwykwNgBmHufMHyPv/TbCngiCYkS11X+XFsKe0k4=
+
+Name: icons/project_executing.png
+SHA-256-Digest: duWvR6ieeF7/JQqpK2835GzzIorzcvAD/h4pUWIhNlw=
+
+Name: org/knime/workbench/core/util/AbstractImExPage$1.class
+SHA-256-Digest: HetMDqT8oJxRBnyxIIibp3r/y5kVku4t5j+eZzu/NaA=
+
+Name: icons/server_space/replace_head.png
+SHA-256-Digest: DplVgbgC+iqpOg6vFu6zwNiadmFS5gujXvOT/aCH2rE=
+
+Name: org/knime/workbench/core/EclipseEncryptionKeySupplier.class
+SHA-256-Digest: h61nnXQKtLYDMXM82jjuCUeqYlhuzrsj26OuoEGk32A=
+
+Name: org/knime/workbench/core/util/ImageRepository.class
+SHA-256-Digest: 9dZ3Ul1MnrxXWwyEGGqf84mJ97EXmC2cBjhipl7Jgp4=
+
+Name: icons/meta_nodes/metanode_template_disabled.png
+SHA-256-Digest: ePX2loWzfSHA97PfVNHpRtloudbNwyU9Di3l+BmQa/s=
+
+Name: icons/server_space/download.png
+SHA-256-Digest: spCwXKcPIKELWJ2oXzlvQfbs6jWgzy1HUGeico5qyCU=
+
+Name: icons/server_space/permission.png
+SHA-256-Digest: qWBi5coVbI2xkIlbnbkd40FEA3kLeB7TnT6EBUTiW9c=
+
+Name: icons/diff.png
+SHA-256-Digest: lx5bXvLdsomdU2CZWs/gPohL9ZHTBBVYep297fuJDa4=
+
+Name: org/knime/workbench/core/KNIMECorePlugin.class
+SHA-256-Digest: fgkWYLw3S8YH0BbCfOrrg6y9yJ7SYULNEgmiSuc4Cc4=
+
+Name: icons/metanode_icon.png
+SHA-256-Digest: i89lm9cRm7NjJuetcWBwih2/+mQe2u4Is7C5woJdekg=
+
+Name: icons/history.png
+SHA-256-Digest: KS7eKmSqQ9uVSVz3nu3Z47cX57gNvmMjlBeTilN8WNk=
+
+Name: icons/server_space/running_job_idle_out.png
+SHA-256-Digest: I3U8a00ESMPvDfDUFtxMKDCr8RPRMTOdY7AD8XVGaxA=
+
+Name: icons/warning.gif
+SHA-256-Digest: CWX0Czw3HEKqVKDLDGJqp2DoVYFVJpRzcA2liiVnZTI=
+
+Name: icons/project_error.png
+SHA-256-Digest: a+b6TmdX4Yl1EGjtIv/X3kXVNcegjGpgZ/GPzI7hMr4=
+
+Name: icons/node_detailed.png
+SHA-256-Digest: o0wi6oEVWr1UxaK/g8KrEsGnZrYKU6zIfCr0SvXuodU=
+
+Name: icons/server_space/running_job_idle.png
+SHA-256-Digest: tSic2tMtQF6M4u+nSCRrZHXC2SNi4HBR/MCstMe/Nao=
+
+Name: icons/server_space/running_job_idle_msg_out.png
+SHA-256-Digest: 0wQKnKZSntafFrEjwUZ9trddgB9e/jinqlu1ReeiqFQ=
+
+Name: org/knime/workbench/core/nodeprovider/NodeProvider$EventListener
+ .class
+SHA-256-Digest: Y09q7EcBoFOBIg1L8sL2xYNdlEn5F6XvtQrmYFg2V5c=
+
+Name: icons/actions/configure.gif
+SHA-256-Digest: 7nZ+kv5ZZMCvX4DuB3g65c9TohQWa5zCEyu9ht7Ym9k=
+
+Name: icons/node.png
+SHA-256-Digest: Swew27r5wEoXDUVUsNvpCXWerdTTF3cuphxY5XFs0nY=
+
+Name: icons/server_space/snapshot.svg
+SHA-256-Digest: 45147SsDGuw9iEwv0NeQRLZxSc83QN3plcRL5MQm7bc=
+
+Name: icons/startupMessages.png
+SHA-256-Digest: 5G7h6dJB5zefnYv2RSPsehvK9IVvtxn9vPlijd2DXJI=
+
+Name: org/knime/workbench/core/nodeprovider/NodeProvider.class
+SHA-256-Digest: 2Ich79MIvbvWEEShEKjgVj+Z41+7n6eZVOr0EQUXDKw=
+
+Name: icons/anno_move.png
+SHA-256-Digest: xmIxxiatbfiA4+KBShMJfgVfrFGXBCqbx1uBEi/FyNU=
+
+Name: icons/server_space/running_job_execting_msg_out.png
+SHA-256-Digest: hX+xb9oIFBo5Uc6Ot+YXg/cOPG3JKuLFGWJM57PyipQ=
+
+Name: icons/server_space/upload_wf55.png
+SHA-256-Digest: Wu2Njwh1nTAzXy+45pkfjkpHPHu7lMIXpp7RoxcD/UU=
+
+Name: icons/server_space/running_job_confgd_out.png
+SHA-256-Digest: Nv+/uLwkXYxdRdljo3klYW8IMzZur5lm2k83Jj3927g=
+
+Name: icons/knime_24x24.png
+SHA-256-Digest: 3Hq8MsrOjl4u5w0gG3AaMYe9jfj0ihPjK7YhVhVTWBY=
+
+Name: icons/info.gif
+SHA-256-Digest: xxS6sxsN+Dsi8ILC3GvKvGWKt2IizcWGmOG1nVtaR+c=
+
+Name: icons/info_balloon.png
+SHA-256-Digest: INQTwEjIxmOJqcdupyKnWwielL+ASj4hZLHWl/ZyXKw=
+
+Name: icons/knime_default.png
+SHA-256-Digest: imtgeZUMuQU3WFMlOn+Q8/Ytygb//OGv7yqaRuACIis=
+
+Name: icons/expand.png
+SHA-256-Digest: qZlYms12H9n5FlcATbqTsfgW0DtWyCYuCllhcUqU6rQ=
+
+Name: icons/knime_unknown.png
+SHA-256-Digest: 4ti3hlsJKxGugm8uxBJ2KC8zaMB49FNHUYQCyDOyWrI=
+
+Name: icons/hide_equals.png
+SHA-256-Digest: B3Sy6AomUrg0IsampKpXXSpxvc0Tj3IzioOXEgaZIBU=
+
+Name: icons/knime_32x32.png
+SHA-256-Digest: E+kNmcr0ReAjwiEQqBLqQLHLV9WBX5e2+DgbEczRkJQ=
+
+Name: icons/actions/cancel.gif
+SHA-256-Digest: gC+8WB4nQvRgdmRDCLYJZ3XZ2lxSLcWTzHBgsclFWqQ=
+
+Name: icons/metanode_detailed.png
+SHA-256-Digest: s4HWRM12iKDaC4WZVd6zXA3npTXGlOJHppmZJhZQjNI=
+
+Name: icons/server_space/upload_wf55.pdn
+SHA-256-Digest: 0GEQDLzwhMR0YSdGxA88N5EaoEYMNO4opzVDvffcK5M=
+
+Name: org/knime/workbench/core/KNIMECorePlugin$2.class
+SHA-256-Digest: MhDv/3LVeiaKldN83M8UMKbWu8xDq6QjOYxUliWvI88=
+
+Name: icons/workflow_projects.png
+SHA-256-Digest: YlvKML6aXZnOXgbWHgnvwJVCYiEuILY0eGAiQJJV7FA=
+
+Name: icons/server_space/key.png
+SHA-256-Digest: 9wskrK5YSFkJP2QAIZ9ZHF1xwnjtXEJ7ojoaQz83am8=
+
+Name: icons/show_add_only.png
+SHA-256-Digest: S2UIwnbPqD7abzzZ+hYQeYaO+eScM6O/inZh9Zxp7Uc=
+
+Name: icons/busy.png
+SHA-256-Digest: 18W+MZisd6tBGNYGm0KNNy2MGyv7fc8gmZRaIMz9RB8=
+
+Name: icons/ok.png
+SHA-256-Digest: hRij1CybLFPq8+s+0uRdcigGZhSvLKZLMuUZF2dMHds=
+
+Name: icons/server_space/meta_info_edit.png
+SHA-256-Digest: KvgrbLmnyM8XBIwL2J4xXgNURwRJzjoPvDVGadI7Ewk=
+
+Name: icons/server_space/meta_info_edit55.pdn
+SHA-256-Digest: 5Nv3CwIXFQh80PBdDxiSvOIXj83PiOAB8ScQh6PXHRs=
+
+Name: icons/server_space/running_job_execed.png
+SHA-256-Digest: S8exh0SvntOksPeLVZ55z0LXlAGfmC79BMHE/g4+CKA=
+
+Name: icons/project_configured.png
+SHA-256-Digest: rVWcbIci1GT/SpDGgTF3vnbCh2Lej1aqLhNT2XFCQck=
+
+Name: org/knime/workbench/core/util/ImageRepository$ImgDecorator.class
+SHA-256-Digest: ku+4AIhrGyTaXaw70CF1dOGzBBapyjSV5FvIIqqAE5I=
+
+Name: icons/any_file.png
+SHA-256-Digest: b7WR6xKD9anXyPcd6EAGZywU69Jp7W/1kYrfSPchgaw=
+
+Name: icons/expandall.png
+SHA-256-Digest: GmZVdVWm+tFRPoflB9meuxGKbv686tdCE8H9r56MIp4=
+
+Name: icons/knime_export16.png
+SHA-256-Digest: ayfJ7ADqRXZwMNK/nTBCnIWF2YbpEXMu7RXQ+ZQBAQw=
+
+Name: icons/meta_nodes/metanode_template.png
+SHA-256-Digest: VIHi0W4DguCEfL/lfVM5K6o/WKn38RTDDTprujveNDk=
+
+Name: icons/server_space/running_job_execed_msg_out.png
+SHA-256-Digest: PxGUjwI3G5AilhtUQP/aML5msO3sWPP9UgR1VdY3Veo=
+
+Name: icons/server_space/flow_periodic.png
+SHA-256-Digest: D2imi4iXR+7GrEzRD5RptSwNuoi8/oV405vlWt/DRuc=
+
+Name: icons/server_space/grp_permission_55.png
+SHA-256-Digest: 1QW9wHn9Sn3Ajbnzs82WWjI1zNzWFrh3QmoFUuUj68Y=
+

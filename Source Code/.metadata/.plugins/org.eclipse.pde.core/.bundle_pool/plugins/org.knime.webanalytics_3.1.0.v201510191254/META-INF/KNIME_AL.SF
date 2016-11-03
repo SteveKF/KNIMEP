@@ -1,0 +1,36 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: d92Xp1QpV/klujf3Kj/Xfk6gKVt0K
+ BuCsq8M8E1CFb8=
+SHA-256-Digest-Manifest: TqZJhfh1H0D2qkky6U7K37x07fSuf7zL/Kxe8P7fNEg=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: lh4E+KBptmDcIZnKC2KrJTFddzzYDp1L4mkRVo7RxNs=
+
+Name: html/nodes/24b9fc44.WeblogReaderNodeFactory.html
+SHA-256-Digest: 8kQR+6yGYjwAr2waZg98cGxmSBp1fxXPv0qAGGhbmCY=
+
+Name: tocs/applications_web.xml
+SHA-256-Digest: 1hfzbINdAYYJ/ooJ0S44e/6Cp5vPhR6Ao9jIdudGxqY=
+
+Name: knime-weblogreader.jar
+SHA-256-Digest: JZOPl5pRM6qd8mfrFAW3PCVw8SVHOW9gmhtjRuwlVP0=
+
+Name: lib/InetAddressLocator.jar
+SHA-256-Digest: UgwFzuTbHWVlm0Y+JJRQGrF7iTQTodRkli9tB2QT2C4=
+
+Name: icons/labs.png
+SHA-256-Digest: Vy5ww1XwexB2csKlqMJvG6SydLgqdYDtOiH/i4rRg+c=
+
+Name: tocs/applications_web$nodes.xml
+SHA-256-Digest: iUbP8acOQRN7ZuwnMSGqO12xQ+lLtOa6LKLMsnlZXCs=
+
+Name: html/nodes/1b84b500.ByteConverterNodeFactory.html
+SHA-256-Digest: VTgkRklAxnvCRLsiPJxRlXutv98KYxvV9gXu8NQRTqM=
+
+Name: html/nodes/2aaecb8c.CountryExctractorNodeFactory.html
+SHA-256-Digest: vtFXasW6dVy48YNDG4hh8XNaTSua8szejLIDxQZxJYc=
+
+Name: icons/WebAnalytics.png
+SHA-256-Digest: zy/W5fpVaPjXOy2FUB1XLinzAQoKfgB/4U2n7SG7GSk=
+

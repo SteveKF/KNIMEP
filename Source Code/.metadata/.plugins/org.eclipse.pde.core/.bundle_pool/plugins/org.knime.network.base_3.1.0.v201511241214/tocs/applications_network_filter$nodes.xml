@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Filter" link_to="../org.knime.network.base/tocs/applications_network_filter.xml#applications_network_filter">
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/4dfa35d7.EdgeDegreeFilterNodeFactory.html" label="Edge Degree Filter"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/67ed1da9.EdgeWeightFilterNodeFactory.html" label="Edge Weight Filter"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/7a78ccea.FeatureFilterNodeFactory.html" label="Feature Filter"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/3cd51bc6.FeatureListFilterNodeFactory.html" label="Feature List Filter"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/5d3a0b1a.FeatureValueFilterNodeFactory.html" label="Feature Value Filter"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/e3fe966.NeighborFilterNodeFactory.html" label="Neighbor Filter"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/3da50c44.NodeDegreeFilterNodeFactory.html" label="Node Degree Filter"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/37f5391a.NodeNameFilterNodeFactory.html" label="Node Name Filter"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/33c5e779.ObjectIdFilterNodeFactory.html" label="Object ID Filter"/>
+<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/27a3292e.PartitionFilterNodeFactory.html" label="Partition Filter"/>
+</toc>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.knime.features.explorer.view.source"
+      label="Source for KNIME Explorer view (do not install!)"
+      version="3.2.0.v201607051456"
+      provider-name="KNIME GmbH, Konstanz, Germany">
+
+   <description>
+      Generated source feature. The original description is:
+
+Feature containing the Explorer view plug-in. This is only used for internal purposes and must not be installed into KNIME.
+   </description>
+
+   <copyright>
+      Copyright by KNIME GmbH, Konstanz, Germany
+   </copyright>
+
+   <plugin
+         id="org.knime.workbench.explorer.view.source"
+         download-size="0"
+         install-size="0"
+         version="7.3.0.v201607051456"
+         unpack="false"/>
+
+</feature>

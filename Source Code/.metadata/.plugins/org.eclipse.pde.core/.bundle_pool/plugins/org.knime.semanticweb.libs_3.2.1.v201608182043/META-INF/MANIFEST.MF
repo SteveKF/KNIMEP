@@ -1,0 +1,50 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.6
+Bundle-SymbolicName: org.knime.semanticweb.libs;singleton:=true
+Export-Package: org.apache.jena.atlas.web,org.apache.jena.atlas.web.au
+ th,org.apache.jena.datatypes,org.apache.jena.datatypes.xsd,org.apache
+ .jena.graph,org.apache.jena.graph.impl,org.apache.jena.query,org.apac
+ he.jena.rdf.model,org.apache.jena.riot,org.apache.jena.shared,org.apa
+ che.jena.sparql.core,org.apache.jena.sparql.engine.http,org.apache.je
+ na.sparql.function.user,org.apache.jena.sparql.graph,org.apache.jena.
+ sparql.modify,org.apache.jena.sparql.util,org.apache.jena.update
+Bundle-Name: Jena Libraries
+Bundle-Version: 3.2.1.v201608182043
+Bundle-ClassPath: jena-arq-3.1.0.jar,jena-base-3.1.0.jar,jena-cmds-3.1
+ .0.jar,jena-core-3.1.0.jar,jena-iri-3.1.0.jar,jena-shaded-guava-3.1.0
+ .jar,jena-tdb-3.1.0.jar
+Require-Bundle: org.slf4j.api;bundle-version="[1.7.2,2.0.0)",org.apach
+ e.xerces;bundle-version="[2.9.0,3.0.0)",org.apache.httpcomponents.htt
+ pclient;bundle-version="[4.3.6,5.0.0)",org.apache.httpcomponents.http
+ core;bundle-version="[4.3.3,5.0.0)",org.apache.commons.codec;bundle-v
+ ersion="[1.6.0,2.0.0)",org.apache.commons.logging;bundle-version="[1.
+ 1.1,2.0.0)",com.fasterxml.jackson.core.jackson-annotations;bundle-ver
+ sion="[2.7.1,3.0.0)",com.fasterxml.jackson.core.jackson-core;bundle-v
+ ersion="[2.7.1,3.0.0)",org.apache.commons.lang3;bundle-version="[3.2.
+ 1,4.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: jena-arq-3.1.0.jar
+SHA-256-Digest: ows5SWpc6dCeCIv1O4dXVAnJmN3Gxvd9ACTPZqkmX3A=
+
+Name: jena-core-3.1.0.jar
+SHA-256-Digest: v1uTTLhUQtnci6VfVGFxG/GdzrHl6Zqdx6aKkq5D1zw=
+
+Name: jena-iri-3.1.0.jar
+SHA-256-Digest: QGUcq82PIhcr9bvMUb1PusfVBsnvwEqciwKyDe6uAGw=
+
+Name: jena-base-3.1.0.jar
+SHA-256-Digest: GiK2ClSzn3To06ursCZ7xRwEgw+Rdq3q8blDAUaBKRY=
+
+Name: jena-cmds-3.1.0.jar
+SHA-256-Digest: HJE5+Je0KETlAIefHnGKaL79EWao/yR2oQXl9ngi1Kk=
+
+Name: jena-shaded-guava-3.1.0.jar
+SHA-256-Digest: VBe2Gy/ITup2++abyxVPIU2mDfJs/JDhyBFO+Q1D/gw=
+
+Name: jena-tdb-3.1.0.jar
+SHA-256-Digest: uIvLWTcUXDCZCcHz+FJJSXD9L7/brjeg0AeE64lCTTI=
+

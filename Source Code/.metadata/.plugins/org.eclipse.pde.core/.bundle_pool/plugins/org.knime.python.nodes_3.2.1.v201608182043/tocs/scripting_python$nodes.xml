@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Python" link_to="../org.knime.python.nodes/tocs/scripting_python.xml#scripting_python">
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/5a3bea99.PythonVariablesNodeFactory.html" label="Python Edit Variable"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/24ccd32d.PythonSourceNodeFactory.html" label="Python Source"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/151f312d.PythonScriptNodeFactory.html" label="Python Script (1⇒1)"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/dab6d79.PythonScript1In2OutNodeFactory.html" label="Python Script (1⇒2)"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/72dbc235.PythonScript2In1OutNodeFactory.html" label="Python Script (2⇒1)"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/338fec37.PythonScript2In2OutNodeFactory.html" label="Python Script (2⇒2)"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/577581d3.PythonViewNodeFactory.html" label="Python View"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/7fb5d7d3.PythonObjectReaderNodeFactory.html" label="Python Object Reader"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/4720ea2d.PythonObjectWriterNodeFactory.html" label="Python Object Writer"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/5b3e3e1b.PythonLearnerNodeFactory.html" label="Python Learner"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/5800a44f.PythonPredictorNodeFactory.html" label="Python Predictor"/>
+<topic href="PLUGINS_ROOT/org.knime.python.nodes/html/nodes/28be86b8.PythonScriptDBNodeFactory.html" label="Python Script (DB)"/>
+</toc>

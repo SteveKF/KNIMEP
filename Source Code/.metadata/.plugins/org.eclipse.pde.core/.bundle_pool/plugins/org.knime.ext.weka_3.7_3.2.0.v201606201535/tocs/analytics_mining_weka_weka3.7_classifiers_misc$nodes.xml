@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="misc" link_to="../org.knime.ext.weka_3.7/tocs/analytics_mining_weka_weka3.7_classifiers_misc.xml#analytics_mining_weka_weka3.7_classifiers_misc">
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/21c09317.7).html" label="CHIRP (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/4f2cd473.7).html" label="FLR (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/48d2c5a4.7).html" label="HyperPipes (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/1788495b.7).html" label="InputMappedClassifier (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/6a1c2991.7).html" label="OSDL (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/24af62d8.7).html" label="SerializedClassifier (3.7)"/>
+<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/4814a200.7).html" label="VFI (3.7)"/>
+</toc>

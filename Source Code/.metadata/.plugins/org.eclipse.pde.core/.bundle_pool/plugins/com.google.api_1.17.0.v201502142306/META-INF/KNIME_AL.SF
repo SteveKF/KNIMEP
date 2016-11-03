@@ -1,0 +1,60 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: rnjp/8q0BBdtwBncyJYItfnv+Tfz2
+ YtikSmg0R2a6fk=
+SHA-256-Digest-Manifest: CLer2Uqyy49CaNFJju3AvW1D78jMr1O8SZUu3eK7plk=
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: google-oauth-client-java6-1.17.0-rc.jar
+SHA-256-Digest: GHKJWjbs2cieXRHkdIUDOy3wgW3f50S+8k0J3MSENWA=
+
+Name: google-http-client-1.17.0-rc.jar
+SHA-256-Digest: 7ufwl9UM2gqknV6rhb5nuwhLElMSgkT0yY1ZaY80rAo=
+
+Name: gson-2.1.jar
+SHA-256-Digest: FwduYUmU1szqKqLkilC4/JrZn2+aS/3wWZwmmL9jmyw=
+
+Name: google-http-client-gson-1.17.0-rc.jar
+SHA-256-Digest: bqfB+ZO5ggs+WzEzhdUWc2DizhQdCFSfwpyxJzEXrvM=
+
+Name: google-http-client-jdo-1.17.0-rc.jar
+SHA-256-Digest: 44JW+8LU2+ISIER9NcOtfHSNKHVbBtCUy8WAisOmKfQ=
+
+Name: google-oauth-client-1.17.0-rc.jar
+SHA-256-Digest: XtluZqNoPGJ4BObl3qC4YabbC4KNd0P2yQEOEyelSds=
+
+Name: google-api-client-1.17.0-rc.jar
+SHA-256-Digest: LiPRj2LtSgqELFzmKcP+/GdVBLYdViQtq5CNRhz6iaE=
+
+Name: google-oauth-client-jetty-1.17.0-rc.jar
+SHA-256-Digest: dV0NC8K7s8++gCTwgMFCp5BteIvyC2vVfZyilre1MeQ=
+
+Name: httpcore-4.0.1.jar
+SHA-256-Digest: Gfxrn3EW2MF3RGa01/X+ocGdCuujqdgLJ4o3GlMIrTE=
+
+Name: jetty-6.1.26.jar
+SHA-256-Digest: om+BJQNNg3XJGcuy4cgNYDTC5ohtc77L9/Dah6DuIEE=
+
+Name: google-api-client-java6-1.17.0-rc.jar
+SHA-256-Digest: FV7FY4KIpKQT0he7+AqxhbNz0aWOw8XfjKn1AVu92NE=
+
+Name: commons-logging-1.1.1.jar
+SHA-256-Digest: w1WPQUeIRIBXXKY2V4wDcpfTXuqsF71aDGmMtNZpPlY=
+
+Name: jdo2-api-2.3-eb.jar
+SHA-256-Digest: F+1Rgl6eoGGKGy6Sh3N5xVr/emuGTB3o36bwEcCErM0=
+
+Name: jetty-util-6.1.26.jar
+SHA-256-Digest: DZd1i6qAaAczWJSwgHwMj8O2E3VeVuS3goGXcHBpW8c=
+
+Name: jsr305-1.3.9.jar
+SHA-256-Digest: /1PHEMHdIktNgBvHFgs/ZoG0AiTYMQp+JipfBHz4Pmo=
+
+Name: httpclient-4.0.1.jar
+SHA-256-Digest: nUxiNdD+t8M3BCQMH0yZAZhChG5f5LSQEXu9rDUNYb8=
+
+Name: google-http-client-jackson2-1.17.0-rc.jar
+SHA-256-Digest: 4U2QXuxNg0ITa5yows0GTyo1SqBkI41oacerP8Qk1DA=
+
+Name: jackson-core-2.1.3.jar
+SHA-256-Digest: M28H98Wq99nL+H/FW7cbCUnBniNY4boI48E+C1ZciBc=
+

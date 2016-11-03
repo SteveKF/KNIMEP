@@ -1,0 +1,89 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.9.4
+Bundle-SymbolicName: org.knime.build.tools;singleton:=true
+Export-Package: org.knime.build.tools
+Bundle-Name: KNIME Build Tools
+Bundle-Version: 3.1.2.v201603040957
+Bundle-ClassPath: knime-build-tools.jar,lib/batik-anim-1.7.jar,lib/bat
+ ik-awt-util-1.7.jar,lib/batik-bridge-1.7.jar,lib/batik-codec-1.7.jar,
+ lib/batik-css-1.7.jar,lib/batik-dom-1.7.jar,lib/batik-ext-1.7.jar,lib
+ /batik-gvt-1.7.jar,lib/batik-parser-1.7.jar,lib/batik-script-1.7.jar,
+ lib/batik-svg-dom-1.7.jar,lib/batik-transcoder-1.7.jar,lib/batik-util
+ -1.7.jar,lib/batik-xml-1.7.jar,lib/xml-apis-ext.jar,lib/jlibs-core.ja
+ r,lib/antlr-runtime-3.4.jar,lib/sequence-library-1.0.3.jar,lib/sqljet
+ -1.1.10.jar,lib/svnkit-1.8.11.jar
+Require-Bundle: org.eclipse.pde;bundle-version="[3.6.0,4.0.0)",org.ecl
+ ipse.pde.core;bundle-version="[3.6.0,4.0.0)",org.eclipse.core.resourc
+ es;bundle-version="[3.6.0,4.0.0)",org.eclipse.core.runtime;bundle-ver
+ sion="[3.6.0,4.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: lib/xml-apis-ext.jar
+SHA-256-Digest: 0LSIfcNNV95JB0pYr/rUOaAT0Lr/oagDT47ypeoZFkY=
+
+Name: plugin.xml
+SHA-256-Digest: EK4yKCj7aR7VAMozD80Mr6VzkrGFtzbnfzhN6PjeygQ=
+
+Name: lib/batik-util-1.7.jar
+SHA-256-Digest: /yBX5T9t5oTl/0b+3ES37Ca7tpvtVz9KhjiTTCnopQA=
+
+Name: knime-build-tools.jar
+SHA-256-Digest: DML4yFrfpF5fO7vCxoRts+jNDsJHbaVspybvZp13Ogk=
+
+Name: lib/batik-xml-1.7.jar
+SHA-256-Digest: Q7HJAllTrxuHRe2SSLqjEgu+fdWednLZK2EbEwhQp80=
+
+Name: lib/batik-gvt-1.7.jar
+SHA-256-Digest: EaLL06BDy2+GhSUpnQQY02FW88gGm7qPSs3N0vHjtAo=
+
+Name: lib/batik-awt-util-1.7.jar
+SHA-256-Digest: 23GYFAF19p06HCRYIZxqylk9DxRENE9rc7thglkpQ4I=
+
+Name: lib/antlr-runtime-3.4.jar
+SHA-256-Digest: W3z1O3swsDQCP1gDDIFHxDPyvuD+feyPrmvr83CMWmM=
+
+Name: lib/batik-parser-1.7.jar
+SHA-256-Digest: FBgMkh2D9eNipqMAHOu/GpOD1Ppa1SaK/zafwDx9VnI=
+
+Name: lib/batik-transcoder-1.7.jar
+SHA-256-Digest: 1aGKkwG8NT83lRypy0TTaKcmNV1g9FfSAthMsyPdYp8=
+
+Name: lib/batik-anim-1.7.jar
+SHA-256-Digest: GO7QHJZqFYrPEwPImR6pgnVzUW9dVJ09MCdPTtjfTeY=
+
+Name: lib/sequence-library-1.0.3.jar
+SHA-256-Digest: y4dtOzcLIn7ZhSpah0Qn3OJKDfPi90CaEe37zFxCQ6g=
+
+Name: lib/sqljet-1.1.10.jar
+SHA-256-Digest: 33RjQk41YPXoyAA+GBbApupuhGc5Icpa8FuQsIkrPJc=
+
+Name: lib/batik-script-1.7.jar
+SHA-256-Digest: 48XaZMa5wtoRrRFf/YBp1PmW9Dk55yZ9OiPfb8cl2Mc=
+
+Name: lib/jlibs-core.jar
+SHA-256-Digest: aQ5I8s+mGz06d4f6FyEVtL9Wj1GfkwkHVMKqmSL/hro=
+
+Name: lib/batik-codec-1.7.jar
+SHA-256-Digest: oeVQdJxQcSfQh91ikWRiLRJcXXDXmw2jhkScbgqE3pY=
+
+Name: lib/batik-dom-1.7.jar
+SHA-256-Digest: qCjBn0iTSEP6GD25fL87CRBrdLGGoqIARkFRlSOmZSg=
+
+Name: lib/batik-bridge-1.7.jar
+SHA-256-Digest: UPQXia6hPCoBvKfbdEh4B25+xr3VdM+6hHYmYQrXT6M=
+
+Name: lib/svnkit-1.8.11.jar
+SHA-256-Digest: Nj9Q3RCFti3FCXYEQTY5h77/y7kqurk8xWOW+ZBrva0=
+
+Name: lib/batik-css-1.7.jar
+SHA-256-Digest: nWKeNnXxCPmNcBZ8bOZtZ0rLyPGk0MnhJRxhoWSTkOg=
+
+Name: lib/batik-svg-dom-1.7.jar
+SHA-256-Digest: MkYxAuGlYS6Qi5OLHlbrmNGe2Nop3QvhzPMHqTawRUw=
+
+Name: lib/batik-ext-1.7.jar
+SHA-256-Digest: m+BBic0Nsk1hvEATXGtxPAAHOq59XLWpsI1SMthS6CE=
+

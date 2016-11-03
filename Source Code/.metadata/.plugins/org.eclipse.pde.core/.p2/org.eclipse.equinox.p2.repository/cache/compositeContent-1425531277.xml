@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeMetadataRepository version='1.0.0'?>
+<repository name='KNIME.org Update Site' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1'>
+  <properties size='1'>
+    <property name='p2.timestamp' value='1438331444990'/>
+  </properties>
+  <children size='3'>
+    <child location='org.knime.update.org/'/>
+    <child location='org.knime.update.labs/'/>
+    <child location='org.knime.update.ext.free/'/>
+  </children>
+</repository>

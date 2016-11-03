@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.4"?><plugin>
+   <extension point="org.knime.workbench.repository.nodes">
+      <node category-path="/labs/osm" factory-class="org.knime.ext.osm.node.mapview.OsmMapViewNodeFactory">
+      </node>
+      <node category-path="/labs/osm" factory-class="org.knime.ext.osm.node.map2img.OsmMap2ImgNodeFactory">
+      </node>
+      <node category-path="/labs/osm" factory-class="org.knime.ext.osm.node.rowfilter.GeoRowFilterNodeFactory">
+      </node>
+   </extension>
+   <extension point="org.knime.workbench.repository.categories">
+      <category description="Nodes to work with Open Street Map" icon="icons/osm_logo.png" level-id="osm" name="Open Street Map" path="/labs">
+      </category>
+   </extension>
+   <extension point="org.knime.product.splashExtension">
+      <splashExtension icon="icons/osm_logo.png" icon24="icons/osm_logo.png" icon32="icons/osm_logo.png" id="osm" tooltip="Open Street Map">
+      </splashExtension>
+   </extension>
+   <extension point="org.eclipse.ui.preferencePages">
+      <page category="org.knime.workbench.ui.preferences" class="org.knime.ext.osm.prefs.OsmPreferencePage" id="org.knime.ext.osm.prefs.OsmPreferencePage" name="Open Street Map">
+      </page>
+   </extension>
+
+<extension point="org.eclipse.help.toc">
+<toc extradir="html" file="tocs/labs_osm.xml"/>
+<toc extradir="html" file="tocs/labs_osm$nodes.xml"/>
+</extension>
+</plugin>

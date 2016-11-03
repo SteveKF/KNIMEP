@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Meta Nodes" link_to="../org.knime.r/tocs/scripting_r_r-metanodes.xml#scripting_r_r-metanodes">
+<topic href="PLUGINS_ROOT/org.knime.r/html/nodes/Meta_Grouped_ScatterPlot.html" label="Grouped ScatterPlot"/>
+<topic href="PLUGINS_ROOT/org.knime.r/html/nodes/Meta_Stacked_BarChart.html" label="Stacked BarChart"/>
+</toc>

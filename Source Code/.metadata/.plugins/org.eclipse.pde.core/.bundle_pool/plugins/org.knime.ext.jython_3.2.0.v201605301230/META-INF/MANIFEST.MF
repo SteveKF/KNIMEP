@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.knime.ext.jython;singleton:=true
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.11.0,4.0.0
+ )",org.knime.workbench.core;bundle-version="[3.0.0,4.0.0)",org.knime.
+ workbench.repository;bundle-version="[3.0.0,4.0.0)",org.knime.base;bu
+ ndle-version="[3.0.0,4.0.0)",org.python.plugin;bundle-version="[2.2.0
+ ,2.3.0)",org.eclipse.help;resolution:=optional,org.eclipse.help.ui;re
+ solution:=optional
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+DynamicImport-Package: *
+Ant-Version: Apache Ant 1.9.6
+Export-Package: org.knime.ext.jython
+Bundle-Name: KNIME JPython Scripting nodes
+Bundle-Version: 3.2.0.v201605301230
+Bundle-ClassPath: knime-jython.jar,lib/jython.jar
+Bundle-Activator: org.knime.ext.jython.ScriptNodePlugin
+Created-By: 1.8.0_60-b27 (Oracle Corporation)
+
+Name: html/nodes/2c4992d1.PythonFunctionNodeFactory.html
+SHA-256-Digest: w9CFBBvQa1XvRpWC9V7p5WrkZXoF1oKd69galsDVLLE=
+
+Name: html/nodes/4cc7d104.PythonScript11NodeFactory.html
+SHA-256-Digest: PNVFr8XOdY6XlkWsWMznFDF8X5TMd8v5HMLhb6U2B64=
+
+Name: plugin.xml
+SHA-256-Digest: 6VoKKuM//T+x0glpWk8NJVbhJrQbQ3zEfPh3H9UJWRY=
+
+Name: icons/category_basic.gif
+SHA-256-Digest: 6zny5Xyr/XQKuNDF+0sm/FynGzNOLPyNZIHDSEK0w2A=
+
+Name: lib/jython.jar
+SHA-256-Digest: AgzZGnHJvbBPtRtEA0YEviz4mfbKyJiYXb32FRRTXBk=
+
+Name: knime-jython.jar
+SHA-256-Digest: bjK7Gd1SlLr0OIGuVCTwAa7aHHFaRDgziEzDGfsiPec=
+
+Name: tocs/labs_jython.xml
+SHA-256-Digest: zC/gah2WoDdmtJbNgIBLOcueG2V1ux/bOd6IYydHqF0=
+
+Name: icons/default.png
+SHA-256-Digest: TP5EEOQcIFtu+X95Qgd1k72t/jaW7M/s9PFLsXcnigM=
+
+Name: schema/classpath.exsd
+SHA-256-Digest: 4xOzm72sjO7qS5IfKb+bxCkfsfLdVUuwY7TVQFXxqgo=
+
+Name: html/nodes/5e44ca83.PythonScript21NodeFactory.html
+SHA-256-Digest: G7dvnVCri4+Tx9eQpSowKDm3uRQm5ODX/1I8ju0Rcx0=
+
+Name: tocs/labs_jython$nodes.xml
+SHA-256-Digest: FWUk7PIfDZKiKVzfDR9C3sLRBroXttydmzrHHGJ0AE8=
+

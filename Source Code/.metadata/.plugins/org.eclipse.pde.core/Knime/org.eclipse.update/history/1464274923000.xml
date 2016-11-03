@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1464274923836" transient="false" version="3.0">
+<site enabled="true" policy="USER-EXCLUDE" updateable="true" url="platform:/base/">
+<feature id="org.eclipse.ecf.filetransfer.httpclient4.feature" url="features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.10.0.v20150512-1727/" version="3.10.0.v20150512-1727">
+</feature>
+<feature id="org.knime.features.ext.webservice.client.ppilot.source" url="features/org.knime.features.ext.webservice.client.ppilot.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.help" plugin-identifier="org.eclipse.help.base" url="features/org.eclipse.help_2.1.0.v20150603-2000/" version="2.1.0.v20150603-2000">
+</feature>
+<feature id="org.eclipse.platform.jcraft_patch" url="features/org.eclipse.platform.jcraft_patch_3.1.2.v201602291637/" version="3.1.2.v201602291637">
+</feature>
+<feature id="org.knime.features.stats2.source" url="features/org.knime.features.stats2.source_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.eclipse.help.source" url="features/org.eclipse.help.source_2.1.0.v20150603-2000/" version="2.1.0.v20150603-2000">
+</feature>
+<feature id="org.eclipse.emf.databinding.source" url="features/org.eclipse.emf.databinding.source_1.4.0.v20150601-0402/" version="1.4.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.ext.perl" plugin-identifier="org.knime.ext.perl" url="features/org.knime.features.ext.perl_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.eclipse.wst.xml_core.feature.source" url="features/org.eclipse.wst.xml_core.feature.source_3.7.0.v201502261749/" version="3.7.0.v201502261749">
+</feature>
+<feature id="org.eclipse.wst.common_core.feature" url="features/org.eclipse.wst.common_core.feature_3.7.0.v201505132009/" version="3.7.0.v201505132009">
+</feature>
+<feature id="org.eclipse.ecf.core.ssl.feature" url="features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20150512-1727/" version="1.0.0.v20150512-1727">
+</feature>
+<feature id="org.eclipse.gef" url="features/org.eclipse.gef_3.10.0.201506010206/" version="3.10.0.201506010206">
+</feature>
+<feature id="org.knime.features.ext.jep" plugin-identifier="org.knime.ext.jep" url="features/org.knime.features.ext.jep_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.knime.features.ext.socialmedia" url="features/org.knime.features.ext.socialmedia_3.1.0.v201512011304/" version="3.1.0.v201512011304">
+</feature>
+<feature id="org.eclipse.emf.transaction.source" url="features/org.eclipse.emf.transaction.source_1.9.0.201506010221/" version="1.9.0.201506010221">
+</feature>
+<feature id="com.knime.features.reporting.designer" plugin-identifier="com.knime.reporting.designer" url="features/com.knime.features.reporting.designer_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.ecf.core.ssl.source.feature" url="features/org.eclipse.ecf.core.ssl.source.feature_1.0.0.v20150512-1727/" version="1.0.0.v20150512-1727">
+</feature>
+<feature id="org.knime.features.ext.dsread.source" url="features/org.knime.features.ext.dsread.source_3.1.0.v201510191254/" version="3.1.0.v201510191254">
+</feature>
+<feature id="org.eclipse.emf.codegen.ui" url="features/org.eclipse.emf.codegen.ui_2.8.0.v20150601-0402/" version="2.8.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.datatools.enablement.sqlite.feature" plugin-identifier="org.eclipse.datatools.enablement.finfo" url="features/org.eclipse.datatools.enablement.sqlite.feature_1.12.0.v201406061321-542AkF7AJ7SAKAPBF/" version="1.12.0.v201406061321-542AkF7AJ7SAKAPBF">
+</feature>
+<feature id="org.knime.features.base.pmml.translation" url="features/org.knime.features.base.pmml.translation_3.1.0.v201512011243/" version="3.1.0.v201512011243">
+</feature>
+<feature id="org.knime.features.optimization" url="features/org.knime.features.optimization_3.1.0.v201512012046/" version="3.1.0.v201512012046">
+</feature>
+<feature id="org.knime.features.exttool" plugin-identifier="org.knime.exttool" url="features/org.knime.features.exttool_3.1.0.v201511191614/" version="3.1.0.v201511191614">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.ddl.feature" url="features/org.eclipse.datatools.sqldevtools.ddl.feature_1.12.0.v201406061321-27B-78B08EG8S_IRVNeUiL6au/" version="1.12.0.v201406061321-27B-78B08EG8S_IRVNeUiL6au">
+</feature>
+<feature id="org.knime.features.json" url="features/org.knime.features.json_3.1.2.v201603311235/" version="3.1.2.v201603311235">
+</feature>
+<feature id="org.eclipse.emf.converter" url="features/org.eclipse.emf.converter_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.ext.weka.source" url="features/org.knime.features.ext.weka.source_3.1.2.v201603040957/" version="3.1.2.v201603040957">
+</feature>
+<feature id="org.eclipse.ecf.filetransfer.feature" url="features/org.eclipse.ecf.filetransfer.feature_3.10.0.v20150512-1727/" version="3.10.0.v20150512-1727">
+</feature>
+<feature id="org.eclipse.gef.source" url="features/org.eclipse.gef.source_3.10.0.201506010206/" version="3.10.0.201506010206">
+</feature>
+<feature id="org.eclipse.datatools.enablement.postgresql.feature" plugin-identifier="org.eclipse.datatools.enablement.finfo" url="features/org.eclipse.datatools.enablement.postgresql.feature_1.12.0.v201406061321-553AkF7AK8PCRBQBP/" version="1.12.0.v201406061321-553AkF7AK8PCRBQBP">
+</feature>
+<feature id="org.eclipse.datatools.enablement.oda.designer.feature" plugin-identifier="org.eclipse.datatools.enablement.oda.xml.ui" url="features/org.eclipse.datatools.enablement.oda.designer.feature_1.12.0.v201406061321-647L9oB58H5E8E8TBK/" version="1.12.0.v201406061321-647L9oB58H5E8E8TBK">
+</feature>
+<feature id="org.knime.features.json.source" url="features/org.knime.features.json.source_3.1.2.v201603311235/" version="3.1.2.v201603311235">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.parsers.feature.source" url="features/org.eclipse.datatools.sqldevtools.parsers.feature.source_1.12.0.v201406061321-623BgJ9EE9ZJRDZLA/" version="1.12.0.v201406061321-623BgJ9EE9ZJRDZLA">
+</feature>
+<feature id="org.knime.features.base" plugin-identifier="org.knime.product" url="features/org.knime.features.base_3.1.3.v201604221432/" version="3.1.3.v201604221432">
+</feature>
+<feature id="org.knime.features.ext.birt" plugin-identifier="org.knime.ext.birt" url="features/org.knime.features.ext.birt_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.eclipse.wst.xml_ui.feature.source" plugin-identifier="org.eclipse.wst.xml.ui" url="features/org.eclipse.wst.xml_ui.feature.source_3.7.0.v201505141512/" version="3.7.0.v201505141512">
+</feature>
+<feature id="org.eclipse.wst.common_ui.feature.source" url="features/org.eclipse.wst.common_ui.feature.source_3.7.0.v201505132009/" version="3.7.0.v201505132009">
+</feature>
+<feature id="org.eclipse.emf.ecore.source" url="features/org.eclipse.emf.ecore.source_2.11.0.v20150512-0501/" version="2.11.0.v20150512-0501">
+</feature>
+<feature id="org.eclipse.ecf.filetransfer.source.feature" url="features/org.eclipse.ecf.filetransfer.source.feature_3.10.0.v20150512-1727/" version="3.10.0.v20150512-1727">
+</feature>
+<feature id="org.knime.features.ext.jfreechart.source" url="features/org.knime.features.ext.jfreechart.source_3.1.0.v201512012046/" version="3.1.0.v201512012046">
+</feature>
+<feature id="org.knime.features.ext.webservice.client.ppilot" plugin-identifier="org.knime.ext.webservice.client.ppilot" url="features/org.knime.features.ext.webservice.client.ppilot_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.datatools.connectivity.oda.designer.core.feature" plugin-identifier="org.eclipse.datatools.connectivity.oda.design.ui" url="features/org.eclipse.datatools.connectivity.oda.designer.core.feature_1.12.0.v201406061321-787B7PBgJ9DUBNCVAaSZ/" version="1.12.0.v201406061321-787B7PBgJ9DUBNCVAaSZ">
+</feature>
+<feature id="org.knime.features.ext.r.bin.source" url="features/org.knime.features.ext.r.bin.source_3.0.3.v201601231535/" version="3.0.3.v201601231535">
+</feature>
+<feature id="org.eclipse.equinox.p2.core.feature.source" url="features/org.eclipse.equinox.p2.core.feature.source_1.3.100.v20150527-1706/" version="1.3.100.v20150527-1706">
+</feature>
+<feature id="org.knime.features.r" plugin-identifier="org.knime.r" url="features/org.knime.features.r_3.1.3.v201604221432/" version="3.1.3.v201604221432">
+</feature>
+<feature id="org.knime.features.ext.poi" plugin-identifier="org.knime.ext.poi" url="features/org.knime.features.ext.poi_3.1.1.v201601291109/" version="3.1.1.v201601291109">
+</feature>
+<feature id="org.knime.features.core.streaming.source" url="features/org.knime.features.core.streaming.source_3.1.0.v201511280708/" version="3.1.0.v201511280708">
+</feature>
+<feature id="org.knime.features.ext.jython" plugin-identifier="org.knime.ext.jython" url="features/org.knime.features.ext.jython_3.1.0.v201511171329/" version="3.1.0.v201511171329">
+</feature>
+<feature id="org.knime.features.base.source" url="features/org.knime.features.base.source_3.1.3.v201604221432/" version="3.1.3.v201604221432">
+</feature>
+<feature id="org.eclipse.platform.source" url="features/org.eclipse.platform.source_4.5.0.v20150603-2358/" version="4.5.0.v20150603-2358">
+</feature>
+<feature id="org.eclipse.datatools.connectivity.feature.source" url="features/org.eclipse.datatools.connectivity.feature.source_1.12.0.v201406061321-7C7n9DEsxcwtN5odeWrQrgwYHq8/" version="1.12.0.v201406061321-7C7n9DEsxcwtN5odeWrQrgwYHq8">
+</feature>
+<feature id="org.knime.features.datageneration" plugin-identifier="org.knime.datageneration" url="features/org.knime.features.datageneration_3.1.0.v201512012046/" version="3.1.0.v201512012046">
+</feature>
+<feature id="org.knime.features.ext.exttool" url="features/org.knime.features.ext.exttool_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.pde.source" url="features/org.eclipse.pde.source_3.11.0.v20150603-2000/" version="3.11.0.v20150603-2000">
+</feature>
+<feature id="org.knime.features.network.distmatrix.source" url="features/org.knime.features.network.distmatrix.source_3.1.0.v201510191254/" version="3.1.0.v201510191254">
+</feature>
+<feature id="org.eclipse.datatools.enablement.jdbc.feature" plugin-identifier="org.eclipse.datatools.enablement.sybase" url="features/org.eclipse.datatools.enablement.jdbc.feature_1.12.0.v201406061321-4-49oB58B7DAF7FCH/" version="1.12.0.v201406061321-4-49oB58B7DAF7FCH">
+</feature>
+<feature id="org.knime.features.explorer.view.source" url="features/org.knime.features.explorer.view.source_3.1.1.v201601291159/" version="3.1.1.v201601291159">
+</feature>
+<feature id="org.eclipse.emf.mapping" url="features/org.eclipse.emf.mapping_2.9.0.v20150601-0402/" version="2.9.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.birt.report.designer.editor.xml.wtp" plugin-identifier="org.eclipse.birt.report.designer.ui.editor.xml.wtp" url="features/org.eclipse.birt.report.designer.editor.xml.wtp_4.5.0.v201506092134/" version="4.5.0.v201506092134">
+</feature>
+<feature id="org.eclipse.datatools.enablement.apache.derby.feature.source" url="features/org.eclipse.datatools.enablement.apache.derby.feature.source_1.12.0.v201406061321-777B8gBmKFQ3NjRaMjbx8GDI/" version="1.12.0.v201406061321-777B8gBmKFQ3NjRaMjbx8GDI">
+</feature>
+<feature id="org.eclipse.equinox.p2.user.ui" url="features/org.eclipse.equinox.p2.user.ui_2.2.100.v20150601-1708/" version="2.2.100.v20150601-1708">
+</feature>
+<feature id="org.eclipse.emf.ecore" url="features/org.eclipse.emf.ecore_2.11.0.v20150512-0501/" version="2.11.0.v20150512-0501">
+</feature>
+<feature id="org.knime.features.network.source" url="features/org.knime.features.network.source_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.eclipse.datatools.enablement.msft.feature.source" url="features/org.eclipse.datatools.enablement.msft.feature.source_1.12.0.v201406061321-5478AkF7AO7UBQAK8M/" version="1.12.0.v201406061321-5478AkF7AO7UBQAK8M">
+</feature>
+<feature id="org.knime.features.base.pmml.source" url="features/org.knime.features.base.pmml.source_3.1.2.v201603171953/" version="3.1.2.v201603171953">
+</feature>
+<feature id="org.knime.features.ext.svg" url="features/org.knime.features.ext.svg_3.1.0.v201511232105/" version="3.1.0.v201511232105">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.results.feature" url="features/org.eclipse.datatools.sqldevtools.results.feature_1.12.0.v201406061321-427H9oB58F6A8I5KGJ/" version="1.12.0.v201406061321-427H9oB58F6A8I5KGJ">
+</feature>
+<feature id="org.eclipse.datatools.enablement.oracle.feature.source" url="features/org.eclipse.datatools.enablement.oracle.feature.source_1.12.0.v201406061321-548fAkF7AL7RBJANAI/" version="1.12.0.v201406061321-548fAkF7AL7RBJANAI">
+</feature>
+<feature id="org.eclipse.emf.mapping.ecore.editor" url="features/org.eclipse.emf.mapping.ecore.editor_2.10.0.v20150601-0402/" version="2.10.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.ext.textprocessing" plugin-identifier="org.knime.ext.textprocessing" url="features/org.knime.features.ext.textprocessing_3.1.2.v201603311235/" version="3.1.2.v201603311235">
+</feature>
+<feature id="org.knime.features.wizard" plugin-identifier="org.knime.workbench.extension" url="features/org.knime.features.wizard_3.1.0.v201512021720/" version="3.1.0.v201512021720">
+</feature>
+<feature id="org.eclipse.datatools.enablement.feature" plugin-identifier="org.eclipse.datatools.enablement.finfo" url="features/org.eclipse.datatools.enablement.feature_1.12.0.v201406061321-7J9t0B_0haN-EchrvGIyEh2M8j8a/" version="1.12.0.v201406061321-7J9t0B_0haN-EchrvGIyEh2M8j8a">
+</feature>
+<feature id="org.eclipse.ecf.filetransfer.httpclient4.source.feature" url="features/org.eclipse.ecf.filetransfer.httpclient4.source.feature_3.10.0.v20150512-1727/" version="3.10.0.v20150512-1727">
+</feature>
+<feature id="org.knime.features.ext.lucene.source" url="features/org.knime.features.ext.lucene.source_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.eclipse.datatools.enablement.jdt.feature" plugin-identifier="org.eclipse.datatools.enablement.jdt.classpath" url="features/org.eclipse.datatools.enablement.jdt.feature_1.12.0.v201406061321-2-07w312218332612/" version="1.12.0.v201406061321-2-07w312218332612">
+</feature>
+<feature id="org.eclipse.datatools.connectivity.oda.designer.feature.source" url="features/org.eclipse.datatools.connectivity.oda.designer.feature.source_1.12.0.v201406061321-4147w312514242925/" version="1.12.0.v201406061321-4147w312514242925">
+</feature>
+<feature id="org.knime.features.ext.chem.tools.source" url="features/org.knime.features.ext.chem.tools.source_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.eclipse.datatools.enablement.mysql.feature" plugin-identifier="org.eclipse.datatools.enablement.finfo" url="features/org.eclipse.datatools.enablement.mysql.feature_1.12.0.v201406061321-5478AkF7AK8X9JCREG/" version="1.12.0.v201406061321-5478AkF7AK8X9JCREG">
+</feature>
+<feature id="org.eclipse.e4.rcp.source" url="features/org.eclipse.e4.rcp.source_1.4.0.v20150603-0857/" version="1.4.0.v20150603-0857">
+</feature>
+<feature id="org.eclipse.emf.common.ui.source" url="features/org.eclipse.emf.common.ui.source_2.10.0.v20150601-0402/" version="2.10.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.datatools.enablement.msft.feature" plugin-identifier="org.eclipse.datatools.enablement.finfo" url="features/org.eclipse.datatools.enablement.msft.feature_1.12.0.v201406061321-5478AkF7AO7UBQAK8M/" version="1.12.0.v201406061321-5478AkF7AO7UBQAK8M">
+</feature>
+<feature id="org.eclipse.birt.osgi.runtime" url="features/org.eclipse.birt.osgi.runtime_4.5.0.v201506092134/" version="4.5.0.v201506092134">
+</feature>
+<feature id="org.eclipse.datatools.enablement.sybase.feature.source" url="features/org.eclipse.datatools.enablement.sybase.feature.source_1.12.0.v201406061321-7E478F9NiNc2S7fxRCTD/" version="1.12.0.v201406061321-7E478F9NiNc2S7fxRCTD">
+</feature>
+<feature id="org.eclipse.xsd.edit.source" url="features/org.eclipse.xsd.edit.source_2.9.0.v20150601-0402/" version="2.9.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.birt.source" plugin-identifier="org.eclipse.birt" url="features/org.eclipse.birt.source_4.5.0.v201506092134/" version="4.5.0.v201506092134">
+</feature>
+<feature id="org.knime.features.base.filehandling" plugin-identifier="org.knime.base.filehandling" url="features/org.knime.features.base.filehandling_3.1.2.v201603111422/" version="3.1.2.v201603111422">
+</feature>
+<feature id="org.eclipse.datatools.connectivity.oda.designer.core.feature.source" url="features/org.eclipse.datatools.connectivity.oda.designer.core.feature.source_1.12.0.v201406061321-787B7PBgJ9DUBNCVAaSZ/" version="1.12.0.v201406061321-787B7PBgJ9DUBNCVAaSZ">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.ddlgen.feature.source" url="features/org.eclipse.datatools.sqldevtools.ddlgen.feature.source_1.12.0.v201406061321-7A-7DF7RZHQUMdThK5_t/" version="1.12.0.v201406061321-7A-7DF7RZHQUMdThK5_t">
+</feature>
+<feature id="org.eclipse.emf.workspace.source" url="features/org.eclipse.emf.workspace.source_1.9.0.201506010221/" version="1.9.0.201506010221">
+</feature>
+<feature id="org.eclipse.equinox.p2.core.feature" url="features/org.eclipse.equinox.p2.core.feature_1.3.100.v20150527-1706/" version="1.3.100.v20150527-1706">
+</feature>
+<feature id="org.knime.features.ext.osm" plugin-identifier="org.knime.ext.osm" url="features/org.knime.features.ext.osm_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.datageneration.source" url="features/org.knime.features.datageneration.source_3.1.0.v201512012046/" version="3.1.0.v201512012046">
+</feature>
+<feature id="org.knime.features.quickform.legacy" url="features/org.knime.features.quickform.legacy_3.1.0.v201511171329/" version="3.1.0.v201511171329">
+</feature>
+<feature id="org.knime.features.ext.svg.source" url="features/org.knime.features.ext.svg.source_3.1.0.v201511232105/" version="3.1.0.v201511232105">
+</feature>
+<feature id="org.knime.features.python" url="features/org.knime.features.python_3.1.2.v201603040957/" version="3.1.2.v201603040957">
+</feature>
+<feature id="org.eclipse.ecf.filetransfer.ssl.feature" url="features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20150512-1727/" version="1.0.0.v20150512-1727">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature" url="features/org.eclipse.datatools.sqldevtools.sqlbuilder.feature_1.12.0.v201406061321-79-7FEVVFNSI_QiI-Sd/" version="1.12.0.v201406061321-79-7FEVVFNSI_QiI-Sd">
+</feature>
+<feature id="org.knime.features.mongodb" url="features/org.knime.features.mongodb_3.1.0.v201510191254/" version="3.1.0.v201510191254">
+</feature>
+<feature id="org.knime.features.distmatrix.source" url="features/org.knime.features.distmatrix.source_3.1.0.v201512012046/" version="3.1.0.v201512012046">
+</feature>
+<feature id="org.eclipse.emf.edit" url="features/org.eclipse.emf.edit_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.datatools.enablement.mysql.feature.source" url="features/org.eclipse.datatools.enablement.mysql.feature.source_1.12.0.v201406061321-5478AkF7AK8X9JCREG/" version="1.12.0.v201406061321-5478AkF7AK8X9JCREG">
+</feature>
+<feature id="org.knime.features.optimization.source" url="features/org.knime.features.optimization.source_3.1.0.v201512012046/" version="3.1.0.v201512012046">
+</feature>
+<feature id="org.eclipse.emf.ecore.editor.source" url="features/org.eclipse.emf.ecore.editor.source_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.testingapplication" plugin-identifier="org.knime.testing" url="features/org.knime.features.testingapplication_3.1.2.v201603311002/" version="3.1.2.v201603311002">
+</feature>
+<feature id="org.eclipse.emf.databinding.edit" url="features/org.eclipse.emf.databinding.edit_1.4.0.v20150601-0402/" version="1.4.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.birt.report.designer.editor.xml.wtp.source" plugin-identifier="org.eclipse.birt.report.designer.ui.editor.xml.wtp" url="features/org.eclipse.birt.report.designer.editor.xml.wtp.source_4.5.0.v201506092134/" version="4.5.0.v201506092134">
+</feature>
+<feature id="org.eclipse.jdt.source" url="features/org.eclipse.jdt.source_3.11.0.v20150603-2000/" version="3.11.0.v20150603-2000">
+</feature>
+<feature id="org.eclipse.datatools.enablement.ingres.feature.source" url="features/org.eclipse.datatools.enablement.ingres.feature.source_1.12.0.v201406061321-540AkF78Z7UCRAQDB/" version="1.12.0.v201406061321-540AkF78Z7UCRAQDB">
+</feature>
+<feature id="org.eclipse.emf.mapping.ecore.source" url="features/org.eclipse.emf.mapping.ecore.source_2.9.0.v20150601-0402/" version="2.9.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.emf.codegen.ecore" url="features/org.eclipse.emf.codegen.ecore_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.activelearning" url="features/org.knime.features.activelearning_3.1.0.v201512020936/" version="3.1.0.v201512020936">
+</feature>
+<feature id="jp.co.infocom.cheminfo.marvin.feature" plugin-identifier="jp.co.infocom.cheminfo.marvin" url="features/jp.co.infocom.cheminfo.marvin.feature_3.0.0.v0400/" version="3.0.0.v0400">
+</feature>
+<feature id="org.eclipse.datatools.connectivity.oda.feature" plugin-identifier="org.eclipse.datatools.connectivity.oda" url="features/org.eclipse.datatools.connectivity.oda.feature_1.12.0.v201406061321-7E7C7YBgJ9ET9OHLDfLZ/" version="1.12.0.v201406061321-7E7C7YBgJ9ET9OHLDfLZ">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.ddl.feature.source" url="features/org.eclipse.datatools.sqldevtools.ddl.feature.source_1.12.0.v201406061321-27B-78B08EG8S_IRVNeUiL6au/" version="1.12.0.v201406061321-27B-78B08EG8S_IRVNeUiL6au">
+</feature>
+<feature id="com.knime.features.reporting.runtime" plugin-identifier="com.knime.reporting.nodes" url="features/com.knime.features.reporting.runtime_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.ext.itemset" plugin-identifier="org.knime.ext.itemset" url="features/org.knime.features.ext.itemset_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.sqlbuilder.feature.source" url="features/org.eclipse.datatools.sqldevtools.sqlbuilder.feature.source_1.12.0.v201406061321-79-7FEVVFNSI_QiI-Sd/" version="1.12.0.v201406061321-79-7FEVVFNSI_QiI-Sd">
+</feature>
+<feature id="org.eclipse.datatools.connectivity.oda.feature.source" url="features/org.eclipse.datatools.connectivity.oda.feature.source_1.12.0.v201406061321-7E7C7YBgJ9ET9OHLDfLZ/" version="1.12.0.v201406061321-7E7C7YBgJ9ET9OHLDfLZ">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.data.feature.source" url="features/org.eclipse.datatools.sqldevtools.data.feature.source_1.12.0.v201406061321-647ABgJ9EKDJDNAdHO/" version="1.12.0.v201406061321-647ABgJ9EKDJDNAdHO">
+</feature>
+<feature id="org.eclipse.draw2d.source" url="features/org.eclipse.draw2d.source_3.10.0.201506010206/" version="3.10.0.201506010206">
+</feature>
+<feature id="org.knime.features.ext.libsvm" plugin-identifier="org.knime.ext.libsvm" url="features/org.knime.features.ext.libsvm_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.wst.common_ui.feature" url="features/org.eclipse.wst.common_ui.feature_3.7.0.v201505132009/" version="3.7.0.v201505132009">
+</feature>
+<feature id="org.knime.features.js.views.source" url="features/org.knime.features.js.views.source_3.1.2.v201603040957/" version="3.1.2.v201603040957">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.data.feature" url="features/org.eclipse.datatools.sqldevtools.data.feature_1.12.0.v201406061321-647ABgJ9EKDJDNAdHO/" version="1.12.0.v201406061321-647ABgJ9EKDJDNAdHO">
+</feature>
+<feature id="com.knime.features.enterprise.client" url="features/com.knime.features.enterprise.client_4.2.5.v201604221929/" version="4.2.5.v201604221929">
+</feature>
+<feature id="org.eclipse.emf.common.ui" url="features/org.eclipse.emf.common.ui_2.10.0.v20150601-0402/" version="2.10.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.ext.r.bin" plugin-identifier="org.knime.ext.r" url="features/org.knime.features.ext.r.bin_3.0.3.v201601231535/" version="3.0.3.v201601231535">
+</feature>
+<feature id="org.eclipse.emf.converter.source" url="features/org.eclipse.emf.converter.source_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.datatools.enablement.sqlite.feature.source" url="features/org.eclipse.datatools.enablement.sqlite.feature.source_1.12.0.v201406061321-542AkF7AJ7SAKAPBF/" version="1.12.0.v201406061321-542AkF7AJ7SAKAPBF">
+</feature>
+<feature id="org.eclipse.emf.mapping.ui" url="features/org.eclipse.emf.mapping.ui_2.9.0.v20150601-0402/" version="2.9.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.network.distmatrix" url="features/org.knime.features.network.distmatrix_3.1.0.v201510191254/" version="3.1.0.v201510191254">
+</feature>
+<feature id="org.knime.features.python.source" url="features/org.knime.features.python.source_3.1.2.v201603040957/" version="3.1.2.v201603040957">
+</feature>
+<feature id="org.knime.features.ext.birt.source" url="features/org.knime.features.ext.birt.source_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.knime.features.ext.weka_3.7.source" url="features/org.knime.features.ext.weka_3.7.source_3.1.1.v201601281239/" version="3.1.1.v201601281239">
+</feature>
+<feature id="org.eclipse.ecf.filetransfer.ssl.source.feature" url="features/org.eclipse.ecf.filetransfer.ssl.source.feature_1.0.0.v20150512-1727/" version="1.0.0.v20150512-1727">
+</feature>
+<feature id="org.eclipse.datatools.connectivity.oda.designer.feature" plugin-identifier="org.eclipse.datatools.connectivity.oda.design.ui" url="features/org.eclipse.datatools.connectivity.oda.designer.feature_1.12.0.v201406061321-4147w312514242925/" version="1.12.0.v201406061321-4147w312514242925">
+</feature>
+<feature id="org.eclipse.datatools.enablement.ibm.feature" plugin-identifier="org.eclipse.datatools.enablement.ibm" url="features/org.eclipse.datatools.enablement.ibm.feature_1.12.0.v201406061321-7G-7cFD3wThz-VTq2cpq3/" version="1.12.0.v201406061321-7G-7cFD3wThz-VTq2cpq3">
+</feature>
+<feature id="org.knime.features.sdk.source" url="features/org.knime.features.sdk.source_3.1.2.v201604221432/" version="3.1.2.v201604221432">
+</feature>
+<feature id="org.eclipse.wst.common_core.feature.source" url="features/org.eclipse.wst.common_core.feature.source_3.7.0.v201505132009/" version="3.7.0.v201505132009">
+</feature>
+<feature id="org.knime.features.ext.libsvm.source" url="features/org.knime.features.ext.libsvm.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.emf.validation.source" url="features/org.eclipse.emf.validation.source_1.9.0.201505312255/" version="1.9.0.201505312255">
+</feature>
+<feature id="org.eclipse.ecf.core.feature" url="features/org.eclipse.ecf.core.feature_1.1.0.v20150512-1727/" version="1.1.0.v20150512-1727">
+</feature>
+<feature id="org.eclipse.emf.source" url="features/org.eclipse.emf.source_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.source.feature" url="features/org.eclipse.ecf.filetransfer.httpclient4.ssl.source.feature_1.0.0.v20150512-1727/" version="1.0.0.v20150512-1727">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature" url="features/org.eclipse.datatools.sqldevtools.schemaobjecteditor.feature_1.12.0.v201406061321-4218375LG5BJ93413/" version="1.12.0.v201406061321-4218375LG5BJ93413">
+</feature>
+<feature id="org.eclipse.birt.osgi.runtime.source" url="features/org.eclipse.birt.osgi.runtime.source_4.5.0.v201506092134/" version="4.5.0.v201506092134">
+</feature>
+<feature id="org.knime.features.rengine.r2.source" url="features/org.knime.features.rengine.r2.source_3.1.0.v201510211903/" version="3.1.0.v201510211903">
+</feature>
+<feature id="org.eclipse.wst.server_core.feature.source" url="features/org.eclipse.wst.server_core.feature.source_3.3.500.v201505132000/" version="3.3.500.v201505132000">
+</feature>
+<feature id="org.eclipse.datatools.connectivity.feature" plugin-identifier="org.eclipse.datatools.connectivity" url="features/org.eclipse.datatools.connectivity.feature_1.12.0.v201406061321-7C7n9DEsxcwtN5odeWrQrgwYHq8/" version="1.12.0.v201406061321-7C7n9DEsxcwtN5odeWrQrgwYHq8">
+</feature>
+<feature id="org.knime.features.ext.weka_3.7" plugin-identifier="org.knime.ext.weka_3.7" url="features/org.knime.features.ext.weka_3.7_3.1.1.v201601281239/" version="3.1.1.v201601281239">
+</feature>
+<feature id="org.eclipse.datatools.enablement.feature.source" url="features/org.eclipse.datatools.enablement.feature.source_1.12.0.v201406061321-7J9t0B_0haN-EchrvGIyEh2M8j8a/" version="1.12.0.v201406061321-7J9t0B_0haN-EchrvGIyEh2M8j8a">
+</feature>
+<feature id="org.knime.features.ext.webservice.client.source" url="features/org.knime.features.ext.webservice.client.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.ext.socialmedia.source" url="features/org.knime.features.ext.socialmedia.source_3.1.0.v201512011304/" version="3.1.0.v201512011304">
+</feature>
+<feature id="org.eclipse.gmf.runtime.notation.source" url="features/org.eclipse.gmf.runtime.notation.source_1.9.0.201505312221/" version="1.9.0.201505312221">
+</feature>
+<feature id="org.knime.features.ext.parso.source" url="features/org.knime.features.ext.parso.source_3.1.2.v201603040957/" version="3.1.2.v201603040957">
+</feature>
+<feature id="org.knime.features.ext.itemset.source" url="features/org.knime.features.ext.itemset.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.util.source" url="features/org.knime.features.util.source_3.1.2.v201604221905/" version="3.1.2.v201604221905">
+</feature>
+<feature id="org.eclipse.wst.xml_core.feature" url="features/org.eclipse.wst.xml_core.feature_3.7.0.v201502261749/" version="3.7.0.v201502261749">
+</feature>
+<feature id="org.eclipse.emf.mapping.ecore.editor.source" url="features/org.eclipse.emf.mapping.ecore.editor.source_2.10.0.v20150601-0402/" version="2.10.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.ext.md" plugin-identifier="org.knime.ext.md" url="features/org.knime.features.ext.md_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.ext.md.source" url="features/org.knime.features.ext.md.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.chem.types.source" url="features/org.knime.features.chem.types.source_3.1.1.v201601281239/" version="3.1.1.v201601281239">
+</feature>
+<feature id="org.knime.features.ext.spotfire.source" url="features/org.knime.features.ext.spotfire.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.datatools.enablement.hsqldb.feature" plugin-identifier="org.eclipse.datatools.enablement.finfo" url="features/org.eclipse.datatools.enablement.hsqldb.feature_1.12.0.v201406061321-67G0AqGDM7KfNWJjJS8GDI/" version="1.12.0.v201406061321-67G0AqGDM7KfNWJjJS8GDI">
+</feature>
+<feature id="org.knime.features.dbdrivers.source" url="features/org.knime.features.dbdrivers.source_3.1.1.v201601281239/" version="3.1.1.v201601281239">
+</feature>
+<feature id="org.knime.features.mongodb.source" url="features/org.knime.features.mongodb.source_3.1.0.v201510191254/" version="3.1.0.v201510191254">
+</feature>
+<feature id="org.eclipse.equinox.p2.user.ui.source" url="features/org.eclipse.equinox.p2.user.ui.source_2.2.100.v20150601-1708/" version="2.2.100.v20150601-1708">
+</feature>
+<feature id="org.knime.targetPlatform.source" url="features/org.knime.targetPlatform.source_3.1.2.v201603040957/" version="3.1.2.v201603040957">
+</feature>
+<feature id="org.knime.features.ext.perl.source" url="features/org.knime.features.ext.perl.source_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.knime.features.network" url="features/org.knime.features.network_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.knime.features.build.source" url="features/org.knime.features.build.source_3.1.2.v201603040957/" version="3.1.2.v201603040957">
+</feature>
+<feature id="org.eclipse.ecf.core.source.feature" url="features/org.eclipse.ecf.core.source.feature_1.1.0.v20150512-1727/" version="1.1.0.v20150512-1727">
+</feature>
+<feature id="org.eclipse.emf.common.source" url="features/org.eclipse.emf.common.source_2.11.0.v20150512-0501/" version="2.11.0.v20150512-0501">
+</feature>
+<feature id="org.eclipse.emf.edit.ui" url="features/org.eclipse.emf.edit.ui_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.rcp" url="features/org.eclipse.rcp_4.5.0.v20150603-2331/" version="4.5.0.v20150603-2331">
+</feature>
+<feature id="org.eclipse.gmf.runtime.thirdparty.source" url="features/org.eclipse.gmf.runtime.thirdparty.source_1.9.0.201506060219/" version="1.9.0.201506060219">
+</feature>
+<feature id="org.eclipse.emf.mapping.source" url="features/org.eclipse.emf.mapping.source_2.9.0.v20150601-0402/" version="2.9.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.wst.xml_userdoc.feature" url="features/org.eclipse.wst.xml_userdoc.feature_3.6.0.v201405062147/" version="3.6.0.v201405062147">
+</feature>
+<feature id="org.knime.features.js.quickforms.source" url="features/org.knime.features.js.quickforms.source_3.1.3.v201604221432/" version="3.1.3.v201604221432">
+</feature>
+<feature id="org.eclipse.emf.codegen.ecore.ui.source" url="features/org.eclipse.emf.codegen.ecore.ui.source_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.datatools.enablement.apache.derby.feature" plugin-identifier="org.eclipse.datatools.enablement.sybase" url="features/org.eclipse.datatools.enablement.apache.derby.feature_1.12.0.v201406061321-777B8gBmKFQ3NjRaMjbx8GDI/" version="1.12.0.v201406061321-777B8gBmKFQ3NjRaMjbx8GDI">
+</feature>
+<feature id="org.knime.features.jpmml.source" url="features/org.knime.features.jpmml.source_3.1.0.v201511272306/" version="3.1.0.v201511272306">
+</feature>
+<feature id="org.knime.features.ext.poi.source" url="features/org.knime.features.ext.poi.source_3.1.1.v201601291109/" version="3.1.1.v201601291109">
+</feature>
+<feature id="org.eclipse.datatools.modelbase.feature.source" url="features/org.eclipse.datatools.modelbase.feature.source_1.12.0.v201406061321-7707GCcNBHLDaKTEcRi/" version="1.12.0.v201406061321-7707GCcNBHLDaKTEcRi">
+</feature>
+<feature id="org.eclipse.datatools.enablement.oda.designer.feature.source" url="features/org.eclipse.datatools.enablement.oda.designer.feature.source_1.12.0.v201406061321-647L9oB58H5E8E8TBK/" version="1.12.0.v201406061321-647L9oB58H5E8E8TBK">
+</feature>
+<feature id="org.eclipse.jdt" url="features/org.eclipse.jdt_3.11.0.v20150603-2000/" version="3.11.0.v20150603-2000">
+</feature>
+<feature id="org.eclipse.emf.common" url="features/org.eclipse.emf.common_2.11.0.v20150512-0501/" version="2.11.0.v20150512-0501">
+</feature>
+<feature id="org.eclipse.emf.codegen.ecore.source" url="features/org.eclipse.emf.codegen.ecore.source_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.arima" url="features/org.knime.features.arima_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.r.source" url="features/org.knime.features.r.source_3.1.3.v201604221432/" version="3.1.3.v201604221432">
+</feature>
+<feature id="org.eclipse.datatools.enablement.sybase.feature" plugin-identifier="org.eclipse.datatools.enablement.sybase" url="features/org.eclipse.datatools.enablement.sybase.feature_1.12.0.v201406061321-7E478F9NiNc2S7fxRCTD/" version="1.12.0.v201406061321-7E478F9NiNc2S7fxRCTD">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.feature.source" url="features/org.eclipse.datatools.sqldevtools.feature.source_1.12.0.v201406061321-7N8P7IFDri6qjCyg6Q61VhVsihvO/" version="1.12.0.v201406061321-7N8P7IFDri6qjCyg6Q61VhVsihvO">
+</feature>
+<feature id="org.knime.features.neighborgram.source" url="features/org.knime.features.neighborgram.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.feature" plugin-identifier="org.eclipse.datatools.sqltools.common.ui" url="features/org.eclipse.datatools.sqldevtools.feature_1.12.0.v201406061321-7N8P7IFDri6qjCyg6Q61VhVsihvO/" version="1.12.0.v201406061321-7N8P7IFDri6qjCyg6Q61VhVsihvO">
+</feature>
+<feature id="org.eclipse.datatools.modelbase.feature" plugin-identifier="org.eclipse.datatools.modelbase.sql" url="features/org.eclipse.datatools.modelbase.feature_1.12.0.v201406061321-7707GCcNBHLDaKTEcRi/" version="1.12.0.v201406061321-7707GCcNBHLDaKTEcRi">
+</feature>
+<feature id="org.knime.features.ext.jep.source" url="features/org.knime.features.ext.jep.source_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.knime.features.core.streaming" plugin-identifier="org.knime.core.streaming" url="features/org.knime.features.core.streaming_3.1.0.v201511280708/" version="3.1.0.v201511280708">
+</feature>
+<feature id="com.knime.features.enterprise.slave" url="features/com.knime.features.enterprise.slave_4.2.5.v201604251513/" version="4.2.5.v201604251513">
+</feature>
+<feature id="org.knime.features.exttool.source" url="features/org.knime.features.exttool.source_3.1.0.v201511191614/" version="3.1.0.v201511191614">
+</feature>
+<feature id="org.knime.features.ext.r.source" url="features/org.knime.features.ext.r.source_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.knime.features.ext.chem.tools" plugin-identifier="org.knime.ext.chem.moss" url="features/org.knime.features.ext.chem.tools_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.eclipse.datatools.enablement.oda.feature" plugin-identifier="org.eclipse.datatools.enablement.oda.xml" url="features/org.eclipse.datatools.enablement.oda.feature_1.12.0.v201406061321-7D7U7OEVVFNSGfJoIz0Of/" version="1.12.0.v201406061321-7D7U7OEVVFNSGfJoIz0Of">
+</feature>
+<feature id="org.eclipse.birt.chart.osgi.runtime.source" url="features/org.eclipse.birt.chart.osgi.runtime.source_4.5.0.v201506092134/" version="4.5.0.v201506092134">
+</feature>
+<feature id="org.knime.features.ext.xulrunner.source" url="features/org.knime.features.ext.xulrunner.source_1.9.2.v201502142306/" version="1.9.2.v201502142306">
+</feature>
+<feature id="org.knime.features.webanalytics.source" url="features/org.knime.features.webanalytics.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.base.filehandling.source" url="features/org.knime.features.base.filehandling.source_3.1.2.v201603111422/" version="3.1.2.v201603111422">
+</feature>
+<feature id="org.eclipse.platform" url="features/org.eclipse.platform_4.5.0.v20150603-2358/" version="4.5.0.v20150603-2358">
+</feature>
+<feature id="org.knime.product.desktop.source" url="features/org.knime.product.desktop.source_3.1.2.v201604221432/" version="3.1.2.v201604221432">
+</feature>
+<feature id="org.knime.features.distmatrix" plugin-identifier="org.knime.distmatrix" url="features/org.knime.features.distmatrix_3.1.0.v201512012046/" version="3.1.0.v201512012046">
+</feature>
+<feature id="org.knime.features.ext.jfreechart" plugin-identifier="org.knime.ext.jfreechart" url="features/org.knime.features.ext.jfreechart_3.1.0.v201512012046/" version="3.1.0.v201512012046">
+</feature>
+<feature id="org.knime.features.wizard.source" url="features/org.knime.features.wizard.source_3.1.0.v201512021720/" version="3.1.0.v201512021720">
+</feature>
+<feature id="org.eclipse.emf.ecore.edit" url="features/org.eclipse.emf.ecore.edit_2.9.0.v20150601-0402/" version="2.9.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.e4.rcp" url="features/org.eclipse.e4.rcp_1.4.0.v20150603-0857/" version="1.4.0.v20150603-0857">
+</feature>
+<feature id="com.knime.features.explorer.serverspace" url="features/com.knime.features.explorer.serverspace_4.2.5.v201603311411/" version="4.2.5.v201603311411">
+</feature>
+<feature id="org.knime.features.js.views" plugin-identifier="org.knime.js.core" url="features/org.knime.features.js.views_3.1.2.v201603040957/" version="3.1.2.v201603040957">
+</feature>
+<feature id="org.eclipse.emf.mapping.ecore" url="features/org.eclipse.emf.mapping.ecore_2.9.0.v20150601-0402/" version="2.9.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.datatools.enablement.ingres.feature" plugin-identifier="org.eclipse.datatools.enablement.finfo" url="features/org.eclipse.datatools.enablement.ingres.feature_1.12.0.v201406061321-540AkF78Z7UCRAQDB/" version="1.12.0.v201406061321-540AkF78Z7UCRAQDB">
+</feature>
+<feature id="org.eclipse.emf.databinding.edit.source" url="features/org.eclipse.emf.databinding.edit.source_1.4.0.v20150601-0402/" version="1.4.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.xml" url="features/org.knime.features.xml_3.1.2.v201603091103/" version="3.1.2.v201603091103">
+</feature>
+<feature id="org.eclipse.emf.codegen.ui.source" url="features/org.eclipse.emf.codegen.ui.source_2.8.0.v20150601-0402/" version="2.8.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.birt" url="features/org.eclipse.birt_4.5.0.v201506092134/" version="4.5.0.v201506092134">
+</feature>
+<feature id="org.eclipse.emf.codegen" url="features/org.eclipse.emf.codegen_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.wst.xml_ui.feature" plugin-identifier="org.eclipse.wst.xml.ui" url="features/org.eclipse.wst.xml_ui.feature_3.7.0.v201505141512/" version="3.7.0.v201505141512">
+</feature>
+<feature id="com.knime.features.enterprise.server.rest.source" url="features/com.knime.features.enterprise.server.rest.source_4.2.0.v201604221905/" version="4.2.0.v201604221905">
+</feature>
+<feature id="org.eclipse.xsd.source" url="features/org.eclipse.xsd.source_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.datatools.doc.user" url="features/org.eclipse.datatools.doc.user_1.12.0.v201405281819-47C18w95FHAM87EJJD7/" version="1.12.0.v201405281819-47C18w95FHAM87EJJD7">
+</feature>
+<feature id="org.eclipse.emf" url="features/org.eclipse.emf_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.rcp.source" url="features/org.eclipse.rcp.source_4.5.0.v20150603-2331/" version="4.5.0.v20150603-2331">
+</feature>
+<feature id="org.knime.features.js.quickforms" plugin-identifier="org.knime.js.quickforms" url="features/org.knime.features.js.quickforms_3.1.3.v201604221432/" version="3.1.3.v201604221432">
+</feature>
+<feature id="org.eclipse.draw2d" url="features/org.eclipse.draw2d_3.10.0.201506010206/" version="3.10.0.201506010206">
+</feature>
+<feature id="org.knime.features.ext.spotfire" url="features/org.knime.features.ext.spotfire_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.datatools.enablement.ibm.feature.source" url="features/org.eclipse.datatools.enablement.ibm.feature.source_1.12.0.v201406061321-7G-7cFD3wThz-VTq2cpq3/" version="1.12.0.v201406061321-7G-7cFD3wThz-VTq2cpq3">
+</feature>
+<feature id="org.knime.features.ext.textprocessing.source" url="features/org.knime.features.ext.textprocessing.source_3.1.2.v201603311235/" version="3.1.2.v201603311235">
+</feature>
+<feature id="org.knime.features.ext.chem.cdk.source" url="features/org.knime.features.ext.chem.cdk.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.arima.source" url="features/org.knime.features.arima.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.emf.edit.source" url="features/org.eclipse.emf.edit.source_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.equinox.p2.rcp.feature" url="features/org.eclipse.equinox.p2.rcp.feature_1.2.100.v20150527-1706/" version="1.2.100.v20150527-1706">
+</feature>
+<feature id="org.eclipse.datatools.enablement.jdbc.feature.source" url="features/org.eclipse.datatools.enablement.jdbc.feature.source_1.12.0.v201406061321-4-49oB58B7DAF7FCH/" version="1.12.0.v201406061321-4-49oB58B7DAF7FCH">
+</feature>
+<feature id="org.eclipse.emf.codegen.source" url="features/org.eclipse.emf.codegen.source_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.datatools.enablement.postgresql.feature.source" url="features/org.eclipse.datatools.enablement.postgresql.feature.source_1.12.0.v201406061321-553AkF7AK8PCRBQBP/" version="1.12.0.v201406061321-553AkF7AK8PCRBQBP">
+</feature>
+<feature id="org.eclipse.datatools.enablement.sap.feature.source" url="features/org.eclipse.datatools.enablement.sap.feature.source_1.12.0.v201406061321-540AkF7AJ7YEJBU7S/" version="1.12.0.v201406061321-540AkF7AJ7YEJBU7S">
+</feature>
+<feature id="org.knime.features.stats2" plugin-identifier="org.knime.stats2" url="features/org.knime.features.stats2_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.knime.binary.jre.source" url="features/org.knime.binary.jre.source_3.0.0.v201510121454/" version="3.0.0.v201510121454">
+</feature>
+<feature id="org.knime.features.ext.lucene" plugin-identifier="org.knime.ext.lucene" url="features/org.knime.features.ext.lucene_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.knime.features.neighborgram" plugin-identifier="org.knime.exp.neighborgrams" url="features/org.knime.features.neighborgram_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.equinox.p2.rcp.feature.source" url="features/org.eclipse.equinox.p2.rcp.feature.source_1.2.100.v20150527-1706/" version="1.2.100.v20150527-1706">
+</feature>
+<feature id="org.eclipse.datatools.enablement.oda.feature.source" url="features/org.eclipse.datatools.enablement.oda.feature.source_1.12.0.v201406061321-7D7U7OEVVFNSGfJoIz0Of/" version="1.12.0.v201406061321-7D7U7OEVVFNSGfJoIz0Of">
+</feature>
+<feature id="org.eclipse.pde" url="features/org.eclipse.pde_3.11.0.v20150603-2000/" version="3.11.0.v20150603-2000">
+</feature>
+<feature id="org.eclipse.ecf.filetransfer.httpclient4.ssl.feature" url="features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20150512-1727/" version="1.0.0.v20150512-1727">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.parsers.feature" plugin-identifier="org.eclipse.datatools.sqltools.parsers.sql" url="features/org.eclipse.datatools.sqldevtools.parsers.feature_1.12.0.v201406061321-623BgJ9EE9ZJRDZLA/" version="1.12.0.v201406061321-623BgJ9EE9ZJRDZLA">
+</feature>
+<feature id="org.knime.features.build" url="features/org.knime.features.build_3.1.2.v201603040957/" version="3.1.2.v201603040957">
+</feature>
+<feature id="org.knime.features.ext.exttool.source" url="features/org.knime.features.ext.exttool.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.chem.types" plugin-identifier="org.knime.chem.types" url="features/org.knime.features.chem.types_3.1.1.v201601281239/" version="3.1.1.v201601281239">
+</feature>
+<feature id="org.eclipse.emf.edit.ui.source" url="features/org.eclipse.emf.edit.ui.source_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.ddlgen.feature" plugin-identifier="org.eclipse.datatools.sqltools.ddlgen.ui" url="features/org.eclipse.datatools.sqldevtools.ddlgen.feature_1.12.0.v201406061321-7A-7DF7RZHQUMdThK5_t/" version="1.12.0.v201406061321-7A-7DF7RZHQUMdThK5_t">
+</feature>
+<feature id="org.eclipse.datatools.enablement.jdt.feature.source" url="features/org.eclipse.datatools.enablement.jdt.feature.source_1.12.0.v201406061321-2-07w312218332612/" version="1.12.0.v201406061321-2-07w312218332612">
+</feature>
+<feature id="org.knime.features.ext.webservice.client" plugin-identifier="org.knime.ext.webservice.client" url="features/org.knime.features.ext.webservice.client_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.testingapplication.source" url="features/org.knime.features.testingapplication.source_3.1.2.v201603311002/" version="3.1.2.v201603311002">
+</feature>
+<feature id="org.knime.features.quickform.legacy.source" url="features/org.knime.features.quickform.legacy.source_3.1.0.v201511171329/" version="3.1.0.v201511171329">
+</feature>
+<feature id="org.knime.features.ensembles" url="features/org.knime.features.ensembles_3.1.2.v201603091606/" version="3.1.2.v201603091606">
+</feature>
+<feature id="org.knime.features.xml.source" url="features/org.knime.features.xml.source_3.1.2.v201603091103/" version="3.1.2.v201603091103">
+</feature>
+<feature id="org.knime.features.activelearning.source" url="features/org.knime.features.activelearning.source_3.1.0.v201512020936/" version="3.1.0.v201512020936">
+</feature>
+<feature id="org.knime.features.ensembles.source" url="features/org.knime.features.ensembles.source_3.1.2.v201603091606/" version="3.1.2.v201603091606">
+</feature>
+<feature id="org.eclipse.emf.mapping.ui.source" url="features/org.eclipse.emf.mapping.ui.source_2.9.0.v20150601-0402/" version="2.9.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.gmf.source" url="features/org.eclipse.gmf.source_1.9.0.201506060219/" version="1.9.0.201506060219">
+</feature>
+<feature id="org.knime.features.ext.weka_3.6.source" url="features/org.knime.features.ext.weka_3.6.source_2.10.2.v201511241214/" version="2.10.2.v201511241214">
+</feature>
+<feature id="org.eclipse.birt.chart.osgi.runtime" url="features/org.eclipse.birt.chart.osgi.runtime_4.5.0.v201506092134/" version="4.5.0.v201506092134">
+</feature>
+<feature id="org.knime.features.webanalytics" plugin-identifier="org.knime.webanalytics" url="features/org.knime.features.webanalytics_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.knime.features.dbdrivers" url="features/org.knime.features.dbdrivers_3.1.1.v201601281239/" version="3.1.1.v201601281239">
+</feature>
+<feature id="org.eclipse.emf.ecore.edit.source" url="features/org.eclipse.emf.ecore.edit.source_2.9.0.v20150601-0402/" version="2.9.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.equinox.p2.extras.feature" url="features/org.eclipse.equinox.p2.extras.feature_1.2.100.v20150601-1708/" version="1.2.100.v20150601-1708">
+</feature>
+<feature id="com.knime.features.enterprise.server.ws.client" plugin-identifier="com.knime.enterprise.server.ws.client" url="features/com.knime.features.enterprise.server.ws.client_4.2.4.v201604221905/" version="4.2.4.v201604221905">
+</feature>
+<feature id="org.eclipse.equinox.p2.extras.feature.source" url="features/org.eclipse.equinox.p2.extras.feature.source_1.2.100.v20150601-1708/" version="1.2.100.v20150601-1708">
+</feature>
+<feature id="org.knime.features.sdk" plugin-identifier="org.knime.workbench.extension" url="features/org.knime.features.sdk_3.1.2.v201604221432/" version="3.1.2.v201604221432">
+</feature>
+<feature id="org.knime.features.virtual" url="features/org.knime.features.virtual_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.knime.features.ext.osm.source" url="features/org.knime.features.ext.osm.source_3.1.0.v201511131603/" version="3.1.0.v201511131603">
+</feature>
+<feature id="org.eclipse.emf.codegen.ecore.ui" url="features/org.eclipse.emf.codegen.ecore.ui_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.emf.ecore.editor" url="features/org.eclipse.emf.ecore.editor_2.11.0.v20150601-0402/" version="2.11.0.v20150601-0402">
+</feature>
+<feature id="org.knime.features.jpmml" url="features/org.knime.features.jpmml_3.1.0.v201511272306/" version="3.1.0.v201511272306">
+</feature>
+<feature id="org.knime.features.ext.jython.source" url="features/org.knime.features.ext.jython.source_3.1.0.v201511171329/" version="3.1.0.v201511171329">
+</feature>
+<feature id="org.knime.features.ext.parso" url="features/org.knime.features.ext.parso_3.1.2.v201603040957/" version="3.1.2.v201603040957">
+</feature>
+<feature id="org.eclipse.datatools.enablement.oracle.feature" plugin-identifier="org.eclipse.datatools.enablement.finfo" url="features/org.eclipse.datatools.enablement.oracle.feature_1.12.0.v201406061321-548fAkF7AL7RBJANAI/" version="1.12.0.v201406061321-548fAkF7AL7RBJANAI">
+</feature>
+<feature id="org.eclipse.datatools.sqldevtools.results.feature.source" url="features/org.eclipse.datatools.sqldevtools.results.feature.source_1.12.0.v201406061321-427H9oB58F6A8I5KGJ/" version="1.12.0.v201406061321-427H9oB58F6A8I5KGJ">
+</feature>
+<feature id="org.eclipse.emf.databinding" url="features/org.eclipse.emf.databinding_1.4.0.v20150601-0402/" version="1.4.0.v20150601-0402">
+</feature>
+<feature id="org.eclipse.datatools.enablement.sap.feature" plugin-identifier="org.eclipse.datatools.enablement.finfo" url="features/org.eclipse.datatools.enablement.sap.feature_1.12.0.v201406061321-540AkF7AJ7YEJBU7S/" version="1.12.0.v201406061321-540AkF7AJ7YEJBU7S">
+</feature>
+<feature id="org.knime.features.base.pmml" url="features/org.knime.features.base.pmml_3.1.2.v201603171953/" version="3.1.2.v201603171953">
+</feature>
+<feature id="org.knime.features.virtual.source" url="features/org.knime.features.virtual.source_3.1.0.v201511241214/" version="3.1.0.v201511241214">
+</feature>
+<feature id="org.eclipse.datatools.enablement.hsqldb.feature.source" url="features/org.eclipse.datatools.enablement.hsqldb.feature.source_1.12.0.v201406061321-67G0AqGDM7KfNWJjJS8GDI/" version="1.12.0.v201406061321-67G0AqGDM7KfNWJjJS8GDI">
+</feature>
+</site>
+</config>

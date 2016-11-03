@@ -1,0 +1,5 @@
+source.distancebasedresolver.jar = src/
+bin.includes = plugin.xml,\
+               META-INF/,\
+               distancebasedresolver.jar,\
+               icons/

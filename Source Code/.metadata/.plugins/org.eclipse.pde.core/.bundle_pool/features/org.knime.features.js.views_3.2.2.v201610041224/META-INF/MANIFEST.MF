@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_60 (Oracle Corporation)
+
+Name: feature.xml
+SHA-256-Digest: dxR9dS9JcBmGAOide3N4JrgUSHwqdIwL4B69W/Hx5U4=
+
