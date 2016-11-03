@@ -181,3 +181,29 @@ TSWLatexianTemp*
 
 # PDF
 *.pdf
+
+#Unimportant stuff
+Logo
+Block Nested Loop
+DistanceKey
+DistanceRepresentativSkyline
+DomMaximizer
+Dynamic Tree
+jcommon-1.0.23
+jfreechart-1.0.19
+JPanelTest
+JSplitPaneDemo
+LayeredFrame
+MyAppThatUsesJFreeChart
+NumericBinner
+PreferenceCreatorGUI
+RemoteSystemsTempFiles
+R-Tree
+StringSplitTest
+Test
+
+Unimportant files
+jcommon-1.0.23.zip
+jfreechart-1.0.19.zip
+psqlClient.jar
+sqlite-jdbc-3.8.11.2.jar
