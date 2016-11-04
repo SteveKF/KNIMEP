@@ -1,4 +1,0 @@
-source.preferencecreator.jar = src/
-bin.includes = plugin.xml,\
-               META-INF/,\
-               preferencecreator.jar

@@ -42,7 +42,7 @@
           <tags>persp.actionSet:org.eclipse.ui.actionSet.openFiles</tags>
           <tags>persp.actionSet:org.knime.workbench.editor.svgexport.actionSet</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_gaQetKINEeaoBdyFEKQ1sA" selectedElement="_gaQevaINEeaoBdyFEKQ1sA" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_gaQetaINEeaoBdyFEKQ1sA" containerData="2967" selectedElement="_gaQeuKINEeaoBdyFEKQ1sA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_gaQetaINEeaoBdyFEKQ1sA" containerData="2967" selectedElement="_gaQetqINEeaoBdyFEKQ1sA">
               <children xsi:type="basic:PartStack" xmi:id="_gaQetqINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.explorer.viewMStack" containerData="3000" selectedElement="_gaQet6INEeaoBdyFEKQ1sA">
                 <children xsi:type="advanced:Placeholder" xmi:id="_gaQet6INEeaoBdyFEKQ1sA" elementId="org.knime.workbench.explorer.view" ref="_gaQfT6INEeaoBdyFEKQ1sA"/>
               </children>
@@ -101,13 +101,13 @@
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <tags>noFocus</tags>
         <children xsi:type="basic:Part" xmi:id="_gaQfQaINEeaoBdyFEKQ1sA" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="0: PreferenceCreator" iconURI="platform:/plugin/org.knime.workbench.editor/icons/knime.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.knime.workbench.editor.WorkflowEditor&quot; name=&quot;workflow.knime&quot; partName=&quot;0: PreferenceCreator&quot; title=&quot;0: PreferenceCreator&quot; tooltip=&quot;0: PreferenceCreator&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; uri=&quot;knime://LOCAL/PreferenceCreator/workflow.knime&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.knime.workbench.editor.WorkflowEditor</tags>
           <tags>removeOnHide</tags>
           <tags>active</tags>
+          <tags>activeOnClose</tags>
           <menus xsi:type="menu:PopupMenu" xmi:id="_gaQfQqINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.WorkflowEditor">
             <tags>menuContribution:popup</tags>
             <tags>popup:org.knime.workbench.editor.WorkflowEditor</tags>
@@ -3034,109 +3034,10 @@
     <trimBars xmi:id="_gaST7aINEeaoBdyFEKQ1sA" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench">
       <children xsi:type="menu:ToolBar" xmi:id="_gaST7qINEeaoBdyFEKQ1sA" elementId="main">
         <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaST76INEeaoBdyFEKQ1sA" elementId="newWizardDropDown">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaST8KINEeaoBdyFEKQ1sA" elementId="save">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaST8aINEeaoBdyFEKQ1sA" elementId="saveAs">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaST8qINEeaoBdyFEKQ1sA" elementId="saveAll">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gaST86INEeaoBdyFEKQ1sA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_gaST9KINEeaoBdyFEKQ1sA" elementId="additions" toBeRendered="false"/>
-      </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_gaSUFKINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.WorkflowEditor">
-        <tags>Draggable</tags>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUFaINEeaoBdyFEKQ1sA">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUFqINEeaoBdyFEKQ1sA" elementId="org.eclipse.gef.zoom_widget">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUF6INEeaoBdyFEKQ1sA" elementId="Normal">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUGKINEeaoBdyFEKQ1sA" elementId="com.knime.reporting.designer.edit.report.editor.action">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUGaINEeaoBdyFEKQ1sA" elementId="group1">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUGqINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.ui.layout.verticalignlayout">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUG6INEeaoBdyFEKQ1sA" elementId="org.knime.workbench.ui.layout.horizalignlayout">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUHKINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.ui.layout.autolayout">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUHaINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.openDialog">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUHqINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.execute">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUH6INEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.executeall">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUIKINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.executeAndOpenView">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUIaINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.cancel">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUIqINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.cancelall">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUI6INEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.reset">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUJKINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.setnameanddescription">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUJaINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.openFirstOutPortView">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUJqINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.defaultOpen">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUJ6INEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.meta">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUKKINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.appendNodeIds">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUKaINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.hideNodeNames">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUKqINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.stepLoop">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUK6INEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.pauseexecution">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSULKINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.resumeloop">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSULaINEeaoBdyFEKQ1sA" elementId="group2">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSULqINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.gridSettings">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUL6INEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.subnodeLayout">
-          <tags>Opaque</tags>
-        </children>
-        <children xsi:type="menu:DirectToolItem" xmi:id="_gaSUMKINEeaoBdyFEKQ1sA" elementId="org.knime.workbench.editor.actions.openMultiDialog">
-          <tags>Opaque</tags>
-        </children>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_gaSUMaINEeaoBdyFEKQ1sA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -3918,6 +3819,23 @@
     <tags>View</tags>
     <tags>categoryTag:Erlwood Knime Client Extensions</tags>
   </descriptors>
+  <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
+    <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:PerspectiveSpacer</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_8tJPcF9tEeO-yojH_y4TJA" elementId="SearchField" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.quickaccess.SearchField">
+      <tags>move_after:Spacer Glue</tags>
+      <tags>HIDEABLE</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+    <children xsi:type="menu:ToolControl" xmi:id="_9LgmcF9tEeO-yojH_y4TJA" elementId="Search-PS Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
+      <tags>glue</tags>
+      <tags>move_after:SearchField</tags>
+      <tags>SHOW_RESTORE_MENU</tags>
+    </children>
+  </trimContributions>
   <commands xmi:id="_gaUwW6INEeaoBdyFEKQ1sA" elementId="org.eclipse.ui.window.pinEditor" commandName="Pin Editor" description="Pin the current editor" category="_gaV_HKINEeaoBdyFEKQ1sA"/>
   <commands xmi:id="_gaUwXKINEeaoBdyFEKQ1sA" elementId="org.eclipse.ui.navigate.nextTab" commandName="Next Tab" description="Switch to the next tab" category="_gaV_GKINEeaoBdyFEKQ1sA"/>
   <commands xmi:id="_gaUwXaINEeaoBdyFEKQ1sA" elementId="org.eclipse.ui.window.quickAccess" commandName="Quick Access" description="Quickly access UI elements" category="_gaV_HKINEeaoBdyFEKQ1sA"/>

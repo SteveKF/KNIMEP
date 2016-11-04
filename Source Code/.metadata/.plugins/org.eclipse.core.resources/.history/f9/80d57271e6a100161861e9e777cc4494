@@ -1,4 +1,0 @@
-source.dominationmaximizer.jar = src/
-bin.includes = plugin.xml,\
-               META-INF/,\
-               dominationmaximizer.jar

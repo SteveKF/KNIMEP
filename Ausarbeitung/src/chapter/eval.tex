@@ -122,7 +122,9 @@ Der aktuelle Workflow mit allen (repräsentativen) Skyline Nodes und dem zusätz
 %% ==============================
 Für die Visualisierung der Ausgaben der Nodes wird der SkylineVisualizer verwendet. Dieser nimmt als Eingabe zwei BufferedDataTables und erstellt mit diesen Daten ein Koordinatensystem mit dominierten und undominierten Punkten. Der erste BufferedDataTable sollte somit die undominierten und der zweite die dominierten oder alle Daten enthalten. Die Ausgaben des E-Greedy, DominationMaximizer und des DistanceBaseResolver Nodes sind jeweils zwei BufferedDataTable mit dominierten und undominierten Punkten und deswegen kann der SkylineVisualizer Node die Ausgaben dieser Nodes in einem Koordinatensystem darstellen.
 
-Diese drei Nodes berechnen die repräsentative Skyline. Für eine repräsentative Skyline besteht das Koordinatensystem aus den repräsentativen Skylinepunkten als undominierte Punkte und den Skylinepunkten als dominierte Punkte. Der Graph des DominationMaximizer Nodes kann in Abbildung \ref{img:domMaximizerView} gesehen werden. Wohingegen die Graphen des DistanceBaseResolver in Figur \ref{img:eGreedyView} und des E-Greedy in Figur \ref{img:distBasedResolverView} betrachtet werden können. 
+Diese drei Nodes berechnen die repräsentative Skyline. Für eine repräsentative Skyline besteht das Koordinatensystem aus den repräsentativen Skylinepunkten als undominierte Punkte und den Skylinepunkten als dominierte Punkte. Falls drei Dimensionen betrachtet werden, erstellt der SkylineVisualizer für jede Kombination der Dimensionen einen Graph. Aus diesem Grund werden bei mehr als drei Dimensionen keine Graphen mehr erstellt. Dies bedeutet, dass keine Graphen für das ursprüngliche Beispiel erstellt werden können. Infolgedessen werden neue DominationMaximizer und EGreedy Nodes für das zwei dimensionale Beispiel erstellt. Die Eingabe bleiben bis auf dem Parameter $k$ identisch. Der Parameter $k$ wird auf zwei gesetzt, um die Skyline zu reduzieren und dadurch nicht alle Skylinedatensätze ausgegeben werden. 
+
+Der Graph des DominationMaximizer Nodes kann in Abbildung \ref{img:domMaximizerView} gesehen werden. Wohingegen die Graphen des DistanceBaseResolver in Figur \ref{img:eGreedyView} und des E-Greedy in Figur \ref{img:distBasedResolverView} betrachtet werden können. 
 
 \begin{figure}[H]
 	\centering
@@ -162,14 +164,20 @@ Zum Schluss werden nun noch der SQLExtractor und der PreferenceSQL Node zum Work
  
 \textbf{Preference-Query:}
 \begin{lstlisting}
-QUERY
+SELECT * 
+FROM (SELECT * FROM car) AS T 
+PREFERRING ((price LOWEST PRIOR TO age LOWEST) 
+AND (horsepower HIGHEST PRIOR TO 
+color LAYERED (('green', 'black'), OTHERS, ('red'))) AND mileage LOWEST)
 \end{lstlisting}
 
 Wohingegen der Query für das zwei dimensionale Beispiel folgendermaßen aufgebaut ist:
 
 \textbf{Preference-Query:}
 \begin{lstlisting}
-QUERY
+SELECT * 
+FROM (SELECT * FROM car) AS T 
+PREFERRING (price LOWEST AND horsepower HIGHEST)
 \end{lstlisting}
 
 Der schlussendliche Workflow ist in Abbildung \ref{img:finalWorkflow} zu sehen. 

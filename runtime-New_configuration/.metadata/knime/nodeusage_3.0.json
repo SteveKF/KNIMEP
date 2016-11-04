@@ -181,8 +181,8 @@
             },
             {
                 "id":"org.knime.preference.extract.PreferenceSQLExtractNodeFactory#PreferenceSQLExtract",
-                "nrexecs":20,
-                "exectime":1322,
+                "nrexecs":21,
+                "exectime":1360,
                 "nrcreated":11,
                 "successor":"n/a"
             },
@@ -223,8 +223,8 @@
             },
             {
                 "id":"org.knime.preferences.prefCreator.PreferenceCreatorNodeFactory#PreferenceCreator",
-                "nrexecs":80,
-                "exectime":150256,
+                "nrexecs":83,
+                "exectime":157155,
                 "nrcreated":16,
                 "successor":"org.knime.preference.extract.PreferenceSQLExtractNodeFactory#PreferenceSQLExtract"
             },
@@ -265,8 +265,8 @@
             },
             {
                 "id":"org.knime.preferences.bnl.BlockNestedLoopNodeFactory#BlockNestedLoop",
-                "nrexecs":47,
-                "exectime":195166,
+                "nrexecs":49,
+                "exectime":196236,
                 "nrcreated":7,
                 "successor":"org.knime.skyvisualizer.SkylineVisualizerNodeFactory#SkylineVisualizer"
             },
@@ -290,9 +290,9 @@
         "wrappedNodes":{
         }
     },
-    "uptime":516893,
-    "launches":771,
-    "timeSinceLastStart":348117,
+    "uptime":515652,
+    "launches":774,
+    "timeSinceLastStart":364172,
     "crashes":251,
     "properlyShutDown":true
 }
