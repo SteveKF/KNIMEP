@@ -1,8 +1,0 @@
-/home/stevekanonfreak/Masterarbeit/Databases/Example.sqlite
-/home/stevekanonfreak/Dokumente/Masterarbeit/Databases/playercareers
-/home/stevekanonfreak/Dokumente/Masterarbeit/Databases/players
-/home/stevekanonfreak/Dokumente/Masterarbeit/Databases/transfermarktDE-GAMMA.db
-/home/stevekanonfreak/Dokumente/Masterarbeit/Databases/fussballdatenDE-GAMMA.db
-/home/stevekanonfreak/Dokumente/Masterarbeit/sqlite-jdbc-3.8.11.2.jar
-/home/stevekanonfreak/Dokumente/Masterarbeit/Databases/fussballdatenDE-2015-GAMMA.db
-/home/stevekanonfreak/Dokumente/Masterarbeit/Databases/transfermarktDE-2015.db

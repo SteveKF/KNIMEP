@@ -1,4 +1,0 @@
-database_drivers=/home/stevekanonfreak/Dokumente/Masterarbeit/mysql-connector-java-5.1.40/mysql-connector-java-5.1.40-bin.jar;/home/stevekanonfreak/Dokumente/Masterarbeit/psqlClient.jar;/home/stevekanonfreak/Dokumente/Masterarbeit/sqlite-jdbc-3.8.11.2.jar
-eclipse.preferences.version=1
-knime.askedToSendStatistics=true
-knime.sendAnonymousStatistics=true
