@@ -3,15 +3,50 @@
     <name>PreferenceCreator</name>
     
     <shortDescription>
-        Sets up the Scores for the Preference SQL node.
+        Creates scores for data records based on the created preferences. 
+        This node is the basis of the (representative) skyline computation.
     </shortDescription>
     
     <fullDescription>
-        <intro>Insert long description here...</intro>
+        <intro>This node creates a Score and Preference-SQL query based on the created preferences.
+        On the left side of the dialog you can add complex preferences which prioritize basic preferences.
+        Whereupon basic preferences can be added on the right side. 
+        Complex preferences can be Pareto or Priority preferences. <br/>
+        Basic preferences which are contained in a Pareto preference are equally important.
+        Whereupon the first basic preference in a Priority preference is more important than the second one. 
+        Basic preferences are based on the columns of the inputed data table and have a specific type.
+        Those types can be Lowest, Highest, Around, Between, Boolean and Layered.
+        Based on these preferences the data records of the original data table get scores on how well they met these preferences. 
+        For example a Lowest preference prefers low values for the column on which this preference is based on.
+        Therefore the data record with the lowest value has the best score out of all data records for this specific preference. 
+        With the score query and the database connection a data table with all scores can be created. Based on these scores the best data records (=skyline) can be computed.
+        Additionally the Preference-SQL query helps to create a skyline with the PreferenceSQL node.</intro>
         
-        
-        <option name="short name of first option (like in the dialog)">description of first option</option>
-        <option name="short name of second option (like in the dialog)">description of second option</option>
+        <option name="Tree">In this tree you can see all the added preferences.</option>
+        <option name="Priority/Pareto options">If the Priority option is selected only Priority nodes can be added/removed and vice versa.</option>
+        <option name="Add Button">With this button complex preferences can be added to the tree. Priority nodes can only be added as a child of a Pareto node or if the tree is empty and vice versa.</option>
+        <option name="Remove Button">With this button complex preferences can be removed from the tree.</option>
+        <option name="Clear Button">Removes all nodes in the tree.</option>
+        <option name="Dimension Selection Box">Box to select which dimension (=column) should get a preference. Additionally
+        to the column names of the data table there is also a custom dimension which can be customized according to the own needs.</option>
+        <option name="Preference Selection Box">Box to select which preference the current selected dimension should have. The following preferences are available: <br />  
+        <b>Lowest:</b> Prefers low values. <br />  
+        <b>Highest:</b>  Prefers high values. <br />  
+        <b>Around:</b> Prefers values around a specific value. This value should be supplied in one of input fields. <br />  
+        <b>Between:</b> Prefers values in a specific interval. The bounds for this interval can be supplied in the input fields. <br />  
+        <b>Boolean:</b> Prefers values for which the boolean statement returns true. Only available for the CustomDimension because the dimension needs to be a Boolean Statement. <br />  
+        <b>Layered:</b> Allows the user to prioritize all existing values of the current selected dimension by sorting them in the LayeredDialog.  </option>
+        <option name="Input Field 1">Input Field for the Around value and the lower bound of the Between preference.</option>
+        <option name="Input Field 2">Input Field for the upper bound of the Between preference.</option>
+        <option name="Input Field 3">Input Field for the CustomDimension in which a custom dimension can be created. 
+        For a data table which contains a goals_made and a goals_attempts column, a custom dimension can look like this:
+         "goals_made/goals_attempts". Custom dimensions can have the same preferences as other dimensions.</option>
+          <option name="Open Layered Dialog">If a dimension should get a Layered preference the LayeredDialog should be opened first.
+          There it is possible to create new positive or negative layers and add values from the selected dimension to these layers.
+          Values in positive layers will get good scores and values in negative layers bad scores. Values in the layer 0 are indifferent.</option>
+        <option name="Add Button">Adds basic preferences to the tree.</option>
+        <option name="Remove Button">Removes basic preferences from the tree.</option>
+        <option name="Show Preference-SQL query">Shows the Preference-SQl query for the current tree structure.</option>
         <!-- possibly more options that can also be grouped by tabs -->
         <!--
         <tab name="Standard Options">
@@ -25,13 +60,12 @@
     </fullDescription>
     
     <ports>
-        <inPort index="0" name="In-Port name">Description of first input port...</inPort>
+        <inPort index="0" name="Database Connection">A database connection with an underlying query</inPort>
+        <inPort index="1" name="Data Table">A data table</inPort>
         <!-- possibly more input ports here-->
-        <outPort index="0" name="Out-Port name">Description of first output port...</outPort>
+        <outPort index="0" name="Database Connection">The database connection which came in this node as an input. 
+        With flow variables which contain score and preference query and this database connection following nodes can create score or skyline tables. </outPort>
+      	<outPort index="1" name="Optional score data table">Optional data table which holds the scores based on the preferences for every data record of the original data table</outPort>
         <!-- possibly more output ports here-->
-    </ports>    
-    <views>
-        <view index="0" name="name of first view">Description of first view...</view>
-        <!--view index="1" name="name of second view">Description of second view...</view-->
-    </views>
+    </ports>
 </knimeNode>
