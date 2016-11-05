@@ -201,6 +201,8 @@ RemoteSystemsTempFiles
 R-Tree
 StringSplitTest
 Test
+.recommenders
+.metadata
 
 Unimportant files
 jcommon-1.0.23.zip
