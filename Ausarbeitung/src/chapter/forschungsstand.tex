@@ -23,7 +23,7 @@ Einer der entwickelten Ansätze besteht darin einen $\epsilon$ Faktor mit den Di
 
 Ein weiterer Ansatz ist die k-Dominanz, welcher in \cite{Chan:2006:FKS:1142473.1142530}, \cite{Chan:2006:HDS:2117976.2118017} und \cite{5480364} besprochen wird. Hierfür wird der Parameter $k$ nicht benutzt, um die Anzahl der repräsentativen Skylinedatensätze festzulegen, sondern wie viele Dimensionen dominiert werden müssen, sodass Dominanz vorliegt. Dies bedeutet, dass ein Datensatz einen anderen dominiert, falls er  in $k$ Dimensionen mindestens gleich gut ist und in einer der $k$ Dimensionen besser ist. Dies führt bei einem kleinen $k$ dazu, dass mehr Datensätze dominiert werden und dadurch wird die Skyline kleiner. Jedoch kann es dazu kommen, dass bei zu kleinen $k$ die $k$-dominante Skyline leer ist und bei zu großem die Skyline zu groß ist. Mit diesen Extremen kann keine Entscheidungen getroffen werden und aus diesem Grund muss zuerst ein passendes $k$ gefunden werden.
 %% ==============================
-\section{Maximiere Diversität}
+\section{Maximierung der Diversität}
 \label{ch:Forschungsstand:sec:maxDiv}
 %% ==============================
 Viele Algorithmen versuchen die Diversität zu maximieren und ignorieren dabei die Signifikanz von einzelnen Datensätzen. Damit soll erreicht werden, dass nur diverse Datensätze in der Ergebnismenge auftauchen und diese einen guten Überblick über die eigentliche Skyline liefern.
@@ -41,7 +41,7 @@ Der letzte vorgestellte Ansatz für diesen Abschnitt ist die Berechnung einer Di
 Den Anfang für diese Methode machte \cite{948}, indem User nach Feedback gefragt wurden, umso die Skyline besser bestimmen zu können.
 In \cite{Lofi10efficientcomputation} wurden User direkt aufgefordert ihre präferierten Datensätze auszuwählen und in \cite{lee2008optimal}, \cite{Mindolin:2009:DRI:1687627.1687697}, \cite{Mindolin:2011:PEP:1969331.1969354} und \cite{Zhao10callto} wurde versucht Präferenzen mit Userfeedback herauszufinden.
 %% ==============================
-\section{Ansätze basierend Signifikanz und Diversität}
+\section{Ansätze basierend auf Signifikanz und Diversität}
 \label{ch:Forschungsstand:sec:userModel}
 %% ==============================
 Der Algorithmus in \cite{magnani2014taking} basiert sowohl auf Diversität als auch auf Signifikanz. Die Diversität zwischen zwei Datensätzen wird dadurch berechnet wie viele Datensätze zwischen diesen liegen. Wohingegen ein Datensatz signifikant ist, wenn dieser für eine bestimmte Dimension einen vom User bestimmten Threshold überschreitet (untere Grenze) oder unterschreitet (obere Grenze).
