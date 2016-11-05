@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?NLS TYPE="org.eclipse.help.toc"?><toc label="Misc" link_to="../org.knime.ext.textprocessing/tocs/labs_textprocessing_misc.xml#labs_textprocessing_misc">
-<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/65ae656a.CategoryToClassNodeFactory.html" label="Category to class"/>
-<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/3895835f.DocumentViewerNodeFactory.html" label="Document Viewer"/>
-<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/203fd872.StringMatcherNodeFactory.html" label="String Matcher"/>
-<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing/html/nodes/10b25d00.TagCloudNodeFactory.html" label="Tag Cloud"/>
-</toc>

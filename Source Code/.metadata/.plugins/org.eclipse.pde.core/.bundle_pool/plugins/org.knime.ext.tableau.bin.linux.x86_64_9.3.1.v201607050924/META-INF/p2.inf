@@ -1,3 +1,0 @@
-instructions.install=\
-    org.knime.product.untar(source:@artifact/tableau-binary/Tableau-SDK-Linux-64Bit-9-3-1.tar.gz,\
-                            targetDir:@artifact);

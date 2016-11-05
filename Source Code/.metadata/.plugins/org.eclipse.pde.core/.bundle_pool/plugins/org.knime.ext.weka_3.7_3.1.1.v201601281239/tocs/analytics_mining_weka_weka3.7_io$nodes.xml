@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?NLS TYPE="org.eclipse.help.toc"?><toc label="IO" link_to="../org.knime.ext.weka_3.7/tocs/analytics_mining_weka_weka3.7_io.xml#analytics_mining_weka_weka3.7_io">
-<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/22641d86.WekaClassifierModelPortObjectWriterNodeFactory.html" label="Weka Classifier Writer (3.7)"/>
-<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/16d5a3d6.WekaClassifierModelPortObjectReaderNodeFactory.html" label="Weka Classifier Reader (3.7)"/>
-<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/4522957a.WekaClustererModelPortObjectWriterNodeFactory.html" label="Weka Clustering Writer (3.7)"/>
-<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/39941bca.WekaClustererModelPortObjectReaderNodeFactory.html" label="Weka Clustering Reader (3.7)"/>
-<topic href="PLUGINS_ROOT/org.knime.ext.weka_3.7/html/nodes/5ba3e3b9.ClassifierWriterNodeFactory.html" label="Weka SerializedClassifier Write (3.7)"/>
-</toc>

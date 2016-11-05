@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?NLS TYPE="org.eclipse.help.toc"?><toc label="Visualization" link_to="../org.knime.network.base/tocs/applications_network_viz.xml#applications_network_viz">
-<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/4bcb2e15.NetworkViewerNodeFactory.html" label="Network Viewer"/>
-<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/3a1e2c0d.VizPropertyExtractorNodeFactory.html" label="Visualization Property Extractor"/>
-<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/11165a3b.VizInputConnectorNodeFactory.html" label="Viz Input Connector"/>
-<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/97e478f.VizOutputConnectorNodeFactory.html" label="Viz Output Connector"/>
-</toc>

@@ -1,6 +1,0 @@
-source.preferencesqlextract.jar = src/
-bin.includes = plugin.xml,\
-               META-INF/,\
-               preferencesqlextract.jar,\
-               icons/,\
-               bin/org/knime/preference/extract/extractor.png

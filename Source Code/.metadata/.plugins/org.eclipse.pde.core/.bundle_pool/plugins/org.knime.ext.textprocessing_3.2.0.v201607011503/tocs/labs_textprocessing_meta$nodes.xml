@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?NLS TYPE="org.eclipse.help.toc"?><toc label="Meta Nodes" link_to="../org.knime.ext.textprocessing/tocs/labs_textprocessing_meta.xml#labs_textprocessing_meta">
-<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing\html/nodes/Meta_Simple_Preprocessing.html" label="Simple Preprocessing"/>
-<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing\html/nodes/Meta_Extended_NER_Preprocessing.html" label="Extended NER Preprocessing"/>
-<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing\html/nodes/Meta_Frequencies.html" label="Frequencies"/>
-<topic href="PLUGINS_ROOT/org.knime.ext.textprocessing\html/nodes/Meta_Vector_Creation.html" label="Vector Creation"/>
-</toc>

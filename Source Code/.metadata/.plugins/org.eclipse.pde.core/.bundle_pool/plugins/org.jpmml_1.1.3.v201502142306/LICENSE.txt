@@ -1,9 +1,0 @@
-This plug-in contains several libraries with their respective licenses:
-
-* Guava - Apache License 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
-* JAXB - GPL2 w/ CPE (https://glassfish.java.net/public/CDDL+GPL_1_1.html)
-* Joda-Time - Apache License 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
-* pmml-evaluator - AGPL 3.0 (http://www.gnu.org/licenses/agpl-3.0.html)
-* pmml-manager - AGPL 3.0 (http://www.gnu.org/licenses/agpl-3.0.html)
-* pmml-model - BSD 3 (see LICENSE-jpmml.txt)
-* pmml-schema - BSD 3 (see LICENSE-jpmml.txt)

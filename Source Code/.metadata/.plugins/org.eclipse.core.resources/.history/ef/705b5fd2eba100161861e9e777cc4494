@@ -1,8 +1,0 @@
-source.blocknestedloop.jar = src/
-bin.includes = plugin.xml,\
-               META-INF/,\
-               blocknestedloop.jar,\
-               icons/,\
-               bin/,\
-               src/
-additional.bundles = org.knime.ext.jfreechart

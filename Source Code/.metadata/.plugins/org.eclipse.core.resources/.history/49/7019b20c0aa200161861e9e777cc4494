@@ -1,6 +1,0 @@
-source.representativeskyline.jar = src/
-bin.includes = plugin.xml,\
-               META-INF/,\
-               representativeskyline.jar,\
-               icons/,\
-               bin/org/knime/repskyline/repSkyline.png

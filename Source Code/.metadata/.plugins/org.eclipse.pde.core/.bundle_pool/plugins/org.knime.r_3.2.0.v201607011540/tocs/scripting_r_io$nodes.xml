@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?NLS TYPE="org.eclipse.help.toc"?><toc label="IO" link_to="../org.knime.r/tocs/scripting_r_io.xml#scripting_r_io">
-<topic href="PLUGINS_ROOT/org.knime.r/html/nodes/3c4c9e14.RPortObjectReaderNodeFactory.html" label="R Model Reader"/>
-<topic href="PLUGINS_ROOT/org.knime.r/html/nodes/47db17c4.RPortObjectWriterNodeFactory.html" label="R Model Writer"/>
-</toc>

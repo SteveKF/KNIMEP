@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 2 elements to &apos;DomMaximizer/src&apos;&#x0A;- Original project: &apos;DominationMaximizer&apos;&#x0A;- Destination element: &apos;DomMaximizer/src&apos;&#x0A;- Original elements:&#x0A;     org.knime.preferences.maximizer.DataPoint.java&#x0A;     org.knime.preferences.maximizer.DominationMaximizer.java" description="Copy compilation units" destination="=DomMaximizer/src" element1="/src&lt;org.knime.preferences.maximizer{DataPoint.java" element2="/src&lt;org.knime.preferences.maximizer{DominationMaximizer.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1475740155884" units="2" version="1.0"/>
-</session>

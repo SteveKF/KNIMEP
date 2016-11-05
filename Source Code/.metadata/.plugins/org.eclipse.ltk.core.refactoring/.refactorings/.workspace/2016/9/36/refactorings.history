@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 0 packages to &apos;Representative Skyline/src/gui&apos;&#x0A;- Destination element: &apos;Representative Skyline/src/gui&apos;" description="Copy packages" destination="=Representative Skyline/src&lt;gui" flags="589830" fragments="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1473322661902" version="1.0"/>
-</session>

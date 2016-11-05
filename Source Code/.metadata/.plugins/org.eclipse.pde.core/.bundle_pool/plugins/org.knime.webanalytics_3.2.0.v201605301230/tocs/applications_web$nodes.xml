@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?NLS TYPE="org.eclipse.help.toc"?><toc label="Web Log" link_to="../org.knime.webanalytics/tocs/applications_web.xml#applications_web">
-<topic href="PLUGINS_ROOT/org.knime.webanalytics/html/nodes/50520709.WeblogReaderNodeFactory.html" label="Web Log Reader"/>
-<topic href="PLUGINS_ROOT/org.knime.webanalytics/html/nodes/5ef1595f.CountryExctractorNodeFactory.html" label="Country Extractor"/>
-<topic href="PLUGINS_ROOT/org.knime.webanalytics/html/nodes/7e3a076b.ByteConverterNodeFactory.html" label="Byte Converter"/>
-</toc>

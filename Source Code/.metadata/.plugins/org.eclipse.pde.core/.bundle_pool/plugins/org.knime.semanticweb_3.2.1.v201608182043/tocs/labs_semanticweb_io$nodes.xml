@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?NLS TYPE="org.eclipse.help.toc"?><toc label="IO" link_to="../org.knime.semanticweb/tocs/labs_semanticweb_io.xml#labs_semanticweb_io">
-<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/19a00fcb.FileReaderNodeFactory.html" label="Triple File Reader"/>
-<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/1eefec02.WriteTripleToFileNodeFactory.html" label="Triple File Writer"/>
-<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/3b1c15f1.InsertFileNodeFactory.html" label="SPARQL File Inserter"/>
-<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/3da5cd04.WriteToFileNodeFactory.html" label="SPARQL File Writer"/>
-</toc>

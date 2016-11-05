@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?NLS TYPE="org.eclipse.help.toc"?><toc label="Table" link_to="../org.knime.network.base/tocs/applications_network_convert_table.xml#applications_network_convert_table">
-<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/413de489.EdgeTableWriterNodeFactory.html" label="Edge Table"/>
-<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/3205e2f0.FeatureTableNodeFactory.html" label="Feature Table"/>
-<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/395acc0a.NodeNeighborExtractorNodeFactory.html" label="Node Neighbor Extractor"/>
-<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/539e9641.NodeTableWriterNodeFactory.html" label="Node Table"/>
-<topic href="PLUGINS_ROOT/org.knime.network.base/html/nodes/f0c9910.PartitionTableNodeFactory.html" label="Partition Table"/>
-</toc>

@@ -1,5 +1,0 @@
-source.preferencesql.jar = src/
-bin.includes = plugin.xml,\
-               META-INF/,\
-               preferencesql.jar,\
-               icons/

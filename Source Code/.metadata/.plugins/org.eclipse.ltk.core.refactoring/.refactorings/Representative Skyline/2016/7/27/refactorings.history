@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;First.java&apos; to &apos;BNL - Knime/src/org.knime.bnl&apos;&#x0A;- Original project: &apos;Representative Skyline&apos;&#x0A;- Destination element: &apos;BNL - Knime/src/org.knime.bnl&apos;&#x0A;- Original element: &apos;org.knime.First.java&apos;" description="Copy compilation unit" destination="=BNL - Knime/src&lt;org.knime.bnl" element1="/src&lt;org.knime{First.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1467810851604" units="1" version="1.0"/>
-</session>

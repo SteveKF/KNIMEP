@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?NLS TYPE="org.eclipse.help.toc"?><toc label="Connector" link_to="../org.knime.semanticweb/tocs/labs_semanticweb_connector.xml#labs_semanticweb_connector">
-<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/2faecf68.InMemoryEndpointNodeFactory.html" label="Memory Endpoint"/>
-<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/188447d4.SPARQLEndpointFactory.html" label="SPARQL Endpoint"/>
-<topic href="PLUGINS_ROOT/org.knime.semanticweb/html/nodes/33df23df.VirtuosoEndpointFactory.html" label="Virtuoso Endpoint"/>
-</toc>
