@@ -203,6 +203,7 @@ StringSplitTest
 Test
 .recommenders
 .metadata
+runtime-New_configuration
 
 Unimportant files
 jcommon-1.0.23.zip
