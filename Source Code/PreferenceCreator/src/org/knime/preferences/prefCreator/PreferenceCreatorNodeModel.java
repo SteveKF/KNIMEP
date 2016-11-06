@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeMap;
-
 import javax.swing.tree.DefaultTreeModel;
 import org.knime.core.data.DataTableSpec;
 import org.knime.core.node.BufferedDataTable;
@@ -93,7 +92,7 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 			else
 				pushFlowVariableString(columnNames[i], ConfigKeys.CFG_KEY_NOT_EXISTS_PREFERENCE);
 		}
-
+				
 		// return original database connection and the score table as optional
 		// output
 		return new PortObject[] { inData[DATABASE_CONNECTION_PORT], scoreTable, FlowVariablePortObject.INSTANCE };

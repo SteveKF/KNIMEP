@@ -12,6 +12,7 @@ import javax.swing.JDialog;
 import javax.swing.JFormattedTextField;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  * Class which is a JPanel and allows the user to add preferences to the JTree from a PriorityPanel.
@@ -35,7 +36,7 @@ public class PreferencePanel extends JPanel{
 	* Field for the Custom Dimension. In this field the user can type his own Preference.
 	* For example 'price/power'. He can still use the original preferences except the Layered one.
 	*/
-	private JFormattedTextField booleanField;
+	private JTextField booleanField;
 	//Button to open the Layered Dialog
 	private JButton layeredButton;
 	//Button to add Preference nodes to the JTree of the PriorityPanel
@@ -112,9 +113,9 @@ public class PreferencePanel extends JPanel{
 
 		// input fields for numeric preferences
 		numericField1 = new JFormattedTextField(new Double(0.0));
-		numericField1.setColumns(7);
+		numericField1.setColumns(10);
 		numericField2 = new JFormattedTextField(new Double(0.0));
-		numericField2.setColumns(7);
+		numericField2.setColumns(10);
 		gc.gridx = 0;
 		gc.gridy = 2;
 		preferenceEditor.add(numericField1,gc);
@@ -123,8 +124,9 @@ public class PreferencePanel extends JPanel{
 		preferenceEditor.add(numericField2,gc);
 
 		// nonNumericBox + inputField
-		booleanField = new JFormattedTextField(new String(""));
-		booleanField.setColumns(14);
+		booleanField = new JTextField("");
+		booleanField.setEditable(true);
+		booleanField.setColumns(20);
 		gc.gridx = 0;
 		gc.gridy = 3;
 		gc.gridwidth = 2;
@@ -350,7 +352,7 @@ public class PreferencePanel extends JPanel{
 	 * @return Returns the JFormattedTextField for the input of the Custom Dimension. 
 	 * In this field the user can create his own dimension. (e.g. 'price/power' where price and power are single dimensions).
 	 */
-	public JFormattedTextField getBooleanField() {
+	public JTextField getBooleanField() {
 		return booleanField;
 	}
 	
@@ -432,7 +434,7 @@ public class PreferencePanel extends JPanel{
 	 * @return Returns the input of the field which stores the values of a custom created dimension.
 	 */
 	public String getBooleanValue() {
-		return (String) booleanField.getValue();
+		return (String) booleanField.getText();
 	}
 	
 	public void setDimension(String dimension) {
@@ -476,7 +478,7 @@ public class PreferencePanel extends JPanel{
 	 */
 	public void setBooleanValue(String booleanInput) {
 
-		booleanField.setValue(booleanInput);
+		booleanField.setText(booleanInput);
 
 	}
 

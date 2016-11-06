@@ -111,7 +111,7 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 
 		} else if (Preference.isBoolean(preference)) {
 
-			statement = dimension;
+			statement = "" + dimension + " BOOLEAN";
 
 		} else if (Preference.isLayered(preference)) {
 
@@ -200,23 +200,24 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 
 		if (Preference.isLowest(preference)) {
 
-			statement = "Lowest(" + dimension + ")";
+			statement = "" + dimension + " LOWEST";
 
 		} else if (Preference.isHighest(preference)) {
 
-			statement = "Highest(" + dimension + ")";
+			statement = "" + dimension + " HIGHEST";
 
 		} else if (Preference.isAround(preference)) {
 
-			statement = "Around(" + dimension + "," + numericValue1 + ")";
+			statement = "" + dimension + " AROUND " + numericValue1 + "";
 
 		} else if (Preference.isBetween(preference)) {
 
-			statement = "Between(" + dimension + ",[" + numericValue1 + "," + numericValue2 + "])";
+			statement = "" + dimension + " BETWEEN " + numericValue1 + ", " + numericValue2 + "";
+
 
 		} else if (Preference.isBoolean(preference)) {
 
-			statement = booleanValue;
+			statement = "" + dimension + " BOOLEAN";
 
 		} else if (Preference.isLayered(preference)) {
 

@@ -77,6 +77,8 @@ public class LayeredDialog extends JDialog {
 	//VALUE_SINGLE_ELEMENT = 2
 
 	public static final String LAYER = "Layer ";
+	
+	private TreeUtil treeUtil;
 
 	/**
 	 * Constructor of the LayeredDialog which sets up a JTree and Buttons and Boxes to move the values to between Layers.
@@ -96,6 +98,7 @@ public class LayeredDialog extends JDialog {
 		rootNode = new DefaultMutableTreeNode("root node, should be invisible");
 		treeModel = new DefaultTreeModel(rootNode);
 		jTree.setModel(treeModel);
+		treeUtil = new TreeUtil(jTree, layerList);
 
 		// add a positive layer (Layer 1)
 		DefaultMutableTreeNode parentNode = (DefaultMutableTreeNode) treeModel.getRoot();
@@ -107,6 +110,7 @@ public class LayeredDialog extends JDialog {
 		parentNode = (DefaultMutableTreeNode) treeModel.getRoot();
 		layer0 = new DefaultMutableTreeNode(LAYER +0);
 		addNode(parentNode, layer0);
+		layerList.add(layer0);
 
 		// add every value to layer 0
 		for (int i = 0; i < values.size(); i++) {
@@ -121,7 +125,10 @@ public class LayeredDialog extends JDialog {
 		layerList.add(node);
 		
 		JScrollPane listScrollPane = new JScrollPane(jTree);
-
+		
+		for(int i=0; i < jTree.getRowCount(); i++)
+			jTree.expandRow(i);
+		
 		// buttons to add and remove layers => buttonPrioPanel
 		JPanel buttonPrioPanel = new JPanel(new GridLayout(4, 0));
 		addLayer = new JButton("Add");
@@ -211,15 +218,17 @@ public class LayeredDialog extends JDialog {
 	private void addNode(DefaultMutableTreeNode parentNode, DefaultMutableTreeNode node) {
 
 		// adds the node to the parentNode
+		String expansionState = treeUtil.getExpansionState();
+		
 		treeModel.insertNodeInto(node, parentNode, parentNode.getChildCount());
 		if (parentNode == treeModel.getRoot()) {
 			treeModel.nodeStructureChanged((TreeNode) treeModel.getRoot());
 		}
-		jTree.scrollPathToVisible(new TreePath(node.getPath()));
+	
+		treeUtil.setExpansionState(expansionState);
 		
-		for (int i = 0; i < jTree.getRowCount(); i++) {
-		    jTree.expandRow(i);
-		}
+		if(parentNode.getChildCount()==1)
+			jTree.scrollPathToVisible(new TreePath(node.getPath()));
 	}
 
 	/**
@@ -284,7 +293,7 @@ public class LayeredDialog extends JDialog {
 			parentNode = (DefaultMutableTreeNode) (parentPath.getLastPathComponent());
 
 			// add valueNode only if the selected node is a layer node
-			if (layerList.contains(parentNode) || parentNode == layer0) {
+			if (layerList.contains(parentNode)) {
 
 				// searches for the value node with the current selected value
 				childNode = searchNode((String) valueBox.getSelectedItem());
@@ -294,7 +303,7 @@ public class LayeredDialog extends JDialog {
 					
 					if(result == VALUE_LAYER0 || result == VALUE_NODE_REMOVED){
 						removeNodeFromLayer0(childNode);
-						addNode(parentNode, childNode);	
+						addNode(parentNode, childNode);
 						isNodeAdded = VALUE_NODE_ADDED;
 					}else
 						isNodeAdded = VALUE_SINGLE_ELEMENT;
@@ -303,6 +312,12 @@ public class LayeredDialog extends JDialog {
 		}
 
 		return isNodeAdded;
+	}
+	
+	private void removeNode(DefaultMutableTreeNode node){
+		String expansionState = treeUtil.getExpansionState();
+		treeModel.removeNodeFromParent(node);
+		treeUtil.setExpansionState(expansionState);
 	}
 
 	/**
@@ -323,8 +338,7 @@ public class LayeredDialog extends JDialog {
 		}
 
 		if (childNode != null) {
-			layer0.remove(childNode);
-			treeModel.reload();
+			removeNode(childNode);
 			isRemoved = true;
 		}
 
@@ -367,9 +381,9 @@ public class LayeredDialog extends JDialog {
 					removedValueNodes.add((DefaultMutableTreeNode) node.getChildAt(i));
 				}
 
-				treeModel.removeNodeFromParent(node);
+				removeNode(node);
 				
-				if(layerList.contains(node))
+				if(layerList.contains(node) && node != layer0)
 					layerList.remove(node);
 				
 				isRemoved = true;
@@ -397,9 +411,9 @@ public class LayeredDialog extends JDialog {
 
 		DefaultMutableTreeNode deletableNode = searchNode((String) valueBox.getSelectedItem());
 		
-		if (deletableNode != null && layerList.contains(deletableNode.getParent())) {
+		if (deletableNode != null && layerList.contains(deletableNode.getParent()) && deletableNode.getParent()!=layer0) {
 			if (isRemovable(deletableNode)) {
-				treeModel.removeNodeFromParent(deletableNode);
+				removeNode(deletableNode);
 				//add removed node to layer 0 
 				addNode(layer0,deletableNode);
 				result = VALUE_NODE_REMOVED;
@@ -447,6 +461,8 @@ public class LayeredDialog extends JDialog {
 	 * Layer 1, Layer 2, ..., Layer 0, Layer -1, Layer -2, ...
 	 */
 	private void sortTree() {
+		
+		String expandsionState = treeUtil.getExpansionState();
 
 		LinkedList<Integer> positive = new LinkedList<>();
 		LinkedList<Integer> negative = new LinkedList<>();
@@ -510,6 +526,9 @@ public class LayeredDialog extends JDialog {
 			node = searchNode(LAYER + negative.get(i), nodeList);
 			addNode(rootNode, node);
 		}
+		
+		treeUtil.setExpansionState(expandsionState);
+		
 	}
 
 	/**
@@ -559,8 +578,8 @@ public class LayeredDialog extends JDialog {
 		
 		assert(node != null);
 		
-		//return true if the node isn't a layer node or is Layer 0
-		if(!layerList.contains(node) || node == layer0)
+		//return true if the node isn't a layer node
+		if(!layerList.contains(node))
 			return true;
 
 		boolean isEmpty = node.getChildCount() <= 0 ? true : false;
