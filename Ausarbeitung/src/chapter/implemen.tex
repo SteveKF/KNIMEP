@@ -10,7 +10,7 @@ Danach werden die einzelnen Schritte der Implementierung des NodeDialogs und Nod
 %% ==============================
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.23\textwidth]{prefCreatorLogo.png}
+	\includegraphics{prefCreatorLogo.png}
 	\caption{PreferenceCreator Node}
 	\label{img:prefCreatorLogo}
 \end{figure} 
@@ -20,14 +20,14 @@ In Abbildung \ref{img:prefCreatorDBConnection} ist einer dieser Objekte mit alle
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.85\textwidth]{prefCreatorDBConnection.png}
+	\includegraphics[width=\textwidth]{prefCreatorDBConnection.png}
 	\caption{DataBaseConnection Inport des PreferenceCreator Nodes}
 	\label{img:prefCreatorDBConnection}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\textwidth]{prefCreatorDataTable.png}
+	\includegraphics[width=\textwidth]{prefCreatorDataTable.png}
 	\caption{BufferedDataTable Inport des PreferenceCreator Nodes}
 	\label{img:prefCreatorDataTable}
 \end{figure}
@@ -42,14 +42,14 @@ Die zweite Ausgabe stellt die Scoretabelle da, einen BufferedDataTable der durch
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{comparisonOptional.png}
+	\includegraphics{comparisonOptional.png}
 	\caption{Vergleich zwischen einer optionalen und vollwertigen Ein/Ausgabe in KNIME}
 	\label{img:comparisonOptional}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{prefCreatorNodeDialog.png}
+	\includegraphics[width=\textwidth]{prefCreatorNodeDialog.png}
 	\caption{PreferenceEditor, in dem der User seine Präferenzen einstellen kann}
 	\label{img:prefCreatorNodeDialog}
 \end{figure}
@@ -65,7 +65,7 @@ Auf der linken Seite des LayeredDialogs kann der User positive Layer oder negati
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{prefCreatorLayeredDialog.png}
+	\includegraphics[width=\textwidth]{prefCreatorLayeredDialog.png}
 	\caption{LayeredDialog}
 	\label{img:prefCreatorLayeredDialog}
 \end{figure}
@@ -161,7 +161,7 @@ In der $execute$ Methode wird ein leerer BufferedDataTable mit einer Spalte und 
 %% ==============================
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.22\textwidth]{prefSqlLogo.png}
+	\includegraphics{prefSqlLogo.png}
 	\caption{PreferenceSQL Node}
 	\label{img:prefSQLLogo}
 \end{figure}
@@ -178,7 +178,7 @@ Im NodeDialog kann der User noch zusätzlich die Anzahl der zurückgegeben Daten
 %% ==============================
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.22\textwidth]{bnlLogo.png}
+	\includegraphics{bnlLogo.png}
 	\caption{Block-Nested-Loop Node}
 	\label{img:bnlLogo}
 \end{figure}
@@ -227,7 +227,7 @@ Der Block-Nested-Loop ermöglicht auch eine Darstellung der Datensätze mittels 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\textwidth]{bnlSkyline.png}
+	\includegraphics[width=\textwidth]{bnlSkyline.png}
 	\caption{Skyline-Datensätze, die durch die Block-Nested-Loop Node entsteht}
 	\label{img:bnlSkyline}
 \end{figure}
@@ -237,7 +237,7 @@ Der Block-Nested-Loop ermöglicht auch eine Darstellung der Datensätze mittels 
 %% ==============================
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.26\textwidth]{domMaximizerLogo.png}
+	\includegraphics{domMaximizerLogo.png}
 	\caption{DominationMaximizer Node}
 	\label{img:domMaximierLogo}
 \end{figure}
@@ -255,7 +255,7 @@ Der in der $execute$ Methode auszuführender Algorithmus für diesen Node wurde 
 %% ==============================
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.26\textwidth]{distBasedResolverLogo.png}
+	\includegraphics{distBasedResolverLogo.png}
 	\caption{E-Greedy Node}
 	\label{img:distBasedResolverLogo}
 \end{figure}
@@ -273,7 +273,7 @@ Der NodeDialog bietet dem User ein Eingabefenster, um die Anzahl der repräsenta
 %% ==============================
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.26\textwidth]{eGreedyLogo.png}
+	\includegraphics{eGreedyLogo.png}
 	\caption{E-Greedy Node}
 	\label{img:eGreedyLogo}
 \end{figure}
@@ -285,7 +285,7 @@ Für die Berechnung der Signifikanz wird eine Sigmoidfunktion benutzt, da diese 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{eGreedyNodeDialog.png}
+	\includegraphics{eGreedyNodeDialog.png}
 	\caption{NodeDialog des E-Greedy Nodes}
 	\label{img:eGreedyNodeDialog}
 \end{figure}
@@ -294,7 +294,7 @@ Nach Ausführung des Algorithmus werden zwei Outputs ausgegeben. Die $k$ repräs
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{eGreedyOutput.png}
+	\includegraphics[width=\textwidth]{eGreedyOutput.png}
 	\caption{Repräsentative Skyline, die durch den E-Greedy Node entsteht}
 	\label{img:eGreedyOutput}
 \end{figure}
@@ -304,7 +304,7 @@ Nach Ausführung des Algorithmus werden zwei Outputs ausgegeben. Die $k$ repräs
 %% ==============================
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.26\textwidth]{skyVisualizerLogo.png}
+	\includegraphics{skyVisualizerLogo.png}
 	\caption{Sky Visualizer Node}
 	\label{img:skyVisualizerLogo}
 \end{figure}
@@ -315,7 +315,7 @@ Im NodeDialog (siehe \ref{img:skyVisualizerNodeDialog}) kann der User einstellen
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{skyVisualizerNodeDialog.png}
+	\includegraphics{skyVisualizerNodeDialog.png}
 	\caption{NodeDialog des SkylineVisualizer Nodes}
 	\label{img:skyVisualizerNodeDialog}
 \end{figure}
@@ -324,7 +324,7 @@ Für das Autobeispiel in \ref{img:prefCreatorNodeDialog}, welches drei Dimension
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{skyVisualizerView2.png}
+	\includegraphics[width=\textwidth]{skyVisualizerView2.png}
 	\caption{View des Skyline Visualizer Nodes für drei Dimensionen}
 	\label{img:skyVisiualizerView2}
 \end{figure}
@@ -333,7 +333,7 @@ Falls für das Beispiel der Prioritätsknoten wegfällt und es auf die zwei Prä
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{skyVisualizerView1.png}
+	\includegraphics[width=\textwidth]{skyVisualizerView1.png}
 	\caption{View des Skyline Visualizer Nodes für zwei Dimensionen}
 	\label{img:skyVisiualizerView1}
 \end{figure}
