@@ -18,7 +18,7 @@ public class ToolTipPanel extends JPanel{
 	 * Constructor which will add a JLabel with a tooltip text for the user to this JPanel.
 	 */
 	protected ToolTipPanel(){
-		tooltipLabel = new JLabel("<html>Start with creating a Preference or Pareto node.<br></html>");
+		tooltipLabel = new JLabel("<html>Start with creating a Preference, Pareto or basic preference node.<br></html>");
 		add(tooltipLabel);
 	}
 	

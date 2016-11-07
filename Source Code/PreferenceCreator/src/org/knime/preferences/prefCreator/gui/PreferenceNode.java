@@ -310,7 +310,7 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 
 		} else if (Preference.isBoolean(preference)) {
 
-			statement = "(CASE WHEN (CAST(("+booleanValue+") as integer)) > 0 THEN -1 ELSE 0 END) AS " + alias + "";
+			statement = "(CASE WHEN (CAST((" + booleanValue + ") as integer)) > 0 THEN -1 ELSE 0 END) AS " + alias + "";
 
 		} else if (Preference.isLayered(preference)) {
 
@@ -342,7 +342,7 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 
 			DefaultMutableTreeNode layer = (DefaultMutableTreeNode) rootNode.getChildAt(i);
 
-			if (layer.getChildCount() > 0) {
+			if (layer.getChildCount() > 0 && layer != layer0) {
 
 				layered.append("WHEN " + dimension + " IN (");
 
@@ -354,26 +354,18 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 					}
 				}
 
-				if (layer == layer0) {
-
-					layered.append(") THEN 0 ");
-					isNegative = true;
-
+				if (!isNegative) {
+					layered.append(") THEN " + num_positive_layers-- + " ");
 				} else {
-
-					if (!isNegative) {
-						layered.append(") THEN " + num_positive_layers-- + " ");
-					} else {
-						layered.append(") THEN " + num_negative_layers-- + " ");
-					}
-
+					layered.append(") THEN " + num_negative_layers-- + " ");
 				}
+
 			} else if (layer == layer0) {
 				isNegative = true;
 			}
 		}
 
-		layered.append("END)");
+		layered.append("ELSE 0 END)");
 
 		return layered.toString();
 

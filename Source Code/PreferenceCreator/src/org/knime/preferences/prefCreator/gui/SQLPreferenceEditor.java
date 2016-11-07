@@ -77,7 +77,7 @@ public class SQLPreferenceEditor extends JPanel {
 		sqlGenerator.print();
 	}
 
-	public String getScoreQuery() {
+	public String getScoreQuery() throws InvalidSettingsException {
 		return sqlGenerator.getScoreQuery();
 	}
 

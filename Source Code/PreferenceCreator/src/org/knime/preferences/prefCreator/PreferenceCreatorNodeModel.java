@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeMap;
 import javax.swing.tree.DefaultTreeModel;
+
+import org.knime.core.data.DataTable;
 import org.knime.core.data.DataTableSpec;
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.CanceledExecutionException;
@@ -57,9 +59,10 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 	 */
 	@Override
 	protected PortObject[] execute(final PortObject[] inData, final ExecutionContext exec) throws Exception {
-
+		
 		if (scoreQuery == null || preferenceQuery == null || dimensions == null)
-			new IllegalArgumentException("Can't create queries with current settings.");
+			throw new IllegalArgumentException("Can't create queries with current settings. Open the dialog to create preferences.");
+
 
 		// get database connection settings
 		DatabasePortObjectSpec spec = (DatabasePortObjectSpec) inData[DATABASE_CONNECTION_PORT].getSpec();
@@ -112,8 +115,15 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 	@Override
 	protected PortObjectSpec[] configure(final PortObjectSpec[] inSpecs) throws InvalidSettingsException {
 
-		// FlowVariablePortObjectSpec spec =
-		// FlowVariablePortObjectSpec.INSTANCE;
+		DataTableSpec dbSpec = ((DatabasePortObjectSpec) inSpecs[DATABASE_CONNECTION_PORT]).getDataTableSpec();
+		DataTableSpec spec = (DataTableSpec) inSpecs[TABLE_PORT];
+		boolean isEqual = true;
+		
+		if(!dbSpec.equalStructure(spec))
+			isEqual = false;
+		
+		if(!isEqual)
+			throw new InvalidSettingsException("The database connection needs to return the same data table as the data table at inport 1.");
 
 		return new PortObjectSpec[] { inSpecs[DATABASE_CONNECTION_PORT], null, null };
 	}

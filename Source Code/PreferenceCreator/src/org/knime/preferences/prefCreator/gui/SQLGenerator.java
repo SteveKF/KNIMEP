@@ -283,8 +283,12 @@ public class SQLGenerator {
 	 * @return scoreQuery - if the computation of the queries was successful
 	 *         </br>
 	 *         original query - if the computation of the queries failed
+	 * @throws InvalidSettingsException if the root node of the tree has no children
 	 */
-	public String getScoreQuery() {
+	public String getScoreQuery() throws InvalidSettingsException {
+		
+		if(priorityPanel.getRootNode().getChildCount()==0)
+			throw new InvalidSettingsException("Tree has no children!");
 
 		computeValues(false);
 
@@ -300,8 +304,14 @@ public class SQLGenerator {
 	 */
 	public void print() {
 
-		System.out.println(getScoreQuery());
-		System.out.println(getPreferenceQuery());
+		try {
+			System.out.println(getScoreQuery());
+			System.out.println(getPreferenceQuery());
+		} catch (InvalidSettingsException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 
 	}
 }

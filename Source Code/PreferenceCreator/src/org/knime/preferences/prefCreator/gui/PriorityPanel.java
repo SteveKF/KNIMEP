@@ -371,13 +371,17 @@ public class PriorityPanel extends JPanel {
 		int resultValue = PREFENCE_NOT_SELECTED;
 
 		PreferenceNode parentNode = null;
-
 		TreePath parentPath = jTree.getSelectionPath();
+		
+		//if tree is empty a simple prefence can be added. After that no other nodes are allowed in the tree.
+		if(rootNode.getChildCount()==0)
+			parentPath = new TreePath(rootNode.getPath());
+		
 		if (parentPath != null) {
 
 			parentNode = (PreferenceNode) (parentPath.getLastPathComponent());
 
-			if ((parentNode.isPriorityNode() || parentNode.isParetoNode())) {
+			if ((parentNode.isPriorityNode() || parentNode.isParetoNode()) || parentNode==rootNode) {
 				
 				LayeredDialog layeredDialog = preferencePanel.getPreferenceDataSaver()
 						.getLayeredDialog(preferencePanel.getDimension());
