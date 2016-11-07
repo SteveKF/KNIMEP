@@ -15,7 +15,7 @@ import javax.swing.tree.TreePath;
  *
  */
 public class PreferenceNode extends DefaultMutableTreeNode {
-	
+
 	private static final long serialVersionUID = 6529685098267757690L;
 
 	private String dimension;
@@ -51,18 +51,18 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 	public PreferenceNode(String nodeName, PreferencePanel preferencePanel, int columnNumber) {
 
 		super(nodeName);
-		
+
 		this.columnNumber = columnNumber;
-		
+
 		dimension = preferencePanel.getDimension();
 		preference = preferencePanel.getPreference();
 		numericValue1 = preferencePanel.getNumericValue1();
 		numericValue2 = preferencePanel.getNumericValue2();
 		booleanValue = preferencePanel.getBooleanValue();
-		
-		if(dimension == SQLPreferenceEditor.CUSTOM_DIMENSION)
+
+		if (dimension == SQLPreferenceEditor.CUSTOM_DIMENSION)
 			dimension = booleanValue;
-		
+
 	}
 
 	/**
@@ -90,7 +90,7 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 	 * @return Returns the preference statement for this node
 	 */
 	public String createPreferenceStatement() {
-	
+
 		String statement = "";
 
 		if (Preference.isLowest(preference)) {
@@ -124,7 +124,8 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 	}
 
 	/**
-	 * Create the Preference Statement for a node with a Layered preference. This will be used for the preference query.
+	 * Create the Preference Statement for a node with a Layered preference.
+	 * This will be used for the preference query.
 	 * 
 	 * @return Returns the preference statement for the layered preference
 	 */
@@ -186,17 +187,17 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 	}
 
 	/**
-	 * Changes the preferences names.
-	 * Can be used from other classes to create names for this node with current settings.
+	 * Changes the preferences names. Can be used from other classes to create
+	 * names for this node with current settings.
 	 * 
 	 * @param preferencePanel
 	 *            - a preference panel object
-	 * @return Returns the name for the node according to the member variables values of this node
+	 * @return Returns the name for the node according to the member variables
+	 *         values of this node
 	 */
 	public void changeNodeName() {
 
 		String statement = "";
-		
 
 		if (Preference.isLowest(preference)) {
 
@@ -214,7 +215,6 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 
 			statement = "" + dimension + " BETWEEN " + numericValue1 + ", " + numericValue2 + "";
 
-
 		} else if (Preference.isBoolean(preference)) {
 
 			statement = "" + dimension + " BOOLEAN";
@@ -225,57 +225,56 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 
 		}
 
-		//change name of this node
+		// change name of this node
 		setUserObject(statement);
-		
+
 	}
-	
 
 	/**
-	 * Creates clone of the rootNode and the Layer 0 from the LayeredDialog and saves these clones as member variables.
+	 * Creates clone of the rootNode and the Layer 0 from the LayeredDialog and
+	 * saves these clones as member variables.
 	 * 
 	 * @param layeredDialog
 	 *            - a layered dialog object
 	 */
 	public void setRootNode(LayeredDialog layeredDialog) {
-		
+
 		rootNode = new DefaultMutableTreeNode("rootNode");
 		layer0 = new DefaultMutableTreeNode(LayeredDialog.LAYER + 0);
-		//positive layer size used for creating the score statement
+		// positive layer size used for creating the score statement
 		positiveLayerSize = layeredDialog.getPositiveLayerSize();
-		
+
 		DefaultTreeModel treeModel = new DefaultTreeModel(rootNode);
 		JTree jTree = new JTree();
 		jTree.setModel(treeModel);
-		
+
 		DefaultMutableTreeNode layeredRoot = layeredDialog.getRootNode();
-		
-		for(int i=0; i < layeredRoot.getChildCount(); i++){
-			
-			//add layers to rootNode
+
+		for (int i = 0; i < layeredRoot.getChildCount(); i++) {
+
+			// add layers to rootNode
 			DefaultMutableTreeNode layeredLayer = (DefaultMutableTreeNode) layeredRoot.getChildAt(i);
-			
-			if(layeredLayer == layeredDialog.getLayer0()){
+
+			if (layeredLayer == layeredDialog.getLayer0()) {
 				layer0 = new DefaultMutableTreeNode(layeredLayer.getUserObject());
 				layer0.removeAllChildren();
 				rootNode.add(layer0);
-			}
-			else{
+			} else {
 				DefaultMutableTreeNode layer = new DefaultMutableTreeNode(layeredLayer.getUserObject());
 				layer.removeAllChildren();
 				rootNode.add(layer);
 			}
-			
-			for(int j=0; j < layeredLayer.getChildCount(); j++){
-				
+
+			for (int j = 0; j < layeredLayer.getChildCount(); j++) {
+
 				DefaultMutableTreeNode layeredValue = (DefaultMutableTreeNode) layeredLayer.getChildAt(j);
-				
+
 				DefaultMutableTreeNode valueNode = new DefaultMutableTreeNode(layeredValue.getUserObject());
-					
-				addNode((DefaultMutableTreeNode) rootNode.getChildAt(i),valueNode,treeModel,jTree);
-				
+
+				addNode((DefaultMutableTreeNode) rootNode.getChildAt(i), valueNode, treeModel, jTree);
+
 			}
-		
+
 		}
 	}
 
@@ -285,7 +284,7 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 	 * @return Returns score statement
 	 */
 	public String createScoreStatement() {
-		
+
 		String alias = COLUMN_NAME + columnNumber;
 
 		String statement = "";
@@ -306,13 +305,12 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 
 			statement = "(CASE WHEN " + dimension + " >= " + numericValue1 + " AND " + dimension + " <= "
 					+ numericValue2 + " THEN 0 " + "WHEN " + dimension + " < " + numericValue1 + " THEN ("
-					+ numericValue1 + " - " + dimension + ") " + "WHEN " + dimension + " > "
-					+ numericValue2 + " THEN (" + dimension + "-" + numericValue2 + ") END) AS "
-					+ alias + "";
+					+ numericValue1 + " - " + dimension + ") " + "WHEN " + dimension + " > " + numericValue2 + " THEN ("
+					+ dimension + "-" + numericValue2 + ") END) AS " + alias + "";
 
 		} else if (Preference.isBoolean(preference)) {
 
-			statement = "(-(" + booleanValue + ")) AS " + alias + "";
+			statement = "(CASE WHEN (CAST(("+booleanValue+") as integer)) > 0 THEN -1 ELSE 0 END) AS " + alias + "";
 
 		} else if (Preference.isLayered(preference)) {
 
@@ -381,7 +379,8 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 
 	}
 
-	private void addNode(DefaultMutableTreeNode parentNode, DefaultMutableTreeNode node, DefaultTreeModel treeModel, JTree jTree) {
+	private void addNode(DefaultMutableTreeNode parentNode, DefaultMutableTreeNode node, DefaultTreeModel treeModel,
+			JTree jTree) {
 
 		// adds the node to the parentNode
 		treeModel.insertNodeInto(node, parentNode, parentNode.getChildCount());
@@ -389,12 +388,11 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 			treeModel.nodeStructureChanged((TreeNode) treeModel.getRoot());
 		}
 		jTree.scrollPathToVisible(new TreePath(node.getPath()));
-		
+
 		for (int i = 0; i < jTree.getRowCount(); i++) {
-		    jTree.expandRow(i);
+			jTree.expandRow(i);
 		}
 	}
-
 
 	/**
 	 * 
@@ -477,22 +475,23 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 	 * @return Returns the name of the column which this nodes represents for
 	 *         the score table
 	 */
-	public String getAlias(){
-		return COLUMN_NAME+columnNumber;
+	public String getAlias() {
+		return COLUMN_NAME + columnNumber;
 	}
-	
+
 	/**
 	 * Decreases the value from the columnNumber of the object by 1 if the
 	 * inputed columnNumber is less than the columnNumber of the object.
-	 * @param columnNumber - a integer value
+	 * 
+	 * @param columnNumber
+	 *            - a integer value
 	 */
-	public void decreaseColumnNumber(int columnNumber){
-		if(columnNumber < this.columnNumber)
+	public void decreaseColumnNumber(int columnNumber) {
+		if (columnNumber < this.columnNumber)
 			this.columnNumber--;
 	}
-	
-	
-	public int getColumnNumber(){
+
+	public int getColumnNumber() {
 		return columnNumber;
 	}
 }

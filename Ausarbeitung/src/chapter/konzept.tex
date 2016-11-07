@@ -240,12 +240,12 @@ Dazu können entweder Standardkomponenten von KNIME verwendet werden oder es wir
 
 Um diese Einstellungen der NodeModel Klasse und somit dem Algorithmus zu übergeben, werden die vorher erwähnten NodeSettings oder SettingModels benutzt. Mit den load und save Methoden des NodeDialogs können diese Settings an das NodeModel übergeben werden. Im NodeModel können diese dann mit der $loadValidatedSettingsFrom$ Methode geladen werden. Diese Methoden erhalten nur ein einziges NodeSettings Objekt, welches alle anderen SettingsModels oder NodeSettings enthält. Diese Objekte können mit einem bestimmten Key dem NodeSettings Objekt hinzugefügt oder geladen werden.
 
-In Abbildung \ref{img:nodeDialog} ist ein Beispiel eines NodeDialogs zu sehen, für den eine Datenbank-URL, ein JDBC Treiber und weitere Eingaben eingegeben werden kann.
+In Abbildung \ref{img:nodeDialog} ist ein Beispiel eines NodeDialogs zu sehen, für den eine Datenbank-URL, ein JDBC Treiber und weitere Eingaben eingegeben werden können, um eine Datenbankverbindung aufzubauen.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics{nodeDialog.png}
-	\caption{NodeDialogs des HAMMELGAMMELSCHAMMEL}
+	\caption{NodeDialogs des Database Connector Nodes}
 	\label{img:nodeDialog}
 \end{figure}
 
@@ -257,12 +257,12 @@ Die letzte Klasse, die von großer Relevanz ist, erzeugt eine Darstellung des Ou
 Da jeder View eines Nodes nicht gespeichert wird, muss er bei jedem Öffnen von KNIME neu erzeugt werden.
 Deswegen gibt es die Methoden $loadInternals$ und $saveInternals$ im NodeModel, die die Daten, die zur Erzeugung des Views benötigt werden in einer externen Datei speichern. Wie die SettingModels wird die Datei mit einem speziellen Key gespeichert und geladen. 
 
-In Abbildung \ref{img:nodeView} ist der View des fsfrsfs zu sehen, der als Input zwei BufferedDataTables bekommt und die beinhaltenden Punkte in einem Koordinatensystem anzeigt. 
+In Abbildung \ref{img:nodeView} ist der View des Histogramm Nodes zu sehen, der als Input einen BufferedDataTables bekommt und nach Auswahl bestimmter Dimensionen ein Histogramm zeigt. 
 
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{nodeView.png}
-	\caption{View für den SkylineVisualizer Node}
+	\caption{View für den Histogramm Node}
 	\label{img:nodeView}
 \end{figure}
 

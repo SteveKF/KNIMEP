@@ -83,6 +83,9 @@ public class PreferenceListener implements ActionListener {
 			prevDimension = (String) preferencePanel.getDimension();
 
 			preferencePanel.setPreferencesFor(preferencePanel.getDimension());
+			
+			if(prevDimension==SQLPreferenceEditor.CUSTOM_DIMENSION)
+				toolTipPanel.setText("This dimension allows you to create your own dimension with SQL Syntax. (e.g. price/power)");
 
 			// disable/enable GUI components depending on selected Preference
 		} else if (e.getSource() == preferencePanel.getPreferenceSelectionBox()) {
