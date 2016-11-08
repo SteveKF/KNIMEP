@@ -39,8 +39,10 @@ import org.knime.core.node.NodeSettingsWO;
  */
 public class DominationMaximizerNodeModel extends NodeModel {
 
+	/*CONFIG KEY*/
 	public static final int IN_PORT_DATABASE_CONNECTION = 0;
 
+	/*SETTINGS MODEL*/
 	private SettingsModelIntegerBounded outputSize = new SettingsModelIntegerBounded(
 			DominationMaximizerNodeDialog.CFG_KEY_OUTPUT_SIZE, 3, 1, Integer.MAX_VALUE);
 
@@ -59,7 +61,7 @@ public class DominationMaximizerNodeModel extends NodeModel {
 	@Override
 	protected PortObject[] execute(final PortObject[] inData, final ExecutionContext exec) throws Exception {
 
-		// get the scoreQuery which was created from the preferencecreator
+		// get the scoreQuery which was created from the Preference Creator
 		Map<String, FlowVariable> flowVars = getAvailableFlowVariables();
 		// check if score and preference query are available
 		if (flowVars.get(ConfigKeys.CFG_KEY_SCORE_QUERY) == null
@@ -78,12 +80,12 @@ public class DominationMaximizerNodeModel extends NodeModel {
 		// creates priorities and map for colindexes
 		DataTableSpec scoreSpec = scoreTable.getDataTableSpec();
 
-		// create dominationmaximizer which computes skyline points which
-		// dominate the most points
+		//domination checker to check domination of two data points
 		DominationChecker domChecker = new DominationChecker(flowVars, scoreSpec);
+		// create dominationmaximizer which computes skyline points which maximize the number of domianted points
 		DominationMaximizer maximizer = new DominationMaximizer(outputSize.getIntValue(), domChecker, scoreTable);
 
-		// output skyline with all dimensions
+		//create output for representative skyline with all dimensions
 		int numColumn = originalData.getDataTableSpec().getNumColumns();
 		DataColumnSpec[] newColumns = new DataColumnSpec[numColumn];
 
@@ -109,7 +111,7 @@ public class DominationMaximizerNodeModel extends NodeModel {
 		repSkyContainer.close();
 		BufferedDataTable repSkyline = repSkyContainer.getTable();
 
-		// repskyline output
+		//create output for skyline with all dimensions
 		BufferedDataContainer skylineContainer = exec.createDataContainer(newSpec);
 
 		List<RowKey> skyKeys = maximizer.getSkylineKeys();
@@ -129,6 +131,20 @@ public class DominationMaximizerNodeModel extends NodeModel {
 		return new PortObject[] { repSkyline, skyline };
 	}
 
+	/**
+	 * Creates a BufferedDataTable with the according DatabasePortObjectSpec
+	 * spec and the ExecutionContext exec.
+	 * 
+	 * @param spec
+	 *            - the DatabasePortObjectSpec of the input of this node
+	 * @param exec
+	 *            - the ExecutionContext of this node
+	 * @return Returns the BufferedDataTable which was created with the input
+	 *         variables
+	 * @throws CanceledExecutionException
+	 * @throws SQLException
+	 * @throws InvalidSettingsException
+	 */
 	private BufferedDataTable createTable(DatabasePortObjectSpec spec, ExecutionContext exec)
 			throws CanceledExecutionException, SQLException, InvalidSettingsException {
 		CredentialsProvider credProvider = getCredentialsProvider();
@@ -140,6 +156,23 @@ public class DominationMaximizerNodeModel extends NodeModel {
 		return table;
 	}
 
+	/**
+	 * Creates a BufferedDataTable with the according DatabasePortObjectSpec
+	 * spec and the ExecutionContext exec. The scoreQuery replaces the original
+	 * query in the DatabasePortObjectSpec.
+	 * 
+	 * @param spec
+	 *            - the DatabasePortObjectSpec of the input of this node
+	 * @param exec
+	 *            - the ExecutionContext of this node
+	 * @param scoreQuery
+	 *            - the scoreQuery which was a input for this node
+	 * @return Returns the BufferedDataTable which was created with the input
+	 *         variables
+	 * @throws CanceledExecutionException
+	 * @throws SQLException
+	 * @throws InvalidSettingsException
+	 */
 	private BufferedDataTable createTable(DatabasePortObjectSpec spec, ExecutionContext exec, String query)
 			throws CanceledExecutionException, SQLException, InvalidSettingsException {
 		CredentialsProvider credProvider = getCredentialsProvider();
