@@ -1,4 +1,4 @@
-package algorithm;
+package org.knime.preferences.distance.algorithm;
 import java.util.List;
 
 public class DataHolder{

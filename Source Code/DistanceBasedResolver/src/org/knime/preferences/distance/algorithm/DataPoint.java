@@ -1,4 +1,4 @@
-package algorithm;
+package org.knime.preferences.distance.algorithm;
 
 import org.knime.core.data.DataCell;
 import org.knime.core.data.DataRow;

@@ -1,4 +1,4 @@
-package algorithm;
+package org.knime.preferences.distance.algorithm;
 public class DistanceKey {
 
     private final int x;
