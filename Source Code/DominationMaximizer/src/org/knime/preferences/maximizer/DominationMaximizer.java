@@ -7,6 +7,7 @@ import java.util.List;
 import org.knime.core.data.DataRow;
 import org.knime.core.data.RowKey;
 import org.knime.core.node.BufferedDataTable;
+import org.knime.core.node.InvalidSettingsException;
 
 public class DominationMaximizer {
 
@@ -18,7 +19,7 @@ public class DominationMaximizer {
 
 
 	public DominationMaximizer(int k, DominationChecker domChecker,
-			BufferedDataTable dataTable) {
+			BufferedDataTable dataTable) throws InvalidSettingsException {
 		
 		List<DataPoint> dataPoints = new LinkedList<>();
 		List<DataPoint> skyline = new LinkedList<>();
@@ -39,7 +40,7 @@ public class DominationMaximizer {
 
 	}
 
-	private List<DataPoint> computeRepSkyline(List<DataPoint> dataPoints, List<DataPoint> skyline) {
+	private List<DataPoint> computeRepSkyline(List<DataPoint> dataPoints, List<DataPoint> skyline) throws InvalidSettingsException {
 
 		for (int i = 0; i < dataPoints.size(); i++) {
 
