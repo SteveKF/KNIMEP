@@ -18,8 +18,8 @@ public class DataPoint {
 	private long timestamp;
 	private RowKey key;
 
-	/*Constructor which needs the cell values and the key of a DataRow.
-	 * Plus a timestamps which is used for the BlockNestedLoop algorithm
+	/**Constructor which needs the cell values and the key of a DataRow.
+	 * Plus a timestamp which is used for the BlockNestedLoop algorithm
 	 */
 	private DataPoint(double[] coords, int timestamp, RowKey key) {
 
@@ -85,7 +85,7 @@ public class DataPoint {
 		for (int i = 0; i < values.length; i++) {
 			DataCell currCell = row.getCell(i);
 			if(currCell.isMissing())
-				values[i] = 0;
+				values[i] = Double.MAX_VALUE;
 			else
 				values[i] = ((DoubleValue) currCell).getDoubleValue();
 		}

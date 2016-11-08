@@ -43,10 +43,11 @@ import org.knime.preferences.bnl.view.BlockNestedLoopStructure.SaveOption;
 import org.knime.preferences.prefCreator.ConfigKeys;
 
 /**
- * This is the model implementation of BlockNestedLoop. Uses a Block Nested Loop
+ * This is the model implementation of the "Block Nested Loop" Node. It uses the Block Nested Loop algorithm
  * to get the skyline points of a specific database table
  *
  * @author Stefan Wohlfart
+ * version 1.0
  */
 public class BlockNestedLoopNodeModel extends NodeModel {
 
@@ -69,13 +70,15 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	private final SettingsModelInteger windowSize = new SettingsModelInteger(CFGKEY_WINDOW_SIZE, 2);
 
 	/**
-	 * Save all DataCells
+	 * Save all or only the dominated DataRows
 	 */
 	private List<BlockNestedLoopStructure> all_structure;
 	/**
-	 * Save all skyline DataCells
+	 * Save all skyline DataRows
 	 */
 	private List<BlockNestedLoopStructure> sky_structure;
+	
+	//All dimension which have preferences on them
 	private String[] dimensions;
 
 	/**
@@ -83,7 +86,7 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	 */
 	protected BlockNestedLoopNodeModel() {
 		super(new PortType[] { DatabasePortObject.TYPE },
-				new PortType[] { BufferedDataTable.TYPE, BufferedDataTable.TYPE });
+				new PortType[] { BufferedDataTable.TYPE });
 	}
 
 	@Override
@@ -94,31 +97,30 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 
 		// get the scoreQuery which was created from the preference creator node
 		Map<String, FlowVariable> flowVars = getAvailableFlowVariables();
-		if (flowVars.get(ConfigKeys.CFG_KEY_SCORE_QUERY) == null)
-			throw new IllegalArgumentException("Input needs to be from the PreferenceCreator node.");
 		String scoreQuery = flowVars.get(ConfigKeys.CFG_KEY_SCORE_QUERY).getStringValue();
 
 		// create original table
 		DatabasePortObjectSpec spec = (DatabasePortObjectSpec) inData[PORT_DATABASE_CONNECTION].getSpec();
 		BufferedDataTable originalData = createTable(spec, exec);
 
-		// create table with Score-Query
+		// create table with score query
 		BufferedDataTable scoreTable = createTable(spec, exec, scoreQuery);
 		
+		//create the domination checker which checks if a data points dominates another one
 		DominationChecker domChecker = new DominationChecker(flowVars,scoreTable.getDataTableSpec());
 		
 		//run Block Nested Loop algorithm
 		BlockNestedLoop bnl = new BlockNestedLoop(scoreTable, windowSize.getIntValue(),domChecker);
-		bnl.computeSkyline();
 
 		// create colIndexes to save data
 		List<Integer> tmpColIndexes = new LinkedList<>();
-		String[] names = originalData.getSpec().getColumnNames();
-
+		DataTableSpec originalSpec = originalData.getDataTableSpec();
+		String[] names = originalSpec.getColumnNames();
 		for (int i = 0; i < names.length; i++) {
 			String bool = flowVars.get(names[i]).getStringValue();
 
-			if (bool.equals(ConfigKeys.CFG_KEY_EXISTS_PREFERENCE))
+			if (bool.equals(ConfigKeys.CFG_KEY_EXISTS_PREFERENCE) && 
+					originalSpec.getColumnSpec(names[i]).getType().isCompatible(DoubleValue.class))
 				tmpColIndexes.add(i);
 
 		}
@@ -127,25 +129,15 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 		// set dimension which are considered for creating the view
 		dimensions = new String[colIndexes.length];
 		for (int i = 0; i < colIndexes.length; i++) {
-			dimensions[i] = originalData.getSpec().getColumnSpec(colIndexes[i]).getName();
+			dimensions[i] = originalSpec.getColumnSpec(colIndexes[i]).getName();
 		}
-		
-		//set dimension to only 0 value (no view) if there exist a column with string values
-		DataTableSpec originalSpec = originalData.getDataTableSpec();
-		for(int i=0; i < colIndexes.length; i++){
-			 if (!(originalSpec.getColumnSpec(colIndexes[i]).getType().isCompatible(DoubleValue.class))) {
-				 	dimensions = new String[0];
-	            }
-		}
-		
-
 
 		// create BufferedDataTable which contains only skyline records
-		int numColumn = originalData.getDataTableSpec().getNumColumns();
+		int numColumn = originalSpec.getNumColumns();
 		DataColumnSpec[] newColumns = new DataColumnSpec[numColumn];
 
 		for (int i = 0; i < numColumn; i++) {
-			newColumns[i] = originalData.getDataTableSpec().getColumnSpec(i);
+			newColumns[i] = originalSpec.getColumnSpec(i);
 		}
 
 		DataTableSpec newSpec = new DataTableSpec(newColumns);
@@ -155,9 +147,17 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 		BufferedDataTable skyline = createSkylineTable(originalData, bnl.getSkylineKeys(), container, colIndexes);
 		saveDominatedTable(originalData, bnl.getDominatedKeys(), colIndexes);
 
-		return new PortObject[] { skyline, originalData };
+		return new PortObject[] { skyline };
 	}
 
+	/**
+	 * Puts the skyline records into a data table and saves the skyline data rows into a BlockNestedLoopStructure
+	 * @param originalData - the original data
+	 * @param skylineKeys - the skyline keys which are the output of a BlockNestedLoop object
+	 * @param container - the container in which the skyline points will be added
+	 * @param colIndexes - column indexes which tell which columns should be saved in a file
+	 * @return Returns the created data table
+	 */
 	private BufferedDataTable createSkylineTable(BufferedDataTable originalData, LinkedList<RowKey> skylineKeys,
 			BufferedDataContainer container, int[] colIndexes) {
 
@@ -183,7 +183,12 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 
 		return container.getTable();
 	}
-
+	/**
+	 * Saves the data rows of a dominated data record in a BlockNestedLoopStructure
+	 * @param originalData - original data 
+	 * @param dominatedKeys - RowKeys of dominated DataRows
+	 * @param colIndexes -  column indexes which tell which columns should be saved in a file
+	 */
 	private void saveDominatedTable(BufferedDataTable originalData, List<RowKey> dominatedKeys, int[] colIndexes) {
 
 		List<DataRow> dominatedPoints = new LinkedList<DataRow>();
@@ -256,26 +261,40 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	 */
 	@Override
 	protected PortObjectSpec[] configure(final PortObjectSpec[] inSpecs) throws InvalidSettingsException {
+		
+		
 
-		//check if scoreQuery is available
+		//check if score and preference query are available
 		Map<String, FlowVariable> flowVars = getAvailableFlowVariables();
-		if (flowVars.get("scoreQuery") == null)
-			throw new IllegalArgumentException("Input needs to be from the PreferenceCreator node.");
+		if (flowVars.get(ConfigKeys.CFG_KEY_SCORE_QUERY) == null && flowVars.get(ConfigKeys.CFG_KEY_PREFERENCE_QUERY)==null)
+			new InvalidSettingsException("Input needs to be from the Preference Creator node.");
 	
 		DatabasePortObjectSpec spec = (DatabasePortObjectSpec) inSpecs[PORT_DATABASE_CONNECTION];
 		
 		
-		return new PortObjectSpec[] { spec.getDataTableSpec(), spec.getDataTableSpec() };
+		return new PortObjectSpec[] { spec.getDataTableSpec() };
 	}
 
+	/**
+	 * 
+	 * @return Returns the structure of all or only dominated points
+	 */
 	public List<BlockNestedLoopStructure> getDominatedPoints() {
 		return all_structure;
 	}
 
+	/**
+	 * 
+	 * @return Returns the structure of all skyline points
+	 */
 	public List<BlockNestedLoopStructure> getSkylinePoints() {
 		return sky_structure;
 	}
 
+	/**
+	 * 
+	 * @return Returns the dimensions which have preferences on them
+	 */
 	public String[] getDimensions() {
 
 		return dimensions;
@@ -317,6 +336,8 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	protected void loadInternals(final File internDir, final ExecutionMonitor exec)
 			throws IOException, CanceledExecutionException {
 
+		//loads the skyline and dominated data rows structures to create a view 
+		
 		all_structure = new LinkedList<>();
 		sky_structure = new LinkedList<>();
 
@@ -365,6 +386,8 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	@Override
 	protected void saveInternals(final File internDir, final ExecutionMonitor exec)
 			throws IOException, CanceledExecutionException {
+		
+		//saves the skyline and dominated data rows structures to create a view if KNIME is restarted without executing the node again
 
 		boolean all_saving = false;
 		boolean sky_saving = false;
@@ -397,23 +420,16 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 		}
 
 		if (all_saving) {
-			// now all bins are stored to the model content
-			// but the model content must be written to XML
-			// internDir is the directory for this node
 			File file = new File(internDir, FILE_NAME_ALL);
 			FileOutputStream fos = new FileOutputStream(file);
 			all_modelContent.saveToXML(fos);
 		}
 		if (sky_saving) {
-			// now all bins are stored to the model content
-			// but the model content must be written to XML
-			// internDir is the directory for this node
 			File file = new File(internDir, FILE_NAME_SKY);
 			FileOutputStream fos = new FileOutputStream(file);
 			sky_modelContent.saveToXML(fos);
 		}
 
-		// save dimensions to xml
 		ModelContent dimension_modelContent = new ModelContent(INTERNAL_MODEL_DIMENSIONS);
 		dimension_modelContent.addStringArray(CFGKEY_DIMENSIONS, dimensions);
 		File file = new File(internDir, FILE_NAME_DIMENSIONS);

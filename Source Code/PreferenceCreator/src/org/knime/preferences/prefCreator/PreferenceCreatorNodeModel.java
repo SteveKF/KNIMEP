@@ -7,8 +7,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeMap;
 import javax.swing.tree.DefaultTreeModel;
-
-import org.knime.core.data.DataTable;
 import org.knime.core.data.DataTableSpec;
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.CanceledExecutionException;

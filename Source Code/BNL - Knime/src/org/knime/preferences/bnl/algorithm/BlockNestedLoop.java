@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import org.knime.core.data.RowKey;
 import org.knime.core.data.container.CloseableRowIterator;
 import org.knime.core.node.BufferedDataTable;
+import org.knime.core.node.InvalidSettingsException;
 
 /**
  * Class which implements the BlockNestedLoop algorithm which is found in: </br>
@@ -18,26 +19,12 @@ public class BlockNestedLoop {
 
 	private long timestampCounter;
 
-	private BufferedDataTable data;
 	private LinkedList<DataPoint> window;
 	private LinkedList<DataPoint> tmpFile;
 	private LinkedList<DataPoint> input;
 
 	private LinkedList<RowKey> skylineKeys;
 	private LinkedList<RowKey> dominatedKeys;
-
-	/**
-	 * Constant which tells if a DataPoint is dominated by another DataPoint
-	 */
-	public static final int DOMINATED = 1;
-	/**
-	 * Constant which tells if a DataPoint has the same values as another DataPoint
-	 */
-	public static final int EVEN = 0;
-	/**
-	 * Constant which tells if a DataPoint is not dominated by another DataPoint
-	 */
-	public static final int UNDOMINATED = -1;
 	
 	private DominationChecker domChecker;
 
@@ -48,28 +35,32 @@ public class BlockNestedLoop {
 	 * @param wSize - maximum size of the window. Storage capacity of undominated DataPoints. Remaining undominated DataPoints will be put into a temporary variable
 	 * @param priorities - array of all priorities (priorities will be created by the PreferenceCreator Node)
 	 * @param colIndexesMap - map which contains the represented priority for every column of the score table
+	 * @throws InvalidSettingsException 
 	 */
-	public BlockNestedLoop(BufferedDataTable data, int wSize, DominationChecker domChecker) {
+	public BlockNestedLoop(BufferedDataTable data, int wSize, DominationChecker domChecker) throws InvalidSettingsException {
 
 		assert (wSize > 0);
-		this.data = data;
 		this.wSize = wSize;
 		this.domChecker = domChecker;
+		
+		computeSkyline(data);
 	}
 
 	/**
-	 * Computes the skyline if at least one point was added
+	 * Computes the skyline if the data has at least one row
+	 * @param data - a data table
+	 * @throws InvalidSettingsException 
 	 */
-	public void computeSkyline() {
+	private void computeSkyline(BufferedDataTable data) throws InvalidSettingsException {
 
 		assert (data.size() > 0);
 		
 		initialize();
-		//first iteration
 		
+		//first iteration
 		input = scanDatabase(data);
+		
 		// the second and following iterations
-
 		while (input.size() != 0) {
 			input = nestedLoop(input);
 		}
@@ -78,6 +69,9 @@ public class BlockNestedLoop {
 
 	}
 
+	/**
+	 * Initializes important Collections and the timestamp counter
+	 */
 	private void initialize() {
 		tmpFile = new LinkedList<>();
 		window = new LinkedList<>();
@@ -89,8 +83,13 @@ public class BlockNestedLoop {
 		timestampCounter = 1;
 	}
 
-	// first iteration of algorithm
-	private LinkedList<DataPoint> scanDatabase(BufferedDataTable data) {
+	/**
+	 * First iteration of the block nested loop algorithm
+	 * @param data - original data
+	 * @return Returns all undominated points which didn't have space in the window and needs to be compared to the window in the next iteration
+	 * @throws InvalidSettingsException
+	 */
+	private LinkedList<DataPoint> scanDatabase(BufferedDataTable data) throws InvalidSettingsException {
 
 		// put first element into window
 		CloseableRowIterator it = data.iterator();
@@ -98,7 +97,7 @@ public class BlockNestedLoop {
 
 		firstPoint.setTimestamp(timestampCounter++);
 		window.add(firstPoint);
-		LinkedList<DataPoint> tmpList2 = new LinkedList<>(window);
+		LinkedList<DataPoint> tmpWindow = new LinkedList<>(window);
 
 		dominatedKeys.add(firstPoint.getRowKey());
 
@@ -109,27 +108,30 @@ public class BlockNestedLoop {
 			dominatedKeys.add(p.getRowKey());
 
 			boolean isDominated = false;
-
+			
+			//compare p with all data records in the window
 			for (DataPoint q : window) {
 
 				if (domChecker.isDominated(q, p)) {
 					isDominated = true;
 					break;
 				} else if (domChecker.isDominated(p, q)) {
-					tmpList2.remove(q);
+					tmpWindow.remove(q);
 				}
 			}
+			//if p wasn't dominated put it into the window if there is enough space
+			//otherwise put p into the temporary file
 			if (!isDominated) {
-				if (tmpList2.size() >= wSize) {
-					p.setTimestamp(timestampCounter++);
+				
+				p.setTimestamp(timestampCounter++);
+				if (tmpWindow.size() >= wSize)
 					tmpFile.add(p);
-				} else {
-					p.setTimestamp(timestampCounter++);
-					tmpList2.add(p);
-				}
+				else 
+					tmpWindow.add(p);
+				
 			}
 
-			window = new LinkedList<>(tmpList2);
+			window = new LinkedList<>(tmpWindow);
 		}
 
 		LinkedList<DataPoint> l = new LinkedList<DataPoint>(tmpFile);
@@ -138,9 +140,15 @@ public class BlockNestedLoop {
 		return l;
 	}
 
-	private LinkedList<DataPoint> nestedLoop(LinkedList<DataPoint> l) {
+	/**
+	 * Following iterations of the Block nested loop 
+	 * @param l - temporary file with data points which still needs to be compared to the window
+	 * @return Returns the data points which still needs to be compared to the window 
+	 * @throws InvalidSettingsException
+	 */
+	private LinkedList<DataPoint> nestedLoop(LinkedList<DataPoint> l) throws InvalidSettingsException {
 
-		LinkedList<DataPoint> tmpList2 = new LinkedList<>(window);
+		LinkedList<DataPoint> tmpWindow = new LinkedList<>(window);
 
 		for (DataPoint p : l) {
 
@@ -151,29 +159,33 @@ public class BlockNestedLoop {
 				if (q.getTimestamp() < p.getTimestamp()) {
 					skylineKeys.add(q.getRowKey());
 					dominatedKeys.remove(q.getRowKey());
-					tmpList2.remove(q);
+					tmpWindow.remove(q);
 				} else {
 
+					//compare p with all data records in the window
 					if (domChecker.isDominated(q, p)) {
 						isDominated = true;
 						break;
 					} else if (domChecker.isDominated(p, q)) {
-						tmpList2.remove(q);
+						tmpWindow.remove(q);
 					}
 
 				}
 			}
+			
+			//if p wasn't dominated put it into the window if there is enough space
+			//otherwise put p into the temporary file
 			if (!isDominated) {
-				if (tmpList2.size() >= wSize) {
+				if (tmpWindow.size() >= wSize) {
 					p.setTimestamp(timestampCounter++);
 					tmpFile.add(p);
 				} else {
 					p.setTimestamp(timestampCounter++);
-					tmpList2.add(p);
+					tmpWindow.add(p);
 				}
 			}
 
-			window = new LinkedList<>(tmpList2);
+			window = new LinkedList<>(tmpWindow);
 		}
 
 		LinkedList<DataPoint> result = new LinkedList<>(tmpFile);
@@ -182,6 +194,9 @@ public class BlockNestedLoop {
 		return result;
 	}
 
+	/**
+	 * Adds all data records from the window into the skyline collection and removes these points from the dominated data record collection
+	 */
 	private void flushMemory() {
 		for (DataPoint p : window) {
 			skylineKeys.add(p.getRowKey());
@@ -189,10 +204,18 @@ public class BlockNestedLoop {
 		}
 	}
 
+	/**
+	 * 
+	 * @return Returns all RowKeys from the skyline
+	 */
 	public LinkedList<RowKey> getSkylineKeys() {
 		return skylineKeys;
 	}
 
+	/**
+	 * 
+	 * @return Returns all RowKeys from dominated data records
+	 */
 	public LinkedList<RowKey> getDominatedKeys() {
 		return dominatedKeys;
 	}

@@ -4,7 +4,7 @@ import org.knime.core.node.NodeView;
 import org.knime.preferences.bnl.view.BlockNestedLoopViewPanel;
 
 /**
- * <code>NodeView</code> for the "BlockNestedLoop" Node. Uses a Block Nested
+ * <code>NodeView</code> for the "Block Nested Loop" Node. Uses a Block Nested
  * Loop to get the skyline points of a specific database table
  *
  * @author Stefan Wohlfart
@@ -23,6 +23,7 @@ public class BlockNestedLoopNodeView extends NodeView<BlockNestedLoopNodeModel> 
 
 		int numColumns = nodeModel.getDimensions().length;
 		
+		//creates only a view if the number of dimensions is 2 or 3
 		if (numColumns == 2 || numColumns == 3) {
 
 			BlockNestedLoopViewPanel panel = new BlockNestedLoopViewPanel(nodeModel.getDominatedPoints(),
@@ -39,8 +40,6 @@ public class BlockNestedLoopNodeView extends NodeView<BlockNestedLoopNodeModel> 
 	@Override
 	protected void modelChanged() {
 
-		// TODO retrieve the new model from your nodemodel and
-		// update the view.
 		BlockNestedLoopNodeModel nodeModel = (BlockNestedLoopNodeModel) getNodeModel();
 		assert nodeModel != null;
 
@@ -54,8 +53,6 @@ public class BlockNestedLoopNodeView extends NodeView<BlockNestedLoopNodeModel> 
 	 */
 	@Override
 	protected void onClose() {
-
-		// TODO things to do when closing the view
 	}
 
 	/**
@@ -63,8 +60,6 @@ public class BlockNestedLoopNodeView extends NodeView<BlockNestedLoopNodeModel> 
 	 */
 	@Override
 	protected void onOpen() {
-
-		// TODO things to do when opening the view
 	}
 
 }

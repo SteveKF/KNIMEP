@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <knimeNode icon="./skyline.png" type="Source" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
-    <name>BlockNestedLoop</name>
+    <name>Block Nested Loop</name>
     
     <shortDescription>
-        Uses a Block Nested Loop to get the skyline points of a specific database table
+        Uses the Block Nested Loop algorithm to determine the best data records based on the scores which were computed in the Preference Creator node.
     </shortDescription>
     
     <fullDescription>
-        <intro>Insert long description here...</intro>
+        <intro>This node determines the best data records with the Block Nested Loop algorithm.
+        The comparison is done with the scores created by the Preference Creator node. 
+        These scores represent how well the data records satisfy the preferences created in the Preference Creator node. 
+        "Like the naive nested-loops algorithm, the block-nested-loops algorithm repeatedly reads the set of tuples.
+		The idea of this algorithm is to keep a window of incomparable tuples in main memory. When a tuple p is
+		read from the input, p is compared to all tuples of the window and, based on this comparison, p is either
+		eliminated, placed into the window or into a temporary file which will be considered in the next iteration of
+		the algorithm. Three cases can occur: <br/>
+		1. p is dominated by a tuple within the window. In this case, p is eliminated and will not be considered
+		in future iterations. Of course, p need not be compared to all tuples of the window in this case. <br/>
+		2. p dominates one or more tuples in the window. In this case, these tuples are eliminated; that is, these
+		tuples are removed from the window and will not be considered in future iterations. p is inserted into
+		the window. <br/>
+		3. p is incomparable with all tuples in the window. If there is enough room in the window, p is inserted
+		into the window. Otherwise, p is written to a temporary file on disk. The tuples of the temporary file
+		will be further processed in the next iteration of the algorithm. When the algorithm starts, the first
+		tuple will naturally be put into the window because the window is empty. <br/>
+		At the end of each iteration, we can output tuples of the window which have been compared to all tuples
+		that have been written to the temporary file;" 
+		(Borzsony, Stephan, Donald Kossmann, and Konrad Stocker. "The skyline operator." Data Engineering, 2001. Proceedings. 17th International Conference on. IEEE, 2001., p.4-5)
+        </intro>
         
-        <option name="short name of first option (like in the dialog)">description of first option</option>
-        <option name="short name of second option (like in the dialog)">description of second option</option>
+        <option name="Window size">Enter the window size which tells how many undominated data records (tupels) can be stored in the window.</option>
         <!-- possibly more options that can also be grouped by tabs -->
         <!--
         <tab name="Standard Options">
@@ -24,13 +43,15 @@
     </fullDescription>
     
     <ports>
-        <inPort index="0" name="In-Port name">Description of first input port...</inPort>
+        <inPort index="0" name="Database connection">A database connection from a Preference Creator node</inPort>
         <!-- possibly more input ports here-->
-        <outPort index="0" name="Out-Port name">Description of first output port...</outPort>
+        <outPort index="0" name="Skyline">A data table which contains the best data records of the original data based on the preferences in the Preference Creator node</outPort>
         <!-- possibly more output ports here-->
     </ports>    
     <views>
-        <view index="0" name="name of first view">Description of first view...</view>
+        <view index="0" name="Skyline"> For every dimension combination which has a preference a coordinate system is created. 
+        These coordinate systems display the skyline and the dominated data records in different colors. The view is created if 2 or 3 dimensions have preferences on them.
+        For more considered dimensions there will be no view. </view>
         <!--view index="1" name="name of second view">Description of second view...</view-->
     </views>
 </knimeNode>

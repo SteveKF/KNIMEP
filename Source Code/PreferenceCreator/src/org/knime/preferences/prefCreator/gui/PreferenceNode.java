@@ -322,13 +322,6 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 
 	}
 
-	/**
-	 * Creates the score statement for the layered preference.
-	 * 
-	 * @param dimension
-	 *            - the dimension this node is assigned with
-	 * @return Returns the score statement for the layered preference
-	 */
 	private String createScoreLayeredStatement() {
 
 		StringBuffer layered = new StringBuffer("-(CASE ");
@@ -342,7 +335,7 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 
 			DefaultMutableTreeNode layer = (DefaultMutableTreeNode) rootNode.getChildAt(i);
 
-			if (layer.getChildCount() > 0 && layer != layer0) {
+			if (layer.getChildCount() > 0) {
 
 				layered.append("WHEN " + dimension + " IN (");
 
@@ -354,18 +347,26 @@ public class PreferenceNode extends DefaultMutableTreeNode {
 					}
 				}
 
-				if (!isNegative) {
-					layered.append(") THEN " + num_positive_layers-- + " ");
-				} else {
-					layered.append(") THEN " + num_negative_layers-- + " ");
-				}
+				if (layer == layer0) {
 
+					layered.append(") THEN 0 ");
+					isNegative = true;
+
+				} else {
+
+					if (!isNegative) {
+						layered.append(") THEN " + num_positive_layers-- + " ");
+					} else {
+						layered.append(") THEN " + num_negative_layers-- + " ");
+					}
+
+				}
 			} else if (layer == layer0) {
 				isNegative = true;
 			}
 		}
 
-		layered.append("ELSE 0 END)");
+		layered.append(" ELSE "+(num_negative_layers-positiveLayerSize)+" END)");
 
 		return layered.toString();
 

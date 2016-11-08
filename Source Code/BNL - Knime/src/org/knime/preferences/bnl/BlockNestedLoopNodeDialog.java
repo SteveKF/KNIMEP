@@ -5,10 +5,9 @@ import org.knime.core.node.defaultnodesettings.DialogComponentNumber;
 import org.knime.core.node.defaultnodesettings.SettingsModelInteger;
 
 /**
- * <code>NodeDialog</code> for the "BlockNestedLoop" Node.
- * Uses a Block Nested Loop to get the skyline points of a specific database table
- * 
+ * The NodeDialog of the "Block Nested Loop" Node has a dialog component for the window size and stores this value in a SettingsModel
  * @author Stefan Wohlfart
+ * @version 1.0
  */
 
 
