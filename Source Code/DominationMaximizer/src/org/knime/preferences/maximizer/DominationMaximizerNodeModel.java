@@ -40,9 +40,9 @@ import org.knime.core.node.NodeSettingsWO;
 public class DominationMaximizerNodeModel extends NodeModel {
 
 	public static final int IN_PORT_DATABASE_CONNECTION = 0;
-	
+
 	private SettingsModelIntegerBounded outputSize = new SettingsModelIntegerBounded(
-			DominationMaximizerNodeDialog.CFG_KEY_OUTPUT_SIZE, 1, 1, Integer.MAX_VALUE);
+			DominationMaximizerNodeDialog.CFG_KEY_OUTPUT_SIZE, 3, 1, Integer.MAX_VALUE);
 
 	/**
 	 * Constructor for the node model.
@@ -61,8 +61,10 @@ public class DominationMaximizerNodeModel extends NodeModel {
 
 		// get the scoreQuery which was created from the preferencecreator
 		Map<String, FlowVariable> flowVars = getAvailableFlowVariables();
-		if (flowVars.get(ConfigKeys.CFG_KEY_SCORE_QUERY) == null)
-			throw new IllegalArgumentException("Input needs to be from the PreferenceCreator node.");
+		// check if score and preference query are available
+		if (flowVars.get(ConfigKeys.CFG_KEY_SCORE_QUERY) == null
+				&& flowVars.get(ConfigKeys.CFG_KEY_PREFERENCE_QUERY) == null)
+			throw new InvalidSettingsException("Input needs to be from the Preference Creator node.");
 
 		String scoreQuery = flowVars.get(ConfigKeys.CFG_KEY_SCORE_QUERY).getStringValue();
 
@@ -76,7 +78,8 @@ public class DominationMaximizerNodeModel extends NodeModel {
 		// creates priorities and map for colindexes
 		DataTableSpec scoreSpec = scoreTable.getDataTableSpec();
 
-		//create dominationmaximizer which computes skyline points which dominate the most points
+		// create dominationmaximizer which computes skyline points which
+		// dominate the most points
 		DominationChecker domChecker = new DominationChecker(flowVars, scoreSpec);
 		DominationMaximizer maximizer = new DominationMaximizer(outputSize.getIntValue(), domChecker, scoreTable);
 
@@ -93,7 +96,7 @@ public class DominationMaximizerNodeModel extends NodeModel {
 		BufferedDataContainer repSkyContainer = exec.createDataContainer(newSpec);
 
 		List<RowKey> repSkyKeys = maximizer.getRepSkylineKeys();
-		
+
 		for (DataRow row : originalData) {
 
 			if (repSkyKeys.contains(row.getKey())) {
@@ -101,16 +104,16 @@ public class DominationMaximizerNodeModel extends NodeModel {
 			}
 
 		}
-		
+
 		// finally close the container and get the result table.
 		repSkyContainer.close();
 		BufferedDataTable repSkyline = repSkyContainer.getTable();
-		
-		//repskyline output
+
+		// repskyline output
 		BufferedDataContainer skylineContainer = exec.createDataContainer(newSpec);
 
 		List<RowKey> skyKeys = maximizer.getSkylineKeys();
-		
+
 		for (DataRow row : originalData) {
 
 			if (skyKeys.contains(row.getKey())) {
@@ -118,7 +121,7 @@ public class DominationMaximizerNodeModel extends NodeModel {
 			}
 
 		}
-		
+
 		// finally close the container and get the result table.
 		skylineContainer.close();
 		BufferedDataTable skyline = skylineContainer.getTable();
@@ -163,8 +166,8 @@ public class DominationMaximizerNodeModel extends NodeModel {
 	@Override
 	protected PortObjectSpec[] configure(final PortObjectSpec[] inSpecs) throws InvalidSettingsException {
 
-	DatabasePortObjectSpec spec = (DatabasePortObjectSpec) inSpecs[IN_PORT_DATABASE_CONNECTION];
-		
+		DatabasePortObjectSpec spec = (DatabasePortObjectSpec) inSpecs[IN_PORT_DATABASE_CONNECTION];
+
 		return new PortObjectSpec[] { spec.getDataTableSpec(), spec.getDataTableSpec() };
 	}
 

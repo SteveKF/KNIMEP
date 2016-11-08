@@ -261,13 +261,11 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	 */
 	@Override
 	protected PortObjectSpec[] configure(final PortObjectSpec[] inSpecs) throws InvalidSettingsException {
-		
-		
 
 		//check if score and preference query are available
 		Map<String, FlowVariable> flowVars = getAvailableFlowVariables();
 		if (flowVars.get(ConfigKeys.CFG_KEY_SCORE_QUERY) == null && flowVars.get(ConfigKeys.CFG_KEY_PREFERENCE_QUERY)==null)
-			new InvalidSettingsException("Input needs to be from the Preference Creator node.");
+			throw new InvalidSettingsException("Input needs to be from the Preference Creator node.");
 	
 		DatabasePortObjectSpec spec = (DatabasePortObjectSpec) inSpecs[PORT_DATABASE_CONNECTION];
 		

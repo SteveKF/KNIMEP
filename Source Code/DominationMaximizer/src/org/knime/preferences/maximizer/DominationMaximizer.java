@@ -1,9 +1,8 @@
 package org.knime.preferences.maximizer;
 
-import java.util.Comparator;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
 import org.knime.core.data.DataRow;
 import org.knime.core.data.RowKey;
 import org.knime.core.node.BufferedDataTable;
@@ -13,7 +12,7 @@ public class DominationMaximizer {
 
 	private DominationChecker domChecker;
 	private List<DataPoint> repSkyline;
-	private List<DataPoint> sky;
+	private List<DataPoint> skyline;
 
 	private int k;
 
@@ -21,83 +20,73 @@ public class DominationMaximizer {
 	public DominationMaximizer(int k, DominationChecker domChecker,
 			BufferedDataTable dataTable) throws InvalidSettingsException {
 		
-		List<DataPoint> dataPoints = new LinkedList<>();
-		List<DataPoint> skyline = new LinkedList<>();
+		skyline = new ArrayList<>();
+		repSkyline = new ArrayList<>();
+		
+		this.k = k;
+		this.domChecker = domChecker;
+		
+		List<DataPoint> dataPoints = new ArrayList<>();
+		List<DataPoint> tmpSkyline = new ArrayList<>();
 
 		for(DataRow row: dataTable){
 			DataPoint p = DataPoint.createDataPoint(row); 
 			dataPoints.add(p);
-			skyline.add(p);
 		}
-			
-		
-		repSkyline = new LinkedList<>();
+		tmpSkyline = new ArrayList<>(dataPoints);
 
-		this.k = k;
-		this.domChecker = domChecker;
-
-		repSkyline = computeRepSkyline(dataPoints,skyline);
+		repSkyline = computeRepSkyline(dataPoints,tmpSkyline);
 
 	}
 
-	private List<DataPoint> computeRepSkyline(List<DataPoint> dataPoints, List<DataPoint> skyline) throws InvalidSettingsException {
+	private List<DataPoint> computeRepSkyline(List<DataPoint> dataPoints, List<DataPoint> tmpSkyline) throws InvalidSettingsException {
 
-		for (int i = 0; i < dataPoints.size(); i++) {
-
-			DataPoint p = dataPoints.get(i);
-
-			for (int j = 0; j < dataPoints.size(); j++) {
-
-				DataPoint q = dataPoints.get(j);
-
-				boolean isDominated = domChecker.isDominated(p, q);
-
-				if (isDominated) {
-				
-					q.setDominated(true);
-					p.increaseNumDominations();
-					updateSkyline(p, q, skyline);
-
+		for(DataPoint p : dataPoints){
+			for(DataPoint q : dataPoints){
+				if(p!=q){
+					if(domChecker.isDominated(p, q)){
+						tmpSkyline.remove(q);
+						p.addDominatedPoint(q);
+					}	
 				}
-
 			}
-
 		}
-
-		return getKPoints(skyline);
+		
+		skyline = new ArrayList<>(tmpSkyline);
+		
+		return getKPoints(tmpSkyline);
 
 	}
 
-	private List<DataPoint> getKPoints(List<DataPoint> skyline) {
-
+	private List<DataPoint> getKPoints(List<DataPoint> tmpSkyline) {
+		
 		List<DataPoint> result = new LinkedList<>();
+		List<DataPoint> dominatedPoints = new LinkedList<>();
 
-		skyline.sort(new Comparator<DataPoint>() {
-
-			@Override
-			public int compare(DataPoint p, DataPoint q) {
-
-				return p.getNumDominations() < q.getNumDominations() ? 1
-						: p.getNumDominations() == q.getNumDominations() ? 0 : -1;
-
+		while(result.size() < k && result.size() < tmpSkyline.size()){
+			
+			int numDominated = 0;
+			int newEntry = 0;
+			for(int i=0; i < tmpSkyline.size(); i++){
+				List<DataPoint> skyDominatedPoints = tmpSkyline.get(i).getDominatedPoints();
+				List<DataPoint> tmpDominatedList = new ArrayList<>(dominatedPoints);
+				tmpDominatedList.removeAll(skyDominatedPoints);
+				tmpDominatedList.addAll(skyDominatedPoints);
+				
+				if(tmpDominatedList.size() > numDominated)
+					numDominated = tmpDominatedList.size();
+					newEntry = i;
 			}
-		});
-
-		for (int i = 0; i < k; i++) {
-			if (i == skyline.size())
-				break;
-			result.add(skyline.get(i));
+			
+			DataPoint repSkyPoint = tmpSkyline.get(newEntry);
+			result.add(repSkyPoint);
+			tmpSkyline.remove(repSkyPoint);
+			dominatedPoints.removeAll(repSkyPoint.getDominatedPoints());
+			dominatedPoints.addAll(repSkyPoint.getDominatedPoints());
+			
 		}
-
-		sky = skyline;
+		
 		return result;
-	}
-
-	private void updateSkyline(DataPoint p, DataPoint q, List<DataPoint> skyline) {
-	
-		if (skyline.contains(q)) {
-			skyline.remove(q);
-		}
 	}
 
 	
@@ -114,9 +103,9 @@ public class DominationMaximizer {
 	
 	public List<RowKey> getSkylineKeys(){
 		
-		List<RowKey> rowKeys = new LinkedList<>();
+		List<RowKey> rowKeys = new ArrayList<>();
 		
-		for(DataPoint p: sky)
+		for(DataPoint p: skyline)
 			rowKeys.add(p.getRowKey());
 		
 		return rowKeys;
