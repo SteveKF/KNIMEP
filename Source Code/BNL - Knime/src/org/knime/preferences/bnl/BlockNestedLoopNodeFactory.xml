@@ -46,6 +46,7 @@
         <inPort index="0" name="Database connection">A database connection from a Preference Creator node</inPort>
         <!-- possibly more input ports here-->
         <outPort index="0" name="Skyline">A data table which contains the best data records of the original data based on the preferences in the Preference Creator node</outPort>
+         <outPort index="1" name="Score Skyline">A data table which contains the best data records of the score data based on the preferences in the Preference Creator node</outPort>
         <!-- possibly more output ports here-->
     </ports>    
     <views>

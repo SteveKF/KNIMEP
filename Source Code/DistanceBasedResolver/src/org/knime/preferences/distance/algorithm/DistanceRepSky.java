@@ -1,9 +1,20 @@
 package org.knime.preferences.distance.algorithm;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import org.knime.core.data.RowKey;
+
+/**
+ * Class to compute the representative skyline based on distance.
+ * The algorithm is found in: 
+ * Tao, Yufei, et al. "Distance-based representative skyline." 2009 IEEE 25th International Conference on Data Engineering. IEEE, 2009.
+ * @author Stefan Wohlfart
+ * @version 1.0
+ *
+ */
 public class DistanceRepSky {
 
 	private List<DataPoint> repSkyline;
@@ -11,6 +22,12 @@ public class DistanceRepSky {
 	private final int X = 0;
 	private final int Y = 1;
 	
+	/**
+	 * Constructor of the DistanceRepSky class which computes the k-representative skyline
+	 * of the list of points
+	 * @param points
+	 * @param k
+	 */
 	public DistanceRepSky(List<DataPoint> points, int k){
 		
 		data = new HashMap<>();
@@ -19,6 +36,11 @@ public class DistanceRepSky {
 	
 	}
 	
+	/**
+	 * 2D-opt algorithm which computes the k-representative skyline of the points list
+	 * @param points - list of data points (skyline)
+	 * @param k - output size
+	 */
 	private void compute(List<DataPoint> points, int k){
 				
 		int m = points.size()-1;
@@ -42,6 +64,12 @@ public class DistanceRepSky {
 	
 	}
 	
+	/**
+	 * Computes the lowest radius which holds all points between DataPoint i and j 
+	 * @param i - index of a DataPoint
+	 * @param j - index of a DataPoint
+	 * @param points - list of DataPoints
+	 */
 	private void radius(int i, int j, List<DataPoint> points){
 		
 		DataHolder holder = getDataHolder(i, j);
@@ -53,12 +81,12 @@ public class DistanceRepSky {
 			
 			double r1,r2;
 			
-			double x1 = Math.pow(points.get(i).getCoordinate(X)-points.get(u).getCoordinate(X),2);
-			double y1 = Math.pow(points.get(i).getCoordinate(Y)-points.get(u).getCoordinate(Y),2);
+			double x1 = Math.pow(points.get(i).getCoordinateAt(X)-points.get(u).getCoordinateAt(X),2);
+			double y1 = Math.pow(points.get(i).getCoordinateAt(Y)-points.get(u).getCoordinateAt(Y),2);
 			r1 = Math.sqrt(x1+y1);
 			
-			double x2 = Math.pow(points.get(u).getCoordinate(X)-points.get(j).getCoordinate(X),2);
-			double y2 = Math.pow(points.get(u).getCoordinate(Y)-points.get(j).getCoordinate(Y),2);
+			double x2 = Math.pow(points.get(u).getCoordinateAt(X)-points.get(j).getCoordinateAt(X),2);
+			double y2 = Math.pow(points.get(u).getCoordinateAt(Y)-points.get(j).getCoordinateAt(Y),2);
 			r2 = Math.sqrt(x2+y2);
 			
 			double tmp = Math.max(r1, r2);
@@ -76,6 +104,12 @@ public class DistanceRepSky {
 		
 	}	
 	
+	/**
+	 *
+	 * @param i - index i
+	 * @param t - index j
+	 * @return Returns optimal error for the DataPoints at index i and j 
+	 */
 	private double optEr(int i, int t){
 		
 		DataHolder holder = getDataHolder(i, t);
@@ -117,6 +151,12 @@ public class DistanceRepSky {
 		}
 	}
 	
+	/**
+	 * Computes the optimal representative skyline based on distance
+	 * @param i - number of skyline points
+	 * @param t - size of the representative skyline
+	 * @return
+	 */
 	private List<DataPoint> opt(int i, int t){
 		
 		List<DataPoint> repSkyline = new LinkedList<>();
@@ -145,6 +185,12 @@ public class DistanceRepSky {
 		
 	}
 		
+	/**
+	 * 
+	 * @param i - index i
+	 * @param j - index j
+	 * @return Returns the DataHolder for the indexes i and j
+	 */
 	private DataHolder getDataHolder(int i, int j){
 		
 		DistanceKey key = new DistanceKey(i,j);
@@ -161,7 +207,16 @@ public class DistanceRepSky {
 		
 	}
 	
-	public List<DataPoint> getRepSkyline(){
-		return repSkyline;
+	/**
+	 * 
+	 * @return Returns the representative skyline
+	 */
+	public List<RowKey> getRepSkyline(){
+		List<RowKey> rowKeys = new ArrayList<>();
+		for(DataPoint point: repSkyline){
+			rowKeys.add(point.getRowKey());
+		}
+		
+		return rowKeys;
 	}
 }

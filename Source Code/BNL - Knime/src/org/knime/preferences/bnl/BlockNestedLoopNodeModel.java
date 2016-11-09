@@ -85,7 +85,7 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	 * Constructor for the node model.
 	 */
 	protected BlockNestedLoopNodeModel() {
-		super(new PortType[] { DatabasePortObject.TYPE }, new PortType[] { BufferedDataTable.TYPE });
+		super(new PortType[] { DatabasePortObject.TYPE }, new PortType[] { BufferedDataTable.TYPE, BufferedDataTable.TYPE  });
 	}
 
 	@Override
@@ -140,19 +140,20 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 		// create BufferedDataTable which contains only skyline records
 		int numColumn = originalSpec.getNumColumns();
 		DataColumnSpec[] newColumns = new DataColumnSpec[numColumn];
-
 		for (int i = 0; i < numColumn; i++) {
 			newColumns[i] = originalSpec.getColumnSpec(i);
 		}
-
 		DataTableSpec newSpec = new DataTableSpec(newColumns);
-
 		BufferedDataContainer container = exec.createDataContainer(newSpec);
-
 		BufferedDataTable skyline = createSkylineTable(originalData, bnl.getSkylineKeys(), container, colIndexes);
+
+		// create BufferedDataTable which contains only score skyline records
+		BufferedDataTable scoreSkyline = createScoreSkylineTable(scoreTable, bnl.getSkylineKeys(), exec);
+
+
 		saveDominatedTable(originalData, bnl.getDominatedKeys(), colIndexes);
 
-		return new PortObject[] { skyline };
+		return new PortObject[] { skyline, scoreSkyline };
 	}
 
 	/**
@@ -189,6 +190,37 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 			BlockNestedLoopStructure struct = new BlockNestedLoopStructure(skyline.get(i), SaveOption.SKYLINE,
 					colIndexes);
 			sky_structure.add(struct);
+		}
+
+		// finally close the container and get the result table.
+		container.close();
+
+		return container.getTable();
+	}
+	
+	private BufferedDataTable createScoreSkylineTable(BufferedDataTable scoreTable, LinkedList<RowKey> skylineKeys,ExecutionContext exec){
+		
+		DataTableSpec scoreSpec = scoreTable.getDataTableSpec();
+		int numColumn = scoreSpec.getNumColumns();
+		DataColumnSpec[] newColumns = new DataColumnSpec[numColumn];
+		for (int i = 0; i < numColumn; i++) {
+			newColumns[i] = scoreSpec.getColumnSpec(i);
+		}
+		DataTableSpec newSpec = new DataTableSpec(newColumns);
+		BufferedDataContainer container = exec.createDataContainer(newSpec);
+		
+		List<DataRow> skyline = new LinkedList<DataRow>();
+		for (DataRow row : scoreTable) {
+			if (skylineKeys.contains(row.getKey())) {
+				skyline.add(row);
+			}
+
+		}
+
+		for (int i = 0; i < skyline.size(); i++) {
+
+			container.addRowToTable(skyline.get(i));
+
 		}
 
 		// finally close the container and get the result table.
@@ -294,7 +326,7 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 
 		DatabasePortObjectSpec spec = (DatabasePortObjectSpec) inSpecs[PORT_DATABASE_CONNECTION];
 
-		return new PortObjectSpec[] { spec.getDataTableSpec() };
+		return new PortObjectSpec[] { spec.getDataTableSpec(), null };
 	}
 
 	/**
