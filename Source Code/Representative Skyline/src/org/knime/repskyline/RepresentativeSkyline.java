@@ -34,7 +34,7 @@ public class RepresentativeSkyline {
 	
 	private int k;
 	private String[] dimensions;
-	private boolean useUpperBound;
+	private Map<String,Boolean> isUpperBound;
 	private Map<String, Double> singleValues;
 	private Map<String, double[]> rangeValues;
 	private Map<String, String> options;
@@ -53,14 +53,14 @@ public class RepresentativeSkyline {
 	protected RepresentativeSkyline(BufferedDataTable skyData, 
 			String[] dimensions, Map<String,Double> singleValues, 
 			Map<String, double[]> rangeValues,Map<String,String> options,
-			int k,double lambda, boolean useUpperBound) {
+			Map<String,Boolean> isUpperBound, int k,double lambda) {
 		
 		this.k = k;
 		this.singleValues = singleValues;
 		this.rangeValues = rangeValues;
 		this.options = options;
 		this.dimensions = dimensions;
-		this.useUpperBound = useUpperBound;
+		this.isUpperBound = isUpperBound;
 		
 		//list initialization
 		repSkyline = new LinkedList<>();
@@ -236,7 +236,7 @@ public class RepresentativeSkyline {
 				double threshold = singleValues.get(dimensions[i]);
 				
 				//threshold should be used as a upper bound
-				if(useUpperBound)
+				if(isUpperBound.get(dimensions[i]))
 					result += 1 / (1 + Math.exp(r.getCoordinateAt(i) - threshold));
 				else
 					result += 1 / (1 + Math.exp(-r.getCoordinateAt(i) + threshold));

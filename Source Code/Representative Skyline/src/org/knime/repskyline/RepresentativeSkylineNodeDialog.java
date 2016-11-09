@@ -19,25 +19,27 @@ import gui.RepresentativeSkylineViewPanel;
 /**
  * <code>NodeDialog</code> for the "RepresentativeSkyline" Node. An algorithm
  * which computes a k-representative skyline based on significance and
- * diversity. * n
+ * diversity.
  * 
  * @author Stefan Wohlfart
+ * @version 1.0
  */
 public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSettingsPane {
 
-	//CONFIG KEYS
+	// CONFIG KEYS
 	public static final String CFG_KEY_DIMENSIONS = "dimensions";
 	public static final String CFG_KEY_SINGLEVALUE = "single";
 	public static final String CFG_KEY_RANGEVALUE = "range";
 	public static final String CFG_KEY_OPTIONVALUE = "option";
 	public static final String CFG_KEY_SIZE = "size";
 	public static final String CFG_KEY_WEIGHT = "weight";
-	public static final String CFG_KEY_UPPER_BOUND = "useUpperBound";
+	public static final String CFG_KEY_UPPER_BOUND = "isUpperBound";
 
-	//boolean to check if view panel was already created
+	// boolean to check if view panel was already created
 	private boolean isCreated = false;
-	
+
 	private RepresentativeSkylineViewPanel panel;
+	private PortObject input;
 
 	protected RepresentativeSkylineNodeDialog() {
 		super();
@@ -47,54 +49,64 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 	@Override
 	public void loadSettingsFrom(NodeSettingsRO settings, PortObject[] input) throws NotConfigurableException {
 
-		//variables which will be loaded if their is a saved state after restarting KNIME
+		// variables which will be loaded if their is a saved state after
+		// restarting KNIME
 		String[] dimensions = null;
 		Map<String, Double> singleValues = null;
 		Map<String, double[]> rangeValues = null;
 		Map<String, String> options = null;
+		Map<String, Boolean> isUpperBound = null;
 		int k = 1;
 		double diversityWeight = 0.5;
-		boolean useUpperBound = false;
 
-		//try to load these saved states
-		try {
-			dimensions = settings.getStringArray(CFG_KEY_DIMENSIONS);
-			singleValues = (Map<String, Double>) convertFromBytes(settings.getByteArray(CFG_KEY_SINGLEVALUE));
-			rangeValues = (Map<String, double[]>) convertFromBytes(settings.getByteArray(CFG_KEY_RANGEVALUE));
-			options = (Map<String, String>) convertFromBytes(settings.getByteArray(CFG_KEY_OPTIONVALUE));
-			k = settings.getInt(CFG_KEY_SIZE);
-			diversityWeight = settings.getDouble(CFG_KEY_WEIGHT);
-			useUpperBound = settings.getBoolean(CFG_KEY_UPPER_BOUND);
-		} catch (InvalidSettingsException | ClassNotFoundException | IOException e1) {
-			e1.printStackTrace();
-		}
-
-		//creates all dimensions if it is the first time the NodeDialog gets opened after creating the node
-		if (dimensions == null) {
-			
-			DataTableSpec spec = ((BufferedDataTable) input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE]).getDataTableSpec();
-			String[] columnNames = spec.getColumnNames();
-			int[] colIndexes = RepresentativeSkylineNodeModel.getColumnIndexes(spec,
-					getAvailableFlowVariables());
-
-			dimensions = new String[colIndexes.length];
-			for (int i = 0; i < colIndexes.length; i++) {
-				dimensions[i] = columnNames[colIndexes[i]];
+		boolean isSameInput = true;
+		if (this.input != input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE]) {
+			this.input = input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE];
+			isCreated = false;
+			isSameInput = false;
+		} else {
+			// try to load these saved states
+			try {
+				dimensions = settings.getStringArray(CFG_KEY_DIMENSIONS);
+				singleValues = (Map<String, Double>) convertFromBytes(settings.getByteArray(CFG_KEY_SINGLEVALUE));
+				rangeValues = (Map<String, double[]>) convertFromBytes(settings.getByteArray(CFG_KEY_RANGEVALUE));
+				options = (Map<String, String>) convertFromBytes(settings.getByteArray(CFG_KEY_OPTIONVALUE));
+				isUpperBound = (Map<String, Boolean>) convertFromBytes(settings.getByteArray(CFG_KEY_UPPER_BOUND));
+				k = settings.getInt(CFG_KEY_SIZE);
+				diversityWeight = settings.getDouble(CFG_KEY_WEIGHT);
+			} catch (InvalidSettingsException | ClassNotFoundException | IOException e1) {
+				e1.printStackTrace();
 			}
 
 		}
-		
-		//Check if view panel was already created and don't create a new one every time the NodeDialog gets opened
+
+		// creates all dimensions if it is the first time the NodeDialog gets
+		// opened after creating the node
+		if (dimensions == null) {
+
+			DataTableSpec spec = ((BufferedDataTable) input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE])
+					.getDataTableSpec();
+			dimensions = RepresentativeSkylineNodeModel.getDimensions(spec, getAvailableFlowVariables());
+
+		}
+
+		// Check if view panel was already created and don't create a new one
+		// every time the NodeDialog gets opened
 		if (!isCreated) {
+			if(!isSameInput) 
+				removeTab("Threshold");
+			
 			panel = new RepresentativeSkylineViewPanel(dimensions);
 			addTab("Threshold", panel);
 			selectTab("Threshold");
 			isCreated = true;
+			
 		}
 
-		//restore the state of the view panel when it was saved
-		if (dimensions != null && singleValues != null && rangeValues != null && options != null) {
-			panel.restoreState(singleValues, rangeValues, options, k, diversityWeight,useUpperBound);
+		// restore the state of the view panel when it was saved
+		if (dimensions != null && singleValues != null && rangeValues != null && options != null
+				&& isUpperBound != null) {
+			panel.restoreState(singleValues, rangeValues, options, isUpperBound, k, diversityWeight);
 		}
 
 		super.loadSettingsFrom(settings, input);
@@ -103,15 +115,18 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 
 	@Override
 	public void saveSettingsTo(NodeSettingsWO settings) throws InvalidSettingsException {
-		//add every important input in the node dialog to the settings so it can be loaded if needed
+		// add every important input in the node dialog to the settings so it
+		// can be loaded if needed
 		settings.addStringArray(CFG_KEY_DIMENSIONS, panel.getDimensions());
 		byte[] singleBytes = null;
 		byte[] rangeBytes = null;
 		byte[] optionBytes = null;
+		byte[] upperBoundBytes = null;
 		try {
 			singleBytes = convertToBytes(panel.getSingleValues());
 			rangeBytes = convertToBytes(panel.getRangeValues());
 			optionBytes = convertToBytes(panel.getOptions());
+			upperBoundBytes = convertToBytes(panel.getUpperBounds());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -119,8 +134,8 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 		settings.addByteArray(CFG_KEY_SINGLEVALUE, singleBytes);
 		settings.addByteArray(CFG_KEY_RANGEVALUE, rangeBytes);
 		settings.addByteArray(CFG_KEY_OPTIONVALUE, optionBytes);
+		settings.addByteArray(CFG_KEY_UPPER_BOUND, upperBoundBytes);
 
-		settings.addBoolean(CFG_KEY_UPPER_BOUND, panel.isUsingUpperBound());
 		settings.addInt(CFG_KEY_SIZE, panel.getSizeOfRepresentativeSkyline());
 		settings.addDouble(CFG_KEY_WEIGHT, panel.getDiversityWeight());
 
@@ -129,33 +144,37 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 
 	/**
 	 * Converts object to byte array.
-	 * @param map - an object (here: a map)
+	 * 
+	 * @param map
+	 *            - an object (here: a map)
 	 * @return Returns a byte array which represents the object
 	 * @throws IOException
 	 */
-	public static byte[] convertToBytes(Object map) throws IOException{
-		
+	public static byte[] convertToBytes(Object map) throws IOException {
+
 		ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
-		 ObjectOutputStream out = new ObjectOutputStream(byteOut);
-		 out.writeObject(map);
-		 
-		 return byteOut.toByteArray();
-		 
+		ObjectOutputStream out = new ObjectOutputStream(byteOut);
+		out.writeObject(map);
+
+		return byteOut.toByteArray();
+
 	}
 
 	/**
 	 * Transforms a byte array to an object.
-	 * @param bytes - a byte array which will be transformed to an object
+	 * 
+	 * @param bytes
+	 *            - a byte array which will be transformed to an object
 	 * @return Returns the object which was transformed from the byte array
 	 * @throws IOException
 	 * @throws ClassNotFoundException
 	 */
-	public static Object convertFromBytes(byte[] bytes) throws IOException, ClassNotFoundException{
-		
+	public static Object convertFromBytes(byte[] bytes) throws IOException, ClassNotFoundException {
+
 		ByteArrayInputStream byteIn = new ByteArrayInputStream(bytes);
-	    ObjectInputStream in = new ObjectInputStream(byteIn);
-	    
-	    return in.readObject();
+		ObjectInputStream in = new ObjectInputStream(byteIn);
+
+		return in.readObject();
 
 	}
 }

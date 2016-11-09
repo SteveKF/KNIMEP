@@ -15,6 +15,12 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
 
+/**
+ * This JPanel allows the user to change the diversity and significance weight and saves those values.
+ * @author Stefan Wohlfart
+ * @version 1.0
+ *
+ */
 @SuppressWarnings("serial")
 public class RepresentativeSkylineWeight extends JPanel implements PropertyChangeListener {
 
@@ -24,7 +30,11 @@ public class RepresentativeSkylineWeight extends JPanel implements PropertyChang
 	private JFormattedTextField diversityField;
 	private JFormattedTextField significanceField;
 
-	public RepresentativeSkylineWeight() {
+	/**
+	 * Constructor of the RepresentativeSkylineWeight which adds two JSpinner 
+	 * for the diversity and the significance weight to this JPanel
+	 */
+	protected RepresentativeSkylineWeight() {
 
 		setLayout(new GridBagLayout());
 
@@ -84,6 +94,10 @@ public class RepresentativeSkylineWeight extends JPanel implements PropertyChang
 		addListeners(diversitySpinner,significanceSpinner);
 	}
 
+	/**
+	 * Resizes the entered JSpinner
+	 * @param spinner - The JSpinner which should be resized
+	 */
 	private void resizeSpinner(JSpinner spinner) {
 
 		JComponent editor = spinner.getEditor();
@@ -92,6 +106,11 @@ public class RepresentativeSkylineWeight extends JPanel implements PropertyChang
 
 	}
 
+	/**
+	 * Adds a PropertyChangeListener to both spinners
+	 * @param diversitySpinner - The Spinner for the diversity weight
+	 * @param significanceSpinner - The Spinner for the significance weight
+	 */
 	private void addListeners(JSpinner diversitySpinner, JSpinner significanceSpinner) {
 
 		JSpinner.DefaultEditor diversityEditor = (JSpinner.DefaultEditor) diversitySpinner.getEditor();
@@ -104,17 +123,21 @@ public class RepresentativeSkylineWeight extends JPanel implements PropertyChang
 
 	}
 
+	/**
+	 * If the diversity weight value gets changed the method changes the significance weight 
+	 * so that both value sum up to 1 and vice versa
+	 */
 	@Override
 	public void propertyChange(PropertyChangeEvent evt) {
 
 		if (evt.getSource() == diversityField) {
-
+			//changes both weights to the current entered values
 			diversityWeight = (double) diversityField.getValue();
 			significanceWeight = 1 - diversityWeight;
 			significanceField.setValue(significanceWeight);
 
 		} else if (evt.getSource() == significanceField) {
-
+			//changes both weights to the current entered values
 			significanceWeight = (double) significanceField.getValue();
 			diversityWeight = 1 - significanceWeight;
 			diversityField.setValue(diversityWeight);
@@ -122,22 +145,38 @@ public class RepresentativeSkylineWeight extends JPanel implements PropertyChang
 		}
 	}
 	
+	/**
+	 * 
+	 * @return Returns the diversity weight
+	 */
 	public double getDiversityWeight(){
 		return diversityWeight;
 	}
 	
+	/**
+	 * 
+	 * @return Returns the significance weight
+	 */
 	public double getSignificanceWeight(){
 		return significanceWeight;
 	}
 	
-	public void setDiversityWeight(double weight){
+	/**
+	 * Restores the diversity weight from a loaded state
+	 * @param weight - a double which will be the new diversity weight
+	 */
+	public void restoreDiversityWeight(double weight){
 		
 		diversityWeight = weight;
 		diversityField.setValue(diversityWeight);
 		
 	}
 	
-	public void setSignificanceWeight(double weight){
+	/**
+	 * Restores the significance weight from a loaded state
+	 * @param weight - a double which will be the new diversity weight
+	 */
+	public void restoreSignificanceWeight(double weight){
 		
 		significanceWeight = weight;
 		significanceField.setValue(significanceWeight);

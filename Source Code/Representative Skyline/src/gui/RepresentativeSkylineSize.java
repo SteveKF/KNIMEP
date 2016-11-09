@@ -13,6 +13,12 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
 
+/**
+ * This class allows the user to change the output size of the representative skyline
+ * @author Stefan Wohlfart
+ * @version 1.0
+ *
+ */
 @SuppressWarnings("serial")
 public class RepresentativeSkylineSize extends JPanel implements PropertyChangeListener{
 	
@@ -22,7 +28,10 @@ public class RepresentativeSkylineSize extends JPanel implements PropertyChangeL
 	private JFormattedTextField sizeField;
 
 
-	public RepresentativeSkylineSize() {
+	/**
+	 * Constructor for the RepresentativeSkylineSize which adds a JSpinner for output size of the representative skyline to this JPanel
+	 */
+	protected RepresentativeSkylineSize() {
 
 		setLayout(new GridBagLayout());
 		GridBagConstraints gc = new GridBagConstraints();
@@ -55,6 +64,9 @@ public class RepresentativeSkylineSize extends JPanel implements PropertyChangeL
 		
 	}
 
+	/**
+	 * If the value of the JSpinner for the size of the representative skyline is changed change the according variable 
+	 */
 	@Override
 	public void propertyChange(PropertyChangeEvent evt) {
 		
@@ -63,11 +75,19 @@ public class RepresentativeSkylineSize extends JPanel implements PropertyChangeL
 		}
 	}
 	
+	/**
+	 * 
+	 * @return Returns the size of the representative skyline
+	 */
 	public int getSizeOfRepresentativeSkyline(){
 		return k;
 	}
 	
-	public void setSizeOfRepresentativeSkyline(int k){
+	/**
+	 * Restores the size of the representative skyline from a old loaded state
+	 * @param k - output size of the representative skyline
+	 */
+	public void restoreSizeOfRepresentativeSkyline(int k){
 		this.k = k;
 		sizeField.setValue(k);
 	}

@@ -7,9 +7,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.util.HashMap;
 import java.util.Map;
-
+import java.util.TreeMap;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
 import javax.swing.JCheckBox;
@@ -19,6 +18,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
+/**
+ * This class allows the user to enter thresholds for every dimension.
+ * @author Stefan Wohlfart
+ * @version 1.0
+ *
+ */
 @SuppressWarnings("serial")
 public class RepresentativeSkylineThreshold extends JPanel implements ActionListener, PropertyChangeListener {
 
@@ -40,11 +45,17 @@ public class RepresentativeSkylineThreshold extends JPanel implements ActionList
 	private Map<String, Double> singleValues;
 	private Map<String, double[]> rangeValues;
 	private Map<String, String> options;
+	private Map<String,Boolean> isUpperBound;
 
 	private String[] dimensions;
 	private String prevDimension;
 
-	public RepresentativeSkylineThreshold(String[] dimensions) {
+	/**
+	 * Constructor of the RepresentativeSkylineThreshold.
+	 * Adds a dimension selection box. Option boxes to select a threshold type and input fields to enter the thresholds.
+	 * @param dimensions - a string value which represents a dimension (column name of a data table from KNIME)
+	 */
+	protected RepresentativeSkylineThreshold(String[] dimensions) {
 
 		this.dimensions = dimensions;
 
@@ -149,11 +160,15 @@ public class RepresentativeSkylineThreshold extends JPanel implements ActionList
 		initialize();
 	}
 
+	/**
+	 * Initializes maps, adds listeners to important GUI components and sets default values for the thresholds
+	 */
 	private void initialize() {
 
-		options = new HashMap<>();
-		singleValues = new HashMap<>();
-		rangeValues = new HashMap<>();
+		options = new TreeMap<>();
+		singleValues = new TreeMap<>();
+		rangeValues = new TreeMap<>();
+		isUpperBound = new TreeMap<>();
 
 		// adds listeners to gui components who use them
 		addListeners();
@@ -166,50 +181,44 @@ public class RepresentativeSkylineThreshold extends JPanel implements ActionList
 			singleValues.put(dimensions[i], values[0]);
 			rangeValues.put(dimensions[i], values);
 			options.put(dimensions[i], NONE);
+			isUpperBound.put(dimensions[i], false);
 		}
 
 		setOption(NONE);
 
 	}
 
+	/**
+	 * Adds listener to important GUI components
+	 */
 	private void addListeners() {
 		dimensionBox.addActionListener(this);
 		single_jrb.addActionListener(this);
 		range_jrb.addActionListener(this);
 		none_jrb.addActionListener(this);
+		upperBoundCheckBox.addActionListener(this);
 		single.addPropertyChangeListener(this);
 		minRange.addPropertyChangeListener(this);
 		maxRange.addPropertyChangeListener(this);
 	}
 
+	/**
+	 * Removes listener from important GUI components
+	 */
 	private void removeListeners() {
 		dimensionBox.removeActionListener(this);
 		single_jrb.removeActionListener(this);
 		range_jrb.removeActionListener(this);
 		none_jrb.removeActionListener(this);
+		upperBoundCheckBox.removeActionListener(this);
 		single.removePropertyChangeListener(this);
 		minRange.removePropertyChangeListener(this);
 		maxRange.removePropertyChangeListener(this);
 	}
 
-	private void saveThreshold(String dimension) {
-		
-		String option = options.get(dimension);
-
-		saveOption(dimension, option);
-		saveValues(dimension);
-
-	}
-
-	private void loadThreshold(String dimension) {
-		
-		String option = options.get(dimension);
-		setOption(option);
-
-		setValues(dimension);
-
-	}
-
+	/**
+	 * Saves values of the single, minRange and maxRange fields
+	 */
 	@Override
 	public void propertyChange(PropertyChangeEvent evt) {
 
@@ -221,6 +230,10 @@ public class RepresentativeSkylineThreshold extends JPanel implements ActionList
 		}
 	}
 
+	/**
+	 * Save the value if the selected dimension, option or UpperBoundBox gets updated
+	 * If the selected dimension gets changed load the values for the new selected dimension
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 
@@ -251,9 +264,44 @@ public class RepresentativeSkylineThreshold extends JPanel implements ActionList
 
 			setOption(NONE);
 			saveOption(dimension, NONE);
+		} else if(e.getSource() == upperBoundCheckBox){
+			
+			boolean useUpperBound = upperBoundCheckBox.isSelected();
+			setUpperBounds(useUpperBound);
+			saveUpperBounds(dimension, useUpperBound);
+			
 		}
 	}
+	
+	/**
+	 * Saves the thresholds in a map for the specific dimension
+	 * @param dimension - a string value which represents a dimension (column name of a data table from KNIME)
+	 */
+	private void saveThreshold(String dimension) {
+		
+		saveOption(dimension, options.get(dimension));
+		saveUpperBounds(dimension, isUpperBound.get(dimension));
+		saveValues(dimension);
 
+	}
+
+	/**
+	 * Loads the threshold and sets the corresponding option for the specific dimension 
+	 * @param dimension - a string value which represents a dimension (column name of a data table from KNIME)
+	 */
+	private void loadThreshold(String dimension) {
+		
+		setOption(options.get(dimension));
+		setUpperBounds(isUpperBound.get(dimension));
+		
+		setValues(dimension);
+
+	}
+
+	/**
+	 * Sets the saved values (thresholds) for the specific dimension
+	 * @param dimension - a string value which represents a dimension (column name of a data table from KNIME)
+	 */
 	private void setValues(String dimension) {
 
 		double singleVal = singleValues.get(dimension);
@@ -265,6 +313,10 @@ public class RepresentativeSkylineThreshold extends JPanel implements ActionList
 
 	}
 
+	/**
+	 * Saves the current entered values (thresholds) for the specific dimension
+	 * @param dimension - a string value which represents a dimension (column name of a data table from KNIME)
+	 */
 	private void saveValues(String dimension) {
 
 		if (!singleValues.containsKey(dimension) || !rangeValues.containsKey(dimension)) {
@@ -281,7 +333,31 @@ public class RepresentativeSkylineThreshold extends JPanel implements ActionList
 		rangeValues.replace(dimension, rangeVals);
 
 	}
+	
+	/**
+	 * Restores the singleValues map with an old loaded state
+	 * @param singleValues - map with the dimensions as keys and the single threshold as values
+	 */
+	public void restoreSingleValues(Map<String, Double> singleValues) {
+		String dimension = (String) dimensionBox.getSelectedItem();
+		this.singleValues = singleValues;
+		setValues(dimension);
+	}
 
+	/**
+	 * Restores the rangeValues map with a old loaded state
+	 * @param rangeValues - map with the dimensions as keys and the range threshold as values
+	 */
+	public void restoreRangeValues(Map<String, double[]> rangeValues) {
+		String dimension = (String) dimensionBox.getSelectedItem();
+		this.rangeValues = rangeValues;
+		setValues(dimension);
+	}
+
+	/**
+	 * Sets the specific option as selected and disables for this option irrelevant GUI elements
+	 * @param option
+	 */
 	private void setOption(String option) {
 
 		if (option.equals(SINGLE)) {
@@ -317,58 +393,93 @@ public class RepresentativeSkylineThreshold extends JPanel implements ActionList
 		}
 	}
 
+	/**
+	 * Saves the options in the options map
+	 * @param dimension - a string value which represents a dimension (column name of a data table from KNIME)
+	 * @param option - a option which should be saved
+	 */
 	private void saveOption(String dimension, String option) {
 
 		if (options.containsKey(dimension)) {
 			options.replace(dimension, option);
 		}
 	}
-
-	public Map<String, Double> getSingleValues() {
-		return singleValues;
-	}
-
-	public Map<String, double[]> getRangeValues() {
-		return rangeValues;
-	}
 	
-	public boolean isUsingUpperBound(){
-		if(upperBoundCheckBox.isSelected())
-			return true;
-		else 
-			return false;
-	}
-	
-	public void setUseUpperBound(boolean useUpperBound){
-		if(useUpperBound)
-			upperBoundCheckBox.setSelected(true);
-		else
-			upperBoundCheckBox.setSelected(false);
-			
-	}
-
-	public Map<String, String> getOptions() {
-		return options;
-	}
-
-	public void setSingleValues(Map<String, Double> singleValues) {
-		String dimension = (String) dimensionBox.getSelectedItem();
-		this.singleValues = singleValues;
-		setValues(dimension);
-	}
-
-	public void setRangeValues(Map<String, double[]> rangeValues) {
-		String dimension = (String) dimensionBox.getSelectedItem();
-		this.rangeValues = rangeValues;
-		setValues(dimension);
-	}
-
-	public void setOptions(Map<String, String> options) {
+	/**
+	 * Restores the option map with an old loaded state
+	 * @param options - map with the dimensions as keys and the options as values
+	 */
+	public void restoreOptions(Map<String, String> options) {
 
 		String dimension = (String) dimensionBox.getSelectedItem();
 		this.options = options;
 		String option = options.get(dimension);
 		setOption(option);
 
+	}
+
+	/**
+	 * Sets the upper bound check box accordingly to the entered  boolean value
+	 * @param useUpperBound - a boolean value
+	 */
+	private void setUpperBounds(boolean useUpperBound) {
+		upperBoundCheckBox.setSelected(useUpperBound);
+	}
+	
+	/**
+	 * Saves boolean value in a map
+	 * @param dimension - a string value which represents a dimension (column name of a data table from KNIME)
+	 * @param useUpperBound - a boolean value 
+	 */
+	private void saveUpperBounds(String dimension, boolean useUpperBound) {
+
+		if (isUpperBound.containsKey(dimension)) {
+			isUpperBound.replace(dimension, useUpperBound);
+		}
+	}
+	
+	/**
+	 * Restores the isUpperBound map with an old loaded state
+	 * @param isUpperBound - map with the dimensions as keys and a boolean value if the threshold is used as a upper bound as values
+	 */
+	public void restoreUpperBounds(Map<String, Boolean> isUpperBound) {
+
+		String dimension = (String) dimensionBox.getSelectedItem();
+		this.isUpperBound = isUpperBound;
+		boolean useUpperBound = isUpperBound.get(dimension);
+		setUpperBounds(useUpperBound);
+
+	}
+	
+	/**
+	 * 
+	 * @return Returns the single thresholds as a map
+	 */
+	public Map<String, Double> getSingleValues() {
+		return singleValues;
+	}
+
+	/**
+	 * 
+	 * @return Returns the range thresholds as a map
+	 */
+	public Map<String, double[]> getRangeValues() {
+		return rangeValues;
+	}
+
+	/**
+	 * 
+	 * @return Returns the options as a map
+	 */
+	public Map<String, String> getOptions() {
+		return options;
+	}
+	
+	/**
+	 * 
+	 * @return Returns the upper bound boolean values as a map
+	 */
+	public Map<String, Boolean> getUpperBounds() {
+		return isUpperBound;
 	}
 }
