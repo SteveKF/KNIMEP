@@ -6,7 +6,7 @@
          point="org.knime.workbench.repository.nodes">
       <node
             category-path="/preferences"
-            factory-class="org.knime.repskyline.RepresentativeSkylineNodeFactory"
+            factory-class="org.knime.preferences.repskyline.RepresentativeSkylineNodeFactory"
             id="org.knime.RepresentativeSkylineNodeFactory"/>
    </extension>
    

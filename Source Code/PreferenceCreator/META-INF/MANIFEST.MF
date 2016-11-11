@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: PreferenceCreator-Node extension for KNIME Workbench
-Bundle-SymbolicName: org.knime.preference.creator; singleton:=true
+Bundle-SymbolicName: org.knime.preferences.creator; singleton:=true
 Bundle-Version: 1.0.0
 Bundle-ClassPath: preferencecreator.jar
 Bundle-Activator: org.knime.preferences.prefCreator.PreferenceCreatorNodePlugin

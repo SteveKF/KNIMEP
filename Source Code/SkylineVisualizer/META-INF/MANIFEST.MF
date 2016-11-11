@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: SkylineVisualizer-Node extension for KNIME Workbench
-Bundle-SymbolicName: org.knime.skyvisualizer; singleton:=true
+Bundle-SymbolicName: org.knime.preferences.visualizer; singleton:=true
 Bundle-Version: 1.0.0
 Bundle-ClassPath: skylinevisualizer.jar
-Bundle-Activator: org.knime.skyvisualizer.SkylineVisualizerNodePlugin
+Bundle-Activator: org.knime.preferences.visualizer.SkylineVisualizerNodePlugin
 Bundle-Vendor: Stefan Wohlfart
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.eclipse.core.runtime,
@@ -12,7 +12,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.knime.workbench.repository,
  org.knime.base,
  org.knime.ext.jfreechart,
- org.knime.preference.creator
+ org.knime.preferences.creator
 Bundle-ActivationPolicy: lazy
-Export-Package: org.knime.skyvisualizer
+Export-Package: org.knime.preferences.visualizer
 

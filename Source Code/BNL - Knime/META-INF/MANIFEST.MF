@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: BlockNestedLoop-Node extension for KNIME Workbench
-Bundle-SymbolicName: org.knime.bnl; singleton:=true
+Bundle-SymbolicName: org.knime.preferences.bnl; singleton:=true
 Bundle-Version: 1.0.0
 Bundle-ClassPath: blocknestedloop.jar
 Bundle-Activator: org.knime.preferences.bnl.BlockNestedLoopNodePlugin
@@ -12,7 +12,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.knime.workbench.repository,
  org.knime.base,
  org.knime.ext.jfreechart,
- org.knime.preference.creator
+ org.knime.preferences.creator
 Bundle-ActivationPolicy: lazy
 Export-Package: org.knime.preferences.bnl,
  org.knime.preferences.bnl.algorithm
