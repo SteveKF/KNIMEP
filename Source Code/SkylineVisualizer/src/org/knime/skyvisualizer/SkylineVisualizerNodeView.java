@@ -19,13 +19,14 @@ public class SkylineVisualizerNodeView extends NodeView<SkylineVisualizerNodeMod
     protected SkylineVisualizerNodeView(final SkylineVisualizerNodeModel nodeModel) {
         super(nodeModel);
         
+        //create a view if only 2 or dimensions are considered
         int numColumns = nodeModel.getDimensions().length;
         
 		if (numColumns == 2 || numColumns == 3) {
 
 			SkylineVisualizerViewPanel panel = new SkylineVisualizerViewPanel(nodeModel.getDominatedPoints(),
 					nodeModel.getUndominatedPoints(), nodeModel.getDimensions(),nodeModel.getGraphOption(),
-					nodeModel.getCharName(), nodeModel.getSubTitle(), nodeModel.getDominatedPointsName(), 
+					nodeModel.getChartName(), nodeModel.getSubTitle(), nodeModel.getDominatedPointsName(), 
 					nodeModel.getUndominatedPointsName());
 
 			setComponent(panel);

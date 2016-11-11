@@ -29,10 +29,11 @@ import org.knime.core.node.NodeSettingsRO;
 import org.knime.core.node.NodeSettingsWO;
 
 /**
- * This is the model implementation of PreferenceSQLExtract.
- * Extracts Preference SQL Queries
- *
+ * <code>NodeModel</code> for the "PreferenceSQLExtract" Node.
+ * Extracts the Preference SQL query which was created in the Preference Creator node
+ * 
  * @author Stefan Wohlfart
+ * @version 1.0
  */
 public class PreferenceSQLExtractNodeModel extends NodeModel {
     
@@ -52,8 +53,11 @@ public class PreferenceSQLExtractNodeModel extends NodeModel {
     @Override
     protected PortObject[] execute(final PortObject[] inData,
             final ExecutionContext exec) throws Exception {
-
+    	
+    	//throw exception if the input doesn't come from a Preference Creator node
     	Map<String,FlowVariable> flowVars= getAvailableFlowVariables();
+    	if(!flowVars.containsKey(ConfigKeys.CFG_KEY_PREFERENCE_QUERY))
+    		throw new InvalidSettingsException("Input needs to be from a Preference Creator node.");
     	
     	 // the DataTableSpec of the final table
     	  DataTableSpec spec = new DataTableSpec(
@@ -88,17 +92,16 @@ public class PreferenceSQLExtractNodeModel extends NodeModel {
     @Override
     protected PortObjectSpec[] configure(final PortObjectSpec[] inSpecs)
             throws InvalidSettingsException {
-    	
-    	Map<String,FlowVariable> flowVars= getAvailableFlowVariables();
-    	
-    	if(!flowVars.containsKey(ConfigKeys.CFG_KEY_PREFERENCE_QUERY))
-    		throw new InvalidSettingsException("Input needs to be from PreferenceCreator node.");
-            	
+            
     	DataTableSpec spec = new DataTableSpec(createOutputColumnSpec());
     	
         return new PortObjectSpec[]{spec};
     }
     
+    /**
+     * 
+     * @return Returns the DataColumSpec which has all the information of the output data table
+     */
     private DataColumnSpec createOutputColumnSpec() {
     	
         DataColumnSpecCreator colSpecCreator = new DataColumnSpecCreator(

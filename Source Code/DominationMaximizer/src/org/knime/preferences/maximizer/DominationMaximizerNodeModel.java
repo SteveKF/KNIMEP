@@ -44,7 +44,7 @@ public class DominationMaximizerNodeModel extends NodeModel {
 
 	/*SETTINGS MODEL*/
 	private SettingsModelIntegerBounded outputSize = new SettingsModelIntegerBounded(
-			DominationMaximizerNodeDialog.CFG_KEY_OUTPUT_SIZE, 3, 1, Integer.MAX_VALUE);
+			DominationMaximizerNodeDialog.CFG_KEY_OUTPUT_SIZE, 1, 1, Integer.MAX_VALUE);
 
 	/**
 	 * Constructor for the node model.

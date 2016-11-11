@@ -2,6 +2,8 @@ package org.knime.preference.sql;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
+
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.CanceledExecutionException;
 import org.knime.core.node.port.PortObject;
@@ -13,6 +15,7 @@ import org.knime.core.node.port.database.DatabaseQueryConnectionSettings;
 import org.knime.core.node.port.database.DatabaseUtility;
 import org.knime.core.node.port.database.reader.DBReader;
 import org.knime.core.node.workflow.CredentialsProvider;
+import org.knime.core.node.workflow.FlowVariable;
 import org.knime.preferences.prefCreator.ConfigKeys;
 import org.knime.core.node.ExecutionContext;
 import org.knime.core.node.ExecutionMonitor;
@@ -44,16 +47,26 @@ public class PreferenceSQLNodeModel extends NodeModel {
 	@Override
 	protected PortObject[] execute(final PortObject[] inData, final ExecutionContext exec) throws Exception {
 		
-		//create original table
+		//throw exception if input doesn't come from a Preference Creator node
+		Map<String,FlowVariable> flowVars = getAvailableFlowVariables();
+		if(!flowVars.containsKey(ConfigKeys.CFG_KEY_SCORE_QUERY) && !flowVars.containsKey(ConfigKeys.CFG_KEY_PREFERENCE_QUERY))
+			throw new InvalidSettingsException("Input needs to be from a Preference Creator node.");
+		
+	
+		String preferenceQuery = flowVars.get(ConfigKeys.CFG_KEY_PREFERENCE_QUERY).getStringValue();
+
+		//create skyline table with Preference SQL query
 		DatabasePortObjectSpec spec = (DatabasePortObjectSpec) inData[0].getSpec();
 		CredentialsProvider credProvider = getCredentialsProvider();
 		DatabaseQueryConnectionSettings dbSettings = spec.getConnectionSettings(credProvider);
 		DatabaseUtility databaseUtil = DatabaseUtility.getUtility(dbSettings.getDatabaseIdentifier());
 		DBReader reader = databaseUtil.getReader(dbSettings);
+		//throw exception if the JDBC driver isn't the PSQLDriver
 		if(!dbSettings.getDriver().equals("psql.connector.client.PSQLDriver"))
 			throw new IllegalArgumentException("PSQLDriver needed!");
 		
-		dbSettings.setQuery(getAvailableFlowVariables().get(ConfigKeys.CFG_KEY_PREFERENCE_QUERY).getStringValue());
+		System.out.println(preferenceQuery);
+		dbSettings.setQuery(preferenceQuery);
 		BufferedDataTable preferenceTable = reader.createTable(exec, credProvider);
 		
 

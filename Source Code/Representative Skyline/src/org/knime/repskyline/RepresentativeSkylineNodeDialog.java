@@ -34,6 +34,8 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 	public static final String CFG_KEY_SIZE = "size";
 	public static final String CFG_KEY_WEIGHT = "weight";
 	public static final String CFG_KEY_UPPER_BOUND = "isUpperBound";
+	
+	private final String tabName = "Threshold";
 
 	// boolean to check if view panel was already created
 	private boolean isCreated = false;
@@ -58,13 +60,19 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 		Map<String, Boolean> isUpperBound = null;
 		int k = 1;
 		double diversityWeight = 0.5;
-
-		boolean isSameInput = true;
-		if (this.input != input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE]) {
-			this.input = input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE];
-			isCreated = false;
+		
+		boolean isSameInput = false;
+		if(this.input == null)
+			isSameInput = true;
+		else if(this.input != null && this.input == input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE])
+			isSameInput = true;
+		else{
 			isSameInput = false;
-		} else {
+			isCreated = false;
+		}
+			
+		this.input = input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE];
+
 			// try to load these saved states
 			try {
 				dimensions = settings.getStringArray(CFG_KEY_DIMENSIONS);
@@ -78,11 +86,11 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 				e1.printStackTrace();
 			}
 
-		}
+	
 
 		// creates all dimensions if it is the first time the NodeDialog gets
 		// opened after creating the node
-		if (dimensions == null) {
+		if (dimensions == null || !isSameInput) {
 
 			DataTableSpec spec = ((BufferedDataTable) input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE])
 					.getDataTableSpec();
@@ -93,19 +101,18 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 		// Check if view panel was already created and don't create a new one
 		// every time the NodeDialog gets opened
 		if (!isCreated) {
-			if(!isSameInput) 
-				removeTab("Threshold");
-			
+			if(!isSameInput)
+				removeTab(tabName);
 			panel = new RepresentativeSkylineViewPanel(dimensions);
-			addTab("Threshold", panel);
-			selectTab("Threshold");
+			addTab(tabName, panel);
+			selectTab(tabName);
 			isCreated = true;
 			
 		}
 
 		// restore the state of the view panel when it was saved
 		if (dimensions != null && singleValues != null && rangeValues != null && options != null
-				&& isUpperBound != null) {
+				&& isUpperBound != null && isSameInput) {
 			panel.restoreState(singleValues, rangeValues, options, isUpperBound, k, diversityWeight);
 		}
 

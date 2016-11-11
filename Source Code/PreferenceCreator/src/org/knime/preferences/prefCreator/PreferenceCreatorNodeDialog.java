@@ -30,6 +30,7 @@ import org.knime.core.node.port.database.DatabaseQueryConnectionSettings;
 import org.knime.core.node.workflow.CredentialsProvider;
 import org.knime.preferences.prefCreator.gui.SQLPreferenceEditor;
 
+
 /**
  * Adds the SQLPreferenceEditor to a tab of the NodeDialog. A previous state of
  * the editor will be loaded if it was saved once time. (Saving = User applies
@@ -55,6 +56,10 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 	// reopened,
 	// it doesn't get created again
 	private boolean isCreated = false;
+	
+	private BufferedDataTable inputData;
+	private final String tabName = "Preferences";
+	
 
 	protected PreferenceCreatorNodeDialog() {
 
@@ -70,6 +75,7 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 		// load treeModel if it is was saved in the settings
 		// load previous state if KNIME gets restarted
 		DefaultTreeModel treeModel = null;
+		
 		try {
 			treeModel = (DefaultTreeModel) convertFromBytes(settings.getByteArray(CFG_KEY_TREEMODEL));
 		} catch (ClassNotFoundException e1) {
@@ -79,8 +85,26 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 		} catch (InvalidSettingsException e1) {
 			e1.printStackTrace();
 		}
-
+		
+		boolean isSameInput = false;
+		if(inputData == null)
+			isSameInput = true;
+		else if(inputData != null && inputData == (BufferedDataTable) input[PreferenceCreatorNodeModel.TABLE_PORT])
+			isSameInput = true;
+		else{
+			isSameInput = false;
+			isCreated = false;
+		}
+		System.out.println(input[PreferenceCreatorNodeModel.TABLE_PORT]);
+		System.out.println((BufferedDataTable) input[PreferenceCreatorNodeModel.TABLE_PORT]);
+		// get the buffereddatatable with all data records
+		inputData = (BufferedDataTable) input[PreferenceCreatorNodeModel.TABLE_PORT];
+		
 		if (!isCreated) {
+			
+			if(!isSameInput)
+				removeTab(tabName);
+
 			// get the database settings which stores the query
 			DatabasePortObjectSpec spec = (DatabasePortObjectSpec) input[PreferenceCreatorNodeModel.DATABASE_CONNECTION_PORT]
 					.getSpec();
@@ -98,9 +122,6 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 			} else {
 				throw new IllegalArgumentException("No database connection found.");
 			}
-
-			// get the buffereddatatable with all data records
-			BufferedDataTable inputData = (BufferedDataTable) input[PreferenceCreatorNodeModel.TABLE_PORT];
 
 			// check which dimension only allows numeric values and stores this
 			// in a map
@@ -139,8 +160,8 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 			// initialize Preference Editor and add it to one of the tabs from
 			// the NodeDialog
 			sqlPrefEditor = new SQLPreferenceEditor(dimensions, valueMap, isDimensionNumeric, query);
-			addTabAt(0, "Preferences", sqlPrefEditor);
-			selectTab("Preferences");
+			addTabAt(0, tabName, sqlPrefEditor);
+			selectTab(tabName);
 			// set isCreated to true so the editor won't be created all the time
 			// the
 			// node dialog gets opened
@@ -151,7 +172,7 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 			 * PreferenceEditor will change to the loaded one. This allows for
 			 * loading states when KNIME gets restarted.
 			 */
-			if (treeModel != null) {
+			if (treeModel != null && isSameInput) {
 				sqlPrefEditor.loadPreviousState(treeModel);
 			}
 

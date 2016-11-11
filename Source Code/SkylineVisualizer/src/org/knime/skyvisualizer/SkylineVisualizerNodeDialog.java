@@ -11,8 +11,8 @@ import org.knime.core.node.defaultnodesettings.SettingsModelString;
 
 
 /**
- * <code>NodeDialog</code> for the "RepresentativeSkylineGraph" Node. A node to
- * visualize Skylines or Representative Skylines.
+ * <code>NodeDialog</code> for the "(Representative) Skyline Visualizer" Node. A node to
+ * visualize skylines with their dominated points or representative skylines with the corresponding skyline.
  * 
  * @author Stefan Wohlfart
  * @version 1.0
@@ -30,20 +30,15 @@ public class SkylineVisualizerNodeDialog extends DefaultNodeSettingsPane {
 	
 	private ChangeListener listener;
 
-	/**
-	 * New pane for configuring the RepresentativeSkylineGraph node.
-	 * The user can choose between two default letterings of the graph or 
-	 * can input his own chartname, subtitles and the legend for dominated and undominated points.
-	 */
+
 	protected SkylineVisualizerNodeDialog() {
 		
-		//options which changes the chartname, subtitles, legend names accordingly 
-		//to the current selected one
+		//options which changes the chartname, subtitle and the legend names accordingly 
 		addDialogComponent(
 				new DialogComponentButtonGroup(optionSelector, false, "Choose which Graph you want:", options));
 
-		//custom gui components which allow the user to input 
-		//customized chartname, subtitles and legend name for dominated and undominated points
+		/*custom gui components which allow the user to input 
+		customized chartname, subtitles and legend name for dominated and undominated points*/
 		createNewGroup("Custom Graph Options");
 		chartName = new SettingsModelString(SkylineVisualizerNodeModel.CFGKEY_CHART_NAME, "");
 		DialogComponentString dialog1 = new DialogComponentString(chartName, "Chartname:");
@@ -70,9 +65,9 @@ public class SkylineVisualizerNodeDialog extends DefaultNodeSettingsPane {
 		
 		listener = new ChangeListener() {
 			
+			//listener so if the custom option isn't selected all custom GUI components are disabled 
 			@Override
 			public void stateChanged(ChangeEvent e) {
-				System.out.println(optionSelector.getStringValue());
 				if (optionSelector.getStringValue().equals(options[options.length - 1])) {
 					chartName.setEnabled(true);
 					subTitle.setEnabled(true);
@@ -89,8 +84,8 @@ public class SkylineVisualizerNodeDialog extends DefaultNodeSettingsPane {
 
 		optionSelector.addChangeListener(listener);
 		
-		//trigger an event manually so the GUI components get enabled or disabled according 
-		//to the default value of options
+		/*trigger an event manually so the GUI components get enabled or disabled according 
+		to the default value of options*/
 		listener.stateChanged(new ChangeEvent(optionSelector));
 	}
 	

@@ -6,6 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import org.knime.core.data.DataRow;
+import org.knime.core.data.container.CloseableRowIterator;
 import org.knime.core.node.BufferedDataTable;
 import gui.RepresentativeSkylineThreshold;
 
@@ -50,7 +51,7 @@ public class RepresentativeSkyline {
 	 * @param lambda - diversity weight
 	 * @param useUpperBound - boolean to check if single threshold is used as a upper or lower bound
 	 */
-	protected RepresentativeSkyline(BufferedDataTable skyData, 
+	protected RepresentativeSkyline(BufferedDataTable skyData, BufferedDataTable scoreData,
 			String[] dimensions, Map<String,Double> singleValues, 
 			Map<String, double[]> rangeValues,Map<String,String> options,
 			Map<String,Boolean> isUpperBound, int k,double lambda) {
@@ -83,10 +84,14 @@ public class RepresentativeSkyline {
 		}
 		
 		//create Data Points for every DataRow of the skyline
-		for (DataRow row : skyData) {
-			skyline.add(DataPoint.createDataPoint(row, colIndexes));
+		CloseableRowIterator iterator = skyData.iterator();
+		CloseableRowIterator scoreIterator = scoreData.iterator();
+		assert(skyData.size()==scoreData.size());
+		while (iterator.hasNext() && scoreIterator.hasNext())
+		{
+			skyline.add(DataPoint.createDataPoint(scoreIterator.next(), iterator.next(), colIndexes));
 		}
-
+		
 		computeValues();
 
 		//compute objFunction
@@ -272,13 +277,13 @@ public class RepresentativeSkyline {
 	private double computeDiversity(DataPoint p, DataPoint q) {
 
 		// sum of all the fraction of the skyline in each dimension
-		double[] sumFracSky = new double[dimensions.length];
+		double[] sumFracSky = new double[p.getScoreCoordinates().length];
 
-		for (int i = 0; i < p.getCoordinates().length ; i++) {
+		for (int i = 0; i < p.getScoreCoordinates().length ; i++) {
 
 			int diversity = 0;
 			
-			int compareVal = Double.compare(p.getCoordinateAt(i), q.getCoordinateAt(i));
+			int compareVal = Double.compare(p.getScoreCoordinateAt(i), q.getScoreCoordinateAt(i));
 			
 			if (compareVal > 0) {
 				diversity = countRecordsBetween(p, q, i);
@@ -319,8 +324,8 @@ public class RepresentativeSkyline {
 		
 		for (int i = 0; i < skyline.size(); i++) {
 			DataPoint o = skyline.get(i);
-			if (r.getCoordinateAt(index) >= o.getCoordinateAt(index)
-					&& o.getCoordinateAt(index) >= s.getCoordinateAt(index)) {
+			if (r.getScoreCoordinateAt(index) >= o.getScoreCoordinateAt(index)
+					&& o.getScoreCoordinateAt(index) >= s.getScoreCoordinateAt(index)) {
 				diversity++;
 			}
 		}

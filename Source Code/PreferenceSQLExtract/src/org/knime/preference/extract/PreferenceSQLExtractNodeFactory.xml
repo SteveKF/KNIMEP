@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <knimeNode icon="./extractor.png" type="Source" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
-    <name>PreferenceSQLExtract</name>
+    <name>Preference SQL Extract</name>
     
     <shortDescription>
-        Extracts Preference SQL Queries
+        Extracts the Preference SQL query from the input and shows this query in a data table.
     </shortDescription>
     
     <fullDescription>
-        <intro>Insert long description here...</intro>
+        <intro>Extracts the Preference SQL query from the database connection and shows this query in a data table.</intro>
         
-        
-        <option name="short name of first option (like in the dialog)">description of first option</option>
-        <option name="short name of second option (like in the dialog)">description of second option</option>
         <!-- possibly more options that can also be grouped by tabs -->
         <!--
         <tab name="Standard Options">
@@ -25,13 +22,9 @@
     </fullDescription>
     
     <ports>
-        <inPort index="0" name="In-Port name">Description of first input port...</inPort>
+        <inPort index="0" name="Database connection">Database connection from a Preference Creator node</inPort>
         <!-- possibly more input ports here-->
-        <outPort index="0" name="Out-Port name">Description of first output port...</outPort>
+        <outPort index="0" name="Preference SQL query">The Preference SQL query which was created in the Preference Creator node</outPort>
         <!-- possibly more output ports here-->
-    </ports>    
-    <views>
-        <view index="0" name="name of first view">Description of first view...</view>
-        <!--view index="1" name="name of second view">Description of second view...</view-->
-    </views>
+    </ports>
 </knimeNode>

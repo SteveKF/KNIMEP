@@ -31,6 +31,7 @@
     
     <ports>
         <inPort index="0" name="Skyline">A data table which only contains undominated data records based on the preference from the Preference Creator node</inPort>
+        <inPort index="1" name="Skyline">A data table which contains the scores of the undominated data records</inPort>
         <!-- possibly more input ports here-->
         <outPort index="0" name="Representative Skyline">A data table which is the representative skyline of the entered skyline</outPort>
         <outPort index="1" name="Skyline">The skyline which entered this node as an input</outPort>

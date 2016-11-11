@@ -87,10 +87,11 @@ public class DominationMaximizer {
 	 */
 	private List<DataPoint> getKPoints(List<DataPoint> tmpSkyline) {
 		
+		int skylineSize = tmpSkyline.size();
 		List<DataPoint> result = new LinkedList<>();
 		List<DataPoint> dominatedPoints = new LinkedList<>();
 
-		while(result.size() < k && result.size() < tmpSkyline.size()){
+		while(result.size() < k && result.size() < skylineSize){
 			
 			int numDominated = 0;
 			int newEntry = 0;

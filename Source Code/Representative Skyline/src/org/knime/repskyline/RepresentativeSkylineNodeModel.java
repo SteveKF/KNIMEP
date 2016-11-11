@@ -40,6 +40,7 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 
 	// PORTS FOR INPUTS
 	public static final int IN_PORT_SKYLINE = 0;
+	public static final int IN_PORT_SCORE_SKYLINE = 1;
 
 	private String[] dimensions;
 	// size of representative skyline output
@@ -62,7 +63,7 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 	 */
 	protected RepresentativeSkylineNodeModel() {
 
-		super(new PortType[] { BufferedDataTable.TYPE },
+		super(new PortType[] { BufferedDataTable.TYPE, BufferedDataTable.TYPE },
 				new PortType[] { BufferedDataTable.TYPE, BufferedDataTable.TYPE });
 
 	}
@@ -74,6 +75,7 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 	protected PortObject[] execute(final PortObject[] inData, final ExecutionContext exec) throws Exception {
 
 		BufferedDataTable skyline = (BufferedDataTable) inData[IN_PORT_SKYLINE];
+		BufferedDataTable scoreSkyline = (BufferedDataTable) inData[IN_PORT_SCORE_SKYLINE];
 		DataTableSpec skylineSpec = skyline.getDataTableSpec();
 		Map<String, FlowVariable> flowVars = getAvailableFlowVariables();
 
@@ -86,7 +88,7 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 		setDefaultValues(skylineSpec);
 
 		// compute the representative skyline
-		RepresentativeSkyline repSky = new RepresentativeSkyline(skyline, dimensions, singleValues, rangeValues,
+		RepresentativeSkyline repSky = new RepresentativeSkyline(skyline,scoreSkyline, dimensions, singleValues, rangeValues,
 				options, isUpperBound, k, diversityWeight);
 
 		// create spec for the representative skyline

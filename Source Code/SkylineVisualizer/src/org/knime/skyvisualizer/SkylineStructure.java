@@ -1,7 +1,7 @@
 package org.knime.skyvisualizer;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 import org.knime.core.data.DataCell;
 import org.knime.core.data.DataRow;
@@ -47,7 +47,7 @@ public class SkylineStructure {
 		assert (option == SaveOption.DOMINATED || option == SaveOption.UNDOMINATED);
 
 		rowKey = row.getKey();
-		this.row = new LinkedList<DataCell>();
+		this.row = new ArrayList<DataCell>();
 		for (int i = 0; i < colIndexes.length; i++) {
 			this.row.add(row.getCell(colIndexes[i]));
 		}
@@ -62,7 +62,7 @@ public class SkylineStructure {
 
 		assert (option.equals(SaveOption.DOMINATED) || option.equals(SaveOption.UNDOMINATED));
 
-		row = new LinkedList<>();
+		row = new ArrayList<>();
 		isLoadedData = true;
 	}
 

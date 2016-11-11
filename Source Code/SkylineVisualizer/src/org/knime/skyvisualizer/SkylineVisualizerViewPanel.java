@@ -29,9 +29,8 @@ import org.knime.core.data.DoubleValue;
  * @version 1.0
  *
  */
+@SuppressWarnings("serial")
 public class SkylineVisualizerViewPanel extends JPanel {
-
-	private static final long serialVersionUID = -3807907228824920209L;
 
 	private List<SkylineStructure> dominatedPoints;
 	private List<SkylineStructure> undominatedPoints;
@@ -69,11 +68,10 @@ public class SkylineVisualizerViewPanel extends JPanel {
 			String dominatedName, String undominatedName) {
 
 		super();
-
+		
 		this.dimensions = dimensions;
 		this.dominatedPoints = dominatedPoints;
 		this.undominatedPoints = undominatedPoints;
-	
 		
 		if(option.equals(SkylineVisualizerNodeDialog.options[0])){
 			this.chartname = "Skyline Graph";
@@ -92,15 +90,21 @@ public class SkylineVisualizerViewPanel extends JPanel {
 			this.undominatedName = undominatedName;
 		}
 
-		if (!dominatedPoints.get(0).isLoadedData()) {
-			List<SkylineStructure> tmpDomPoints = new ArrayList<>(dominatedPoints);
-			for (int i = 0; i < tmpDomPoints.size(); i++) {
+		
+		if ((dominatedPoints.size()>0 && !dominatedPoints.get(0).isLoadedData()) || 
+				(undominatedPoints.size()>0 && !undominatedPoints.get(0).isLoadedData())) {
+			List<SkylineStructure> removableStructures = new ArrayList<>();
+			for (int i = 0; i < dominatedPoints.size(); i++) {
 				for (int j = 0; j < undominatedPoints.size(); j++) {
-					if (tmpDomPoints.get(i).getRowKey().equals(undominatedPoints.get(j).getRowKey())) {
-						dominatedPoints.remove(i);
+					if (dominatedPoints.get(i).getRowKey().equals(undominatedPoints.get(j).getRowKey())) {
+						removableStructures.add(dominatedPoints.get(i));
 						break;
 					}
 				}
+			}
+			for(SkylineStructure struct: removableStructures){
+				if(dominatedPoints.contains(struct))
+					dominatedPoints.remove(struct);
 			}
 		}
 		

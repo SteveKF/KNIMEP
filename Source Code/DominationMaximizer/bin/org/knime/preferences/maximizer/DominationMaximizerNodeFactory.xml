@@ -28,8 +28,8 @@
     <ports>
         <inPort index="0" name="Database connection">A database connection from a Preference Creator node</inPort>
         <!-- possibly more input ports here-->
-        <outPort index="0" name="Skyline">The undominated data records of the underlying data table of the database connection</outPort>
-        <outPort index="1" name="Representative Skyline">The representative skyline of the underlying data table of the database connection</outPort>
+        <outPort index="0" name="Representative Skyline">The representative skyline of the underlying data table of the database connection</outPort>
+        <outPort index="1" name="Skyline">The undominated data records of the underlying data table of the database connection</outPort>
         <!-- possibly more output ports here-->
     </ports>
 </knimeNode>

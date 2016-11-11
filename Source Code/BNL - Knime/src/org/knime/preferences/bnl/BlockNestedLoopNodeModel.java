@@ -443,9 +443,6 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 		// saves the skyline and dominated data rows structures to create a view
 		// if KNIME is restarted without executing the node again
 
-		boolean all_saving = false;
-		boolean sky_saving = false;
-
 		// create the main model content
 		ModelContent all_modelContent = new ModelContent(INTERNAL_MODEL_ALL);
 
@@ -460,7 +457,6 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 				// save the bin to the sub model content
 				all_structure.get(i).saveTo(subContent);
 			}
-			all_saving = true;
 		}
 
 		if (sky_structure.size() > 0) {
@@ -470,25 +466,23 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 				// save the bin to the sub model content
 				sky_structure.get(i).saveTo(subContent);
 			}
-			sky_saving = true;
 		}
 
-		if (all_saving) {
-			File file = new File(internDir, FILE_NAME_ALL);
-			FileOutputStream fos = new FileOutputStream(file);
-			all_modelContent.saveToXML(fos);
-		}
-		if (sky_saving) {
-			File file = new File(internDir, FILE_NAME_SKY);
-			FileOutputStream fos = new FileOutputStream(file);
-			sky_modelContent.saveToXML(fos);
-		}
+			File dominatedFile = new File(internDir, FILE_NAME_ALL);
+			FileOutputStream dominatedFos = new FileOutputStream(dominatedFile);
+			all_modelContent.saveToXML(dominatedFos);
+
+		
+			File skylineFile = new File(internDir, FILE_NAME_SKY);
+			FileOutputStream skylineFos = new FileOutputStream(skylineFile);
+			sky_modelContent.saveToXML(skylineFos);
+		
 
 		ModelContent dimension_modelContent = new ModelContent(INTERNAL_MODEL_DIMENSIONS);
 		dimension_modelContent.addStringArray(CFGKEY_DIMENSIONS, dimensions);
-		File file = new File(internDir, FILE_NAME_DIMENSIONS);
-		FileOutputStream fos = new FileOutputStream(file);
-		dimension_modelContent.saveToXML(fos);
+		File dimensionFile = new File(internDir, FILE_NAME_DIMENSIONS);
+		FileOutputStream dimensionFos = new FileOutputStream(dimensionFile);
+		dimension_modelContent.saveToXML(dimensionFos);
 
 	}
 

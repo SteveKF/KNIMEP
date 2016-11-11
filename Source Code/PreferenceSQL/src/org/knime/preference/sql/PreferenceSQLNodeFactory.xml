@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <knimeNode icon="./psql.png" type="Source" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
-    <name>PreferenceSQL</name>
+    <name>Preference SQL</name>
     
     <shortDescription>
-        Output for Preference SQL
+        With the Preference SQL query a skyline based on the created preferences in the Preference Creator node will be computed.
     </shortDescription>
     
     <fullDescription>
-        <intro>Insert long description here...</intro>
+        <intro>In the Preference Creator node a Preference SQL query is built on created preferences.
+        This query will be sent to the gemini server from University Augsburg. 
+        After this a data table will be created according to this query. <br/> 
+        Currently this works only for the database on the gemini server. However, the Block Nested Loop node returns the same data table.</intro>
         
-        
-        <option name="short name of first option (like in the dialog)">description of first option</option>
-        <option name="short name of second option (like in the dialog)">description of second option</option>
         <!-- possibly more options that can also be grouped by tabs -->
         <!--
         <tab name="Standard Options">
@@ -25,13 +25,9 @@
     </fullDescription>
     
     <ports>
-        <inPort index="0" name="In-Port name">Description of first input port...</inPort>
+        <inPort index="0" name="Database Connection">Database connection from the Preference Creator node</inPort>
         <!-- possibly more input ports here-->
-        <outPort index="0" name="Out-Port name">Description of first output port...</outPort>
+        <outPort index="0" name="Skyline">A skyline which is based on the created preferences in the Preference Creator node</outPort>
         <!-- possibly more output ports here-->
-    </ports>    
-    <views>
-        <view index="0" name="name of first view">Description of first view...</view>
-        <!--view index="1" name="name of second view">Description of second view...</view-->
-    </views>
+    </ports>
 </knimeNode>

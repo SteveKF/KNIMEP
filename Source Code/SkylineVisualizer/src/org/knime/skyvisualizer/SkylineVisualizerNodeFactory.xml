@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <knimeNode icon="./visualizer.png" type="Visualizer" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
-    <name>SkylineVisualizer</name>
+    <name>(Representative) Skyline Visualizer</name>
     
     <shortDescription>
-        A node to visualize skylines and representative skylines.
+        A node to visualize a coordinate system with dominated and dominated points.
     </shortDescription>
     
     <fullDescription>
-        <intro>Insert long description here...</intro>
+        <intro>This node creates a coordinate system for every dimension combination which has a preference on it.
+        The coordinate system contains dominated and undominated points in different colors.
+        The coordinate systems are created for two or three dimensions. Dimensions which are not numeric won't be considered.</intro>
         
         
-        <option name="short name of first option (like in the dialog)">description of first option</option>
-        <option name="short name of second option (like in the dialog)">description of second option</option>
+        <option name="Graph Option">Option for different chart name, subtitle and legend names for dominated and undominated points.</option>
+        <option name="Chart name">A custom chart name can be entered if the custom option was chosen.</option>
+        <option name="Subtitle">A custom subtitle name can be entered if the custom option was chosen.</option>
+        <option name="Name for dominated points">A custom legend name for the dominated points can be entered if the Custom option was chosen.</option>
+ 		<option name="Name for undominated points">A custom legend name for the undominated points can be entered if the Custom option was chosen.</option>
         <!-- possibly more options that can also be grouped by tabs -->
         <!--
         <tab name="Standard Options">
@@ -25,13 +30,13 @@
     </fullDescription>
     
     <ports>
-        <inPort index="0" name="In-Port name">Description of first input port...</inPort>
+        <inPort index="0" name="Skyline or representative skyline">A data table which contais skyline or representative skyline points</inPort>
+        <inPort index="1" name="Skyline or dominated points">A data table which contains skyline or dominated points</inPort>
         <!-- possibly more input ports here-->
-        <outPort index="0" name="Out-Port name">Description of first output port...</outPort>
         <!-- possibly more output ports here-->
     </ports>    
     <views>
-        <view index="0" name="name of first view">Description of first view...</view>
+        <view index="0" name="Coordinate System">A view which contains coordinate systems for every dimension combination which has a preference on it.</view>
         <!--view index="1" name="Graph">Description of second view...</view-->
     </views>
 </knimeNode>
