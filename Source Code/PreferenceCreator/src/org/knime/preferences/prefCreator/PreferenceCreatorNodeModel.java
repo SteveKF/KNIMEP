@@ -8,6 +8,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import javax.swing.tree.DefaultTreeModel;
 import org.knime.core.data.DataTableSpec;
+import org.knime.core.data.RowKey;
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.CanceledExecutionException;
 import org.knime.core.node.ExecutionContext;
@@ -46,6 +47,9 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 	private TreeMap<String, String> preferences;
 
 	private DefaultTreeModel treeModel;
+	
+	private String[] columnNames;
+	private RowKey[] rowKeys;
 
 	protected PreferenceCreatorNodeModel() {
 		super(new PortType[] { DatabasePortObject.TYPE, BufferedDataTable.TYPE }, new PortType[] {
@@ -57,24 +61,32 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 	 */
 	@Override
 	protected PortObject[] execute(final PortObject[] inData, final ExecutionContext exec) throws Exception {
-		
-		if (scoreQuery == null || preferenceQuery == null || dimensions == null)
-			throw new IllegalArgumentException("Can't create queries with current settings. Open the dialog to create preferences.");
-
 
 		// get database connection settings
 		DatabasePortObjectSpec spec = (DatabasePortObjectSpec) inData[DATABASE_CONNECTION_PORT].getSpec();
 		CredentialsProvider credProvider = getCredentialsProvider();
 		DatabaseQueryConnectionSettings dbSettings = spec.getConnectionSettings(credProvider);
 
+		// create original table with the database connection and the score query
+		DatabaseUtility databaseUtil = DatabaseUtility.getUtility(dbSettings.getDatabaseIdentifier());
+		DBReader reader = databaseUtil.getReader(dbSettings);
+		BufferedDataTable originalTable = reader.createTable(exec, credProvider);
+		
+		if(originalTable.size() != ((BufferedDataTable) inData[TABLE_PORT]).size())
+			throw new IllegalArgumentException(
+					"The query of the database connection needs to return the same amount of rows as the data table.");
+
+		if (scoreQuery == null || preferenceQuery == null || dimensions == null)
+			throw new IllegalArgumentException(
+					"Can't create queries with current settings. Open the dialog to create preferences.");
+
 		// push/create flow variables
 		pushFlowVariableString(ConfigKeys.CFG_KEY_SCORE_QUERY, scoreQuery);
 		pushFlowVariableString(ConfigKeys.CFG_KEY_PREFERENCE_QUERY, preferenceQuery);
 
 		// create score table with the database connection and the score query
-		DatabaseUtility databaseUtil = DatabaseUtility.getUtility(dbSettings.getDatabaseIdentifier());
 		dbSettings.setQuery(scoreQuery);
-		DBReader reader = databaseUtil.getReader(dbSettings);
+		reader = databaseUtil.getReader(dbSettings);
 		BufferedDataTable scoreTable = reader.createTable(exec, credProvider);
 
 		// push the columns with the respective priorities
@@ -93,7 +105,7 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 			else
 				pushFlowVariableString(columnNames[i], ConfigKeys.CFG_KEY_NOT_EXISTS_PREFERENCE);
 		}
-				
+
 		// return original database connection and the score table as optional
 		// output
 		return new PortObject[] { inData[DATABASE_CONNECTION_PORT], scoreTable, FlowVariablePortObject.INSTANCE };
@@ -115,13 +127,10 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 
 		DataTableSpec dbSpec = ((DatabasePortObjectSpec) inSpecs[DATABASE_CONNECTION_PORT]).getDataTableSpec();
 		DataTableSpec spec = (DataTableSpec) inSpecs[TABLE_PORT];
-		boolean isEqual = true;
-		
-		if(!dbSpec.equalStructure(spec))
-			isEqual = false;
-		
-		if(!isEqual)
-			throw new InvalidSettingsException("The database connection needs to return the same data table as the data table at inport 1.");
+
+		if (!dbSpec.equalStructure(spec))
+			throw new InvalidSettingsException(
+					"The database connection needs to return the same data table as the data table at inport 1.");
 
 		return new PortObjectSpec[] { inSpecs[DATABASE_CONNECTION_PORT], null, null };
 	}
@@ -155,6 +164,10 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 			e.printStackTrace();
 		}
 		settings.addByteArray(PreferenceCreatorNodeDialog.CFG_KEY_TREEMODEL, treeBytes);
+		
+		settings.addStringArray(PreferenceCreatorNodeDialog.CFG_KEY_COLUMN_NAMES, columnNames);
+		settings.addRowKeyArray(PreferenceCreatorNodeDialog.CFG_KEY_ROW_KEYS, rowKeys);
+
 
 	}
 
@@ -168,6 +181,9 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 		preferenceQuery = settings.getString(ConfigKeys.CFG_KEY_PREFERENCE_QUERY);
 		dimensions = settings.getStringArray(PreferenceCreatorNodeDialog.CFG_KEY_DIMENSIONS);
 		keyArray = settings.getStringArray(PreferenceCreatorNodeDialog.CFG_KEY_PREFERENCE_KEYS);
+		
+		columnNames = settings.getStringArray(PreferenceCreatorNodeDialog.CFG_KEY_COLUMN_NAMES);
+		rowKeys = settings.getRowKeyArray(PreferenceCreatorNodeDialog.CFG_KEY_ROW_KEYS);
 
 		preferences = new TreeMap<>();
 		for (String key : keyArray)

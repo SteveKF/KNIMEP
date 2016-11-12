@@ -5,9 +5,13 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
+import org.knime.core.data.DataRow;
 import org.knime.core.data.DataTableSpec;
+import org.knime.core.data.RowKey;
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.InvalidSettingsException;
 import org.knime.core.node.NodeSettingsRO;
@@ -35,13 +39,18 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 	public static final String CFG_KEY_WEIGHT = "weight";
 	public static final String CFG_KEY_UPPER_BOUND = "isUpperBound";
 	
+	public static final String CFG_KEY_ROW_KEYS = "rowKeys";
+	public static final String CFG_KEY_COLUMN_NAMES = "columnNames";
+	
 	private final String tabName = "Threshold";
 
 	// boolean to check if view panel was already created
 	private boolean isCreated = false;
 
 	private RepresentativeSkylineViewPanel panel;
-	private PortObject input;
+	
+	private RowKey[] rowKeys;
+	private String[] columnNames;
 
 	protected RepresentativeSkylineNodeDialog() {
 		super();
@@ -50,7 +59,7 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 	@SuppressWarnings({ "unchecked" })
 	@Override
 	public void loadSettingsFrom(NodeSettingsRO settings, PortObject[] input) throws NotConfigurableException {
-
+		
 		// variables which will be loaded if their is a saved state after
 		// restarting KNIME
 		String[] dimensions = null;
@@ -61,32 +70,43 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 		int k = 1;
 		double diversityWeight = 0.5;
 		
+		// try to load these saved states
+		try {
+			rowKeys = settings.getRowKeyArray(CFG_KEY_ROW_KEYS);
+			columnNames = settings.getStringArray(CFG_KEY_COLUMN_NAMES);
+			
+			dimensions = settings.getStringArray(CFG_KEY_DIMENSIONS);
+			singleValues = (Map<String, Double>) convertFromBytes(settings.getByteArray(CFG_KEY_SINGLEVALUE));
+			rangeValues = (Map<String, double[]>) convertFromBytes(settings.getByteArray(CFG_KEY_RANGEVALUE));
+			options = (Map<String, String>) convertFromBytes(settings.getByteArray(CFG_KEY_OPTIONVALUE));
+			isUpperBound = (Map<String, Boolean>) convertFromBytes(settings.getByteArray(CFG_KEY_UPPER_BOUND));
+			k = settings.getInt(CFG_KEY_SIZE);
+			diversityWeight = settings.getDouble(CFG_KEY_WEIGHT);
+		} catch (InvalidSettingsException | ClassNotFoundException | IOException e1) {
+			e1.printStackTrace();
+		}
+		
+		BufferedDataTable inputTable = (BufferedDataTable) input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE];
+		String[] tmpColumnNames = inputTable.getDataTableSpec().getColumnNames();
+		List<RowKey> keys = new ArrayList<>();
+		for(DataRow row: inputTable){
+			keys.add(row.getKey());
+		}
+		RowKey[] tmpRowKeys = new RowKey[keys.size()];
+		tmpRowKeys = keys.toArray(tmpRowKeys);
+		
 		boolean isSameInput = false;
-		if(this.input == null)
+		if(rowKeys==null && columnNames == null)
 			isSameInput = true;
-		else if(this.input != null && this.input == input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE])
+		else if(rowKeys != null && columnNames != null && isEqualColumns(columnNames,tmpColumnNames) && isEqualKeys(rowKeys,tmpRowKeys))
 			isSameInput = true;
 		else{
 			isSameInput = false;
 			isCreated = false;
 		}
-			
-		this.input = input[RepresentativeSkylineNodeModel.IN_PORT_SKYLINE];
-
-			// try to load these saved states
-			try {
-				dimensions = settings.getStringArray(CFG_KEY_DIMENSIONS);
-				singleValues = (Map<String, Double>) convertFromBytes(settings.getByteArray(CFG_KEY_SINGLEVALUE));
-				rangeValues = (Map<String, double[]>) convertFromBytes(settings.getByteArray(CFG_KEY_RANGEVALUE));
-				options = (Map<String, String>) convertFromBytes(settings.getByteArray(CFG_KEY_OPTIONVALUE));
-				isUpperBound = (Map<String, Boolean>) convertFromBytes(settings.getByteArray(CFG_KEY_UPPER_BOUND));
-				k = settings.getInt(CFG_KEY_SIZE);
-				diversityWeight = settings.getDouble(CFG_KEY_WEIGHT);
-			} catch (InvalidSettingsException | ClassNotFoundException | IOException e1) {
-				e1.printStackTrace();
-			}
-
-	
+		
+		rowKeys = tmpRowKeys;
+		columnNames = tmpColumnNames;
 
 		// creates all dimensions if it is the first time the NodeDialog gets
 		// opened after creating the node
@@ -145,9 +165,49 @@ public class RepresentativeSkylineNodeDialog extends DataAwareDefaultNodeSetting
 
 		settings.addInt(CFG_KEY_SIZE, panel.getSizeOfRepresentativeSkyline());
 		settings.addDouble(CFG_KEY_WEIGHT, panel.getDiversityWeight());
+		
+		settings.addStringArray(CFG_KEY_COLUMN_NAMES, columnNames);
+		settings.addRowKeyArray(CFG_KEY_ROW_KEYS, rowKeys);
 
 		super.saveSettingsTo(settings);
 	}
+	
+	private boolean isEqualColumns(String[] columns1, String[] columns2){
+		
+		boolean isEqual = false;
+		
+		if(columns1.length==columns2.length){
+			isEqual = true;
+			for(int i=0; i < columns1.length; i++){
+				if(!columns1[i].equals(columns2[i])){
+					isEqual = false;
+					break;
+				}
+			}
+		}
+		
+		return isEqual;
+		
+	}
+	
+	private boolean isEqualKeys(RowKey[] rowKeys1, RowKey[] rowKeys2){
+		
+		boolean isEqual = false;
+		
+		if(rowKeys1.length==rowKeys2.length){
+			isEqual = true;
+			for(int i=0; i < rowKeys1.length; i++){
+				if(!rowKeys1[i].equals(rowKeys2[i])){
+					isEqual = false;
+					break;
+				}
+			}
+		}
+		
+		return isEqual;
+		
+	}
+
 
 	/**
 	 * Converts object to byte array.

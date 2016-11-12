@@ -32,6 +32,7 @@ public class SkylineVisualizerNodeView extends NodeView<SkylineVisualizerNodeMod
 			setComponent(panel);
 
 		}
+			
     }
 
     /**

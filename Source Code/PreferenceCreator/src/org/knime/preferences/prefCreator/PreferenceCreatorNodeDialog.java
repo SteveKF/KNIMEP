@@ -7,6 +7,7 @@ import java.io.ObjectInput;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,6 +20,7 @@ import org.knime.core.data.DataColumnSpec;
 import org.knime.core.data.DataRow;
 import org.knime.core.data.DataTableSpec;
 import org.knime.core.data.DoubleValue;
+import org.knime.core.data.RowKey;
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.InvalidSettingsException;
 import org.knime.core.node.NodeSettingsRO;
@@ -52,12 +54,18 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 	public static final String CFG_KEY_TREEMODEL = "treeModel";
 	public static final String CFG_KEY_PREFERENCE_KEYS = "preferenceKeys";
 
+	public static final String CFG_KEY_ROW_KEYS = "rowKeys";
+	public static final String CFG_KEY_COLUMN_NAMES = "columnNames";
+	
+
 	// checks if the preference editor was already created so that if it gets
 	// reopened,
 	// it doesn't get created again
 	private boolean isCreated = false;
 	
-	private BufferedDataTable inputData;
+	private RowKey[] rowKeys;
+	private String[] columnNames;
+	
 	private final String tabName = "Preferences";
 	
 
@@ -77,6 +85,9 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 		DefaultTreeModel treeModel = null;
 		
 		try {
+			rowKeys = settings.getRowKeyArray(CFG_KEY_ROW_KEYS);
+			columnNames = settings.getStringArray(CFG_KEY_COLUMN_NAMES);
+			
 			treeModel = (DefaultTreeModel) convertFromBytes(settings.getByteArray(CFG_KEY_TREEMODEL));
 		} catch (ClassNotFoundException e1) {
 			e1.printStackTrace();
@@ -86,19 +97,27 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 			e1.printStackTrace();
 		}
 		
+		BufferedDataTable inputData = (BufferedDataTable) input[PreferenceCreatorNodeModel.TABLE_PORT];
+		String[] tmpColumnNames = inputData.getDataTableSpec().getColumnNames();
+		List<RowKey> keys = new ArrayList<>();
+		for(DataRow row: inputData){
+			keys.add(row.getKey());
+		}
+		RowKey[] tmpRowKeys = new RowKey[keys.size()];
+		tmpRowKeys = keys.toArray(tmpRowKeys);
+		
 		boolean isSameInput = false;
-		if(inputData == null)
+		if(rowKeys==null && columnNames == null)
 			isSameInput = true;
-		else if(inputData != null && inputData == (BufferedDataTable) input[PreferenceCreatorNodeModel.TABLE_PORT])
+		else if(rowKeys != null && columnNames != null && isEqualColumns(columnNames,tmpColumnNames) && isEqualKeys(rowKeys,tmpRowKeys))
 			isSameInput = true;
 		else{
 			isSameInput = false;
 			isCreated = false;
 		}
-		System.out.println(input[PreferenceCreatorNodeModel.TABLE_PORT]);
-		System.out.println((BufferedDataTable) input[PreferenceCreatorNodeModel.TABLE_PORT]);
-		// get the buffereddatatable with all data records
-		inputData = (BufferedDataTable) input[PreferenceCreatorNodeModel.TABLE_PORT];
+		
+		rowKeys = tmpRowKeys;
+		columnNames = tmpColumnNames;
 		
 		if (!isCreated) {
 			
@@ -198,6 +217,10 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 		settings.addString(ConfigKeys.CFG_KEY_SCORE_QUERY, scoreQuery);
 		settings.addString(ConfigKeys.CFG_KEY_PREFERENCE_QUERY, preferenceQuery);
 		settings.addStringArray(CFG_KEY_DIMENSIONS, dimensions);
+		
+		settings.addRowKeyArray(CFG_KEY_ROW_KEYS, rowKeys);
+		settings.addStringArray(CFG_KEY_COLUMN_NAMES, columnNames);
+		
 
 		TreeMap<String, String> preferences = sqlPrefEditor.getPreferences();
 		Set<String> keySet = preferences.keySet();
@@ -220,6 +243,41 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 		super.saveSettingsTo(settings);
 	}
 	
+	private boolean isEqualColumns(String[] columns1, String[] columns2){
+		
+		boolean isEqual = false;
+		
+		if(columns1.length==columns2.length){
+			isEqual = true;
+			for(int i=0; i < columns1.length; i++){
+				if(!columns1[i].equals(columns2[i])){
+					isEqual = false;
+					break;
+				}
+			}
+		}
+		
+		return isEqual;
+		
+	}
+	
+	private boolean isEqualKeys(RowKey[] rowKeys1, RowKey[] rowKeys2){
+		
+		boolean isEqual = false;
+		
+		if(rowKeys1.length==rowKeys2.length){
+			isEqual = true;
+			for(int i=0; i < rowKeys1.length; i++){
+				if(!rowKeys1[i].equals(rowKeys2[i])){
+					isEqual = false;
+					break;
+				}
+			}
+		}
+		
+		return isEqual;
+		
+	}
 	
 
 	/**

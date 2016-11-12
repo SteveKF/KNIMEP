@@ -11,6 +11,7 @@ import org.knime.core.data.DataColumnSpec;
 import org.knime.core.data.DataRow;
 import org.knime.core.data.DataTableSpec;
 import org.knime.core.data.DoubleValue;
+import org.knime.core.data.RowKey;
 import org.knime.core.node.BufferedDataContainer;
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.CanceledExecutionException;
@@ -54,6 +55,9 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 	private Map<String, double[]> rangeValues;
 	// options which thresholds to use: single, range or none thresholds
 	private Map<String, String> options;
+	
+	private String[] columnNames;
+	private RowKey[] rowKeys;
 	
 	private DataTableSpec originalSpec;
 
@@ -234,6 +238,9 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 
 		settings.addInt(RepresentativeSkylineNodeDialog.CFG_KEY_SIZE, k);
 		settings.addDouble(RepresentativeSkylineNodeDialog.CFG_KEY_WEIGHT, diversityWeight);
+		
+		settings.addStringArray(RepresentativeSkylineNodeDialog.CFG_KEY_COLUMN_NAMES, columnNames);
+		settings.addRowKeyArray(RepresentativeSkylineNodeDialog.CFG_KEY_ROW_KEYS, rowKeys);
 
 	}
 
@@ -261,6 +268,9 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 
 		k = settings.getInt(RepresentativeSkylineNodeDialog.CFG_KEY_SIZE);
 		diversityWeight = settings.getDouble(RepresentativeSkylineNodeDialog.CFG_KEY_WEIGHT);
+		
+		columnNames = settings.getStringArray(RepresentativeSkylineNodeDialog.CFG_KEY_COLUMN_NAMES);
+		rowKeys = settings.getRowKeyArray(RepresentativeSkylineNodeDialog.CFG_KEY_ROW_KEYS);
 
 	}
 
