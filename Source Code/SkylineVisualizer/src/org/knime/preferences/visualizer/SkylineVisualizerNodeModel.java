@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -23,6 +24,7 @@ import org.knime.core.node.NodeModel;
 import org.knime.core.node.NodeSettingsRO;
 import org.knime.core.node.NodeSettingsWO;
 import org.knime.core.node.defaultnodesettings.SettingsModelString;
+import org.knime.core.node.defaultnodesettings.SettingsModelStringArray;
 import org.knime.core.node.port.PortObject;
 import org.knime.core.node.port.PortObjectSpec;
 import org.knime.core.node.port.PortType;
@@ -43,8 +45,6 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 	public static final int UNDOMINATED_PORT = 0;
 	public static final int DOMINATED_PORT = 1;
 
-	private final String DIMENSIONS = "dimensionssaving";
-
 	static final String CFGKEY_GRAPH_OPTIONS = "graphOptions";
 	static final String CFGKEY_DIMENSIONS = "dimensions";
 	static final String CFGKEY_CHART_NAME = "chartName";
@@ -54,11 +54,9 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 
 	private static final String FILE_NAME_DOMINATED = "dominated.xml";
 	private static final String FILE_NAME_UNDOMINATED = "undominated.xml";
-	private static final String FILE_NAME_DIMENSIONS = "dimensions.xml";
 
 	private static final String INTERNAL_MODEL_DOMINATED = "internalModelDominated";
 	private static final String INTERNAL_MODEL_UNDOMINATED = "internalModelUndominated";
-	private static final String INTERNAL_MODEL_DIMENSIONS = "internalModelDimensions";
 
 	private final SettingsModelString graphOptions = new SettingsModelString(CFGKEY_GRAPH_OPTIONS,
 			SkylineVisualizerNodeDialog.options[1]);
@@ -66,10 +64,10 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 	private SettingsModelString subTitle = new SettingsModelString(CFGKEY_SUBTITLE, "");
 	private SettingsModelString dominatedPointsName = new SettingsModelString(CFGKEY_DOMINATED_POINTS_NAME, "");
 	private SettingsModelString undominatedPointsName = new SettingsModelString(CFGKEY_UNDOMINATED_POINTS_NAME, "");
+	private SettingsModelStringArray dimensionsModel = new SettingsModelStringArray(CFGKEY_DIMENSIONS, new String[0]);
 
 	private List<SkylineStructure> dominatedStruct;
 	private List<SkylineStructure> undominatedStruct;
-	private List<String> columnList;
 
 	protected SkylineVisualizerNodeModel() {
 
@@ -87,25 +85,12 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 				&& !flowVars.containsKey(ConfigKeys.CFG_KEY_SCORE_QUERY))
 			throw new InvalidSettingsException("No preferences found. The data flow needs a PreferenceCreator node.");
 
-		dominatedStruct = new LinkedList<>();
-		undominatedStruct = new LinkedList<>();
-		columnList = new LinkedList<String>();
+		dominatedStruct = new ArrayList<>();
+		undominatedStruct = new ArrayList<>();
 
-		List<Integer> tmpColIndexes = new LinkedList<>();
 
 		DataTableSpec spec = ((BufferedDataTable) inData[UNDOMINATED_PORT]).getDataTableSpec();
-		String[] columnNames = spec.getColumnNames();
-		for (int i = 0; i < columnNames.length; i++) {
-			// only columns which have preferences and are numeric will be in
-			// the view
-			if (flowVars.get(columnNames[i]).getStringValue().equals(ConfigKeys.CFG_KEY_EXISTS_PREFERENCE))
-				if (spec.getColumnSpec(columnNames[i]).getType().isCompatible(DoubleValue.class)) {
-					columnList.add(columnNames[i]);
-					tmpColIndexes.add(i);
-				}
-		}
-
-		int[] colIndexes = tmpColIndexes.stream().mapToInt(i -> i).toArray();
+		int[] colIndexes = createColumnIndexes(spec, flowVars);
 
 		// SAVE DOMINATED POINTS IN A SKYLINESTRUCTURE
 		for (DataRow row : (BufferedDataTable) inData[DOMINATED_PORT]) {
@@ -120,6 +105,52 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 		}
 
 		return new PortObject[] {};
+	}
+
+	/**
+	 * 
+	 * @param spec - the DataTableSpec of the BufferedDataTable which entered this node
+	 * @param flowVars - FlowVariables of this node
+	 * @return Returns the indexes for the columns which should be displayed in the view
+	 */
+	private int[] createColumnIndexes(DataTableSpec spec, Map<String, FlowVariable> flowVars) {
+
+		List<Integer> tmpColIndexes = new ArrayList<>();
+		List<String> tmpDimension = new ArrayList<>(Arrays.asList(dimensionsModel.getStringArrayValue()));
+		String[] columnNames = spec.getColumnNames();
+
+		boolean newComputation = false;
+		//get the dimensions which were selected in the dialog and get the indexes of them
+		if (tmpDimension.size() > 0) {
+			for (int i = 0; i < columnNames.length; i++) {
+				if (tmpDimension.contains(columnNames[i]) && flowVars.get(columnNames[i]).getStringValue().equals(ConfigKeys.CFG_KEY_EXISTS_PREFERENCE))
+					tmpColIndexes.add(i);
+				else if(tmpDimension.contains(columnNames[i]) && !flowVars.get(columnNames[i]).getStringValue().equals(ConfigKeys.CFG_KEY_EXISTS_PREFERENCE))
+					newComputation = true;
+			}
+		}else{
+			newComputation = true;
+		}
+		
+		//if no settings were entered by the user get the indexes of all columns which have preferences and are numeric
+		if(newComputation){
+			List<String> columnList = new ArrayList<>();
+			tmpColIndexes = new ArrayList<>();
+			for (int i = 0; i < columnNames.length; i++) {
+				// only columns which have preferences and are numeric will be in the view
+				if (flowVars.get(columnNames[i]).getStringValue().equals(ConfigKeys.CFG_KEY_EXISTS_PREFERENCE))
+					if (spec.getColumnSpec(columnNames[i]).getType().isCompatible(DoubleValue.class)) {
+						columnList.add(columnNames[i]);
+						tmpColIndexes.add(i);
+					}
+			}
+			
+			String[] dims = new String[columnList.size()];
+			dims = columnList.toArray(dims);
+			dimensionsModel.setStringArrayValue(dims);
+		}
+
+		return tmpColIndexes.stream().mapToInt(i -> i).toArray();
 	}
 
 	/**
@@ -140,12 +171,11 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 
 	/**
 	 * 
-	 * @return Returns the dimensions which have preferences on it and are numeric
+	 * @return Returns the dimensions which have preferences on it and are
+	 *         numeric
 	 */
 	public String[] getDimensions() {
-		String[] dims = new String[columnList.size()];
-		dims = columnList.toArray(dims);
-		return dims;
+		return dimensionsModel.getStringArrayValue();
 	}
 
 	/**
@@ -214,6 +244,7 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 		subTitle.saveSettingsTo(settings);
 		dominatedPointsName.saveSettingsTo(settings);
 		undominatedPointsName.saveSettingsTo(settings);
+		dimensionsModel.saveSettingsTo(settings);
 	}
 
 	/**
@@ -226,6 +257,7 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 		subTitle.loadSettingsFrom(settings);
 		dominatedPointsName.loadSettingsFrom(settings);
 		undominatedPointsName.loadSettingsFrom(settings);
+		dimensionsModel.loadSettingsFrom(settings);
 	}
 
 	/**
@@ -238,6 +270,7 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 		subTitle.validateSettings(settings);
 		dominatedPointsName.validateSettings(settings);
 		undominatedPointsName.validateSettings(settings);
+		dimensionsModel.validateSettings(settings);
 	}
 
 	/**
@@ -247,18 +280,18 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 	protected void loadInternals(final File internDir, final ExecutionMonitor exec)
 			throws IOException, CanceledExecutionException {
 
-		//method which loads data from a intern file
-		
+		// method which loads data from a intern file
+
 		dominatedStruct = new LinkedList<>();
 		undominatedStruct = new LinkedList<>();
-		columnList = new LinkedList<>();
 
 		// create new file for dominated points
 		File all_file = new File(internDir, FILE_NAME_DOMINATED);
 		FileInputStream all_fis = new FileInputStream(all_file);
 		ModelContentRO all_modelContent = ModelContent.loadFromXML(all_fis);
 		try {
-			//try to get every child of the main model and create a skyline structure
+			// try to get every child of the main model and create a skyline
+			// structure
 			for (int i = 0; i < all_modelContent.getChildCount(); i++) {
 				SkylineStructure struct = new SkylineStructure(SaveOption.DOMINATED);
 				ModelContentRO subModelContent = all_modelContent.getModelContent(SaveOption.DOMINATED.toString() + i);
@@ -274,7 +307,8 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 		FileInputStream sky_fis = new FileInputStream(sky_file);
 		ModelContentRO sky_modelContent = ModelContent.loadFromXML(sky_fis);
 		try {
-			//try to get every child of the main model and create a skyline structure
+			// try to get every child of the main model and create a skyline
+			// structure
 			for (int i = 0; i < sky_modelContent.getChildCount(); i++) {
 				SkylineStructure struct = new SkylineStructure(SaveOption.UNDOMINATED);
 				ModelContentRO subModelContent = sky_modelContent
@@ -282,18 +316,6 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 				struct.loadFrom(subModelContent);
 				undominatedStruct.add(struct);
 			}
-		} catch (InvalidSettingsException e) {
-			throw new IOException(e.getMessage());
-		}
-
-		//load all dimensions from an intern file
-		File dimensions_file = new File(internDir, FILE_NAME_DIMENSIONS);
-		FileInputStream dimensions_fis = new FileInputStream(dimensions_file);
-		ModelContentRO dimensions_modelContent = ModelContent.loadFromXML(dimensions_fis);
-		try {
-			String[] dims = dimensions_modelContent.getStringArray(DIMENSIONS);
-			columnList = Arrays.asList(dims);
-
 		} catch (InvalidSettingsException e) {
 			throw new IOException(e.getMessage());
 		}
@@ -312,13 +334,11 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 		// create the main model content
 		ModelContent sky_modelContent = new ModelContent(INTERNAL_MODEL_UNDOMINATED);
 
-		// create the main model content
-		ModelContent dimensions_modelContent = new ModelContent(INTERNAL_MODEL_DIMENSIONS);
-
 		if (dominatedStruct.size() > 0) {
 
 			for (int i = 0; i < dominatedStruct.size(); i++) {
-				//for each dominated point create a sub model and add it to the main model
+				// for each dominated point create a sub model and add it to the
+				// main model
 				ModelContentWO subContent = all_modelContent.addModelContent(SaveOption.DOMINATED.toString() + i);
 				// save the dominated point to the sub model content
 				dominatedStruct.get(i).saveTo(subContent);
@@ -327,18 +347,12 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 
 		if (undominatedStruct.size() > 0) {
 			for (int i = 0; i < undominatedStruct.size(); i++) {
-				//for each dominated point create a sub model and add it to the main model
+				// for each dominated point create a sub model and add it to the
+				// main model
 				ModelContentWO subContent = sky_modelContent.addModelContent(SaveOption.UNDOMINATED.toString() + i);
 				// save the dominated point to the sub model content
 				undominatedStruct.get(i).saveTo(subContent);
 			}
-		}
-
-		//add dimensions to a model content
-		if (columnList.size() > 0) {
-			String[] dims = new String[columnList.size()];
-			dims = columnList.toArray(dims);
-			dimensions_modelContent.addStringArray(DIMENSIONS, dims);
 		}
 
 		// model content must be written to XML
@@ -352,12 +366,5 @@ public class SkylineVisualizerNodeModel extends NodeModel {
 		File undominatedFile = new File(internDir, FILE_NAME_UNDOMINATED);
 		FileOutputStream undominatedFos = new FileOutputStream(undominatedFile);
 		sky_modelContent.saveToXML(undominatedFos);
-
-		// model content must be written to XML
-		// internDir is the directory for this node
-		File dimensionsFile = new File(internDir, FILE_NAME_DIMENSIONS);
-		FileOutputStream dimensionsFos = new FileOutputStream(dimensionsFile);
-		dimensions_modelContent.saveToXML(dimensionsFos);
-
 	}
 }

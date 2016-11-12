@@ -11,8 +11,8 @@
         The coordinate system contains dominated and undominated points in different colors.
         The coordinate systems are created for two or three dimensions. Dimensions which are not numeric won't be considered.</intro>
         
-        
-        <option name="Graph Option">Option for different chart name, subtitle and legend names for dominated and undominated points.</option>
+        <option name="Dimension Chooser">Select two or three dimensions which should be displayed in the view.</option>
+        <option name="Graph Label">Option for different chart name, subtitle and legend names for dominated and undominated points.</option>
         <option name="Chart name">A custom chart name can be entered if the custom option was chosen.</option>
         <option name="Subtitle">A custom subtitle name can be entered if the custom option was chosen.</option>
         <option name="Name for dominated points">A custom legend name for the dominated points can be entered if the Custom option was chosen.</option>
@@ -36,7 +36,9 @@
         <!-- possibly more output ports here-->
     </ports>    
     <views>
-        <view index="0" name="Coordinate System">A view which contains coordinate systems for every dimension combination which has a preference on it.</view>
+        <view index="0" name="Coordinate System">A view which contains coordinate systems for every dimension combination which has a preference on it. For one or more than three
+        dimensions no view is instantiated. However, the number of dimensions and which dimensions should be displayed can be changed in the dialog.
+        </view>
         <!--view index="1" name="Graph">Description of second view...</view-->
     </views>
 </knimeNode>

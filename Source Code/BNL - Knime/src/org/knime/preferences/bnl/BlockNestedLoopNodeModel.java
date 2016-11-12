@@ -5,6 +5,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -25,7 +27,8 @@ import org.knime.core.node.NodeModel;
 import org.knime.core.node.NodeSettingsRO;
 import org.knime.core.node.NodeSettingsWO;
 import org.knime.core.data.RowKey;
-import org.knime.core.node.defaultnodesettings.SettingsModelInteger;
+import org.knime.core.node.defaultnodesettings.SettingsModelIntegerBounded;
+import org.knime.core.node.defaultnodesettings.SettingsModelStringArray;
 import org.knime.core.node.port.PortObject;
 import org.knime.core.node.port.PortObjectSpec;
 import org.knime.core.node.port.PortType;
@@ -60,14 +63,14 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 
 	private static final String FILE_NAME_ALL = "dominatedPoints.xml";
 	private static final String INTERNAL_MODEL_ALL = "internalModelAll";
-	private static final String FILE_NAME_DIMENSIONS = "dimensions.xml";
 
 	private static final String FILE_NAME_SKY = "skylinePoints.xml";
 	private static final String INTERNAL_MODEL_SKY = "internalModelSky";
-	private static final String INTERNAL_MODEL_DIMENSIONS = "internalModelDimensions";
 
 	// *********** Settings Models:*************
-	private final SettingsModelInteger windowSize = new SettingsModelInteger(CFGKEY_WINDOW_SIZE, 2);
+	private SettingsModelIntegerBounded windowSize = new SettingsModelIntegerBounded(
+			CFGKEY_WINDOW_SIZE, 2, 1, Integer.MAX_VALUE);
+	private SettingsModelStringArray dimensionsModel = new SettingsModelStringArray(CFGKEY_DIMENSIONS, new String[0]);
 
 	/**
 	 * Save all or only the dominated DataRows
@@ -77,9 +80,6 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	 * Save all skyline DataRows
 	 */
 	private List<BlockNestedLoopStructure> sky_structure;
-
-	// All dimension which have preferences on them
-	private String[] dimensions;
 
 	/**
 	 * Constructor for the node model.
@@ -116,26 +116,10 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 
 		// run Block Nested Loop algorithm
 		BlockNestedLoop bnl = new BlockNestedLoop(scoreTable, windowSize.getIntValue(), domChecker);
-
-		// create colIndexes to save data
-		List<Integer> tmpColIndexes = new LinkedList<>();
+		
 		DataTableSpec originalSpec = originalData.getDataTableSpec();
-		String[] names = originalSpec.getColumnNames();
-		for (int i = 0; i < names.length; i++) {
-			String bool = flowVars.get(names[i]).getStringValue();
-
-			if (bool.equals(ConfigKeys.CFG_KEY_EXISTS_PREFERENCE)
-					&& originalSpec.getColumnSpec(names[i]).getType().isCompatible(DoubleValue.class))
-				tmpColIndexes.add(i);
-
-		}
-		int[] colIndexes = tmpColIndexes.stream().mapToInt(i -> i).toArray();
-
-		// set dimension which are considered for creating the view
-		dimensions = new String[colIndexes.length];
-		for (int i = 0; i < colIndexes.length; i++) {
-			dimensions[i] = originalSpec.getColumnSpec(colIndexes[i]).getName();
-		}
+		//get the indexes of the columns which should be displayed in the view
+		int[] colIndexes = createColumnIndexes(originalSpec, flowVars);
 
 		// create BufferedDataTable which contains only skyline records
 		int numColumn = originalSpec.getNumColumns();
@@ -154,6 +138,50 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 		saveDominatedTable(originalData, bnl.getDominatedKeys(), colIndexes);
 
 		return new PortObject[] { skyline, scoreSkyline };
+	}
+	
+	/**
+	 * 
+	 * @param spec - the DataTableSpec of the DataBasePortObject which entered this node
+	 * @param flowVars - FlowVariables of this node
+	 * @return Returns the indexes for the columns which should be displayed in the view
+	 */
+	private int[] createColumnIndexes(DataTableSpec spec, Map<String, FlowVariable> flowVars) {
+
+		List<Integer> tmpColIndexes = new ArrayList<>();
+		List<String> tmpDimension = new ArrayList<>(Arrays.asList(dimensionsModel.getStringArrayValue()));
+		String[] columnNames = spec.getColumnNames();
+		//get the dimensions which were selected in the dialog and get the indexes of them
+		boolean newComputation = false;
+		if (tmpDimension.size() > 0) {
+			for (int i = 0; i < columnNames.length; i++) {
+				if (tmpDimension.contains(columnNames[i]) && flowVars.get(columnNames[i]).getStringValue().equals(ConfigKeys.CFG_KEY_EXISTS_PREFERENCE))
+					tmpColIndexes.add(i);
+				else if(tmpDimension.contains(columnNames[i]) && !flowVars.get(columnNames[i]).getStringValue().equals(ConfigKeys.CFG_KEY_EXISTS_PREFERENCE))
+					newComputation = true;
+			}
+		}else{
+			newComputation = true;
+		}
+		//if no settings were entered by the user get the indexes of all columns which have preferences and are numeric
+		if(newComputation){
+			List<String> columnList = new ArrayList<>();
+			tmpColIndexes = new ArrayList<>();
+			for (int i = 0; i < columnNames.length; i++) {
+				// only columns which have preferences and are numeric will be in the view
+				if (flowVars.get(columnNames[i]).getStringValue().equals(ConfigKeys.CFG_KEY_EXISTS_PREFERENCE))
+					if (spec.getColumnSpec(columnNames[i]).getType().isCompatible(DoubleValue.class)) {
+						columnList.add(columnNames[i]);
+						tmpColIndexes.add(i);
+					}
+			}
+			
+			String[] dims = new String[columnList.size()];
+			dims = columnList.toArray(dims);
+			dimensionsModel.setStringArrayValue(dims);
+		}
+
+		return tmpColIndexes.stream().mapToInt(i -> i).toArray();
 	}
 
 	/**
@@ -350,8 +378,7 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	 * @return Returns the dimensions which have preferences on them
 	 */
 	public String[] getDimensions() {
-
-		return dimensions;
+		return dimensionsModel.getStringArrayValue();
 	}
 
 	/**
@@ -361,6 +388,7 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	protected void saveSettingsTo(final NodeSettingsWO settings) {
 
 		windowSize.saveSettingsTo(settings);
+		dimensionsModel.saveSettingsTo(settings);
 
 	}
 
@@ -371,6 +399,7 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	protected void loadValidatedSettingsFrom(final NodeSettingsRO settings) throws InvalidSettingsException {
 
 		windowSize.loadSettingsFrom(settings);
+		dimensionsModel.loadSettingsFrom(settings);
 
 	}
 
@@ -381,6 +410,7 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 	protected void validateSettings(final NodeSettingsRO settings) throws InvalidSettingsException {
 
 		windowSize.validateSettings(settings);
+		dimensionsModel.validateSettings(settings);
 
 	}
 
@@ -422,16 +452,6 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 			}
 		} catch (InvalidSettingsException e) {
 			throw new IOException(e.getMessage());
-		}
-
-		// DIMENSIONS
-		File dimensions_file = new File(internDir, FILE_NAME_DIMENSIONS);
-		FileInputStream dimensions_fis = new FileInputStream(dimensions_file);
-		ModelContentRO dimensions_modelContent = ModelContent.loadFromXML(dimensions_fis);
-		try {
-			dimensions = dimensions_modelContent.getStringArray(CFGKEY_DIMENSIONS);
-		} catch (InvalidSettingsException e) {
-			e.printStackTrace();
 		}
 	}
 
@@ -476,14 +496,6 @@ public class BlockNestedLoopNodeModel extends NodeModel {
 			File skylineFile = new File(internDir, FILE_NAME_SKY);
 			FileOutputStream skylineFos = new FileOutputStream(skylineFile);
 			sky_modelContent.saveToXML(skylineFos);
-		
-
-		ModelContent dimension_modelContent = new ModelContent(INTERNAL_MODEL_DIMENSIONS);
-		dimension_modelContent.addStringArray(CFGKEY_DIMENSIONS, dimensions);
-		File dimensionFile = new File(internDir, FILE_NAME_DIMENSIONS);
-		FileOutputStream dimensionFos = new FileOutputStream(dimensionFile);
-		dimension_modelContent.saveToXML(dimensionFos);
-
 	}
 
 }

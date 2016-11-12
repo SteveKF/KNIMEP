@@ -48,6 +48,7 @@ public class DistanceBasedResolverNodeModel extends NodeModel {
 
 	private SettingsModelIntegerBounded outputSize = new SettingsModelIntegerBounded(CFGKEY_OUTPUT_SIZE, 1, 1,
 			Integer.MAX_VALUE);
+	
 
 
 	/**

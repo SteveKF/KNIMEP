@@ -30,6 +30,7 @@
         </intro>
         
         <option name="Window size">Enter the window size which tells how many undominated data records (tupels) can be stored in the window.</option>
+         <option name="Dimension Chooser">Select two or three dimensions which should be displayed in the view.</option>
         <!-- possibly more options that can also be grouped by tabs -->
         <!--
         <tab name="Standard Options">
@@ -51,8 +52,8 @@
     </ports>    
     <views>
         <view index="0" name="Skyline"> For every dimension combination which has a preference a coordinate system is created. 
-        These coordinate systems display the skyline and the dominated data records in different colors. The view is created if 2 or 3 dimensions have preferences on them.
-        For more considered dimensions there will be no view. </view>
+        These coordinate systems display the skyline and the dominated data records in different colors. The view is created if only two or three dimension have preferences.
+        However, which dimensions should be displayed and the amount of them can be reduced in the dialog.
         <!--view index="1" name="name of second view">Description of second view...</view-->
     </views>
 </knimeNode>

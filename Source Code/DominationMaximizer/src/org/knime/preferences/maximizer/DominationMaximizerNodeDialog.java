@@ -19,7 +19,7 @@ public class DominationMaximizerNodeDialog extends DefaultNodeSettingsPane {
         super();       
         
         addDialogComponent(new DialogComponentNumber(new SettingsModelIntegerBounded(CFG_KEY_OUTPUT_SIZE,
-        		1, 1, Integer.MAX_VALUE), "Enter Output Size: ", 1));
+        		1, 1, Integer.MAX_VALUE), "Output Size: ", 1));
         
     }
 }
