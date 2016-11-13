@@ -17,7 +17,7 @@
       <node
             category-path="/preferences"
             factory-class="org.knime.preferences.prefCreator.PreferenceCreatorNodeFactory"
-            id="org.knime.preference.creator.PreferenceCreatorNodeFactory"/>
+            id="org.knime.preferences.creator.PreferenceCreatorNodeFactory"/>
    </extension>
    
 </plugin>

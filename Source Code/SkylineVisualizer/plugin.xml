@@ -7,7 +7,7 @@
       <node
             category-path="/preferences"
             factory-class="org.knime.preferences.visualizer.SkylineVisualizerNodeFactory"
-            id="org.knime.skyvisualizer.SkylineVisualizerNodeFactory"/>
+            id="org.knime.preferences.visualizer.SkylineVisualizerNodeFactory"/>
    </extension>
    
 </plugin>

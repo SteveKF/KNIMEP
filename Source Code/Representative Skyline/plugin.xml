@@ -7,7 +7,7 @@
       <node
             category-path="/preferences"
             factory-class="org.knime.preferences.repskyline.RepresentativeSkylineNodeFactory"
-            id="org.knime.RepresentativeSkylineNodeFactory"/>
+            id="org.knime.preferences.repskyline.RepresentativeSkylineNodeFactory"/>
    </extension>
    
 </plugin>

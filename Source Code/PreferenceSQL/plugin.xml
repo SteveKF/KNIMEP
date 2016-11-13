@@ -7,7 +7,7 @@
       <node
             category-path="/preferences"
             factory-class="org.knime.preferences.sql.PreferenceSQLNodeFactory"
-            id="org.knime.preference.sql.PreferenceSQLNodeFactory"/>
+            id="org.knime.preferences.sql.PreferenceSQLNodeFactory"/>
    </extension>
    
 </plugin>

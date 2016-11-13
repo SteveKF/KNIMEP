@@ -25,7 +25,6 @@ import org.knime.core.node.port.database.DatabasePortObjectSpec;
 import org.knime.core.node.port.database.DatabaseQueryConnectionSettings;
 import org.knime.core.node.port.database.DatabaseUtility;
 import org.knime.core.node.port.database.reader.DBReader;
-import org.knime.core.node.port.flowvariable.FlowVariablePortObject;
 import org.knime.core.node.workflow.CredentialsProvider;
 
 /**
@@ -53,7 +52,7 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 
 	protected PreferenceCreatorNodeModel() {
 		super(new PortType[] { DatabasePortObject.TYPE, BufferedDataTable.TYPE }, new PortType[] {
-				DatabasePortObject.TYPE, BufferedDataTable.TYPE_OPTIONAL, FlowVariablePortObject.TYPE });
+				DatabasePortObject.TYPE, BufferedDataTable.TYPE_OPTIONAL });
 	}
 
 	/**
@@ -108,7 +107,7 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 
 		// return original database connection and the score table as optional
 		// output
-		return new PortObject[] { inData[DATABASE_CONNECTION_PORT], scoreTable, FlowVariablePortObject.INSTANCE };
+		return new PortObject[] { inData[DATABASE_CONNECTION_PORT], scoreTable };
 	}
 
 	/**
@@ -132,7 +131,7 @@ public class PreferenceCreatorNodeModel extends NodeModel {
 			throw new InvalidSettingsException(
 					"The database connection needs to return the same data table as the data table at inport 1.");
 
-		return new PortObjectSpec[] { inSpecs[DATABASE_CONNECTION_PORT], null, null };
+		return new PortObjectSpec[] { inSpecs[DATABASE_CONNECTION_PORT], null };
 	}
 
 	/**

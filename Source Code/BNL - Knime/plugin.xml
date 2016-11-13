@@ -7,7 +7,7 @@
       <node
             category-path="/preferences"
             factory-class="org.knime.preferences.bnl.BlockNestedLoopNodeFactory"
-            id="org.knime.bnl.BlockNestedLoopNodeFactory"/>
+            id="org.knime.preferences.bnl.BlockNestedLoopNodeFactory"/>
    </extension>
    
 </plugin>
