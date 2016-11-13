@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="KNIMEPFeatures"
-      label="KNIMEP - Skyline Computing based on Preferences"
+      label="KNIMEP"
       version="1.0.0.qualifier"
       provider-name="Stefan Wohlfart">
 
    <description url="http://www.example.com/description">
-      [Enter Feature Description here.]
+      KNIMEP stands for KNIME Preferences and allows the user to compute (representative) skylines based on Prefences.
    </description>
 
    <copyright url="http://www.example.com/copyright">

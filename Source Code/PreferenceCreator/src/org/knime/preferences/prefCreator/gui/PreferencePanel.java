@@ -55,7 +55,7 @@ public class PreferencePanel extends JPanel{
 	 * change the values of all other fields accordingly.
 	 * 
 	 */
-	private PreferenceDataSaver preferenceSaver;
+	private LayeredDialogSaver dialogSaver;
 
 	//map which stores for every dimension if it has only numeric values or not
 	private Map<String, Boolean> isDimensionNumeric;
@@ -76,7 +76,7 @@ public class PreferencePanel extends JPanel{
 		
 		this.isDimensionNumeric = isDimensionNumeric;
 		this.values = values;
-		preferenceSaver = new PreferenceDataSaver(dimensions, isDimensionNumeric);
+		dialogSaver = new LayeredDialogSaver();
 		
 		//set layout for this panel
 		setLayout(new GridBagLayout());
@@ -238,32 +238,6 @@ public class PreferencePanel extends JPanel{
 	}
 
 	/**
-	 * Accesses every input of the fields of this class and saves them in the preferenceSaver object. 
-	 * @param dimension - the dimension for which all the values should be saved
-	 */
-	public void saveValues(String dimension) {
-
-		preferenceSaver.setNumericPreferences(dimension, getPreference(),
-				getNumericValue1(), getNumericValue2(),
-				getBooleanValue());
-
-	}
-
-	/**
-	 * Loads values for the currently selected dimension in the Dimension JComboBox and sets all the fields accordinly to the loaded values.
-	 */
-	public void loadValues() {
-
-		NumericPreference savedPref = preferenceSaver.getNumericPreferences(getDimension());
-
-		setPreference(savedPref.getPreference());
-		setNumericValue1(savedPref.getNumericInput()[0]);
-		setNumericValue2(savedPref.getNumericInput()[1]);
-		setBooleanValue(savedPref.getBooleanInput());
-
-	}
-
-	/**
 	 * Resets all the preferences the user can select in the JComboBox for the preferences accordingly to the dimension.</br> </br>
 	 * Numeric preferences - all preferences except the 'BOOLEAN' preference will be added </br>
 	 * Non numeric preferences - only the 'LAYERED' preference will be added </br>
@@ -299,7 +273,7 @@ public class PreferencePanel extends JPanel{
 		
 		String dimension = getDimension();
 		
-		LayeredDialog layeredDialog = preferenceSaver.getLayeredDialog(dimension);
+		LayeredDialog layeredDialog = dialogSaver.getLayeredDialog(dimension);
 		
 		if(layeredDialog == null){
 		
@@ -307,7 +281,7 @@ public class PreferencePanel extends JPanel{
 			layeredDialog.pack();
 			layeredDialog.setModal(true);
 			layeredDialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-			preferenceSaver.setLayeredDialog(dimension,layeredDialog);
+			dialogSaver.setLayeredDialog(dimension,layeredDialog);
 		
 		}
 		
@@ -393,8 +367,8 @@ public class PreferencePanel extends JPanel{
 	 * 
 	 * @return Returns the PreferenceDataSaver which saved all the input of all input fields for every dimension.
 	 */
-	public PreferenceDataSaver getPreferenceDataSaver() {
-		return preferenceSaver;
+	public LayeredDialogSaver getLayeredDialogSaver() {
+		return dialogSaver;
 	}
 
 	/**

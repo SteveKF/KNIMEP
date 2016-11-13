@@ -13,9 +13,6 @@ import javax.swing.JOptionPane;
  */
 public class PreferenceListener implements ActionListener {
 
-	// OWN VARIABLES
-	private String prevDimension;
-
 	// TOOLTIPPANEL VARIABLES
 	private ToolTipPanel toolTipPanel;
 
@@ -43,8 +40,6 @@ public class PreferenceListener implements ActionListener {
 		this.toolTipPanel = toolTipPanel;
 		this.sqlGenerator = sqlGenerator;
 
-		// set previous dimensions to default dimension
-		prevDimension = (String) preferencePanel.getDimensionBox().getSelectedItem();
 	}
 
 	/**
@@ -76,15 +71,11 @@ public class PreferenceListener implements ActionListener {
 
 		} else if (e.getSource() == preferencePanel.getDimensionBox()) {
 
-			preferencePanel.saveValues(prevDimension);
+			String dimension = (String) preferencePanel.getDimension();
 
-			preferencePanel.loadValues();
-
-			prevDimension = (String) preferencePanel.getDimension();
-
-			preferencePanel.setPreferencesFor(preferencePanel.getDimension());
+			preferencePanel.setPreferencesFor(dimension);
 			
-			if(prevDimension==SQLPreferenceEditor.CUSTOM_DIMENSION)
+			if(dimension==SQLPreferenceEditor.CUSTOM_DIMENSION)
 				toolTipPanel.setText("This dimension allows you to create your own dimension with SQL Syntax. (e.g. price/power)");
 
 			// disable/enable GUI components depending on selected Preference

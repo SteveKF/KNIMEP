@@ -383,7 +383,7 @@ public class PriorityPanel extends JPanel {
 
 			if ((parentNode.isPriorityNode() || parentNode.isParetoNode()) || parentNode==rootNode) {
 				
-				LayeredDialog layeredDialog = preferencePanel.getPreferenceDataSaver()
+				LayeredDialog layeredDialog = preferencePanel.getLayeredDialogSaver()
 						.getLayeredDialog(preferencePanel.getDimension());
 
 				PreferenceNode node = new PreferenceNode("", preferencePanel, preferenceNodes.size());
