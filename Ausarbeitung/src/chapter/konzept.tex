@@ -2,19 +2,16 @@
 \chapter{Konzept}
 \label{ch:Konzept}
 %% ==============================
-Dieses Kapitel befasst sich darum, welche Algorithmen in KNIME implementiert wurden und erklärt deren Vorgehensweise. Zuerst wird der Block-Nested-Loop \cite{borzsony2001skyline}, ein Skylinealgorithmus gezeigt. Die Skyline wird von manchen repräsentativen Skylinealgorithmen zur Berechnung benötigt. Daher ist mindestens ein Skylinealgorithmus für die Arbeit zwingend notwendig. Zur Bestimmung von repräsentativen Skylines wird in dieser Arbeit als erstes der DominationMaximizer \cite{4221657} vorgestellt. Dieser versucht die $k$ Skylinedatensätze heraus zu suchen, die die Anzahl der dominierten Datensätze maximieren. Der zweite vorgestellte Algorithmus basiert auf Distanz \cite{Tao:2009:DRS:1546683.1547325} und sucht die Repräsentanten heraus, sodass die Distanz zwischen einem Nicht-Repräsentant und dem nächstliegendsten Repräsentant minimal ist. Der letzte vorgestellte Algorithmus ist der E-Greedy \cite{magnani2014taking}. Das Ziel dieses ist es die repräsentative Skyline durch Berücksichtigung von Diversität und Signifikanz der Datensätzen zu bestimmen.
+Dieses Kapitel befasst sich darum, welche Algorithmen in KNIME implementiert wurden und erklärt deren Vorgehensweise. Zuerst wird der Block Nested Loop \cite{borzsony2001skyline}, ein Skylinealgorithmus gezeigt. Die Skyline wird von manchen repräsentativen Skylinealgorithmen zur Berechnung benötigt. Daher ist mindestens ein Skylinealgorithmus für die Arbeit zwingend notwendig. Zur Bestimmung von repräsentativen Skylines wird in dieser Arbeit als erstes der DominationMaximizer \cite{4221657} vorgestellt. Dieser versucht die $k$ Skylinedatensätze heraus zu suchen, die die Anzahl der dominierten Datensätze maximieren. Der zweite vorgestellte Algorithmus basiert auf Distanz \cite{Tao:2009:DRS:1546683.1547325} und sucht die Repräsentanten heraus, sodass die Distanz zwischen einem Nicht-Repräsentanten und dem nächstliegendsten Repräsentanten minimal ist. Der letzte vorgestellte Algorithmus ist der E-Greedy \cite{magnani2014taking}. Das Ziel dieses ist es die repräsentative Skyline durch Berücksichtigung von Diversität und Signifikanz der Datensätzen zu bestimmen.
 Zum Schluss dieses Kapitels werden genauere Details zur Funktionsweise der drei wichtigen Klassen NodeModel, NodeDialog und NodeView von KNIME aufgeführt, die für die Implementierung der Algorithmen eine wichtige Rolle spielen.
 %% ==============================
 \section{Skyline-Algorithmen}
 \label{ch:Analyse:sec:skyAlgos}
 %% ==============================
 Methoden zur Berechnung einer Skyline gibt es viele, wie zum Beispiel Nested-SQL Statements, Block-Nested-Loop, Divide \& Conquer, etc.
-Zusätzlich gibt es auch viele Ansätze, die auf B/R-Bäume aufbauen, wie zum Beispiel der Algorithmus in \cite{Papadias:2003:OPA:872757.872814}. Der Vorteil dieser ist, dass sie während der Berechnung schon Datensätze der Skyline ausgeben können und im Fall von Suchabfragen dem User schon nach kurzer Zeit einige Ergebnisse liefern können. Weiterhin sind Algorithmen, die auf B/R-Bäumen basieren oft schneller als andere Algorithmen, da oft viele Vergleiche durch Pruning der Bäume oder mithilfe der Branch \& Bound Methode reduziert werden können. 
+Zusätzlich gibt es auch viele Ansätze, die auf B/R-Bäume aufbauen, wie zum Beispiel der Algorithmus in \cite{Papadias:2003:OPA:872757.872814}. Der Vorteil bei diesen ist, dass sie während der Berechnung schon Datensätze der Skyline ausgeben können und im Fall von Suchabfragen dem User schon nach kurzer Zeit einige Ergebnisse liefern können. Weiterhin sind Algorithmen, die auf B/R-Bäumen basieren oft schneller als andere Algorithmen, da oft viele Vergleiche durch Pruning der Bäume oder mithilfe der Branch \& Bound Methode reduziert werden können. 
 Da in dieser Arbeit der Mittelpunkt repräsentative Skyline sind, wurde für diese Arbeit nur der Block-Nested-Loop Algorithmus implementiert, da dieser intuitiv und für den Zweck dieser Arbeit ausreichend ist. Weitere Skyline-Algorithmen in KNIME einzubauen, wäre ein guter Schritt diese Arbeit fortzusetzen. 
-%% ==============================
-\subsection{Block-Nested-Loop}
-\label{ch:Analyse:sec:skyAlgos:subsec:bnl}
-%% ==============================
+
 Der Block-Nested-Loop Algorithmus basiert auf einer einfachen geschachtelten Schleife. Zur Reduzierung der Rechenzeit wurde ein Fenster $w$ eingeführt, in welchem unvergleichbare bzw. undominierte Datensätze gespeichert werden. $w$ kann aber nur eine bestimmte Anzahl von Datensätze halten. Meistens bestimmt der User wie viele Datensätze im Fenster gespeichert werden können.
 Beim Einlesen eines Datensatzes, wird er mit allen anderen Datensätzen in $w$ verglichen. Hier gibt es drei Möglichkeiten:
 Falls der eingelesene Datensatz $p$ von einem oder mehreren Datensätzen in $w$ dominiert wird, wird er eliminiert und in folgenden Iterationen nicht mehr betrachtet. Dies führt zu großen Einsparungen der Rechenzeit. 
@@ -34,7 +31,7 @@ Da sich diese Arbeit hauptsächlich um repräsentative Skylines und Präferenzen
 \label{ch:Analyse:sec:repSkyAlgos}
 %% ==============================
 In diesem Abschnitt des Kapitels werden die Algorithmen zur Berechnung einer repräsentativen Skyline, die für diese Arbeit in KNIME implementiert wurden, vorgestellt. 
-Diese basieren hauptsächlich auf einen der zwei Ziele: Diversität oder Signifikanz zu maximieren (siehe Abschnitt \ref{ch:Grundlagen:sec:repSkyline}).
+Diese basieren hauptsächlich auf einen der zwei Ziele: Diversität oder Signifikanz zu maximieren. \footnote{siehe Abschnitt \ref{ch:Grundlagen:sec:repSkyline}}
 Zur Gegenüberstellung wurden sowohl Algorithmen implementiert, die den originalen Datensatz als Input nehmen als auch welche, die nur mit einer Skyline als Input arbeiten können.
 %% ==============================
 \subsection{DominationMaximizer}
@@ -94,7 +91,7 @@ $i$ und $t$ sind hier zwei Indizes, die den Indizes von zwei Datensätzen der Sk
 Angenommen $v$ sei der Wert von $j$ bei dem oben genannte Funktion $optEr(i,t)$ ihr Minimum findet, dann ergibt sich die repräsentative Skyline durch folgende Funktion:
 $$opt(i,t)=opt(v-1,t-1)\cup\{center(v,i)\}$$
 Diese Funktion wird wie $optEr(i,t)$ rekursiv berechnet und fügt die Datensätze hinzu, die Mittelpunkte für die entsprechenden Indizes $v$ und $i$ sind. Dadurch das $v$ der Wert von $j$ ist, bei der die Funktion $optEr(i,t)$ ihr Minimum erreicht, wird erzwungen das nur Kreise betrachtet werden, die mit geringem Radius die meisten Datensätze umfassen.   
-Für die Berechnung der Radien der umfassenden Kreise, wird die euklidische Distanz benutzt:
+Für die Berechnung der umfassenden Kreisradien, wird die euklidische Distanz benutzt:
 $$radius(i,j)=\min\limits_{u=i}^{j}\{max\{||p_i,p_u||,||p_u,p_j||\}\}$$
 Der Punkt $p_u$ bei dem diese Funktion ihr Minimum erreicht, ist der Mittelpunkt des Kreises und somit ein Kandidat der repräsentativen Skyline.
 
@@ -119,13 +116,13 @@ $radius(i,j)$ and $center(i,j)$\strut}
 Algorithmus \ref{algo:2DOpt} berechnet zuerst alle wichtigen Werte, die für die size-$k$ repräsentative Skyline mit $m$ Skylinedatensätzen benötigt wird. Zeile $2$ dient dazu, dass sowohl $opt(i,t)$ als auch $optEr(i,t)$ terminieren. Das Paper \cite{Tao:2009:DRS:1546683.1547325} dieses Algorithmus berechnet in Zeile $7$ die Funktionen $optEr(k,m)$ und $opt(k,m)$ und nicht $optEr(k,m)$ und $opt(k,m)$. Dies hätte zur Folge, dass für die Berechnung der Formeln $i$ kleiner als $t$ ist und es somit nie zu einem Ergebnis kommen würde.
 Das Ergebnis von $opt(m,k)$ kann als repräsentative Skyline ausgegeben werden und dem Kunden präsentiert werden.
 
-Der Algorithmus basiert nur auf Diversität und versucht Datensätze, die möglich weit voneinander liegen zu finden, um damit alle Cluster der Skyline repräsentieren zu können. Der Algorithmus im nächsten Abschnitts versucht diesen Ansatz zu erweitern und berücksichtigt zusätzlich die Signifikanz von Datensätzen, falls diese gegeben sind.  
+Der Algorithmus basiert nur auf Diversität und versucht Datensätze, die möglich weit voneinander entfernt sind zu finden, um damit alle Cluster der Skyline repräsentieren zu können. Der Algorithmus im nächsten Abschnitts versucht diesen Ansatz zu erweitern und berücksichtigt zusätzlich die Signifikanz von Datensätzen, falls diese gegeben sind.  
 %% ==============================
 \subsection{E-Greedy}
 \label{ch:Analyse:sec:repSkyAlgos:subsec:eGreedy}
 %% ==============================
 Der E-Greedy Algorithmus \cite{magnani2014taking} versucht nicht nur die Diversität von Datensätzen zu maximieren, sondern auch gleichzeitig die Signifikanz zu beachten.
-Signifikanz wird dadurch bestimmt, indem der User für jede Dimension seiner Wahl einen Thresholdwert oder ein Thresholdintervall angibt. Die Datensätze, die entweder den Thresholdwert übersteigen bzw. unter diesem liegen oder in dem entsprechenden Intervall liegen, werden als signifikant gesehen. Bei fehlenden Thresholds einer Dimension werden alle Datensätze bei alleiniger Betrachtung dieser Dimension als gleich signifikant gesehen. Dieser Ansatz kann noch erweitert werden, indem Thresholds durch vergangene Daten bestimmt werden. 
+Signifikanz wird dadurch bestimmt, indem der User für jede Dimension seiner Wahl einen Thresholdwert oder ein Thresholdintervall angibt. Die Datensätze, die entweder den Thresholdwert übersteigen bzw. unter diesem liegen oder in dem entsprechenden Intervall liegen, sind signifikant. Bei fehlenden Thresholds einer Dimension werden alle Datensätze bei alleiniger Betrachtung dieser Dimension als gleich signifikant gesehen. Dieser Ansatz kann noch erweitert werden, indem Thresholds durch vergangene Daten bestimmt werden. 
 
 $$\text{Representative Skyline} = \argmax{S \in{P_k(sky(R))}} obj(S)$$
 
@@ -150,11 +147,11 @@ Um die Diversität zu berechnen, wird für jede Datensatzkombination und jede Di
 
 $$\delta_{sed}(r,s)=\frac{\sum\limits\mathop{}_{\mkern-5mu i \in{[1,d]}} I_i(r,s)}{d}$$
 
-Durch das Summieren aller $I_i$ geteilt durch die Anzahl der Dimensionen, erhält man schlussendlich die Diversität bzw. den Wert wie sehr sich die Datensätze $r$ und $s$ unterscheiden. Diesen Wert zu maximieren führt dazu, dass die Anzahl der Datensätze zwischen zwei Datensätzen maximal sein sollte. Dadurch enthält die repräsentative Skyline bei alleiniger Betrachtung von Diversität nur Datensätze, die weit voneinander entfernt sind. 
+Durch das Summieren aller $I_i$, geteilt durch die Anzahl der Dimensionen, entsteht schlussendlich die Diversität bzw. den Wert wie sehr die Datensätze $r$ und $s$ voneinander abweichen. Diesen Wert zu maximieren führt dazu, dass die Anzahl der Datensätze zwischen zwei Datensätzen maximal sein sollte. Dadurch enthält die repräsentative Skyline bei alleiniger Betrachtung von Diversität nur Datensätze, die weit voneinander entfernt sind. 
 
 $$\sigma_{sss}(r)=\frac{logit(r)}{max\mathop{}_{\mkern-5mu s \in{sky(R)}}logit(s)}$$
 
-Da die Thresholds durch einen User bestimmt werden, wird die für die Berücksichtigung der Signifikanz die Sigmoid Funktion benutzt, da diese User Präferenzen repräsentieren kann. Die Skyline Sigmoid Signifikanz $\sigma_{sss}$ ergibt sich durch die logistische Sigmoid Funktion des betrachteten Datensatzes geteilt durch die logistische Sigmoid Funktion des Datensatzes, der von allen Datensätzen den höchsten Wert für die logistische Sigmoid Funktion besitzt. Die logistische Sigmoid Funktion wird je nachdem, ob der Benutzer einen einzelnen Thresholdwert oder ein Thresholdintervall eingegeben hat, anders berechnet.
+Da die Thresholds durch einen User bestimmt werden, wird die für die Berücksichtigung der Signifikanz die Sigmoid Funktion benutzt, da diese User-Präferenzen repräsentieren kann. Die Skyline Sigmoid Signifikanz $\sigma_{sss}$ ergibt sich durch die logistische Sigmoid Funktion des betrachteten Datensatzes geteilt durch die logistische Sigmoid Funktion des Datensatzes, der von allen Datensätzen den höchsten Wert für die logistische Sigmoid Funktion besitzt. Die logistische Sigmoid Funktion wird je nachdem, ob der Benutzer einen einzelnen Thresholdwert oder ein Thresholdintervall eingegeben hat, anders berechnet.
 
 Wie oben genannt wird eine Eingabe eines Thresholds für die Berechnung der Signifikanz benötigt. Bei der Eingabe eines einzelnen Wertes, hier $t$ genannt, wird die logistische Sigmoidfunktion wie folgt bestimmt:
 
@@ -165,7 +162,7 @@ Falls jedoch der Threshold als obere Grenze genommen wird, ändert sich die Funk
 
 $$logit(r)=\frac{\sum\mathop{}_{\mkern-5mu i \in{[1,d]}\frac{1}{1+e^{r.i-t.i}}}}{d}$$
 
-Für Thresholdintervalls sind diejenigen Datensätze signifikant, dessen Wert in diesem Intervall liegt. Die dazugehörige Logit Funktion wird wie folgt berechnet:
+Für Thresholdintervalls sind diejenigen Datensätze signifikant, dessen Wert in diesem Intervall liegt. Die dazugehörige Logit-Funktion wird wie folgt berechnet:
 $$logit(r)=\frac{\sum\limits\mathop{}_{\mkern-5mu i \in{[1,d]}}\frac{1}{b.i-a.i}(-ln(1+e^{(r-i-b.i)})+ln(1+e^{(r.i-a.i)}))}{d}$$
 
 $a.i$ entspricht hier der unteren Grenze und $b.i$ der obere Grenze des Thresholdintervalls. 
@@ -194,9 +191,8 @@ Um nun die $k$ repräsentativen Skylinedatensätzen zu bestimmen, die diese Obje
 Der erste Datensatz der zur repräsentativen Skyline hinzugefügt wird, ist der Datensatz mit der höchsten Signifikanz. Falls mehrere die gleiche Signifikanz besitzen, wird ein Datensatz von diesen zufällig ausgewählt.
 Anschließend werden $k-1$ Datensätze hinzugefügt, die mit der bereits berechneten repräsentativen Skyline die Objektfunktion maximieren.
 
-Der Vorteil des E-Greedy liegt darin, dass er sowohl Signifikanz als auch Diversität betrachtet. Ansätze zur Berechnung von repräsentativen Skylines beruhen meistens nur auf einer der beiden Kriterien.  
-\enquote{Existing approaches have only focused on partial aspects of this problem. Some try to identify sets of diverse records giving an overall approximation of the skyline.}
-\enquote{Others exploit some knowledge of the record scoring function to identify the most significant record, but not sets of records representative of the whole skyline.} \cite[p. 1]{magnani2014taking}
+Der Vorteil des E-Greedy liegt darin, dass er sowohl Signifikanz als auch Diversität betrachtet. Andere Ansätze zur Berechnung von repräsentativen Skylines beruhen meistens nur auf einer der beiden Kriterien.  
+\enquote{Existing approaches have only focused on partial aspects of this problem. Some try to identify sets of diverse records giving an overall approximation of the skyline. [...] Others exploit some knowledge of the record scoring function to identify the most significant record, but not sets of records representative of the whole skyline.} \cite[p. 1]{magnani2014taking}
  
 Die Signifikanz den User bestimmen zu lassen, liefert eine repräsentative Skyline für seine Präferenzen entsprechend. Falls nun noch die Diversität betrachtet wird, können auch Ausreißer und die Verschiedenheit von Datensätzen berücksichtigt werden. Dies ermöglicht auch repräsentative Skylines zu berechnen für die der User nur bei bestimmten Dimensionen Thresholds festlegen kann.
 Der Nachteil dieses Algorithmus ist, dass der Gewichtungsfaktor $\lambda$ die repräsentative Skyline stark verändert und der User oft nicht weiß wie er die Diversität und die Signifikanz gegeneinander gewichten soll. Dies bedeutet, dass es dazu kommen kann, dass die repräsentative Skyline mehr als nur einmal berechnet wird, um ein zufrieden stellendes Ergebnis zu finden.
@@ -212,9 +208,9 @@ Wie schon in Abschnitt \ref{ch:Grundlagen:sec:knime} erwähnt, wird für die Imp
 Das NodeModel ist dafür zuständig den Algorithmus auszuführen. Dafür müssen drei Methoden überschrieben werden: $configure$, $execute$ und $reset$.
 
 Die $configure$ Methode soll so implementiert werden, dass sie für den Node überprüft, ob die Inputs des Nodes die korrekten Datentypen besitzen und nicht leer sind. 
-Inputs können zum Beispiel Datenbankverbindungen (DatabasePortObject) oder Datentabellen (BufferedDataTable) sein. Alle diese Inputs implementieren die Schnittstelle PortObject und können in der KNIME API nachgeschlagen werden.\footnote{https://tech.knime.org/docs/api/org/knime/core/node/port/PortObject.html}
+Inputs können zum Beispiel Datenbankverbindungen (DatabasePortObject) oder Datentabellen (BufferedDataTable) sein. Alle diese Inputs implementieren die Schnittstelle PortObject und können in der KNIME API nachgeschlagen werden.\footnote{https://tech.knime.org/docs/api/org/knime/core/node/port/PortObject.html (08.09.2016)}
 Jedoch werden der $configure$ Methode nur die wichtigsten Informationen mithilfe eines Spec Objekts(z.B. BufferedDataTableSpec) übergeben und so kann hier nicht getestet werden, ob es bei Datentabellen einzelne fehlende Werte gibt.
-Falls die Eingaben inkorrekt sind, kann eine Exception geworfen werden, die dem User einen Fehler anzeigt.(siehe \ref{img:nodeModelError})
+Falls die Eingaben inkorrekt sind, kann eine Exception geworfen werden, die dem User einen Fehler anzeigt.\footnote{siehe \ref{img:nodeModelError}}
 
 \begin{figure}[H]
 	\centering
@@ -223,14 +219,14 @@ Falls die Eingaben inkorrekt sind, kann eine Exception geworfen werden, die dem 
 	\label{img:nodeModelError}
 \end{figure}
 
-Die Inputs können auch darauf getestet werden, ob sie mit dem Algorithmus des Nodes kompatibel sind. Falls ein Algorithmus nur mit numerischen Werten arbeiten kann, kann in der Methode überprüft werden, ob einzelne Datenspalten eines BufferedDataTables nur numerische Daten enthalten und ansonsten wird ein Fehler an den User ausgegeben.
+Die Inputs können auch darauf getestet werden, ob sie mit dem Algorithmus des Nodes kompatibel sind. Falls ein Algorithmus nur mit numerischen Werten arbeitet, kann in der Methode überprüft werden, ob einzelne Datenspalten eines BufferedDataTables nur numerische Daten enthalten. Ist dies der Fall, wird ein Fehler an den User ausgegeben.
 Weiterhin werden in der $configure$ Methode PortObjectSpecs zurückgegeben, die Informationen über den Output haben. Falls der Output, der in der $execute$ Methode entsteht nicht mit diesen Informationen übereinstimmt, gibt es eine Fehlermeldung und der Node kann nicht vollständig ausgeführt werden.
 
 Die nächste Methode $execute$ bekommt alle Inputs und nicht nur deren Metainformationen als Eingabeparameter und gibt den Output aus. In dieser Methode wird der zu implementierende Algorithmus ausgeführt und ist somit die rechenintensivste Methode des ganzen Nodes. 
 
 Falls der Node vom User zurückgesetzt werden soll oder einer der vorherigen Nodes im Datenfluss in einen ungültigen Zustand gelangt, können alle Variablen in der $reset$ Methode zurückgesetzt werden, so dass keine ungültigen Views oder Einstellungen im NodeDialog oder NodeModel vorhanden sind. 
 
-NodeModels können SettingsModels besitzen, die die Eingabe des Users im NodeDialog speichern und für den Algorithmus verwenden. Die Methoden $loadValidatedSettingsFrom$, $saveSettingsTo$, $loadInternals$ und $saveInternals$ dienen dazu bestimmte Variablen und die genannten SettingsModels zu speichern und diese beim wieder öffnen von KNIME zu laden. Eine weitere Funktion dieser Methoden wird im nächsten Abschnitt erläutert.
+NodeModels können SettingsModels besitzen, die die Eingabe des Users im NodeDialog speichern und für den Algorithmus verwenden. Die Methoden $loadValidatedSettingsFrom$, $saveSettingsTo$, $loadInternals$ und $saveInternals$ dienen zur Speicherung bestimmter Variablen und der genannten SettingModels und diese beim Öffnen von KNIME zu laden. Eine weitere Funktion dieser Methoden wird im nächsten Abschnitt erläutert.
 %% ==============================
 \subsection{NodeDialog}
 \label{ch:Analyse:sec:knime:subsec:nodeDialog}
@@ -253,8 +249,8 @@ In Abbildung \ref{img:nodeDialog} ist ein Beispiel eines NodeDialogs zu sehen, f
 \subsection{NodeView}
 \label{ch:Analyse:sec:knime:subsec:nodeView}
 %% ==============================
-Die letzte Klasse, die von großer Relevanz ist, erzeugt eine Darstellung des Outputs. Dies kann je nach Input/Output variieren. (Histogramme, Koordinatensysteme mit Datenpunkten, Pie Charts, etc.)
-Da jeder View eines Nodes nicht gespeichert wird, muss er bei jedem Öffnen von KNIME neu erzeugt werden.
+Die letzte Klasse, die von großer Relevanz ist, erzeugt eine Darstellung des Outputs. Dies kann je nach Input/Output variieren (Histogramme, Koordinatensysteme mit Datenpunkten, Pie Charts, etc.).
+Da der View eines Nodes nicht gespeichert wird, muss er bei jedem Öffnen von KNIME neu erzeugt werden.
 Deswegen gibt es die Methoden $loadInternals$ und $saveInternals$ im NodeModel, die die Daten, die zur Erzeugung des Views benötigt werden in einer externen Datei speichern. Wie die SettingModels wird die Datei mit einem speziellen Key gespeichert und geladen. 
 
 In Abbildung \ref{img:nodeView} ist der View des Histogramm Nodes zu sehen, der als Input einen BufferedDataTables bekommt und nach Auswahl bestimmter Dimensionen ein Histogramm zeigt. 
