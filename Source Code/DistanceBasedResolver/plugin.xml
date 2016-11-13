@@ -2,17 +2,6 @@
 <?eclipse version="3.0"?>
 <plugin>
 
-      <extension
-         point="org.knime.workbench.repository.categories">
-      <category
-            description="Preference nodes"
-            icon="bin/org/knime/preferences/distance/preferences.png"
-            level-id="preferences"
-            name="Preferences"
-            path="/"/>
-   </extension>
-
-
    <extension
          point="org.knime.workbench.repository.nodes">
       <node
