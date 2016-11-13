@@ -243,6 +243,13 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 		super.saveSettingsTo(settings);
 	}
 	
+	/**
+	 * 
+	 * @param columns1 - a string array
+	 * @param columns2 - a string array
+	 * @return true - if both arrays have the same length and the same values </br>
+	 * false - otherwise
+	 */
 	private boolean isEqualColumns(String[] columns1, String[] columns2){
 		
 		boolean isEqual = false;
@@ -261,6 +268,13 @@ public class PreferenceCreatorNodeDialog extends DataAwareDefaultNodeSettingsPan
 		
 	}
 	
+	/**
+	 * 
+	 * @param rowKeys1 - a RowKey array
+	 * @param rowKeys2 - a RowKey array
+	 * @return true - if both arrays have the same length and the same RowKeys </br>
+	 * false - otherwise
+	 */
 	private boolean isEqualKeys(RowKey[] rowKeys1, RowKey[] rowKeys2){
 		
 		boolean isEqual = false;

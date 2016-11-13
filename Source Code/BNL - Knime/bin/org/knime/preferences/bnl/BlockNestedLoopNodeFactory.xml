@@ -53,7 +53,7 @@
     <views>
         <view index="0" name="Skyline"> For every dimension combination which has a preference a coordinate system is created. 
         These coordinate systems display the skyline and the dominated data records in different colors. The view is created if only two or three dimension have preferences.
-        However, which dimensions should be displayed and the amount of them can be reduced in the dialog.
+        However, which dimensions should be displayed and the amount of them can be reduced in the dialog.</view>
         <!--view index="1" name="name of second view">Description of second view...</view-->
     </views>
 </knimeNode>

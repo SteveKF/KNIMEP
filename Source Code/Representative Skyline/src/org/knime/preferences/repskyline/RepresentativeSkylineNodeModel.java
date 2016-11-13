@@ -55,10 +55,10 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 	private Map<String, double[]> rangeValues;
 	// options which thresholds to use: single, range or none thresholds
 	private Map<String, String> options;
-	
+
 	private String[] columnNames;
 	private RowKey[] rowKeys;
-	
+
 	private DataTableSpec originalSpec;
 
 	/**
@@ -91,8 +91,8 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 		setDefaultValues(skylineSpec);
 
 		// compute the representative skyline
-		RepresentativeSkyline repSky = new RepresentativeSkyline(skyline,scoreSkyline, dimensions, singleValues, rangeValues,
-				options, isUpperBound, k, diversityWeight);
+		RepresentativeSkyline repSky = new RepresentativeSkyline(skyline, scoreSkyline, dimensions, singleValues,
+				rangeValues, options, isUpperBound, k, diversityWeight);
 
 		// create spec for the representative skyline
 		int numColumn = skyline.getDataTableSpec().getNumColumns();
@@ -153,17 +153,25 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 	}
 
 	/**
-	 * Sets default values if the node dialog has never been opened </br>
+	 * Sets default values if the node dialog has never been opened</br>
 	 * Otherwise nothing happens
 	 * 
-	 * @param spec - the data table spec of the input data table of this node
+	 * @param spec
+	 *            - the data table spec of the input data table of this node
 	 */
 	private void setDefaultValues(DataTableSpec spec) {
+
+		boolean setDefaultValues = false;
+		String[] tmpDimensions = getDimensions(spec, getAvailableFlowVariables());
 		// set default values if the node dialog never was opened
 		if (dimensions == null || singleValues == null || rangeValues == null || options == null
-				|| isUpperBound == null) {
-			
-			dimensions = getDimensions(spec, getAvailableFlowVariables());
+				|| isUpperBound == null)
+			setDefaultValues = true;
+		else if (dimensions != null && !isEqualColumns(dimensions, tmpDimensions))
+			setDefaultValues = true;
+
+		if (setDefaultValues) {
+			dimensions = tmpDimensions;
 			singleValues = new TreeMap<>();
 			rangeValues = new TreeMap<>();
 			options = new TreeMap<>();
@@ -179,6 +187,32 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 				diversityWeight = 0.5;
 			}
 		}
+
+	}
+	
+	/**
+	 * 
+	 * @param columns1 - a string array
+	 * @param columns2 - a string array
+	 * @return true - if both arrays have the same length and the same values </br>
+	 * false - otherwise
+	 */
+	private boolean isEqualColumns(String[] columns1, String[] columns2) {
+
+		boolean isEqual = false;
+
+		if (columns1.length == columns2.length) {
+			isEqual = true;
+			for (int i = 0; i < columns1.length; i++) {
+				if (!columns1[i].equals(columns2[i])) {
+					isEqual = false;
+					break;
+				}
+			}
+		}
+
+		return isEqual;
+
 	}
 
 	/**
@@ -193,13 +227,13 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 	 */
 	@Override
 	protected PortObjectSpec[] configure(final PortObjectSpec[] inSpecs) throws InvalidSettingsException {
-		
+
 		DataTableSpec spec = (DataTableSpec) inSpecs[IN_PORT_SKYLINE];
-		
-		if(originalSpec==null)
+
+		if (originalSpec == null)
 			originalSpec = spec;
-		
-		if(!originalSpec.equalStructure(spec)){
+
+		if (!originalSpec.equalStructure(spec)) {
 			dimensions = null;
 			singleValues = null;
 			rangeValues = null;
@@ -238,7 +272,7 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 
 		settings.addInt(RepresentativeSkylineNodeDialog.CFG_KEY_SIZE, k);
 		settings.addDouble(RepresentativeSkylineNodeDialog.CFG_KEY_WEIGHT, diversityWeight);
-		
+
 		settings.addStringArray(RepresentativeSkylineNodeDialog.CFG_KEY_COLUMN_NAMES, columnNames);
 		settings.addRowKeyArray(RepresentativeSkylineNodeDialog.CFG_KEY_ROW_KEYS, rowKeys);
 
@@ -268,7 +302,7 @@ public class RepresentativeSkylineNodeModel extends NodeModel {
 
 		k = settings.getInt(RepresentativeSkylineNodeDialog.CFG_KEY_SIZE);
 		diversityWeight = settings.getDouble(RepresentativeSkylineNodeDialog.CFG_KEY_WEIGHT);
-		
+
 		columnNames = settings.getStringArray(RepresentativeSkylineNodeDialog.CFG_KEY_COLUMN_NAMES);
 		rowKeys = settings.getRowKeyArray(RepresentativeSkylineNodeDialog.CFG_KEY_ROW_KEYS);
 
