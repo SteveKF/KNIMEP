@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/KNIMEPFeatures_1.0.0.qualifier.jar" id="KNIMEPFeatures" version="1.0.0.qualifier"/>
+   <description name="KNIMEP">
+      KNIMEP stands for KNIME Preferences and allows the user to compute
+(representative) skylines based on Prefences.
+   </description>
+   <feature url="features/org.knime.preferences_1.0.0.201611160754.jar" id="org.knime.preferences" version="1.0.0.201611160754">
+      <category name="Preferences"/>
+   </feature>
+   <category-def name="Preferences" label="Preferences">
+      <description>
+         The features from this category allows the user to compute a (representative) skyline based on preferences.
+      </description>
+   </category-def>
 </site>

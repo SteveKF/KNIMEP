@@ -11,7 +11,7 @@ Eine Skyline ist die Teilmenge von Datensätzen, die von keinem anderen Datensat
 Dominanz: $r=(r_1,\ldots,r_d)$ und $s=(s_1,\ldots,s_d)$ sind zwei Datensätze mit $d$ Dimensionen. $r$ dominiert $s$, gdw. $\forall{i} \in{[1,d]}$ $r_i \geq s_i \land \exists{i}$ $r_i > s_i$ 
 \end{Def}
 
-Skylines helfen bei Entscheidungen, da sie nur Pareto-Optima enthalten und alle dominierten Datensätze nicht weiter betrachtet werden. Dies führt zur einer übersichtlicheren Menge, welches Entscheidungen erleichtert.
+Skylines helfen bei Entscheidungen, da sie nur Pareto-Optima enthält und alle dominierten Datensätze nicht weiter betrachtet werden. Dies führt zur einer übersichtlicheren Menge, welches Entscheidungen erleichtert.
 In Abbildung \ref{img:skylineExample} ist ein Graph mit Punkten, welche Autos darstellen, zu sehen. Die x und y Achse zeigen die Dimensionen auf, die für die Skyline betrachtet werden. Für dieses Beispiel wird der Preis und die PS-Leistung des Auto dargestellt. Somit ist das Ziel dieser Skyline die Autos zu finden, die sowohl den geringsten Preis als auch die höchste PS Leistung besitzen.
 Die weißen Punkte entsprechen allen dominierten Autos und die schwarzen bilden die Skyline. Es ist zu erkennen, dass fast alle Autos dominiert werden. Wenn jedoch noch ein geringer Kilometerstand (=mileage) bevorzugt wird, bleiben mehr Autos undominiert ({siehe Abbildung \ref{img:skylineExampleMoreDimensions}). In dieser Abbildung werden drei Graphen gezeigt. Diese entstehen aus den jeweiligen Kombinationen der Dimensionen. Beide Abbildungen wurden mit dem (Representative) Skylinve Visualizer Node, der für diese Arbeit in KNIME implementiert wurde, erstellt.
 
@@ -25,22 +25,20 @@ Die weißen Punkte entsprechen allen dominierten Autos und die schwarzen bilden 
 
 \begin{figure}[H]
 	\centering
-	%\begin{adjustbox}{max size={\textwidth}{\textheight}}
     \includegraphics[width=\textwidth]{skylineExampleMoreDimensions.png}
-%\end{adjustbox}
 	\caption{Autobeispiel - Zweidimensionale Projektionen der Skyline mit den Dimensionen price, horsepower und mileage}
 	\label{img:skylineExampleMoreDimensions}
 \end{figure}
 
-Aus diesen Erkenntnissen lässt sich schließen, dass bei zu vielen Dimensionen Skylines nicht mehr ihren Zweck erfüllen und repräsentative Skylines genutzt werden sollten. Auch wenn die entsprechenden Algorithmen für repräsentative Skylines meistens noch zusätzliche Rechenzeit mit sich bringen.
+Aus diesen Erkenntnissen lässt sich folgern, dass bei zu vielen Dimensionen Skylines nicht mehr ihren Zweck erfüllen und repräsentative Skylines genutzt werden sollten. Selbst wenn die entsprechenden Algorithmen für repräsentative Skylines meistens noch zusätzliche Rechenzeit mit sich bringen.
 %% ==============================
 \section{Repräsentative Skyline}
 \label{ch:Grundlagen:sec:repSkyline}
 %% ==============================
-Eine repräsentative Skyline beinhaltet \textit{k} Datensätze der Skyline. Diese werden nach bestimmten Kriterien ausgewählt, wobei hier zwei hervorstechen: Signifikanz und Diversität.
+Eine repräsentative Skyline beinhaltet \textit{k} Datensätze der Skyline. Diese werden nach bestimmten Kriterien ausgewählt, wobei hier zwei von großer Bedeutung sind: Signifikanz und Diversität.
 
-Ein Datensatz ist signifikant, falls er einen bestimmten Threshold erfüllt, welcher meistens vom User festgelegt wird. Ein Threshold kann hierfür eine obere Grenze (Der Preis eines Autos sollte nicht 16000 \euro{} überschreiten) oder eine untere Grenze (Die PS Anzahl sollte nicht unter $100$ liegen) darstellen. 
-Wie erwähnt ist es üblich diese Thresholds durch den User bestimmen zu lassen. Jedoch benutzen einige Ansätze wie \cite{36988} vorhandene Daten von Usern, um passende Grenzen zu finden.
+Ein Datensatz ist signifikant, falls er einen bestimmten Threshold erfüllt, welcher meistens vom User festgelegt wird. Ein Threshold kann eine obere Grenze (Der Preis eines Autos sollte nicht 16000 \euro{} überschreiten) oder eine untere Grenze (Die PS Anzahl sollte nicht unter $100$ liegen) darstellen. 
+Wie erwähnt ist es üblich diese Thresholds durch den User bestimmen zu lassen. Jedoch benutzen einige Ansätze wie \cite{36988} vorhandene Daten von Usern, um passende Werte zu finden.
 
 Wie der Name schon vermuten lässt, basiert Diversität auf der Unterschiedlichkeit von Datensätzen und soll so hoch wie möglich sein. Diese Unterschiedlichkeit wird oft durch Differenzen der Werte der Dimensionen oder der euklidischen Distanz zwischen den einzelnen Datensätzen berechnet. 
 Aus diesen Gründen sind bei alleiniger Betrachtung des Diversitätskriteriums nur Datensätze in der repräsentativen Skyline, die weit voneinander entfernt sind. 
@@ -97,7 +95,7 @@ Aus diesen Gründen sind bei alleiniger Betrachtung des Diversitätskriteriums n
 \end{figure}
 
 Basierend auf dem Diversitätkriterium sind in Abbildung \ref{img:diversitaetExample} drei Punkte/Datensätze am besten geeignet für die repräsentative Skyline. Punkt \textit{a} repräsentiert sich am besten selber. Die Punkte \textit{b,c,d,e} werden am besten durch \textit{c} oder \textit{d} repräsentiert, da diese relativ mittig von dieser Menge liegen. Für die restlichen Punkte ist \textit{g} der geeignetste.
-An diesem Beispiel ist zu erkennen, dass \textit{k}, die Anzahl der repräsentativen Datensätze, ein wichtiger Faktor ist, um eine hohe Repräsentationsgüte zu erreichen. Denn in diesem Beispiel ist der optimale Wert von \textit{k} drei und ein höherer Wert würde keinen Mehrwert bzw. keine deutlich höhere Repräsentationsgüte liefern, da für $k=3$ jedes Cluster einen Repräsentanten hat.
+An diesem Beispiel ist außerdem zu erkennen, dass \textit{k}, die Anzahl der repräsentativen Datensätze, ein wichtiger Faktor ist, um eine hohe Repräsentationsgüte zu erreichen. Denn in diesem Beispiel ist der optimale Wert von \textit{k} drei und ein höherer Wert würde keinen Mehrwert bzw. keine deutlich höhere Repräsentationsgüte liefern, da für $k=3$ jedes Cluster einen Repräsentanten hat.
 %% ==============================
 \section{Präferenzen}
 \label{ch:Grundlagen:sec:präferenzen}
@@ -137,15 +135,15 @@ Anfragen an Suchmaschinen und Datenbanken haben oft das Problem, dass sie entwed
 	\label{img:preferences}
 \end{figure} 
 
-Abbildung \ref{img:preferences} gibt einen Überblick über alle Präferenzen in Preference SQL. In dieser Arbeit werden nur die Basispräferenzen vorgestellt, die in KNIME implementiert wurden. Die BETWEEN Präferenz erlaubt es Werte einer Dimension in einem vom User bestimmten Intervall zu präferieren. Dagegen präferiert die AROUND Präferenz Datensätze, die nah an einem bestimmten Wert liegen. Mit der LAYERED Präferenz ist es möglich Werte einer Dimension nach Wichtigkeit zu sortieren. Für Autofarben könnte folgende Reihenfolge erstellt werden: grün > schwarz > OTHERS > rot. Diese Präferenz würde als erstes grüne, darauf folgend schwarze, danach alle anderen Autos und schlussendlich rote Autos präferieren. Wie zu erkennen ist, repräsentiert OTHERS alle restlichen Farben, die in den Datensätzen vorhanden sind und nicht grün, schwarz oder rot sind.
-Die LOWEST Präferenz, die die niedrigsten Werte präferiert und dessen Gegenstück HIGHEST sind auch in KNIME eingebunden worden, damit Standard Skylineabfragen wie Minimum und Maximum möglich sind.
-Als Zusatz wurde eine BOOLEAN Präferenz hinzugefügt, die aus dem Preference SQL Konzept von EXASolution entnommen wurde \cite{EXASolution}. Hier kann der User SQL Statements eingeben, die als boolische Ausdrücke gewertet werden. Alle Datensätze, die mit diesem Ausdruck übereinstimmen und dadurch \textit{true} ergeben, werden bevorzugt. Im Fall des Autobeispiels könnte dies wie folgt aussehen: $price < 16000$. Mit diesem Ausdruck würden alle Autos bevorzugt, die weniger als 16000 \euro{} kosten. Dabei macht es keinen Unterschied wie niedrig der Preis ist. Alle Autos unter 16000 \euro{} werden als gleich wichtig gesehen. 
+Abbildung \ref{img:preferences} gibt einen Überblick über alle Präferenzen in Preference SQL. In dieser Arbeit werden nur die Basispräferenzen vorgestellt, die in KNIME implementiert wurden. Die BETWEEN Präferenz erlaubt es Werte einer Dimension in einem vom User bestimmten Intervall zu präferieren. Dagegen präferiert die AROUND Präferenz Datensätze, die nah an einem bestimmten Wert liegen. Mit der LAYERED Präferenz ist es möglich Werte einer Dimension nach Wichtigkeit zu sortieren. Für Autofarben könnte folgende Reihenfolge erstellt werden: grün > schwarz > OTHERS > rot. Die Präferenz würde als erstes grüne, darauf folgend schwarze, anschließend alle anderen Autos und schlussendlich rote Autos präferieren. Wie zu erkennen ist, repräsentiert OTHERS alle restlichen Farben, die in den Datensätzen vorhanden sind und nicht grün, schwarz oder rot sind.
+Die LOWEST Präferenz, die niedrige Werte präferiert und dessen Gegenstück HIGHEST sind auch in KNIME eingebunden worden, damit Standard Skylineberechnungen wie Minimum und Maximum möglich sind.
+Als Zusatz wurde eine BOOLEAN Präferenz hinzugefügt, die aus dem Preference SQL Konzept von EXASolution entnommen wurde \cite{EXASolution}. Für diese Präferenz kann der User Ausdrücke angeben, die als boolische Ausdrücke gewertet werden. Alle Datensätze, die mit diesem Ausdruck übereinstimmen und dadurch \textit{true} ergeben, werden bevorzugt. Im Fall des Autobeispiels könnte dies folgendermaßen aussehen: $price < 16000$. Mit diesem Ausdruck würden alle Autos bevorzugt, die weniger als 16000 \euro{} kosten. Dabei macht es keinen Unterschied wie niedrig der Preis ist. Alle Autos unter 16000 \euro{} werden als gleich wichtig gesehen. 
 
 Die einzelnen Basispräferenzen können weiterhin noch mit Pareto ('AND') oder Priorisierungs ('PRIOR TO') Präferenzen verknüpft werden. Pareto verknüpfte Präferenzen haben die gleiche Wichtigkeit, wobei dazu im Gegensatz Basispräferenzen mit einer Priorisierungsverknüpfung unterschiedliche Wichtigkeit besitzen. Hierbei ist die erst genannte Basispräferenz immer wichtiger als die zweite.  
 
-Zusätzlich zu den Verknüpfungen oder auch komplexen Präferenzen genannt, gibt es das Best Matches Only Query Model. Durch dieses Model werden \enquote{emty-results} und \enquote{flooding-effects} gemieden, da es nur die besten Ergebnisse, die sich untereinander nicht dominieren, ausgibt. Durch die Dominanz werden schlechtere Datensätze nicht zur Ergebnismenge hinzugefügt und somit wird die Anzahl der Datensätze im Ergebnis reduziert. Falls keine Datensätze vorhanden sind, die die Präferenzen optimal berücksichtigen, werden die Nächstbesten als Ergebnis genommen. Dies führt dazu, dass die Ergebnisse immer die Präferenzen so gut wie möglich berücksichtigen und die Ergebnismenge nie leer sein kann.
+Zusätzlich zu den Verknüpfungen oder auch komplexen Präferenzen genannt, gibt es das Best Matches Only Query Model. Durch dieses Model werden \enquote{emty-results} und \enquote{flooding-effects} gemieden, da es nur die besten Ergebnisse, die sich untereinander nicht dominieren, ausgibt. Durch die Dominanz werden schlechtere Datensätze nicht zur Ergebnismenge hinzugefügt und deshalb wird die Anzahl der Datensätze im Ergebnis reduziert. Falls keine Datensätze vorhanden sind, die die Präferenzen optimal berücksichtigen, werden die Nächstbesten als Ergebnis genommen. Das hat zur Folge, dass die Ergebnisse die Präferenzen so gut wie möglich berücksichtigen und die Ergebnismenge nie leer sein kann.
 
-In Abbildung \ref{img:prefSQLSyntax} ist die Syntax zu Preference SQL zu sehen. Hier können nach der PREFERRING Klausel die Basispräferenzen mit genannten Verknüpfungen angegeben werden. Zusätzlich kann sortiert (GROUP BY) und eine Constraint (BUT ONLY), die den \enquote{flooding-effect} noch weiter reduziert, angegeben werden. Näheres dazu kann in den diesbezüglichen Paper \cite{kiessling2011preference}, \cite{kiessling2002foundations} und \cite{kiessling2002preference} gelesen werden.
+In Abbildung \ref{img:prefSQLSyntax} ist die Syntax von Preference SQL zu sehen. Hier können nach der PREFERRING Klausel die Basispräferenzen mit genannten Verknüpfungen angegeben werden. Weiterhin kann sortiert (GROUP BY) und eine Einschränkung (BUT ONLY), die den \enquote{flooding-effect} noch weiter reduziert, angegeben werden. Näheres dazu kann in den diesbezüglichen Paper \cite{kiessling2011preference}, \cite{kiessling2002foundations} und \cite{kiessling2002preference} gelesen werden.
 
 \begin{figure}[H]
 \centering
@@ -160,12 +158,13 @@ $\begin{matrix*}[l]
 \text{HAVING} & \ldots & \text{<hard\char`_conditions>} \\
 \text{ORDER BY} & \ldots & \text{<attribute\char`_list>} \\
 \end{matrix*}$
-	\caption{Syntax von Preference-SQL}
+	\caption{Syntax von Preference SQL}
+	\source{\cite{kiessling2011preference}}
 	\label{img:prefSQLSyntax}
 \end{figure} 
 
 Zum Schluss dieses Abschnittes wird die Syntax an einem Beispiel erklärt.
-Angenommen es werden alle Autos mit der höchsten PS-Leistung und dem geringsten Preis gesucht. Zusätzlich sollte die Kilometeranzahl um den Wert 100000 liegen, was jedoch nicht so wichtig ist wie der Preis.
+Angenommen es werden alle Autos mit der höchsten PS-Leistung und dem geringsten Preis gesucht. Außerdem sollte die Kilometeranzahl um den Wert 100000 liegen, was jedoch nicht so wichtig ist wie der Preis.
 Aus diesen Angaben ergibt sich folgender Query:
 \begin{verbatim}
 SELECT * 
@@ -184,14 +183,40 @@ KNIME oder der Konstanz Information Miner ist eine modulare Umgebung, die einen 
 
 Der Konstanz Information Miner ist in Java geschrieben und dessen graphischer Workflow Editor ist als ein Eclipse Plug-in implementiert worden. Mit einer offenen API und einem Datenabstraktions Framework wird dem User erlaubt schnell Nodes zu implementieren und diese einem Workflow hinzuzufügen.
 
-Die Architektur von KNIME unterliegt drei Prinzipien. Einem visuellen und interaktivem Framework, welches dem User ermöglicht durch einfaches Drag \& Drop Datenflüsse zu kombinieren und somit verschiedene Node Outputs als Input für andere Nodes verwenden zu können. Modularität sorgt dafür, dass alles unabhängig voneinander funktioniert. Seien es Prozesseinheiten oder Datencontainer. Dies ermöglicht eine unabhängige Implementierung von verschiedenen Algorithmen. Das letzte Prinzip ist die einfache Erweiterbarkeit. Entwickler können auf die öffentliche API zugreifen und durch das Eclipse Plug-In-Schema ohne Probleme neue Nodes entwickeln \cite{BCDG+07}.
+Die Architektur von KNIME unterliegt drei Prinzipien. Einem visuellen und interaktivem Framework, welches dem User ermöglicht durch einfaches Drag \& Drop Datenflüsse zu kombinieren und somit verschiedene Node Ausgaben als Eingaben für andere Nodes verwenden zu können. Modularität sorgt dafür, dass alles unabhängig voneinander funktioniert. Dies ermöglicht eine unabhängige Implementierung von verschiedenen Algorithmen. Das letzte Prinzip ist die einfache Erweiterbarkeit. Entwickler können auf die öffentliche API zugreifen und durch das Eclipse Plug-In-Schema ohne Probleme neue Nodes entwickeln \cite{BCDG+07}.
 
-KNIME ermöglicht neue Algorithmen oder Visualisierungen als Nodes in KNIME zu integrieren. Nodes besitzen In- und Output Ports, die den Ein- und Ausgaben des darunter liegenden Algorithmus entsprechen. Nodes bestehen hauptsächlich aus drei Teilen: NodeModel, NodeDialog und NodeView. Das NodeModel ist dafür zuständig, dass der Algorithmus ausgeführt wird und wichtige Einstellungen gespeichert werden. Es testet, ob mit den Eingabe des Nodes der Algorithmus korrekt durchgeführt werden kann und gibt die Ergebnisse des Algorithmus aus. 
-Der NodeDialog ermöglicht es dem User bestimmte Einstellungen für den Algorithmus vorzunehmen. Hierbei kann eine eigene GUI geschrieben werden oder die von KNIME vorliegenden Standardkomponenten verwendet werden. Die Kommunikation zwischen dem NodeModel und dem NodeView erfolgt durch eine Speicherung von SettingsModels in ein NodeSettings Objekt, welches von beiden Klassen geladen und gespeichert werden kann. 
-Das NodeView Objekt erstellt eine graphische Darstellung der Ergebnisse des Algorithmus. Dies kann ein Histogramm, Koordinatensystem oder ähnliches sein. Die Daten für diesen View müssen vom NodeModel in einer Datei gespeichert werden, um diesen View beim Wiederöffnen von KNIME neu zu erstellen. Dies ist erforderlich, sodass zu jeder Zeit der View betrachtet werden kann und dies nicht nur nach Ausführung des Nodes möglich ist.
+Diese Nodes basieren auf verschiedenen Algorithmen oder Visualisierungen. Sie besitzen In- und Output Ports, die den Ein- und Ausgaben des darunter liegenden Algorithmus entsprechen. Nodes bestehen hauptsächlich aus drei Teilen: NodeModel, NodeDialog und NodeView. Das NodeModel ist dafür zuständig den Algorithmus auszuführen und wichtige Einstellungen zu speichern. Es testet, ob mit den Eingaben des Nodes der Algorithmus korrekt durchführbar ist und gibt die Ergebnisse des Algorithmus aus. Bei falschen Eingaben wird dem User eine Fehlermeldung ausgegeben (siehe Abbildung \ref{img:nodeModelError}).
 
-Workflows sind Graphen in KNIME, genau genommen gerichtete azyklische Graphen. Der dazugehörige WorkflowManager verhilft es dem User neue Nodes zum Workflow und Verbindungen zwischen den Nodes hinzuzufügen.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{nodeModelError.png}
+	\caption{Fehleranzeige eines Nodes}
+	\label{img:nodeModelError}
+\end{figure}
 
-Da nun Preference SQL und KNIME genauer erklärt wurden, können im nächsten Kapitel die implementieren Algorithmen vorgestellt werden.
+Der NodeDialog ermöglicht es dem User bestimmte Einstellungen für den Algorithmus vorzunehmen. Hierbei kann eine eigene GUI geschrieben werden oder die von KNIME vorliegenden Standardkomponenten verwendet werden. Die Kommunikation zwischen dem NodeModel und dem NodeDialog erfolgt durch eine Speicherung von SettingsModels oder Variablen mit primitiven Datentypen in ein NodeSettings Objekt, welches von beiden Klassen geladen und gespeichert werden kann. 
+
+In Abbildung \ref{img:nodeDialog} ist ein Beispiel des NodeDialogs des Database Connector Nodes zu sehen, für den eine Datenbank URL, ein JDBC Treiber und weitere Eingaben eingegeben werden können, um eine Datenbankverbindung aufzubauen.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics{nodeDialog.png}
+	\caption{NodeDialogs des Database Connector Nodes}
+	\label{img:nodeDialog}
+\end{figure}
+ 
+Das NodeView Objekt erstellt eine graphische Darstellung der Ergebnisse des Algorithmus oder der Eingaben des Nodes. Dies kann ein Histogramm, Koordinatensystem oder ähnliches sein. Die Daten für den View müssen vom NodeModel in einer Datei gespeichert werden, um diesen View beim Wiederöffnen von KNIME neu zu erstellen. Dies ist erforderlich, sodass zu jeder Zeit der View betrachtet werden kann ohne den Node jedes mal auszuführen.
+
+In Abbildung \ref{img:nodeView} ist ein Beispiel View des Histogramm Nodes zu sehen, der als Eingabe einen BufferedDataTable bekommt und nach Auswahl bestimmter Dimensionen ein Histogramm zeigt. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{nodeView.png}
+	\caption{Beispiel View des Histogramm Nodes}
+	\label{img:nodeView}
+\end{figure}
+
+
+Nähere Informationen zur Funktionsweise und Implementierung von Nodes können auf der Webseite\footnote{https://tech.knime.org/developers (28.10.2016)} und dem Paper \cite{BCDG+07} von KNIME gefunden werden.
 %% ==============================
 %%% End: 
